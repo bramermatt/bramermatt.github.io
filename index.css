@@ -1,0 +1,16 @@
+body {
+   /*
+   this was from https://namanhkapur.super.site, I like the ease of creating a max-width. Not sure if that's actually how that's determined. 
+    */
+    
+    max-width: 900px;
+    margin: auto;
+
+    padding-left: calc(env(safe-area-inset-left) + 96px);
+    padding-right: calc(env(safe-area-inset-left) + 96px);
+    padding-bottom: 30vh;
+}
+
+navbar {
+
+}
