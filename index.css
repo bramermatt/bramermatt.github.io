@@ -12,16 +12,27 @@
     display: inline-block;
 }
 
-* {
-    box-sizing: border-box;
-  }
 
+body.light {
+    --text: dark;
+    --background: white;
+
+}
+
+body.dark {
+    --text: white;
+    --background: black;
+}
+
+  
 
 body {
    /*
    this was from https://namanhkapur.super.site, I like the ease of creating a max-width. Not sure if that's actually how that's determined. 
     */
-    
+    color: var(--text);
+    background: var(--background);
+
     margin: auto;
     padding: auto;
     max-width: 1250px;
