@@ -1,16 +1,189 @@
+.navbar {
+    font-size: 24px;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+.navbar a:link, a:visited {
+    color: grey;
+    padding: 15px 0px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+
 body {
    /*
    this was from https://namanhkapur.super.site, I like the ease of creating a max-width. Not sure if that's actually how that's determined. 
     */
     
-    max-width: 900px;
     margin: auto;
+    padding: auto;
+    max-width: 1250px;
+    padding-bottom: 30px;
 
-    padding-left: calc(env(safe-area-inset-left) + 96px);
-    padding-right: calc(env(safe-area-inset-left) + 96px);
-    padding-bottom: 30vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-navbar {
 
+.main {
+    padding: 40px 0px;
 }
+
+.main h1 {
+    padding: auto;
+    margin: auto;
+    font-size: 50px;
+}
+
+.main h2 {
+    padding: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 800px;
+    font-size: 30px;
+}
+
+.main p {
+    padding: 5px 0px;
+    margin: auto;
+    font-size: 26px;
+}
+
+
+.school-sect {
+    font-size: 20px;
+}
+
+.school-sect h4 {
+    padding: auto;
+}
+
+.school-sect ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.school-sect li a:hover {
+    color: black;
+  }
+
+.school-sect a:link, a:visited {
+    color: grey;
+    text-decoration: underline;
+}
+
+
+.social-sect {
+    padding: 15px 0px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.social-sect ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-sect li a:hover {
+    color: black;
+  }
+
+.social-sect a:link, a:visited {
+    color: grey;
+    text-decoration: underline;
+}
+
+
+.blog-sect {
+    padding: 0px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.blog-sect ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-sect li a:hover {
+    color: black;
+  }
+
+.blog-sect a:link, a:visited {
+    color: grey;
+    text-decoration: underline;
+}
+
+
+.footer-sect {
+    padding: 15px 0px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.footer-sect ul {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-sect li a:hover {
+    color: black;
+  }
+
+.footer-sect a:link, a:visited {
+    color: grey;
+    text-decoration: underline;
+}
+
+@media (max-width: 1350px) {
+    html {
+        max-width:screen;
+    }
+
+    body {
+        max-width: 1200px;
+        padding: 15px;
+        margin: auto;
+        font-size: medium;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    html {
+        max-width:screen;
+    }
+
+    body {
+        max-width: 900px;
+        padding: 15px;
+        margin: auto;
+        font-size: medium;
+    }
+}
+
+
+@media (max-width: 414px) {
+    html {
+        max-width:screen;
+    }
+
+    body {
+        max-width: 380px;
+        padding: 15px;
+        margin: auto;
+        font-size: medium;
+    }
+}
+
