@@ -228,6 +228,19 @@ body {
         margin: auto;
         font-size: medium;
     }
+
+    .main {
+        columns: 1;
+    }
+
+    .main img {
+        height: auto;
+        width: auto;
+        padding: 20px 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 
