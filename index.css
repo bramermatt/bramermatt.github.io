@@ -44,6 +44,10 @@ body {
 
 .main {
     padding: 40px 0px;
+    column-count: 2;
+    column-gap: 100px;
+    column-rule-width: 1px;
+    column-width: 100px;
 }
 
 .main h1 {
@@ -66,13 +70,21 @@ body {
     font-size: 26px;
 }
 
+.main img {
+    padding: auto;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
 
 .school-sect {
     font-size: 20px;
 }
 
 .school-sect h4 {
-    padding: auto;
+    padding-top: 10px;
+    margin: 10px 0px;
 }
 
 .school-sect ul {
@@ -83,18 +95,31 @@ body {
 
 .school-sect li a:hover {
     color: black;
-  }
+}
 
 .school-sect a:link, a:visited {
     color: grey;
     text-decoration: underline;
 }
 
+.school-sect p {
+    padding-bottom: 10px;
+    margin: auto;
+}
+
 
 .social-sect {
-    padding: 15px 0px;
-    margin: auto;
     font-size: 20px;
+}
+
+.social-sect h4 {
+    padding-top: 40px;
+    margin: 10px 0px;
+}
+
+.social-sect p {
+    padding-bottom: 10px;
+    margin: auto;
 }
 
 .social-sect ul {
@@ -136,9 +161,17 @@ body {
 
 
 .footer-sect {
-    padding: 15px 0px;
-    margin: auto;
     font-size: 20px;
+}
+
+.footer-sect h4 {
+    padding-top: 40px;
+    margin: 10px 0px;
+}
+
+.footer-sect p {
+    padding-bottom: 10px;
+    margin: auto;
 }
 
 .footer-sect ul {
@@ -168,6 +201,19 @@ body {
         margin: auto;
         font-size: medium;
     }
+
+    .main {
+        columns: 1;
+    }
+
+    .main img {
+        height: auto;
+        width: auto;
+        padding: 20px 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 
