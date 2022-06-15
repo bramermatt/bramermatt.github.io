@@ -1,0 +1,139 @@
+body {
+    color: var(--text);
+    background: var(--background);
+    margin: auto;
+    padding: auto;
+    max-width: 950px;
+    padding-bottom: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+}
+
+body.light {
+    --text: dark;
+    --background: white;
+
+}
+
+body.dark {
+    --text: white;
+    --background: black;
+}
+
+.navbar {
+    font-size: 20px;
+    font-size: auto;
+    /* padding: revert; */
+    text-align: left;
+    text-align: -webkit-left;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) grayscale(10) opacity(1);
+    list-style: none;
+}
+
+.navbar ul {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    padding: 5px 10px 15px 10px;
+
+}
+
+.navbar a:link, a:visited {
+    color: rgb(243, 243, 243);
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    color: var(--text) invert(--text);
+}
+
+
+.blog {
+    padding: 24px 15px;
+    font-size: 22px;
+}
+
+.blog ul {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.blog li a:hover {
+    color: var(--text) invert(--text);
+  }
+
+
+.blog a:link, a:visited {
+    color: lightgray;
+    padding: 15px 0px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+.blog a:hover {
+    color: var(--text) invert(--text);
+}
+
+.blog img {
+    padding: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+@media (max-width: 950px) {
+    html {
+        max-width:screen;
+    }
+
+    body {
+        max-width: 900px;
+        padding: 15px;
+        margin: auto;
+        font-size: medium;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+    html {
+        max-width:screen;
+    }
+
+    .navbar {
+        font-size: 120%;
+    }
+
+    .navbar a {
+        padding: 5px;
+    }
+
+    body {
+        max-width: 480px;
+        padding: 15px;
+        margin: auto;
+        font-size: medium;
+    }
+}
