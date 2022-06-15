@@ -36,13 +36,14 @@ html {
 }
 
 .navbar a:link, a:visited {
+    color: var(--text);
     text-align: center; 
     text-decoration: none;
     display: inline-block;
 }
 
 .navbar a:hover {
-    color: var(--text) invert(--text);
+    color: var(--text);
 }
 
 
@@ -75,7 +76,7 @@ body {
 }
 
 body a:hover {
-    color: var(--text) invert(--text);
+    color: var(--text);
 }
 
 
