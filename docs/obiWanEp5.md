@@ -1,4 +1,4 @@
-# What do I think of Obi-Wan Kenobi so far
+# What do I think of Obi-Wan Kenobi so far #
 
 It's no suprise that I'm a Star Wars fan. And when I saw the first trailer for Obi-Wan Kenobi in March, I cried. 
 
