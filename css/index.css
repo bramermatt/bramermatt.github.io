@@ -36,7 +36,6 @@ html {
 }
 
 .navbar a:link, a:visited {
-    color: rgb(243, 243, 243);
     text-align: center; 
     text-decoration: none;
     display: inline-block;
@@ -54,7 +53,7 @@ body.light {
 }
 
 body.dark {
-    --text: white;
+    --text: light;
     --background: black;
 }
 

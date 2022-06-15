@@ -50,7 +50,6 @@ body.dark {
 }
 
 .navbar a:link, a:visited {
-    color: rgb(243, 243, 243);
     text-align: center; 
     text-decoration: none;
     display: inline-block;
@@ -79,7 +78,7 @@ body.dark {
 
 
 .blog a:link, a:visited {
-    color: lightgray;
+    color: var(--text);
     padding: 15px 0px;
     text-align: center; 
     text-decoration: none;
