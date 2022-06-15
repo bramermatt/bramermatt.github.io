@@ -287,16 +287,20 @@ body a:hover {
 }
 
 
-@media (max-width: 414px) {
+@media (max-width: 500px) {
     html {
         max-width:screen;
     }
 
     body {
-        max-width: 380px;
+        max-width: 480px;
         padding: 15px;
         margin: auto;
         font-size: medium;
+    }
+
+    .navbar {
+        font-size: 100%;
     }
 
     .main {

@@ -50,13 +50,14 @@ body.dark {
 }
 
 .navbar a:link, a:visited {
+    color: var(--text);
     text-align: center; 
     text-decoration: none;
     display: inline-block;
 }
 
 .navbar a:hover {
-    color: var(--text) invert(--text);
+    color: var(--text);
 }
 
 
@@ -78,7 +79,7 @@ body.dark {
 
 
 .blog a:link, a:visited {
-    color: var(--text);
+    color: var(--text) invert(--text);
     padding: 15px 0px;
     text-align: center; 
     text-decoration: none;
