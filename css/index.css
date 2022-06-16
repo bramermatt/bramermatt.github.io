@@ -61,7 +61,7 @@ body {
 
 }
 
-.navbar a:link, a:visited {
+.navbar a:link, .navbar a:visited {
     color: var(--text);
     text-decoration: none;
 }
@@ -128,7 +128,7 @@ body {
     color: var(--text) invert(--text);
 }
 
-.school-sect a:link, a:visited, .social-sect a:link, a:visited, .blog-sect a:link, a:visited {
+.updates a:link, a:visited, .school-sect a:link, a:visited, .social-sect a:link, a:visited, .blog-sect a:link, a:visited {
     color: var(--text) invert(--text);
 }
 
