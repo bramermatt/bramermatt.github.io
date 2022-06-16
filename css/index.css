@@ -57,7 +57,7 @@ body {
 }
 
 .navbar a {
-    padding: 8px;
+    padding-left: 10px;
 
 }
 
@@ -108,86 +108,34 @@ body {
 }
 
 
-.school-sect {
+.updates, .school-sect, .social-sect, .blog-sect  {
     font-size: 20px;
     padding: 75px 15px;
 }
 
-.school-sect h4 {
+.updates h4, .school-sect h4, .social-sect h4, .blog-sect h4 {
     padding-top: 10px;
     margin: 10px 0px;
 }
 
-.school-sect ul {
+.updates ul, .school-sect ul, .social-sect ul, .blog-sect ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.school-sect li a:hover {
+.updates li a:hover, .school-sect li a:hover, .social-sect li a:hover, .blog-sect li a:hover  {
     color: var(--text) invert(--text);
 }
 
-.school-sect a:link, a:visited {
+.school-sect a:link, a:visited, .social-sect a:link, a:visited, .blog-sect a:link, a:visited {
     color: var(--text) invert(--text);
 }
 
-.school-sect p {
+.updates p, .school-sect p, .social-sect p, .blog-sect p {
     padding-bottom: 10px;
     margin: auto;
 }
-
-
-.social-sect {
-    font-size: 20px;
-    padding: 75px 15px;
-}
-
-.social-sect h4 {
-    padding-top: 40px;
-    margin: 10px 0px;
-}
-
-.social-sect p {
-    padding-bottom: 10px;
-    margin: auto;
-}
-
-.social-sect ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.social-sect li a:hover {
-    color: var(--text) invert(--text);
-  }
-
-.social-sect a:link, a:visited {
-    color: var(--text) invert(--text);
-}
-
-
-.blog-sect {
-    padding: 75px 15px;
-    margin: auto;
-    font-size: 20px;
-}
-
-.blog-sect ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.blog-sect li a:hover {
-    color: var(--text) invert(--text);
-  }
-
-.blog-sect a:link, a:visited {
-    color: var(--text) invert(--text);
-}
-
 
 .footer-sect {
     padding: 75px 15px;
@@ -273,6 +221,40 @@ body {
     }
 
 }
+
+@media (max-width: 800px) {
+    html {
+        max-width:screen;
+    }
+
+    body {
+        max-width: 6500px;
+        padding: 15px;
+        margin: auto;
+    }
+
+    body h1, h2, h3, p, a {
+        font-size: 80%;
+    }
+
+    .navbar {
+        padding: 0;
+        margin: auto;
+    }
+
+    .main {
+        columns: 1;
+    }
+
+    .main img {
+        height: auto;
+        width: auto;
+        padding: 20px 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 
 @media (max-width: 500px) {
