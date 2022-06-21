@@ -126,7 +126,7 @@ body {
 
 .updates li a:hover, .school-sect li a:hover, .social-sect li a:hover, .blog-sect li a:hover  {
     color: var(--text) invert(--text);
-    font-style: bold;
+    font-weight: bold;
 }
 
 .updates a:link, a:visited, .school-sect a:link, a:visited, .social-sect a:link, a:visited, .blog-sect a:link, a:visited {
