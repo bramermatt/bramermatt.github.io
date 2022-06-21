@@ -196,7 +196,7 @@ body {
 
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     html {
         max-width:screen;
     }
@@ -222,11 +222,11 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-}
+} */
 
 
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     html {
         max-width:screen;
     }
@@ -264,9 +264,9 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-}
+} */
 
-@media (max-width: 350px) {
+/* @media (max-width: 340px) {
     html {
         max-width:screen;
     }
@@ -291,7 +291,7 @@ body {
 
     .navbar {
         padding: 0;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .navbar a {
@@ -309,4 +309,4 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-}
+} */
