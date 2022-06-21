@@ -197,16 +197,20 @@ body {
 }
 
 
-@media (max-width: 1300px) {
+@media (max-width: 800px) {
     html {
         max-width:screen;
     }
 
     body {
-        max-width: 900px;
+        max-width: 650px;
         padding: 15px;
         margin: auto;
         font-size: medium;
+    }
+
+    body h1, h2, h3, p, a {
+        font-size: 80%;
     }
 
     .main {
@@ -229,18 +233,13 @@ body {
     }
 
     body {
-        max-width: 6500px;
+        max-width: 650px;
         padding: 15px;
         margin: auto;
     }
 
     body h1, h2, h3, p, a {
         font-size: 80%;
-    }
-
-    .navbar {
-        padding: 0;
-        margin: auto;
     }
 
     .main {
@@ -273,6 +272,14 @@ body {
         font-size: 80%;
     }
 
+    body ul {
+        list-style-type: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+        font-size: 80%;
+    }
+
     .navbar {
         padding: 0;
         margin: auto;
@@ -300,6 +307,14 @@ body {
         max-width: 340px;
         padding: 15px;
         margin: auto;
+    }
+
+    body ul {
+        list-style-type: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+        font-size: 80%;
     }
 
     body h1, h2, h3, p, a {
