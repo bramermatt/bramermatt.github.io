@@ -48,7 +48,7 @@ body {
 .navbar ul {
     padding-top: 15px;
     padding-left: 0;
-    padding-bottom: 10px;;
+    padding-bottom: 10px;
 }
 
 
@@ -179,38 +179,7 @@ body {
         max-width: 1200px;
         padding: 15px;
         margin: auto;
-        font-size: medium;
-    }
-
-    .main {
-        columns: 1;
-    }
-
-    .main img {
-        height: auto;
-        width: auto;
-        padding: 20px 0px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-}
-
-
-@media (max-width: 800px) {
-    html {
-        max-width:screen;
-    }
-
-    body {
-        max-width: 650px;
-        padding: 15px;
-        margin: auto;
-        font-size: medium;
-    }
-
-    body h1, h2, h3, p, a {
-        font-size: 80%;
+        font-size: 90%;
     }
 
     .main {
@@ -239,7 +208,7 @@ body {
     }
 
     body h1, h2, h3, p, a {
-        font-size: 80%;
+        font-size: 90%;
     }
 
     .main {
@@ -269,15 +238,14 @@ body {
     }
 
     body h1, h2, h3, p, a {
-        font-size: 95%;
+        font-size: 90%;
     }
 
     body ul {
         list-style-type: none;
-        display: inline;
         margin: 0;
         padding: 0;
-        font-size: 95%;
+        font-size: 90%;
     }
 
     .navbar {
@@ -298,7 +266,7 @@ body {
     }
 }
 
-/*@media (max-width: 350px) {
+@media (max-width: 350px) {
     html {
         max-width:screen;
     }
@@ -327,7 +295,7 @@ body {
     }
 
     .navbar a {
-        padding-left: 5px;
+        padding-left: 2px;
     }
 
     .main {
