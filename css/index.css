@@ -171,7 +171,7 @@ body {
 
 
 @media (max-width: 1350px) {
-    html {
+    /* html {
         max-width:screen;
     }
 
@@ -180,7 +180,7 @@ body {
         padding: 15px;
         margin: auto;
         font-size: 90%;
-    }
+    } */
 
     .main {
         columns: 1;
