@@ -269,7 +269,7 @@ body {
     }
 
     body h1, h2, h3, p, a {
-        font-size: 80%;
+        font-size: 95%;
     }
 
     body ul {
@@ -277,7 +277,7 @@ body {
         display: inline;
         margin: 0;
         padding: 0;
-        font-size: 80%;
+        font-size: 95%;
     }
 
     .navbar {
@@ -298,7 +298,7 @@ body {
     }
 }
 
-@media (max-width: 350px) {
+/*@media (max-width: 350px) {
     html {
         max-width:screen;
     }
@@ -314,11 +314,11 @@ body {
         display: inline;
         margin: 0;
         padding: 0;
-        font-size: 80%;
+        font-size: 85%;
     }
 
     body h1, h2, h3, p, a {
-        font-size: 80%;
+        font-size: 85%;
     }
 
     .navbar {
