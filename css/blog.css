@@ -99,7 +99,8 @@ body {
 }
 
 .blog li a:hover {
-    color: invert(--text);
+    color: var(--text);
+    font-weight: bold;
   }
 
 
@@ -107,12 +108,12 @@ body {
     color: var(--text);
     padding: 10px 0px;
     text-align: center; 
-    text-decoration: none;
     display: inline-block;
 }
 
 .blog a:hover {
-    color: invert(--text);
+    color: var(--text);
+    font-weight: bold;
 }
 
 .blog img {
