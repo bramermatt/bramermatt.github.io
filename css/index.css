@@ -113,6 +113,12 @@ body {
     padding: 75px 15px;
 }
 
+.updates img {
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+}
+
 .updates h4, .school-sect h4, .social-sect h4, .blog-sect h4 {
     padding-top: 10px;
     margin: 10px 0px;
@@ -170,7 +176,7 @@ body {
 }
 
 
-@media (max-width: 1350px) {
+@media (max-width: 1200px) {
     /* html {
         max-width:screen;
     }
