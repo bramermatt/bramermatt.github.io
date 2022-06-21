@@ -22,7 +22,6 @@ body {
      padding: auto;
      max-width: 1250px;
      padding-bottom: 30px;
- 
      font-family: Arial, Helvetica, sans-serif;
  }
  
@@ -43,8 +42,7 @@ body {
 
 .navbar ul {
     padding-top: 15px;
-    padding-left: 0;
-    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 
@@ -76,12 +74,13 @@ body {
 .blog h1 {
     font-size: 30px;
     margin: 0px 0px 10px 0px;
+    text-align: center;
 }
 
 .blog h3 {
-    font-size: 28px;
-    margin: 0;
-    padding: 0;
+    font-size: 30px;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
 }
 
 .blog h2 {
@@ -131,7 +130,7 @@ body {
 }
 
 
-@media (max-width: 1350px) {
+/* @media (max-width: 1350px) {
     html {
         max-width:screen;
     }
@@ -155,9 +154,9 @@ body {
         margin-right: auto;
     }
 
-}
+} */
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     html {
         max-width:screen;
     }
@@ -183,11 +182,9 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-}
+} */
 
-
-
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     html {
         max-width:screen;
     }
@@ -225,9 +222,9 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-}
+} */
 
-@media (max-width: 350px) {
+/* @media (max-width: 350px) {
     html {
         max-width:screen;
     }
@@ -270,4 +267,4 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-}
+} */

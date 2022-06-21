@@ -32,6 +32,7 @@ body {
 
 
 .navbar {
+    border-bottom-style: solid;
     font-size: 20px;
     /* padding: revert; */
     text-align: left;
@@ -47,8 +48,7 @@ body {
 
 .navbar ul {
     padding-top: 15px;
-    padding-left: 0;
-    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 
@@ -224,8 +224,6 @@ body {
     }
 } */
 
-
-
 /* @media (max-width: 500px) {
     html {
         max-width:screen;
@@ -267,6 +265,7 @@ body {
 } */
 
 /* @media (max-width: 340px) {
+
     html {
         max-width:screen;
     }
