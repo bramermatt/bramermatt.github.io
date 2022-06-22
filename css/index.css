@@ -280,7 +280,7 @@ footer a:hover {
 
     .main img, .review-sect img {
         height: auto;
-        width: auto;
+        /* width: auto; */
         padding: 20px 0px;
         margin-left: auto;
         margin-right: auto;
