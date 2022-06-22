@@ -79,9 +79,10 @@ body {
 }
 
 .blog h3 {
-    font-size: 30px;
+    font-size: 20px;
     margin: 0px 0px 10px 0px;
     text-align: center;
+    font-weight: lighter;
 }
 
 .blog h2 {
