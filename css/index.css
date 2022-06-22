@@ -90,7 +90,7 @@ body {
     padding: auto;
     margin-top: auto;
     margin-bottom: auto;
-    max-width: 800px;
+    /* max-width: 800px; */
     font-size: 24px;
 }
 
@@ -101,58 +101,133 @@ body {
 }
 
 .main img {
-    padding: auto;
-    margin: auto;
-    max-width: 100%;
-    height: auto;
-    max-height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 275px; */
+    width:100%;
+    height:auto;
+    overflow:hidden;
 }
 
 
-.updates, .school-sect, .social-sect, .blog-sect, .book-sect  {
+.updates, .school-sect, .blog-sect {
     font-size: 20px;
-    padding: 75px 15px;
+    padding: 95px 15px;
+    text-align: center;
 }
 
-.updates img, .book-sect img {
-    max-width: 50%;
-    height: auto;
-    margin: auto;
+.updates img, .review-sect img {
+    /* padding: 20px 0px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-height:500px; */
+    /* width:100%; */
+    height:auto;
+    overflow:hidden;
 }
 
-.updates h4, .school-sect h4, .social-sect h4, .blog-sect h4, .book-sect h4 {
-    padding-top: 10px;
-    margin: 10px 0px;
+/* .updates img a:hover, .review-sect img a:hover {
+    transform: scale(1);
+} */
+
+.review-sect {
+    padding: 95px 25px;
+    column-count: 3;
+    column-gap: 50px;
+    column-rule-width: 1px;
+    column-width: 50px;
+    font-size: 20px;
 }
 
-.updates ul, .school-sect ul, .social-sect ul, .blog-sect ul {
+.review-sect h3, .updates h3, .school-sect h3, .blog-sect h3 {
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+/* .review-sect h4, .blog-sect p {
+    break-before: column;
+} */
+
+.updates h4, .school-sect h4, .blog-sect h4, .review-sect h4 {
+    padding-top: 25px;
+    margin: 0;
+    text-align: center;
+}
+
+.updates p, .school-sect p, .blog-sect p, .review-sect p {
+    text-align: center;
+}
+
+.updates ul, .school-sect ul, .blog-sect ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.updates li a:hover, .school-sect li a:hover, .social-sect li a:hover, .blog-sect li a:hover  {
+.updates li a:hover, .school-sect li a:hover, .blog-sect li a:hover  {
     color: var(--text);
     font-weight: bold;
 }
 
-.updates a:link, a:visited, .school-sect a:link, a:visited, .social-sect a:link, a:visited, .blog-sect a:link, a:visited, .book-sect a:link, a:visited {
+.updates a:link, a:visited, .school-sect a:link, a:visited, a:visited, .blog-sect a:link, a:visited, .book-sect a:link, a:visited {
     color: var(--text);
 }
 
-.updates p, .school-sect p, .social-sect p, .blog-sect p, .book-sect p {
+.updates p, .school-sect p, .blog-sect p, .review-sect p {
+    padding-top: 0;
     padding-bottom: 10px;
     margin: auto;
 }
 
 
+footer {
+    /* border-top-style: solid; */
+    text-align: center;
+    text-align: -webkit-center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) grayscale(10) opacity(1);
+    /* padding-top: 200px; */
+}
+
+footer ul {
+    list-style: none;
+
+}
+
+footer li {
+    display: inline;
+    padding: 0px 10px;
+}
+
+footer a:link, a:visited {
+    color: var(--text);
+}
+
+footer a:hover {
+    font-weight: bold;
+}
 
 
 
-.footer-sect {
+/* .footer-sect {
     padding: 75px 15px;
     font-size: 20px;
-    padding-bottom: 400px;
+    font-size: 20px;
+    text-align: left;
+    text-align: -webkit-left;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) grayscale(10) opacity(1);
+    list-style: none;
 }
 
 .footer-sect h4 {
@@ -178,11 +253,11 @@ body {
 
 .footer-sect a:link, a:visited {
     color: var(--text) invert(--text);
-}
+} */
 
 
-@media (max-width: 1200px) {
-    /* html {
+@media (max-width: 1000px) {
+     /* html {
         max-width:screen;
     }
 
@@ -191,13 +266,19 @@ body {
         padding: 15px;
         margin: auto;
         font-size: 90%;
-    } */
+    }  */
 
-    .main {
-        columns: 1;
+    body {
+        text-align: center;
     }
 
-    .main img {
+    .main, .review-sect {
+        column-count: 1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main img, .review-sect img {
         height: auto;
         width: auto;
         padding: 20px 0px;
