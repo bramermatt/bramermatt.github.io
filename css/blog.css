@@ -131,6 +131,10 @@ body {
     width: 90%;
 }
 
+.blog iframe {
+    padding: 15px;
+}
+
 
 /* @media (max-width: 1350px) {
     html {
