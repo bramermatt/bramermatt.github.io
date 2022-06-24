@@ -122,7 +122,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-height: 250px;
+    max-height: 206px;
     /* width:100%; */
     height:auto;
     overflow:hidden;
@@ -134,7 +134,7 @@ body {
 
 .review-sect {
     padding: 95px 25px;
-    column-count: 2;
+    column-count: 3;
     column-gap: 50px;
     column-rule-width: 1px;
     column-width: 50px;
