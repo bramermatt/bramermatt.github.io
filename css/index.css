@@ -123,7 +123,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-height: 206px;
-    /* width:100%; */
+    max-width: 100%;
     height:auto;
     overflow:hidden;
 }
@@ -134,8 +134,8 @@ body {
 
 .review-sect {
     padding: 95px 25px;
-    column-count: 3;
-    column-gap: 50px;
+    column-count: 4;
+    column-gap: 100px;
     column-rule-width: 1px;
     column-width: 50px;
     font-size: 20px;
@@ -152,7 +152,7 @@ body {
 } */
 
 .updates h4, .school-sect h4, .blog-sect h4, .review-sect h4 {
-    padding-top: 25px;
+    padding-top: 45px;
     margin: 0;
     text-align: center;
 }
