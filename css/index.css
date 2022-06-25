@@ -112,12 +112,21 @@ body {
 
 
 .updates, .school-sect, .blog-sect {
-    font-size: 20px;
+    font-size: 22px;
     padding: 95px 15px;
     text-align: center;
 }
 
-.updates img, .review-sect img {
+.blog-sect {
+    padding: 95px 25px;
+    column-count: 2;
+    column-gap: 25px;
+    column-rule-width: 1px;
+    column-width: 50px;
+    font-size: 20px;
+}
+
+.updates img, .blog-sect img, .review-sect img {
     /* padding: 20px 0px; */
     display: block;
     margin-left: auto;
@@ -126,6 +135,7 @@ body {
     max-width: 100%;
     height:auto;
     overflow:hidden;
+    padding-bottom: 20px;
 }
 
 /* .updates img a:hover, .review-sect img a:hover {
@@ -135,10 +145,17 @@ body {
 .review-sect {
     padding: 95px 25px;
     column-count: 4;
-    column-gap: 100px;
+    column-gap: 25px;
     column-rule-width: 1px;
+    column-rule-style: solid;
     column-width: 50px;
     font-size: 20px;
+}
+
+.review-sect h2 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .review-sect h3, .updates h3, .school-sect h3, .blog-sect h3 {
@@ -152,12 +169,8 @@ body {
 } */
 
 .updates h4, .school-sect h4, .blog-sect h4, .review-sect h4 {
-    padding-top: 45px;
+    padding-top: 10px;
     margin: 0;
-    text-align: center;
-}
-
-.updates p, .school-sect p, .blog-sect p, .review-sect p {
     text-align: center;
 }
 
@@ -180,6 +193,7 @@ body {
     padding-top: 0;
     padding-bottom: 10px;
     margin: auto;
+    text-align: center;
 }
 
 
@@ -272,14 +286,14 @@ footer a:hover {
         text-align: center;
     }
 
-    .main, .review-sect {
+    .main, .blog-sect, .review-sect {
         column-count: 1;
         margin-left: auto;
         margin-right: auto;
         max-width: 600px;
     }
 
-    .main img, .review-sect img {
+    .main img, .blog-sect img, .review-sect img {
         height: auto;
         /* width: auto; */
         padding: 20px 0px;
