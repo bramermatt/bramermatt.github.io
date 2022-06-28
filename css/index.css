@@ -144,10 +144,10 @@ body {
 
 .review-sect {
     padding: 95px 25px;
-    column-count: 3;
+    column-count: 2;
     column-gap: 25px;
     column-rule-width: 1px;
-    column-rule-style: solid;
+    /* column-rule-style: solid; */
     column-width: 50px;
     font-size: 20px;
 }
@@ -167,6 +167,43 @@ body {
 /* .review-sect h4, .blog-sect p {
     break-before: column;
 } */
+
+.review-topic-4-items {
+    columns: 4;
+    padding-bottom: 40px;
+}
+
+.review-topic-4-items h2 {
+    column-span: all;
+}
+
+.review-topic-3-items {
+    columns: 3;
+    padding-bottom: 40px;
+
+}
+
+.review-topic-3-items h2 {
+    column-span: all;
+}
+
+.review-topic-2-items {
+    columns: 2;
+    padding-bottom: 40px;
+}
+
+.review-topic-2-items h2 {
+    column-span: all;
+}
+
+.review-topic-1-item {
+    columns: 1;
+    padding-bottom: 40px;
+}
+
+.review-topic-1-item h2 {
+    column-span: all;
+}
 
 .updates h4, .school-sect h4, .blog-sect h4, .review-sect h4 {
     padding-top: 10px;
@@ -270,7 +307,7 @@ footer a:hover {
 } */
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1255px) {
      /* html {
         max-width:screen;
     }
@@ -286,8 +323,14 @@ footer a:hover {
         text-align: center;
     }
 
-    .main, .blog-sect, .review-sect {
+    .main, .review-sect {
         column-count: 1;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+    }
+
+    .review-topic-1-item, .review-topic-2-items, .review-topic-3-items, .review-topic-4-items {
         margin-left: auto;
         margin-right: auto;
         max-width: 600px;
@@ -302,6 +345,14 @@ footer a:hover {
         max-width: 300px;
     }
 
+}
+
+@media (max-width: 690px) {
+
+    .blog-sect, .review-topic-1-item, .review-topic-2-items, .review-topic-3-items, .review-topic-4-items {
+        columns: 1;
+    }
+    
 }
 
 /* @media (max-width: 800px) {
