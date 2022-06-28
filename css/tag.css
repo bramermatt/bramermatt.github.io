@@ -1,5 +1,5 @@
 html {
-    max-width: 1450px;
+    max-width: 900px;
     margin: auto;
     scroll-behavior: smooth;
 }
@@ -16,23 +16,17 @@ body.dark {
 }
 
 body {
-    /*
-    this was from https://namanhkapur.super.site, I like the ease of creating a max-width. Not sure if that's actually how that's determined. 
-     */
      color: var(--text);
      background: var(--background);
      margin: auto;
      padding: auto;
      max-width: 1250px;
      padding-bottom: 30px;
-    
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-     /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+     font-family: Arial, Helvetica, sans-serif;
  }
-
-
-
-.navbar {
+ 
+ 
+ .navbar {
     border-bottom-style: solid;
     font-size: 20px;
     /* padding: revert; */
@@ -45,7 +39,6 @@ body {
     -webkit-backdrop-filter: blur(10px) grayscale(10) opacity(1);
     backdrop-filter: blur(10px) grayscale(10) opacity(1);
     list-style: none;
-    /* overflow: hidden; */
 }
 
 .navbar ul {
@@ -63,7 +56,7 @@ body {
 
 }
 
-.navbar a:link, .navbar a:visited {
+.navbar a:link, a:visited {
     color: var(--text);
     text-decoration: none;
 }
@@ -83,7 +76,7 @@ body {
 
 .dropdown {
     /* position: relative; */
-    display: block;
+    display: inline-block;
   }
 
 .dpdn-cnt {
@@ -115,44 +108,80 @@ body {
 }
 
 
-.main {
-    padding: 75px 15px;
-    column-count: 2;
-    column-gap: 100px;
-    column-rule-width: 1px;
-    column-width: 100px;
+/* .blog {
+    padding: 24px 15px;
+    font-size: 20px;
 }
 
-.main h1 {
-    padding: auto;
-    margin: auto;
-    font-size: 45px;
+.blog h1 {
+    font-size: 30px;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
 }
 
-.main h2 {
-    padding: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    /* max-width: 800px; */
-    font-size: 24px;
+.blog h3 {
+    font-size: 20px;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+    font-weight: lighter;
 }
 
-.main p {
-    padding: 5px 0px;
-    margin: auto;
+.blog h2 {
     font-size: 26px;
+    margin: 0;
+    padding: 40px 0px 0px 0px;
 }
 
-.main img {
+/* .blog em {
+    align-items: center;
+    font-size: 18px;
+} */
+
+/* .blog ul {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.blog li a:hover {
+    color: var(--text);
+    font-weight: bold;
+  }
+
+
+.blog a:link, a:visited {
+    color: var(--text);
+    padding: 5px 0px;
+    text-align: center; 
+    display: inline-block;
+}
+
+.blog a:hover {
+    color: var(--text);
+    font-weight: bold;
+}
+
+.blog img {
+    padding: 20px 0px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* max-width: 275px; */
-    width:100%;
+    max-height:500px;
+    max-width: 100%;
+    width:auto;
     height:auto;
     overflow:hidden;
+
 }
 
+.blog iframe {
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
 
 .updates, .school-sect {
     font-size: 22px;
@@ -161,9 +190,9 @@ body {
 }
 
 .blog-sect {
-    padding: 95px 25px;
-    column-count: 2;
-    column-gap: 50px;
+    padding: 95px 0px 25px 0px;
+    /* column-count: 2;
+    column-gap: 50px; */
     /* column-rule-width: 1px; */
     /* column-width: 50px; */
     font-size: 20px;
@@ -218,9 +247,9 @@ body {
 } */
 
 .review-sect {
-    padding: 95px 25px;
-    column-count: 2;
-    column-gap: 30px;
+    padding: 95px 0px 25px 0px;
+    /* column-count: 2;
+    column-gap: 30px; */
     /* column-rule-width: 1px; */
     /* column-rule-style: solid; */
     /* column-width: 50px; */
@@ -310,7 +339,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px) grayscale(10) opacity(1);
     backdrop-filter: blur(10px) grayscale(10) opacity(1);
     /* padding-top: 200px; */
 }
@@ -333,6 +362,22 @@ footer a:hover {
     font-weight: bold;
 }
 
+
+@media (max-width: 700px) {
+
+    /* .navbar {
+        text-align: center;
+    } */
+
+    /* .blog-sect, .review-topic-1-item, .review-topic-2-items, .review-topic-3-items, .review-topic-4-items {
+        columns: 1;
+    } */
+    .dropdown:hover {
+        padding-bottom: 40%;
+        transition: 0.5s ease-in-out;
+    }
+    
+}
 
 
 /* .footer-sect {
@@ -392,10 +437,6 @@ footer a:hover {
         text-align: center;
     }
 
-    /* .navbar {
-        text-align: center;
-    } */
-
     .main, .review-sect {
         column-count: 1;
         margin-left: auto;
@@ -418,136 +459,12 @@ footer a:hover {
         max-width: 300px;
     }
 
-
-
 }
 
 @media (max-width: 700px) {
 
-    /* .navbar {
-        text-align: center;
-    } */
-
     .blog-sect, .review-topic-1-item, .review-topic-2-items, .review-topic-3-items, .review-topic-4-items {
         columns: 1;
     }
-    .dropdown:hover {
-        padding-bottom: 40%;
-        transition: 0.5s ease-in-out;
-    }
     
 }
-
-/* @media (max-width: 800px) {
-    html {
-        max-width:screen;
-    }
-
-    body {
-        max-width: 650px;
-        padding: 15px;
-        margin: auto;
-    }
-
-    body h1, h2, h3, p, a {
-        font-size: 90%;
-    }
-
-    .main {
-        columns: 1;
-    }
-
-    .main img {
-        height: auto;
-        width: auto;
-        padding: 20px 0px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-} */
-
-/* @media (max-width: 500px) {
-    html {
-        max-width:screen;
-    }
-
-    body {
-        max-width: 450px;
-        padding: 15px;
-        margin: auto;
-    }
-
-    body h1, h2, h3, p, a {
-        font-size: 90%;
-    }
-
-    body ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        font-size: 90%;
-    }
-
-    .navbar {
-        padding: 0;
-        margin: auto;
-    }
-
-    .main {
-        columns: 1;
-    }
-
-    .main img {
-        height: auto;
-        width: auto;
-        padding: 20px 0px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-} */
-
-/* @media (max-width: 340px) {
-
-    html {
-        max-width:screen;
-    }
-
-    body {
-        max-width: 340px;
-        padding: 15px;
-        margin: auto;
-    }
-
-    body ul {
-        list-style-type: none;
-        display: inline;
-        margin: 0;
-        padding: 0;
-        font-size: 85%;
-    }
-
-    body h1, h2, h3, p, a {
-        font-size: 85%;
-    }
-
-    .navbar {
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    .navbar a {
-        padding-left: 2px;
-    }
-
-    .main {
-        columns: 1;
-    }
-
-    .main img {
-        height: auto;
-        width: auto;
-        padding: 20px 0px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-} */

@@ -36,7 +36,7 @@ body {
     position: sticky;
     z-index: 1;
     top: 0;
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px) grayscale(10) opacity(1);
     backdrop-filter: blur(10px) grayscale(10) opacity(1);
     list-style: none;
 }
@@ -64,6 +64,47 @@ body {
 .navbar a:hover {
     color: var(--text);
     font-weight: bold;
+}
+
+.navbar .dropdown {
+    display: inline-table; 
+}
+
+.navbar .dpdn-cnt {
+    margin: 0;
+}
+
+.dropdown {
+    /* position: relative; */
+    display: inline-block;
+  }
+
+.dpdn-cnt {
+    display: none;
+    position: absolute;
+}
+
+ .dpdn-cnt a {
+    float: none;
+    display: block;
+    text-align: left;
+    /* overflow: hidden; */
+}
+
+/* .dpdn-cnt a:hover {
+    display: block;
+    position: relative;
+
+} */
+
+.dropdown:hover {
+    padding-bottom: 14%;
+    transition: 0.5s ease-in-out;
+}
+
+.dropdown:hover .dpdn-cnt {
+    display: block;
+    /* position: absolute; */
 }
 
 
@@ -140,6 +181,27 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 1255px) {
+
+    /* .navbar {
+        text-align: center;
+    } */
+
+}
+
+@media (max-width: 700px) {
+
+    /* .navbar {
+        text-align: center;
+    } */
+
+    .dropdown:hover {
+        padding-bottom: 40%;
+        transition: 0.5s ease-in-out;
+    }
+    
 }
 
 
