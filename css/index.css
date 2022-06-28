@@ -111,7 +111,7 @@ body {
 }
 
 
-.updates, .school-sect, .blog-sect {
+.updates, .school-sect {
     font-size: 22px;
     padding: 95px 15px;
     text-align: center;
@@ -120,14 +120,15 @@ body {
 .blog-sect {
     padding: 95px 25px;
     column-count: 2;
-    column-gap: 25px;
-    column-rule-width: 1px;
-    column-width: 50px;
+    column-gap: 50px;
+    /* column-rule-width: 1px; */
+    /* column-width: 50px; */
     font-size: 20px;
+    text-align: center;
 }
 
 .updates img, .blog-sect img, .review-sect img {
-    /* padding: 20px 0px; */
+    padding-top: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -135,8 +136,39 @@ body {
     max-width: 100%;
     height:auto;
     overflow:hidden;
+    padding-bottom: 10px;
+}
+
+.updates h4, .school-sect h4, .blog-sect h4, .review-sect h4 {
+    padding-top: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.updates ul, .school-sect ul, .blog-sect ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.updates li a:hover, .school-sect li a:hover, .blog-sect li a:hover  {
+    color: var(--text);
+    font-weight: bold;
     padding-bottom: 20px;
 }
+
+.updates a:link, a:visited, .school-sect a:link, a:visited, a:visited, .blog-sect a:link, a:visited, .book-sect a:link, a:visited {
+    color: var(--text);
+}
+
+.updates p, .school-sect p, .blog-sect p, .review-sect p {
+    padding: 0;
+    /* padding-top: 0; */
+    /* padding-bottom: 10px; */
+    margin: auto;
+    text-align: center;
+}
+
 
 /* .updates img a:hover, .review-sect img a:hover {
     transform: scale(1);
@@ -145,10 +177,10 @@ body {
 .review-sect {
     padding: 95px 25px;
     column-count: 2;
-    column-gap: 25px;
-    column-rule-width: 1px;
+    column-gap: 30px;
+    /* column-rule-width: 1px; */
     /* column-rule-style: solid; */
-    column-width: 50px;
+    /* column-width: 50px; */
     font-size: 20px;
 }
 
@@ -175,6 +207,7 @@ body {
 
 .review-topic-4-items h2 {
     column-span: all;
+    margin-bottom: 0;
 }
 
 .review-topic-3-items {
@@ -185,6 +218,7 @@ body {
 
 .review-topic-3-items h2 {
     column-span: all;
+    margin-bottom: 0;
 }
 
 .review-topic-2-items {
@@ -194,6 +228,7 @@ body {
 
 .review-topic-2-items h2 {
     column-span: all;
+    margin-bottom: 0;
 }
 
 .review-topic-1-item {
@@ -203,35 +238,10 @@ body {
 
 .review-topic-1-item h2 {
     column-span: all;
+    margin-bottom: 0;
 }
 
-.updates h4, .school-sect h4, .blog-sect h4, .review-sect h4 {
-    padding-top: 10px;
-    margin: 0;
-    text-align: center;
-}
 
-.updates ul, .school-sect ul, .blog-sect ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.updates li a:hover, .school-sect li a:hover, .blog-sect li a:hover  {
-    color: var(--text);
-    font-weight: bold;
-}
-
-.updates a:link, a:visited, .school-sect a:link, a:visited, a:visited, .blog-sect a:link, a:visited, .book-sect a:link, a:visited {
-    color: var(--text);
-}
-
-.updates p, .school-sect p, .blog-sect p, .review-sect p {
-    padding-top: 0;
-    padding-bottom: 10px;
-    margin: auto;
-    text-align: center;
-}
 
 
 footer {
@@ -347,7 +357,7 @@ footer a:hover {
 
 }
 
-@media (max-width: 690px) {
+@media (max-width: 700px) {
 
     .blog-sect, .review-topic-1-item, .review-topic-2-items, .review-topic-3-items, .review-topic-4-items {
         columns: 1;
