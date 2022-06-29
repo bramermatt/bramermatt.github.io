@@ -1,5 +1,5 @@
 html {
-    max-width: 1450px;
+    max-width: 1550px;
     margin: auto;
     scroll-behavior: smooth;
 }
@@ -23,7 +23,7 @@ body {
      background: var(--background);
      margin: auto;
      padding: auto;
-     max-width: 1300px;
+     /* max-width: 1300px; */
      padding-bottom: 30px;
     
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
@@ -105,8 +105,8 @@ body {
 } */
 
 .dropdown:hover {
-    padding-bottom: 20%;
-    transition: 0.5s ease-in-out;
+    padding-bottom: 15%;
+    transition: 0.7s ease-in-out;
 }
 
 .dropdown:hover .dpdn-cnt {
@@ -170,7 +170,7 @@ body {
     text-align: center;
 }
 
-.updates img, .blog-sect img, .review-sect img {
+.school-sect img, .updates img, .blog-sect img, .review-sect img {
     padding-top: 20px;
     display: block;
     margin-left: auto;
@@ -262,6 +262,7 @@ body {
     columns: 4;
     column-gap: 10px;
     padding-bottom: 40px;
+    
 }
 
 
@@ -269,6 +270,8 @@ body {
 .review-topic-4-items h2 {
     column-span: all;
     margin-bottom: 0;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
 }
 
 .review-topic-3-items {
@@ -280,6 +283,8 @@ body {
 .review-topic-3-items h2 {
     column-span: all;
     margin-bottom: 0;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
 }
 
 .review-topic-2-items {
@@ -290,6 +295,8 @@ body {
 .review-topic-2-items h2 {
     column-span: all;
     margin-bottom: 0;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
 }
 
 .review-topic-1-item {
@@ -300,6 +307,8 @@ body {
 .review-topic-1-item h2 {
     /* column-span: all; */
     margin-bottom: 0;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
 }
 
 

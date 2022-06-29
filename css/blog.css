@@ -1,5 +1,5 @@
 html {
-    max-width: 900px;
+    max-width: 1550px;
     margin: auto;
     scroll-behavior: smooth;
 }
@@ -20,7 +20,7 @@ body {
      background: var(--background);
      margin: auto;
      padding: auto;
-     max-width: 1250px;
+     /* max-width: 1250px; */
      padding-bottom: 30px;
      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
  }
@@ -111,6 +111,9 @@ body {
 .blog {
     padding: 24px 15px;
     font-size: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .blog h1 {
