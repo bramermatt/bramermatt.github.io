@@ -372,9 +372,22 @@ footer a:hover {
     /* .blog-sect, .review-topic-1-item, .review-topic-2-items, .review-topic-3-items, .review-topic-4-items {
         columns: 1;
     } */
+    
+    .dpdn-cnt {
+        display: none;
+    }
+
+    .dpdn-cnt a {
+        display: none;
+    }
+
+    
+    .dropdown:hover .dpdn-cnt {
+        display: none;
+    }
+
     .dropdown:hover {
-        padding-bottom: 40%;
-        transition: 0.5s ease-in-out;
+        padding-bottom: 0;
     }
     
 }

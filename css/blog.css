@@ -123,7 +123,7 @@ body {
     font-size: 20px;
     margin: 0px 0px 10px 0px;
     text-align: center;
-    font-weight: lighter;
+    /* font-weight: lighter; */
 }
 
 .blog h2 {
@@ -197,9 +197,21 @@ body {
         text-align: center;
     } */
 
+    .dpdn-cnt {
+        display: none;
+    }
+
+    .dpdn-cnt a {
+        display: none;
+    }
+
+    
+    .dropdown:hover .dpdn-cnt {
+        display: none;
+    }
+
     .dropdown:hover {
-        padding-bottom: 40%;
-        transition: 0.5s ease-in-out;
+        padding-bottom: 0;
     }
     
 }
