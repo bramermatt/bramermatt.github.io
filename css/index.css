@@ -82,7 +82,6 @@ body {
 }
 
 .dropdown {
-    /* position: relative; */
     display: block;
   }
 
@@ -95,23 +94,16 @@ body {
     float: none;
     display: block;
     text-align: left;
-    /* overflow: hidden; */
 }
 
-/* .dpdn-cnt a:hover {
-    display: block;
-    position: relative;
-
-} */
-
-.dropdown:hover {
+/* .dropdown:hover {
     padding-bottom: 15%;
     transition: 0.7s ease-in-out;
-}
+} */
 
 .dropdown:hover .dpdn-cnt {
-    display: block;
-    /* position: absolute; */
+    /* display: block; */
+    display: none;
 }
 
 
@@ -158,14 +150,13 @@ body {
     font-size: 22px;
     padding: 95px 15px;
     text-align: center;
+    text-decoration: none;
 }
 
 .blog-sect {
     padding: 95px 25px;
     column-count: 2;
     column-gap: 75px;
-    /* column-rule-width: 1px; */
-    /* column-width: 50px; */
     font-size: 20px;
     text-align: center;
 }
@@ -180,6 +171,7 @@ body {
     height:auto;
     overflow:hidden;
     padding-bottom: 10px;
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
 }
 
 .updates h4, .school-sect h4, .blog-sect h4, .review-sect h4 {
@@ -194,10 +186,11 @@ body {
     padding: 0;
 }
 
-.updates li a:hover, .school-sect li a:hover, .blog-sect li a:hover  {
+.updates li a:hover, .school-sect li a:hover, .blog-sect li a:hover, .review-sect li a:hover  {
     color: var(--text);
     font-weight: bold;
     padding-bottom: 20px;
+    text-decoration: none;
 }
 
 .updates a:link, a:visited, .school-sect a:link, a:visited, a:visited, .blog-sect a:link, a:visited, .book-sect a:link, a:visited {
@@ -210,6 +203,7 @@ body {
     /* padding-bottom: 10px; */
     margin: auto;
     text-align: center;
+    font-weight: lighter;
 }
 
 
@@ -221,9 +215,6 @@ body {
     padding: 95px 25px;
     column-count: 2;
     column-gap: 30px;
-    /* column-rule-width: 1px; */
-    /* column-rule-style: solid; */
-    /* column-width: 50px; */
     font-size: 20px;
 }
 
@@ -249,41 +240,43 @@ body {
     padding: 0;
 }
 
-.review-topic-4-items li a:hover, .review-topic-3-items li a:hover, .review-topic-2-items li a:hover, .review-topic-1-item li a:hover  {
+/* .review-topic-4-items li a:hover, .review-topic-3-items li a:hover, .review-topic-2-items li a:hover, .review-topic-1-item li a:hover  {
     color: var(--text);
-}
+} */
 
 .review-topic-4-items a:link, a:visited, .review-topic-3-items a:link, a:visited, .review-topic-2-items a:link, a:visited, .review-topic-1-item a:link, a:visited {
     color: var(--text);
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .review-topic-4-items {
     columns: 4;
     column-gap: 10px;
     padding-bottom: 40px;
-    
 }
-
-
 
 .review-topic-4-items h2 {
     column-span: all;
     margin-bottom: 0;
     border-bottom-style: solid;
+    border-width: 1.5px;
     padding-bottom: 10px;
+}
+
+.review-topic-4-items h2:hover, .review-topic-3-items h2:hover, .review-topic-2-items h2:hover, .review-topic-1-item h2:hover {
+    font-weight: lighter;
 }
 
 .review-topic-3-items {
     columns: 3;
     padding-bottom: 40px;
-
 }
 
 .review-topic-3-items h2 {
     column-span: all;
     margin-bottom: 0;
     border-bottom-style: solid;
+    border-width: 1.5px;
     padding-bottom: 10px;
 }
 
@@ -296,6 +289,7 @@ body {
     column-span: all;
     margin-bottom: 0;
     border-bottom-style: solid;
+    border-width: 1.5px;
     padding-bottom: 10px;
 }
 
@@ -308,6 +302,7 @@ body {
     /* column-span: all; */
     margin-bottom: 0;
     border-bottom-style: solid;
+    border-width: 1.5px;
     padding-bottom: 10px;
 }
 

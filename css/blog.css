@@ -97,14 +97,14 @@ body {
 
 } */
 
-.dropdown:hover {
-    padding-bottom: 14%;
-    transition: 0.5s ease-in-out;
-}
+/* .dropdown:hover {
+    padding-bottom: 15%;
+    transition: 0.7s ease-in-out;
+} */
 
 .dropdown:hover .dpdn-cnt {
-    display: block;
-    /* position: absolute; */
+    /* display: block; */
+    display: none;
 }
 
 
@@ -126,7 +126,7 @@ body {
     font-size: 20px;
     margin: 0px 0px 10px 0px;
     text-align: center;
-    /* font-weight: lighter; */
+    font-weight: lighter;
 }
 
 .blog h2 {

@@ -97,14 +97,14 @@ body {
 
 } */
 
-.dropdown:hover {
-    padding-bottom: 14%;
-    transition: 0.5s ease-in-out;
-}
+/* .dropdown:hover {
+    padding-bottom: 15%;
+    transition: 0.7s ease-in-out;
+} */
 
 .dropdown:hover .dpdn-cnt {
-    display: block;
-    /* position: absolute; */
+    /* display: block; */
+    display: none;
 }
 
 
@@ -199,7 +199,7 @@ body {
     text-align: center;
 }
 
-.updates img, .blog-sect img, .review-sect img {
+.school-sect img, .updates img, .blog-sect img, .review-sect img {
     padding-top: 20px;
     display: block;
     margin-left: auto;
@@ -209,6 +209,7 @@ body {
     height:auto;
     overflow:hidden;
     padding-bottom: 10px;
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
 }
 
 .updates h4, .school-sect h4, .blog-sect h4, .review-sect h4 {
@@ -277,36 +278,44 @@ body {
     padding: 0;
 }
 
-.review-topic-4-items li a:hover, .review-topic-3-items li a:hover, .review-topic-2-items li a:hover, .review-topic-1-item li a:hover  {
+/* .review-topic-4-items li a:hover, .review-topic-3-items li a:hover, .review-topic-2-items li a:hover, .review-topic-1-item li a:hover  {
     color: var(--text);
-}
+} */
 
 .review-topic-4-items a:link, a:visited, .review-topic-3-items a:link, a:visited, .review-topic-2-items a:link, a:visited, .review-topic-1-item a:link, a:visited {
     color: var(--text);
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .review-topic-4-items {
     columns: 4;
+    column-gap: 10px;
     padding-bottom: 40px;
 }
-
-
 
 .review-topic-4-items h2 {
     column-span: all;
     margin-bottom: 0;
+    /* border-bottom-style: solid; */
+    border-width: 1.5px;
+    padding-bottom: 10px;
+}
+
+.review-topic-4-items h2:hover, .review-topic-3-items h2:hover, .review-topic-2-items h2:hover, .review-topic-1-item h2:hover {
+    font-weight: lighter;
 }
 
 .review-topic-3-items {
     columns: 3;
     padding-bottom: 40px;
-
 }
 
 .review-topic-3-items h2 {
     column-span: all;
     margin-bottom: 0;
+    /* border-bottom-style: solid; */
+    border-width: 1.5px;
+    padding-bottom: 10px;
 }
 
 .review-topic-2-items {
@@ -317,6 +326,9 @@ body {
 .review-topic-2-items h2 {
     column-span: all;
     margin-bottom: 0;
+    /* border-bottom-style: solid; */
+    border-width: 1.5px;
+    padding-bottom: 10px;
 }
 
 .review-topic-1-item {
@@ -325,8 +337,11 @@ body {
 }
 
 .review-topic-1-item h2 {
-    column-span: all;
+    /* column-span: all; */
     margin-bottom: 0;
+    /* border-bottom-style: solid; */
+    border-width: 1.5px;
+    padding-bottom: 10px;
 }
 
 
