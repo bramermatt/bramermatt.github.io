@@ -110,9 +110,10 @@ body {
 .main {
     padding: 75px 15px;
     column-count: 2;
-    column-gap: 100px;
+    column-gap: 75px;
     column-rule-width: 1px;
-    column-width: 100px;
+    /* column-width: 100px; */
+     text-decoration: none;
 }
 
 .main h1 {
@@ -135,6 +136,14 @@ body {
     font-size: 26px;
 }
 
+.main ul {
+    list-style: none;
+    font-size: 20px;
+    /* font-weight: bold; */
+    padding: 0;
+    /* margin: 0; */
+}
+
 .main img {
     display: block;
     margin-left: auto;
@@ -143,6 +152,7 @@ body {
     width:100%;
     height:auto;
     overflow:hidden;
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
 }
 
 
@@ -186,14 +196,14 @@ body {
     padding: 0;
 }
 
-.updates li a:hover, .school-sect li a:hover, .blog-sect li a:hover, .review-sect li a:hover  {
+.main li a:hover, .updates li a:hover, .school-sect li a:hover, .blog-sect li a:hover, .review-sect li a:hover  {
     color: var(--text);
     font-weight: bold;
     padding-bottom: 20px;
     text-decoration: none;
 }
 
-.updates a:link, a:visited, .school-sect a:link, a:visited, a:visited, .blog-sect a:link, a:visited, .book-sect a:link, a:visited {
+.main a:link, a:visited, .updates a:link, a:visited, .school-sect a:link, a:visited, a:visited, .blog-sect a:link, a:visited, .book-sect a:link, a:visited {
     color: var(--text);
 }
 
@@ -213,9 +223,13 @@ body {
 
 .review-sect {
     padding: 95px 25px;
-    column-count: 2;
+    /* column-count: 2; */
     column-gap: 30px;
     font-size: 20px;
+    padding-bottom: 200px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .review-sect h2 {
@@ -252,7 +266,7 @@ body {
 .review-topic-4-items {
     columns: 4;
     column-gap: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .review-topic-4-items h2 {
@@ -269,7 +283,7 @@ body {
 
 .review-topic-3-items {
     columns: 3;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .review-topic-3-items h2 {
@@ -282,7 +296,7 @@ body {
 
 .review-topic-2-items {
     columns: 2;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .review-topic-2-items h2 {
@@ -295,7 +309,7 @@ body {
 
 .review-topic-1-item {
     columns: 1;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .review-topic-1-item h2 {
