@@ -159,6 +159,8 @@ body {
     padding: 5px 0px;
     text-align: center; 
     display: inline-block;
+    /* text-decoration: none;
+    font-style: oblique; */
 }
 
 .blog a:hover {

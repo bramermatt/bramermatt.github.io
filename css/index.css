@@ -260,7 +260,8 @@ body {
 
 .review-topic-4-items a:link, a:visited, .review-topic-3-items a:link, a:visited, .review-topic-2-items a:link, a:visited, .review-topic-1-item a:link, a:visited {
     color: var(--text);
-    /* text-decoration: none; */
+    text-decoration: none;
+    font-style: oblique;
 }
 
 .review-topic-4-items {
