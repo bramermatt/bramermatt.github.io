@@ -171,7 +171,7 @@ body {
     text-align: center;
 }
 
-.school-sect img, .updates img, .blog-sect img, .review-sect img {
+.school-sect img, .updates img, .blog-sect img, .project-sect img, .review-sect img {
     padding-top: 20px;
     display: block;
     margin-left: auto;
@@ -184,7 +184,7 @@ body {
     filter: drop-shadow(0 0 2px rgb(0, 0, 0));
 }
 
-.updates h4, .school-sect h4, .blog-sect h4, .review-sect h4 {
+.updates h4, .school-sect h4, .blog-sect h4, .project-sect h4, .review-sect h4 {
     padding-top: 40px;
     margin: 0;
     text-align: center;
@@ -196,18 +196,18 @@ body {
     padding: 0;
 }
 
-.main li a:hover, .updates li a:hover, .school-sect li a:hover, .blog-sect li a:hover, .review-sect li a:hover  {
+.main li a:hover, .updates li a:hover, .school-sect li a:hover, .blog-sect li a:hover, .project-sect li a:hover, .review-sect li a:hover  {
     color: var(--text);
     font-weight: bold;
     padding-bottom: 20px;
     text-decoration: none;
 }
 
-.main a:link, a:visited, .updates a:link, a:visited, .school-sect a:link, a:visited, a:visited, .blog-sect a:link, a:visited, .book-sect a:link, a:visited {
+.main a:link, a:visited, .updates a:link, a:visited, .school-sect a:link, a:visited, a:visited, .blog-sect a:link, a:visited, .review-sect a:link, a:visited, .project-sect a:link, a:visited {
     color: var(--text);
 }
 
-.updates p, .school-sect p, .blog-sect p, .review-sect p {
+.updates p, .school-sect p, .blog-sect p, .project-sect p, .review-sect p {
     padding: 0;
     /* padding-top: 0; */
     /* padding-bottom: 10px; */
@@ -220,6 +220,29 @@ body {
 /* .updates img a:hover, .review-sect img a:hover {
     transform: scale(1);
 } */
+
+.project-sect {
+    padding: 95px 0px 25px 0px;
+    /* column-count: 2;
+    column-gap: 50px; */
+    /* column-rule-width: 1px; */
+    /* column-width: 50px; */
+    font-size: 20px;
+    text-align: center;
+}
+
+.project-sect h3 {
+    font-size: 50px;
+    column-span: all;
+    text-align: center;
+}
+
+.project-sect h4 a:hover, .review-sect h4 a:hover {
+    font-weight: lighter;
+}
+
+
+
 
 .review-sect {
     padding: 95px 25px;
@@ -278,7 +301,7 @@ body {
     padding-bottom: 10px;
 }
 
-.review-topic-4-items h2:hover, .review-topic-3-items h2:hover, .review-topic-2-items h2:hover, .review-topic-1-item h2:hover {
+.review-topic-4-items h2:hover, .review-topic-4-items h4:hover, .review-topic-3-items h4:hover, .review-topic-3-items h2:hover, .review-topic-2-items h4:hover, .review-topic-2-items h2:hover, .review-topic-1-item h2:hover, .review-topic-1-item h4:hover {
     font-weight: lighter;
 }
 
@@ -430,7 +453,7 @@ footer a:hover {
         max-width: 600px;
     }
 
-    .main img, .blog-sect img, .review-sect img {
+    .main img, .blog-sect img, .project-sect img, .review-sect img {
         height: auto;
         /* width: auto; */
         padding: 20px 0px;
