@@ -165,8 +165,8 @@ body {
 
 .blog-sect {
     padding: 95px 25px;
-    column-count: 2;
-    column-gap: 75px;
+    column-count: 3;
+    column-gap: 50px;
     font-size: 20px;
     text-align: center;
 }
@@ -440,7 +440,7 @@ footer a:hover {
         text-align: center;
     } */
 
-    .main, .review-sect {
+    .main, .updates, .blog-sect, .review-sect {
         column-count: 1;
         margin-left: auto;
         margin-right: auto;
