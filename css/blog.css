@@ -1,5 +1,5 @@
 html {
-    max-width: 1550px;
+    /* max-width: 1550px; */
     margin: auto;
     scroll-behavior: smooth;
 }
@@ -30,29 +30,33 @@ body {
     border-bottom-style: solid;
     font-size: 20px;
     /* padding: revert; */
-    text-align: left;
+    
     text-align: -webkit-left;
     position: -webkit-sticky;
     position: sticky;
     z-index: 1;
     top: 0;
-    -webkit-backdrop-filter: blur(10px) grayscale(10) opacity(1);
-    backdrop-filter: blur(10px) grayscale(10) opacity(1);
+    -webkit-backdrop-filter: blur(1000px) grayscale(10) opacity(50);
+    backdrop-filter: blur(1000px) grayscale(10) opacity(50);
     list-style: none;
+    /* overflow: hidden; */
 }
 
 .navbar ul {
-    padding-top: 15px;
-    padding-left: 10px;
+    padding-top: 10px;
+    padding-left: 0;
+    /* padding-left: 10px; */
+    text-align: center;
 }
 
 
 .navbar li {
     display: inline;
+    padding: 0;
 }
 
 .navbar a {
-    padding-left: 8px;
+    padding: 8px;
 
 }
 
@@ -107,11 +111,32 @@ body {
     display: none;
 }
 
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 25px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    /* COLOR: red; Set a background color */
+    color: var(--text); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 40px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+  }
+  
+  #myBtn:hover {
+    color: #555; /* Add a dark-grey background on hover */
+  }
+
 
 .blog {
     padding: 24px 15px;
     font-size: 20px;
-    max-width: 900px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -132,7 +157,7 @@ body {
 .blog h2 {
     font-size: 26px;
     margin: 0;
-    padding: 40px 0px 0px 0px;
+    padding: 80px 0px 0px 0px;
 }
 
 /* .blog em {
@@ -190,6 +215,15 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.blog audio {
+    text-align: center;
+    padding: 25px 0px;
+    /* max-width: 500px; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 @media (max-width: 1255px) {
