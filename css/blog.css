@@ -148,6 +148,10 @@ body {
     font-size: 20px;
 }
 
+.blog li {
+    padding-top: 15px;
+}
+
 .blog li a:hover {
     color: var(--text);
     font-weight: bold;
