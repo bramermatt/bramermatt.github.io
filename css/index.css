@@ -137,7 +137,7 @@ body {
 
 
 .main {
-    padding: 75px 15px;
+    padding: 95px 25px;
     column-count: 2;
     column-gap: 75px;
     column-rule-width: 1px;
@@ -185,7 +185,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
-    /* max-width: 275px; */
+    max-width: 500px;
     width:100%;
     height:auto;
     overflow:hidden;
@@ -233,7 +233,7 @@ body {
 }
 
 .updates h4, .school-sect h4, .blog-sect h4, .project-sect h4, .review-sect h4 {
-    padding-top: 40px;
+    padding-top: 60px;
     margin: 0;
     text-align: center;
 }
@@ -340,7 +340,7 @@ body {
 
 .review-topic-4-items {
     columns: 4;
-    column-gap: 10px;
+    column-gap: 15px;
     padding-bottom: 60px;
 }
 
@@ -358,6 +358,7 @@ body {
 
 .review-topic-3-items {
     columns: 3;
+    column-gap: 15px;
     padding-bottom: 60px;
 }
 
@@ -371,6 +372,7 @@ body {
 
 .review-topic-2-items {
     columns: 2;
+    column-gap: 15px;
     padding-bottom: 60px;
 }
 
@@ -471,7 +473,7 @@ footer a:hover {
 } */
 
 
-@media (max-width: 1400px) {
+@media (max-width: 1540px) {
      /* html {
         max-width:screen;
     }
@@ -498,11 +500,23 @@ footer a:hover {
         max-width: 1000px;
     }
 
-    .review-topic-1-item, .review-topic-3-items {
-        column-count: 1;
+    .review-topic-1-item {
         margin-left: auto;
         margin-right: auto;
         max-width: 1000px;
+    }
+
+    .review-topic-3-items {
+        column-count: 3;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;
+    }
+
+    .updates h4, .school-sect h4, .blog-sect h4, .project-sect h4, .review-sect h4 {
+        padding-top: 5px;
+        margin: 0;
+        text-align: center;
     }
 
    .review-topic-2-items, .review-topic-4-items {
@@ -518,14 +532,14 @@ footer a:hover {
         padding: 20px 0px;
         margin-left: auto;
         margin-right: auto;
-        max-width: 300px;
+        /* max-width: 300px; */
     }
 
 
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1040px) {
 
     /* .navbar {
         text-align: center;
@@ -533,6 +547,20 @@ footer a:hover {
 
     .blog-sect, .review-topic-1-item, .review-topic-2-items, .review-topic-3-items, .review-topic-4-items {
         columns: 1;
+    }
+
+    .review-topic-2-items, .review-topic-4-items {
+        columns: 2;
+    }
+
+    .review-sect, .blog-sect, .project-sect {
+        padding-top: 10px;
+    }
+
+    .updates h4, .school-sect h4, .blog-sect h4, .project-sect h4, .review-sect h4 {
+        padding-top: 10px;
+        margin: 0;
+        text-align: center;
     }
 
     .dpdn-cnt {
