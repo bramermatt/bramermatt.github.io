@@ -185,8 +185,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
-    max-width: 500px;
-    width:100%;
+    /* max-width: 400px; */
+    width: 100%;
     height:auto;
     overflow:hidden;
     filter: drop-shadow(0 0 2px rgb(0, 0, 0));
@@ -473,7 +473,7 @@ footer a:hover {
 } */
 
 
-@media (max-width: 1540px) {
+@media (max-width: 1520px) {
      /* html {
         max-width:screen;
     }
@@ -497,7 +497,7 @@ footer a:hover {
         column-count: 1;
         margin-left: auto;
         margin-right: auto;
-        max-width: 1000px;
+        max-width: 1300px;
     }
 
     .review-topic-1-item {
@@ -510,36 +510,46 @@ footer a:hover {
         column-count: 3;
         margin-left: auto;
         margin-right: auto;
-        max-width: 1000px;
+        max-width: 1200px;
     }
 
-    .updates h4, .school-sect h4, .blog-sect h4, .project-sect h4, .review-sect h4 {
-        padding-top: 5px;
-        margin: 0;
-        text-align: center;
-    }
-
-   .review-topic-2-items, .review-topic-4-items {
+    .review-topic-2-items {
         column-count: 2;
         margin-left: auto;
         margin-right: auto;
         max-width: 1000px;
     }
 
-    .main img, .blog-sect img, .project-sect img, .review-sect img {
-        height: auto;
-        /* width: auto; */
-        padding: 20px 0px;
+    .updates h4, .school-sect h4, .blog-sect h4, .project-sect h4, .review-sect h4 {
+        /* padding-top: 40px; */
+        margin: 0;
+        text-align: center;
+    }
+
+  .review-topic-4-items {
+        column-count: 4;
         margin-left: auto;
         margin-right: auto;
-        /* max-width: 300px; */
+        max-width: 1000px;
+    }
+
+    .main img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+        max-width: 350px;
+        width: 100%;
+        height:auto;
+        overflow:hidden;
+        filter: drop-shadow(0 0 2px rgb(0, 0, 0));
     }
 
 
 
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1240px) {
 
     /* .navbar {
         text-align: center;
@@ -557,11 +567,6 @@ footer a:hover {
         padding-top: 10px;
     }
 
-    .updates h4, .school-sect h4, .blog-sect h4, .project-sect h4, .review-sect h4 {
-        padding-top: 10px;
-        margin: 0;
-        text-align: center;
-    }
 
     .dpdn-cnt {
         display: none;
