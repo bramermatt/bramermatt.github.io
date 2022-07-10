@@ -42,8 +42,8 @@ body {
 
     z-index: 1;
     top: 0;
-    -webkit-backdrop-filter: blur(1000px) grayscale(10) opacity(50);
-    backdrop-filter: blur(20px) grayscale(10) opacity(50);
+    /* -webkit-backdrop-filter: blur(1000px) grayscale(10) opacity(50);
+    backdrop-filter: blur(20px) grayscale(10) opacity(50); */
     list-style: none;
 
 }
@@ -143,9 +143,8 @@ body {
 .main {
     padding: 25px 25px 115px 25px;
     column-count: 2;
-    column-gap: 75px;
-    column-rule-width: 1px;
-    max-width: 1400px;
+    /* column-gap: 100px; */
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     /* column-width: 100px; */
@@ -180,9 +179,9 @@ body {
     /* margin: 0; */
 }
 
-.main li {
+/* .main li {
     padding-bottom: 10px;
-}
+} */
 
 .main img {
     display: block;
@@ -215,7 +214,7 @@ body {
 .blog-sect {
     padding: 65px 25px;
     column-count: 2;
-    column-gap: 100px;
+    column-gap: 120px;
     max-width: 1000px;
     font-size: 20px;
     margin-left: auto;
@@ -225,8 +224,8 @@ body {
 
 .blog-sect h4 {
     margin: 0;
-    padding-top: 10px;
-    line-height: 1.25;
+    padding-top: 15px;
+    /* line-height: 1.25; */
 }
 
 .blog-sect p {
@@ -295,11 +294,9 @@ body {
 
 .project-sect {
     padding: 65px 25px;
-    /* column-count: 2;
-    column-gap: 50px; */
-    /* column-rule-width: 1px; */
-    /* column-width: 50px; */
-    max-width: 1000px;
+    column-count: 1;
+    /* column-gap: 100px; */
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
@@ -322,8 +319,8 @@ body {
 .review-sect {
     padding: 65px 25px;
     column-count: 2;
-    column-gap: 100px;
-    max-width: 1200px;
+    /* column-gap: 50px; */
+    max-width: 1235px;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -388,7 +385,7 @@ body {
 .review-topic-2-items {
     columns: 2;
     column-gap: 15px;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 .review-topic-2-items h2 {
@@ -411,9 +408,9 @@ body {
 
 .content-item-row {
     --divider: var(--theme-elements-contentItem-divider,#d3ddd9);
-    padding: 18px 0px;
-    border-bottom: solid 1px var(--divider);
-    border-top: solid 1px var(--divider);
+    /* padding: 18px 0px; */
+    border-bottom: solid .5px var(--divider);
+    border-top: solid .5px var(--divider);
     text-align: left;
 }
 
@@ -542,11 +539,11 @@ footer a:hover {
 
 @media (max-width: 1520px) {
 
-    .main, .project-sect {
+    .main {
         column-count: 1;
         margin-left: auto;
         margin-right: auto;
-        max-width: 800px;
+        max-width: 900px;
     }
 
     .review-topic-1-item {
@@ -571,7 +568,6 @@ footer a:hover {
 
     .updates h4, .school-sect h4, .blog-sect h4, .project-sect h4, .review-sect h4 {
         margin: 0;
-        /* text-align: center; */
     }
 
   .review-topic-4-items {
@@ -601,7 +597,14 @@ footer a:hover {
 @media (max-width: 1240px) {
 
     .blog-sect, .review-sect {
-        column-gap: 50px;
+        /* column-gap: 50px; */
+    }
+    
+    .review-sect {
+        column-count: 1;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
     }
 
     .review-topic-1-item, .review-topic-3-items, .review-topic-4-items {
@@ -611,6 +614,8 @@ footer a:hover {
 
     .review-topic-2-items, .review-topic-4-items {
         columns: 2;
+        display: block;
+        margin: 0;
     }
 
     .review-sect, .blog-sect, .project-sect {
@@ -648,8 +653,9 @@ footer a:hover {
     
 }
 
-@media (max-width: 875px) {
-    .blog-sect, .review-sect {
+@media (max-width: 1000px) {
+    .main, .blog-sect, .review-sect {
         columns: 1;
+        max-width: 500px;
     }
 }
