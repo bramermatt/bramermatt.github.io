@@ -143,7 +143,7 @@ body {
 .main {
     padding: 25px 25px 115px 25px;
     column-count: 2;
-    /* column-gap: 100px; */
+    column-gap: 50px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -213,9 +213,9 @@ body {
 
 .blog-sect {
     padding: 65px 25px;
-    column-count: 2;
-    column-gap: 120px;
-    max-width: 1000px;
+    column-count: 1;
+    /* column-gap: 120px; */
+    max-width: 700px;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -247,11 +247,10 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-height: 206px;
-    max-width: 100%;
-    height:auto;
-    overflow:hidden;
-    /* padding-bottom: 10px; */
+    max-height: 150px;
+    max-width: 150px;
+    /* height:auto; */
+    /* overflow:visible; */
     filter: drop-shadow(0 0 2px rgb(0, 0, 0));
 }
 
@@ -267,15 +266,13 @@ body {
     padding: 0;
 }
 
-/* .main li a:hover, .updates li a:hover, .school-sect li a:hover, .blog-sect li a:hover, .project-sect li a:hover, .review-sect li a:hover  {
-    color: var(--text);
-    font-weight: bold;
-    padding-bottom: 20px;
-    text-decoration: none;
-} */
+.main li a:hover, .blog-sect li a:hover, .project-sect a:hover, .review-sect a:hover  {
+    text-decoration: underline;
+}
 
 .main a:link, a:visited, .updates a:link, a:visited, .school-sect a:link, a:visited, a:visited, .blog-sect a:link, a:visited, .review-sect a:link, a:visited, .project-sect a:link, a:visited {
     color: var(--text);
+    padding-right: 20px;
 }
 
 .updates p, .school-sect p, .project-sect p, .review-sect p {
@@ -296,7 +293,7 @@ body {
     padding: 65px 25px;
     column-count: 1;
     /* column-gap: 100px; */
-    max-width: 500px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
@@ -318,9 +315,9 @@ body {
 
 .review-sect {
     padding: 65px 25px;
-    column-count: 2;
+    column-count: 1;
     /* column-gap: 50px; */
-    max-width: 1235px;
+    max-width: 700px;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -428,6 +425,8 @@ body {
 
 .content-item-row .item-body {
     display: grid;
+    padding-bottom: 18px;
+    padding-left: 10px;
     grid-auto-flow: column;
     grid-column-gap: 18px;
     grid-row-gap: 12px;
@@ -450,10 +449,11 @@ body {
 
 .item-more-details {
     display: grid;
-    grid-area: 2 / 1 / auto / -1;
+    grid-area: 1 / 3 / auto;
     padding-top: 0px;
     padding-left: 5px;
     padding-bottom: 10px;
+    /* color: #236cff; */
     grid-auto-flow: column;
 }
 
@@ -544,6 +544,7 @@ footer a:hover {
         margin-left: auto;
         margin-right: auto;
         max-width: 900px;
+        text-align: center;
     }
 
     .review-topic-1-item {
@@ -656,6 +657,7 @@ footer a:hover {
 @media (max-width: 1000px) {
     .main, .blog-sect, .review-sect {
         columns: 1;
-        max-width: 500px;
+        text-align: center;
+        /* max-width: 500px; */
     }
 }
