@@ -276,7 +276,7 @@ body {
     padding: 65px 25px;
     column-count: 1;
     /* column-gap: 120px; */
-    max-width: 600px;
+    max-width: 750px;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -359,12 +359,12 @@ body {
 .project-sect {
     padding: 65px 25px;
     column-count: 1;
-    /* column-gap: 100px; */
-    max-width: 600px;
+    /* column-gap: 120px; */
+    max-width: 750px;
+    font-size: 20px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 20px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .project-sect h3 {
@@ -383,8 +383,8 @@ body {
 .review-sect {
     padding: 65px 25px;
     column-count: 1;
-    /* column-gap: 50px; */
-    max-width: 600px;
+    /* column-gap: 120px; */
+    max-width: 750px;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -493,8 +493,8 @@ body {
 .content-item-row .item-body {
     display: grid;
     padding-bottom: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px; */
+    padding-right: 18px;
     grid-auto-flow: column;
     /* grid-column-gap: 18px;
     grid-row-gap: 8px; */
@@ -508,6 +508,7 @@ body {
 .item-details {
     display: grid;
     row-gap: 0.5rem;
+    line-height: 1.2rem;
 }
 
 .item-more-details {
@@ -519,11 +520,13 @@ body {
     /* padding-bottom: 10px; */
     /* color: #236cff; */
     grid-auto-flow: column;
+    display: none;
 }
 
 .item-thumbnail {
     position: relative;
     padding-left: 10px;
+    margin: auto;
 }
 
 
