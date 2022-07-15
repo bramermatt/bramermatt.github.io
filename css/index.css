@@ -6,6 +6,7 @@ html {
     /* max-width: 1550px; */
     margin: auto;
     scroll-behavior: smooth;
+    
 }
 
 body.light {
@@ -32,7 +33,58 @@ body {
      text-rendering: optimizeLegibility;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
      /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+
+
  }
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.recents::-webkit-scrollbar {
+    display: none;
+  }
+
+.recents {
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin: 0 auto 0;
+    top: 0;
+    width: 100%;
+    /* max-width: 1300px; */
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+/* .recents p {
+    padding-left: 8px;
+    display: inline-block;
+    text-align: center;
+    text-rendering: optimizeSpeed;
+    font-size: .8rem;
+} */
+
+.recents a {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-rendering: optimizeSpeed;
+    font-size: .8rem;
+
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.recents a:link, .recents a:visited {
+    color: var(--text);
+}
+
+.recents a:hover {
+    color: var(--text);
+    text-decoration: underline;
+}
 
 
 
@@ -49,7 +101,11 @@ body {
     /* -webkit-backdrop-filter: blur(1000px) grayscale(10) opacity(50);
     backdrop-filter: blur(20px) grayscale(10) opacity(50); */
     list-style: none;
-
+    /* border-top: 1px solid #eee; */
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border-bottom: 1px double; */
 }
 
 .navbar ul {
@@ -553,16 +609,16 @@ footer a:hover {
         margin-left: auto;
         margin-right: auto;
         max-width: 900px;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .review-topic-1-item {
         margin-left: auto;
         margin-right: auto;
-        max-width: 800px;
+        /* max-width: 800px; */
     }
 
-    .review-topic-3-items {
+    /* .review-topic-3-items {
         column-count: 3;
         margin-left: auto;
         margin-right: auto;
@@ -574,7 +630,7 @@ footer a:hover {
         margin-left: auto;
         margin-right: auto;
         max-width: 800px;
-    }
+    } */
 
     .updates h4, .school-sect h4, .blog-sect h4, .project-sect h4, .review-sect h4 {
         margin: 0;
