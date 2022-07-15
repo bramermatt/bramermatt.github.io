@@ -152,7 +152,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     /* column-width: 100px; */
-     text-decoration: none;
+    text-decoration: none;
+    
 }
 
 .main h1 {
@@ -251,12 +252,17 @@ body {
     /* display: block; */
     margin-left: auto;
     margin-right: auto;
+    
     height: auto;
     width: 120px;
+
     /* height:auto; */
     /* width: auto; */
     /* overflow:visible; */
+    
+
     filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+    object-fit: contain;
 }
 
 .updates h4, .school-sect h4, .project-sect h4, .review-sect h4 {
@@ -434,8 +440,8 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     grid-auto-flow: column;
-    grid-column-gap: 18px;
-    grid-row-gap: 8px;
+    /* grid-column-gap: 18px;
+    grid-row-gap: 8px; */
     grid-template-columns: 1fr 2fr;
     -webkit-align-items: center;
     -webkit-box-align: center;
@@ -450,6 +456,7 @@ body {
 
 .item-more-details {
     display: grid;
+    grid-row-gap: 0.5rem;
     grid-area: 2 / 1 / auto / -1;
     padding-top: 0px;
     padding-left: 8px;
@@ -659,11 +666,21 @@ footer a:hover {
     
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .main, .blog-sect, .review-sect {
         columns: 1;
         text-align: center;
         /* max-width: 500px; */
+    }
+
+    body img {
+        max-width: 90px;
+        width: 100%;
+        height:auto;
+    }
+
+    .item-more-details {
+        display: none;
     }
 
     /* .content-item-row .item-body {
