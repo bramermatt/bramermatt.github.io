@@ -332,7 +332,7 @@ body {
     /* text-align: center; */
 }
 
-.updates ul, .school-sect ul, .blog-sect ul {
+.updates ul, .school-sect ul, .blog-sect ul, .review-sect ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
