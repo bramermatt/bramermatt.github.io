@@ -112,6 +112,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     /* border-bottom: 1px double; */
+    width: max-content;
+    border-bottom: 1px solid #eee;
 }
 
 .navbar ul {
@@ -119,6 +121,7 @@ body {
     padding-left: 0;
     /* padding-left: 10px; */
     text-align: center;
+    margin: 10px;
 }
 
 
@@ -254,12 +257,13 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     /* max-width: 400px; */
     width: 100%;
     height:auto;
     overflow:hidden;
     filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+    border-radius: 300px;
 }
 
 
@@ -325,6 +329,7 @@ body {
 
     filter: drop-shadow(0 0 2px rgb(0, 0, 0));
     object-fit: contain;
+    /* border-radius: 100px; */
 }
 
 .updates h4, .school-sect h4, .project-sect h4, .review-sect h4 {
@@ -443,6 +448,9 @@ body {
     columns: 3;
     column-gap: 15px;
     padding-bottom: 60px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .review-topic-3-items h2 {
@@ -455,6 +463,9 @@ body {
 .review-topic-2-items {
     columns: 2;
     column-gap: 15px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
     /* padding-bottom: 60px; */
 }
 
@@ -533,6 +544,7 @@ body {
     position: relative;
     padding-left: 10px;
     margin: auto;
+    border-radius: 300px;
 }
 
 
@@ -656,7 +668,7 @@ footer a:hover {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding-bottom: 20px;
+        /* padding-bottom: 20px; */
         max-width: 350px;
         width: 100%;
         height:auto;

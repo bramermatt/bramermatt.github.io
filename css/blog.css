@@ -41,6 +41,10 @@ body {
     /* -webkit-backdrop-filter: blur(1000px) grayscale(10) opacity(50);
     backdrop-filter: blur(20px) grayscale(10) opacity(50); */
     list-style: none;
+    width: max-content;
+    border-bottom: 1px solid #eee;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar ul {
@@ -48,7 +52,7 @@ body {
     padding-left: 0;
     /* padding-left: 10px; */
     text-align: center;
-    margin: 0;
+    margin: 10px;
 }
 
 
