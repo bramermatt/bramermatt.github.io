@@ -210,7 +210,7 @@ body {
 
 
 .main {
-    padding: 25px 25px 115px 25px;
+    padding: 25px 25px 0px 25px;
     column-count: 2;
     column-gap: 50px;
     max-width: 1200px;
@@ -263,7 +263,7 @@ body {
     height:auto;
     overflow:hidden;
     filter: drop-shadow(0 0 2px rgb(0, 0, 0));
-    border-radius: 300px;
+    border-radius: 500px;
 }
 
 
@@ -283,10 +283,10 @@ body {
 }
 
 .blog-sect {
-    padding: 65px 25px;
+    padding: 10px 25px;
     column-count: 1;
     /* column-gap: 120px; */
-    max-width: 750px;
+    max-width: 600px;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -368,10 +368,10 @@ body {
 } */
 
 .project-sect {
-    padding: 65px 25px;
+    padding: 10px 25px;
     column-count: 1;
     /* column-gap: 120px; */
-    max-width: 750px;
+    max-width: 600px;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -392,10 +392,10 @@ body {
 
 
 .review-sect {
-    padding: 65px 25px;
+    padding: 10px 25px;
     column-count: 1;
     /* column-gap: 120px; */
-    max-width: 750px;
+    max-width: 600px;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -493,6 +493,11 @@ body {
     border-bottom: solid .5px var(--divider);
     border-top: solid .5px var(--divider);
     text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 400px; */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .content-item-row a {
@@ -515,11 +520,14 @@ body {
     grid-auto-flow: column;
     /* grid-column-gap: 18px;
     grid-row-gap: 8px; */
-    grid-template-columns: 1fr 2fr;
+    /* grid-template-columns: 1fr 2fr; */
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
 }
 
 .item-details {
@@ -531,7 +539,7 @@ body {
 .item-more-details {
     display: grid;
     grid-row-gap: 0.5rem;
-    grid-area: 2 / 1 / auto / -1;
+    /* grid-area: 2 / 1 / auto / -1; */
     padding-top: 0px;
     padding-left: 8px;
     /* padding-bottom: 10px; */
@@ -545,6 +553,7 @@ body {
     padding-left: 10px;
     margin: auto;
     border-radius: 300px;
+    display:none;
 }
 
 
@@ -552,6 +561,7 @@ body {
 
 footer {
     /* border-top-style: solid; */
+    padding-top: 40px;
     text-align: center;
     text-align: -webkit-center;
     position: relative;

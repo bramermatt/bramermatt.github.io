@@ -338,6 +338,13 @@ text-align: center;
     height:auto;
     overflow:hidden;
     filter: drop-shadow(0 0 1.5px rgb(0, 0, 0));
+    transition: transform .5s;
+    z-index: 1;
+}
+
+.blog img:hover {
+    /* transform: scale(1.5); */
+    /* width: 150%; */
 }
 
 .blog iframe {
@@ -365,9 +372,23 @@ text-align: center;
     /* border-left: .25em solid #ddd; */
 }
 
+/* .blog .subtitle h3{
+    float: right;
+    position: relative;
+}
+
+.blog .subtitle img {
+    border-radius: 300px;
+    float: left;
+    width: 10%;
+    position: relative;
+} */
+
 .embed-twitter {
     width: 75% !important;
 }
+
+
 
 
 @media (max-width: 1255px) {
