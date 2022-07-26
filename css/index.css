@@ -490,13 +490,13 @@ body {
 .content-item-row {
     --divider: var(--theme-elements-contentItem-divider,#d3ddd9);
     /* padding: 18px 0px; */
-    /* border-bottom: solid .5px var(--divider); */
+    border-bottom: solid .5px var(--divider);
     border-top: solid .5px var(--divider);
     text-align: left;
     margin-left: auto;
     margin-right: auto;
     /* max-width: 400px; */
-    max-width: max-content;
+    /* max-width: max-content; */
     padding-left: 20px;
     padding-right: 20px;
 }
