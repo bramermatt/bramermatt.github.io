@@ -333,9 +333,10 @@ body {
     /* border-radius: 100px; */
 }
 
-.updates h4, .school-sect h4, .project-sect h4, .review-sect h4 {
+.updates h4, .blog-sect h4, .school-sect h4, .project-sect h4, .review-sect h4 {
     padding-top: 10px;
     margin: 0;
+    font-size: 1.2rem;
     /* text-align: center; */
 }
 
@@ -354,13 +355,14 @@ body {
     /* padding-right: 20px; */
 }
 
-.updates p, .school-sect p, .project-sect p, .review-sect p {
+.updates p, .blog-sect p, .school-sect p, .project-sect p, .review-sect p {
     padding: 0;
     /* padding-top: 0; */
     /* padding-bottom: 10px; */
     margin: auto;
     /* text-align: center; */
     font-weight: lighter;
+    font-size: 1rem;
 }
 
 
@@ -519,7 +521,7 @@ body {
 }
 
 .content-item-row .item-body {
-    display: grid;
+    display: block;
     padding-bottom: 18px;
     /* padding-left: 10px; */
     padding-right: 18px;
@@ -564,11 +566,22 @@ body {
 }
 
 
+.project-links {
+
+}
+
+.project-links a {
+    text-decoration: none;
+    font-size: .9rem;
+    padding: 5px;
+    /* padding-right: 5px; */
+}
+
 
 
 footer {
     /* border-top-style: solid; */
-    padding-top: 40px;
+    padding-top: 120px;
     text-align: center;
     text-align: -webkit-center;
     position: relative;
