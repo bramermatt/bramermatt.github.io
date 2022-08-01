@@ -372,6 +372,12 @@ text-align: center;
     /* border-left: .25em solid #ddd; */
 }
 
+.blog video {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 1.5px rgb(0, 0, 0));
+}
+
 /* .blog .subtitle h3{
     float: right;
     position: relative;
