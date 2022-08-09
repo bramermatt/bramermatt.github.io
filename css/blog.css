@@ -448,6 +448,10 @@ text-align: center;
         background-color: #fafafa;
     }
 
+    .blog-left, .blog-right {
+        display: none;
+    }
+
 
     .navbar {
         border-bottom: 1px solid #999;
