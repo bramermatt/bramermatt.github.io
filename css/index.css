@@ -291,6 +291,8 @@ body {
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 50px;
+    border-radius: 20px;
     /* text-align: center; */
     
 }
@@ -379,6 +381,8 @@ body {
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 50px;
+    border-radius: 20px;
     /* text-align: center; */
 }
 
@@ -404,6 +408,8 @@ body {
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 50px;
+    border-radius: 20px;
     /* text-align: center; */
 }
 
@@ -414,11 +420,12 @@ body {
 }
 
 
-.review-sect h3, .updates h3, .school-sect h3, .blog-sect h3 {
+.review-sect h3, .updates h3, .project-sect h3, .school-sect h3, .blog-sect h3 {
     font-size: 50px;
     column-span: all;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 
@@ -875,6 +882,40 @@ footer a:hover {
 /* .item-more-details {
     display: none;
 } */
+
+
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+    .blog-sect, .project-sect, .review-sect {
+        background-color: #5555;
+        margin-top: 20px;
+    }
+
+
+
+}
+
+@media (prefers-color-scheme: light) {
+
+    body {
+        background-color: #1111;
+    }
+
+    .navbar, .recents {
+        border-bottom: 1px solid #999;
+    }
+
+    .blog-sect, .project-sect, .review-sect {
+        margin-top: 20px;
+        background-color: #ffff;
+    }
+
+    .main-sect {
+        margin-bottom: 20px;
+    }
 
 
 }

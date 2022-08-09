@@ -220,7 +220,6 @@ text-align: center;
     padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
-
 }
 
 .blog-right a:link, a:visited {
@@ -441,13 +440,21 @@ text-align: center;
 
 @media (prefers-color-scheme: light) {
 
+    body {
+        background-color: #1111;
+    }
+
     .blog {
         background-color: #fafafa;
-        /* opacity: 1%; */
+    }
+
+
+    .navbar {
+        border-bottom: 1px solid #999;
     }
 
     .blog h2, .blog h1 {
-        border-bottom: 1px solid #5555;
+        border-bottom: 1px solid #999;
     }
 
 }
