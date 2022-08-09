@@ -442,7 +442,8 @@ text-align: center;
 @media (prefers-color-scheme: light) {
 
     .blog {
-        background-color: #2222;
+        background-color: #fafafa;
+        /* opacity: 1%; */
     }
 
     .blog h2, .blog h1 {
