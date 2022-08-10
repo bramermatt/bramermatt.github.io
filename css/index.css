@@ -533,10 +533,12 @@ body {
     padding-bottom: 18px;
     /* padding-left: 10px; */
     padding-right: 18px;
-    grid-auto-flow: column;
-    /* grid-column-gap: 18px;
-    grid-row-gap: 8px; */
-    /* grid-template-columns: 1fr 2fr; */
+    
+    /* grid-auto-flow: column;
+    grid-column-gap: 18px;
+    grid-row-gap: 8px;
+    grid-template-columns: 1fr 2fr; */
+
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
