@@ -242,6 +242,7 @@ text-align: center;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+
 }
 
 
@@ -426,6 +427,14 @@ text-align: center;
 @media (max-width: 1050px) {
     .blog-left, .blog-right {
         display: none;
+    }
+
+
+}
+
+@media (max-width: 690px) {
+    .blog {
+        margin: 15px;
     }
 }
 
