@@ -711,19 +711,13 @@ footer a:hover {
 
 .my-favs {
     padding: 10px 25px;
-    
-    /* column-count: 1; */
-    /* column-gap: 120px; */
-    /* max-width: 1150px; */
-
-    width: min-content;
-    max-width: 1500px;
+    /* width: min-content; */
+    max-width: 1400px;
     font-size: 20px;
     margin: auto;
     padding: 15px;
     padding-bottom: 20px;
     border-radius: 20px;
-    /* text-align: center; */
 }
 
 
@@ -742,12 +736,16 @@ footer a:hover {
     /* background-color: lightblue; */
     padding: 5px 10px;
     /* border-radius: 15px; */
+
+    
 }
 
 .my-favs h4 {
     margin: 0;
     padding-top: 15px;
+    font-size: 1.2rem;
     /* line-height: 1.25; */
+    
 }
 
 .my-favs h3 {
@@ -756,7 +754,7 @@ footer a:hover {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 15px;
+    /* padding: 15px; */
 }
 
 .my-favs p {
@@ -786,12 +784,10 @@ footer a:hover {
     display: flex;
     margin: auto;
     overflow-x: scroll;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     margin: 0 auto 0;
     top: 0;
     width: 100%;
-    /* margin: 15px; */
-    /* padding: 15px; */
     max-width: max-content;
     min-width: 100px;
 }
@@ -801,7 +797,8 @@ footer a:hover {
   }
 
 .fav-topic {
-    width: min-content;
+    /* width: min-content; */
+    display: block;
 }
 
 
@@ -846,7 +843,7 @@ footer a:hover {
 } */
 
 
-@media (max-width: 1520px) {
+@media (max-width: 1600px) {
 
     .main {
         /* column-count: 1; */
@@ -876,7 +873,7 @@ footer a:hover {
         max-width: 800px;
     } */
 
-    .updates h4, .school-sect h4, .blog-sect h4, .project-sect h4, .review-sect h4 {
+    .updates h4, .school-sect h4, .blog-sect h4, .project-sect h4, .review-sect h4, .my-favs h4 {
         margin: 0;
     }
 
@@ -903,7 +900,7 @@ footer a:hover {
 
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1450px) {
     
     /* .review-sect {
         column-count: 1;
@@ -932,7 +929,7 @@ footer a:hover {
         margin: 0;
     }
 
-    .review-sect, .blog-sect, .project-sect {
+    .review-sect, .blog-sect, .project-sect, .my-favs {
         padding-top: 10px;
     }
 
@@ -966,6 +963,10 @@ footer a:hover {
     .main-content {
         columns: 1;
         /* margin: 15px; */
+    }
+
+    .my-favs {
+        max-width: max-content;
     }
 
 
@@ -1019,6 +1020,9 @@ footer a:hover {
     display: none;
 } */
 
+    /* .my-favs {
+        max-width: min-content;
+    } */
 
 }
 
