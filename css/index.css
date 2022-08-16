@@ -29,8 +29,8 @@ body {
      margin: auto;
      padding: auto;
      /* max-width: 1300px; */
-     margin: 15px;
-     padding-bottom: 30px;
+     /* margin: 15px; */
+     /* padding-bottom: 30px; */
      text-rendering: optimizeLegibility;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     cursor: default;
@@ -513,8 +513,8 @@ body {
     margin-right: auto;
     /* max-width: 400px; */
     /* max-width: max-content; */
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .content-item-row a {
@@ -591,8 +591,8 @@ body {
 
 
 
-footer {
-    /* border-top-style: solid; */
+/* footer {
+    background-color: #1111;
     padding-top: 120px;
     text-align: center;
     text-align: -webkit-center;
@@ -601,7 +601,6 @@ footer {
     width: 100%;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px) grayscale(10) opacity(1);
-    /* padding-top: 200px; */
 }
 
 footer ul {
@@ -619,6 +618,60 @@ footer a:link, a:visited {
 }
 
 footer a:hover {
+    font-weight: bold;
+} */
+
+
+
+footer {
+    /* border-bottom-style: solid; */
+    /* font-size: 20px; */
+    font-size: 1em;
+    z-index: 1;
+    top: 0;
+
+    list-style: none;
+    /* border-top: 1px solid #eee; */
+    /* max-width: 1300px; */
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    /* border-bottom: 1px double; */
+
+    border-top: 1px solid #eee;
+
+}
+
+footer ul {
+
+    padding-left: 0;
+    /* padding-left: 10px; */
+    text-align: center;
+    margin: 10px;
+
+}
+
+
+footer li {
+    display: inline;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: min-content;
+}
+
+footer a {
+    padding: 5px;
+
+}
+
+footer a:link, footer a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--text);
     font-weight: bold;
 }
 
@@ -646,6 +699,34 @@ footer a:hover {
     padding: 5px 10px;
     /* border-radius: 15px; */
 }
+
+.topic li {
+    list-style-type: none;
+}
+
+.topic ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* .topic li {
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin: 0 auto 0;
+    top: 0;
+    width: 100%;
+    max-width: min-content;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.topic li::-webkit-scrollbar {
+    display: none;
+  } */
+
+
 
 .blog-topics {
     overflow-x: scroll;
@@ -712,7 +793,7 @@ footer a:hover {
 .my-favs {
     padding: 10px 25px;
     /* width: min-content; */
-    max-width: 1400px;
+    max-width: 1450px;
     font-size: 20px;
     margin: auto;
     padding: 15px;
@@ -784,7 +865,7 @@ footer a:hover {
     display: flex;
     margin: auto;
     overflow-x: scroll;
-    /* white-space: nowrap; */
+    white-space: nowrap;
     margin: 0 auto 0;
     top: 0;
     width: 100%;
@@ -803,6 +884,7 @@ footer a:hover {
 
 
 /* .footer-sect {
+    background-color: #555;
     padding: 75px 15px;
     font-size: 20px;
     font-size: 20px;
@@ -966,13 +1048,9 @@ footer a:hover {
     }
 
     .my-favs {
-        max-width: max-content;
+        max-width: 800px;
     }
 
-
-    .my-favs-content {
-        display: block;
-    }
 
     /* .content-item-row {
         /* display: grid;
@@ -996,6 +1074,33 @@ footer a:hover {
         text-align: center;
         max-width: 500px;
     }
+
+    .my-favs {
+        max-width: max-content;
+    }
+
+
+
+    .topic li {
+        display: flex;
+        overflow-x: scroll;
+        white-space: nowrap;
+        margin: 0 auto 0;
+        top: 0;
+        width: 100%;
+        /* max-width: min-content; */
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .topic li::-webkit-scrollbar {
+        display: none;
+      }
+
+
+    /* .my-favs-content {
+        display: block;
+    } */
 
 
  
@@ -1033,6 +1138,12 @@ footer a:hover {
         background-color: #5555;
         margin-bottom: 20px;
         padding-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        margin: 15px;
     }
 
 
@@ -1053,11 +1164,15 @@ footer a:hover {
         margin-bottom: 20px;
         padding-top: 10px;
         background-color: #ffff;
+        margin: 15px;
     }
 
     .main-sect {
         margin-bottom: 20px;
     }
 
+    body {
+        margin: 15px;
+    }
 
 }

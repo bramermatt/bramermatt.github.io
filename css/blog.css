@@ -328,7 +328,8 @@ text-align: center;
 
 .blog a:hover {
     color: var(--text);
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-style: italic;
 }
 
 .blog img {
