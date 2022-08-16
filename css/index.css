@@ -626,6 +626,7 @@ footer a:hover {
 footer {
     /* border-bottom-style: solid; */
     /* font-size: 20px; */
+    display:none;
     font-size: 1em;
     z-index: 1;
     top: 0;
@@ -650,6 +651,7 @@ footer ul {
     text-align: center;
     margin: 10px;
 
+
 }
 
 
@@ -657,7 +659,6 @@ footer li {
     display: inline;
     overflow-x: scroll;
     white-space: nowrap;
-    width: min-content;
 }
 
 footer a {
