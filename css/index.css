@@ -1082,26 +1082,25 @@ footer a:hover {
 
 
 
-    .topic li {
+    /* .topic li {
         display: flex;
         overflow-x: scroll;
         white-space: nowrap;
         margin: 0 auto 0;
         top: 0;
         width: 100%;
-        /* max-width: min-content; */
         text-align: center;
         padding-top: 10px;
     }
     
     .topic li::-webkit-scrollbar {
         display: none;
-      }
+      } */
 
 
-    /* .my-favs-content {
+    .my-favs-content {
         display: block;
-    } */
+    }
 
 
  
