@@ -794,7 +794,7 @@ footer a:hover {
 .my-favs {
     padding: 10px 25px;
     /* width: min-content; */
-    max-width: 1450px;
+    max-width: 1550px;
     font-size: 20px;
     margin: auto;
     padding: 15px;
@@ -874,9 +874,9 @@ footer a:hover {
     min-width: 100px;
 }
 
-/* .my-favs-content::-webkit-scrollbar {
+.my-favs-content::-webkit-scrollbar {
     display: none;
-  } */
+  }
 
 /* .my-favs::-webkit-scrollbar-track {
     background: #f1f1f1;
