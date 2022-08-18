@@ -874,9 +874,17 @@ footer a:hover {
     min-width: 100px;
 }
 
-.my-favs-content::-webkit-scrollbar {
+/* .my-favs-content::-webkit-scrollbar {
     display: none;
+  } */
+
+/* .my-favs::-webkit-scrollbar-track {
+    background: #f1f1f1;
   }
+
+.my-favs::-webkit-scrollbar-thumb {
+    background: #888;
+  } */
 
 .fav-topic {
     /* width: min-content; */
@@ -926,7 +934,7 @@ footer a:hover {
 } */
 
 
-@media (max-width: 1600px) {
+@media (max-width: 1550px) {
 
     .main {
         /* column-count: 1; */
@@ -978,6 +986,11 @@ footer a:hover {
         filter: drop-shadow(0 0 2px rgb(0, 0, 0));
     } */
 
+/* 
+    .my-favs {
+        max-width: 1250px;
+        width: min-content;
+    } */
 
 
 
