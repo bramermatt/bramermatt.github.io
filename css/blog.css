@@ -285,6 +285,7 @@ text-align: center;
     margin: 0;
     font-size: 1.5em;
     border-bottom: 1px solid #eee;
+    width: max-content;
 }
 
 
