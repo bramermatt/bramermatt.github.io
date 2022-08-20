@@ -423,7 +423,7 @@ body {
 
 .review-sect h3, .updates h3, .project-sect h3, .school-sect h3, .blog-sect h3 {
     font-size: 50px;
-    column-span: all;
+    /* column-span: all; */
     text-align: center;
     margin-top: 10px;
     margin-bottom: auto;
@@ -1149,7 +1149,7 @@ footer a:hover {
 
     .blog-sect, .project-sect, .review-sect, .my-favs {
         background-color: #5555;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         padding-top: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -1174,7 +1174,7 @@ footer a:hover {
     }
 
     .blog-sect, .project-sect, .review-sect, .my-favs {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         padding-top: 10px;
         background-color: #ffff;
     }
