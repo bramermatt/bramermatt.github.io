@@ -288,7 +288,7 @@ body {
     text-align: center;
 }
 
-.blog-sect {
+.blog-sect, .cov-sect {
     padding: 10px 25px;
     column-count: 1;
     /* column-gap: 120px; */
@@ -305,13 +305,13 @@ body {
     
 }
 
-.blog-sect h4 {
+.blog-sect h4, .cov-sect h4 {
     margin: 0;
     padding-top: 15px;
     /* line-height: 1.25; */
 }
 
-.blog-sect p {
+.blog-sect p, .cov-sect p {
     padding: 0;
     margin: auto;
     font-weight: lighter;
@@ -351,17 +351,17 @@ body {
     /* text-align: center; */
 }
 
-.updates ul, .school-sect ul, .blog-sect ul, .review-sect ul {
+.updates ul, .school-sect ul, .blog-sect ul, .review-sect ul, .cov-sect ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.main li a:hover, .blog-sect li a:hover, .project-sect a:hover, .review-sect a:hover  {
+.main li a:hover, .blog-sect li a:hover, .project-sect a:hover, .review-sect a:hover, .cov-sect li a:hover  {
     text-decoration: underline;
 }
 
-.main a:link, a:visited, .updates a:link, a:visited, .school-sect a:link, a:visited, a:visited, .blog-sect a:link, a:visited, .review-sect a:link, a:visited, .project-sect a:link, a:visited {
+.main a:link, a:visited, .updates a:link, a:visited, .school-sect a:link, a:visited, a:visited, .blog-sect a:link, a:visited, .review-sect a:link, a:visited, .project-sect a:link, a:visited, .cov-sect a:link, a:visited {
     color: var(--text);
     /* padding-right: 20px; */
 }
@@ -421,7 +421,7 @@ body {
 }
 
 
-.review-sect h3, .updates h3, .project-sect h3, .school-sect h3, .blog-sect h3 {
+.review-sect h3, .updates h3, .project-sect h3, .school-sect h3, .blog-sect h3, .cov-sect h3 {
     font-size: 50px;
     /* column-span: all; */
     text-align: center;
@@ -784,8 +784,8 @@ footer a:hover {
 
 
 .main-content {
-    columns: 2;
-    max-width: 1150px;
+    /* columns: 4; */
+    max-width: 1350px;
     margin: auto;
     column-gap: 40px;
 }
@@ -1147,9 +1147,9 @@ footer a:hover {
 
 @media (prefers-color-scheme: dark) {
 
-    .blog-sect, .project-sect, .review-sect, .my-favs {
+    .blog-sect, .project-sect, .review-sect, .my-favs, .cov-sect {
         background-color: #5555;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         padding-top: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -1173,8 +1173,8 @@ footer a:hover {
         border-bottom: 1px solid #999;
     }
 
-    .blog-sect, .project-sect, .review-sect, .my-favs {
-        margin-bottom: 50px;
+    .blog-sect, .project-sect, .review-sect, .my-favs, .cov-sect {
+        margin-bottom: 30px;
         padding-top: 10px;
         background-color: #ffff;
     }
