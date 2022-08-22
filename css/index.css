@@ -57,7 +57,7 @@ body {
     text-align: center;
     /* padding: 5px; */
     border-bottom: 1px solid #eee;
-    display:none;
+    /* display:none; */
 }
 
 /* .recents p {
@@ -784,10 +784,14 @@ footer a:hover {
 
 
 .main-content {
-    /* columns: 4; */
-    max-width: 1350px;
+    columns: 2;
+    max-width: 1000px;
     margin: auto;
     column-gap: 40px;
+}
+
+.main-margin {
+    margin: 15px;
 }
 
 
@@ -1155,9 +1159,9 @@ footer a:hover {
         margin-right: auto;
     }
 
-    body {
+    /* body {
         margin: 15px;
-    }
+    } */
 
 
 
@@ -1183,8 +1187,8 @@ footer a:hover {
         margin-bottom: 20px;
     }
 
-    body {
+    /* body {
         margin: 15px;
-    }
+    } */
 
 }
