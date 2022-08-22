@@ -57,7 +57,7 @@ body {
     text-align: center;
     /* padding: 5px; */
     border-bottom: 1px solid #eee;
-    display:none;
+    /* display:none; */
 }
 
 /* .recents p {
@@ -687,7 +687,7 @@ footer a:hover {
 .topic {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     /* padding-bottom: 15px; */
 }
 
@@ -942,7 +942,6 @@ footer a:hover {
 .footer-sect a:link, a:visited {
     color: var(--text) invert(--text);
 } */
-
 
 @media (max-width: 1550px) {
 
