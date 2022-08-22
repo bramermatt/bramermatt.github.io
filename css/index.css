@@ -106,7 +106,7 @@ body {
     -webkit-backdrop-filter: blur(1000px) grayscale(10) opacity(50);
     backdrop-filter: blur(20px) grayscale(10) opacity(50);
     padding-top: 1px; */
-    /* width: max-content; */
+    width: max-content;
 
 
 
