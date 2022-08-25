@@ -113,6 +113,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid #eee;
+
+    
+
+
 }
 
 .navbar ul {
@@ -187,6 +191,79 @@ body {
 .dropdown:hover .dpdn-cnt {
     /* display: block; */
     display: none;
+}
+
+
+.topnav-inline {
+    /* display: inline; */
+    display: none;
+    transition: .2s ease all;
+}
+
+.topnav-inline ul {
+    padding-left: 0;
+    margin: 5px;
+    padding-right: 65px;
+    padding-top: 5px;
+}
+
+.topnav-inline li {
+    display: flex;
+    /* background-color: black; */
+    /* color: white; */
+    padding: 5px;
+    flex-direction: row-reverse;
+}
+
+.topnav-inline a {
+    padding: 5px 12px 5px 12px;
+}
+
+.topnav-inline a:link, a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.topnav-inline a:hover {
+    color: var(--text);
+    font-weight: bold;
+}
+
+
+.hamburger {
+    /* display: none; */
+    /* border-top-style: solid;
+    border-bottom-style: solid;
+    font-size: auto;
+    text-align: center;
+    text-align: -webkit-center;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) grayscale(10) opacity(1);
+    list-style: none; */
+    /* padding: 10px; */
+
+    position: absolute;
+    /* transition: .2s ease all; */
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    top: .9rem;
+    right: 2rem;
+    border-bottom: none;
+
+    visibility: hidden;
+}
+
+.hamburger a:link, a:visited {
+    font-size: 30px;
+    text-decoration: none;
+    /* float: right; */
+    padding-right: 10px;
+    right: 10px;
 }
 
 #myBtn {
