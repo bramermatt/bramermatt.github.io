@@ -454,7 +454,8 @@ text-align: center;
 @media (prefers-color-scheme: dark) {
 
     .blog {
-        background-color: #5555;
+        /* background-color: #5555; */
+        background-color: #282828;
     }
 
     /* .navbar {

@@ -788,7 +788,8 @@ footer a:hover {
 @media (prefers-color-scheme: dark) {
 
     .section, .my-favs {
-        background-color: #5555;
+        /* background-color: #5555; */
+        background-color: #282828;
         margin-bottom: 30px;
         padding-top: 10px;
         margin-left: auto;
