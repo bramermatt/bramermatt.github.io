@@ -919,7 +919,7 @@ footer img {
     .main {
         background-color: #282828;
         border: solid 4px white;
-        box-shadow: 15px 15px 0 -4px #282828, 15px 15px white;
+        box-shadow: 10px 10px 0 -4px #282828, 10px 10px white;
     }
 
 
@@ -933,7 +933,7 @@ footer img {
 
         background-color: #282828;
         border: solid 4px white;
-        box-shadow: 15px 15px 0 -4px #282828, 15px 15px white;
+        box-shadow: 10px 10px 0 -4px #282828, 10px 10px white;
     }
 
     .section h3, .my-favs h3 {
@@ -964,7 +964,7 @@ footer img {
     .main {
         background-color: white;
         border: solid 4px black;
-        box-shadow: 15px 15px 0 -4px white, 15px 15px black;
+        box-shadow: 10px 10px 0 -4px white, 10px 10px black;
     }
 
     .section, .my-favs {
@@ -974,7 +974,7 @@ footer img {
 
         background-color: white;
         border: solid 4px black;
-        box-shadow: 15px 15px 0 -4px white, 15px 15px black;
+        box-shadow: 10px 10px 0 -4px white, 10px 10px black;
     }
 
     .section h3, .my-favs h3 {
