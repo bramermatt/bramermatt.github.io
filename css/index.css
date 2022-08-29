@@ -544,7 +544,7 @@ body {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     /* margin-top: 30px; */
-    /* padding-bottom: 15px; */
+    padding-bottom: 15px;
 }
 
 .topic h5 {
@@ -637,7 +637,6 @@ body {
 
 .my-favs {
     padding: 10px 25px;
-    /* width: min-content; */
     max-width: 1550px;
     font-size: 20px;
     margin: auto;
@@ -645,9 +644,9 @@ body {
     padding-bottom: 20px;
     border-radius: 20px;
 
-    background-color: white;
+    /* background-color: white;
     border: solid 4px black;
-    box-shadow: 15px 15px 0 -4px white, 15px 15px black;
+    box-shadow: 15px 15px 0 -4px white, 15px 15px black; */
 }
 
 .my-favs h5 {
@@ -664,6 +663,7 @@ body {
     /* background-color: lightblue; */
     padding: 5px 10px;
     /* border-radius: 15px; */
+    display: none;
 }
 
 .my-favs h4 {
@@ -718,11 +718,11 @@ body {
     margin: auto;
     overflow-x: scroll;
     white-space: nowrap;
-    margin: 0 auto 0;
+    /* margin: 0 auto 0; */
     top: 0;
-    width: 100%;
+    /* width: 100%; */
     max-width: max-content;
-    min-width: 100px;
+    /* min-width: 100px; */
 }
 
 .my-favs-content::-webkit-scrollbar {
@@ -889,6 +889,7 @@ footer img {
         columns: 1;
         text-align: center;
         max-width: 500px;
+        white-space: inherit;
     }
 
     .my-favs {
@@ -943,6 +944,20 @@ footer img {
         border-bottom: 1px solid;
     }
 
+    .content-item-row {
+        max-width: max-content;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 15px;
+        /* margin-top: 15px; */
+        /* margin-bottom: 15px; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        background-color: #282828;
+        border: solid 4px white;
+        box-shadow: 5px 5px 0 -4px #282828, 5px 5px white;
+    }
+
     footer {
         /* background-color: white;
         color: black; */
@@ -983,6 +998,16 @@ footer img {
         padding-top: 10px;
         border-bottom: 1px solid;
         /* box-shadow: 0 0 1px 2px rgb(0 0 0 / 10%); */
+    }
+
+    .content-item-row {
+        max-width: max-content;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 15px;
+        background-color: white;
+        border: solid 4px black;
+        box-shadow: 5px 5px 0 -4px white, 5px 5px black;
     }
 
     footer {
