@@ -42,7 +42,7 @@ body {
     /* -webkit-backdrop-filter: blur(1000px) grayscale(10) opacity(50);
     backdrop-filter: blur(20px) grayscale(10) opacity(50); */
     list-style: none;
-    width: max-content;
+    /* width: max-content; */
     border-bottom: 1px solid #eee;
     margin-left: auto;
     margin-right: auto;
@@ -126,7 +126,7 @@ body {
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 30px; /* Place the button at the bottom of the page */
+    bottom: 25px; /* Place the button at the bottom of the page */
     right: 25px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
@@ -138,10 +138,12 @@ body {
     border-radius: 40px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
     filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+    opacity: 40%;
   }
   
   #myBtn:hover {
     color: #555; /* Add a dark-grey background on hover */
+    opacity: 100%;
   }
 
 .blog-container {
@@ -297,7 +299,7 @@ text-align: center;
     margin: 0;
     font-size: 1.5em;
     border-bottom: 1px solid #eee;
-    width: max-content;
+    /* width: max-content; */
 }
 
 
@@ -463,13 +465,13 @@ text-align: center;
         box-shadow: 10px 10px 0 -4px #282828, 10px 10px white;
     }
 
-    /* .navbar {
+    .navbar {
         position: sticky;
         position: -webkit-sticky;
         background: var(--background);
-        background-color: #1d1d1d;
+        background-color: #282828;
         z-index: 1;
-    } */
+    }
 
 }
 
@@ -491,14 +493,14 @@ text-align: center;
     } */
 
 
-    /* .navbar {
+    .navbar {
         border-bottom: 1px solid #999;
         position: sticky;
         position: -webkit-sticky;
         background: var(--background);
         background-color: #EEEEEE;
         z-index: 1;
-    } */
+    }
 
     .blog h2, .blog h1 {
         border-bottom: 1px solid #999;

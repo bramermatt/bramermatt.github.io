@@ -438,12 +438,12 @@ body {
     text-align: center;
     margin-top: 10px;
     margin-bottom: auto;
-    position: -webkit-sticky;
+    /* position: -webkit-sticky;
     position: sticky;
     z-index: 1;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; */
 }
 
 
@@ -561,6 +561,15 @@ body {
     /* background-color: lightblue; */
     padding: 5px 10px;
     /* border-radius: 15px; */
+
+
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
 }
 
 .topic li {
@@ -681,12 +690,12 @@ body {
     margin-bottom: 0;
     /* padding: 15px; */
 
-    position: -webkit-sticky;
+    /* position: -webkit-sticky;
     position: sticky;
     z-index: 1;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; */
 
 }
 
@@ -751,7 +760,7 @@ footer {
     border-bottom-style: solid;
 
     /* font-size: 20px; */
-    /* display:none; */
+    display:none;
     font-size: 1em;
     /* z-index: 1;
     top: 0; */
@@ -937,7 +946,7 @@ footer img {
         box-shadow: 10px 10px 0 -4px #282828, 10px 10px white;
     }
 
-    .section h3, .my-favs h3 {
+    .section h5 {
         background-color: #282828;
         padding-bottom: 10px;
         padding-top: 10px;
@@ -992,7 +1001,7 @@ footer img {
         box-shadow: 10px 10px 0 -4px white, 10px 10px black;
     }
 
-    .section h3, .my-favs h3 {
+    .section h5 {
         background-color: #FFFFFF;
         padding-bottom: 10px;
         padding-top: 10px;
