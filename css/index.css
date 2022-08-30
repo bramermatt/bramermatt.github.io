@@ -761,30 +761,26 @@ body {
 
 
 
-
-
 footer {
-    border-bottom-style: solid;
+    /* border-bottom-style: solid;
 
-    /* font-size: 20px; */
-    display:none;
     font-size: 1em;
-    /* z-index: 1;
-    top: 0; */
-
     list-style: none;
     margin-top: 80px;
-    /* padding-top: 50px; */
     padding: 20px;
-
     margin-left: auto;
     margin-right: auto;
-    /* width: max-content; */
     border-bottom: 1px double;
     border-top: 1px solid #eee;
-    
     background-color: white;
-    color: black;
+    color: black; */
+
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px 32px;
+
+    display:none;
 
 }
 
@@ -831,6 +827,8 @@ footer img {
     /* margin-bottom: auto; */
     overflow: hidden;
     /* padding-top: 20px; */
+
+    display: none;
 }
 
 
