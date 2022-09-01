@@ -337,14 +337,17 @@ text-align: center;
     padding: 5px 0px;
     text-align: center; 
     display: inline-block;
-    /* text-decoration: none;
-    font-style: oblique; */
+    /* text-decoration: none; */
+    /* font-style: oblique; */
+    font-weight: bold;
 }
 
 .blog a:hover {
     color: var(--text);
     /* font-weight: bold; */
-    font-style: italic;
+    /* font-style: italic; */
+    text-decoration: none;
+    /* text-decoration: underline; */
 }
 
 .blog img {

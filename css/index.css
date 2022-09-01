@@ -419,6 +419,14 @@ body {
     /* border-radius: 500px; */
 }
 
+.main a:link, a:visited {
+    color: var(--text);
+}
+
+.main a:hover {
+    text-decoration: none;
+}
+
 .section {
     padding: 10px 25px;
     column-count: 1;
@@ -479,7 +487,7 @@ body {
     text-decoration: underline;
 }
 
-.section a:link, a:visited, .main a:link, a:visited {
+.section a:link, a:visited {
     color: var(--text);
     /* padding-right: 20px; */
 }
