@@ -417,6 +417,11 @@ text-align: center;
     width: 75% !important;
 }
 
+.twitter-tweet {
+    margin: auto;
+}
+
+
 
 @media (max-width: 700px) {
 
