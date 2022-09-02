@@ -547,11 +547,11 @@ body {
     height: 100%; */
 }
 
-.section iframe {
+.section iframe, .topic iframe {
     margin: auto;
     padding-top: 20px;
     width: 100%; 
-
+    height: 350px;
 }
 
 
@@ -1050,6 +1050,13 @@ footer img {
 
     .item-more-details {
         display: none;
+    }
+
+    .section iframe, .topic iframe {
+        margin: auto;
+        /* padding-top: 20px; */
+        width: 100%; 
+        height: 220px;
     }
 
 }
