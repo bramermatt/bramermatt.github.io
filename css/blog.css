@@ -48,6 +48,7 @@ body {
     margin-right: auto;
     margin-bottom: 20px;;
     border-bottom: 1px solid #999;
+    visibility: visible;
 }
 
 .navbar ul {
@@ -121,6 +122,71 @@ body {
 .dropdown:hover .dpdn-cnt {
     /* display: block; */
     display: none;
+}
+
+
+.topnav-inline {
+    /* display: inline; */
+    display: none;
+    transition: .5s ease all;
+    /* padding: 20px; */
+    font-size: 20px;
+}
+
+.topnav-inline ul {
+    padding-left: 0;
+    margin: 5px;
+    padding-right: 65px;
+    padding-top: 5px;
+}
+
+.topnav-inline li {
+    display: flex;
+    /* background-color: black; */
+    /* color: white; */
+    padding: 5px;
+    flex-direction: row-reverse;
+}
+
+.topnav-inline a {
+    padding: 5px 12px 5px 12px;
+}
+
+.topnav-inline a:link, a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.topnav-inline a:hover {
+    color: var(--text);
+    font-weight: bold;
+}
+
+
+.hamburger {
+    position: absolute;
+    transition: .2s ease all;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    top: .9rem;
+    right: 2rem;
+    border-bottom: none;
+    z-index: 1;
+    top: 0;
+    margin-top: 15px;
+    /* margin-bottom: 25px; */
+    visibility: hidden;
+    
+}
+
+.hamburger a:link, a:visited {
+    font-size: 30px;
+    text-decoration: none;
+    /* float: right; */
+    padding-right: 10px;
+    right: 10px;
+    color: var(--text);
 }
 
 #myBtn {
@@ -459,6 +525,21 @@ text-align: center;
 @media (max-width: 690px) {
     .blog {
         margin: 15px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navbar {
+        visibility: hidden;
+        display: none;
+    }
+
+    .hamburger {
+        visibility: visible;
+    }
+
+    .blog {
+        margin-top: 60px;
     }
 }
 

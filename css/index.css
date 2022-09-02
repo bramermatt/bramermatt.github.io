@@ -121,6 +121,8 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0) 100%);
+
+    visibility: visible;
 }
 
 /* .recents p {
@@ -160,26 +162,15 @@ body {
 
 
 .navbar {
-    /* border-bottom-style: solid; */
     font-size: 20px;
-    /* text-align: -webkit-left;
-    -webkit-backdrop-filter: blur(1000px) grayscale(10) opacity(50);
-    backdrop-filter: blur(20px) grayscale(10) opacity(50);
-    padding-top: 1px; */
     width: max-content;
     z-index: 1;
     top: 0;
     list-style: none;
-    /* border-top: 1px solid #eee; */
-    /* max-width: 1300px; */
-    /* border-bottom: 1px double; */
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid #eee;
-
-    
-
-
+    visibility: visible;
 }
 
 .navbar ul {
@@ -231,36 +222,13 @@ body {
     margin: 0;
 }
 
-.dropdown {
-    display: block;
-  }
-
-.dpdn-cnt {
-    display: none;
-    position: absolute;
-}
-
- .dpdn-cnt a {
-    float: none;
-    display: block;
-    text-align: left;
-}
-
-/* .dropdown:hover {
-    padding-bottom: 15%;
-    transition: 0.7s ease-in-out;
-} */
-
-.dropdown:hover .dpdn-cnt {
-    /* display: block; */
-    display: none;
-}
-
 
 .topnav-inline {
     /* display: inline; */
     display: none;
     transition: .2s ease all;
+    /* padding: 20px; */
+    font-size: 20px;
 }
 
 .topnav-inline ul {
@@ -294,21 +262,6 @@ body {
 
 
 .hamburger {
-    /* display: none; */
-    /* border-top-style: solid;
-    border-bottom-style: solid;
-    font-size: auto;
-    text-align: center;
-    text-align: -webkit-center;
-    position: -webkit-sticky;
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px) grayscale(10) opacity(1);
-    list-style: none; */
-    /* padding: 10px; */
-
     position: absolute;
     /* transition: .2s ease all; */
     cursor: pointer;
@@ -317,8 +270,12 @@ body {
     top: .9rem;
     right: 2rem;
     border-bottom: none;
-
+    z-index: 1;
+    top: 0;
+    margin-top: 15px;
+    /* margin-bottom: 25px; */
     visibility: hidden;
+    
 }
 
 .hamburger a:link, a:visited {
@@ -327,6 +284,7 @@ body {
     /* float: right; */
     padding-right: 10px;
     right: 10px;
+    color: var(--text);
 }
 
 #myBtn {
@@ -978,6 +936,18 @@ footer img {
         height:auto;
     } */
 
+    .navbar, .recents {
+        visibility: hidden;
+        display: none;
+    }
+
+    .hamburger {
+        visibility: visible;
+    }
+
+    .main {
+        margin-top: 60px;
+    }
 
     
 }
