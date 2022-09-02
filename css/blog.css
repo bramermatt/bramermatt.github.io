@@ -336,7 +336,7 @@ text-align: center;
     color: var(--text);
     padding: 5px 0px;
     text-align: center; 
-    display: inline-block;
+    /* display: inline-block; */
     /* text-decoration: none; */
     /* font-style: oblique; */
     font-weight: bold;

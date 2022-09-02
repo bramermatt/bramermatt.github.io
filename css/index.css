@@ -112,11 +112,15 @@ body {
     margin: 0 auto 0;
     top: 0;
     width: 100%;
-    max-width: min-content;
+    max-width: max-content;
     text-align: center;
     /* padding: 5px; */
     border-bottom: 1px solid #eee;
     /* display:none; */
+
+    padding-left: 30px;
+    padding-right: 30px;
+    -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0) 100%);
 }
 
 /* .recents p {
