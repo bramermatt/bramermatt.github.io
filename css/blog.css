@@ -348,11 +348,11 @@ text-align: center;
 .blog h3 {
     /* font-size: 20px; */
     margin: 0px 0px 10px 0px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     /* padding-top: 10px; */
     text-align: center;
     font-weight: lighter;
-    border-bottom: 1px solid #eee;
+    /* border-bottom: 1px solid #eee; */
 
     /* Working on adding topic */
     /* float: left; */
@@ -572,6 +572,13 @@ text-align: center;
         z-index: 1;
     } */
 
+    /* .blog h3 {
+        border-bottom: 1px solid #999;
+        width: max-content;
+        margin: auto;
+        margin-bottom: 10px;
+    } */
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -601,7 +608,11 @@ text-align: center;
         z-index: 1;
     } */
 
-    .blog h2, .blog h1 {
+    /* .blog h3 {
+        border-bottom: 1px solid #999;
+    } */
+
+    .blog h2 {
         border-bottom: 1px solid #999;
     }
 
