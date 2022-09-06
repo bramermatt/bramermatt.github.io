@@ -484,16 +484,17 @@ body {
 
 .section p {
     padding: 0;
-    margin: auto;
+    margin: 0;
     font-weight: lighter;
-    line-height: 1.35;
-    letter-spacing: 0.015625rem;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    font-size: .9rem;
+    /* line-height: 1.35; */
+    /* letter-spacing: 0.015625rem; */
+    /* display: -webkit-box; */
+    /* -webkit-box-orient: vertical; */
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 2.3625rem;
-    -webkit-line-clamp: 2;
+    /* max-height: 2.3625rem; */
+    /* -webkit-line-clamp: 2; */
 }
 
 .section img {
