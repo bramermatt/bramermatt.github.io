@@ -1103,6 +1103,11 @@ footer img {
         box-shadow: 5px 5px 0 -4px #282828, 5px 5px white;
     }
 
+    .content-item-row:hover {
+        background-color:#555;
+    }
+    
+
     footer {
         /* background-color: white;
         color: black; */
@@ -1153,6 +1158,10 @@ footer img {
         background-color: white;
         border: solid 4px black;
         box-shadow: 5px 5px 0 -4px white, 5px 5px black;
+    }
+
+    .content-item-row:hover {
+        background-color: #eee;
     }
 
     footer {
