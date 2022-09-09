@@ -50,6 +50,9 @@ body {
     border-bottom: 1px solid #999;
     visibility: visible;
     margin: auto;
+
+
+
 }
 
 .navbar ul {
@@ -137,7 +140,7 @@ body {
 .topnav-inline ul {
     padding-left: 0;
     margin: 5px;
-    padding-right: 65px;
+    padding-right: 85px;
     padding-top: 5px;
 }
 
@@ -178,16 +181,19 @@ body {
     margin-top: 15px;
     /* margin-bottom: 25px; */
     visibility: hidden;
-    
 }
 
 .hamburger a:link, a:visited {
     font-size: 30px;
     text-decoration: none;
-    /* float: right; */
-    padding-right: 10px;
+    float: right;
+    /* padding-right: 10px; */
     right: 10px;
     color: var(--text);
+}
+
+.hamburger img {
+    max-width: 60px;
 }
 
 #myBtn {
@@ -222,11 +228,13 @@ body {
     margin-right: auto;
     /* border-radius: 10px; */
     padding-bottom: 20px;
+    transition: .2s ease all;
 }
+
 
 .title h1 {
     margin: auto;
-    max-width: 1050px;
+    max-width: 1250px;
     font-size: 50px;
     text-align: center;
 }
@@ -399,10 +407,11 @@ text-align: center;
     margin-top: 10px; */
 
     font-size: 1.05rem;
-    line-height: 1.4em;
-    word-wrap: break-word;
+    line-height: 1.6em;
+    /* word-wrap: break-word; */
     margin-bottom: 16px;
     margin-top: 10px;
+    /* text-indent: 10px; */
 }
 
 .blog h1 {
@@ -434,15 +443,18 @@ text-align: center;
 .blog h2 {
     padding-bottom: 10px;
     padding-top: 16px;
+    padding-left: 4px;
     /* margin: 0; */
     font-size: 1.5em;
     border-bottom: 1px solid #eee;
     /* width: max-content; */
 
-    position: sticky;
     position: -webkit-sticky;
+    position: sticky;
     z-index: 1;
     top: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -499,7 +511,7 @@ text-align: center;
     margin-left: auto;
     margin-right: auto;
     max-height:450px;
-    max-width: 100%;
+    max-width: 90%;
     width:auto;
     height:auto;
     overflow:hidden;
@@ -657,6 +669,13 @@ text-align: center;
 
     .hamburger {
         visibility: visible;
+        /* position: sticky;
+        position: -webkit-sticky;
+        top: 1;
+        right: 1;
+        z-index: 1;
+        background-color: rgb(17, 17, 17);
+        width: 100%; */
     }
 
     /* comment out once title is implemented. */
@@ -735,6 +754,12 @@ text-align: center;
         border: solid 4px black;
         box-shadow: 10px 10px 0 -4px white, 10px 10px black;
     }
+
+    /* .navbar {
+        background-color: white;
+        width: 100%;
+        border-bottom: solid 4px black;
+    } */
 
     /* .blog-left, .blog-right {
         display: none;
