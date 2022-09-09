@@ -545,12 +545,12 @@ body {
     height: 100%; */
 }
 
-.section iframe, .topic iframe {
+/* .section iframe, .topic iframe {
     margin: auto;
     padding-top: 20px;
     width: 100%; 
     height: 350px;
-}
+} */
 
 
 .content-item-row {
@@ -753,9 +753,16 @@ body {
 }
 
 .main-margin {
-    margin: 15px;
+    margin: 25px;
 }
 
+body iframe {
+    margin: auto;
+    padding: 10px;
+    width: 100%; 
+    height: 340px;
+    object-fit: cover;
+}
 
 .my-favs {
     padding: 10px 25px;
@@ -1053,8 +1060,8 @@ footer img {
     .section iframe, .topic iframe {
         margin: auto;
         /* padding-top: 20px; */
-        width: 100%; 
-        height: 220px;
+        /* width: 100%;  */
+        height: 260px;
     }
 
 }

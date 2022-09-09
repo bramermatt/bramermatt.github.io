@@ -213,11 +213,11 @@ body {
   }
 
 .title {
-    padding: 10px 25px;
+    /* padding: 10px 25px; */
     /* font-size: 20px; */
     /* max-width: 1200px; */
-    width: 66.7%;
-    /* width: 100%; */
+    /* width: 66.7%; */
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     /* border-radius: 10px; */
@@ -279,7 +279,7 @@ body {
 
 
 .blog-container {
-    max-width: 1600px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -297,7 +297,7 @@ margin-right: auto;
 font-size: .85em;
 text-align: center;
 
-margin-top: 700px;
+/* margin-top: 700px; */
 
 /* width: 16.7%; */
 /* padding-left: 20px; */
@@ -343,7 +343,7 @@ margin-top: 700px;
     margin-right: auto;
     font-size: .85em;
     text-align: center;
-    margin-top: 700px;
+    /* margin-top: 700px; */
     /* width: 16.7%; */
     /* padding-left: 20px; */
     /* height: calc(100vh - 70px); */
@@ -438,6 +438,11 @@ margin-top: 700px;
     font-size: 1.5em;
     border-bottom: 1px solid #eee;
     /* width: max-content; */
+
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1;
+    top: 0;
 }
 
 
@@ -510,7 +515,7 @@ margin-top: 700px;
 
 .blog iframe {
     margin: auto;
-    /* padding-top: 20px; */
+    padding-top: 10px;
     width: 100%; 
     height: 340px;
 }
@@ -537,6 +542,9 @@ margin-top: 700px;
     margin-top: 20px;
     margin-bottom: 20px;
     filter: drop-shadow(0 0 1.5px rgb(0, 0, 0));
+    padding: 10px;
+    width: 95%;
+    object-fit: cover;
 }
 
 .blog-topics {
@@ -631,9 +639,9 @@ margin-top: 700px;
 
     .blog iframe  {
         margin: auto;
-        /* padding-top: 20px; */
-        width: 100%; 
-        height: 170px;
+        padding: 10px;
+        width: 95%; 
+        height: 240px;
     }
 
 }
@@ -650,7 +658,7 @@ margin-top: 700px;
 
     /* comment out once title is implemented. */
     .blog {
-        /* margin-top: 70px; */
+        margin-top: 20px;
     }
 
     .blog-topics {
@@ -664,7 +672,7 @@ margin-top: 700px;
 
     .title {
         padding: 0;
-        padding-bottom: 20px;
+        /* padding-bottom: 20px; */
         width: 100%;
     }
 
@@ -690,6 +698,10 @@ margin-top: 700px;
         background-color: #282828;
         border: solid 4px white;
         box-shadow: 10px 10px 0 -4px #282828, 10px 10px white;
+    }
+
+    .blog h2 {
+        background-color: #282828;
     }
 
     /* .navbar {
@@ -742,6 +754,7 @@ margin-top: 700px;
 
     .blog h2 {
         border-bottom: 1px solid #999;
+        background-color: white;
     }
 
 }
