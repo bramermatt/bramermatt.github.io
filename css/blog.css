@@ -434,7 +434,7 @@ text-align: center;
 .blog h2 {
     padding-bottom: 10px;
     padding-top: 16px;
-    margin: 0;
+    /* margin: 0; */
     font-size: 1.5em;
     border-bottom: 1px solid #eee;
     /* width: max-content; */
