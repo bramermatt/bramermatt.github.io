@@ -1026,6 +1026,7 @@ footer img {
 
     .my-favs-content {
         display: block;
+        padding: 5px;
     }
 
 
@@ -1152,6 +1153,7 @@ footer img {
     .content-item-row:hover {
         background-color: #eee;
     }
+
 
     footer {
         /* background-color: #282828;
