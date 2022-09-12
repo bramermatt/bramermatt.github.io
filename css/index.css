@@ -727,7 +727,7 @@ body {
     /* background-color: lightblue; */
     padding: 5px;
     font-weight: bold;
-    border-top: 1px solid #eee;
+    border-top: 1px solid;
 
 }
 
@@ -1092,13 +1092,17 @@ footer img {
         margin: 5px;
     }
 
-    .section, .my-favs, .inline-recents, .main {
-        background-color: #282828;
-        border: 2px solid;
+    .section, .my-favs {
+        /* background-color: #282828;
+        border: 2px solid; */
         box-shadow:0;
         margin-left: auto;
         margin-right: auto;
 
+    }
+
+    .inline-recents, .main {
+        background-color: #282828;
     }
 
     .section, .my-favs {
@@ -1107,7 +1111,8 @@ footer img {
     }
 
     .section h5 {
-        background-color: #282828;
+        background-color: #111111;
+        /* background-color: #555 */
     }
 
     
@@ -1210,13 +1215,17 @@ footer img {
         margin: 5px;
     }
 
-    .section, .my-favs, .inline-recents, .main {
-        background-color: white;
-        border: 2px solid;
+    .section, .my-favs {
+        /* background-color: white; */
+        /* border: 2px solid; */
         box-shadow:0;
         margin-left: auto;
         margin-right: auto;
 
+    }
+
+    .inline-recents, .main {
+        background-color: white;
     }
 
     .section, .my-favs {
@@ -1225,7 +1234,8 @@ footer img {
     }
 
     .section h5 {
-        background-color: white;
+        background-color: #eee;
+        border-bottom: 1px solid;
     }
 
     
