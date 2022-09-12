@@ -619,11 +619,11 @@ body {
     margin-top: 10px;
     grid-template-columns: 1fr 1fr;
     display: grid;
-    overflow-x: clip;
+    overflow-x: auto;
     /* white-space: nowrap; */
-    /* margin: 0 auto 0; */
+    margin: 0 auto 0;
     /* top: 0; */
-    width: min-content;
+    /* /* width: min-content; */
 
 }
 
@@ -1254,7 +1254,7 @@ footer img {
 
 
 
-@media screen (prefers-color-scheme: light) and (min-width: 650px) {
+@media screen and (prefers-color-scheme: light) and (min-width: 650px) {
 
     body {
         background-color: #1111;
