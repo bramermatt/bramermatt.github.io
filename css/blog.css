@@ -389,7 +389,7 @@ text-align: center;
 
 
 .blog {
-    padding: 10px 25px;
+    padding: 15px;
     /* font-size: 20px; */
     max-width: 600px;
     /* width: 66.7%; */
@@ -443,9 +443,9 @@ text-align: center;
 
 .blog h2 {
     padding-bottom: 10px;
-    padding-top: 16px;
-    padding-left: 4px;
-    /* margin: 0; */
+    /* padding-top: 10px; */
+    /* padding-left: 4px; */
+    margin: 0;
     font-size: 1.5em;
     border-bottom: 1px solid #eee;
     /* width: max-content; */
@@ -512,8 +512,10 @@ text-align: center;
     margin-left: auto;
     margin-right: auto;
     max-height:450px;
-    max-width: 90%;
-    width:auto;
+    width: 100%;
+    /* max-width: 90%; */
+    /* width:auto; */
+    object-fit: cover;
     height:auto;
     overflow:hidden;
     filter: drop-shadow(0 0 1.5px rgb(0, 0, 0));
@@ -543,8 +545,8 @@ text-align: center;
 }
 
 .blog blockquote {
-    /* text-align: center; */
-    text-align: justify;
+    text-align: center;
+    /* text-align: justify; */
     margin: 0;
     padding-bottom: 10px;
     /* padding: 0 1em; */
@@ -563,6 +565,7 @@ text-align: center;
 
 .blog-topics {
     display: none;
+    padding-bottom: 20px;
 }
 
 .blog-topics li {
@@ -645,9 +648,6 @@ text-align: center;
 }
 
 @media (max-width: 690px) {
-    .blog {
-        margin: 25px;
-    }
 
     /* .title h1 {
         padding-top:60px;
@@ -714,7 +714,7 @@ text-align: center;
 }
 
 
-@media (prefers-color-scheme: dark) {
+@media only screen and (min-width: 690px) and (prefers-color-scheme: dark) {
 
     .blog {
         /* background-color: #5555; */
@@ -744,7 +744,18 @@ text-align: center;
 
 }
 
-@media (prefers-color-scheme: light) {
+@media only screen and (max-width: 690px) and (prefers-color-scheme: dark) {
+    .blog {
+        /* background-color: #5555; */
+        background-color: #282828;
+        border-radius: 0px;
+        border-top: .5px solid;
+        border-bottom: .5px solid;
+    }
+
+}
+
+@media screen and (prefers-color-scheme: light) and (min-width: 690px) {
 
     body {
         background-color: #1111;
@@ -784,6 +795,21 @@ text-align: center;
     .blog h2 {
         border-bottom: 1px solid #999;
         background-color: white;
+    }
+
+}
+
+@media screen and (prefers-color-scheme: light) and (max-width: 690px) { 
+    body {
+        background-color: #1111;
+    }
+
+    .blog {
+        background-color: #fafafa;
+        background-color: white;
+        border-radius: 0px;
+        border-top: .5px solid;
+        border-bottom: .5px solid;
     }
 
 }

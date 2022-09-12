@@ -299,7 +299,7 @@ body {
 
     padding: 10px 25px;
     column-count: 1;
-    min-width: 300px;
+    min-width: 390px;
     width: min-content;
     font-size: 20px;
     margin-top: 20px;
@@ -442,9 +442,9 @@ body {
 
 .section {
     padding: 10px 25px;
-    column-count: 1;
-    max-width: 650px;
-    /* width: min-content; */
+    /* column-count: 1; */
+    /* min-width: min-content; */
+    max-width: 950px;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -477,7 +477,7 @@ body {
     /* -webkit-line-clamp: 2; */
 }
 
-.section img {
+.section img, .my-favs img {
     padding-top: 20px;
     display: block;
     margin-left: auto;
@@ -566,7 +566,7 @@ body {
     /* display: contents; */
     padding-bottom: 18px;
     /* padding-left: 10px; */
-    padding-right: 18px;
+    /* padding-right: 10px; */
     
     grid-auto-flow: column;
     grid-column-gap: 18px;
@@ -603,27 +603,43 @@ body {
 
 .item-thumbnail {
     position: relative;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     margin: auto;
     border-radius: 300px;
-    display: none;
+
     object-fit: cover;
-    /* width: 120px; */
+    width: 100%;
     /* height: 20px; */
+    /* display: none; */
 
 }
 
 
 .project-links {
+    margin-top: 10px;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    overflow-x: clip;
+    /* white-space: nowrap; */
+    /* margin: 0 auto 0; */
+    /* top: 0; */
+    width: min-content;
 
 }
 
 .project-links a {
     text-decoration: none;
     font-size: .9rem;
+    margin: 5px;
     padding: 5px;
-    /* padding-right: 5px; */
+    border: 1px solid;
+    width: max-content;
+    /* min-width: 60px; */
 }
+
+/* .project-links a:hover {
+    background-color: blue;
+} */
 
 
 .topic {
@@ -661,12 +677,12 @@ body {
 .topic li {
     list-style-type: none;
 
-    /* 
-    to add multiple to line + row/column
+    
+    /* to add multiple to line + row/column */
     display: flex;
     flex: auto;
     flex-wrap: wrap; 
-    */
+    justify-content: center;
 }
 
 .topic ul {
@@ -1018,7 +1034,7 @@ footer img {
     
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
     .main, .my-favs-content {
         columns: 1;
         text-align: center;
@@ -1035,6 +1051,20 @@ footer img {
         display: block;
         padding: 5px;
     }
+
+    /* .project-links {
+        display: grid;
+        column-gap: 15px;
+    } */
+
+    /* .main-margin {
+        margin: 15px;
+    } */
+
+    .topic li, .my-favs-content {
+        display: block;
+    }
+    
 
 
     /* body img {
@@ -1056,8 +1086,59 @@ footer img {
 
 }
 
+@media screen and (prefers-color-scheme: dark) and (max-width: 650px) {
 
-@media (prefers-color-scheme: dark) {
+    .main-margin {
+        margin: 5px;
+    }
+
+    .section, .my-favs, .inline-recents, .main {
+        background-color: #282828;
+        border: 2px solid;
+        box-shadow:0;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .section, .my-favs {
+        padding: 10px 5px;
+        margin-bottom: 50px;
+    }
+
+    .section h5 {
+        background-color: #282828;
+    }
+
+    
+    .content-item-row {
+        /* max-width: max-content; */
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        background-color: #282828;
+        border: solid 4px white;
+        box-shadow: 5px 5px 0 -4px #282828, 5px 5px white;
+    }
+
+    .content-item-row:hover {
+        background-color:#555;
+    }
+
+    .project-links a:hover {
+        background-color: #282828;
+    }
+
+}
+
+
+
+
+@media (prefers-color-scheme: dark) and (min-width: 650px) {
 
     .main {
         background-color: #282828;
@@ -1086,8 +1167,9 @@ footer img {
         border-bottom: 1px solid;
     }
 
+
     .content-item-row {
-        max-width: max-content;
+        /* max-width: max-content; */
         padding-left: 10px;
         padding-right: 10px;
         margin: 15px;
@@ -1103,6 +1185,11 @@ footer img {
     .content-item-row:hover {
         background-color:#555;
     }
+
+    .project-links a:hover {
+        background-color: #282828;
+    }
+
     
 
     footer {
@@ -1113,7 +1200,61 @@ footer img {
 
 }
 
-@media (prefers-color-scheme: light) {
+@media screen and (prefers-color-scheme: light) and (max-width: 650px) {
+
+    body {
+        background-color: #eee;
+    }
+
+    .main-margin {
+        margin: 5px;
+    }
+
+    .section, .my-favs, .inline-recents, .main {
+        background-color: white;
+        border: 2px solid;
+        box-shadow:0;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .section, .my-favs {
+        padding: 10px 5px;
+        margin-bottom: 50px;
+    }
+
+    .section h5 {
+        background-color: white;
+    }
+
+    
+    .content-item-row {
+        /* max-width: max-content; */
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        background-color: white;
+        border: solid 4px black;
+        box-shadow: 5px 5px 0 -4px white, 5px 5px black;
+    }
+
+    .content-item-row:hover {
+        background-color: #eee;
+    }
+
+    .project-links a:hover {
+        background-color: white;
+    }
+}
+
+
+
+@media screen (prefers-color-scheme: light) and (min-width: 650px) {
 
     body {
         background-color: #1111;
@@ -1148,7 +1289,7 @@ footer img {
     }
 
     .content-item-row {
-        max-width: max-content;
+        /* max-width: max-content; */
         padding-left: 10px;
         padding-right: 10px;
         margin: 15px;
@@ -1160,6 +1301,11 @@ footer img {
     .content-item-row:hover {
         background-color: #eee;
     }
+
+    .project-links a:hover {
+        background-color: white;
+    }
+    
 
 
     footer {
