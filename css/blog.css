@@ -50,6 +50,7 @@ body {
     border-bottom: 1px solid #999;
     visibility: visible;
     margin: auto;
+    width: 100%;
 
 
 
@@ -223,18 +224,20 @@ body {
     /* font-size: 20px; */
     /* max-width: 1200px; */
     /* width: 66.7%; */
-    width: 100%;
+    /* width: 100%; */
     margin-left: auto;
     margin-right: auto;
     /* border-radius: 10px; */
     padding-bottom: 20px;
     transition: .2s ease all;
+    border-bottom: 1px solid;
+    margin-bottom: 50px;
 }
 
 
 .title h1 {
     margin: auto;
-    max-width: 1250px;
+    /* max-width: 1250px; */
     font-size: 50px;
     text-align: center;
     padding: 10px;
@@ -248,19 +251,27 @@ body {
 }
 
 .title img {
-    padding: 15px 0px;
+    /* padding: 15px 0px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-height: 780px;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    overflow: hidden;
+    max-height: 880px;
+    max-width: 100%; */
+    /* height: auto; */
+    /* overflow: hidden;
     filter: drop-shadow(0 0 1.5px rgb(0, 0, 0));
     transition: transform .5s;
     z-index: 0;
+    object-fit: cover; */
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
     object-fit: cover;
+    max-height: 50vh;
+    min-height: 600px;
 }
 
 .title a:link, a:visited {
@@ -698,9 +709,7 @@ text-align: center;
     }
 
     .title {
-        padding: 0;
-        /* padding-bottom: 20px; */
-        width: 100%;
+       margin-top: 70px;
     }
 
     .title h1 {
