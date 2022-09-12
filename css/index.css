@@ -487,7 +487,7 @@ body {
 
     object-fit: cover; 
     width: 100%; 
-    height: 120px;
+    height: 150px;
 }
 
 
@@ -606,12 +606,10 @@ body {
     padding-left: 10px;
     margin: auto;
     border-radius: 300px;
-
-    display:none;
-
-    object-fit: cover; 
-    width: 120px; 
-    height: 20px;
+    display: none;
+    object-fit: cover;
+    /* width: 120px; */
+    /* height: 20px; */
 
 }
 
@@ -662,6 +660,13 @@ body {
 
 .topic li {
     list-style-type: none;
+
+    /* 
+    to add multiple to line + row/column
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap; 
+    */
 }
 
 .topic ul {
@@ -754,6 +759,8 @@ body iframe {
     padding: 15px;
     padding-bottom: 20px;
     border-radius: 20px;
+
+    /* display:none; */
 
     /* background-color: white;
     border: solid 4px black;
