@@ -270,8 +270,8 @@ body {
     display: flex;
     width: 100%;
     object-fit: cover;
-    max-height: 50vh;
-    min-height: 600px;
+    max-height: 70vh;
+    min-height: 400px;
 }
 
 .title a:link, a:visited {
