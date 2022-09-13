@@ -648,6 +648,8 @@ body {
         justify-content: center;
         /* white-space: nowrap; */
     }
+
+
 }
 
 @media (max-width: 950px) {
@@ -662,5 +664,13 @@ body {
 
     .hamburger {
         visibility: visible;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .under-fold-posts {
+        width: 100%;
     }
 }
