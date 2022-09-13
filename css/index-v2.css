@@ -181,14 +181,16 @@ body {
 .section, .section-more {
     /* background-color: #fff; */
     color: var(--text);
+    /* max-width: 1500px; */
+    margin: auto;
  }
 
 .link {
     text-decoration: none;
  }
 
-.posts a, .posts-more a {
-    font-size: 30px;
+.posts a, .post-more a {
+    font-size: 20px;
     text-decoration: none;
  }
 
@@ -407,7 +409,8 @@ body {
     margin-bottom: 15px;
     background-position: 50% 50%;
     background-size: cover;
-    
+    opacity: 15%;
+    filter: grayscale(100);
 }
 
 .news-posts {
@@ -455,6 +458,7 @@ body {
     letter-spacing: .3px;
     text-transform: uppercase;
     margin-bottom: 5px;
+    color: black;
 }
 
 .news-subtitle {
@@ -503,8 +507,9 @@ body {
     }
 
 
-    .posts {
+    .posts, .post-more {
         display: flex;
+        flex-wrap: nowrap;
         justify-content: space-between;
     }
 }
