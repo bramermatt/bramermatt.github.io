@@ -180,7 +180,7 @@ body {
     text-align: center;
     /* padding-left: 0; */
     /* margin: 5px; */
-    padding-right: 85px;
+    /* padding-right: 85px; */
     /* padding-top: 5px; */
     /* visibility: hidden; */
     display: none;
@@ -191,6 +191,7 @@ body {
     font-size: 30px;
     letter-spacing: .23rem;
     line-height: 40px;
+    padding: 0;
 }
 
 .inline-navbar li {
