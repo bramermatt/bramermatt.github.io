@@ -1345,7 +1345,7 @@ display: none;
 }
 
 
-@media (min-width: 850px) {
+@media (min-width: 1050px) {
     .navbar {
         visibility: visible;
     }
@@ -1371,13 +1371,13 @@ display: none;
         display: flex;
         flex-basis: auto;
         justify-content: center;
-        white-space: nowrap;
+        /* white-space: nowrap; */
     }
 
 
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1050px) {
     .navbar {
         display: none;
         visibility: hidden;
@@ -1412,20 +1412,20 @@ display: none;
     }
 
     .navbar li:hover, .inline-navbar li:hover, .blog a:hover, .blog li a:hover, .individual:hover  {
-        background-color:black;
+        background-color: rgb(29,29,29);
         color: white;
     }
 }
 
 @media screen and (prefers-color-scheme: dark) {
-    .navbar, .hamburger, .inline-navbar, .blog a, .blog li a {
-        background-color: #111;
+    .navbar, .hamburger, .inline-navbar {
+        background-color: rgb(29,29,29);
     }
 
     
 
     .navbar li:hover, .inline-navbar li:hover, .blog a:hover, .blog li a:hover, .individual:hover  {
         background-color:white;
-        color: #111;
+        color: rgb(29,29,29);
     }
 }
