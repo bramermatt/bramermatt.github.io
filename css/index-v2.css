@@ -436,6 +436,7 @@ body {
     font-weight: 500;
     text-align: center;
     letter-spacing: .3px;
+    /* display: inline-block; */
 }
 
 .read-more a {
@@ -456,8 +457,8 @@ body {
     background-color: var(--background);
     /* text-decoration: underline; */
     /* font-weight: lighter; */
-    background-color: black;
-    color: rgb(88, 228, 88);
+    /* background-color: black;
+    color: rgb(88, 228, 88); */
 }
 
 .news a:link, .news a:visited {
@@ -1411,6 +1412,11 @@ display: none;
         background-color: white;
     }
 
+    .read-more:hover {
+        background-color:white;
+        color: rgb(29,29,29);
+    }
+
     .navbar li:hover, .inline-navbar li:hover, .blog a:hover, .blog li a:hover, .individual:hover  {
         background-color: rgb(29,29,29);
         color: white;
@@ -1422,7 +1428,10 @@ display: none;
         background-color: rgb(29,29,29);
     }
 
-    
+    .read-more:hover {
+        background-color: rgb(29,29,29);
+        color: white;
+    }
 
     .navbar li:hover, .inline-navbar li:hover, .blog a:hover, .blog li a:hover, .individual:hover  {
         background-color:white;
