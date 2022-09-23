@@ -1044,6 +1044,15 @@ display: none;
     line-height: 24px;
 }
 
+.blog ol {
+    /* list-style-type: none; */
+    /* display: inline; */
+    /* margin: 0; */
+    /* padding: 20px; */
+    /* font-size: 20px; */
+    line-height: 24px;
+}
+
 .blog li {
     padding-bottom: 15px;
 
@@ -1078,7 +1087,7 @@ display: none;
     /* background-color:rgb(68, 163, 68); */
 }
 
-.blog img {
+.blog img, .blog li img  {
     padding: 15px 0px;
     display: block;
     margin-left: auto;
