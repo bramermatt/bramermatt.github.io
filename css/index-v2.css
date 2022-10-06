@@ -540,9 +540,9 @@ body {
 .news-title h2 {
     display: inline;
     background-color: rgb(88, 228, 88);
-    font-size: 40px;
-    font-size: 35px;
-    /* line-height: 35px; */
+    /* font-size: 40px; */
+    font-size: 30px;
+    line-height: 30px;
     font-weight: 700;
     text-decoration: none;
     /* line-height: 11px; */
