@@ -791,6 +791,7 @@ iframe {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    filter: drop-shadow(0 0 2.5px rgb(0, 0, 0));
 }
 
 .title a:link, a:visited {
@@ -812,7 +813,10 @@ iframe {
 }
 
 .blog-title {
-
+    /* background-color: blue; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%);
 }
 
 
@@ -978,7 +982,6 @@ display: none;
     border-radius: 10px;
     padding-bottom: 50px;
 }
-
 
 .blog p {
     /* font-size: 16px;
@@ -1530,6 +1533,11 @@ display: none;
         background-color: white;
     }
 
+    .blog-title {
+        background-color: rgb(29,29,29);
+        color: white;
+    }
+
     .read-more:hover {
         background-color:white;
         color: rgb(29,29,29);
@@ -1551,6 +1559,11 @@ display: none;
 @media screen and (prefers-color-scheme: dark) {
     .navbar, .hamburger, .inline-navbar {
         background-color: rgb(29,29,29);
+    }
+
+    .blog-title {
+        background-color: rgb(29,29,29);
+        color: white;
     }
 
     .read-more:hover {
