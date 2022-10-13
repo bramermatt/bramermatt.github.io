@@ -1207,7 +1207,8 @@ display: none;
     padding-top: 10px;
     width: 100%; 
     /* height: 340px; */
-    height: 670px;
+    height: 705px;
+    filter: drop-shadow(0 0 1.5px rgb(0, 0, 0));
 }
 
 .blog audio {
@@ -1447,7 +1448,7 @@ display: none;
         margin: auto;
         padding: 10px;
         /* width: 95%;  */
-        height: 260px;
+        height: 280px;
     }
 
 
