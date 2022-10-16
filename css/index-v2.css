@@ -801,8 +801,8 @@ iframe {
     /* object-fit: cover; */
     max-height: 80vh;
     /* min-height: 400px; */
-    object-fit: cover;
-    /* object-fit: scale-down; */
+    /* object-fit: cover; */
+    object-fit: scale-down;
     margin: auto;
     /* margin-top: 20px; */
     margin-bottom: 20px;
@@ -1177,7 +1177,7 @@ display: none;
     /* padding-left: 4px; */
     margin: 0;
     margin-bottom: 5px;
-    margin-top: 30px;
+    margin-top: 60px;
     font-size: 1.5em;
     /* border-bottom: .5px solid #eee; */
 
@@ -1555,7 +1555,7 @@ display: none;
 
     .tldr {
         /* margin: 20px; */
-        text-align: justify;
+        text-align: center;
         font-size: 18px;
         line-height: 20px;
         max-width: 380px;
