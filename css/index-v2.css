@@ -43,6 +43,7 @@ body {
 
  .hamburger {
     display: flex;
+    justify-content: flex-end;
     /* padding: 10px; */
     /* max-width: 500px; */
     transition: .2s ease all;
@@ -69,6 +70,7 @@ body {
  .hamburger a {
     font-size: 25px;
     text-decoration: none;
+    padding-right: 15px;
  }
 
  .hamburger a:link, .hamburger a:visited {
@@ -871,7 +873,7 @@ iframe {
 .blog-tag p {
     /* text-align: left; */
     display: inline-block;
-    margin: 10px 0px 0px 10px;
+    /* margin: 10px 0px 0px 10px; */
     padding: 5px 8px 4px;
     border: 1px solid;
     font-family: 'Sharp Grotesk',sans-serif;
@@ -882,6 +884,15 @@ iframe {
     font-weight: 500;
     letter-spacing: .3px;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+.blog-tag a:link, a:visited {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.blog-tag a:hover {
     text-decoration: none;
 }
 
@@ -949,6 +960,10 @@ iframe {
     /* margin-top: 20px;
     margin-bottom: 20px; */
     /* filter: drop-shadow(0 0 2.5px rgb(0, 0, 0)); */
+}
+
+.blog-vertical a:link, a:visited {
+    text-decoration: none;
 }
 
 .tldr {
@@ -1513,9 +1528,10 @@ display: none;
     outline: none;
     color: var(--text);
     cursor: pointer;
-    padding: 20px;
+    padding: 10px;
+    padding-bottom: 15px;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 30px;
     filter: drop-shadow(0 0 1px rgb(0, 0, 0));
     opacity: 40%;
   }
@@ -1554,8 +1570,8 @@ display: none;
     }
 
     .blog-vertical-title {
-        padding-top: 10px;
-        /* margin: 15px; */
+        padding-top: 5px;
+        margin: 0;
         text-align: center;
     }
 
@@ -1593,6 +1609,10 @@ display: none;
         /* width: 100%;
         object-fit: cover; */
         margin: auto;
+    }
+
+    .blog-tag {
+        display: flex;
     }
 
 }
@@ -1725,6 +1745,11 @@ display: none;
         color: rgb(29,29,29);
     }
 
+    .blog-tag a:hover {
+        background-color: rgb(29,29,29);
+        color: white;
+    }
+
     .individual:hover {
         background-color: rgb(29,29,29);
         color: white;
@@ -1753,6 +1778,13 @@ display: none;
         color: white;
         border: 1px solid rgb(29,29,29);
     }
+
+
+    .blog-tag a:hover {
+        background-color:white;
+        color: rgb(29,29,29);
+    }
+
 
     .individual:hover {
         background-color:white;
