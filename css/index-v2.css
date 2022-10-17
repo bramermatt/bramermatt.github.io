@@ -146,7 +146,7 @@ body {
     padding-bottom: 10px; */
     margin: auto;
     font-size: 20px;
-    max-width: 1000px;
+    /* max-width: 1000px; */
  }
 
  .navbar a:link, a:visited {
@@ -166,6 +166,17 @@ body {
 
 .navbar li {
     padding: 11px;
+}
+
+.navbar img {
+    height: 8vh;
+    padding: 10px;
+    float: left;
+}
+
+.inline-navbar img {
+    height: 8vh;
+    padding: 10px;
 }
 
 
@@ -292,14 +303,14 @@ body {
 }
 
 .individual-more {
-    background-color:rgb(68, 163, 68);
+    /* background-color:rgb(68, 163, 68); */
 }
 
 .individual img, .individual-more img {
     /* width: auto; */
-    /* height: 120px; */
+    height: 120px;
     margin-right: 0;
-    height: 135px;
+    /* height: 135px; */
     width: 100%;
     object-fit: cover;
     margin-bottom: 15px;
@@ -1516,6 +1527,11 @@ display: none;
     margin-bottom: 0px;
 }
 
+.links img {
+    height: 10vh;
+    margin: auto;
+}
+
 
 
 #myBtn {
@@ -1666,7 +1682,7 @@ display: none;
 }
 
 
-@media (min-width: 850px) {
+@media (min-width: 860px) {
     .navbar {
         visibility: visible;
     }
@@ -1741,7 +1757,7 @@ display: none;
         color: white;
     } */
 
-    .read-more:hover {
+    .read-more:hover, .individual-more:hover {
         background-color:white;
         color: rgb(29,29,29);
     }
@@ -1751,7 +1767,7 @@ display: none;
         color: white;
     }
 
-    .individual:hover {
+    .individual:hover, .individual-more {
         background-color: rgb(29,29,29);
         color: white;
         border: 1px solid rgb(29,29,29);
@@ -1774,7 +1790,7 @@ display: none;
         color: white;
     } */
 
-    .read-more:hover {
+    .read-more:hover, .individual-more:hover {
         background-color: rgb(29,29,29);
         color: white;
         border: 1px solid rgb(29,29,29);
@@ -1787,7 +1803,7 @@ display: none;
     }
 
 
-    .individual:hover {
+    .individual:hover, .individual-more {
         background-color:white;
         color: rgb(29,29,29);
         border: 1px solid white;
