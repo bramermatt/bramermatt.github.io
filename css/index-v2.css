@@ -302,6 +302,34 @@ body {
     border: 1px solid;
 }
 
+.individual-ad {
+    color: var(--text);
+    height: 100%;
+    /* width: 100%; */
+    padding: 30px;
+
+    /* padding: 20px; */
+    /* background-color: transparent; */
+    text-decoration: none;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* border-top: 1px solid;
+    border-bottom: 1px solid; */
+    border: 1px solid;
+}
+
+.individual-ad h2 {
+    margin: 5px;
+}
+
 .individual-more {
     /* background-color:rgb(68, 163, 68); */
 }
