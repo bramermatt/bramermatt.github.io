@@ -1289,7 +1289,7 @@ display: none;
 
 .blog a:link, a:visited {
     color: var(--text);
-    padding: 5px 0px;
+    /* padding: 5px 0px; */
     text-align: center; 
     /* display: inline-block; */
     /* text-decoration: none; */
@@ -1411,6 +1411,7 @@ display: none;
 
 .twitter-tweet {
     margin: auto;
+    height: 779px !important;
 }
 
 .scrollable::-webkit-scrollbar {
@@ -1632,18 +1633,26 @@ display: none;
         display: flex;
     }
 
+    .blog p, .blog a, .blog li {
+        font-size: 16px;
+        /* line-height: 32px; */
+    }
+
 }
 
 
 
 
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
 
     .title {
        /* margin-top: 70px; */
     }
 
+    .title h2 {
+        font-size: 30px;
+    }
 
 
     .title h3 {
