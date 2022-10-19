@@ -11,6 +11,8 @@
     
     <title>Site Map | Matt Bramer</title>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/dropDown.js"></script>
 
 
 </head>
@@ -35,13 +37,37 @@
             |
             <a href="recents.html" ><li>recent</li></a>
             |
-            <a href="blogs.html"><li>blog</li></a>
+            <div class="dropdown">
+                <button class="dropbtn">
+            <a href="../html/blogs.html"><li>Blog
+                <i class="fa fa-caret-down"></i></li></a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../html/blogs.html">All Blogs</a>
+                    <hr style="margin: 0;">
+                    <a href="../html/blogs/bike-commute.html">Bike Commute Blogs</a>
+                    <a href="../html/blogs/updates.html">Update Blogs</a>
+                </div>
+              </div> 
             |
             <a href="coverage.html"><li>coverage</li></a>
             |
             <a href="projects.html"><li>projects</li></a>
             |
-            <a href="reviews.html"><li>reviews</li></a>
+            <div class="dropdown">
+                <button class="dropbtn">
+            <a href="../html/reviews.html"><li>reviews
+                <i class="fa fa-caret-down"></i></li></a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../html/reviews.html">All Reviews</a>
+                    <hr style="margin: 0;">
+                    <a href="../html/reviews/book-reviews.html">Book Reviews</a>
+                    <a href="../html/reviews/books/harry-potter-reviews.html">Harry Potter Reviews</a>
+                    <a href="../html/reviews/books/stormlight-archive-series.html">The Stormlight Archive Reviews</a>
+                    <a href="../html/reviews/movie-reviews.html" >Movie Reviews</a>
+                </div>
+              </div> 
             |
             <a href="about.html"><li>about</li></a>
         </ul>
@@ -191,6 +217,14 @@
 
         <div class="map">
             <ul>
+                <h2>Harry Potter Reviews</h2>
+                <a href="../docs/reviews/hp-1-review.html"><li>Harry Potter and the Sorcerer's Stone</li></a>
+                <a href="../docs/reviews/hp-chamber.html"><li>Harry Potter and the Chamber of Secrets</li></a>
+            </ul>
+        </div>
+
+        <div class="map">
+            <ul>
             <h2>The Stormlight Archive Reviews</h2>
             <a href="../docs/reviews/wok-review.html"><li>The Way of Kings Review</li></a>
             <a href="../docs/reviews/words-of-radiance.html"><li>Words of Radiance Review</li></a>
@@ -278,6 +312,7 @@
                 <ul>
                     
                     <a href="../html/reviews/book-reviews.html"><li>Book Reviews</li></a>
+                    <a href="../html/reviews/books/harry-potter-reviews.html"><li>Harry Potter Reviews</li></a>
                     <a href="../html/reviews/books/stormlight-archive-series.html"><li>The Stormlight Archive Reviews</li></a>
                     <br>
                     <a href="../html/reviews/movie-reviews.html" ><li>Movie Reviews</li></a>

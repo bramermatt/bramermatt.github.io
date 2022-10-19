@@ -41,6 +41,57 @@ body {
     
  }
 
+
+ .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 20px;    
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    /* color: white; */
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    /* font-family: inherit; */
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: black;
+    /* min-width: 160px; */
+    font-size: 80%;
+    overflow-x: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    /* color: black; */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    /* color: black; */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
  .hamburger {
     display: flex;
     /* justify-content: flex-end; */
@@ -1513,7 +1564,7 @@ display: none;
 
 .twitter-tweet {
     margin: auto;
-    height: 779px !important;
+    /* height: 779px !important; */
 }
 
 .scrollable::-webkit-scrollbar {
@@ -1569,8 +1620,8 @@ display: none;
     right: 0;
     bottom: auto;
     z-index: 1;
-    border-top: 1px solid;
-    /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
+    /* border-top: 1px solid; */
+    box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%);
     color: var(--text);
     text-transform: uppercase;
     padding-top: 40px;
@@ -1679,47 +1730,36 @@ display: none;
 
 } */
 
-@media screen and (max-width: 1100px) {
-    .blog-vertical, .blog-title {
-        columns: 1;
-        margin: 15px;
-        padding-top: 0;
-        padding: 0;
-        padding-bottom: 0;
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
     }
-
-    .blog-title {
-        padding-bottom: 10px;
-        align-items: center;
+    .topnav a.icon {
+      float: right;
+      display: block;
     }
-
-
-    .blog-vertical-title {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin: 0;
-        text-align: center;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
     }
-
-    .tldr {
-        /* margin: 20px; */
-        text-align: center;
-        font-size: 18px;
-        line-height: 20px;
-        max-width: 380px;
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
     }
-
-    .title h1, .blog-title h1 {
-        font-size: 30px;
-        line-height: 30px;
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
     }
-
-    .site-map {
-        margin: 15px;
-    }
-
-
-}
+  }
 
 
 @media (max-width: 690px) {
@@ -1762,7 +1802,7 @@ display: none;
 
 
 
-@media (max-width: 1500px) {
+@media (max-width: 1300px) {
 
     .title {
        /* margin-top: 70px; */
@@ -1806,10 +1846,33 @@ display: none;
     }
 
 
+
+    .blog-vertical-title {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .tldr {
+        /* margin: 20px; */
+        text-align: center;
+        font-size: 18px;
+        line-height: 20px;
+        max-width: 380px;
+    }
+
+
+
+    .site-map {
+        margin: 15px;
+    }
+
+
 }
 
 
-@media (min-width: 860px) {
+@media (min-width: 935px) {
     .navbar {
         visibility: visible;
     }
@@ -1837,7 +1900,7 @@ display: none;
 
 }
 
-@media (max-width: 850px) {
+@media (max-width: 935px) {
     .navbar {
         display: none;
         visibility: hidden;
@@ -1857,7 +1920,7 @@ display: none;
         line-height: 100%;
     }
 
-    .hero-title h1, .blog-vertical-title h1 {
+    .hero-title h1 {
         font-size: 50px;
         padding: 20px;
         line-height: 50px;
@@ -1867,7 +1930,24 @@ display: none;
         width: 100%;
     }
 
+    .blog-vertical, .blog-title {
+        columns: 1;
+        margin: 15px;
+        padding-top: 0;
+        padding: 0;
+        padding-bottom: 0;
+    }
 
+    .blog-title {
+        padding-bottom: 10px;
+        align-items: center;
+    }
+
+
+    .title h1, .blog-title h1, .blog-vertical h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
 
 
 }

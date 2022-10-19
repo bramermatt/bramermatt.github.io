@@ -8,6 +8,9 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="img/mLogo.png">
     <link rel="stylesheet" href="css/index-v2.css">   
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/dropDown.js"></script>
     
     <title>Matt Bramer | Home</title>
 
@@ -15,6 +18,9 @@
 
 </head>
 <body>
+
+
+    
     <div class="hamburger">
         <script src="js/hamburger-v2.js"></script>
         <a href="#" onclick="myFunction()">
@@ -26,18 +32,43 @@
 
     <div class="navbar">
         <ul>
-            <img src="img/mLogo.png" alt="logo">
+            <a href="html/site-map.html"><img src="img/mLogo.png" alt="logo"></a>
             <a href="index.html" class="active"><li>home</li></a>
             |
             <a href="html/recents.html"><li>recent</li></a>
             |
-            <a href="html/blogs.html"><li>blog</li></a>
+            <div class="dropdown">
+                <button class="dropbtn">
+            <a href="html/blogs.html"><li>Blog
+                <i class="fa fa-caret-down"></i></li></a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="html/blogs.html">All Blogs</a>
+                    <hr style="margin: 0;">
+                    <a href="html/blogs/bike-commute.html">Bike Commute Blogs</a>
+                    <a href="html/blogs/updates.html">Update Blogs</a>
+                </div>
+              </div> 
             |
             <a href="html/coverage.html"><li>coverage</li></a>
             |
             <a href="html/projects.html"><li>projects</li></a>
             |
-            <a href="html/reviews.html"><li>reviews</li></a>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+            <a href="html/reviews.html"><li>reviews
+                <i class="fa fa-caret-down"></i></li></a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="html/reviews.html">All Reviews</a>
+                    <hr style="margin: 0;">
+                    <a href="html/reviews/book-reviews.html">Book Reviews</a>
+                    <a href="html/reviews/books/harry-potter-reviews.html">Harry Potter Reviews</a>
+                    <a href="html/reviews/books/stormlight-archive-series.html">The Stormlight Archive Reviews</a>
+                    <a href="html/reviews/movie-reviews.html" >Movie Reviews</a>
+                </div>
+              </div> 
             |
             <a href="html/about.html"><li>about</li></a>
         </ul>
@@ -45,7 +76,7 @@
 
     <div class="inline-navbar" id="inline-navbar">
         <ul>
-            <img src="img/mLogo.png" alt="logo">
+            <a href="html/site-map.html"><img src="img/mLogo.png" alt="logo"></a>
             <a href="index.html" class="active"><li>home</li></a>
             <a href="html/recents.html"><li>recent</li></a>
             <a href="html/blogs.html"><li>blog</li></a>
@@ -485,6 +516,7 @@
                 <ul>
                     <!-- <img src="img/mLogo.png" alt="logo"> -->
                     <a href="html/reviews/book-reviews.html"><li>Book Reviews</li></a>
+                    <a href="html/reviews/books/harry-potter-reviews.html"><li>Harry Potter Reviews</li></a>
                     <a href="html/reviews/books/stormlight-archive-series.html"><li>The Stormlight Archive Reviews</li></a>
                     <br>
                     <a href="html/reviews/movie-reviews.html" ><li>Movie Reviews</li></a>
