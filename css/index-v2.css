@@ -38,7 +38,10 @@ body {
     /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 
     cursor: default;
-    scrollbar-width: thin;
+
+    /* margin-left: 140px; 
+    font-size: 28px;
+    padding: 0px 10px;  */
  }
 
 
@@ -88,6 +91,7 @@ body {
   
   .dropdown:hover .dropdown-content {
     display: block;
+    
   }
 
 
@@ -153,28 +157,30 @@ body {
 
 
 .navbar {
-    /* height: 60px; */
-
     padding-right: 5%;
     padding-left: 5%;
-
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     bottom: auto;
     z-index: 1;
-
-    /* padding-right: 30px;
-    padding-left: 30px; */
-
-    /* border-bottom: 1px solid; */
     box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%);
     margin-bottom: 10px;
-    /* background-color: rgb(68, 163, 68); */
     color: var(--text);
     visibility: hidden;
     text-transform: uppercase;
+
+    /* height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px; */
+
  }
 
  .navbar ul {
@@ -185,23 +191,17 @@ body {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    /* justify-content: space-evenly; */
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     list-style: none;
-
     padding-left: 0;
-    /* padding-left: 10px; */
     text-align: center;
-    /* margin: 10px; */
-    /* margin-bottom: 10px; */
-    /* padding-top:10px;
-    padding-bottom: 10px; */
     margin: auto;
     font-size: 20px;
     max-width: 1300px;
+
  }
 
  .navbar a:link, a:visited {
@@ -1161,7 +1161,7 @@ iframe {
 
 
 .blog-sidebar {
-    float: right;
+    /* float: right;
     position: -webkit-sticky;
     position: sticky;
     -ms-overflow-style: none;
@@ -1170,11 +1170,8 @@ iframe {
     margin-right: auto;
     font-size: .85em;
     text-align: center;
-    /* margin-top: 700px; */
     width: 15%;
-    padding-right: 25px;
-    /* padding-left: 20px; */
-    /* height: calc(100vh - 70px); */
+    padding-right: 25px; */
     
     display: none;
 }
