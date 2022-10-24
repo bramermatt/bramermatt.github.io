@@ -1933,6 +1933,7 @@ display: none;
     .hamburger {
         visibility: visible;
         padding: 10px;
+        
     }
 
     .title h2 {
@@ -1972,8 +1973,10 @@ display: none;
         /* z-index: 1; */
         /* padding: 0; */
         /* padding-left: 39px; */
-        padding-top: 0px;
+        /* padding-top: 0px; */
+        padding: 0;
         margin-left: 40px;
+        margin-right: 40px;
         /* margin: 0; */
         z-index: 1;
         font-size: 20px;
