@@ -1517,12 +1517,12 @@ display: none;
 .blog blockquote {
     text-align: center;
     /* text-align: justify; */
-    /* margin: 0; */
+    margin: 0;
     /* padding-bottom: 10px; */
 
     padding-left: 15px;
     padding-right: 15px;
-
+    padding-top: 0;
     /* padding: 0 1em; */
     color: #777;
     /* border-left: .25em solid #ddd; */
@@ -1826,22 +1826,32 @@ display: none;
     .posts, .post-more {
         display: block;
         flex-wrap: wrap;
+        /* columns: 2; */
 
+        /* display: grid;
+        grid-template-columns: 1 1; */
     }
 
-    /* .individual, .individual-more {
+    .individual, .individual-more {
         display: block;
         columns: 2;
+        padding: 15px;
     }
 
-    .section, .section-more {
+    .individual img, .individual-more img {
+        margin: 0;
+        /* max-height: 10vh; */
+    }
+
+    /* .section, .section-more {
         display: flex;
-    } 
+        flex-wrap: wrap;
+    }  */
 
     .individual img, .individual-more img {
         height: 20vh;
         object-fit: cover;
-    } */
+    }
 
     .individual h2, .individual-more h2 {
         line-height: 30px;
@@ -2065,6 +2075,7 @@ display: none;
     .read-more:hover, .individual-more:hover {
         background-color:white;
         color: rgb(29,29,29);
+        /* border: 1px solid rgb(29,29,29); */
     }
 
     .blog-tag a:hover {
@@ -2114,7 +2125,7 @@ display: none;
     .individual:hover, .individual-more {
         background-color:white;
         color: rgb(29,29,29);
-        border: 1px solid white;
+        border: 1px solid rgb(29,29,29);
     }
 
     .navbar li:hover, .inline-navbar li:hover, .blog a:hover, .blog li a:hover, .footer li:hover, .map li:hover  {
