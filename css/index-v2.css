@@ -39,9 +39,9 @@ body {
 
     cursor: default;
 
-    /* margin-left: 140px; 
-    font-size: 28px;
-    padding: 0px 10px;  */
+    margin-left: 120px; 
+    /* font-size: 28px; */
+    /* padding: 0px 10px;  */
  }
 
 
@@ -97,11 +97,12 @@ body {
 
 
  .hamburger {
-    display: flex;
+
     /* justify-content: flex-end; */
     /* padding: 10px; */
     /* max-width: 500px; */
     transition: .2s ease all;
+    display: none;
     visibility: hidden;
     /* background-color: rgb(68, 163, 68); */
     /* border-bottom: .5px solid; */
@@ -157,19 +158,14 @@ body {
 
 
 .navbar {
-    padding-right: 5%;
+    /* padding-right: 5%;
     padding-left: 5%;
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     bottom: auto;
-    z-index: 1;
-    box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%);
-    margin-bottom: 10px;
-    color: var(--text);
-    visibility: hidden;
-    text-transform: uppercase;
+ */
 
     /* height: 100%;
     width: 160px;
@@ -181,10 +177,26 @@ body {
     overflow-x: hidden;
     padding-top: 20px; */
 
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 16px;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%);
+    margin-bottom: 10px;
+    color: var(--text);
+    visibility: hidden;
+    text-transform: uppercase;
  }
 
  .navbar ul {
-    display: -webkit-box;
+    /* display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -200,8 +212,11 @@ body {
     text-align: center;
     margin: auto;
     font-size: 20px;
-    max-width: 1300px;
+    max-width: 1300px; */
 
+    list-style-type: none;
+    padding: 0;
+    display: block;
  }
 
  .navbar a:link, a:visited {
@@ -227,7 +242,9 @@ body {
 .navbar img {
     height: 5vh;
     padding: 5px;
-    float: left;
+    /* float: left; */
+    /* display: block; */
+    float: none;
 }
 
 .inline-navbar img {
@@ -1743,22 +1760,6 @@ display: none;
 
 } */
 
-@media screen and (max-width: 600px) {
-    .dropdown .dropbtn {
-      display: none;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .dropdown {float: none;}
-    .dropdown-content {position: relative;}
-    .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
 
 @media (max-width: 690px) {
 
@@ -1913,8 +1914,8 @@ display: none;
         display: flex;
         /* flex-wrap: wrap; */
         flex-basis: auto;
-        /* justify-content: center; */
-        justify-content: space-around;
+        justify-content: center;
+        /* justify-content: space-around; */
     }
 
     /* .read-more {
@@ -1933,6 +1934,10 @@ display: none;
         visibility: hidden;
     }
 
+    body {
+        margin: 0;
+    }
+
     /* .footer {
         height: 30vh;
     } */
@@ -1940,7 +1945,7 @@ display: none;
     .hamburger {
         visibility: visible;
         padding: 10px;
-        
+        display: flex;
     }
 
     .title h2 {
