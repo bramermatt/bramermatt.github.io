@@ -1121,7 +1121,7 @@ iframe {
     text-overflow: ellipsis;
 }
 
-.blog-vertical-title h1 {
+.blog-vertical-title h1, .title-top h1 {
     font-size: 70px;
     line-height: 70px;
     text-transform: uppercase;
@@ -2051,8 +2051,35 @@ display: none;
         /* justify-content: space-around; */
     }
 
+    .blog-title h1, .blog-vertical h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
 
-    .title h1, .blog-title h1, .blog-vertical h1 {
+    .title-top h1 {
+        /* font-size: 30px; */
+        line-height: 60px;
+        /* position: absolute; */
+        position: fixed;
+        /* position: sticky; */
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        padding: 0;
+        margin-left: 40px;
+        margin-right: 40px;
+        /* margin: 0; */
+        /* margin: 0; */
+        z-index: 1;
+        font-size: 28px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-transform: uppercase;
+    }
+
+    .title h1 {
         /* font-size: 30px; */
         line-height: 60px;
         /* position: absolute; */
