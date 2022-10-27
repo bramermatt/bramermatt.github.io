@@ -443,12 +443,14 @@ body {
 
 .grid-item-hero-title {
     padding: 40px;
+    /* align-self: center; */
 
 }
 
 .grid-item-hero-title h1 {
     font-size: 50px;
     margin: 0;
+    text-align: center;
 }
 
 .grid-item-hero-title p {
@@ -601,6 +603,8 @@ body {
 .title h2 {
     margin-top: 0;
     margin-bottom: 0;
+    margin: auto;
+
     font-family: 'Sharp Grotesk',sans-serif;
     /* color: #000; */
     font-size: 40px;
@@ -676,7 +680,7 @@ body {
     /* text-decoration: underline; */
 }
 
-.read-more {
+.read-more, .blog-read-more {
     border: 1px solid;
     margin: auto;
     margin-top: 15px;
@@ -698,7 +702,7 @@ body {
     /* display: none; */
 }
 
-.read-more a {
+.read-more a, .blog-read-more a {
     text-decoration: none;
     font-weight: bold;
     margin: auto;
@@ -707,13 +711,13 @@ body {
     /* width: 100%; */
 }
 
-.read-more a:link, .read-more a:visited, .under-fold a:link, .under-fold a:visited, .sidebar a:link, .sidebar a:visited, .sidebar-left a:link, .sidebar-left a:visited {
+.read-more a:link, .read-more a:visited, .under-fold a:link, .under-fold a:visited, .sidebar a:link, .sidebar a:visited, .sidebar-left a:link, .sidebar-left a:visited, .blog-read-more a:link, .blog-read-more a:visited {
     color: var(--text);
 }
 
 .read-more:hover {
     color: var(--text);
-    background-color: var(--background);
+    /* background-color: var(--background); */
     /* text-decoration: underline; */
     /* font-weight: lighter; */
     /* background-color: black;
@@ -2032,6 +2036,8 @@ display: none;
 
     .title h2 {
         font-size: 25px;
+        margin: auto;
+        margin-bottom: 8px;
     }
 
     .tag {
@@ -2415,7 +2421,7 @@ display: none;
         /* border: 1px solid rgb(29,29,29); */
     }
 
-    .navbar li:hover, .inline-navbar li:hover, .blog a:hover, .blog li a:hover, .footer li:hover, .map li:hover, .grid-item-hero-title a:hover  {
+    .navbar li:hover, .inline-navbar li:hover, .blog a:hover, .blog li a:hover, .footer li:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag p:hover  {
         background-color:white;
         color: rgb(29,29,29);
         /* border: 1px solid white; */
