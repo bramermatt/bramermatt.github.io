@@ -1722,7 +1722,7 @@ display: none;
 
 .blog li a:hover {
     color: var(--text);
-    font-weight: bold;
+    /* font-weight: bold; */
   }
 
 
@@ -1733,7 +1733,7 @@ display: none;
     /* display: inline-block; */
     /* text-decoration: none; */
     /* font-style: oblique; */
-    font-weight: bold;
+    /* font-weight: bold; */
     /* padding: 10px; */
 }
 
@@ -2503,11 +2503,16 @@ display: none;
         /* border: 1px solid rgb(29,29,29); */
     }
 
-    .navbar li:hover, .inline-navbar li:hover, .blog a:hover, .blog li a:hover, .footer li:hover, .blog-left a:hover, .blog-right a:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag p:hover  {
+    .navbar li:hover, .inline-navbar li:hover, .footer li:hover, .blog-left a:hover, .blog-right a:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag p:hover  {
         background-color: rgb(29,29,29);
         /* background-color: #3cffd0; */
         color: white;
         /* border: 1px solid rgb(29,29,29); */
+    }
+
+    .blog a:hover, .blog li a:hover {
+        border-top: 2px solid;
+        border-bottom: 2px solid;
     }
 }
 
@@ -2542,9 +2547,14 @@ display: none;
         /* border: 1px solid rgb(29,29,29); */
     }
 
-    .navbar li:hover, .inline-navbar li:hover, .blog a:hover, .blog li a:hover, .footer li:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag p:hover  {
+    .navbar li:hover, .inline-navbar li:hover, .footer li:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag p:hover  {
         background-color:white;
         color: rgb(29,29,29);
         /* border: 1px solid white; */
+    }
+
+    .blog a:hover, .blog li a:hover {
+        border-top: 2px solid;
+        border-bottom: 2px solid;
     }
 }
