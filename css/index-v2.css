@@ -1460,22 +1460,24 @@ iframe {
 
 .spoiler-scrollbar p {
     font-size: 90px;
+    line-height: 85px;
     margin: 0;
     padding: 0;
     font-weight: bolder;
-    transform: translateX(100%);
-    animation: scroll-left 18s linear infinite;
+    text-align: center;
+    /* transform: translateX(100%); */
+    /* animation: scroll-left 18s linear infinite; */
     /* scroll-snap-stop: always; */
     /* width: 50%; */
     /* max-width: 50vw; */
     /* overflow-y: visible; */
     overflow: hidden;
-    width: 100vh;
+    /* width: 100vh; */
     /* width: 100%; */
     /* scrollbar-gutter: 40px; */
 }
 
-.spoiler-scrollbar p::-webkit-scrollbar {
+/* .spoiler-scrollbar p::-webkit-scrollbar {
     display: none;
 }
 
@@ -1490,7 +1492,7 @@ iframe {
         transform: translateX(-100%); 
         }
         
-    }
+    } */
 
 
 .blog-sidebar {
