@@ -118,7 +118,7 @@ body::-webkit-scrollbar-thumb {
     /* border-bottom: .5px solid; */
 
     /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
-    /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 10%); */
+    box-shadow: 0 1px 20px -1px rgb(0 0 0 / 10%);
 
     position: sticky;
     left: 0;
@@ -1436,6 +1436,10 @@ iframe {
     /* margin: 15px; */
     /* margin: 20px; */
     /* margin-top: 30px; */
+
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .tldr h1 {
@@ -1445,11 +1449,15 @@ iframe {
 }
 
 .tldr p {
-    margin-top: 15px;
+    /* margin-top: 15px;
     margin-left: 15px;
-    margin-right: 15px;
+    margin-right: 15px; */
+    margin-left: auto;
+    margin-right: auto;
     font-size: 18px;
     line-height: 25px;
+    max-width: 500px;
+    text-align: center;
 }
 
 .spoiler-scrollbar {
@@ -1908,12 +1916,15 @@ display: none;
     width: 75% !important;
 } */
 
-.twitter-tweet {
+.twitter-tweet, .tw-align-center, #twitter-widget-0 {
     margin: auto;
-    /* height: 773px; */
+    height: 89vh !important;
+    /* margin-bottom: 10px !important; */
     /* height:500px; */
     /* width:500px; */
-    /* height: 779px !important; */
+    /* height: 100%; */
+    /* height: 89vh !important; */
+    /* padding-bottom: 20px; */
 }
 
 .scrollable::-webkit-scrollbar {
@@ -2318,7 +2329,7 @@ display: none;
         text-align: center;
         font-size: 18px;
         line-height: 20px;
-        max-width: 380px;
+        /* max-width: 380px; */
     }
 
 
