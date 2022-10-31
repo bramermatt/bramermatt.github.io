@@ -41,8 +41,11 @@ body {
 
     cursor: default;
     
-
+    /* opacity: 0.5; */
     margin-left: 120px; 
+    /* max-width: 1550px;
+    margin-left: auto;
+    margin-right: auto; */
     /* font-size: 28px; */
     /* padding: 0px 10px;  */
  }
@@ -57,6 +60,9 @@ body::-webkit-scrollbar-thumb {
     background: var(--background);
     /* background: black; */
     border: 1px solid;
+    /* border-left: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid; */
   }
   
 
@@ -193,13 +199,17 @@ body::-webkit-scrollbar-thumb {
     overflow-x: hidden;
     padding-top: 20px; */
 
+    /* max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto; */
+
     height: 100%;
     width: 120px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    /* background-color: #111; */
     overflow-x: hidden;
     padding-top: 16px;
     text-align: center;
@@ -2668,7 +2678,7 @@ display: none;
 
     .navbar {
         background-color: white;
-        /* border-right: 1px solid; */
+        border-right: 1px solid;
     }
 
     /* .blog-title {
@@ -2715,7 +2725,8 @@ display: none;
     }
 
     .navbar {
-        background-color: #000;
+        /* background-color: #000; */
+        border-right: 1px solid;
     }
 
 
