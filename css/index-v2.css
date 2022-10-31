@@ -1341,7 +1341,8 @@ iframe {
     padding: 5px; 
     max-width: 800px; 
     margin: auto;
-    filter: drop-shadow(0 0 1.5px rgb(0, 0, 0));
+    /* filter: drop-shadow(0 0 1.5px rgb(0, 0, 0)); */
+    border: 1px solid;
 }
 
 .blog-vertical blockquote {
@@ -1931,7 +1932,8 @@ display: none;
     padding: 5px; 
     max-width: max-content; 
     margin: auto;
-    filter: drop-shadow(0 0 1.5px rgb(0, 0, 0));
+    /* filter: drop-shadow(0 0 1.5px rgb(0, 0, 0)); */
+    border: 1px solid;
 }
 
 .blog video {
