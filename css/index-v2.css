@@ -2275,6 +2275,10 @@ display: none;
         padding: 10px;
     }
 
+    .blog-vertical blockquote {
+        display: block;
+    }
+
     .category {
         margin: 15px;
     }
@@ -2647,9 +2651,7 @@ display: none;
         /* line-height: 30px; */
     }
 
-    .blog-vertical blockquote {
-        display: block;
-    }
+
 
 
 }
