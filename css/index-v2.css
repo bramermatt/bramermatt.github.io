@@ -1320,7 +1320,7 @@ iframe {
     margin: auto;
     text-align: center;
     font-family: 'Sharp Grotesk',sans-serif;
-    /* color: #000; */
+    /* color: #000; */ 
     font-size: 15px;
     line-height: 15px;
     font-weight: 500;
@@ -1380,7 +1380,7 @@ iframe {
 .blog-tag a:link, a:visited {
     text-decoration: none;
     color: var(--text);
-    margin: 4px;
+    /* margin: 4px; */
     width: max-content;
 }
 
@@ -2186,7 +2186,7 @@ display: none;
     } */
 
     .blog p, .blog a, .blog li {
-        font-size: 16px;
+        /* font-size: 16px; */
         /* line-height: 32px; */
     }
 
@@ -2661,8 +2661,14 @@ display: none;
 
 @media screen and (prefers-color-scheme: light) {
 
-    .navbar, .hamburger, .inline-navbar, .blog a, .blog li a {
+    .hamburger, .inline-navbar {
         background-color: white;
+        border-bottom: 1px solid;
+    }
+
+    .navbar {
+        background-color: white;
+        /* border-right: 1px solid; */
     }
 
     /* .blog-title {
@@ -2701,10 +2707,15 @@ display: none;
 }
 
 @media screen and (prefers-color-scheme: dark) {
-    .navbar, .hamburger, .hamburger a, .inline-navbar {
+    .hamburger, .inline-navbar {
         /* background-color: rgb(29,29,29); */
         background-color: #000;
+        border-bottom: 1px solid;
         /* z-index: 100; */
+    }
+
+    .navbar {
+        background-color: #000;
     }
 
 
