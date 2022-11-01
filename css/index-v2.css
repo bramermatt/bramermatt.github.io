@@ -1281,7 +1281,7 @@ iframe {
     /* object-fit: scale-down; */
     margin: auto;
     /* margin-top: 20px; */
-    /* margin-bottom: 20px; */
+    margin-bottom: 15px;
     /* filter: drop-shadow(0 0 2.5px rgb(0, 0, 0)); */
 }
 
@@ -1307,7 +1307,7 @@ iframe {
     /* background-color: blue; */
     /* padding-top: 20px; */
     padding-bottom: 20px;
-    border-bottom: .5px solid;
+    /* border-bottom: .5px solid; */
     /* max-width: 1450px; */
     /* max-width: max-content; */
     margin-left: auto;
@@ -1321,6 +1321,10 @@ iframe {
     /* overflow: hidden; */
     text-overflow: ellipsis;
     margin-top: 0;
+
+
+
+
 }
 
 
@@ -1436,7 +1440,7 @@ iframe {
     /* max-width: 1050px; */
     margin-left: auto;
     margin-right: auto;
-    border-bottom: .5px solid;
+    /* border-bottom: .5px solid; */
     /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 5%); */
 }
 
@@ -1546,15 +1550,21 @@ iframe {
 }
 
 .spoiler-scrollbar {
-    background-color: black;
+    /* background-color: black; */
+    background: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* margin-top: 20px; */
+    /* margin: 10px; */
     color: white;
+    /* height: 20vh; */
 }
 
 
 .spoiler-scrollbar p {
-    font-size: 80px;
-    line-height: 75px;
-    margin: 0;
+    font-size: 100px;
+    line-height: 85px;
+    margin: auto;
     padding: 0;
     font-weight: bolder;
     text-align: center;
@@ -1565,6 +1575,7 @@ iframe {
     /* max-width: 50vw; */
     /* overflow-y: visible; */
     overflow: hidden;
+    text-overflow: ellipsis;
     /* width: 100vh; */
     /* width: 100%; */
     /* scrollbar-gutter: 40px; */
@@ -2253,7 +2264,7 @@ display: none;
     }
 
     .grid-item img {
-        height: 20vh;
+        height: 30vh;
     }
 
     .grid-item-no-border h2 {
@@ -2786,15 +2797,18 @@ display: none;
 @media screen and (prefers-color-scheme: dark) {
     .hamburger, .inline-navbar {
         /* background-color: rgb(29,29,29); */
-        /* background-color: #000; */
-        border-bottom: 1px solid;
-        background: transparent;
+        background-color: #000;
+        /* border-bottom: 1px solid; */
+        /* background: transparent;
         -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px) opacity(1);
+        backdrop-filter: blur(10px) opacity(1); */
+        /* background: var(---background); */
+        /* background-color: rgba(255, 255, 255, 1); */
         /* z-index: 100; */
     }
 
     .navbar {
+        
         /* background-color: #000; */
         /* border-right: 1px solid; */
 
@@ -2823,6 +2837,11 @@ display: none;
         background-color:white;
         color: rgb(29,29,29);
     }
+
+    /* .blog-tag p {
+        background-color: white;
+        color: #000;
+    } */
 
 
     .individual:hover, .individual-more, .individual-hidden:hover  {
