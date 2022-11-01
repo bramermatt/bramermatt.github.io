@@ -2481,7 +2481,26 @@ display: none;
     .navbar {
         display: none;
         visibility: hidden;
+        /* visibility: visible;
+        max-width: 8vw;
+        text-overflow: ellipsis; */
     }
+
+    body {
+        margin: 0;
+    }
+
+    /* .navbar ul {
+        text-overflow: ellipsis;
+        font-size: 25px;
+        overflow-x: hidden;
+        max-width: 29px;
+        overflow-wrap: initial;
+    }
+
+    .navbar img {
+        display: none;
+    } */
 
     body {
         margin: 0;
@@ -2601,6 +2620,8 @@ display: none;
         overflow: hidden;
         text-overflow: ellipsis;
         text-transform: uppercase;
+        
+        /* display: none; */
     }
 
     .title h1 {
@@ -2667,6 +2688,8 @@ display: none;
         /* line-height: 15px; */
         /* padding: 20px;
          */
+
+         /* display: none; */
     }
 
     .blog-vertical-title p, .blog-title p {
@@ -2743,7 +2766,7 @@ display: none;
     }
 
     .navbar {
-        /* background-color: #000; */
+        background-color: #000;
         border-right: 1px solid;
     }
 
