@@ -505,6 +505,14 @@ body::-webkit-scrollbar-thumb {
     font-size: 50px;
     margin: 0;
     text-align: center;
+    border-bottom: 1px solid;
+}
+
+.grid-item-hero-title h2 {
+    font-size: 32px;
+    margin: 0;
+    margin-top: 15px;
+    text-align: center;
 }
 
 .grid-item-hero-title p {
@@ -2277,6 +2285,10 @@ display: none;
 
     .grid-item-hero-title h1 {
         font-size: 35px;
+    }
+
+    .grid-item-hero-title h2 {
+        font-size: 22px;
     }
 
     .grid-item-hero-title p {
