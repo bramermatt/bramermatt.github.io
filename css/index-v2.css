@@ -1512,8 +1512,8 @@ iframe {
 
 
 .blog-vertical img {
-    /* max-height: 80vh; */
-    height: 80vh;
+    max-height: 80vh;
+    /* height: 80vh; */
     align-items: center;
     object-fit: contain;
     margin: auto;
