@@ -2016,14 +2016,14 @@ display: none;
     color: #777;
     line-height: 1.6em;
 
-    max-width: 650px;
+    /* max-width: 650px; */
     margin-left: auto;
     margin-right: auto;
     /* border-bottom: .25px solid #eee; */
 
 
     font-size: 11px;
-    line-height: 11px;
+    line-height: 18px;
     text-transform: uppercase;
 
     /* bottom: 50px; 
