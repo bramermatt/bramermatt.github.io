@@ -44,6 +44,7 @@ body {
     /* opacity: 0.5; */
     
     margin-left: 120px; 
+    /* margin-right: 120px; */
 
 
     /* max-width: 1550px;
@@ -176,6 +177,26 @@ body::-webkit-scrollbar-thumb {
     /* color: rgb(68, 163, 68); */
 }
 
+.navbar-right {
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    /* left: 0; */
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 16px;
+    text-align: center;
+    z-index: 1;
+    /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
+    border-right: .25px solid #eee;
+    margin-bottom: 10px;
+    color: var(--text);
+    visibility: hidden;
+    text-transform: uppercase;
+}
+
 
 .navbar {
     /* padding-right: 5%;
@@ -210,10 +231,13 @@ body::-webkit-scrollbar-thumb {
     /* side-navigation */
     height: 100%;
     width: 120px;
+    /* width: 6.5vw; */
+    /* margin-right: 120px; */
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
+    /* right: 0; */
     overflow-x: hidden;
     padding-top: 16px;
     text-align: center;
@@ -227,7 +251,7 @@ body::-webkit-scrollbar-thumb {
    
  }
 
- .navbar ul {
+ .navbar ul, .navbar-right ul {
     /* display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -253,7 +277,7 @@ body::-webkit-scrollbar-thumb {
     display: block;
  }
 
- .navbar a:link, a:visited {
+ .navbar a:link, a:visited, .navbar-right a:link, .navbar-right a:visited {
     color: var(--text);
     text-decoration: none;
 }
@@ -268,12 +292,12 @@ body::-webkit-scrollbar-thumb {
     color: white;
 }
 
-.navbar li {
+.navbar li, .navbar-right li {
     padding: 11px;
     /* float: right; */
 }
 
-.navbar img {
+.navbar img, .navbar-right img {
     height: 5vh;
     padding: 5px;
     /* float: left; */
@@ -715,6 +739,15 @@ body::-webkit-scrollbar-thumb {
 /* .individual a:link, a:visited {
     color: var(--text);
 } */
+
+
+.individual iframe {
+    height: 18vh;
+    object-fit: cover;
+    background-position: 50% 50%;
+    background-size: cover;
+    /* padding-bottom: 0; */
+}
 
 .topic {
     margin-top: -4px;
@@ -1159,14 +1192,13 @@ body::-webkit-scrollbar-thumb {
     width: 50%;
 } */
 
-iframe {
+/* iframe {
     margin: auto;
-    /* padding: 10px; */
     width: 100%; 
-    height: 242px;
+    height: 230px;
     object-fit: cover;
     padding-bottom: 20px;
-}
+} */
 
 
 
@@ -1603,7 +1635,7 @@ iframe {
 
 
 .spoiler-scrollbar p {
-    font-size: 100px;
+    font-size: 90px;
     line-height: 85px;
     margin: auto;
     padding: 0;
@@ -1660,7 +1692,7 @@ iframe {
 
 
 .blog-container {
-    max-width: 1500px;
+    max-width: 1400px;
     /* max-width: 1250px; */
     margin-left: auto;
     margin-right: auto;
@@ -1845,14 +1877,16 @@ display: none;
 }
 
 .blog h2 {
-    /* padding-bottom: 10px; */
+
     /* padding-top: 10px; */
     /* padding-left: 4px; */
     margin: 0;
     margin-bottom: 5px;
     margin-top: 60px;
     font-size: 1.5em;
+
     /* border-bottom: .5px solid #eee; */
+    /* padding-bottom: 10px; */
 
     padding-left: 15px;
     padding-right: 15px;
@@ -1982,19 +2016,46 @@ display: none;
     margin-right: auto;
     padding-top: 10px;
     /* margin-left: 120px; */
-    width: 100%;
-    /* height: auto; */
-    /* max-width: 100%; */
-    /* max-height: 88.5vh; */
-    /* width: 1200px;  */
-    /* max-width: 1200px; */
-    /* height: 340px; */
-    height: 88.5vh;
-    /* height: 74.2vh; */
+    /* width: 100%; */
+    /* height: 80vh; */
     object-fit: cover;
     /* height: 100%; */
     /* filter: drop-shadow(0 0 .9px rgb(0, 0, 0)); */
+
+    width: 100%; 
+    /* height: 100%; */
+    height: 88.5vh;
+
+    /* 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    */
 }
+
+
+/* .iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.85%; 
+  } */
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  /* .blog iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  } */
+
 
 .blog audio {
     text-align: center;
@@ -2235,7 +2296,7 @@ display: none;
     padding: 10px;
     padding-bottom: 15px;
     /* border-radius: 10px; */
-    font-size: 40px;
+    font-size: 30px;
     filter: drop-shadow(0 0 1px rgb(0, 0, 0));
     opacity: 20%;
   }
@@ -2272,7 +2333,6 @@ display: none;
     .blog iframe, .blog video, .grid-item-no-border iframe  {
         margin: auto;
         padding: 10px;
-        /* width: 95%;  */
         height: 270px;
     }
 
@@ -2324,8 +2384,8 @@ display: none;
     }
 
     .individual iframe {
-        height: 12vh;
-        
+        height: 10vh;
+        padding-bottom: 0;
     }
 
     .grid-item img {
@@ -2405,6 +2465,8 @@ display: none;
     .category {
         margin: 15px;
     }
+
+
     
 }
 
@@ -2548,7 +2610,7 @@ display: none;
 
 
 @media (min-width: 935px) {
-    .navbar {
+    .navbar, .navbar-right {
         visibility: visible;
     }
 
@@ -2571,7 +2633,7 @@ display: none;
 }
 
 @media (max-width: 935px) {
-    .navbar {
+    .navbar, .navbar-right {
         display: none;
         visibility: hidden;
         /* visibility: visible;
@@ -2804,8 +2866,6 @@ display: none;
     }
 
 
-
-
 }
 
 
@@ -2825,7 +2885,7 @@ display: none;
         /* backdrop-filter: blur(100px) grayscale(10) opacity(1); */
     }
 
-    .navbar {
+    .navbar, .navbar-right {
         /* 
         border-right: 1px solid; */
         background-color: white;
@@ -2859,7 +2919,7 @@ display: none;
         /* border: 1px solid rgb(29,29,29); */
     }
 
-    .navbar li:hover, .inline-navbar li:hover, .footer li:hover, .blog-left a:hover, .blog-right a:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag p:hover  {
+    .navbar li:hover, .navbar-right li:hover, .inline-navbar li:hover, .footer li:hover, .blog-left a:hover, .blog-right a:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag p > a:hover  {
         background-color: rgb(29,29,29);
         /* background-color: #3cffd0; */
         color: white;
@@ -2933,7 +2993,7 @@ display: none;
         /* border: 1px solid rgb(29,29,29); */
     }
 
-    .navbar li:hover, .inline-navbar li:hover, .footer li:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag p:hover  {
+    .navbar li:hover, .navbar-right li:hover, .inline-navbar li:hover, .footer li:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag p > a:hover  {
         background-color:white;
         color: rgb(29,29,29);
         /* border: 1px solid white; */
