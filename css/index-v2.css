@@ -124,8 +124,8 @@ body::-webkit-scrollbar-thumb {
     visibility: hidden;
     /* background-color: rgb(68, 163, 68); */
     /* border-bottom: .5px solid; */
-
-    box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%);
+    border-bottom: .25px solid #eee;
+    /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
     /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 10%); */
 
     position: sticky;
@@ -184,9 +184,10 @@ body::-webkit-scrollbar-thumb {
     top: 0;
     right: 0;
     bottom: auto;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #eee;
     text-transform: uppercase; 
-    height: 5vh; */
+    height: 5vh;
+    z-index: 1; */
     /* topnav */
     /* position: fixed; */
 
@@ -217,7 +218,8 @@ body::-webkit-scrollbar-thumb {
     padding-top: 16px;
     text-align: center;
     z-index: 1;
-    box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%);
+    /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
+    border-right: .25px solid #eee;
     margin-bottom: 10px;
     color: var(--text);
     visibility: hidden;
@@ -446,7 +448,8 @@ body::-webkit-scrollbar-thumb {
 .grid-item {
     /* just here to be a grid item */
     align-self: center;
-    border: 1px solid;
+    /* border: 1px solid; */
+    border: .25px solid #eee;
     height: 100%;
     /* margin: 10px; */
 }
@@ -477,7 +480,7 @@ body::-webkit-scrollbar-thumb {
 .grid-item-hidden {
     /* just here to be a grid item */
     align-self: center;
-    border: .25px solid;
+    border: .25px solid #eee;
     height: 100%;
     display: none;
 }
@@ -582,7 +585,8 @@ body::-webkit-scrollbar-thumb {
     width: 100%; 
     /* height: 340px; */
     height: 49vh;
-    filter: drop-shadow(0 0 1.5px rgb(0, 0, 0));
+    /* filter: drop-shadow(0 0 1.5px rgb(0, 0, 0)); */
+    /* filter: drop-shadow(0 0 .9px rgb(0, 0, 0)); */
 }
 
 
@@ -894,7 +898,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .news {
-    padding: 15px;
+    padding: 35px;
     /* height: 406px; */
     display: block;
     -webkit-box-align: end;
@@ -1175,7 +1179,8 @@ iframe {
 }
 
 .category h1 {
-    border-bottom: 1px solid;
+    border-bottom: .5px solid;
+    /* border-bottom: .25px solid #eee; */
     padding-bottom: 10px;
 }
 
@@ -1210,6 +1215,7 @@ iframe {
     text-transform: uppercase;
     /* padding: 0; */
     border-bottom: 1px solid currentColor;
+    /* border-bottom: .25px solid #eee; */
     margin: 15px 1px .75em;
     display: inline-block;
     margin-bottom: 10px;
@@ -1960,7 +1966,7 @@ display: none;
     object-fit: contain;
     height:auto;
     overflow:hidden;
-    filter: drop-shadow(0 0 1.5px rgb(0, 0, 0));
+    filter: drop-shadow(0 0 .9px rgb(0, 0, 0));
     transition: transform .5s;
     z-index: 1;
 }
@@ -1986,7 +1992,7 @@ display: none;
     /* height: 75vh; */
     object-fit: cover;
     /* height: 100%; */
-    filter: drop-shadow(0 0 1.5px rgb(0, 0, 0));
+    /* filter: drop-shadow(0 0 .9px rgb(0, 0, 0)); */
 }
 
 .blog audio {
@@ -1999,34 +2005,34 @@ display: none;
 }
 
 .blog blockquote {
-    /* text-align: center;
+    text-align: center;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 0;
+    padding-top: 5px;
     color: #777;
     line-height: 1.6em;
 
     max-width: 650px;
     margin-left: auto;
-    margin-right: auto; */
+    margin-right: auto;
+    /* border-bottom: .25px solid #eee; */
 
 
     font-size: 11px;
     line-height: 11px;
     text-transform: uppercase;
 
-    bottom: 50px; 
+    /* bottom: 50px; 
     position: relative; 
     background-color: white; 
     color: black;
-    /* width: max-content;  */
     padding: 5px; 
     max-width: max-content; 
     margin: auto;
-    /* filter: drop-shadow(0 0 1.5px rgb(0, 0, 0)); */
-    border: 1px solid;
+    border: 1px solid; */
 }
 
 .blog video {
@@ -2069,11 +2075,14 @@ display: none;
 } */
 
 .twitter-tweet, .tw-align-center, #twitter-widget-0 {
-    margin: auto;
-    height: 89vh !important;
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: auto; */
+    /* height: 89vh; */
     /* margin-bottom: 10px !important; */
-    /* height:500px; */
-    /* width:500px; */
+    /* height: 500px; */
+    /* width: 500px; */
     /* height: 100%; */
     /* height: 89vh !important; */
     /* padding-bottom: 20px; */
@@ -2139,6 +2148,7 @@ display: none;
     text-transform: uppercase;
     padding-top: 40px;
     padding-bottom: 40px;
+    /* margin-top: 40px; */
     /* background-color: rgb(112, 112, 112);
     color: white; */
 }
@@ -2213,23 +2223,27 @@ display: none;
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 25px;
+    right: 20px;
     z-index: 99;
     border: none;
     outline: none;
     color: var(--text);
     cursor: pointer;
+    /* height: 4vh; */
+    overflow-y: hidden;
     padding: 10px;
     padding-bottom: 15px;
-    border-radius: 10px;
-    font-size: 30px;
+    /* border-radius: 10px; */
+    font-size: 40px;
     filter: drop-shadow(0 0 1px rgb(0, 0, 0));
-    opacity: 40%;
+    opacity: 20%;
   }
   
   #myBtn:hover {
-    color: #555; /* Add a dark-grey background on hover */
-    opacity: 100%;
+    color: #555; 
+    /* Add a dark-grey background on hover */
+    /* color: #eee; */
+    opacity: 80%;
   }
 
 /* @media (max-width: 1210px) {
@@ -2310,6 +2324,7 @@ display: none;
 
     .individual iframe {
         height: 12vh;
+        
     }
 
     .grid-item img {
@@ -2324,6 +2339,8 @@ display: none;
         padding: 10px;
         /* margin-top: 25px; */
     }
+
+
 
 
 }
@@ -2346,8 +2363,12 @@ display: none;
         /* margin-top: 20px; */
     }
 
-    .grid-two-columns, .grid-three-columns, .grid-four-columns, .grid-five-columns, .grid-six-columns, .grid-seven-columns {
+    .grid-two-columns, .grid-three-columns, .grid-four-columns, .grid-seven-columns {
         grid-template-columns: 2fr 2fr ;
+    }
+
+    .grid-six-columns, .grid-five-columns {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .grid-item-hidden {
@@ -2774,6 +2795,11 @@ display: none;
 
     .individual h2, .individual-more h2 {
         /* line-height: 30px; */
+    }
+
+
+    .grid-six-columns, .grid-five-columns {
+        grid-template-columns: 2fr 2fr;
     }
 
 
