@@ -1660,8 +1660,8 @@ iframe {
 
 
 .blog-container {
-    max-width: 1500px;
-    /* max-width: 1250px; */
+    /* max-width: 1500px; */
+    max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
     border-top: .25px solid #eee;
@@ -1988,8 +1988,8 @@ display: none;
     /* width: 1200px;  */
     /* max-width: 1200px; */
     /* height: 340px; */
-    height: 88.5vh;
-    /* height: 75vh; */
+    /* height: 88.5vh; */
+    height: 74.2vh;
     object-fit: cover;
     /* height: 100%; */
     /* filter: drop-shadow(0 0 .9px rgb(0, 0, 0)); */
