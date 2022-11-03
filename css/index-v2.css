@@ -743,10 +743,11 @@ body::-webkit-scrollbar-thumb {
 
 .individual iframe {
     height: 18vh;
+    width: 100%;
     object-fit: cover;
     background-position: 50% 50%;
     background-size: cover;
-    /* padding-bottom: 0; */
+    padding-bottom: 5px;
 }
 
 .topic {
