@@ -378,10 +378,11 @@ body::-webkit-scrollbar-thumb {
     /* margin:auto;
     padding: 70px; */
 
-    font-size: 70px;
+    font-size: 90px;
+    /* line-height: 90px; */
     text-transform: uppercase;
     text-align: center;
-    padding: 0;
+    /* padding: 0; */
     margin: auto;
 
 
@@ -429,6 +430,17 @@ body::-webkit-scrollbar-thumb {
 
 .posts a:link, .post-more a:link, .posts a:visited, .posts-more a:visited {
     color: var(--text);
+}
+
+.grid-one-column {
+    padding: 12px;
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+    max-width: 450px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
 }
 
 .grid-two-columns, .grid-three-columns, .grid-four-columns, .grid-five-columns, .grid-six-columns, .grid-seven-columns, .grid-two-columns-intro, .grid-two-columns-mobile {
