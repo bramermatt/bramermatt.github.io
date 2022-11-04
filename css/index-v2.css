@@ -513,7 +513,8 @@ body::-webkit-scrollbar-thumb {
 .grid-item-hidden {
     /* just here to be a grid item */
     align-self: center;
-    border: .25px solid #eee;
+    /* border: .25px solid #eee; */
+    border: 1px solid;
     height: 100%;
     display: none;
 }
