@@ -129,7 +129,7 @@ body::-webkit-scrollbar-thumb {
     /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
     box-shadow: 0 1px 20px -1px rgb(0 0 0 / 10%);
 
-    /* position: sticky; */
+    position: sticky;
     /* position: fixed; */
     left: 0;
     top: 0;
@@ -147,7 +147,7 @@ body::-webkit-scrollbar-thumb {
  .hamburger a {
     font-size: 25px;
     text-decoration: none;
-    padding-right: 15px;
+    /* padding-right: 35px; */
     
 
  }
@@ -313,7 +313,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .inline-navbar {
-    padding: 15px 22px 13px;
+    padding: 25px;
     font-family: 'Sharp Grotesk',sans-serif;
     /* color: #000; */
     color: var(--text);
@@ -326,7 +326,7 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: .3px;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: rgb(68, 163, 68);
+    /* background-color: rgb(68, 163, 68); */
     /* max-width: 100%; */
     /* display: inline-block; */
     text-align: center;
@@ -342,8 +342,9 @@ body::-webkit-scrollbar-thumb {
     list-style: none;
     font-size: 30px;
     letter-spacing: .23rem;
-    line-height: 40px;
+    /* line-height: 40px; */
     padding: 0;
+    margin: 0;
 }
 
 .inline-navbar li {
@@ -431,10 +432,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .grid-two-columns, .grid-three-columns, .grid-four-columns, .grid-five-columns, .grid-six-columns, .grid-seven-columns, .grid-two-columns-intro, .grid-two-columns-mobile {
-    /* padding: 15px; */
-    /* max-width: 1900px; */
+    padding: 12px;
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+    max-width: 1850px;
     margin-left: auto;
     margin-right: auto;
+    gap: 1rem;
 }
 
 
@@ -482,6 +486,7 @@ body::-webkit-scrollbar-thumb {
     /* just here to be a grid item */
     align-self: center;
     border: 1px solid;
+    /* border-radius: 15px; */
     /* border: .25px solid #eee; */
     height: 100%;
     /* margin: 10px; */
@@ -598,7 +603,7 @@ body::-webkit-scrollbar-thumb {
     margin-left: auto;
     margin-right: auto; */
 
-    font-size: 11px;
+    /* font-size: 11px;
     line-height: 11px;
     text-transform: uppercase;
 
@@ -610,18 +615,15 @@ body::-webkit-scrollbar-thumb {
     padding: 5px; 
     max-width: 800px; 
     margin: auto;
-    filter: drop-shadow(0 0 1.5px rgb(0, 0, 0));
+    filter: drop-shadow(0 0 1.5px rgb(0, 0, 0)); */
 }
 
-.grid-item-no-border iframe {
+/* .grid-item-no-border iframe {
     margin: auto;
     padding-top: 10px;
     width: 100%; 
-    /* height: 340px; */
     height: 49vh;
-    /* filter: drop-shadow(0 0 1.5px rgb(0, 0, 0)); */
-    /* filter: drop-shadow(0 0 .9px rgb(0, 0, 0)); */
-}
+} */
 
 
 .grid-item-no-border a:link, a:visited {
@@ -1845,7 +1847,7 @@ display: none;
     padding-left: 15px;
     padding-right: 15px;
 
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6em;
     /* word-wrap: break-word; */
     margin-bottom: 16px;
@@ -2025,7 +2027,7 @@ display: none;
     /* margin: auto; */
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     /* margin-left: 120px; */
     /* width: 100%; */
     /* height: 80vh; */
@@ -2049,15 +2051,15 @@ display: none;
 }
 
 
-/* .iframe-container {
+.iframe-container {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.85%; 
-  } */
+    padding-top: 56.25%; 
+  }
   
   /* Then style the iframe to fit in the container div with full height and width */
-  /* .blog iframe {
+  .blog iframe, .blog video {
     position: absolute;
     top: 0;
     left: 0;
@@ -2065,7 +2067,10 @@ display: none;
     right: 0;
     width: 100%;
     height: 100%;
-  } */
+    /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
+    /* border: 1px solid; */
+    /* border-radius: 25px; */
+  }
 
 
 .blog audio {
@@ -2077,7 +2082,7 @@ display: none;
     width: 100%;
 }
 
-.blog blockquote {
+.blog blockquote, .grid-item-no-border blockquote {
     text-align: center;
     margin: 0;
     padding-bottom: 10px;
@@ -2341,11 +2346,11 @@ display: none;
     } */
 
 
-    .blog iframe, .blog video, .grid-item-no-border iframe  {
+    /* .blog iframe, .blog video, .grid-item-no-border iframe  {
         margin: auto;
         padding: 10px;
         height: 270px;
-    }
+    } */
 
 
     .blog-title img {
@@ -2679,6 +2684,7 @@ display: none;
     .hamburger {
         visibility: visible;
         padding: 10px;
+        padding-left: 15px;
         display: flex;
         /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
     }
@@ -2851,7 +2857,7 @@ display: none;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 60px;
         /* padding: 20px;
          */
@@ -2890,10 +2896,11 @@ display: none;
         /* border-bottom: 1px solid; */
         /* background: transparent; */
         background-color: white;
+        opacity: 90%;
         /* z-index: 100; */
 
-        /* -webkit-backdrop-filter: blur(10px); */
-        /* backdrop-filter: blur(100px) grayscale(10) opacity(1); */
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(15px) opacity(1);
     }
 
     .navbar, .navbar-right {
@@ -2950,7 +2957,12 @@ display: none;
 
 @media screen and (prefers-color-scheme: dark) {
     .hamburger, .inline-navbar {
-        background-color: rgb(29,29,29);
+        /* background-color: rgb(29,29,29); */
+        opacity: 90%;
+        /* z-index: 100; */
+
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(15px) opacity(1);
         /* background-color: #000; */
         /* border-bottom: 1px solid; */
         /* background: transparent;
