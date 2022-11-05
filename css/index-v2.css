@@ -3120,7 +3120,7 @@ display: none;
         /* border: 1px solid white; */
     }
 
-    .blog a:hover, .blog li a:hover {
+    .blog a:hover, .blog li a:hover, .grid-item-ad a:hover  {
         border-top: 2px solid;
         border-bottom: 2px solid;
     }
