@@ -1439,8 +1439,8 @@ body::-webkit-scrollbar-thumb {
     /* max-height: 80vh; */
     /* max-height: 140vh; */
     /* min-height: 400px; */
-    object-fit: contain;
-    /* object-fit: cover; */
+    /* object-fit: contain; */
+    object-fit: cover;
     /* object-fit: scale-down; */
     margin: auto;
     /* margin-top: 20px; */
@@ -2098,21 +2098,21 @@ display: none;
 
 .blog img, .blog li img  {
     padding: 15px 0px;
-    display: block;
+    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     /* max-height:450px; */
-    max-height: 75vh;
+    max-height: 80vh;
     width: 100%;
     /* max-width: 90%; */
     /* width:auto; */
-    /* object-fit: cover;
-    object-fit:scale-down; */
+    /* object-fit:scale-down; */
     object-fit: contain;
+    /* object-fit: cover; */
     height:auto;
-    overflow:hidden;
+    /* overflow:hidden; */
     filter: drop-shadow(0 0 .9px rgb(0, 0, 0));
-    transition: transform .5s;
+    /* transition: transform .5s; */
     z-index: 1;
 }
 
