@@ -1066,7 +1066,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 15px;
     background-position: 50% 50%;
     background-size: cover;
-    opacity: 15%;
+    /* opacity: 15%; */
     /* filter: grayscale(100); */
 }
 
@@ -1080,7 +1080,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .individual-news {
- height: 38vh;
+ /* height: 38vh; */
  margin: 0;
 }
 
