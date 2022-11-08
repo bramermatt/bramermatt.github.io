@@ -454,12 +454,18 @@ body::-webkit-scrollbar-thumb {
     gap: 1rem;
 }
 
-
-.grid-two-columns, .grid-two-columns-intro, .grid-two-columns-mobile {
+.grid-two-columns-intro, .grid-two-columns-mobile {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+}
 
+
+.grid-two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1000px;
 }
 
 .grid-three-columns {
