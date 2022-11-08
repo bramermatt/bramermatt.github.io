@@ -582,6 +582,11 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
 }
 
+.video-item:hover img {
+    border-radius: 0px;
+    /* transform: scale(.8); */
+}
+
 .video-item {
     align-self: center;
     height: 100%;
@@ -598,6 +603,7 @@ body::-webkit-scrollbar-thumb {
     /* object-fit: contain; */
     display: block;
     /* height: 100%; */
+    border-radius: 20px;
     background-position: 50% 50%;
     background-size: cover;
     transition: transform 700ms;
