@@ -2602,6 +2602,7 @@ display: none;
 
     .video-item img {
         height: auto;
+        border-radius: 0;
     }
 
     .video-item {
