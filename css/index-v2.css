@@ -376,21 +376,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hero-title h1 {
-    /* margin:auto;
-    padding: 70px; */
-
-    font-size: 90px;
+    font-size: 85px;
     /* line-height: 90px; */
     text-transform: uppercase;
     text-align: center;
-    /* padding: 0; */
-    /* margin: auto; */
-
-
-
-    /* font-size: 70px;
-    text-transform: uppercase;
-    text-align: center; */
+    padding: 15px;
+    margin: auto;
 }
 
 .hero-title p {
@@ -446,8 +437,8 @@ body::-webkit-scrollbar-thumb {
 
 .grid-two-columns, .grid-three-columns, .grid-four-columns, .grid-four-video-columns, .grid-five-columns, .grid-six-columns, .grid-seven-columns, .grid-two-columns-intro, .grid-two-columns-mobile, .blog-title, .blog-vertical {
     padding: 12px;
-    /* padding-right: 15px; */
-    /* padding-left: 15px; */
+    /* padding-right: 25px;
+    padding-left: 25px; */
     max-width: 1850px;
     margin-left: auto;
     margin-right: auto;
@@ -513,11 +504,11 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid;
     margin-left: auto;
     margin-right: auto;
-    max-width: 350px;
-    width: max-content;
-    columns: 2;
-    column-gap: 25px;
-    column-rule: 1px solid;
+    max-width: 240px;
+    /* width: max-content; */
+    /* columns: 2; */
+    /* column-gap: 25px; */
+    /* column-rule: 1px solid; */
     padding: 10px;
 }
 
@@ -547,10 +538,11 @@ body::-webkit-scrollbar-thumb {
     display: block;
 } */
 
+
 .grid-item-ad a:link, a:visited {
     color: var(--text);
     /* padding: 5px 0px; */
-    /* text-align: center;  */
+    
     font-size: 18px;
     /* display: inline-block; */
     /* text-decoration: none; */
@@ -573,6 +565,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .video-item:hover {
@@ -649,7 +642,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .grid-item img {
-    max-height: 55vh;
+    max-height: 45vh;
     /* max-height: 43vh; */
     width: 100%;
     object-fit: cover;
@@ -667,6 +660,28 @@ body::-webkit-scrollbar-thumb {
     transition: transform 400ms;
     
 }
+
+
+.grid-item h1 {
+    font-size: 50px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.grid-item ul {
+    margin: auto;
+    font-size: 24px;
+    padding: 0;
+}
+
+.grid-item li {
+    padding: 15px;
+    list-style-type: none;
+    text-align: center;
+}
+
 
 .grid-item-hidden {
     /* just here to be a grid item */
@@ -713,8 +728,9 @@ body::-webkit-scrollbar-thumb {
 
 .grid-item-hero-title p {
     font-size: 24px;
-    margin: 0;
-    padding: 10px;
+    margin-top: 40px;
+    /* padding: 10px; */
+    text-align: center;
     /* background-color: rgb(71, 163, 68); */
 }
 
@@ -727,6 +743,8 @@ body::-webkit-scrollbar-thumb {
     /* color: rgb(29,29,29); */
     text-decoration: none;
 }
+
+
 
 
 .grid-item-no-border {
@@ -784,18 +802,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .grid-item-no-border img {
-        /* width: auto; */
-        /* height: 120px; */
-        max-height: 45vh;
-        margin-top: 5px;
-        margin-right: 0;
-        /* height: 135px; */
-        width: 100%;
-        object-fit: scale-down;
-        /* margin-bottom: 15px; */
-        /* background-position: 50% 50%; */
-        /* background-size: cover; */
-        /* border-radius: 120px; */
+    /* width: auto; */
+    /* height: 120px; */
+    max-height: 45vh;
+    margin-top: 5px;
+    margin-right: 0;
+    /* height: 135px; */
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    /* margin-bottom: 15px; */
+    /* background-position: 50% 50%; */
+    /* background-size: cover; */
+    /* border-radius: 120px; */
 }
 
 .grid-item-no-border img:hover {
@@ -827,6 +846,11 @@ body::-webkit-scrollbar-thumb {
 .individual-hidden {
     display: none;
 }
+
+.grid-item:hover img {
+    transform: scale(1.05);
+}
+
 
 
 .individual, .individual-more, .individual-hidden {
@@ -1813,6 +1837,7 @@ body::-webkit-scrollbar-thumb {
     background: red;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 20px;
     /* margin-top: 20px; */
     /* margin: 10px; */
     color: white;
@@ -1878,13 +1903,17 @@ body::-webkit-scrollbar-thumb {
 
 
 .blog-container {
-    max-width: 1400px;
+    max-width: 1500px;
     /* max-width: 1250px; */
     margin-left: auto;
     margin-right: auto;
     border-top: .25px solid #eee;
     margin-bottom: 40px;
     /* width: 75%; */
+
+    /* border-right: .25px solid #eee;
+    border-left: .25px solid #eee;
+    padding: 10px; */
 }
 
 
@@ -2229,6 +2258,63 @@ display: none;
     */
 }
 
+.picture-preview {
+    /* max-width: 1800px; */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 30px; */
+}
+
+.picture-preview img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-height: 95vh;
+    object-fit: contain;
+    filter: drop-shadow(0 0 .9px rgb(0, 0, 0));
+}
+
+.picture-preview blockquote {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    color: #777;
+    line-height: 1.6em;
+
+    /* max-width: 650px; */
+    margin-left: auto;
+    margin-right: auto;
+    /* border-bottom: .25px solid #eee; */
+
+
+    font-size: 11px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.picture-preview a:link, a:visited {
+    /* text-decoration: none; */
+    color: var(--text);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    position: absolute;
+    /* top: 0; */
+    right: 25px;
+    bottom: 15px;
+    /* padding: 25px; */
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+    z-index: 50;
+    /* background-color: black;
+    color: white; */
+}
+
 
 .iframe-container {
     position: relative;
@@ -2398,7 +2484,7 @@ display: none;
     right: 0;
     bottom: auto;
     z-index: 1;
-    /* border-top: 1px solid; */
+    border-top: .25px solid #eee;
     /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 5%); */
     /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
     color: var(--text);
@@ -2600,6 +2686,7 @@ display: none;
         border-radius: 0;
     }
 
+
     .video-item img {
         height: auto;
         border-radius: 0;
@@ -2613,7 +2700,7 @@ display: none;
 
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1450px) {
     .grid-item-hero-title {
         padding: 20px;
         /* margin-top: 20px; */
@@ -2631,7 +2718,7 @@ display: none;
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1350px) {
 
     .grid-two-columns-mobile, .grid-two-columns-intro {
         grid-template-columns: 1fr;
@@ -3045,6 +3132,9 @@ display: none;
         top: 0;
         right: 0;
         bottom: auto;
+
+        padding: 0;
+
         /* padding-top: 4px; */
         /* padding-left: 30px; */
         /* margin-left: 30px; */
@@ -3102,6 +3192,10 @@ display: none;
         padding-left: 0;
     }
 
+    /* .grid-item-ad {
+        margin: 15px;
+    } */
+
 }
 
 
@@ -3130,6 +3224,8 @@ display: none;
         /* grid-auto-flow: column; */
         /* grid-template-rows: 1fr; */
     }
+
+
 
 
 
@@ -3171,7 +3267,7 @@ display: none;
         color: white;
     } */
 
-    .read-more:hover, .individual-more:hover {
+    .read-more:hover {
         background-color:white;
         color: rgb(29,29,29);
         /* border: 1px solid rgb(29,29,29); */
@@ -3187,7 +3283,7 @@ display: none;
         background-color: white;
     }
 
-    .individual:hover, .individual-more, .individual-hidden:hover {
+    .individual:hover, .individual-hidden:hover {
         background-color: rgb(29,29,29);
         color: white;
         /* border: 1px solid rgb(29,29,29); */
@@ -3205,10 +3301,10 @@ display: none;
         border-bottom: 2px solid;
     }
 
-    .footer {
+    /* .footer {
         background: #4f4f50 none;
         color: white;
-    }
+    } */
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -3248,7 +3344,7 @@ display: none;
         color: white;
     } */
 
-    .read-more:hover, .individual-more:hover {
+    .read-more:hover {
         background-color: rgb(29,29,29);
         color: white;
         border: 1px solid rgb(29,29,29);
@@ -3269,7 +3365,7 @@ display: none;
         background-color: #303030;
     }
 
-    .individual:hover, .individual-more, .individual-hidden:hover  {
+    .individual:hover, .individual-hidden:hover  {
         background-color:white;
         color: rgb(29,29,29);
         /* border: 1px solid rgb(29,29,29); */
@@ -3286,10 +3382,10 @@ display: none;
         border-bottom: 2px solid;
     }
 
-    .footer {
+    /* .footer {
         background: #1a1a1a none;
         color: white;
-    }
+    } */
 
 
 }
