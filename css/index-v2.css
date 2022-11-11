@@ -623,6 +623,43 @@ body::-webkit-scrollbar-thumb {
     color: var(--text);
 }
 
+.flex-row {
+    display: flex;
+}
+
+.row-item {
+    align-self: center;
+    /* border: 1px solid; */
+    height: 100%;
+    overflow: hidden;
+    transition: transform 400ms;
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-item img {
+    max-width: 20vh;
+    display: block;
+    margin: auto;
+    /* width: 300px;
+    min-height: 200px; */
+}
+
+.row-item h2 {
+    margin: auto;
+    margin-top: 5px;
+}
+
+.row-item p {
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
 .grid-item {
     /* just here to be a grid item */
     align-self: center;
