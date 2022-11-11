@@ -43,7 +43,8 @@ body {
     
     /* opacity: 0.5; */
     
-    margin-left: 120px; 
+    margin-left: 115px; 
+
     /* margin-right: 120px; */
 
 
@@ -125,7 +126,7 @@ body::-webkit-scrollbar-thumb {
     visibility: hidden;
     /* background-color: rgb(68, 163, 68); */
     /* border-bottom: .5px solid; */
-    border-bottom: .25px solid #eee;
+    /* border-bottom: .25px solid #eee; */
     /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
     box-shadow: 0 1px 20px -1px rgb(0 0 0 / 10%);
 
@@ -231,25 +232,22 @@ body::-webkit-scrollbar-thumb {
     
     /* side-navigation */
     height: 100%;
-    width: 120px;
-    /* width: 6.5vw; */
-    /* margin-right: 120px; */
+    width: 115px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    /* right: 0; */
     overflow-x: hidden;
     padding-top: 16px;
     text-align: center;
     z-index: 1;
-    /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
+
     border-right: .25px solid #eee;
     margin-bottom: 10px;
     color: var(--text);
     visibility: hidden;
     text-transform: uppercase; 
-   
+       /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
  }
 
  .navbar ul, .navbar-right ul {
@@ -463,6 +461,7 @@ body::-webkit-scrollbar-thumb {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
+    max-width: 1250px;
 }
 
 .grid-four-columns {
@@ -848,7 +847,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .grid-item:hover img {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 }
 
 
@@ -2364,7 +2363,7 @@ display: none;
     /* border-bottom: .25px solid #eee; */
 
 
-    font-size: 11px;
+    font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
 
@@ -2421,6 +2420,8 @@ display: none;
     /* margin: auto; */
     margin-left: auto;
     margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
     /* margin-top: auto; */
     /* height: 89vh; */
     /* margin-bottom: 10px !important; */
@@ -2912,7 +2913,7 @@ display: none;
 }
 
 
-@media (min-width: 935px) {
+@media (min-width: 990px) {
     .navbar, .navbar-right {
         visibility: visible;
     }
@@ -2935,7 +2936,7 @@ display: none;
 
 }
 
-@media (max-width: 935px) {
+@media (max-width: 990px) {
  
     .navbar, .navbar-right {
         display: none;
