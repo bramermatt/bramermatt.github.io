@@ -53,6 +53,12 @@ body {
     margin-right: auto; */
     /* font-size: 28px; */
     /* padding: 0px 10px;  */
+
+
+    /* background-image: url('../img/background-illustration.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
  }
 
 /* body::-webkit-scrollbar {
@@ -366,11 +372,19 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
     /* background-color: rgb(68, 163, 68); */
     height:max-content;
+    box-shadow: 0 1px 20px -1px rgb(0 0 0 / 15%);
     /* border-bottom: 1px solid; */
     /* margin-bottom: 20px; */
     /* padding: 10px; */
     /* border-bottom: 1px solid; */
     /* background-color: #ff0; */
+
+    /* background-image: url('../img/matt-5.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    filter: drop-shadow(0 0 1.5px rgb(0, 0, 5)); */
 }
 
 .hero-title h1 {
@@ -1574,7 +1588,7 @@ body::-webkit-scrollbar-thumb {
     /* max-height: 140vh; */
     /* min-height: 400px; */
     /* object-fit: contain; */
-    /* max-height: 70vh; */
+    /* max-height: 98vh; */
     object-fit: cover;
     /* object-fit: scale-down; */
     margin: auto;
@@ -3162,34 +3176,30 @@ display: none;
     }
 
     .hero-title h1 {
-        /* font-size: 30px; */
-        line-height: 60px;
-        /* position: absolute; */
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: auto;
-
-        padding: 0;
-
-        /* padding-top: 4px; */
-        /* padding-left: 30px; */
-        /* margin-left: 30px; */
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-top: 0;
-        z-index: 1;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: 20px;
-        /* margin: auto; */
-        /* line-height: 60px; */
-        /* padding: 20px;
-         */
-
-         /* display: none; */
+    /* font-size: 30px; */
+    line-height: 57px;
+    /* position: absolute; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    padding: 0;
+    /* padding-top: 4px; */
+    /* padding-left: 30px; */
+    /* margin-left: 30px; */
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    /* margin: auto; */
+    /* line-height: 60px; */
+    /* padding: 20px; */
+    /* display: none; */
     }
 
     .blog-vertical-title p, .blog-title p {
@@ -3318,6 +3328,10 @@ display: none;
 
     .video-item:hover {
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        background-color: white;
+    }
+
+    .individual, .footer, .hero-title {
         background-color: white;
     }
 
