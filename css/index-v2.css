@@ -2275,7 +2275,7 @@ display: none;
     filter: drop-shadow(0 0 .9px rgb(0, 0, 0));
     /* transition: transform .5s; */
     z-index: 1;
-    cursor: zoom-in;
+    /* cursor: zoom-in; */
 }
 
 .blog img:hover {
