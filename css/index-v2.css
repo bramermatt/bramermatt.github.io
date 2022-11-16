@@ -491,7 +491,7 @@ body::-webkit-scrollbar-thumb {
 .blog-title, .blog-vertical {
     /* padding-right: 25px;
     padding-left: 25px; */
-    max-width: 1850px;
+    max-width: 2550px;
     margin-left: auto;
     margin-right: auto;
     gap: 1rem;
@@ -3020,7 +3020,7 @@ display: none;
 }
 
 @media screen and (min-width: 990px) {
-    .hero-title {
+    /* .hero-title {
         background-image: url('../img/background-illustration.webp');
         background-repeat: no-repeat;
         background-size: cover;
@@ -3030,7 +3030,7 @@ display: none;
 
     .hero-title h1 {
         filter: drop-shadow(5px 5px 0.8px rgb(0, 0, 0));
-    }
+    } */
 
     /* .footer {
         background-image: url('../img/background-illustration.webp');
