@@ -828,9 +828,8 @@ body::-webkit-scrollbar-thumb {
 
 .grid-item-hero-title p {
     font-size: 24px;
-    margin-top: 40px;
-    /* padding: 10px; */
-    text-align: center;
+    margin-top: 4px;
+    padding: 0;
     /* background-color: rgb(71, 163, 68); */
 }
 
@@ -1860,7 +1859,8 @@ body::-webkit-scrollbar-thumb {
 
 
 .blog-vertical img {
-    max-height: 80vh;
+    max-height: 85vh;
+    
     /* height: 80vh; */
     align-items: center;
     object-fit: contain;
@@ -2462,7 +2462,6 @@ display: none;
     /* max-width: 650px; */
     margin-left: auto;
     margin-right: auto;
-    /* border-bottom: .25px solid #eee; */
 
 
     font-size: 12px;
@@ -3147,7 +3146,7 @@ display: none;
         top: 0;
         right: 0;
         bottom: auto;
-        padding-top: 4px;
+        padding-top: 6px;
         /* padding-left: 30px; */
         /* margin-left: 30px; */
         margin-left: 40px;
@@ -3158,7 +3157,7 @@ display: none;
         text-overflow: ellipsis;
         /* text-overflow: clip; */
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
     }
 
 
