@@ -3124,6 +3124,11 @@ display: none;
     .title h2 {
         /* font-size: 100%; */
         line-height: 100%;
+        font-size: 20px;
+    }
+
+    .title p {
+        font-size: 14px;
     }
 
 
@@ -3319,14 +3324,17 @@ display: none;
     .grid-two-columns-mobile, .grid-two-columns-intro {
         grid-template-columns: 1fr;
         /* margin-top: 20px; */
+
     }
 
     .grid-two-columns, .grid-three-columns, .grid-four-columns, .grid-seven-columns {
         grid-template-columns: 2fr 2fr;
+
     }
 
     .grid-six-columns, .grid-five-columns {
         grid-template-columns: 2fr 2fr;
+        /* max-width: 300px; */
     }
 
 
@@ -3379,6 +3387,11 @@ display: none;
 
 @media screen and (prefers-color-scheme: light) {
 
+    /* body, .footer {
+        background-color: #eee;
+    } */
+
+
     .hamburger, .inline-navbar {
         /* background-color: white;
         border-bottom: 1px solid; */
@@ -3428,7 +3441,7 @@ display: none;
         background-color: white;
     }
 
-    .individual, .footer, .hero-title {
+    .individual, .hero-title {
         background-color: white;
     }
 
