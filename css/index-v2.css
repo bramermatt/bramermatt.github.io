@@ -20,7 +20,8 @@ body.light {
 body.dark {
     --text: white;
     /* --background: black; */
-    ---background: #000;
+    /* ---background: #000; */
+    --background: #313131;
     /* background-color: #000; */
 } 
 
@@ -139,6 +140,7 @@ body::-webkit-scrollbar-thumb {
 
     position: sticky;
     /* position: fixed; */
+    /* margin-bottom: 20px; */
     left: 0;
     top: 0;
     right: 0;
@@ -251,12 +253,16 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     z-index: 1;
 
-    border-right: .25px solid #eee;
+    /* border-right: .25px solid #eee; */
     margin-bottom: 10px;
     color: var(--text);
     visibility: hidden;
     text-transform: uppercase; 
-       /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 10%);
+ }
+
+ .navbar::-webkit-scrollbar {
+    display: none;
  }
 
  .navbar ul, .navbar-right ul {
@@ -343,6 +349,14 @@ body::-webkit-scrollbar-thumb {
     /* padding-top: 5px; */
     /* visibility: hidden; */
     display: none;
+
+
+    /* background-image: url('../img/background-illustration.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    filter: drop-shadow(0 0 1.5px rgb(0, 0, 5)); */
 } 
 
 .inline-navbar ul {
@@ -374,8 +388,8 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     margin: auto;
     /* background-color: rgb(68, 163, 68); */
-    height:max-content;
-    box-shadow: 0 1px 20px -1px rgb(0 0 0 / 15%);
+    height: max-content;
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
     /* border-bottom: 1px solid; */
     /* margin-bottom: 20px; */
     /* padding: 10px; */
@@ -395,7 +409,8 @@ body::-webkit-scrollbar-thumb {
     /* line-height: 90px; */
     text-transform: uppercase;
     text-align: center;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: auto;
 }
 
@@ -495,13 +510,20 @@ body::-webkit-scrollbar-thumb {
     margin-left: auto;
     margin-right: auto;
     gap: 1rem;
+
+    /* background-image: url('../img/background-illustration.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    filter: drop-shadow(0 0 1.5px rgb(0, 0, 5)); */
 }
 
 .grid-two-columns, .grid-three-columns, .grid-four-columns, .grid-four-video-columns, .grid-five-columns, .grid-six-columns, .grid-seven-columns, .grid-two-columns-intro, .grid-two-columns-mobile {
     padding: 12px;
     /* padding-right: 25px;
     padding-left: 25px; */
-    max-width: 1550px;
+    /* max-width: 1550px; */
     margin-left: auto;
     margin-right: auto;
     gap: 1rem;
@@ -2339,7 +2361,7 @@ display: none;
     object-fit: cover;
     /* height: 100%; */
     /* filter: drop-shadow(0 0 1.5px rgb(0, 0, 3)); */
-    /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
+    /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 32%); */
     
     width: 100%; 
     /* height: 100%; */
@@ -2419,7 +2441,7 @@ display: none;
     overflow: hidden;
     width: 100%;
     padding-top: 56.35%; 
-    
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
   }
   
   /* Then style the iframe to fit in the container div with full height and width */
@@ -3097,7 +3119,6 @@ display: none;
         padding: 10px;
         padding-left: 15px;
         display: flex;
-        /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
     }
 
     .title h2 {
@@ -3148,8 +3169,8 @@ display: none;
         padding-top: 6px;
         /* padding-left: 30px; */
         /* margin-left: 30px; */
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
         z-index: 1;
         white-space: nowrap;
         overflow: hidden;
@@ -3458,8 +3479,12 @@ display: none;
         /* z-index: 100; */
     }
 
+    .iframe-container {
+        box-shadow: 0 1px 8px -1px rgba(255, 255, 255, 20%);
+    }
+
     .navbar {
-        
+        box-shadow: 0 1px 8px -1px rgb(255, 255, 255, 10%);
         /* background-color: #000; */
         /* border-right: 1px solid; */
 
@@ -3469,6 +3494,10 @@ display: none;
         /* -webkit-backdrop-filter: blur(10px); */
         /* backdrop-filter: blur(10px) grayscale(10) opacity(1); */
         /* opacity: 50%; */
+    }
+
+    .hero-title {
+        /* border-bottom: 1px solid; */
     }
 
 
