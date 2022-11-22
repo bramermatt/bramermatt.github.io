@@ -55,6 +55,7 @@ body {
     /* font-size: 28px; */
     /* padding: 0px 10px;  */
 
+    /* background: linear-gradient(36deg, rgb(49, 71, 198) 51%, rgb(26, 10, 121) 100%); */
 
     /* background-image: url('../img/background-illustration.webp');
     background-repeat: no-repeat;
@@ -390,6 +391,10 @@ body::-webkit-scrollbar-thumb {
     /* background-color: rgb(68, 163, 68); */
     height: max-content;
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
+
+    /* background: linear-gradient(36deg, rgb(49, 71, 198) 51%, rgb(26, 10, 121) 100%);
+    color: white; */
+
     /* border-bottom: 1px solid; */
     /* margin-bottom: 20px; */
     /* padding: 10px; */
@@ -405,13 +410,52 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hero-title h1 {
-    font-size: 85px;
+    /* font-size: 85px; */
+    font-size: 100px;
+    line-height: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     /* line-height: 90px; */
     text-transform: uppercase;
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
+}
+
+.hero-title h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    /* margin-bottom: 10px; */
+    /* margin-bottom: 40px; */
+    padding-top: 20px;
+    padding-bottom: 0;
+    /* padding-bottom: 20px; */
+    text-transform: uppercase;
+    font-size: 30px;
+    background: linear-gradient(36deg, rgb(49, 71, 198) 51%, rgb(26, 10, 121) 100%);
+    color: white;
+}
+
+.hero-title h3 {
+    text-align: center;
+    margin-top: 0;
+    /* margin-bottom: 40px; */
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    background: linear-gradient(36deg, rgb(49, 71, 198) 51%, rgb(26, 10, 121) 100%);
+    color: white;
+}
+
+.hero-title a:link, a:visited {
+    color: var(--text);
+}
+
+.hero-title a:hover {
+    color: black;
 }
 
 .hero-title p {
@@ -460,7 +504,7 @@ body::-webkit-scrollbar-thumb {
     margin-right: auto;
     width: 100%;
     padding: 15px;
-    max-width: 1550px;
+    max-width: 1700px;
     /* border-top: 1px solid; */
     /* margin-top: 30px; */
     /* max-width: max-content; */
@@ -2923,6 +2967,26 @@ display: none;
     .individual-news {
         margin-bottom: -14vh;
     }
+
+    .hero-title h1 {
+        font-size: 50px;
+        line-height: 55px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero-title h2 { 
+        font-size: 20px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .hero-title h3 {
+        font-size: 16px;
+        padding: 5px;
+        padding-bottom: 10px;
+        margin: 0;
+    }
     
 }
 
@@ -3325,6 +3389,7 @@ display: none;
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 18px;
+    color: black;
     /* margin: auto; */
     /* line-height: 60px; */
     /* padding: 20px; */
@@ -3419,6 +3484,11 @@ display: none;
         background-color: #eee;
     } */
 
+    /* .footer {
+        background: linear-gradient(36deg, rgb(49, 71, 198) 51%, rgb(26, 10, 121) 100%);
+        color: white;
+    } */
+
 
     .hamburger, .inline-navbar {
         /* background-color: white;
@@ -3440,6 +3510,10 @@ display: none;
         /* 
         border-right: 1px solid; */
         background-color: white;
+
+        /* background: linear-gradient(36deg, rgb(49, 71, 198) 51%, rgb(26, 10, 121) 100%); */
+        /* color: white; */
+
         /* background: transparent; */
         /* z-index: 100; */
 
@@ -3493,6 +3567,7 @@ display: none;
 
     .active li {
         background-color: rgb(29,29,29);
+        /* background: linear-gradient(36deg, rgb(49, 71, 198) 51%, rgb(26, 10, 121) 100%); */
         color: white;
     }
 
@@ -3592,6 +3667,9 @@ display: none;
     .active li {
         background-color: white;
         color: rgb(29,29,29);
+
+        /* background: linear-gradient(36deg, rgb(49, 71, 198) 51%, rgb(26, 10, 121) 100%); */
+        /* color: white; */
     }
 
     /* .footer {
