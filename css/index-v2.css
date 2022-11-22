@@ -1287,6 +1287,11 @@ body::-webkit-scrollbar-thumb {
 .individual-news {
  /* height: 38vh; */
  margin: 0;
+ max-width: 1200px; margin: auto; margin-bottom: -160px; margin-top: 30px;
+}
+
+.individual-news img {
+    height: 550px;
 }
 
 .individual-news p {
@@ -1305,7 +1310,8 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     z-index: 0;
     position: relative;
-    bottom: 360px;
+    /* bottom: 365px; */
+    bottom: 185px;
 }
 
 .news-title {
@@ -1314,10 +1320,12 @@ body::-webkit-scrollbar-thumb {
 
 .news-title h2 {
     display: inline;
-    background-color: rgb(88, 228, 88);
+    /* background-color: rgb(0, 0, 0); */
+    filter: drop-shadow(5px 1px 1.5px rgb(0, 0, 0));
+    color: white;
     /* font-size: 40px; */
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 60px;
+    line-height: 60px;
     font-weight: 700;
     text-decoration: none;
     /* line-height: 11px; */
@@ -1325,7 +1333,7 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: .3px;
     text-transform: uppercase;
     margin-bottom: 5px;
-    color: black;
+    /* color: black; */
 }
 
 .news-subtitle {
@@ -1335,8 +1343,8 @@ body::-webkit-scrollbar-thumb {
     display: inline-block;
     margin-top: 6px;
     font-family: 'Sharp Grotesk',sans-serif;
-    font-size: 11px;
-    line-height: 11px;
+    font-size: 16px;
+    line-height: 18px;
     letter-spacing: .3px;
     text-transform: uppercase;
 }
@@ -1344,13 +1352,13 @@ body::-webkit-scrollbar-thumb {
 
 .news-tag {
     display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     padding: 5px;
     border: 1px solid #000;
     font-family: 'Sharp Grotesk',sans-serif;
     color: #000;
-    font-size: 11px;
-    line-height: 11px;
+    font-size: 14px;
+    line-height: 18px;
     font-weight: 500;
     letter-spacing: .3px;
     text-transform: uppercase;
@@ -1933,7 +1941,11 @@ body::-webkit-scrollbar-thumb {
     display: inline;
 
     /* display: none; */
+    color: var(--text);
+}
 
+.tldr a:link, a:visited {
+    color: var(--text);
 }
 
 .tldr h1 {
@@ -2893,9 +2905,24 @@ display: none;
         margin: 15px;
     }
 
+    /* .news-topic {
+        bottom: 160px;
+    } */
 
+    .news-topic p, .news-tag {
+        font-size: 11px;
+        line-height: 14px;
 
+    }
 
+    .news-topic h2 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .individual-news {
+        margin-bottom: -14vh;
+    }
     
 }
 
@@ -3024,6 +3051,7 @@ display: none;
         font-size: 18px;
         line-height: 20px;
         /* max-width: 380px; */
+
     }
 
 
