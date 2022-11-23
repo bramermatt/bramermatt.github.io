@@ -504,7 +504,7 @@ body::-webkit-scrollbar-thumb {
     margin-right: auto;
     width: 100%;
     padding: 15px;
-    max-width: 1700px;
+    max-width: 1500px;
     /* border-top: 1px solid; */
     /* margin-top: 30px; */
     /* max-width: max-content; */
@@ -3389,7 +3389,7 @@ display: none;
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 18px;
-    color: black;
+    /* color: black; */
     /* margin: auto; */
     /* line-height: 60px; */
     /* padding: 20px; */
