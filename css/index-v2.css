@@ -1162,7 +1162,7 @@ body::-webkit-scrollbar-thumb {
     font-family: 'Sharp Grotesk',sans-serif;
     /* color: #000; */
     font-size: 32px;
-    line-height: 32px;
+    line-height: 34px;
     /* word-wrap: break-word; */
     /* text-align: center; */
     /* letter-spacing: .2em; */
@@ -1173,7 +1173,7 @@ body::-webkit-scrollbar-thumb {
     /* color: #000; */
     /* margin-top: 8px; */
     font-size: 15px;
-    line-height: 15px;
+    line-height: 16px;
     font-weight: 500;
     letter-spacing: 1.3px;
     text-transform: uppercase;
@@ -2359,6 +2359,8 @@ display: none;
     color: var(--text);
     /* padding: 5px 0px; */
     text-align: center; 
+    /* text-decoration-style: underline; */
+    /* margin: 5px; */
     /* display: inline-block; */
     /* text-decoration: none; */
     /* font-style: oblique; */
@@ -2386,7 +2388,8 @@ display: none;
     margin-right: auto;
     /* max-height:450px; */
     max-height: 75vh;
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100%;
     /* max-width: 90%; */
     /* width:auto; */
     /* object-fit:scale-down; */
