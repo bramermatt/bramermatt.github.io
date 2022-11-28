@@ -1880,6 +1880,7 @@ body::-webkit-scrollbar-thumb {
 .blog-vertical {
     display: flex;
     align-items: center;
+    justify-content: center;
     /* columns: 2; */
     column-gap: 20px;
     padding: 30px;
@@ -1935,7 +1936,7 @@ body::-webkit-scrollbar-thumb {
     /* height: 80vh; */
     align-items: center;
     object-fit: contain;
-    margin: auto;
+    /* margin: auto; */
     /* display: block; */
 
     /* 
@@ -2902,6 +2903,28 @@ display: none;
     
 }
 
+@media screen and (max-width: 1280px) {
+    .blog-vertical img {
+        width: 100%;
+    }
+
+    .blog-vertical {
+        flex-direction: column;
+        padding-top: 0;
+        padding: 0;
+        padding-bottom: 0;
+    }
+
+    .blog-vertical-title {
+        padding: 10px;
+    }
+
+    
+    .blog-vertical blockquote {
+        display: block;
+    }
+}
+
 
 @media screen and (max-width: 1350px) {
 
@@ -2910,7 +2933,7 @@ display: none;
         /* margin-top: 20px; */
     }
 
-    .grid-two-columns, .grid-three-columns, .grid-four-columns, .grid-four-video-columns, .grid-seven-columns {
+    .grid-two-columns, .grid-three-columns, .grid-four-video-columns, .grid-seven-columns {
         grid-template-columns: 2fr 2fr ;
     }
 
@@ -2929,24 +2952,8 @@ display: none;
         width: 100%;
     }
 
-    .blog-vertical img {
-        width: 100%;
-    }
 
-    .blog-vertical {
-        flex-direction: column;
-        padding-top: 0;
-        padding: 0;
-        padding-bottom: 0;
-    }
 
-    .blog-vertical-title {
-        padding: 10px;
-    }
-
-    .blog-vertical blockquote {
-        display: block;
-    }
 
     .category {
         margin: 15px;
@@ -3109,7 +3116,7 @@ display: none;
 
     .blog-title, .blog-vertical {
         /* margin: 15px; */
-        gap:inherit;
+        /* gap:inherit; */
     }
 
     .tldr {
@@ -3604,6 +3611,7 @@ display: none;
 
     .navbar {
         box-shadow: 0 1px 8px -1px rgb(255, 255, 255, 10%);
+        /* background-color: #313131; */
         /* background-color: #000; */
         /* border-right: 1px solid; */
 
