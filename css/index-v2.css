@@ -3748,10 +3748,16 @@ display: none;
     background-size: cover;
     background-position: center;
     color: white;
-    /* filter: drop-shadow(0 0 1.5px rgb(0, 0, 5)); */
+    filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
+    /* opacity: 95%; */
 }
 
-.topTitle h1, .hero-title h1 {
+.topTitle {
+    display: none;
+    visibility: hidden;
+}
+
+.hero-title h1 {
     color: white;
     filter: drop-shadow(5px 1px 2px rgb(0, 0, 5));
 }
