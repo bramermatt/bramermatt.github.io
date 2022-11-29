@@ -567,7 +567,7 @@ body::-webkit-scrollbar-thumb {
     padding: 12px;
     /* padding-right: 25px;
     padding-left: 25px; */
-    max-width: 2250px;
+    max-width: 1650px;
     margin-left: auto;
     margin-right: auto;
     gap: 1rem;
