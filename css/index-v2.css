@@ -3430,7 +3430,7 @@ display: none;
 
 }
 
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 700px) {
     .grid-two-columns-mobile, .grid-two-columns-intro {
         grid-template-columns: 1fr;
         /* margin-top: 20px; */
@@ -3742,15 +3742,17 @@ display: none;
     }
 }
 
-.hamburger, .topTitle {
+.hamburger, .topTitle  {
     background-image: url('../img/backgrounds/christmas-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
-    filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
+    filter: drop-shadow(0 0 1px rgb(0, 0, 5));
     /* opacity: 95%; */
 }
+
+
 
 .topTitle {
     display: none;
@@ -3759,5 +3761,5 @@ display: none;
 
 .hero-title h1 {
     color: white;
-    filter: drop-shadow(5px 1px 2px rgb(0, 0, 5));
+    filter: drop-shadow(2px 5px 2px rgb(0, 0, 5));
 }
