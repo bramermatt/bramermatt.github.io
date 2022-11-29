@@ -401,7 +401,7 @@ body::-webkit-scrollbar-thumb {
     /* border-bottom: 1px solid; */
     /* background-color: #ff0; */
 
-    /* background-image: url('../img/background-illustration.webp');
+    /* background-image: url('../img/backgrounds/christmas-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -421,6 +421,7 @@ body::-webkit-scrollbar-thumb {
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
+
 }
 
 .hero-title h2 {
@@ -1877,7 +1878,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.blog-vertical {
+.blog-vertical, .blog-alt-title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1902,7 +1903,7 @@ body::-webkit-scrollbar-thumb {
     text-overflow: ellipsis;
 }
 
-.blog-vertical-title h1, .title-top h1 {
+.blog-vertical-title h1, .title-top h1, .blog-alt-title h1 {
     font-size: 70px;
     line-height: 70px;
     text-transform: uppercase;
@@ -1913,7 +1914,7 @@ body::-webkit-scrollbar-thumb {
     /* max-width: 800px; */
 }
 
-.blog-vertical-title p {
+.blog-vertical-title p, .blog-alt-title p {
     max-width: 800px;
     max-width: max-content;
     margin: auto;
@@ -1926,6 +1927,12 @@ body::-webkit-scrollbar-thumb {
     font-weight: 500;
     letter-spacing: 1.3px;
     text-transform: uppercase;
+}
+
+.blog-alt-title img {
+    max-width: 65vh;
+    align-items: center;
+    object-fit: contain;
 }
 
 
@@ -2904,11 +2911,11 @@ display: none;
 }
 
 @media screen and (max-width: 1280px) {
-    .blog-vertical img {
+    .blog-vertical img, .blog-alt-title img {
         width: 100%;
     }
 
-    .blog-vertical {
+    .blog-vertical, .blog-alt-title {
         flex-direction: column;
         padding-top: 0;
         padding: 0;
@@ -3509,12 +3516,26 @@ display: none;
         /* background: transparent; */
         background-color: white;
         
-        opacity: 95%;
+        /* opacity: 90%; */
         /* z-index: 100; */
 
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(15px) opacity(1);
     }
+
+    /* .hamburger {
+        background-image: url('../img/backgrounds/christmas-hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
+    }
+
+    .topTitle h1, .hero-title h1 {
+        color: white;
+        filter: drop-shadow(5px 1px 2px rgb(0, 0, 5));
+    } */
 
     .navbar, .navbar-right {
         /* 
@@ -3590,7 +3611,7 @@ display: none;
 @media screen and (prefers-color-scheme: dark) {
     .hamburger, .inline-navbar {
         /* background-color: rgb(29,29,29); */
-        opacity: 95%;
+        /* opacity: 95%; */
         /* z-index: 100; */
 
         -webkit-backdrop-filter: blur(10px);
@@ -3604,6 +3625,20 @@ display: none;
         /* background-color: rgba(255, 255, 255, 1); */
         /* z-index: 100; */
     }
+
+    /* .hamburger {
+        background-image: url('../img/backgrounds/christmas-hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
+    }
+
+    .topTitle h1, .hero-title h1 {
+        color: white;
+        filter: drop-shadow(5px 1px 2px rgb(0, 0, 5));
+    } */
 
     .iframe-container {
         box-shadow: 0 1px 8px -1px rgba(255, 255, 255, 20%);
@@ -3689,4 +3724,34 @@ display: none;
     } */
 
 
+}
+
+
+
+
+/* Christmas theme */
+
+@media screen and (min-width: 990px) {
+    .hero-title {
+        background-image: url('../img/backgrounds/christmas-hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
+    }
+}
+
+.hamburger, .topTitle {
+    background-image: url('../img/backgrounds/christmas-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* filter: drop-shadow(0 0 1.5px rgb(0, 0, 5)); */
+}
+
+.topTitle h1, .hero-title h1 {
+    color: white;
+    filter: drop-shadow(5px 1px 2px rgb(0, 0, 5));
 }
