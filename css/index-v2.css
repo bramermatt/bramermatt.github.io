@@ -327,7 +327,8 @@ body::-webkit-scrollbar-thumb {
 
 
 .inline-navbar {
-    padding: 25px;
+    /* padding: 25px; */
+    padding: 10px;
     font-family: 'Sharp Grotesk',sans-serif;
     /* color: #000; */
     color: var(--text);
@@ -362,7 +363,7 @@ body::-webkit-scrollbar-thumb {
 
 .inline-navbar ul {
     list-style: none;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: .23rem;
     /* line-height: 40px; */
     padding: 0;
@@ -370,7 +371,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .inline-navbar li {
-    padding: 15px; 
+    padding: 10px; 
 }
 
 .inline-navbar a:link, a:visited {
@@ -545,7 +546,7 @@ body::-webkit-scrollbar-thumb {
     /* padding-right: 25px;
     padding-left: 25px; */
     /* max-width: 1850px; */
-    max-width: 2450px;
+    /* max-width: 2450px; */
     margin-left: auto;
     margin-right: auto;
     gap: 1rem;
@@ -1714,6 +1715,7 @@ body::-webkit-scrollbar-thumb {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    max-height: 100vh;
     /* object-fit: cover; */
     /* max-height: 80vh; */
     /* max-height: 140vh; */
@@ -1898,7 +1900,7 @@ body::-webkit-scrollbar-thumb {
     /* padding-top: 10px;
     padding-bottom: 10px; */
     /* max-width: 1550px; */
-    max-width: 2450px;
+    /* max-width: 2450px; */
     margin-left: auto;
     margin-right: auto;
     /* border-bottom: .5px solid; */
@@ -2410,7 +2412,7 @@ display: none;
 
 .blog img, .blog li img  {
     /* padding: 15px 0px; */
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -2523,6 +2525,9 @@ display: none;
     color: white; */
 }
 
+/* .padding-15 {
+    padding: 10px;
+} */
 
 .iframe-container {
     position: relative;
@@ -2938,6 +2943,7 @@ display: none;
 
     .blog-vertical, .blog-alt-title {
         flex-direction: column;
+        gap: 1px;
         padding-top: 0;
         padding: 0;
         padding-bottom: 0;
@@ -3707,6 +3713,10 @@ display: none;
     box-shadow: 0 1px 5px -1px rgb(255, 255, 255, 30%);
     }
 
+    .blog img, .blog li img {
+        filter: drop-shadow(0 0 4px rgb(255, 255, 255, 20%));
+    }
+
     /* .blog-tag p {
         background-color: white;
         color: #000;
@@ -3768,23 +3778,16 @@ display: none;
         background: linear-gradient(36deg, rgb(10, 138, 59) 51%, rgb(151, 21, 21) 100%);
     }
 
-    .blog-title, .blog-vertical, .blog-alt-title {
-        color: white;
-        width: 100%;
-        background: linear-gradient(36deg, rgb(10, 138, 59) 51%, rgb(151, 21, 21) 100%);
-        box-shadow: 0 0px 5px rgb(0, 0, 5);
-    }
+
 
     .blog-title img {
-        padding: 20px;
+        padding: 15px;
         box-shadow: 0 0px 5px rgb(0, 0, 5);
     }
 
 
 
-    .blog-title blockquote, .blog-vertical blockquote {
-        color: white;
-    }
+
 
 }
 
@@ -3797,13 +3800,66 @@ display: none;
     .blog blockquote, .blog-title blockquote {
         color: white;
     }
+
+    .blog-title img {
+        filter: drop-shadow(0 0 1px rgb(10, 138, 59, 90%));
+        padding: 10px;
+    }
+
+    .blog-vertical img {
+        filter: drop-shadow(0 0 1px rgb(10, 138, 59, 90%));
+        padding: 10px;
+    }
+
+
+    .blog-title, .blog-vertical, .blog-alt-title {
+        /* color: white; */
+        color:  rgb(10, 138, 59);
+        width: 100%;
+        /* background: linear-gradient(36deg, rgb(10, 138, 59) 51%, rgb(151, 21, 21) 100%); */
+        background: white;
+        box-shadow: 0 0px 5px rgb(0, 0, 5);
+    }
+    
+    .blog-title blockquote, .blog-vertical blockquote {
+        color: white;
+        color:  rgb(10, 138, 59);
+    }
 }
+
+@media screen and (prefers-color-scheme: light) {
+    .blog-title, .blog-vertical, .blog-alt-title {
+        color: white;
+        /* color:  rgb(10, 138, 59); */
+        width: 100%;
+        background: linear-gradient(36deg, rgb(10, 138, 59) 51%, rgb(151, 21, 21) 100%);
+        /* background: white; */
+        box-shadow: 0 0px 5px rgb(255, 255, 255, 0.9);
+    }
+    
+    .blog-title blockquote, .blog-vertical blockquote {
+        color: white;
+        /* color:  rgb(10, 138, 59); */
+    }
+
+    .blog-title img {
+        filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.9));
+        padding: 10px;
+    }
+
+    .blog-vertical img {
+        filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.9));
+        padding: 10px;
+    }
+}
+
 
 .blog-container {
     border-top: none;
 }
 
-.active li, .navbar li:hover, .inline-navbar li:hover, .footer li:hover, .blog-tag p > a:hover {
+
+.active li, .navbar li:hover, .inline-navbar li:hover, .footer li:hover, .blog-tag p > a:hover, .blog li a:hover {
     background: linear-gradient(36deg, rgb(10, 138, 59) 51%, rgb(151, 21, 21) 100%);
     color: white;
 }
