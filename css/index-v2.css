@@ -2410,7 +2410,7 @@ display: none;
 
 .blog img, .blog li img  {
     /* padding: 15px 0px; */
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -3791,7 +3791,7 @@ display: none;
 @media screen and (prefers-color-scheme: dark) {
     body {
         color: white;
-        background: rgb(10, 138, 59, 5%);
+        background: rgb(10, 138, 59, 15%);
     }
 
     .blog blockquote, .blog-title blockquote {
