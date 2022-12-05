@@ -550,13 +550,15 @@ body::-webkit-scrollbar-thumb {
     margin-left: auto;
     margin-right: auto;
     gap: 1rem;
-
+    /* border-bottom: .5px solid; */
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 32%);
     /* background-image: url('../img/background-illustration.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white;
-    filter: drop-shadow(0 0 1.5px rgb(0, 0, 5)); */
+    color: white; 
+    filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));*/
+    
 }
 
 .grid-one-column {
@@ -2115,7 +2117,7 @@ body::-webkit-scrollbar-thumb {
     /* max-width: 1250px; */
     margin-left: auto;
     margin-right: auto;
-    border-top: .25px solid #eee;
+    /* border-top: .25px solid #eee; */
     margin-bottom: 40px;
     /* width: 75%; */
 
@@ -3776,12 +3778,11 @@ display: none;
         filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
 
 
-        background: linear-gradient(36deg, rgb(10, 138, 59) 51%, rgb(151, 21, 21) 100%);
+        background: linear-gradient(36deg, rgb(10, 138, 59) 20%, rgb(151, 21, 21) 80%);
     }
 
 
     .blog-title img, .blog-vertical img, .blog-alt-title img {
-        /* padding: 15px; */
         box-shadow: 0 0px 5px rgb(255, 255, 255);
     }
 
@@ -3821,7 +3822,7 @@ display: none;
     .blog-title, .blog-vertical, .blog-alt-title {
         color: white;
         width: 100%;
-        background: linear-gradient(36deg, rgb(10, 138, 59) 51%, rgb(151, 21, 21) 100%);
+        background: linear-gradient(36deg, rgb(10, 138, 59) 20%, rgb(151, 21, 21) 80%);
         box-shadow: 0 0px 5px rgb(255, 255, 255, 0.9);
     }
     
@@ -3832,8 +3833,11 @@ display: none;
 
     .blog-vertical img, .blog-alt-title img, .blog-title img {
         filter: drop-shadow(0 0 1px rgb(255, 255, 255));
-        /* box-shadow: 0 0px 5px rgb(255, 255, 255, 0.9); */
-        padding: 10px;
+        padding: 15px;
+    }
+
+    .navbar {
+        filter: drop-shadow(5px 0 1.5px rgb(10, 138, 59, 10%));
     }
 }
 
@@ -3848,18 +3852,18 @@ display: none;
 
 
 .active li, .navbar li:hover, .inline-navbar li:hover, .footer li:hover, .blog-tag p > a:hover, .blog li a:hover {
-    background: linear-gradient(36deg, rgb(10, 138, 59) 51%, rgb(151, 21, 21) 100%);
+    background: linear-gradient(36deg, rgb(10, 138, 59) 20%, rgb(151, 21, 21) 80%);
     color: white;
 }
 
 .individual:hover, .blog a:hover, .map li:hover, .video-item:hover {
-    background: linear-gradient(36deg, rgb(10, 138, 59) 51%, rgb(151, 21, 21) 100%);
+    background: linear-gradient(36deg, rgb(10, 138, 59) 20%, rgb(151, 21, 21) 80%);
     color: white;
 }
 
 .hamburger, .topTitle  {
     color: white;
-    background: linear-gradient(24deg, rgb(10, 138, 59) 10%, rgb(151, 21, 21) 100%);
+    background: linear-gradient(36deg, rgb(10, 138, 59) 20%, rgb(151, 21, 21) 80%);
 }
 
 
