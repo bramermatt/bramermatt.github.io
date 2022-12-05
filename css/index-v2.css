@@ -3764,13 +3764,9 @@ display: none;
 
 /* Christmas theme */
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1281px) {
 
     .hero-title {
-        /* background-image: url('../img/backgrounds/christmas-hero.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center; */
         color: white;
         filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
 
@@ -3779,15 +3775,10 @@ display: none;
     }
 
 
-
-    .blog-title img {
+    .blog-title img, .blog-vertical img, .blog-alt-title img {
         padding: 15px;
         box-shadow: 0 0px 5px rgb(0, 0, 5);
     }
-
-
-
-
 
 }
 
@@ -3813,10 +3804,8 @@ display: none;
 
 
     .blog-title, .blog-vertical, .blog-alt-title {
-        /* color: white; */
         color:  rgb(10, 138, 59);
         width: 100%;
-        /* background: linear-gradient(36deg, rgb(10, 138, 59) 51%, rgb(151, 21, 21) 100%); */
         background: white;
         box-shadow: 0 0px 5px rgb(0, 0, 5);
     }
@@ -3830,16 +3819,13 @@ display: none;
 @media screen and (prefers-color-scheme: light) {
     .blog-title, .blog-vertical, .blog-alt-title {
         color: white;
-        /* color:  rgb(10, 138, 59); */
         width: 100%;
         background: linear-gradient(36deg, rgb(10, 138, 59) 51%, rgb(151, 21, 21) 100%);
-        /* background: white; */
         box-shadow: 0 0px 5px rgb(255, 255, 255, 0.9);
     }
     
     .blog-title blockquote, .blog-vertical blockquote {
         color: white;
-        /* color:  rgb(10, 138, 59); */
     }
 
     .blog-title img {
@@ -3852,7 +3838,6 @@ display: none;
         padding: 10px;
     }
 }
-
 
 .blog-container {
     border-top: none;
@@ -3870,30 +3855,15 @@ display: none;
 }
 
 .hamburger, .topTitle  {
-    /* background-image: url('../img/backgrounds/christmas-hero.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     color: white;
-
-    box-shadow: 0 0px 2px rgb(0, 0, 5); */
-    /* filter: drop-shadow(0 0 1px rgb(0, 0, 5)); */
-
-    color: white;
-    /* filter: drop-shadow(0 0 1.5px rgb(0, 0, 5)); */
     background: linear-gradient(24deg, rgb(10, 138, 59) 10%, rgb(151, 21, 21) 100%);
 }
 
 
-
 .topTitle h1 {
-    /* display: none;
-    visibility: hidden; */
     color: white;
-    /* filter: drop-shadow(2px 2px 2px rgb(0, 0, 5)); */
 }
 
 .hero-title h1 {
     color: white;
-    /* filter: drop-shadow(1px 1px 2px rgb(0, 0, 5)); */
 }
