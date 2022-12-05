@@ -2113,7 +2113,9 @@ body::-webkit-scrollbar-thumb {
 
 
 .blog-container {
-    max-width: 1460px;
+    max-width: 1450px;
+    /* max-width: 90vw; */
+    /* max-width: 67%; */
     /* max-width: 1250px; */
     margin-left: auto;
     margin-right: auto;
@@ -2945,7 +2947,8 @@ display: none;
 
 @media screen and (max-width: 1280px) {
     .blog-vertical img, .blog-alt-title img {
-        width: 100%;
+        /* width: 100%; */
+        max-width: 100%;
     }
 
     .blog-vertical, .blog-alt-title {
@@ -3771,22 +3774,16 @@ display: none;
 
 /* Christmas theme */
 
-@media screen and (min-width: 1281px) {
-
+@media screen and (min-width: 990px) {
     .hero-title {
         color: white;
         filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
-
-
+    
+    
         background: linear-gradient(36deg, rgb(10, 138, 59) 20%, rgb(151, 21, 21) 80%);
     }
-
-
-    .blog-title img, .blog-vertical img, .blog-alt-title img {
-        box-shadow: 0 0px 5px rgb(255, 255, 255);
-    }
-
 }
+
 
 @media screen and (prefers-color-scheme: dark) {
     body {
@@ -3801,7 +3798,6 @@ display: none;
 
     .blog-vertical img, .blog-alt-title img, .blog-title img {
         filter: drop-shadow(0 0 1px rgb(10, 138, 59, 90%));
-        padding: 15px;
     }
 
 
@@ -3833,13 +3829,24 @@ display: none;
 
     .blog-vertical img, .blog-alt-title img, .blog-title img {
         filter: drop-shadow(0 0 1px rgb(255, 255, 255));
-        padding: 15px;
     }
 
     .navbar {
         filter: drop-shadow(5px 0 1.5px rgb(10, 138, 59, 10%));
     }
 }
+
+.blog-title, .blog-vertical, .blog-alt-title {
+    padding: 15px;
+}
+
+
+
+.blog-title img, .blog-alt-title img, .blog-vertical img {
+    box-shadow: 0 0px 5px rgb(255, 255, 255);
+    border: 5px solid;
+}
+
 
 #myBtn:hover {
     color: white;
