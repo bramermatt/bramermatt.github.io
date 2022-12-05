@@ -3769,7 +3769,16 @@ display: none;
 
 }
 
+.blog-title, .blog-vertical, .blog-alt-title {
+    padding: 15px;
+}
 
+
+
+.blog-title img, .blog-alt-title img, .blog-vertical img {
+    box-shadow: 0 0px 5px rgb(255, 255, 255);
+    border: 5px solid;
+}
 
 
 /* Christmas theme */
