@@ -3728,7 +3728,7 @@ display: none;
     .navbar {
         box-shadow: 0 1px 8px -1px rgb(255, 255, 255, 10%);
         /* background-color: #313131; */
-        background-color: #000;
+        /* background-color: #000; */
         /* background: var(--background); */
         /* border-right: 1px solid; */
 
