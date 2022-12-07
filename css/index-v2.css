@@ -3851,15 +3851,17 @@ display: none;
 
 
     .blog-title, .blog-vertical, .blog-alt-title {
-        color:  rgb(10, 138, 59);
+        /* color:  rgb(10, 138, 59); */
+        color: white;
         width: 100%;
-        background: white;
+        /* background-color: rgba(10, 138, 59, 0.134); */
+        background: linear-gradient(36deg, rgba(10, 138, 59, 0.314) 20%, rgb(151, 21, 21, 0.314) 80%);
         box-shadow: 0 0px 5px rgb(0, 0, 5);
     }
     
     .blog-title blockquote, .blog-vertical blockquote {
         color: white;
-        color:  rgb(10, 138, 59);
+        /* color:  rgb(10, 138, 59); */
     }
 }
 
