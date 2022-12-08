@@ -3891,7 +3891,7 @@ display: none;
     }
 
     .blog blockquote, .blog-title blockquote {
-        color: white;
+        color: rgb(255, 255, 255, 80%);
     }
 
     .hamburger, .topTitle  {
@@ -3904,6 +3904,10 @@ display: none;
         filter: drop-shadow(0 0 1px rgb(10, 138, 59, 90%));
     }
 
+    .blog img, .blog li img {
+        filter: drop-shadow(0 0 2px rgba(255, 255, 255, 80%));
+    }
+
 
     .blog-title, .blog-vertical, .blog-alt-title {
         color: white;
@@ -3914,6 +3918,16 @@ display: none;
     
     .blog-title blockquote, .blog-vertical blockquote {
         color: white;
+    }
+
+    .blog-tag a > p {
+        color: white;
+        background-color: rgb(10, 138, 59);
+    }
+    
+    .blog-tag a > p:hover {
+        color: white;
+        background-color: rgb(151, 21, 21);
     }
 }
 
@@ -3929,6 +3943,20 @@ display: none;
         background: linear-gradient(36deg, rgb(10, 138, 59) 20%, rgb(151, 21, 21) 80%);
     }
 
+    .blog-tag a > p {
+        color: white;
+        background-color: rgb(151, 21, 21);
+    }
+    
+    .blog-tag a > p:hover {
+        color: white;
+        background-color: rgb(10, 138, 59);
+    }
+
+    .blog img, .blog li img {
+        filter: drop-shadow(0 0 2px rgb(0, 0, 0, 20%));
+    }
+
     
     .blog-title blockquote, .blog-vertical blockquote {
         color: white;
@@ -3940,13 +3968,15 @@ display: none;
     }
 
     .navbar {
-        filter: drop-shadow(5px 0 1.5px rgb(10, 138, 59, 10%));
+        filter: drop-shadow(5px 0 1.5px rgb(10, 138, 59, 30%));
     }
 }
 
 .blog-title, .blog-vertical, .blog-alt-title {
     padding: 15px;
 }
+
+
 
 .blog-title img, .blog-alt-title img, .blog-vertical img {
     box-shadow: 0 0px 5px rgb(255, 255, 255, 40%);
@@ -3963,10 +3993,7 @@ display: none;
     /* padding: 15px; */
 }
 
-.blog-tag a > p:hover {
-    color: white;
-    background-color: rgb(151, 21, 21);
-}
+
 
 
 .active li, .navbar li:hover, .inline-navbar li:hover, .footer li:hover, .blog li a:hover {
@@ -3980,10 +4007,6 @@ display: none;
 }
 
 
-.topTitle h1 {
-    color: white;
-}
-
-.hero-title h1 {
+.topTitle h1, .hero-title h1 {
     color: white;
 }
