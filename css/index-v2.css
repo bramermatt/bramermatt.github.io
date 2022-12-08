@@ -2014,6 +2014,20 @@ body::-webkit-scrollbar-thumb {
 .two-img-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+
+.three-img-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.four-img-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 8px;
 }
 
@@ -2473,12 +2487,13 @@ display: none;
 
 .blog img, .blog li img  {
     /* padding: 15px 0px; */
-    padding-bottom: 10px;
+    padding: 10px;
+    /* padding-bottom: 10px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
     /* max-height:450px; */
-    /* max-height: 75vh; */
+    /* max-height: 65vh; */
     max-height: 85vh;
     /* width: 100%; */
     max-width: 100%;
@@ -3871,7 +3886,8 @@ display: none;
 @media screen and (prefers-color-scheme: dark) {
     body {
         color: white;
-        background: linear-gradient(120deg, rgba(10, 138, 59, 25%) 20%, rgb(151, 21, 21, 20%) 80%);
+        background-color: rgb(10, 138, 59, 25%);
+        /* background: linear-gradient(120deg, rgb(10, 138, 59, 25%) 20%, rgb(151, 21, 21, 20%) 80%); */
     }
 
     .blog blockquote, .blog-title blockquote {
@@ -3880,7 +3896,7 @@ display: none;
 
     .hamburger, .topTitle  {
         color: white;
-        background: linear-gradient(36deg, rgba(10, 138, 59, 0.314) 20%, rgb(151, 21, 21, 0.314) 80%);
+        background: linear-gradient(36deg, rgba(10, 138, 59, 45%) 20%, rgb(151, 21, 21, 45%) 80%);
     }
 
 
@@ -3892,7 +3908,7 @@ display: none;
     .blog-title, .blog-vertical, .blog-alt-title {
         color: white;
         width: 100%;
-        /* background: linear-gradient(120deg, rgba(10, 138, 59, 0.314) 20%, rgb(151, 21, 21, 0.314) 80%); */
+        background: linear-gradient(120deg, rgba(10, 138, 59, 85%) 20%, rgb(151, 21, 21, 85%) 80%);
         box-shadow: 0 0px 1px rgb(0, 0, 5);
     }
     
@@ -3944,6 +3960,7 @@ display: none;
 
 .blog-container {
     border-top: none;
+    /* padding: 15px; */
 }
 
 .blog-tag a > p:hover {
