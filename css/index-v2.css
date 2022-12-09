@@ -571,7 +571,7 @@ body::-webkit-scrollbar-thumb {
     /* padding-left: 15px; */
     /* max-width: 350px; */
     /* max-width: max-content; */
-    max-width: 350px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     gap: 1rem;
@@ -887,6 +887,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     object-fit: cover;
     display: block;
+    box-shadow: 0 1px 7px -1px rgb(0 0 0 / 32%);
 }
 
 .grid-item-hero-title {
@@ -2079,12 +2080,45 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
 }
 
+.headline-scrollbar {
+        /* background-color: black; */
+        background: blue;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        /* margin-top: 20px; */
+        /* margin: 10px; */
+        color: white;
+        /* height: 20vh; */
+}
+
+.headline-scrollbar p {
+    font-size: 40px;
+    /* line-height: 85px; */
+    margin: auto;
+    padding: 0;
+    font-weight: bolder;
+    text-align: center;
+    /* transform: translateX(100%); */
+    /* animation: scroll-left 18s linear infinite; */
+    /* scroll-snap-stop: always; */
+    /* width: 50%; */
+    /* max-width: 50vw; */
+    /* overflow-y: visible; */
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* width: 100vh; */
+    /* width: 100%; */
+    /* scrollbar-gutter: 40px; */
+}
+
 .spoiler-scrollbar {
     /* background-color: black; */
     background: red;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     /* margin-top: 20px; */
     /* margin: 10px; */
     color: white;
@@ -3393,7 +3427,8 @@ display: none;
         /* padding-left: 30px; */
         /* margin-left: 30px; */
         margin-left: 50px;
-        margin-right: 50px;
+        margin-right: 10px;
+        /* margin-right: 50px; */
         z-index: 10;
         white-space: nowrap;
         overflow: hidden;
