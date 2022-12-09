@@ -2359,8 +2359,8 @@ display: none;
     margin-left: auto;
     margin-right: auto;
 
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
 
     font-size: 1rem;
     line-height: 1.6em;
@@ -2416,8 +2416,8 @@ display: none;
     /* border-bottom: .5px solid #eee; */
     /* padding-bottom: 10px; */
 
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
 
     max-width: 650px;
     /* width: 66.7%; */
@@ -2521,7 +2521,7 @@ display: none;
 
 .blog img, .blog li img  {
     /* padding: 15px 0px; */
-    padding: 10px;
+    /* padding: 10px; */
     /* padding-bottom: 10px; */
     display: block;
     margin-left: auto;
@@ -4028,6 +4028,8 @@ display: none;
 .blog-container {
     border-top: none;
     /* padding: 15px; */
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
