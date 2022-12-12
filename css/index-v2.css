@@ -3144,7 +3144,11 @@ display: none;
 }
 
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 990px) {
+    .three-img-columns {
+        grid-template-columns: 1fr;
+    }
+
 
 
 }
