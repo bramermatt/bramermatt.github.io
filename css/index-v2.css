@@ -2195,6 +2195,7 @@ body::-webkit-scrollbar-thumb {
 
 .blog-container {
     max-width: 1450px;
+    /* max-width: 1600px; */
     /* max-width: 90vw; */
     /* max-width: 67%; */
     /* max-width: 1250px; */
@@ -3343,7 +3344,7 @@ display: none;
 
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1050px) {
  
     .navbar, .navbar-right {
         display: none;
