@@ -584,7 +584,7 @@ body::-webkit-scrollbar-thumb {
     padding: 12px;
     /* padding-right: 25px;
     padding-left: 25px; */
-    max-width: 1620px;
+    max-width: 1550px;
     margin-left: auto;
     margin-right: auto;
     gap: 1rem;
@@ -645,7 +645,7 @@ body::-webkit-scrollbar-thumb {
 
 .grid-seven-columns {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
 }
 
@@ -3074,13 +3074,21 @@ display: none;
         text-align: center;
     }
 
+    .grid-two-columns {
+        max-width: 650px;
+    }
+
+    .grid-three-columns, .grid-four-columns, .grid-five-columns, .grid-six-columns, .grid-seven-columns, .grid-four-video-columns, .four-img-columns {
+        max-width: 1050px;
+    }
+
 
     .grid-one-column, .grid-two-columns-mobile, .grid-two-columns-intro {
         grid-template-columns: 1fr;
         /* margin-top: 20px; */
     }
 
-    .grid-two-columns, .grid-three-columns, .grid-four-video-columns, .grid-seven-columns, .four-img-columns {
+    .grid-two-columns, .grid-four-video-columns, .four-img-columns {
         grid-template-columns: 2fr 2fr ;
     }
 
@@ -3088,9 +3096,8 @@ display: none;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .grid-item-hidden {
-        display: block;
-    }
+
+
 
     .individual img, .individual-more img, .individual-hidden img  {
         height: 10vh;
@@ -3099,9 +3106,9 @@ display: none;
         width: 100%;
     }
 
-    .category {
+    /* .category {
         margin: 15px;
-    }
+    } */
 
     /* .news-topic {
         bottom: 160px;
@@ -3152,6 +3159,12 @@ display: none;
 
 
 
+}
+
+@media screen and (max-width: 1200px) {
+    .category {
+        margin: 15px;
+    }
 }
 
 
@@ -3632,6 +3645,10 @@ display: none;
         padding-left: 0;
     }
 
+    .grid-item-hidden {
+        display: block;
+    }
+
     /* .grid-item-ad {
         margin: 15px;
     } */
@@ -3932,7 +3949,11 @@ display: none;
     padding: 15px;
     border-bottom: 1px solid;
     max-width: max-content;
-} */
+} 
+
+work on blog tag (invert w a:hover)
+
+*/
 
 
 
