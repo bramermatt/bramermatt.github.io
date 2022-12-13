@@ -645,7 +645,7 @@ body::-webkit-scrollbar-thumb {
 
 .grid-seven-columns {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
 }
 
@@ -822,6 +822,7 @@ body::-webkit-scrollbar-thumb {
     /* margin: 10px; */
     overflow: hidden;
     transition: transform 400ms;
+    max-width: 300px;
 }
 
 .grid-item a:link, a:visited {
@@ -1328,7 +1329,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 0;
     margin-right: 0;
     /* height: 350px; */
-    height: 38vh;
+    /* height: 38vh; */
     width: 100%;
     object-fit: cover;
     /* margin-bottom: 15px; */
@@ -1354,7 +1355,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .individual-news img {
-    height: 550px;
+    /* height: 550px; */
 }
 
 .individual-news p {
@@ -4109,7 +4110,7 @@ display: none;
         border: 1px solid rgb(7, 112, 48);
     }
 
-    .blog h2, .individual, strong {
+    .blog h2, .individual, strong, .individual-hidden {
         color: rgb(7, 112, 48);
     }
 
@@ -4120,7 +4121,6 @@ display: none;
     .foot-buttons h1, .blog blockquote, .category h1, .map h2, .grid-item-ad h2 {
         color: rgb(7, 112, 48);
         border-bottom: 1px solid;
-        /* width: max-content; */
         padding-bottom: 5px;
     }
 
@@ -4165,3 +4165,4 @@ display: none;
 .topTitle h1, .hero-title h1 {
     color: white;
 }
+
