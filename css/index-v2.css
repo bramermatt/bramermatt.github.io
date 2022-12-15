@@ -2165,6 +2165,7 @@ body::-webkit-scrollbar-thumb {
     position: sticky;
     z-index: 1;
     top:0;
+    /* bottom: 0; */
 }
 
 
@@ -2314,6 +2315,7 @@ display: none;
     position: sticky;
     -ms-overflow-style: none;
     top: 8vh !important;
+    bottom: 8vh !important;
     margin-left: auto;
     margin-right: auto;
     font-size: .85em;
@@ -3486,7 +3488,7 @@ display: none;
         position: sticky;
         z-index: 1;
         top:0;
-        padding-top: 7.5vh
+        padding-top: 7vh
     }
 
     .spoiler-scrollbar p {
@@ -3797,7 +3799,8 @@ display: none;
         max-width: 280px;
         width: 100%;
         top: 2vh !important;
-        z-index: 500;
+        bottom: 1px;
+        /* z-index: 500; */
     }
 /* 
     .blog-right-tag {
@@ -4150,7 +4153,7 @@ display: none;
 
 }
 
- /* turn this on when christmas theme is off 
+ /* turn this on when christmas theme is off  
 .blog-title, .blog-vertical, .blog-alt-title {
     padding: 15px;
     border-bottom: 1px solid;
@@ -4162,12 +4165,6 @@ display: none;
     max-width: max-content;
 }
 
-.spoiler-scrollbar {
-    max-width: max-content;
-    padding: 10px;
-    margin: auto;
-    margin-top: 10px;
-}
 
 .blog-tag a > p {
     background-color: lightgrey;
@@ -4198,6 +4195,11 @@ display: none;
     .blog-right-title, .blog-right-title img, .blog-right-tag p, .blog-right-tag a  {
         box-shadow: 0 1px 5px -1px rgba(255, 255, 255, 0.3);
     }
+
+    .blog-right-tag a:hover {
+        color:#000;
+        background-color: white;
+    }
  }
 
  @media screen and (prefers-color-scheme: light) {
@@ -4212,7 +4214,7 @@ display: none;
 
 
 /* Christmas theme */
-
+ 
 @media screen and (min-width: 990px) and (prefers-color-scheme: dark) {
     .hero-title {
         color: white;
