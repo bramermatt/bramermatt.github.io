@@ -570,7 +570,7 @@ body::-webkit-scrollbar-thumb {
     /* padding-left: 15px; */
     /* max-width: 350px; */
     /* max-width: max-content; */
-    max-width: 300px;
+    max-width: 280px;
     margin-left: auto;
     margin-right: auto;
     gap: 1rem;
@@ -3491,6 +3491,7 @@ display: none;
 
     .spoiler-scrollbar p {
         font-size: 18px;
+        text-transform: uppercase;
     }
 
 }
@@ -3791,6 +3792,34 @@ display: none;
 
     .blog-right {
         display: none;
+        float: none;
+        position: relative;
+        max-width: 280px;
+        width: 100%;
+        top: 2vh !important;
+        z-index: 500;
+    }
+/* 
+    .blog-right-tag {
+        position: fixed;
+        max-width: 280px;
+        width: 100%;
+        bottom: 5px;
+        left: 5px;
+        border: none;
+        outline: none;
+        color: var(--text);
+        cursor: pointer;
+        padding: 10px;
+        opacity: 60%;
+    }
+
+    .blog-right-tag:hover {
+        opacity: 100%;
+    } */
+
+    .blog-container {
+        margin-top: 0;
     }
 
     .margin-right-18 {
