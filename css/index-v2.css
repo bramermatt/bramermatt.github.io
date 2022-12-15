@@ -3303,7 +3303,7 @@ display: none;
 
 
 @media screen and (max-width: 990px) {
-    .three-img-columns {
+    .three-img-columns, .two-img-columns {
         grid-template-columns: 1fr;
     }
 
