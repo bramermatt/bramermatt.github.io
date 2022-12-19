@@ -3490,7 +3490,7 @@ display: none;
         position: sticky;
         z-index: 1;
         top:0;
-        padding-top: 6.5vh
+        padding-top: 7.5vh
     }
 
     .spoiler-scrollbar p {
@@ -4181,11 +4181,10 @@ display: none;
 
 }
 
- /* turn this on when christmas theme is off  
+ /* turn this on when christmas theme is off 
 .blog-title, .blog-vertical, .blog-alt-title {
     padding: 15px;
     border-bottom: 1px solid;
-    max-width: max-content;
 } 
 
 .hero-title {
@@ -4198,7 +4197,7 @@ display: none;
     background-color: lightgrey;
 }
 
-*/
+ */
 
 
 
@@ -4384,11 +4383,6 @@ display: none;
 
 
 
-/* .blog-title img, .blog-alt-title img, .blog-vertical img {
-    box-shadow: 0 0px 6px rgb(255, 255, 255);
-} */
-
-
 #myBtn:hover {
     color: white;
     background-color: rgb(10, 138, 59);
@@ -4400,10 +4394,6 @@ display: none;
     padding-right: 15px;
 }
 
-
-/* .blog-tag p {
-    border-radius: 20px;
-} */
 
 
 .active li, .navbar li:hover, .inline-navbar li:hover, .footer li:hover, .blog li a:hover, .grid-item-ad a:hover {
