@@ -4181,26 +4181,6 @@ display: none;
 
 }
 
- /* turn this on when christmas theme is off 
-.blog-title, .blog-vertical, .blog-alt-title {
-    padding: 15px;
-    border-bottom: 1px solid;
-} 
-
-.hero-title {
-    border-bottom: 1px solid;
-    max-width: max-content;
-}
-
-
-.blog-tag a > p {
-    background-color: lightgrey;
-}
-
- */
-
-
-
 /* Blog Right Section - uncomment if want on 
 .blog-right {
     display: none;
@@ -4245,6 +4225,7 @@ display: none;
 @media screen and (min-width: 990px) and (prefers-color-scheme: dark) {
     .hero-title {
         color: white;
+        filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
         background: linear-gradient(36deg, rgba(10, 138, 59, 0.314) 20%, rgb(151, 21, 21, 0.314) 80%);
     }
 }
@@ -4261,7 +4242,6 @@ display: none;
 @media screen and (prefers-color-scheme: dark) {
     body, .navbar {
         color: white;
-        background-color: rgb(10, 138, 59, 25%);
     }
 
     .blog blockquote, .blog-title blockquote, .hero-post blockquote {
@@ -4411,3 +4391,196 @@ display: none;
     color: white;
 }
 
+.blog-tag p {
+    border: none;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
+}
+
+.blog-tag p {
+    background-color: rgb(10, 138, 59, 80%);
+}
+
+
+
+
+
+/* 2023 Theme */
+
+ /* turn this on when christmas theme is off
+.blog-title, .blog-vertical, .blog-alt-title {
+    padding: 15px;
+} 
+
+.blog-tag a > p {
+    background-color: lightgrey;
+}
+
+
+
+@media screen and (min-width: 990px) and (prefers-color-scheme: dark) {
+    .hero-title {
+        color: white;
+        background: linear-gradient(120deg, rgb(21, 103, 151, 60%) 20%, rgb(230, 99, 12, 60%) 80%);
+    }
+}
+
+@media screen and (min-width: 990px) and (prefers-color-scheme: light) {
+    .hero-title {
+        color: white;
+        filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
+        background-color: rgb(230, 99, 12);;
+        background: linear-gradient(120deg, rgb(21, 103, 151) 20%, rgb(230, 99, 12) 80%);
+    }
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+    body, .navbar {
+        color: white;
+    }
+
+    .blog blockquote, .blog-title blockquote, .hero-post blockquote {
+        color: rgb(255, 255, 255, 80%);
+    }
+
+    .hamburger, .topTitle  {
+        color: white;
+        background: linear-gradient(120deg, rgb(21, 103, 151) 20%, rgb(230, 99, 12) 80%);
+    }
+
+
+    .blog-vertical img, .blog-alt-title img, .blog-title img {
+        filter: drop-shadow(0 0 1px rgb(21, 103, 151, 90%));
+    }
+
+    .blog img, .blog li img {
+        filter: drop-shadow(0 0 2px rgb(21, 103, 151, 90%));
+    }
+
+
+    .blog-title, .blog-vertical, .blog-alt-title {
+        color: white;
+        width: 100%;
+        background: linear-gradient(120deg, rgb(21, 103, 151, 60%) 20%, rgb(230, 99, 12, 60%) 80%);
+        box-shadow: 0 0px 1px rgb(0, 0, 5);
+    }
+    
+    .blog-title blockquote, .blog-vertical blockquote {
+        color: white;
+    }
+
+    .blog-tag a > p, .blog-right-tag a:link, .blog-right-tag a:visited {
+        color: white;
+        background-color: rgb(21, 103, 151);
+    }
+    
+    .blog-tag a > p:hover, .blog-right-tag a:hover {
+        color: white;
+        background-color: rgb(230, 99, 12);
+    }
+
+
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .blog-title, .blog-vertical, .blog-alt-title {
+        color: white;
+        width: 100%;
+        background: linear-gradient(30deg, rgb(21, 103, 151) 20%, rgb(230, 99, 12) 80%);
+    }
+
+    .hamburger  {
+        color: white;
+        background: linear-gradient(120deg, rgb(21, 103, 151) 20%, rgb(230, 99, 12) 80%);
+        filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
+    }
+
+    .blog-tag a > p, .blog-right-tag a:link, .blog-right-tag a:visited  {
+        color: white;
+        background-color: rgb(21, 103, 151);
+    }
+    
+    .blog-tag a > p:hover, .blog-right-tag a:hover {
+        color: white;
+        background-color: rgb(230, 99, 12);
+    }
+
+    .blog img, .blog li img {
+        filter: drop-shadow(0 0 2px rgb(0, 0, 0, 20%));
+    }
+
+    
+    .blog-title blockquote, .blog-vertical blockquote {
+        color: white;
+    }
+
+    .navbar {
+        filter: drop-shadow(5px 0 1.5px rgb(21, 103, 151, 30%));
+    }
+
+    .blog a:link, .blog a:visited, .grid-item-ad a:link {
+        color: rgb(21, 103, 151);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .grid-item {
+        box-shadow: 0 0px 5px rgb(21, 103, 151, 50%);
+    }
+
+
+    .grid-item-ad {
+        border: 1px solid rgb(21, 103, 151);
+    }
+
+    .blog {
+        border-color: rgb(21, 103, 151);
+    }
+
+    .blog h2, .hero-post h2, .individual, strong, .individual-hidden, .blog-right-title, .blog-right-tag p {
+        color: rgb(21, 103, 151);
+    }
+
+    .footer {
+        border-top: .5px solid rgb(21, 103, 151);
+    }
+
+    .foot-buttons h1, .blog blockquote, .hero-post blockquote, .category h1, .map h2, .grid-item-ad h2 {
+        color: rgb(21, 103, 151);
+        border-bottom: 1px solid;
+        padding-bottom: 5px;
+    }
+
+}
+
+.blog-title, .blog-vertical, .blog-alt-title {
+    padding: 15px;
+}
+
+#myBtn:hover {
+    color: white;
+    background-color: rgb(230, 99, 12);
+}
+
+.blog-container {
+    border-top: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.active li, .navbar li:hover, .inline-navbar li:hover, .footer li:hover, .blog li a:hover, .grid-item-ad a:hover {
+    background-color: rgb(230, 99, 12);
+    background: linear-gradient(120deg, rgb(21, 103, 151) 20%, rgb(230, 99, 12) 80%);
+    color: white;
+}
+
+.individual:hover, .blog a:hover, .map li:hover, .video-item:hover {
+    background-color: rgb(230, 99, 12);
+    background: linear-gradient(120deg, rgb(21, 103, 151) 20%, rgb(230, 99, 12) 80%);
+    color: white;
+}
+
+.topTitle h1, .hero-title h1 {
+    color: white;
+}
