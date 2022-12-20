@@ -48,7 +48,7 @@ body {
     
     /* opacity: 0.5; */
     
-    margin-left: 115px;
+    margin-left: 110px;
     /* padding-left: 115px; */
     /* margin-right: 120px; */
 
@@ -248,12 +248,14 @@ body::-webkit-scrollbar-thumb {
     
     /* side-navigation */
     height: 100%;
-    width: 115px;
+    width: 110px;
     position: fixed;
     z-index: 50;
     top: 0;
     left: 0;
     overflow-x: hidden;
+    text-overflow: ellipsis;
+    /* word-wrap: break-word; */
     /* padding-top: 16px; */
     text-align: center;
 
@@ -328,6 +330,8 @@ body::-webkit-scrollbar-thumb {
     /* float: left; */
     /* display: block; */
     float: none;
+    display: block;
+    margin: auto;
 }
 
 .inline-navbar img {
@@ -4238,7 +4242,7 @@ display: none;
     .hero-title {
         color: white;
         filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
-        background: linear-gradient(36deg, rgba(10, 138, 59, 0.314) 20%, rgb(151, 21, 21, 0.314) 80%);
+        background: linear-gradient(36deg, rgba(10, 138, 59) 20%, rgb(151, 21, 21) 80%);
     }
 }
 
