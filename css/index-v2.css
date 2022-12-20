@@ -4242,6 +4242,7 @@ display: none;
 @media screen and (prefers-color-scheme: dark) {
     body, .navbar {
         color: white;
+        background-color: rgba(10, 138, 59, 15%);
     }
 
     .blog blockquote, .blog-title blockquote, .hero-post blockquote {
@@ -4279,11 +4280,15 @@ display: none;
         background-color: rgb(10, 138, 59);
     }
     
-    .blog-tag a > p:hover, .blog-right-tag a:hover {
+    .blog-right-tag a:hover {
         color: white;
         background-color: rgb(151, 21, 21);
     }
 
+    .blog-tag a > p:hover {
+        color: white;
+        background-color: rgb(2, 37, 16);
+    }
 
 }
 
@@ -4294,9 +4299,10 @@ display: none;
         background: linear-gradient(36deg, rgb(10, 138, 59) 20%, rgb(151, 21, 21) 80%);
     }
 
-    .hamburger, .topTitle  {
+    .hamburger {
         color: white;
         background: linear-gradient(36deg, rgb(10, 138, 59) 20%, rgb(151, 21, 21) 80%);
+        filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
     }
 
     .blog-tag a > p, .blog-right-tag a:link, .blog-right-tag a:visited  {
@@ -4391,6 +4397,33 @@ display: none;
     color: white;
 }
 
+.blog-tag a > p {
+    background-color: rgb(151, 21, 21, 0.8);
+}
+
+
+
+.blog-tag p {
+    background-color: rgba(13, 80, 39, 0.8);
+    border: none;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
+}
+
+
+/* 2023 Theme */
+
+ /* turn this on when christmas theme is off 
+.blog-title, .blog-vertical, .blog-alt-title {
+    padding: 15px;
+    border-bottom: thin solid;
+} 
+
+.blog-tag a > p {
+    background-color: rgb(122, 122, 122);
+    color: white;
+}
+
 .blog-tag p {
     border: none;
     border-radius: 20px;
@@ -4398,26 +4431,24 @@ display: none;
 }
 
 .blog-tag p {
-    background-color: rgb(10, 138, 59, 80%);
+    background-color: rgb(21, 103, 151, 60%);
 }
+*/
+
+/* .hero-title {
+    border-bottom: thin solid;
+    max-width: max-content;
+} */
+
+/* .blog{
+    border-right: thin solid;
+    border-left: thin solid;
+    padding-right: 15px;
+    padding-left: 15px;
+} */
 
 
-
-
-
-/* 2023 Theme */
-
- /* turn this on when christmas theme is off
-.blog-title, .blog-vertical, .blog-alt-title {
-    padding: 15px;
-} 
-
-.blog-tag a > p {
-    background-color: lightgrey;
-}
-
-
-
+/* 
 @media screen and (min-width: 990px) and (prefers-color-scheme: dark) {
     .hero-title {
         color: white;
@@ -4584,3 +4615,4 @@ display: none;
 .topTitle h1, .hero-title h1 {
     color: white;
 }
+*/
