@@ -2170,8 +2170,8 @@ body::-webkit-scrollbar-thumb {
 .spoiler-scrollbar {
     /* background-color: black; */
     background: red;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     /* margin-bottom: 20px; */
     /* margin-top: 20px; */
     /* margin: 10px; */
@@ -2189,7 +2189,7 @@ body::-webkit-scrollbar-thumb {
     /* font-size: 90px;
     line-height: 85px; */
 
-    font-size: 40px;
+    font-size: 30px;
     line-height: 100%;
 
     margin: auto;
@@ -2330,7 +2330,7 @@ display: none;
     position: -webkit-sticky;
     position: sticky;
     -ms-overflow-style: none;
-    top: 8vh !important;
+    top: 7vh !important;
     bottom: 8vh !important;
     margin-left: auto;
     margin-right: auto;
@@ -3510,7 +3510,7 @@ display: none;
     }
 
     .spoiler-scrollbar p {
-        font-size: 18px;
+        font-size: 17px;
         text-transform: uppercase;
     }
 
