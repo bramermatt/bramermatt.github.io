@@ -617,6 +617,22 @@ body::-webkit-scrollbar-thumb {
     grid-template-columns: 1fr 1fr;
     width: 100%;
     max-width: 650px;
+    justify-content: center;
+}
+
+.grid-two-hero-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+    justify-content: center;
+    /* max-width: 1600px; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    padding: 12px;
+    gap: 1rem;
+    margin-bottom: 5vh;
 }
 
 .grid-three-columns {
@@ -756,6 +772,49 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 10px;
     text-align: center;
 }
+
+
+.hero-item {
+    align-self: center;
+    height: 100%;
+    /* overflow: hidden; */
+    color: var(--text);
+}
+
+.hero-item a:link, a:visited {
+    color: var(--text);
+}
+
+.individual-hero {
+    color: var(--text);
+
+}
+
+.individual-hero > .topic {
+    position: relative;
+    margin-top: -15vh;
+    /* color: white; */
+    /* filter: drop-shadow(0 0 .5px rgb(0, 0, 0)); */
+    text-shadow: 0 0 20px rgb(0 0 0);
+    display: none;
+}
+
+.individual-hero > .title {
+    position: relative;
+    margin-top: -11vh;
+    color: white;
+    filter: drop-shadow(1px 1px .5px rgb(0, 0, 0, 90%));
+    text-transform: uppercase;
+    text-shadow: 0 0 45px rgb(0 0 0);
+}
+
+.individual-hero img {
+    max-height: 60vh;
+    object-fit: cover;
+    align-items: center;
+}
+
+
 
 .video-item:hover {
     transform: scale(1.1);
@@ -3329,6 +3388,8 @@ display: none;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+
+
 }
 
 @media screen and (max-width: 1250px) {
@@ -3907,6 +3968,63 @@ display: none;
     } */
 
 
+
+
+}
+
+@media screen and (max-width: 1400px) {
+    /* .grid-two-hero-columns {
+        grid-template-columns: 1fr;
+    } */
+
+    .grid-two-hero-columns > .hero-item {
+        overflow: hidden;
+    }
+
+    .grid-two-hero-columns > .hero-item img {
+        object-fit: cover;
+        align-items: center;
+        display: block;
+
+        box-sizing: border-box;
+        padding: 0;
+        border: none;
+        margin: auto;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        max-height: 90vh;
+    }
+}
+ 
+@media screen and (max-width: 880px) {
+    .grid-two-hero-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-two-hero-columns > .hero-item {
+        overflow: hidden;
+    }
+
+    .grid-two-hero-columns > .hero-item img {
+        object-fit: cover;
+        align-items: center;
+        display: block;
+
+        box-sizing: border-box;
+        padding: 0;
+        border: none;
+        margin: auto;
+        min-width: 100%;
+        max-width: 100%;
+        /* min-height: 100%;
+        max-height: 100%; */
+        object-fit: contain;
+        /* max-height: 60vh; */
+    }
+
 }
 
 
@@ -4436,26 +4554,60 @@ display: none;
 } 
 
 .blog-tag a > p {
-    background-color: rgb(122, 122, 122);
+    background-color: rgb(36, 36, 36);
     color: white;
+    border: thin solid;
 }
 
-.blog-tag p {
-    border: none;
-    border-radius: 20px;
-    filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
-}
 
-.blog-tag p {
-    background-color: rgba(51, 51, 51, 0.6);
-}
 
 .hero-title {
     border-bottom: thin solid;
-    /* max-width: max-content; */
+    max-width: max-content;
 }
 
+@media screen and (prefers-color-scheme: dark) {
+    .blog-title, .blog-vertical, .blog-alt-title {
+        background-color: #202020;
+        color: white;
+    } 
 
+    .blog-title blockquote, .blog-vertical blockquote, .blog-alt-title blockquote, .blog blockquote, .hero-post blockquote {
+        color: white;
+    }
+
+    .blog-tag p {
+        background-color: rgb(36, 36, 36, 0.6);
+        /* border: thin solid; */
+    }
+
+    .blog-tag p {
+        border: none;
+        border-radius: 20px;
+        filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));
+    }
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .blog-tag p {
+        background-color: rgba(255, 255, 255, 0.6);
+        border: thin solid;
+        color: var(--text);
+        border-radius: 20px;
+    }
+
+    .blog-tag a > p:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+
+    .blog-title blockquote, .blog-vertical blockquote, .blog-alt-title blockquote, .blog blockquote, .hero-post blockquote {
+        color: black;
+        border-color: black;
+    }
+}
+
+/* 
 @media screen and (min-width: 990px) and (prefers-color-scheme: dark) {
     .hero-title {
         color: white;
