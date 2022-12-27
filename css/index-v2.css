@@ -812,6 +812,7 @@ body::-webkit-scrollbar-thumb {
     max-height: 60vh;
     object-fit: cover;
     align-items: center;
+    min-width: 100%;
 }
 
 
