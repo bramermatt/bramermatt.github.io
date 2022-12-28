@@ -2421,7 +2421,7 @@ display: none;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 2px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .blog-right-title p {
@@ -2470,6 +2470,8 @@ display: none;
     width: -webkit-fill-available;
     border-radius: 20px;
     color: var(--text);
+    white-space: nowrap;
+    font-size: 12px;
 }
 
 .blog-right-tag p {
@@ -2480,7 +2482,7 @@ display: none;
     margin: 5px;
 
     color: var(--text);
-    font-size: 16px;
+    font-size: 12px;
     line-height: 20px;
     font-weight: 500;
     letter-spacing: .5px;
@@ -2496,6 +2498,7 @@ display: none;
     margin: 0;
     /* margin-right: 5px; */
     font-weight: bold;
+    font-size: 12px;
 
 }
 
