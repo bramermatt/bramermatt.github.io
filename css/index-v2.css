@@ -4209,6 +4209,7 @@ display: none;
         /* backdrop-filter: blur(15px) opacity(1); */
         /* background: var(--background); */
         background-color: #000;
+        border-bottom: 1px solid;
         /* border-bottom: 1px solid; */
         /* background: transparent;
         -webkit-backdrop-filter: blur(10px);
