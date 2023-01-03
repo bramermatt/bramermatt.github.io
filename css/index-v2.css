@@ -597,12 +597,15 @@ body::-webkit-scrollbar-thumb {
 
 .grid-two-columns, .grid-three-columns, .grid-four-columns, .grid-four-video-columns, .grid-five-columns, .grid-six-columns, .grid-two-columns-intro, .grid-two-columns-mobile {
     padding: 12px;
+    max-width: 1600px;
+    gap: 1rem;
+
     /* padding-right: 25px;
     padding-left: 25px; */
-    max-width: 1600px;
+    
     margin-left: auto;
     margin-right: auto;
-    gap: 1rem;
+
 }
 
 .grid-two-columns-intro, .grid-two-columns-mobile {
@@ -915,7 +918,10 @@ body::-webkit-scrollbar-thumb {
     /* just here to be a grid item */
     align-self: center;
     /* border: 1px solid; */
+
     border-radius: 18px;
+
+
     box-shadow: 0 1px 7px -1px rgb(0 0 0 / 32%);
     /* border: .25px solid #eee; */
     height: 100%;
@@ -1142,6 +1148,8 @@ body::-webkit-scrollbar-thumb {
     /* width: 100%; */
 
     /* padding: 30px; */
+
+
     border-radius: 18px;
 
 
@@ -1206,6 +1214,9 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 15px;
     background-position: 50% 50%;
     background-size: cover;
+
+    /* padding: 15px; */
+
     /* border: 1px solid; */
 
     /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
@@ -4194,9 +4205,10 @@ display: none;
         /* opacity: 95%; */
         /* z-index: 100; */
 
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(15px) opacity(1);
-        /* background-color: #000; */
+        /* -webkit-backdrop-filter: blur(10px); */
+        /* backdrop-filter: blur(15px) opacity(1); */
+        /* background: var(--background); */
+        background-color: #000;
         /* border-bottom: 1px solid; */
         /* background: transparent;
         -webkit-backdrop-filter: blur(10px);
