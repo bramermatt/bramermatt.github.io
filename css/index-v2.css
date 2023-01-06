@@ -297,12 +297,12 @@ body::-webkit-scrollbar-thumb {
     z-index: 100;
     transition: .5s ease;
 }  */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     width: 8px;
-}
+} */
 
-/* @media screen and (prefers-color-scheme: dark) {
-    .navbar::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+@media screen and (prefers-color-scheme: dark) {
+    /* .navbar::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
         background-color: rgb(255, 255, 255);
         width: 6px;
         border-radius: 3px;
@@ -311,7 +311,7 @@ body::-webkit-scrollbar {
       .navbar:hover {
         box-shadow: 0 1px 8px -1px rgba(255, 255, 255, 0.8);
         background: rgb(0 0 0 / 90%);
-      }
+      } */
 
       #myBtn:hover {
         color: rgb(255, 255, 255); 
@@ -321,7 +321,7 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (prefers-color-scheme: light) {
-    .navbar::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    /* .navbar::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
         background-color: rgba(0,0,0,.2);
         width: 6px;
         border-radius: 3px;
@@ -329,13 +329,13 @@ body::-webkit-scrollbar {
 
       .navbar:hover {
         box-shadow: 0 1px 8px -1px rgb(0 0 0 / 80%);
-    } 
+    }  */
 
     #myBtn:hover {
         color: rgb(0, 0, 0); 
         opacity: 80%;
       }
-} */
+}
 
  .navbar ul, .navbar-right ul {
     /* display: -webkit-box;
@@ -2003,15 +2003,15 @@ body::-webkit-scrollbar {
 .blog-title p, .blog-vertical-title p, .blog-alt-title p {
     max-width: 800px;
     margin: auto;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     /* margin: 20px; */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-family: 'Sharp Grotesk',sans-serif;
     /* color: #000; */ 
-    font-size: 15px;
-    line-height: 15px;
+    font-size: 20px;
+    line-height: 20px;
     font-weight: 500;
     letter-spacing: 1.3px;
     text-transform: uppercase;
@@ -2132,7 +2132,8 @@ body::-webkit-scrollbar {
 .blog-vertical, .blog-alt-title {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: space-evenly;
     /* columns: 2; */
     /* column-gap: 20px; */
     column-gap: 6vw;
@@ -2305,10 +2306,13 @@ body::-webkit-scrollbar {
 .tldr p {
     margin-left: auto;
     margin-right: auto;
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 22x;
     /* max-width: 500px; */
     text-align: center;
+    /* font-style: italic; */
+    border-top: thin solid;
+    padding-top: 10px;
 }
 
 .headline-scrollbar {
@@ -3496,7 +3500,15 @@ display: none;
         padding-bottom: 10px;
         margin: 0;
     }
+
+
     
+}
+
+@media screen and (max-width: 1550px) {
+    .blog-right-tag {
+        white-space: normal;
+    }
 }
 
 
@@ -4111,6 +4123,8 @@ display: none;
         object-fit: cover;
         max-height: 90vh;
     }
+
+
 }
  
 @media screen and (max-width: 880px) {
@@ -4667,7 +4681,8 @@ display: none;
  /* turn this on when christmas theme is off */
 .blog-title, .blog-vertical, .blog-alt-title {
     padding: 15px;
-    border-bottom: thin solid;
+    /* border-bottom: thin solid; */
+    border-bottom: .25px solid #eee;
 } 
 
 .blog-tag a > p {
@@ -4706,6 +4721,11 @@ display: none;
 }
 
 @media screen and (prefers-color-scheme: light) {
+    .blog-title, .blog-vertical, .blog-alt-title {
+        /* background-color: #eeeeee; */
+        /* color: white; */
+    } 
+
     .blog-tag p {
         background-color: rgba(255, 255, 255, 0.6);
         border: thin solid;
