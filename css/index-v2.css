@@ -2517,7 +2517,8 @@ display: none;
     /* height: calc(100vh - 70px); */
 
     /* width: 16.7%; */
-    width: 14%;
+    /* width: 14%; */
+    width: 10%;
     /* display: none; */
 }
 
@@ -2699,7 +2700,7 @@ display: none;
     line-height: 32px;
     word-spacing: normal; */
     /* margin-left: 16%; */
-    margin-right: 15.5%;
+    margin-right: 11.5%;
     /* padding-right: 20px; */
     /* border-right: thin solid; */
 }
