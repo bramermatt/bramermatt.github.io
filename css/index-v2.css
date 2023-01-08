@@ -2025,7 +2025,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 10px; */
 }
 
-.blog-title blockquote, .blog-vertical blockquote {
+.blog-title blockquote, .blog-vertical blockquote, .blog-alt-title blockquote {
     /* font-size: 11px;
     line-height: 11px;
     text-transform: uppercase;
@@ -2064,7 +2064,7 @@ body::-webkit-scrollbar-thumb {
     text-transform: uppercase;
 }
 
-.blog-vertical blockquote {
+.blog-vertical blockquote, .blog-alt-title blockquote {
     display: none;
 }
 
@@ -2564,7 +2564,8 @@ display: none;
 
     /* width: auto; */
     /* height: 120px; */
-    height: 15vh;
+    height: 8vh;
+    /* height: 15vh; */
     margin-right: 0;
     /* height: 135px; */
     width: 100%;
@@ -2573,6 +2574,7 @@ display: none;
     background-position: 50% 50%;
     background-size: cover;
     box-shadow: 0 1px 5px -1px rgb(255, 255, 255, 30%);
+    
 }
 
 .margin-right-18 {
@@ -2916,7 +2918,7 @@ display: none;
     /* object-fit:scale-down; */
     object-fit: contain;
     /* object-fit: cover; */
-    /* height:auto; */
+    height:auto;
     overflow:hidden;
     /* transition: transform 400ms; */
     filter: drop-shadow(0 0 2px rgb(0, 0, 0, 80%));
@@ -3972,7 +3974,7 @@ display: none;
     }
 
     
-    .blog-vertical blockquote {
+    .blog-vertical blockquote, .blog-alt-title blockquote {
         display: block;
     }
     
