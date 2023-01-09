@@ -49,8 +49,8 @@ body {
     /* opacity: 0.5; */
     
     /* margin-left: 115px; */
-    margin-left: 120px;
-    /* margin-left: 60px; */
+    /* margin-left: 120px; */
+    margin-left: 80px;
     /* margin-right: 120px; */
     /* margin-left: max-content; */
     /* width: 100%; */
@@ -253,7 +253,7 @@ body::-webkit-scrollbar-thumb {
     
     /* side-navigation */
     height: 100%;
-    width: 120px;
+    width: 80px;
     /* min-width: 150px; */
     /* width: 150px; */
     /* max-width: max-content; */
@@ -283,6 +283,8 @@ body::-webkit-scrollbar-thumb {
     /* width: 60px; */
     text-align: center;
     /* overflow-y: scroll; */
+
+
 }
 
 .navbar::-webkit-scrollbar {
@@ -382,17 +384,27 @@ body::-webkit-scrollbar-thumb {
 
 .navbar li, .navbar-right li {
     padding: 8px;
-    padding-left: 10px;
-    text-overflow: ellipsis;
+    /* padding-left: 10px; */
+    /* text-overflow: ellipsis; */
     /* white-space: nowrap; */
-    overflow: hidden;
+    /* overflow: hidden; */
     /* float: right; */
     /* display: none; */
     /* visibility: hidden; */
+
+    font-size: 14px;
+    /* font-weight: 700; */
+    /* line-height: 1.25; */
+    /* margin-top: 4px; */
+    /* max-width: 54px; */
+    overflow: hidden;
+    position: relative;
+    /* text-align: center; */
+    /* text-transform: uppercase; */
 }
 
 .navbar img, .navbar-right img {
-    height: 5vh;
+    height: 4.5vh;
     padding: 5px;
     margin-bottom: 2px;
     /* float: left; */
