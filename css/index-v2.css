@@ -1142,7 +1142,7 @@ body::-webkit-scrollbar-thumb {
     align-self: center;
     /* border: 1px solid; */
     height: 100%;
-    padding: 30px;
+    /* padding: 30px; */
 }
 
 .grid-item-no-border h2 {
@@ -2536,7 +2536,8 @@ display: none;
 
     /* width: 16.7%; */
     /* width: 14%; */
-    width: 12%;
+    /* width: 12%; */
+    width: 10%;
     /* display: none; */
 }
 
@@ -2557,15 +2558,18 @@ display: none;
     padding-right: 10px;
     padding-bottom: 2px;
     font-size: 16px;
+    line-height: 18px;
 }
 
 .blog-right-title p {
     margin: 0;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    padding-top: 5px;
     padding-bottom: 10px;
     padding-right: 10px;
     padding-left: 10px;
     letter-spacing: .1rem;
+    line-height: 18px;
 }
 
 .blog-right img {
@@ -2720,7 +2724,9 @@ display: none;
     line-height: 32px;
     word-spacing: normal; */
     /* margin-left: 16%; */
-    margin-right: 14%;
+    
+    margin-right: 13%;
+
     /* padding-right: 20px; */
     /* border-right: thin solid; */
 }
@@ -4716,7 +4722,7 @@ display: none;
 
 @media screen and (prefers-color-scheme: dark) {
     .blog-title, .blog-vertical, .blog-alt-title {
-        background-color: #202020;
+        background-color: #1f1f1f6b;
         color: white;
     } 
 
