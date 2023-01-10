@@ -149,8 +149,6 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0 1px 20px -1px rgb(0 0 0 / 10%);
 
     position: sticky;
-    /* position: fixed; */
-    /* margin-bottom: 20px; */
     left: 0;
     top: 0;
     right: 0;
@@ -653,7 +651,7 @@ body::-webkit-scrollbar-thumb {
     /* max-width: 2450px; */
     margin-left: auto;
     margin-right: auto;
-    gap: 1rem;
+    column-gap: 1rem;
     /* border-bottom: .5px solid; */
     /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 32%); */
     /* background-image: url('../img/background-illustration.webp');
@@ -1976,7 +1974,9 @@ body::-webkit-scrollbar-thumb {
     /* width: 100%; */
     max-width: 100%;
     /* max-height: 100vh; */
-    max-height: 94vh;
+    max-height: 95vh;
+    /* max-height: 80vh; */
+    /* max-height: 97vh; */
     /* object-fit: cover; */
     /* max-height: 80vh; */
     /* max-height: 140vh; */
@@ -2148,7 +2148,7 @@ body::-webkit-scrollbar-thumb {
     font-family: 'Sharp Grotesk',sans-serif;
     /* color: #000; */
     color: var(--text);
-    font-size: 15px;
+    font-size: 12px;
     line-height: 11px;
     font-weight: 500;
     letter-spacing: .5px;
@@ -2179,15 +2179,14 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
 }
 
-
-.blog-vertical, .blog-alt-title {
+.blog-alt-title {
     display: flex;
     align-items: center;
     /* justify-content: center; */
     justify-content: space-evenly;
     /* columns: 2; */
     /* column-gap: 20px; */
-    column-gap: 6vw;
+    column-gap: 2vw;
     padding: 30px;
     /* padding-top: 10px;
     padding-bottom: 10px; */
@@ -2197,6 +2196,29 @@ body::-webkit-scrollbar-thumb {
     margin-right: auto;
     /* border-bottom: .5px solid; */
     /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 12%); */
+}
+
+.blog-vertical {
+    /* 
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 1vw;
+
+    padding: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0;
 }
 
 .blog-vertical-title {
@@ -2232,17 +2254,26 @@ body::-webkit-scrollbar-thumb {
 } */
 
 .blog-alt-title img {
-    max-width: 50vh;
-    align-items: center;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    max-height: 75vh;
     object-fit: contain;
+    /* margin: auto; */
 }
 
 
 
 .blog-vertical img {
     max-height: 85vh;
-    
-    /* height: 80vh; */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
     align-items: center;
     object-fit: contain;
     /* margin: auto; */
@@ -3586,11 +3617,7 @@ display: none;
 
 }
 
-@media screen and (max-width: 1250px) {
-    .category {
-        margin: 15px;
-    }
-}
+
 
 
 
@@ -3724,6 +3751,10 @@ display: none;
 
     }
 
+    .blog-alt-title img {
+        max-height: 65vh;
+    }
+
 
 
     .site-map {
@@ -3738,6 +3769,14 @@ display: none;
 
 
 
+
+}
+
+
+@media screen and (max-width: 1300px) {
+    .blog-alt-title img {
+        max-height: 40vh;
+    }
 
 }
 
@@ -3777,14 +3816,18 @@ display: none;
 
     .spoiler-scrollbar {
         position: sticky;
+
         z-index: 1;
-        top:0;
-        padding-top: 7.5vh
+        top: 0;
+        /* padding-top: 6.5vh; */
     }
 
     .spoiler-scrollbar p {
         font-size: 17px;
         text-transform: uppercase;
+        z-index: 1;
+        top: 0;
+        margin-top: 6.5vh;
     }
 
 }
@@ -3889,6 +3932,7 @@ display: none;
 
     .topTitle h1 {
         position: fixed;
+        /* position: absolute; */
         left: 0;
         top: 0;
         right: 0;
@@ -4025,8 +4069,7 @@ display: none;
     }
 
     .blog-vertical-title p, .blog-title p {
-        /* padding: 10px; */
-        padding: 5px;
+        padding: 10px;
     }
 
 
@@ -4056,8 +4099,24 @@ display: none;
     .blog-vertical blockquote, .blog-alt-title blockquote {
         display: block;
     }
+
+    .blog-alt-title img {
+        max-height: 50vh;
+    }
     
 
+}
+
+@media screen and (max-width: 1250px) {
+    .category {
+        margin: 15px;
+    }
+
+    .blog-title h1, .blog-vertical-title h1 {
+        font-size: 40px;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 1050px) {
