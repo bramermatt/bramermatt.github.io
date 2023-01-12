@@ -222,18 +222,19 @@ body::-webkit-scrollbar-thumb {
 
 
 .navbar {
-    /* padding-right: 5%;
-    padding-left: 5%;
-    left: 0;
+    /* padding-right: 5%; */
+    /* padding-left: 5%; */
+    /* left: 0;
     top: 0;
     right: 0;
     bottom: auto;
     border-bottom: 1px solid #eee;
     text-transform: uppercase; 
     height: 5vh;
-    z-index: 1; */
+    z-index: 1;
+    position: fixed; */
     /* topnav */
-    /* position: fixed; */
+
 
 
     /* height: 100%;
@@ -254,37 +255,18 @@ body::-webkit-scrollbar-thumb {
     /* side-navigation */
     height: 100%;
     width: 80px;
-    /* min-width: 150px; */
-    /* width: 150px; */
-    /* max-width: max-content; */
     text-transform:capitalize;
     position: fixed;
     z-index: 50;
     top: 0;
     left: 0;
     overflow-x: hidden;
-    /* text-overflow: ellipsis; */
-    /* word-wrap: break-word; */
-    /* padding-top: 16px; */
-
-
-    /* border-right: .25px solid #eee; */
-    /* margin-top: 11.5vh; */
     margin-bottom: 10px;
     color: var(--text);
     visibility: hidden;
-    /* text-transform: uppercase;  */
-
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 10%);
-    /* padding-top: 60px; */
-
-    /* transition: .2s ease all; */
-    /* transition: 2s ease; */
-    /* width: 60px; */
     text-align: center;
-    /* overflow-y: scroll; */
-
-
+    /* text-transform: uppercase;  */
 }
 
 .navbar::-webkit-scrollbar {
@@ -356,16 +338,11 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     margin: auto; */
 
-    /* font-size: 20px; */
-    /* max-width: 1300px; */
-    /* top navigation bar */
-    /* padding-left: 10px; */
-    /* padding-right: 10px; */
     list-style-type: none;
     padding: 0;
     display: block;
-    /* white-space: nowrap; */
     text-overflow: ellipsis;
+    /* white-space: nowrap; */
  }
 
  .navbar a:link, a:visited, .navbar-right a:link, .navbar-right a:visited {
@@ -2014,7 +1991,7 @@ body::-webkit-scrollbar-thumb {
 .blog-title {
     /* background-color: blue; */
     /* padding-top: 20px; */
-    padding: 20px;
+    /* padding: 20px; */
     /* padding-bottom: 20px; */
     /* border-bottom: .25px solid #eee; */
     /* max-width: 1250px; */
@@ -5094,3 +5071,85 @@ display: none;
     width: 100%;
     max-width: 2400px;
 } */
+
+
+/* MODAL */
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 4.5vh;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
