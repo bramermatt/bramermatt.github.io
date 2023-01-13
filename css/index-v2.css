@@ -1950,6 +1950,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     /* width: 100%; */
     max-width: 100%;
+    /* max-width: 1800px; */
     /* max-height: 100vh; */
     max-height: 95vh;
     /* max-height: 80vh; */
@@ -2013,7 +2014,8 @@ body::-webkit-scrollbar-thumb {
 .blog-title h1 {
     margin: auto;
     /* max-width: 1250px; */
-    font-size: 50px;
+    font-size: 70px;
+    line-height: 70px;
     text-align: center;
     /* padding: 15px; */
     padding-right: 15px;
@@ -2030,15 +2032,15 @@ body::-webkit-scrollbar-thumb {
 .blog-title p, .blog-vertical-title p, .blog-alt-title p {
     max-width: 800px;
     margin: auto;
-    /* margin-top: 10px; */
+    margin-top: 10px;
     /* margin: 20px; */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-family: 'Sharp Grotesk',sans-serif;
     /* color: #000; */ 
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 18px;
     font-weight: 500;
     letter-spacing: 1.3px;
     /* text-transform: uppercase; */
@@ -4047,7 +4049,8 @@ display: none;
     }
 
     .blog-vertical-title p, .blog-title p {
-        padding: 10px;
+        /* padding: 10px; */
+        margin-top: 0;
     }
 
 
