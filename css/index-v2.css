@@ -3116,6 +3116,7 @@ display: none;
     overflow: hidden;
     width: 100%;
     padding-top: 56.35%; 
+    margin-top: 10px;
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
   }
   
