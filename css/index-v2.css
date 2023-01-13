@@ -4856,7 +4856,7 @@ display: none;
     }
 
     .blog-tag p {
-        background-color: rgb(36, 36, 36, 0.6);
+        /* background-color: rgb(36, 36, 36, 0.6); */
         /* border: thin solid; */
     }
 
