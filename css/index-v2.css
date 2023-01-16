@@ -24,8 +24,8 @@ body.light {
 body.dark {
     --text: white;
     /* --background: black; */
-    ---background: #000;
-    /* --background: #313131; */
+    /* ---background: #000; */
+    --background: #3a3a3a;
     /* background-color: #000; */
 } 
 
@@ -2367,13 +2367,14 @@ body::-webkit-scrollbar-thumb {
 .tldr p {
     margin-left: auto;
     margin-right: auto;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 22x;
     /* max-width: 500px; */
     text-align: center;
     /* font-style: italic; */
     border-top: thin solid;
-    padding-top: 10px;
+    padding-top: 16px;
+    text-transform: inherit;
 }
 
 .headline-scrollbar {
@@ -4318,7 +4319,7 @@ display: none;
         /* background: transparent; */
         background-color: white;
         
-        opacity: 95%;
+        /* opacity: 95%; */
         /* z-index: 100; */
 
         -webkit-backdrop-filter: blur(40px);
