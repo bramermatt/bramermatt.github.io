@@ -1300,7 +1300,7 @@ body::-webkit-scrollbar-thumb {
     /* height: 135px; */
     width: 100%;
     object-fit: cover;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     background-position: 50% 50%;
     background-size: cover;
 
