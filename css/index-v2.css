@@ -185,7 +185,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .active {
-    font-weight: bold;
+    /* font-weight: bold; */
     /* font-style:italic; */
     /* padding: 18px; */
     /* background-color: white; */
@@ -966,7 +966,7 @@ body::-webkit-scrollbar-thumb {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 20px;
     /* line-height: 26px; */
     text-overflow: ellipsis;
@@ -980,7 +980,7 @@ body::-webkit-scrollbar-thumb {
     margin-right: 10px;
     margin-bottom: 10px;
     /* display: none; */
-    color: rgb(100, 100, 100);
+    /* color: rgb(100, 100, 100); */
     font-weight: 500;
     /* border-bottom: thin solid; */
 }
@@ -1249,8 +1249,8 @@ body::-webkit-scrollbar-thumb {
     display: none;
 }
 
-.grid-item:hover img {
-    /* transform: scale(1.05); */
+.grid-item:hover {
+    transform: scale(1.05);
 }
 
 
@@ -1424,6 +1424,7 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: 1.3px;
     text-transform: uppercase;
     margin-top: 8px;
+    /* color: rgb(100, 100, 100); */
 }
 
 .link-to {
@@ -2054,7 +2055,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .blog-title p, .blog-vertical-title p, .blog-alt-title p {
-    max-width: 750px;
+    max-width: 700px;
+    /* width: max-content; */
+    /* max-width: 750px; */
     margin: auto;
     margin-top: 10px;
     /* margin: 20px; */
@@ -2118,7 +2121,7 @@ body::-webkit-scrollbar-thumb {
     text-transform: uppercase;
 }
 
-.blog-vertical blockquote, .blog-alt-title blockquote {
+.blog-vertical blockquote {
     display: none;
 }
 
@@ -2233,6 +2236,7 @@ body::-webkit-scrollbar-thumb {
     /* overflow: hidden; */
     text-overflow: ellipsis;
     overflow: hidden;
+    /* overflow-wrap: break-word; */
 }
 
 .blog-vertical-title h1, .title-top h1, .blog-alt-title h1 {
@@ -2401,7 +2405,8 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     /* font-style: italic; */
     border-top: thin solid;
-    padding-top: 16px;
+    /* padding-top: 16px; */
+    padding: 20px;
     text-transform: inherit;
 }
 
@@ -2637,6 +2642,8 @@ display: none;
     padding-bottom: 2px;
     font-size: 16px;
     line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .blog-right-title p {
@@ -4437,7 +4444,7 @@ display: none;
         background-color: white;
     }
 
-    .individual:hover, .individual-hidden:hover {
+    .individual:hover, .individual-hidden:hover, .video-item:hover {
         background-color: rgb(29,29,29);
         color: white;
         /* border: 1px solid rgb(29,29,29); */
@@ -4589,7 +4596,7 @@ display: none;
         background-color: #303030;
     }
 
-    .individual:hover, .individual-hidden:hover  {
+    .individual:hover, .individual-hidden:hover, .video-item:hover  {
         background-color:white;
         color: rgb(29,29,29);
         /* border: 1px solid rgb(29,29,29); */
