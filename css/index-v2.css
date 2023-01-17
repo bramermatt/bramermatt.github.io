@@ -4210,7 +4210,7 @@ display: none;
         font-size: 1em;
     }
 
-    .blog p, .blog blockquote {
+    .blog p, .blog li {
         font-size: .9em;
     }
 
