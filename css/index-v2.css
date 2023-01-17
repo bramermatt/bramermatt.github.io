@@ -2129,7 +2129,7 @@ body::-webkit-scrollbar-thumb {
 .blog-tag {
     max-width: 1800px;
     /* margin: auto; */
-    /* margin-top: 10px; */
+    margin-top: 10px;
     margin-bottom: 5px;
     display: inline-flex;
     flex-wrap: wrap;
@@ -3321,6 +3321,7 @@ display: none;
  .footer li {
     padding: 10px;
     width: max-content;
+    font-size: 15px;
  }
 
  .footer a:link, a:visited {
@@ -3433,7 +3434,7 @@ display: none;
 
     .blog-tag {
         display: inline-flex;
-        /* margin-top: 10px; */
+        margin-top: 10px;
         /* margin: 15px; */
         /* justify-content: center; */
     }
@@ -4132,6 +4133,7 @@ display: none;
 
     .blog-vertical-title {
         padding: 10px;
+        max-width: -webkit-fill-available;
     }
 
     
@@ -4237,9 +4239,9 @@ display: none;
         display: block;
     }
 
-    .blog h2 {
+    /* .blog h2 {
         font-size: 1em;
-    }
+    } */
 
     .blog p, .blog li {
         font-size: .95em;
