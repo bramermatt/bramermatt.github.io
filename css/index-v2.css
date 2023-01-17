@@ -25,7 +25,8 @@ body.dark {
     --text: white;
     /* --background: black; */
     /* ---background: #000; */
-    --background: #3a3a3a;
+    /* --background: #3a3a3a; */
+    --background: rgb(78, 78, 78);
     /* background-color: #000; */
 } 
 
@@ -4203,6 +4204,14 @@ display: none;
 
     .grid-item-hidden {
         display: block;
+    }
+
+    .blog h2 {
+        font-size: 1em;
+    }
+
+    .blog p, .blog blockquote {
+        font-size: .9em;
     }
 
     /* .grid-item-ad {
