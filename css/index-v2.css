@@ -42,7 +42,8 @@ body {
     color: var(--text);
     background: var(--background);
     margin: 0;
-    font-family: Karla,sans-serif;
+    /* font-family: Karla,sans-serif; */
+    font-family: "YouTube Sans","Roboto",sans-serif;
     /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 
     cursor: default;
@@ -2558,12 +2559,8 @@ body::-webkit-scrollbar-thumb {
 
 
 .spoiler-scrollbar p {
-    /* font-size: 90px;
-    line-height: 85px; */
-
-    font-size: 30px;
+    font-size: 40px;
     line-height: 100%;
-
     margin: auto;
     padding: 0;
     font-weight: bolder;
@@ -2577,8 +2574,6 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
     text-overflow: ellipsis;
     /* width: 100vh; */
-    /* width: 100%; */
-    /* scrollbar-gutter: 40px; */
 }
 
 /* .spoiler-scrollbar p::-webkit-scrollbar {
@@ -2645,22 +2640,67 @@ body::-webkit-scrollbar-thumb {
 }
 
 .video-container {
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin-left: auto;
     margin-right: auto;
     /* margin-bottom: 40px; */
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    /* margin-top: 3vh; */
+    padding-bottom: 1.8vh;
     border-top: none;
     padding-left: 15px;
     padding-right: 15px;
-    
+    padding-top: 1px;
+    max-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: initial;
 }
 
 .video {
     margin-left: auto;
     margin-right: auto;
+    max-width: 1550px;
+}
 
+.video h2 {
+    word-break: break-word;
+    font-family: "YouTube Sans","Roboto",sans-serif;
+    font-size: 2rem;
+    /* line-height: 2.8rem; */
+    font-weight: 600;
+    overflow: hidden;
+    display: block;
+    max-height: 5.6rem;
+    -webkit-line-clamp: 2;
+    display: box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin: 0;
+}
+
+.video p {
+    font-size: 1rem;
+    font-weight: 400;
+    /* line-height: 1.5rem; */
+    margin: 0;
+    padding-top: 7px;
+    padding-bottom: 0;
+}
+
+.video em {
+    color: grey;
+}
+
+.video a:link, .video a:visited {
+    color: rgb(47, 130, 255);
+    text-decoration: none;
+}
+
+.video a:hover {
+    color: white;
 }
 
 /* .blog-container h2 {
@@ -3540,7 +3580,7 @@ details {
     /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
     color: var(--text);
     text-transform: uppercase;
-    margin-top: 3vh;
+    /* margin-top: 3vh; */
     padding-top: 40px;
     padding-bottom: 40px;
     /* margin-top: 40px; */
@@ -4754,6 +4794,15 @@ details {
         background: #4f4f50 none;
         color: white;
     } */
+
+    .video-container {
+        background-color: black;
+    }
+
+    .video blockquote, .video h2 {
+        color: white;
+        border-color: white;
+    }
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -5185,7 +5234,7 @@ details {
         color: white;
     } 
 
-    .blog-title blockquote, .blog-vertical blockquote, .blog-alt-title blockquote, .blog blockquote, .hero-post blockquote, .video blockquote {
+    .blog-title blockquote, .blog-vertical blockquote, .blog-alt-title blockquote, .blog blockquote, .hero-post blockquote {
         color: white;
     }
 
@@ -5206,7 +5255,8 @@ details {
 
 @media screen and (prefers-color-scheme: light) {
     .blog-title, .blog-vertical, .blog-alt-title {
-        /* background-color: #eeeeee; */
+        /* background-color: #ececec; */
+        /* border-bottom: thin solid; */
         /* color: white; */
     } 
 
@@ -5222,7 +5272,7 @@ details {
         color: black;
     }
 
-    .blog-title blockquote, .blog-vertical blockquote, .blog-alt-title blockquote, .blog blockquote, .hero-post blockquote, .video blockquote {
+    .blog-title blockquote, .blog-vertical blockquote, .blog-alt-title blockquote, .blog blockquote, .hero-post blockquote {
         color: black;
         border-color: black;
     }
