@@ -2,9 +2,9 @@
     box-sizing: border-box;
 }
 
-/* hr {
+hr {
     margin: 0;
-} */
+}
 
 html {
     /* max-width: 1550px; */
@@ -436,14 +436,18 @@ body::-webkit-scrollbar-thumb {
 .inline-navbar ul {
     list-style: none;
     font-size: 24px;
+    font-size: 20px;
     letter-spacing: .23rem;
     /* line-height: 40px; */
     padding: 0;
     margin: 0;
+    text-align: left;
 }
 
 .inline-navbar li {
-    padding: 15px; 
+    /* padding: 15px;  */
+    padding: 10px; 
+    width: max-content;
 }
 
 .inline-navbar a:link, a:visited {
@@ -456,6 +460,57 @@ body::-webkit-scrollbar-thumb {
     background-color: black;
     /* color: rgb(35, 85, 35); */
     color: white;
+}
+
+.topic-scrollbar {
+    /* overflow: scroll;  */
+    
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: max-content; */
+    position: sticky;
+    top: 0;
+    /* background-color: #000; */
+    opacity: 98%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(40px) opacity(1);
+    box-shadow: 0px 5px 8px 0px rgb(253 253 253 / 5%);
+
+    /* work on this */
+    display: none;
+}
+
+.topic-scrollbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+.topic-scrollbar li {
+    list-style-type: none;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+
+.topic-scrollbar ul::-webkit-scrollbar {
+    display: none;
+}
+
+
+.topic-scrollbar a:link, a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.topic-scrollbar a:hover {
+    border-bottom: 1px solid;
 }
 
 .hero-title {
@@ -658,7 +713,9 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
-.grid-two-columns, .grid-three-columns, .grid-three-video-columns, .grid-four-columns, .grid-four-video-columns, .grid-five-columns, .grid-six-columns, .grid-two-columns-intro, .grid-two-columns-mobile, .six-img-columns {
+
+
+.grid-two-columns, .grid-three-columns, .grid-three-video-columns, .grid-four-columns, .grid-four-video-columns, .grid-five-columns, .grid-six-columns, .grid-two-columns-intro, .grid-two-columns-mobile, .six-img-columns, .grid-one-video-column {
     padding: 12px;
     max-width: 1600px;
     gap: 1rem;
@@ -669,6 +726,22 @@ body::-webkit-scrollbar-thumb {
     margin-left: auto;
     margin-right: auto;
 
+}
+
+.grid-one-video-column {
+    padding: 12px;
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+    /* max-width: 350px; */
+    /* max-width: max-content; */
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
 }
 
 .grid-two-columns-intro, .grid-two-columns-mobile {
@@ -1834,6 +1907,7 @@ body::-webkit-scrollbar-thumb {
     margin-right: auto;
     margin-bottom: 20px;
     margin-top: 60px;
+    /* padding-top: 40px; */
 }
 
 .category h1 {
@@ -2568,6 +2642,25 @@ body::-webkit-scrollbar-thumb {
     /* padding: 10px; */
 }
 
+.video-container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 40px; */
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    border-top: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.video {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 /* .blog-container h2 {
     text-align: center;
     padding: 10px;
@@ -3062,7 +3155,7 @@ display: none;
     /* width: 150%; */
 }
 
-.blog iframe, .blog video {
+.blog iframe, .blog video, .video iframe {
     /* margin: auto; */
     margin-left: auto;
     margin-right: auto;
@@ -3172,6 +3265,11 @@ details {
         padding-right: 15px;
         /* max-width: 700px; */
     }
+
+    details ol, details ul {
+        padding-left: 45px;
+        padding-right: 15px;
+    }
   }
 
   @media screen and (prefers-color-scheme: light) {
@@ -3272,7 +3370,7 @@ details {
   }
   
   /* Then style the iframe to fit in the container div with full height and width */
-  .blog iframe, .blog video, .hero-post iframe, .blog-title iframe {
+  .blog iframe, .blog video, .hero-post iframe, .blog-title iframe, .video iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -3295,7 +3393,7 @@ details {
     width: 100%;
 }
 
-.blog blockquote, .grid-item-no-border blockquote, .hero-post blockquote {
+.blog blockquote, .grid-item-no-border blockquote, .hero-post blockquote, .video blockquote {
     text-align: center;
     margin: 0;
     padding-bottom: 5px;
@@ -4319,6 +4417,39 @@ details {
 
 }
 
+@media screen and (max-width: 1540px) {
+    .topic-scrollbar ul {
+        padding-left: 10px;
+    }
+    .topic-scrollbar ul {
+        justify-content: left;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .topic-scrollbar li {
+        font-size: 15px;
+
+    }
+
+    /* .category {
+        padding-top: 9vh;
+    } 
+
+    */
+
+    /* .category ul {
+        padding-top:10vh;
+    } */
+}
+
+@media screen and (max-width: 995px) {
+    .topic-scrollbar ul {
+        padding-top: 6.2vh;
+    }
+}
+
 
 @media screen and (max-width: 1300px) {
     .blog {
@@ -4372,10 +4503,14 @@ details {
     }
 
 
-    .grid-four-video-columns, .grid-three-video-columns {
+    .grid-four-video-columns, .grid-three-video-columns, .grid-one-video-column {
         grid-template-columns: 1fr;
         padding-right: 0;
         padding-left: 0;
+        padding: 0;
+        max-width: 100%;
+        /* padding: 15px; */
+        gap: 0;
     }
 
     .grid-item-hidden {
@@ -5048,7 +5183,7 @@ details {
         color: white;
     } 
 
-    .blog-title blockquote, .blog-vertical blockquote, .blog-alt-title blockquote, .blog blockquote, .hero-post blockquote {
+    .blog-title blockquote, .blog-vertical blockquote, .blog-alt-title blockquote, .blog blockquote, .hero-post blockquote, .video blockquote {
         color: white;
     }
 
@@ -5082,7 +5217,7 @@ details {
         color: black;
     }
 
-    .blog-title blockquote, .blog-vertical blockquote, .blog-alt-title blockquote, .blog blockquote, .hero-post blockquote {
+    .blog-title blockquote, .blog-vertical blockquote, .blog-alt-title blockquote, .blog blockquote, .hero-post blockquote, .video blockquote {
         color: black;
         border-color: black;
     }
