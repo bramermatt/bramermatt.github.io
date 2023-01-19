@@ -424,7 +424,6 @@ body::-webkit-scrollbar-thumb {
     /* visibility: hidden; */
     display: none;
 
-
     /* background-image: url('../img/background-illustration.webp');
     background-repeat: no-repeat;
     background-size: cover;
@@ -442,12 +441,15 @@ body::-webkit-scrollbar-thumb {
     padding: 0;
     margin: 0;
     text-align: left;
+
 }
 
 .inline-navbar li {
     /* padding: 15px;  */
     padding: 10px; 
-    width: max-content;
+    max-width: max-content;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .inline-navbar a:link, a:visited {
