@@ -2319,7 +2319,7 @@ body::-webkit-scrollbar-thumb {
 .blog-vertical-title h1, .title-top h1, .blog-alt-title h1 {
     font-size: 70px;
     line-height: 70px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 0;
     /* padding-top: 15px; */
     /* padding-bottom: 15px; */
