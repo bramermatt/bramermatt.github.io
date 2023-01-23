@@ -3257,6 +3257,7 @@ summary {
 details {
     /* width: 50%; */
     width: 100%;
+    max-width: max-content;
     /* max-width: 700px; */
     /* max-width: 1000px; */
     /* padding-left: 15px;
