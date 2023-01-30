@@ -4189,6 +4189,7 @@ details p, details h2 {
 }
 
 /* Popping in to say hello */
+/* Pop here too */
 
 @media screen and (max-width: 780px) {
     .grid-four-columns {
