@@ -1966,6 +1966,19 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 10px;
 }
 
+.map h3 {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    /* padding: 0; */
+    border-bottom: 1px solid currentColor;
+    /* border-bottom: .25px solid #eee; */
+    margin: 15px 1px .75em;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
 .map ul {
     list-style-type: none;
     margin: 0;
@@ -3334,7 +3347,8 @@ details {
   
   summary:before {
     content: '';
-    border-width: .8rem;
+    /* border-width: .8rem; */
+    border-width: 1rem;
     border-style: solid;
     border-color: transparent transparent transparent #fff;
     position: absolute;
