@@ -561,7 +561,7 @@ body::-webkit-scrollbar-thumb {
     /* font-size: 85px;
     line-height: 70px;
     text-align: center; 
-    text-transform: uppercase; */
+     */
 
 
     /* line-height: 90px; */
@@ -572,7 +572,8 @@ body::-webkit-scrollbar-thumb {
     padding-right: 15px;
     margin: auto;
     z-index: 10;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    /* text-transform: capitalize; */
 
 }
 
