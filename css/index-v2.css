@@ -372,10 +372,12 @@ body::-webkit-scrollbar-thumb {
     /* visibility: hidden; */
 
     font-size: 14px;
+    line-height: 16px;
     /* font-weight: 700; */
     /* line-height: 1.25; */
     /* margin-top: 4px; */
     /* max-width: 54px; */
+    text-overflow: ellipsis;
     overflow: hidden;
     position: relative;
     /* text-align: center; */
@@ -531,6 +533,9 @@ body::-webkit-scrollbar-thumb {
     /* position: sticky;
     top: 0;
     z-index: 52; */
+    position: sticky;
+    top: 0;
+    z-index: 10;
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
     /* background-color: rgb(68, 163, 68); */
 
@@ -553,19 +558,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hero-title h1 {
-    font-size: 85px;
-
-    /* font-size: 30px; */
+    /* font-size: 85px;
     line-height: 70px;
+    text-align: center; 
+    text-transform: uppercase; */
+
+
+    /* line-height: 90px; */
+
     padding-top: 10px;
     padding-bottom: 10px;
-    /* line-height: 90px; */
-    text-transform: uppercase;
-    text-align: center;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
     z-index: 10;
+    text-transform: capitalize;
 
 }
 
@@ -3688,6 +3695,7 @@ details p, details h2 {
     /* margin-top: 3vh; */
     padding-top: 40px;
     padding-bottom: 40px;
+    margin-top: 60px;
     /* margin-top: 40px; */
     /* background-color: rgb(112, 112, 112);
     color: white; */
@@ -3976,7 +3984,7 @@ details p, details h2 {
         margin-bottom: -14vh;
     }
 
-    .hero-title h1 {
+    /* .hero-title h1 {
         font-size: 50px;
         line-height: 55px;
         margin: 0;
@@ -3994,7 +4002,8 @@ details p, details h2 {
         padding: 5px;
         padding-bottom: 10px;
         margin: 0;
-    }
+    } */
+
 
 
     
@@ -4264,6 +4273,12 @@ details p, details h2 {
         top: 0;
         /* margin-top: 6.5vh; */
     }
+
+    .hero-title h1 {
+        text-align: center;
+        padding: 0;
+    }
+
 
 }
 
