@@ -3357,6 +3357,7 @@ details {
     box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.4);
     border-radius: 5px;
     overflow: hidden;
+    transition: 2ms ease all;
     /* border-bottom: 1px solid; */
   }
   
@@ -3369,6 +3370,7 @@ details {
     padding-left: 2.8rem;
     position: relative;
     cursor: pointer;
+    transition: 2ms ease all;
     /* width: 750px; */
     /* max-width: 100%; */
   }
@@ -3386,6 +3388,7 @@ details {
     transform: rotate(0);
     transform-origin: .2rem 50%;
     transition: .25s transform ease;
+
 }
 
   /* details[open] {
