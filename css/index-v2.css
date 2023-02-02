@@ -83,6 +83,8 @@ body::-webkit-scrollbar-thumb {
     background: var(--background);
     border: 1px solid;
   } */
+
+
   
 
  .dropdown {
@@ -222,6 +224,83 @@ body::-webkit-scrollbar-thumb {
     text-transform: uppercase;
 }
 
+.main-content {
+    margin-right: 11%;
+    /* border-right: thin solid; */
+}
+
+.right-content {
+    float: right;
+    position: -webkit-sticky;
+    position: sticky;
+    -ms-overflow-style: none;
+    top: 4.5vh !important;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .85em;
+    text-align: left;
+    width: 10%;
+    margin-right: 5px;
+}
+
+.hero-content {
+    max-width: 1800px;
+    padding: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-item {
+    /* max-width: 350px; */
+    max-width: max-content;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-item > .topic {
+    margin-top: 5px;
+}
+
+.hero-item img {
+    max-height: 40vh;
+    object-fit: cover;
+    margin-right: 0;
+    width: 100%;
+    object-fit: cover;
+    /* margin-bottom: 15px; */
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.hero-item p {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+
+.right-content h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.right-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.right-content li {
+    /* padding: 5px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.right-content a:link, a:visited {
+    color: var(--text);
+}
 
 .navbar {
     /* padding-right: 5%; */
@@ -237,23 +316,6 @@ body::-webkit-scrollbar-thumb {
     position: fixed; */
     /* topnav */
 
-
-
-    /* height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px; */
-
-    /* max-width: 1320px;
-    margin-left: auto;
-    margin-right: auto; */
-
-    
     /* side-navigation */
     height: 100%;
     width: 80px;
@@ -813,6 +875,13 @@ body::-webkit-scrollbar-thumb {
     max-width: 900px;
 }
 
+.grid-three-hero-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 1rem;
+}
+
 .grid-three-video-columns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -967,7 +1036,7 @@ body::-webkit-scrollbar-thumb {
 
 .hero-item {
     align-self: center;
-    height: 100%;
+    /* height: 100%; */
     overflow: hidden;
     color: var(--text);
 }
@@ -1922,7 +1991,7 @@ body::-webkit-scrollbar-thumb {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     /* padding-top: 40px; */
 }
 
@@ -3730,7 +3799,7 @@ details p, details h2 {
     /* margin-top: 3vh; */
     padding-top: 40px;
     padding-bottom: 40px;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     /* margin-top: 40px; */
     /* background-color: rgb(112, 112, 112);
     color: white; */
@@ -3884,8 +3953,14 @@ details p, details h2 {
         /* line-height: 32px; */
     }
 
+    .category h1 {
+        /* margin-bottom: 0; */
+    }
+
     .map {
-        justify-content: space-between;
+        justify-content: flex-start;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .section, .section-more {
@@ -4661,14 +4736,14 @@ details p, details h2 {
 }
 
 
-@media screen and (max-width: 1300px) {
-    .blog {
+@media screen and (max-width: 1360px) {
+    .blog, .main-content {
         margin-right: auto;
         border-right: none;
         padding-right: 0;
     }
 
-    .blog-right {
+    .blog-right, .right-content {
         display: none;
         visibility: hidden;
         float: none;
