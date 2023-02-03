@@ -1987,18 +1987,21 @@ body::-webkit-scrollbar-thumb {
 
 
 .category {
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+
+
+    /* margin-bottom: 20px; */
     /* margin-top: 60px; */
     /* padding-top: 40px; */
 }
 
 .category h1 {
-    border-bottom: .5px solid;
+    margin-bottom: 0;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border-bottom: .5px solid; */
     /* border-bottom: .25px solid #eee; */
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 .category a:link, a:visited {
