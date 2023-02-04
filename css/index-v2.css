@@ -243,6 +243,10 @@ body::-webkit-scrollbar-thumb {
     margin-right: 5px;
 }
 
+.right-content li {
+    padding-right: 15px;
+}
+
 .hero-content {
     max-width: 1800px;
     padding: 12px;
@@ -3205,7 +3209,7 @@ display: none;
     padding-right: 15px; */
 
     font-size: 1rem;
-    /* line-height: 1.6em; */
+    line-height: 1.6em;
     margin-bottom: 16px;
     /* padding-bottom: 36px; */
     /* margin-top: 10px; */
