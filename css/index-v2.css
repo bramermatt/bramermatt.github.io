@@ -2024,8 +2024,10 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 10px;
 }
 
-.category p, .alt-category p, .category h2, .alt-category h2 {
+.category h2 {
     padding: 0px 15px;
+    text-align: center;
+    margin: 0;
 }
 
 .category a:link, a:visited {
