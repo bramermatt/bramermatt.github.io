@@ -2024,6 +2024,10 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 10px;
 }
 
+.category p, .alt-category p, .category h2, .alt-category h2 {
+    padding: 0px 15px;
+}
+
 .category a:link, a:visited {
     text-decoration: none;
     color: var(--text);
@@ -3575,7 +3579,7 @@ details p, details h2 {
 
     details {
         background-color: rgb(238, 238, 238, 20%);
-        border: thin solid rgb(248, 0, 0);
+        border: thick solid rgb(248, 0, 0);
         /* background: none; */
     }
   }
