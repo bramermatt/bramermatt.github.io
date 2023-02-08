@@ -2177,8 +2177,8 @@ body::-webkit-scrollbar-thumb {
     /* width: 100%; */
     max-width: 100%;
     /* max-width: 1800px; */
-    /* max-height: 100vh; */
-    max-height: 95vh;
+    max-height: 100vh;
+    /* max-height: 95vh; */
     /* max-height: 80vh; */
     /* max-height: 97vh; */
     /* object-fit: cover; */
@@ -2187,8 +2187,8 @@ body::-webkit-scrollbar-thumb {
     /* min-height: 400px; */
     /* object-fit: contain; */
     /* max-height: 98vh; */
-    object-fit: cover;
-    /* object-fit: scale-down; */
+    /* object-fit: cover; */
+    object-fit: scale-down;
     margin: auto;
     /* margin-top: 20px; */
     /* margin-bottom: 15px; */
@@ -2493,7 +2493,7 @@ body::-webkit-scrollbar-thumb {
     display: -ms-flexbox;
     display: flex;
     max-width: 100%;
-    max-height: 75vh;
+    max-height: 90vh;
     object-fit: contain;
     /* margin: auto; */
 }
@@ -2501,7 +2501,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .blog-vertical img {
-    max-height: 85vh;
+    max-height: 92vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -5141,8 +5141,8 @@ details p, details h2 {
 
 @media screen and (prefers-color-scheme: dark) {
     .hamburger, .inline-navbar {
-        background-color: rgb(29,29,29);
-        /* opacity: 98%; */
+        /* background-color: rgb(29,29,29); */
+        opacity: 98%;
         /* z-index: 100; */
 
         -webkit-backdrop-filter: blur(10px);
