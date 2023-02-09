@@ -230,17 +230,44 @@ body::-webkit-scrollbar-thumb {
     position: -webkit-sticky;
     position: sticky;
     -ms-overflow-style: none;
-    top: 4.5vh !important;
+    top: 7vh !important;
     margin-left: auto;
     margin-right: auto;
     font-size: .85em;
     text-align: left;
     width: 10%;
     margin-right: 5px;
+    display: block;
+
+    /* height: 100%; */
+    width: 60px;
+    overflow-x: hidden;
+    color: var(--text);
+    /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 10%); */
+
+}
+
+.right-content img {
+    height: 3.5vh;
+    float: none;
+    display: block;
+    margin: auto;
+    margin-bottom: 3px;
+}
+
+.right-content ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 .right-content li {
     padding-right: 15px;
+}
+
+.right-content img {
+    max-height: 5vh;
 }
 
 .hero-content {
@@ -388,7 +415,7 @@ body::-webkit-scrollbar-thumb {
       }
 }
 
- .navbar ul, .navbar-right ul {
+ .navbar ul, .navbar-right ul, .right-content ul {
     /* display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -412,7 +439,7 @@ body::-webkit-scrollbar-thumb {
     /* white-space: nowrap; */
  }
 
- .navbar a:link, a:visited, .navbar-right a:link, .navbar-right a:visited {
+ .navbar a:link, a:visited, .navbar-right a:link, .navbar-right a:visited, .right-content a:link, .right-content a:visited {
     color: var(--text);
     text-decoration: none;
 }
@@ -426,7 +453,7 @@ body::-webkit-scrollbar-thumb {
     color: white;
 } */
 
-.navbar li, .navbar-right li {
+.navbar li, .navbar-right li, .right-content li {
     /* padding: 8px;
     font-size: 14px;
     line-height: 16px;
@@ -474,11 +501,11 @@ body::-webkit-scrollbar-thumb {
 
 
 
-    .navbar img {
+    .navbar img, .grid-icon-item img, .right-content img {
         filter:invert(100);
     }
 
-    .navbar li:hover > img {
+    .navbar li:hover > img, .right-content li:hover img {
         filter:invert(0);
     }
 
@@ -494,7 +521,7 @@ body::-webkit-scrollbar-thumb {
         filter: invert(100);
     }
 
-    .navbar li:hover > img {
+    .navbar li:hover > img, .right-content li:hover img {
         filter:invert(100);
         border-color: white;
     }
@@ -1229,7 +1256,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 18px;
 }
 
-.grid-item {
+.grid-item, .grid-icon-item {
     /* just here to be a grid item */
     align-self: center;
     /* border: 1px solid; */
@@ -1246,13 +1273,13 @@ body::-webkit-scrollbar-thumb {
     /* max-width: 300px; */
 }
 
-.grid-item a:link, a:visited {
+.grid-item a:link, a:visited, .grid-icon-item a:link, .grid-icon-item a:visited {
     color: var(--text);
     text-decoration: none;
 }
 
-.grid-item img {
-    max-height: 45vh;
+.grid-item img, .grid-icon-item img {
+    /* max-height: 45vh;
     width: 100%;
     object-fit: cover;
     display: block;
@@ -1261,8 +1288,20 @@ body::-webkit-scrollbar-thumb {
     background-position: 50% 50%;
     background-size: cover;
     transition: transform 400ms;
+    box-shadow: 0 1px 7px -1px rgb(0 0 0 / 32%); */
+
+    max-height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    /* width: 100%; */
+    /* height: 100%; */
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: transform 400ms;
     box-shadow: 0 1px 7px -1px rgb(0 0 0 / 32%);
 }
+
 
 
 .grid-item h1 {
@@ -1600,6 +1639,11 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
 }
 
+.title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 .title h2 {
     margin-top: 0;
@@ -1607,13 +1651,14 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
     font-family: 'Sharp Grotesk',sans-serif;
     /* color: #000; */
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 26px;
+    line-height: 28px;
     /* word-wrap: break-word; */
     /* text-align: center; */
     /* letter-spacing: .2em; */
-    /* overflow: hidden;
-    text-overflow: ellipsis; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
 }
 
 .title p {
@@ -5138,7 +5183,7 @@ details p, details h2 {
         /* border: 1px solid rgb(29,29,29); */
     }
 
-    .navbar li:hover, .navbar-right li:hover, .inline-navbar li:hover, .footer li:hover, .blog-left a:hover, .blog-right a:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag a > p:hover, .blog a:hover, .blog li a:hover, .grid-item-ad a:hover  {
+    .navbar li:hover, .right-content li:hover, .navbar-right li:hover, .inline-navbar li:hover, .footer li:hover, .blog-left a:hover, .blog-right a:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag a > p:hover, .blog a:hover, .blog li a:hover, .grid-item-ad a:hover  {
         background-color: rgb(29,29,29);
         /* background-color: #3cffd0; */
         color: white;
@@ -5308,7 +5353,7 @@ details p, details h2 {
         box-shadow: 0 0px 5px rgba(255, 255, 255, 0.6);
     }
 
-    .navbar li:hover, .navbar-right li:hover, .inline-navbar li:hover, .footer li:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag a > p:hover, .blog a:hover, .blog li a:hover, .grid-item-ad a:hover  {
+    .navbar li:hover, .right-content li:hover, .navbar-right li:hover, .inline-navbar li:hover, .footer li:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag a > p:hover, .blog a:hover, .blog li a:hover, .grid-item-ad a:hover  {
         background-color:white;
         color: rgb(29,29,29);
         /* border: 1px solid white; */
