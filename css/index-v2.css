@@ -226,6 +226,10 @@ body::-webkit-scrollbar-thumb {
     /* border-right: thin solid; */
 }
 
+div {
+    max-width: 2050px;
+}
+
 .right-content {
     float: right;
     position: -webkit-sticky;
@@ -239,11 +243,12 @@ body::-webkit-scrollbar-thumb {
     width: 10%;
     margin-right: 5px;
     display: block;
-
+    border-left: thin solid;
     /* height: 100%; */
     width: 60px;
     overflow-x: hidden;
     color: var(--text);
+    max-width: 2050px;
     /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 10%); */
 
 }
@@ -437,6 +442,7 @@ body::-webkit-scrollbar-thumb {
     list-style-type: none;
     padding: 0;
     margin-top: 0;
+    margin-bottom: 0;
     display: block;
     text-overflow: ellipsis;
     /* white-space: nowrap; */
@@ -1293,7 +1299,7 @@ body::-webkit-scrollbar-thumb {
     transition: transform 400ms;
     box-shadow: 0 1px 7px -1px rgb(0 0 0 / 32%); */
 
-    max-height: 30vh;
+    height: 20vh;
     width: 100%;
     object-fit: cover;
     display: block;
@@ -2230,7 +2236,8 @@ body::-webkit-scrollbar-thumb {
 .title h1 {
     margin: auto;
     /* max-width: 1250px; */
-    font-size: 50px;
+    font-size: 28px;
+    line-height: 28x;
     text-align: center;
     padding: 10px;
 
@@ -4205,7 +4212,7 @@ details p, details h2 {
 
 
 
-    .individual img, .individual-more img, .individual-hidden img  {
+    .individual img, .individual-more img, .individual-hidden img, .grid-item img  {
         height: 10vh;
         object-fit: cover;
         margin: 0;
@@ -4729,9 +4736,7 @@ details p, details h2 {
     }
 
     .title h1 {
-        /* font-size: 30px; */
-        line-height: 60px;
-        /* position: absolute; */
+        /* line-height: 60px;
         position: fixed;
         left: 0;
         top: 0;
@@ -4740,13 +4745,12 @@ details p, details h2 {
         padding: 0;
         margin-left: 40px;
         margin-right: 40px;
-        /* margin: 0; */
         z-index: 1;
         font-size: 20px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        text-transform: uppercase;
+        text-transform: uppercase; */
 
 
         /* transform: translateX(100%);
