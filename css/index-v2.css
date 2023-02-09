@@ -221,7 +221,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main-content {
-    margin-right: 11%;
+    /* margin-right: 11%; */
+    margin-right: 70px;
     /* border-right: thin solid; */
 }
 
@@ -248,7 +249,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .right-content img {
-    height: 3.5vh;
+    max-height: 4vh;
+    object-fit: scale-down;
+    width: -webkit-fill-available;
     float: none;
     display: block;
     margin: auto;
@@ -266,9 +269,9 @@ body::-webkit-scrollbar-thumb {
     padding-right: 15px;
 }
 
-.right-content img {
+/* .right-content img {
     max-height: 5vh;
-}
+} */
 
 .hero-content {
     max-width: 1800px;
