@@ -4566,6 +4566,11 @@ details p, details h2 {
         line-height: 40px;
         /* line-height: 75px; */
     }
+
+    .footer {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
 }
 
 @media screen and (max-width: 990px) {
