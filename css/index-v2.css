@@ -689,6 +689,27 @@ table {
     border-bottom: 1px solid;
 }
 
+.hero-alt-title {
+    width: 100%;
+    margin: auto;
+    /* background-image: url('../img/backgrounds/christmas-hero.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 150px;
+
+}
+
+.hero-alt-title h1 {
+    font-size: 80px;
+    /* line-height: 300px; */
+    margin: 0;
+    /* padding: 30px; */
+    text-align: center;
+    color: white;
+    filter: drop-shadow(0 0 6.5px rgb(0, 0, 5));
+}
+
 .hero-title {
     width: 100%;
     margin: auto;
@@ -4533,6 +4554,17 @@ details p, details h2 {
     .grid-eight-columns {
         grid-template-columns: 1fr 1fr;
         /* max-width: 1200px; */
+    }
+
+    .hero-alt-title {
+        padding: 50px;
+    }
+
+    .hero-alt-title h1 {
+        /* line-height: normal; */
+        font-size: 30px;
+        line-height: 40px;
+        /* line-height: 75px; */
     }
 }
 
