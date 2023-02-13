@@ -2690,6 +2690,16 @@ table {
     align-items: center;
 }
 
+.grid-two-img-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+    /* max-width: 1000px; */
+    margin: auto;
+    /* align-items: center; */
+}
+
 
 .three-img-columns {
     display: grid;
@@ -4331,7 +4341,7 @@ details p, details h2 {
 
 
 @media screen and (max-width: 990px) {
-    .three-img-columns, .two-img-columns, .four-img-columns {
+    .three-img-columns, .two-img-columns, .four-img-columns, .grid-two-img-columns {
         grid-template-columns: 1fr;
         padding: 0;
         gap: 0;
