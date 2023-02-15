@@ -5420,7 +5420,7 @@ details p, details h2 {
     }
 
     .blog img, .blog li img {
-        filter: drop-shadow(0 0 4px rgb(255, 255, 255, 8%));
+        filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.553));
     }
 
     /* .blog-tag p {
