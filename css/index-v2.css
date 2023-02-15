@@ -537,6 +537,7 @@ table {
 
     .navbar img, .grid-icon-item img, .right-content img {
         filter:invert(100);
+        filter: grayscale(100);
     }
 
     .navbar li:hover > img, .right-content li:hover img {
@@ -555,8 +556,13 @@ table {
         filter: invert(100);
     }
 
+    .navbar img, .grid-icon-item img, .right-content img {
+        /* filter: grayscale(100); */
+    }
+
     .navbar li:hover > img, .right-content li:hover img {
         filter:invert(100);
+        /* filter: grayscale(0); */
         border-color: white;
     }
 
