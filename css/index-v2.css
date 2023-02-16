@@ -266,7 +266,7 @@ table {
     font-size: .85em;
     text-align: left;
     width: 10%;
-    margin-right: 5px;
+    /* margin-right: 5px; */
     display: block;
     border-left: thin solid;
     /* height: 100%; */
@@ -279,7 +279,7 @@ table {
 }
 
 .right-content img {
-    max-height: 4vh;
+    max-height: 3.5vh;
     object-fit: scale-down;
     width: -webkit-fill-available;
     float: none;
@@ -505,6 +505,10 @@ table {
     position: relative;
     text-align: center;
     text-transform: uppercase;
+}
+
+.right-content li {
+    /* max-width: 1px; */
 }
 
 .navbar img, .navbar-right img {
@@ -4260,8 +4264,12 @@ details p, details h2 {
         max-width: 540px;
     }
 
-    .grid-three-columns, .grid-four-columns, .grid-five-columns, .grid-six-columns, .grid-seven-columns, .grid-three-video-columns, .grid-four-video-columns, .four-img-columns {
-        max-width: 1000px;
+    .grid-four-columns, .grid-seven-columns, .grid-eight-columns, .grid-three-video-columns, .grid-four-video-columns, .four-img-columns {
+        max-width: 900px;
+    }
+
+    .grid-three-columns,  .grid-five-columns, .grid-six-columns {
+        max-width: 800px;
     }
 
     .grid-seven-columns {
@@ -4286,6 +4294,7 @@ details p, details h2 {
 
     .individual img, .individual-more img, .individual-hidden img, .grid-item img  {
         height: 10vh;
+        /* height: max-content; */
         object-fit: cover;
         margin: 0;
         width: 100%;
@@ -4368,7 +4377,10 @@ details p, details h2 {
 
 @media (max-width: 1650px) {
 
-
+    .grid-eight-columns {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
 
 
 
@@ -4500,10 +4512,7 @@ details p, details h2 {
     }
 
 
-    .grid-eight-columns {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        max-width: 1200px;
-    }
+
 
 
 
