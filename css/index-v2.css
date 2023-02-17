@@ -2720,7 +2720,8 @@ table {
 .four-img-columns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 8px;
+    /* gap: 8px; */
+    gap: 30px;
 }
 
 .six-img-columns {
@@ -3497,6 +3498,7 @@ display: none;
 
 .blog li {
     padding-bottom: 5px;
+    padding-top: 5px;
     /* padding-left: 5px; */
     padding-left: 15px;
     padding-right: 15px;
