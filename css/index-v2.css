@@ -2725,6 +2725,7 @@ table {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* gap: 8px; */
     gap: 30px;
+    align-items: center;
 }
 
 .six-img-columns {
