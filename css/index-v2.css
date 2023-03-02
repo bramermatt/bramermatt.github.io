@@ -236,19 +236,33 @@ table, th, td {
     padding: 10px;
     overflow-x: hidden;
     text-overflow: ellipsis;
-
+    /* white-space: nowrap;
+    overflow: scroll; */
   }
 
-table {
+th {
+    font-size: 1.2em;
+    padding: 5px;
+}
 
+td {
+    max-width: 600px;
+}
+
+table {
     border-spacing: 30px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px;
+    max-width: 700px;
     margin-bottom: 2.5rem;
     box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.4);
-
 }
+
+table {
+    empty-cells: hide;
+    /* table-layout: auto; */
+  }
+
 
 @media screen and (max-width: 850px) and (min-width: 400px) {
     table {
@@ -2736,6 +2750,14 @@ table {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* gap: 8px; */
     gap: 30px;
+    align-items: center;
+}
+
+.five-img-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* gap: 8px; */
+    gap: 10px;
     align-items: center;
 }
 
