@@ -213,11 +213,12 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     z-index: 1;
     /* box-shadow: 0 1px 20px -1px rgb(0 0 0 / 32%); */
-    border-right: .25px solid #eee;
+    /* border-right: .25px solid #eee; */
     margin-bottom: 10px;
     color: var(--text);
     visibility: hidden;
     text-transform: uppercase;
+    box-shadow: 0 1px 8px -1px rgb(255, 255, 255, 10%);
 }
 
 .main-content {
@@ -226,9 +227,10 @@ body::-webkit-scrollbar-thumb {
     /* border-right: thin solid; */
 }
 
-/* div {
-    max-width: 2050px;
-} */
+div {
+    /* max-width: 2050px; */
+    /* align-self: center; */
+}
 
 table, th, td {
     border: thin solid;
@@ -254,7 +256,8 @@ table {
     margin-left: auto;
     margin-right: auto;
     max-width: 700px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 10px;
+    /* margin-bottom: 2.5rem; */
     box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.4);
 }
 
@@ -2557,7 +2560,7 @@ table {
 }
 
 .blog-tag a > p {
-    margin: 0;
+    /* margin: 0; */
     /* margin-right: 5px; */
     font-weight: bold;
 }
@@ -2565,7 +2568,8 @@ table {
 .blog-tag a:link, a:visited {
     text-decoration: none;
     color: var(--text);
-    margin: 5px;
+    /* margin: 5px; */
+    margin: 5px 0px 5px;
     /* margin: 0; */
     width: max-content;
     /* font-style:italic; */
@@ -3461,9 +3465,9 @@ display: none;
 
     /* padding-top: 10px; */
     /* padding-left: 4px; */
-    margin: 0;
+    /* margin: 0; */
     margin-bottom: 5px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     /* margin-top: 60px; */
     font-size: 1.5em;
 
@@ -5306,8 +5310,8 @@ details p, details h2 {
     }
 
     .blog-tag a > p:hover {
-        background-color: rgb(29,29,29);
-        color: white;
+        /* background-color: rgb(29,29,29); */
+        /* color: white; */
     }
 
     .video-item:hover {
@@ -5329,7 +5333,7 @@ details p, details h2 {
         /* border: 1px solid rgb(29,29,29); */
     }
 
-    .navbar li:hover, .right-content li:hover, .navbar-right li:hover, .inline-navbar li:hover, .footer li:hover, .blog-left a:hover, .blog-right a:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag a > p:hover, .blog a:hover, .blog li a:hover, .grid-item-ad a:hover  {
+    .navbar li:hover, .right-content li:hover, .navbar-right li:hover, .inline-navbar li:hover, .footer li:hover, .blog-left a:hover, .blog-right a:hover, .map li:hover, .grid-item-hero-title a:hover, .blog a:hover, .blog li a:hover, .grid-item-ad a:hover  {
         background-color: rgb(29,29,29);
         /* background-color: #3cffd0; */
         color: white;
@@ -5468,8 +5472,8 @@ details p, details h2 {
 
 
     .blog-tag a > p:hover {
-        background-color:white;
-        color: rgb(29,29,29);
+        /* background-color:white; */
+        /* color: rgb(29,29,29); */
     }
 
     .grid-item, .grid-item-hidden {
@@ -5499,7 +5503,7 @@ details p, details h2 {
         box-shadow: 0 0px 5px rgba(255, 255, 255, 0.6);
     }
 
-    .navbar li:hover, .right-content li:hover, .navbar-right li:hover, .inline-navbar li:hover, .footer li:hover, .map li:hover, .grid-item-hero-title a:hover, .blog-tag a > p:hover, .blog a:hover, .blog li a:hover, .grid-item-ad a:hover  {
+    .navbar li:hover, .right-content li:hover, .navbar-right li:hover, .inline-navbar li:hover, .footer li:hover, .map li:hover, .grid-item-hero-title a:hover, .blog a:hover, .blog li a:hover, .grid-item-ad a:hover  {
         background-color:white;
         color: rgb(29,29,29);
         /* border: 1px solid white; */
@@ -5806,9 +5810,16 @@ details p, details h2 {
     /* display: contents; */
     align-self: center;
     color: rgb(77, 77, 77);
-    padding: 5px;
+    padding: 0;
+    align-content: center;
     /* border: thin solid; */
 
+}
+
+.blog-tag a > p:hover {
+    /* background-color: rgb(0, 0, 0); */
+    /* color: white; */
+    text-decoration: underline;
 }
 
 .blog-tag img {
@@ -5821,6 +5832,9 @@ details p, details h2 {
 .tag-tag {
     display: flex;
     margin-left: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (min-width: 660px) {
@@ -5863,6 +5877,13 @@ details p, details h2 {
 
     .blog-tag a > p {
         color: white;
+
+    }
+
+    .blog-tag a > p:hover {
+        /* background-color: rgb(0, 0, 0); */
+        /* color: white; */
+        text-decoration: underline;
     }
 
     .blog-tag p {
@@ -5891,8 +5912,9 @@ details p, details h2 {
     }
 
     .blog-tag a > p:hover {
-        background-color: rgb(0, 0, 0);
-        color: white;
+        /* background-color: rgb(0, 0, 0); */
+        /* color: white; */
+        text-decoration: underline;
     }
 
     .blog-title blockquote, .blog-vertical blockquote, .blog-alt-title blockquote, .blog blockquote, .hero-post blockquote {
