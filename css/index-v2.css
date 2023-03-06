@@ -4426,7 +4426,7 @@ details p, details h2 {
 
     .grid-eight-columns {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        
+        max-width: 1000px;
     }
 
 
