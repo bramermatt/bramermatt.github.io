@@ -5844,6 +5844,16 @@ details p, details h2 {
     justify-content: center;
 }
 
+.title-score {
+    /* float: left; */
+    /* position:absolute; */
+}
+
+.title-score img {
+    height: 5vh;
+    box-shadow: none;
+}
+
 @media screen and (min-width: 660px) {
     .blog-tag {
         display: flex;
@@ -5854,8 +5864,19 @@ details p, details h2 {
         margin: 5px;
 
     }
+
 }
 
+@media screen and (max-width: 500px) {
+    /* .title-score {
+        position:absolute;
+    }
+
+    .title-score img {
+        height: 7vh;
+        margin-top: 4vh;
+    } */
+}
 
 
 .hero-title {
