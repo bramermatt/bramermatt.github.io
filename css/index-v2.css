@@ -5839,9 +5839,10 @@ details p, details h2 {
 .tag-tag {
     display: flex;
     margin-left: 5px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    
 }
 
 .title-score {
@@ -5862,7 +5863,7 @@ details p, details h2 {
 
     .tag-tag {
         margin: 5px;
-
+        margin-right: 30px;
     }
 
 }
