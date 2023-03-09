@@ -4492,6 +4492,10 @@ details p, details h2 {
         /* padding: 20px; */
     }
 
+    .individual img {
+        margin-bottom: 0;
+    }
+
     /* .grid-item-no-border {
         padding: 10px;
     } */
