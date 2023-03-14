@@ -2875,10 +2875,11 @@ table {
     line-height: 22px;
 
     max-width: max-content;
-    /* max-width: 600px; */
+    max-width: 500px;
     /* text-align: inherit; */
     /* text-indent: 30px; */
     /* font-style: italic; */
+    /* text-align:left; */
     border-top: thin solid;
     /* padding-top: 16px; */
     padding: 10px;
@@ -3221,6 +3222,10 @@ display: none;
     white-space: nowrap;
 }
 
+.blog-right-title img {
+    min-height: 15vh;
+}
+
 .blog-right-title p {
     margin: 0;
     /* text-transform: uppercase; */
@@ -3248,6 +3253,7 @@ display: none;
     /* height: 8vh; */
     /* height: 15vh; */
     margin-right: 0;
+    /* min-height: 15vh; */
     /* height: 135px; */
     width: 100%;
     object-fit: cover;
@@ -4351,6 +4357,7 @@ details p, details h2 {
     .grid-one-column, .grid-two-columns-mobile, .grid-two-columns-intro {
         grid-template-columns: 1fr;
         /* margin-top: 20px; */
+        max-width: 240px;
     }
 
     .grid-two-columns, .grid-three-video-columns, .grid-four-video-columns, .four-img-columns, .five-img-columns {
@@ -5586,9 +5593,13 @@ details p, details h2 {
     }
 
     .blog-right-tag a:hover {
-        background-color: rgb(122, 122, 122);
-        color:white;
+        background-color: rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
         /* filter:invert(0); */
+    }
+
+    .blog-right-tag a:hover > img {
+        filter: invert(0);
     }
 
     /* .blog-right-tag img > a:hover {
@@ -5600,6 +5611,16 @@ details p, details h2 {
 
     .blog-right-title, .blog-right-title img, .blog-right-tag p, .blog-right-tag a {
         box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.3);
+    }
+
+    .blog-right-tag a:hover {
+        background-color: rgb(0, 0, 0);
+        color:white;
+        /* filter:invert(0); */
+    }
+
+    .blog-right-tag a:hover > img {
+        filter: invert(100);
     }
  }
 
