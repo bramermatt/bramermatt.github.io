@@ -5894,7 +5894,7 @@ details p, details h2 {
 
 .tag-tag {
     display: flex;
-    margin-left: 5px;
+    margin-left: 30px;
     /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
@@ -5918,7 +5918,7 @@ details p, details h2 {
     }
 
     .tag-tag {
-        margin: 5px;
+        margin: 10px;
         margin-right: 30px;
     }
 
