@@ -881,7 +881,7 @@ table {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    padding: 15px;
+    /* padding: 15px; */
     max-width: 1500px;
     /* border-top: 1px solid; */
     /* margin-top: 30px; */
