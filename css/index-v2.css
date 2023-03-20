@@ -1668,6 +1668,7 @@ table {
 .content-tag p {
     margin: 0;
     margin-right: 10px;
+    font-size: 14px;
 }
 
 .content-tag img {
@@ -1697,6 +1698,7 @@ table {
 
 .content-tldr p {
     margin-bottom: 0;
+    font-size: 14px;
     /* margin-left: 5px; */
     /* filter: drop-shadow(-6px 5px 3px rgb(0, 0, 0)); */
 }
@@ -3410,7 +3412,8 @@ display: none;
     font-size: 16px;
     line-height: 18px;
     overflow: hidden;
-    /* text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    /*
     white-space: nowrap; */
 }
 
@@ -4028,7 +4031,7 @@ details p, details h2 {
   @media screen and (prefers-color-scheme: dark) {
     details  {
         box-shadow: 0 .05rem 1rem -.5rem rgba(255, 255, 255, 0.5);
-        border: thin solid rgb(248, 0, 0);
+        border: thick solid rgb(248, 0, 0);
     }
 
     tr, td, th {
@@ -4631,11 +4634,18 @@ details p, details h2 {
 
 
 @media screen and (max-width: 990px) {
-    .three-img-columns, .two-img-columns, .two-thirds-img-columns, .four-img-columns, .five-img-columns, .grid-two-img-columns {
+    .three-img-columns, .two-img-columns, .two-thirds-img-columns, .four-img-columns, .grid-two-img-columns {
         grid-template-columns: 1fr;
         padding: 0;
         gap: 0;
         display: block;
+    }
+
+    .five-img-columns {
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        gap: 0;
+        /* display: block; */
     }
 
     .grid-seven-columns {
