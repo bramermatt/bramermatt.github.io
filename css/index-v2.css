@@ -246,7 +246,7 @@ table, th, td {
 
 th {
     font-size: 1.2em;
-    padding: 5px;
+    padding: 10px;
     text-align: left;
 }
 
@@ -3070,7 +3070,7 @@ table {
     line-height: 22px;
 
     max-width: max-content;
-    max-width: 500px;
+    max-width: 800px;
     /* text-align: inherit; */
     /* text-indent: 30px; */
     /* font-style: italic; */
@@ -3939,6 +3939,7 @@ details {
     position: relative;
     cursor: pointer;
     transition: 2ms ease all;
+    min-width: 250px;
     /* width: 750px; */
     /* max-width: 100%; */
     /* position: sticky;
