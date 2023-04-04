@@ -3066,6 +3066,8 @@ table {
 
     /* display: none; */
     color: var(--text);
+    border: thin solid;
+    border-radius: 28px;
 }
 
 .tldr a:link, a:visited {
@@ -3081,19 +3083,21 @@ table {
 }
 
 .tldr p {
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
     font-size: 17px;
     line-height: 22px;
 
     max-width: max-content;
-    max-width: 800px;
+    width: 800px;
     /* text-align: inherit; */
     /* text-indent: 30px; */
     /* font-style: italic; */
     /* text-align:left; */
-    border-top: thin solid;
+    /* border-top: thin solid; */
     /* padding-top: 16px; */
+
     padding: 10px;
     text-transform: inherit;
     letter-spacing: normal;
