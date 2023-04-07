@@ -23,10 +23,10 @@ body.light {
 /* holding off on dark mode right now */
 body.dark {
     --text: white;
-    --background: black;
+    --background: dark;
     
     /* ---background: #000; */
-    /* --background: #3a3a3a; */
+    --background: #3a3a3a;
     /* --background: rgb(78, 78, 78); */
     /* background-color: #000; */
 } 
@@ -5671,9 +5671,9 @@ details p, details h2 {
         filter: drop-shadow(2px 4px 6px black);
 }
 
-body {
+/* body {
     background-color: black;
-}
+} */
 
 
     /* .hamburger {
