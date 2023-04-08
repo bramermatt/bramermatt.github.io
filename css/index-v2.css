@@ -290,14 +290,14 @@ table {
     top: 7vh !important;
     margin-left: auto;
     margin-right: auto;
-    font-size: .85em;
+    font-size: .95em;
     text-align: left;
-    width: 10%;
+    /* width: 12%; */
     /* margin-right: 5px; */
     display: block;
     border-left: thin solid;
     /* height: 100%; */
-    width: 60px;
+    width: 70px;
     overflow-x: hidden;
     color: var(--text);
     max-width: 2050px;
@@ -306,7 +306,7 @@ table {
 }
 
 .right-content img {
-    max-height: 3.5vh;
+    max-height: 3vh;
     object-fit: scale-down;
     width: -webkit-fill-available;
     float: none;
