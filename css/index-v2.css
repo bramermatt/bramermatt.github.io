@@ -234,12 +234,12 @@ div {
 }
 
 table, th, td {
-    border: thin solid;
+    /* border: thin solid; */
     border-collapse: collapse;
     padding: 10px;
     overflow-x: hidden;
     text-overflow: ellipsis;
-
+    border: thin solid;
     /* white-space: nowrap;
     overflow: scroll; */
   }
@@ -248,11 +248,13 @@ th {
     font-size: 1.2em;
     padding: 10px;
     text-align: left;
+
 }
 
 td {
     width: max-content;
     max-width: 600px;
+
 }
 
 table {
@@ -264,6 +266,7 @@ table {
     margin-bottom: 10px;
     /* margin-bottom: 2.5rem; */
     box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.08);
+
     /* display: flex; */
     /* display: grid; */
 }
@@ -2687,7 +2690,7 @@ table {
 }
 
 .blog-title p, .blog-vertical-title p, .blog-alt-title p, .blog-stretch-title p {
-    max-width: 700px;
+    /* max-width: 700px; */
     /* width: max-content; */
     /* max-width: 750px; */
     margin: auto;
@@ -3071,15 +3074,16 @@ table {
     /* margin: 20px; */
     /* margin-top: 30px; */
 
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
+    /* margin-top: 15px; */
+    /* margin-left: 15px; */
+    /* margin-right: 15px; */
     /* display: inline; */
 
     /* display: none; */
     color: var(--text);
     /* border: thin solid;
     border-radius: 28px; */
+    display: flex;
 }
 
 .tldr a:link, a:visited {
@@ -3100,17 +3104,20 @@ table {
     margin-right: auto;
     font-size: 14px;
     /* line-height: 14px; */
-    max-width: max-content;
-    max-width: 800px;
+    /* max-width: max-content; */
+    /* max-width: 420px; */
     /* text-align: inherit; */
     /* text-indent: 30px; */
     /* font-style: italic; */
     /* text-align: left; */
+    text-align: center;
     border-top: thin solid;
+    /* border: thin solid; */
     /* padding-top: 16px; */
     padding: 5px;
     text-transform: inherit;
     letter-spacing: normal;
+    color: rgb(77, 77, 77);
 }
 
 .headline-scrollbar {
@@ -3157,9 +3164,9 @@ table {
     color: white;
     /* height: 20vh; */
     box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.3);
-    /* position: sticky;
+    position: sticky;
     z-index: 1;
-    top:0; */
+    top:0;
     text-transform: uppercase;
     /* bottom: 0; */
 }
@@ -3363,7 +3370,7 @@ display: none;
     position: -webkit-sticky;
     position: sticky;
     -ms-overflow-style: none;
-    top: 1.5vh !important;
+    top: 5.5vh !important;
     /* bottom: 8vh !important; */
     margin-left: auto;
     margin-right: auto;
@@ -6244,7 +6251,7 @@ details p, details h2 {
         color: white;
     }
 
-    .blog-tag p {
+    .blog-tag p, .tldr p {
         /* background-color: rgb(36, 36, 36, 0.6); */
         /* background-color: white; */
         /* color: black; */
