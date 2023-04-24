@@ -5303,7 +5303,7 @@ details p, details h2 {
     .category h1, .alt-category h1 {
         margin-inline: 15px;
         margin-top: 0;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
 
     .alt-category {
