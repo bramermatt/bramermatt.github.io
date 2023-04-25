@@ -225,7 +225,7 @@ body::-webkit-scrollbar-thumb {
 .main-content {
     /* margin-right: 11%; */
     margin-right: 70px;
-    /* border-right: thin solid; */
+    border-right: thin solid;
 }
 
 div {
@@ -1386,8 +1386,9 @@ table {
     border-radius: 8px;
 
 
-    box-shadow: 0 1px 7px -1px rgb(0 0 0 / 22%);
+    box-shadow: 0 1px 7px -1px rgb(0 0 0 / 20%);
     /* border: .25px solid #eee; */
+    /* border: .25px solid; */
     height: 100%;
     /* margin: 10px; */
     overflow: hidden;
@@ -2405,7 +2406,7 @@ table {
     .alt-category {
         background-color: #1b1b1bb6;
         color:white;
-        margin-right: 15px;
+        /* margin-right: 15px; */
     }
 
     .alt-category  .individual {
@@ -2877,6 +2878,7 @@ table {
     /* overflow: hidden; */
     text-overflow: ellipsis;
     overflow: hidden;
+
     /* overflow-wrap: break-word; */
 }
 
