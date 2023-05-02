@@ -951,7 +951,7 @@ table {
     /* padding-left: 15px; */
     /* max-width: 350px; */
     /* max-width: max-content; */
-    max-width: 280px;
+    max-width: 240px;
     margin-left: auto;
     margin-right: auto;
     gap: 1rem;
@@ -3975,7 +3975,7 @@ details {
     padding: 1rem;
     display: block;
     background: rgba(51, 51, 51, 0.479);
-    padding-left: 2.8rem;
+    padding-left: 3.5rem;
     position: relative;
     cursor: pointer;
     transition: 2ms ease all;
@@ -4005,8 +4005,8 @@ details[open] {
     border-style: solid;
     border-color: transparent transparent transparent #fff;
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: .8rem;
+    left: 1.5rem;
     transform: rotate(0);
     transform-origin: .2rem 50%;
     transition: .25s transform ease;
