@@ -1056,6 +1056,7 @@ table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
+    max-width: 1300px;
     padding-right: 25px; 
     padding-left: 25px;
     margin-bottom: 20px;
@@ -4082,7 +4083,7 @@ details p, details h2 {
     }
 
     .ad-break {
-        background: #282828;
+        background: rgb(248, 0, 0, .26);
     }
 
     summary {
@@ -4611,8 +4612,12 @@ details p, details h2 {
         max-width: 240px;
     }
 
-    .grid-two-columns, .grid-three-video-columns, .grid-four-video-columns, .four-img-columns, .five-img-columns, .grid-two-video-columns {
+    .grid-two-columns, .grid-three-video-columns, .grid-four-video-columns, .four-img-columns, .grid-two-video-columns {
         grid-template-columns: 2fr 2fr ;
+    }
+
+    .five-img-columns {
+        max-width: 100%;
     }
 
     .grid-six-columns, .grid-five-columns {
