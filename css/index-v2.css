@@ -2958,6 +2958,9 @@ table {
 
 .one-img-columns {
     padding: 15px;
+    margin: auto;
+    align-items: center;
+    display: grid;
 }
 
 .two-img-columns {
