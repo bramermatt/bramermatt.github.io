@@ -767,8 +767,8 @@ table {
     /* position: fixed; */
     top: 0;
     z-index: 10;
-    border-bottom: thin solid;
-    /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%); */
+    /* border-bottom: thin solid; */
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
     /* background-color: rgb(68, 163, 68); */
 
 
