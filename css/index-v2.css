@@ -149,11 +149,18 @@ body::-webkit-scrollbar-thumb {
     visibility: hidden;
     box-shadow: 0 1px 20px -1px rgb(0 0 0 / 10%);
     /* border-bottom: thin solid; */
-    position: sticky;
+    /* position: sticky;
     left: 0;
     top: 0;
     right: 0;
     bottom: auto;
+    z-index: 3; */
+
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     z-index: 3;
     /* box-shadow: 4px 4px white, 10px 10px black; */
  }
@@ -3055,6 +3062,7 @@ table {
     text-transform: uppercase;
     z-index: 10;
     /* text-transform: lowercase; */
+
 }
 
 .topTitle img {
@@ -3969,8 +3977,9 @@ details {
     box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.4);
     /* border-bottom: thin solid; */
     border-radius: 5px;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: 2ms ease all;
+
 
 
     /* border-bottom: 1px solid; */
@@ -3987,6 +3996,7 @@ details {
     cursor: pointer;
     transition: 2ms ease all;
     min-width: 250px;
+
     /* width: 750px; */
     /* max-width: 100%; */
     /* position: sticky;
@@ -3999,10 +4009,18 @@ details {
 
   details[open] > summary {
     margin-bottom: 10px;
+
 }
 
 details[open] {
     padding-bottom: 15px;
+
+}
+
+details summary {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
   
   summary:before {
@@ -4019,6 +4037,8 @@ details[open] {
     transition: .25s transform ease;
 
 }
+
+
 
 
   
@@ -4102,6 +4122,8 @@ details p, details h2 {
     display:none;
 
   }
+
+
 
 .picture-preview {
     /* max-width: 1800px; */
@@ -5151,11 +5173,14 @@ details p, details h2 {
 
     .topTitle h1 {
         position: fixed;
+        bottom: 0;
         /* position: absolute; */
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: auto;
+        /* left: 0; */
+        /* top: 0; */
+        /* right: 0; */
+        /* width: 100%; */
+
+        /* bottom: auto; */
         padding-top: 5px;
         margin-left: 50px;
         margin-right: 50px;
@@ -5261,11 +5286,14 @@ details p, details h2 {
     line-height: 55px;
     /* position: absolute; */
     position: fixed;
+    bottom: 0;
+    max-height: 5vh;
+    
     text-align: center;
-    left: 0;
+    /* left: 0;
     top: 0;
     right: 0;
-    bottom: auto;
+    bottom: auto; */
     padding: 0;
     /* padding-top: 4px; */
     /* padding-left: 30px; */
@@ -6593,3 +6621,5 @@ details p, details h2 {
       width: 100%;
     }
   }
+
+
