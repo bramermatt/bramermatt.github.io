@@ -768,10 +768,10 @@ table {
     /* height: max-content; */
     position: sticky;
     top: 0;
-    z-index: 52;
+    /* z-index: 52; */
     /* position: sticky; */
     /* position: fixed; */
-    top: 0;
+    /* top: 0; */
     z-index: 10;
     /* border-bottom: thin solid; */
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
@@ -5172,18 +5172,18 @@ details p, details h2 {
 
     .topTitle h1 {
         position: fixed;
-        bottom: 0;
+        /* bottom: 0; */
         /* position: absolute; */
-        /* left: 0; */
-        /* top: 0; */
-        /* right: 0; */
+        left: 0;
+        top: 0;
+        right: 0;
         /* width: 100%; */
 
-        /* bottom: auto; */
+        bottom: auto;
         padding-top: 5px;
         margin-left: 50px;
         margin-right: 50px;
-        z-index: 10;
+        z-index: 55;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -5283,7 +5283,7 @@ details p, details h2 {
     .hero-title h1 {
     /* font-size: 30px; */
     line-height: 55px;
-    /* position: absolute; */
+    position: absolute;
     /* position: fixed;
     bottom: 0;
     max-height: 5vh; */
