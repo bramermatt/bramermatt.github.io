@@ -149,19 +149,18 @@ body::-webkit-scrollbar-thumb {
     visibility: hidden;
     box-shadow: 0 1px 20px -1px rgb(0 0 0 / 10%);
     /* border-bottom: thin solid; */
-    /* position: sticky;
+    position: sticky;
     left: 0;
     top: 0;
     right: 0;
     bottom: auto;
-    z-index: 3; */
-
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     z-index: 3;
+
+    overflow: hidden;
+    /* position: fixed;
+    bottom: 0; */
+    /* width: 100%; */
+    /* z-index: 3; */
     /* box-shadow: 4px 4px white, 10px 10px black; */
  }
 
@@ -767,10 +766,10 @@ table {
     /* border-bottom: 1px solid; */
     /* max-width: max-content; */
     /* height: max-content; */
-    /* position: sticky;
-    top: 0;
-    z-index: 52; */
     position: sticky;
+    top: 0;
+    z-index: 52;
+    /* position: sticky; */
     /* position: fixed; */
     top: 0;
     z-index: 10;
@@ -5285,15 +5284,15 @@ details p, details h2 {
     /* font-size: 30px; */
     line-height: 55px;
     /* position: absolute; */
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    max-height: 5vh;
-    
+    max-height: 5vh; */
+
     text-align: center;
-    /* left: 0;
+    left: 0;
     top: 0;
     right: 0;
-    bottom: auto; */
+    bottom: auto;
     padding: 0;
     /* padding-top: 4px; */
     /* padding-left: 30px; */
