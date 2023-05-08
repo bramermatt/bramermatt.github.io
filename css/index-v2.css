@@ -5197,7 +5197,7 @@ details p, details h2 {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        text-align: center;
+        /* text-align: center; */
         font-size: 14px;
         text-transform: capitalize;
     }
@@ -5302,7 +5302,7 @@ details p, details h2 {
     bottom: 0;
     max-height: 5vh; */
 
-    text-align: center;
+    /* text-align: center; */
     left: 0;
     top: 0;
     right: 0;
@@ -5766,7 +5766,7 @@ details p, details h2 {
 @media screen and (prefers-color-scheme: dark) {
     .hamburger, .inline-navbar {
         /* background-color: rgb(29,29,29); */
-        opacity: 98%;
+        /* opacity: 98%; */
         /* z-index: 100; */
 
         -webkit-backdrop-filter: blur(10px);
