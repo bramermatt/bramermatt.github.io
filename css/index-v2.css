@@ -2931,6 +2931,7 @@ table {
 
 .blog-vertical img {
     max-height: 92vh;
+    /* max-height: 100vh; */
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
