@@ -158,7 +158,11 @@ body::-webkit-scrollbar-thumb {
 
     overflow: hidden;
     /* position: fixed;
-    bottom: 0; */
+    width: 100%; */
+    /* left: 0; */
+    /* top: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
     /* width: 100%; */
     /* z-index: 3; */
     /* box-shadow: 4px 4px white, 10px 10px black; */
@@ -3387,7 +3391,7 @@ display: none;
     position: -webkit-sticky;
     position: sticky;
     -ms-overflow-style: none;
-    top: 5.5vh !important;
+    top: 1.5vh !important;
     /* bottom: 8vh !important; */
     margin-left: auto;
     margin-right: auto;
@@ -3907,7 +3911,8 @@ display: none;
     /* height: 100%; */
     overflow:hidden;
     /* transition: transform 400ms; */
-    filter: drop-shadow(0 0 2px rgb(0, 0, 0, 20%));
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0, 40%));
+    /* border: thin solid; */
     /* transition: transform .5s; */
     z-index: 1;
     /* cursor: zoom-in; */
@@ -4021,6 +4026,7 @@ details summary {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    z-index: 2;
 }
   
   summary:before {
@@ -4993,11 +4999,14 @@ details p, details h2 {
         background-position: center;
     } */
 
-    /* .spoiler-scrollbar {
-        position: sticky;
+    .spoiler-scrollbar {
+        /* position: sticky;
         z-index: 1;
-        top: 0;
-    } */
+        top: 0; */
+        /* position: fixed;
+        width: 100%;
+        z-index: 2; */
+    }
 
     .spoiler-scrollbar p {
         font-size: 30px;
@@ -5181,7 +5190,7 @@ details p, details h2 {
         /* width: 100%; */
 
         bottom: auto;
-        padding-top: 5px;
+        padding-top: 1vh;
         margin-left: 50px;
         margin-right: 50px;
         z-index: 55;
@@ -5189,7 +5198,7 @@ details p, details h2 {
         overflow: hidden;
         text-overflow: ellipsis;
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
         text-transform: capitalize;
     }
 
@@ -5280,6 +5289,10 @@ details p, details h2 {
         }
         
     }
+
+    /* .hero-title {
+        position: absolute;
+    } */
 
     .hero-title h1 {
     /* font-size: 30px; */
@@ -6272,6 +6285,7 @@ details p, details h2 {
         /* margin-right: 30px; */
     }
 
+
 }
 
 @media screen and (max-width: 500px) {
@@ -6283,6 +6297,17 @@ details p, details h2 {
         height: 7vh;
         margin-top: 4vh;
     } */
+
+    .spoiler-scrollbar {
+        /* position: sticky;
+        z-index: 1;
+        top: 0; */
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 3;
+    }
+
 }
 
 
