@@ -4106,7 +4106,7 @@ details p, details h2 {
   @media screen and (prefers-color-scheme: dark) {
     details  {
         box-shadow: 0 .05rem 1rem -.5rem rgba(255, 255, 255, 0.5);
-        border: thick solid rgb(248, 0, 0, .76);
+        border: thick solid rgb(248, 0, 0, .96);
     }
 
     tr, td, th {
@@ -4119,7 +4119,7 @@ details p, details h2 {
     }
 
     summary {
-        background: rgba(248, 0, 0, .76);
+        background: rgba(248, 0, 0, .96);
     }
 
   }
@@ -6302,10 +6302,10 @@ details p, details h2 {
         /* position: sticky;
         z-index: 1;
         top: 0; */
-        position: fixed;
+        /* position: fixed;
         bottom: 0;
         width: 100%;
-        z-index: 3;
+        z-index: 3; */
     }
 
 }
