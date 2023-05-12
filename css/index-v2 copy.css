@@ -156,6 +156,11 @@ body {
         filter:invert(0);
     }
 
+    .left-nav-bar li:hover, .right-nav-bar li:hover {
+        background-color: white;
+        color: black;
+    }
+
     .active img {
         filter: invert(0);
     }
@@ -253,6 +258,10 @@ body {
     float: right;
 }
 
+.middle-body-content {
+    border-top: thin solid;
+}
+
 .small-content {
     /* border: thin solid blue; */
     /* border-top: thin solid #eee; */
@@ -309,13 +318,13 @@ body {
 .big-content .content h1 {
     /* margin: 0 auto; */
     margin: 10px 0px;
-    line-height: 80%;
+    /* line-height: 80%; */
     font-size: 24px;
 }
 
 .big-content .content p {
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .big-content .content a:link, a:visited {
@@ -353,6 +362,7 @@ body {
 .text-content .content p {
     margin: 0 auto;
     font-size: 14px;
+    padding-bottom: 1vh;
 }
 
 .text-content .content p a:link {
@@ -399,7 +409,8 @@ body {
 
 .content-topics a {
     /* padding: 5px; */
-    padding-right: 1vw;
+    /* padding-right: 1vw; */
+    margin-right: 1vw;
     text-transform: uppercase;
     font-style: italic;
     font-size: 14px;
@@ -478,7 +489,7 @@ body {
     }
     
     .header {
-        max-height: 15vh;
+        max-height: 20vh;
     }
 
     .left-nav-bar, .right-nav-bar {
@@ -486,3 +497,42 @@ body {
     }
 }
 
+@media screen and (prefers-color-scheme: dark) {
+    .top-title-bar {
+        background-color: black;
+    }
+
+    .content blockquote {
+        color: lightgrey;
+    }
+
+    .content-topics a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .text-content .content p a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .big-content, .small-content, .text-content {
+        /* box-shadow: 0 1px 8px -1px rgba(255, 255, 255, 25%); */
+        border: thin solid;
+        background-color: rgb(26, 26, 26);
+    }
+
+}
+
+@media screen and (prefers-color-scheme: light) {
+
+    .content-topics a:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .text-content .content p a:hover {
+        background-color: black;
+        color: white;
+    }
+}
