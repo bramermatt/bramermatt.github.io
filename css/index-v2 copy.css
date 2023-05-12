@@ -73,6 +73,7 @@ body {
     height: 100%; */
     /* width: 4%; */
 
+    width: 65px;
     border-right: thin solid;
     float: left;
     top: 0;
@@ -80,7 +81,6 @@ body {
     overflow-x: hidden;
     position: sticky;
     z-index: 3;
-
 }
 
 .left-nav-bar img {
@@ -125,6 +125,7 @@ body {
     /* width: 50px; */
     /* width: 4%; */
 
+    width: 65px;
     border-left: thin solid;
     float: right;
     top: 0;
@@ -236,6 +237,19 @@ body {
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
 }
 
+.title-content {
+    /* width: 100%; */
+    margin-inline: 15px;
+}
+
+.title-content h1 {
+    max-width: 650px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: thin solid;
+}
+
 .body-content {
     float: none;
     /* width: 50%; */
@@ -260,6 +274,29 @@ body {
 
 .middle-body-content {
     border-top: thin solid;
+    margin-inline: 65px;
+    /* margin-inline: 60px; */
+    
+    /* background-color: black; */
+}
+
+.small-body-content {
+
+}
+
+.grid-three-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1150px) {
+    
+    .grid-three-content {
+        grid-template-columns: 1fr 1fr;
+        max-width: 800px;
+    }
 }
 
 .small-content {
@@ -407,7 +444,7 @@ body {
     margin-top: 1vh;
 }
 
-.content-topics a {
+.content-topics a, .small-content .content-topics p {
     /* padding: 5px; */
     /* padding-right: 1vw; */
     margin-right: 1vw;
@@ -431,6 +468,8 @@ body {
         margin-inline: 0;
     }
 
+
+
     .right-content {
         /* display: subgrid; */
         display: none;
@@ -451,6 +490,11 @@ body {
         display: grid;
         grid-template-columns: 2fr 2fr;
     }
+
+    .grid-three-content {
+        grid-template-columns: 1fr;
+    }
+    
 
     .right-content {
         display: block;
@@ -476,6 +520,7 @@ body {
 
     .top-title-bar .top-title-bar-title h2 {
         display: block;
+        font-size: 20px;
     }
 
     .hamburger a {
@@ -494,6 +539,10 @@ body {
 
     .left-nav-bar, .right-nav-bar {
         display: none;
+    }
+
+    .middle-body-content {
+        margin-inline: 0;
     }
 }
 
@@ -534,5 +583,18 @@ body {
     .text-content .content p a:hover {
         background-color: black;
         color: white;
+    }
+
+    .left-nav-bar, .right-nav-bar {
+        background-color: white;
+        height: 100%;
+        bottom: 0;
+    }
+
+    .big-content, .small-content, .text-content {
+        /* box-shadow: 0 1px 8px -1px rgba(255, 255, 255, 25%); */
+        border: thin solid;
+        background-color: white;
+        /* background-color: rgb(26, 26, 26); */
     }
 }
