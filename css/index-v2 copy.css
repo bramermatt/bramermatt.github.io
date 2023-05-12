@@ -254,15 +254,19 @@ body {
 }
 
 .small-content {
-    border: thin solid blue;
+    /* border: thin solid blue; */
+    /* border-top: thin solid #eee; */
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 25%);
     margin-inline: 1vw;
     margin: 2vh;
+    padding: 5px;
 }
 
-/* .small-content .content {
-    display: flex;
-    flex-direction: column;
-} */
+.small-content .content {
+    /* margin: 10px; */
+
+
+}
 
 .small-content .content h1 {
     /* margin: 0 auto; */
@@ -298,8 +302,8 @@ body {
     margin-inline: 1vw;
     margin: 2vh;
     padding: 5px;
-    border-left: thin solid;
-    border-right: thin solid;
+    /* border-left: thin solid; */
+    /* border-right: thin solid; */
 }
 
 .big-content .content h1 {
@@ -330,9 +334,13 @@ body {
 }
 
 .text-content {
-    border: thin solid red;
+    /* border: thin solid red; */
+    /* border-bottom: thin solid #eee; */
+    /* border-top: thin solid #eee; */
     margin-inline: 1vw;
     margin: 2vh;
+    padding: 5px;
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 25%);
 }
 
 .text-content .content h1 {
@@ -345,6 +353,15 @@ body {
 .text-content .content p {
     margin: 0 auto;
     font-size: 14px;
+}
+
+.text-content .content p a:link {
+    text-decoration: underline;
+}
+
+.text-content .content p a:hover {
+    background-color: black;
+    color: white;
 }
 
 .text-content .content a:link, a:visited {
@@ -393,7 +410,7 @@ body {
 }
 
 .content .content-topics a:hover {
-    text-decoration: line-through;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -426,6 +443,10 @@ body {
 
     .right-content {
         display: block;
+    }
+
+    .small-content, .big-content, .text-content {
+        margin: 1vh;
     }
 }
 
