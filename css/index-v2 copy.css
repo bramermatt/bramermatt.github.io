@@ -482,7 +482,6 @@ body {
     text-decoration: none;
 }
 
-<<<<<<< HEAD
 .iframe-container {
     position: relative;
     overflow: hidden;
@@ -563,8 +562,6 @@ body {
     font-size: 15px;
 }
 
-=======
->>>>>>> parent of a0c14dc (hello there)
 @media screen and (max-width: 1200px) {
     .body-content {
         display: grid;
