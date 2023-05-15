@@ -69,7 +69,7 @@ body {
 
 /* Left Navigation Bar */
 /*  */
-.left-nav-bar, .nav-bar {
+.left-nav-bar {
     /* width: 50px;
     height: 100%; */
     /* width: 4%; */
@@ -84,7 +84,7 @@ body {
     z-index: 2;
 }
 
-.left-nav-bar img, .nav-bar img {
+.left-nav-bar img {
     /* max-height: 5vh; */
     /* padding: 5px; */
 
@@ -95,7 +95,7 @@ body {
     margin-bottom: 3px;
 }
 
-.left-nav-bar ul, .right-nav-bar ul, .nav-bar ul {
+.left-nav-bar ul, .right-nav-bar ul {
     margin: 0;
     list-style-type: none;
     padding: 0;
@@ -104,12 +104,12 @@ body {
     overflow: hidden;
 }
 
-.left-nav-bar a:link, a:visited, .right-nav-bar a:link, a:visited, .nav-bar a:link, a:visited {
+.left-nav-bar a:link, a:visited, .right-nav-bar a:link, a:visited {
     color: var(--text);
     text-decoration: none;
 }
 
-.left-nav-bar li, .right-nav-bar li, .nav-bar li {
+.left-nav-bar li, .right-nav-bar li {
     padding: 5px;
     font-size: 10px;
     font-weight: 700;
@@ -150,15 +150,15 @@ body {
 @media screen and (prefers-color-scheme: dark) {
 
 
-    .left-nav-bar img, .right-nav-bar img, .nav-bar img {
+    .left-nav-bar img, .right-nav-bar img {
         filter:invert(100);
     }
 
-    .left-nav-bar li:hover > img, .right-nav-bar li:hover img, .nav-bar li:hover > img {
+    .left-nav-bar li:hover > img, .right-nav-bar li:hover img {
         filter:invert(0);
     }
 
-    .left-nav-bar li:hover, .right-nav-bar li:hover, .nav-bar li:hover {
+    .left-nav-bar li:hover, .right-nav-bar li:hover {
         background-color: white;
         color: black;
     }
@@ -190,18 +190,14 @@ body {
     }
 
 
-    .left-nav-bar li:hover > img, .right-nav-bar li:hover img, .nav-bar li:hover > img {
+    .left-nav-bar li:hover > img, .right-nav-bar li:hover img {
         filter: invert(100);
         border-color: white;
     }
 
-    .left-nav-bar a li:hover, .right-nav-bar a li:hover, .nav-bar a li:hover {
+    .left-nav-bar a li:hover, .right-nav-bar a li:hover {
         background-color: rgb(29,29,29);
         color: white;
-    }
-
-    .nav-bar {
-        background-color: white;
     }
 
     /* .left-nav-bar .active > li:hover {
@@ -211,6 +207,7 @@ body {
 
 }
 
+<<<<<<< HEAD
 .nav-bar {
     display: none;
     /* width: 50%; */
@@ -222,6 +219,8 @@ body {
 }
 
 
+=======
+>>>>>>> parent of a0c14dc (hello there)
 .hamburger {
 
 }
@@ -494,6 +493,7 @@ body {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 .iframe-container {
     position: relative;
     overflow: hidden;
@@ -574,6 +574,8 @@ body {
     font-size: 15px;
 }
 
+=======
+>>>>>>> parent of a0c14dc (hello there)
 @media screen and (max-width: 1200px) {
     .body-content {
         display: grid;
@@ -617,26 +619,7 @@ body {
         margin: 1vh;
     }
 
-    .body-content, .middle-body-content {
-        border-top: none;
-    }
-
-    .footer {
-        padding-right: 2%;
-        padding-left: 2%;
-    }
-
     
-}
-
-@media screen and (min-width: 640px) {
-    .top-title-bar .hamburger {
-        display: none;
-    }
-
-    .top-title-bar .form {
-        display: none;
-    }
 }
 
 
