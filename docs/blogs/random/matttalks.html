@@ -8,399 +8,108 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="color-scheme" content="light dark"/>
 
-        <link rel="shortcut icon" type="image/x-icon" href="../../../img/mLogo.png">
-        <link rel="stylesheet" href="../../../css/index-v2.css">   
-        
-        <!-- <title>Matt Bramer | Home</title> -->
-        
-    
-    </head>
-    <body>
-        <div class="hamburger">
-            <script src="../../../js/hamburger-v2.js"></script>
-            <a href="#" onclick="myFunction()">
-            <!-- <img src="https://uploads-ssl.webflow.com/5a30b30549520e00017e33c4/61470bea9aeca36c0aaed56f_menu.svg"> -->
-            &#9776;
-        </a>
-        <!-- <p>mattbramer</p> -->
-        </div>
+        <link rel="icon" type="image/x-icon" href="../../../img/mLogo.png">
+        <link rel="stylesheet" href="../../../css/blog.css">
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
 
-        <script src="../../../js/top.js"></script>
-    
-        <div class="navbar">
-            <ul>
-                <a href="../../../index.html"><li>
-                    <img src="../../../img/navbar-icons/home.svg">
-                    home</li></a>
-                <a href="../../../html/recents.html"><li>
-                    <img src="../../../img/navbar-icons/recents.svg">
-                    recent</li></a>
-                <a href="../../../html/blogs.html"><li>
-                    <img src="../../../img/navbar-icons/blog.svg">
-                    blog</li></a>
-                <a href="../../../html/coverage.html"><li>
-                    <img src="../../../img/navbar-icons/coverage.svg">
-                    coverage</li></a>
-                <a href="../../../html/projects.html"><li>
-                    <img src="../../../img/navbar-icons/projects.svg">
-                    projects</li></a>
-                <a href="../../../html/reviews.html"><li>
-                    <img src="../../../img/navbar-icons/reviews.svg">
-                    reviews</li></a>
-                <a href="../../../html/videos.html"><li>
-                    <img src="../../../img/navbar-icons/videos.svg">
-                    videos</li></a>
-                <a href="../../../html/about.html"><li>
-                    <img src="../../../img/navbar-icons/about.svg">
-                    about</li></a>
-                <hr>
-                <a href="../../../html/reviews/franchise/in-reviews.html"><li>
-                    <img src="../../../img/navbar-icons/in-reviews.svg">
-                    In Reviews</li></a>
-                <a href="../../../html/topics/all-topics.html"><li>
-                    <img src="../../../img/navbar-icons/topics.svg">
-                    Topics</li></a>
+    <script src="../../../js/top.js"></script>
 
-                <!-- <img src="../../../img/mLogo.png" alt="logo">
-                <a href="../../../index.html"><li>home</li></a>
-                <a href="../../../html/recents.html"><li>recent</li></a>
-                <a href="../../../html/blogs.html"><li>blog</li></a>
-                <a href="../../../html/coverage.html"><li>coverage</li></a>
-                <a href="../../../html/projects.html"><li>projects</li></a>
-                <a href="../../../html/reviews.html"><li>reviews</li></a>
-                <a href="../../../html/videos.html"><li>videos</li></a>
-                <a href="../../../html/about.html"><li>about</li></a> -->
-            </ul>
-        </div>
-    
-        <div class="inline-navbar" id="inline-navbar">
-            <ul>
-                <img src="../../../img/mLogo.png" alt="logo">
-                <a href="../../../index.html"><li>home</li></a>
-                <a href="../../../html/recents.html"><li>recent</li></a>
-                <a href="../../../html/blogs.html"><li>blog</li></a>
-                <a href="../../../html/coverage.html"><li>coverage</li></a>
-                <a href="../../../html/projects.html"><li>projects</li></a>
-                <a href="../../../html/reviews.html"><li>reviews</li></a>
-                <a href="../../../html/videos.html"><li>videos</li></a>
-                <a href="../../../html/about.html"><li>about</li></a>
-            </ul>
-        </div>
-
-        <div class="blog-title">
-            <img src="../../../img/blogs/random/mattalks/matttalks-ep1-hero.png" alt="mattalks hero">
-            <!-- <div class="iframe-container" style="max-width: 1700px;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/cU5FqssHVnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div> -->
-            <!-- <blockquote>Dark mode icon</blockquote> -->
-            <!-- <div class="blog-vertical-title"> -->
-            <div class="blog-tag">
-                <p>MATTtalks</p>
+    <div class="navbar">
+        <ul>
+            <li><a href="../../../index.html">home</a></li>
+            <!-- <li><a href="../../../index.html#updates">updates</a></li> -->
+            <!-- <li><a href="../../index.html#school-sect">career</a></li> -->
+            <li>
+                <div class="dropdown">
+                <a href="../../../index.html#blog-sect">blogs</a>
+                <div class="dpdn-cnt">
+                <a href="../../../docs/tags/bike-commue.html">#bike-commute</a>
+                <a href="../../../docs/tags/obi-wan.html">#obi-wan</a>
                 </div>
-            <h1>My Show, MATTtalks</h1>
-            <p>December 5, 2022</p>
-            </div>
-        <!-- </div> -->
-
-            <div class="topTitle">
-                <h1>My Show, MATTtalks</h1>
-            </div>
-
-            <div class="blog-container">
-    
-                <div class="blog-right">
-                    <div class="blog-right-title">
-                        <img src="../../../img/blogs/random/mattalks/matttalks-ep1-hero.png" alt="mattalks hero">
-                        <h1>My Show, MATTtalks</h1>
-                        <p>December 5, 2022</p>
-                        </div>
                 </div>
+            </li>
+            <li><a href="../../../index.html#project-sect">projects</a></li>
+            <li>
+                <div class="dropdown">
+                <a href="../../../index.html#review-sect">reviews</a>
+                <div class="dpdn-cnt">
+                    <a href="../../../docs/tags/books.html">#books</a>
+                    <a href="../../../docs/tags/food.html">#food</a>
+                    <a href="../../../docs/tags/games.html">#games</a>
+                    <a href="../../../docs/tags/movies.html">#movies</a>
+                    <a href="../../../docs/tags/tech.html">#tech</a>
+                    <a href="../../../docs/tags/tv.html">#tv</a>
+        
+                </div>
+                </div>
+            </li>
+
+    <!-- seperator -->
+    <!--
+    <li><a href="#photo-sect">photos</a></li>
+    <li><a href="#video-sect">videos</a></li>
+    -->
+
+    <!-- now in footer
+    <li><a href="#social-sect">social</a></li>
+    <li><a href="#development">dev</a></li> 
+    -->
+        </ul>
+        </div>
+
+
+        <div class="blog-container">
+
+            <div class="blog-left">
+                <nav>
+                    <ul>
+                        <li style="text-align:center; padding-bottom: 5px; border-bottom: 1px solid #eee;">This Article</li>
+                        <li>MATTtalks</li>
+                    </ul>
+                    <ul>
+                        <li style="text-align:center; padding-bottom: 5px; border-bottom: 1px solid #eee;">Topics</li>
+                        <li><a href="#what-is">What is MATTtalks?</a></li>
+
+                    </ul>
+            
+                </nav>
+                
+            </div>
+            
+            <div class="blog-right">
+                <nav>
+                    <ul>
+                        <li style="text-align:center; padding-bottom: 5px; border-bottom: 1px solid #eee;">More on Topic</li>
+                        <li><a href="../../../index.html#random">Random</a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li style="text-align:center; padding-bottom: 5px; border-bottom: 1px solid #eee;">Links</li>
+                        <li><a href="https://www.instagram.com/bramermatt/" target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com/bramermatt" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.youtube.com/channel/UC1OsGesye2hEKRl_dSqwhUw" target="_blank">Youtube</a></li>
+                        <li><a href="https://github.com/bramermatt"></a></li>
+                    </ul>
+            
+                </nav>
+            </div>
 
 <div class="blog">
 
-<h2>Origins of MATTtalks</h2>
-<p>MATTtalks started in 2016, with the idea of "hey I like talking, and I love video, let's join them together in a <em>TEDtalk</em> fashion. That's also where I got the name, obviously: TEDtalk - MATTtalks.</p>
+<h1 id="title">Matt Talks About MATTtalks</h1>
+<h3>August 4, 2022</h3>
+<img src="../../../img/blogs/random/mattalks/mattalks-ep1.png" alt="matttalks">
 
-<p>Here is the initial video, MATTtalks - Ep. 1 "2016"</p>
-
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cU5FqssHVnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<blockquote>MATTtalks Episode 1</blockquote>
-
-<h2>My Favorite MATTtalks</h2>
-<p>I wouldn't have continued to create MATTtalks if I didn't love creating them, so here are some of my favorites!</p>
-
-<h3>MATTtalks Ep. 9 - "Call Of Duty: Black Ops 3"</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DLTvygWEjhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>My first video with a greenscreen! This was something I was really looking forward to doing when I started MATTalks, and as you'll see there were some better implementations laster in the series.</p>
-
-<h3>MATTtalks Ep. 33 - "Stress / My September"</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/6-NIp0bOU3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>I was really struggling before filming this video, but this was incredible to vent!</p>
-
-
-<h3>MATTtalks Ep. 39 - "mewithoutYou Concert 10/21/16"</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cfdKoDZVbVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>I really enjoyed my time with this and that really shows how much I enjoyed this topic!</p>
-
-
-<h3>"Unboxing and First Impressions of the iPhone 7 Plus" - MATTtalks Special</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/-DYRGcibOOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>An incredible unboxing of the iPhone 7+!</p>
-
-
-<h3>MATTtalks Ep. 49 - "Matt Bramer Photography" (360)</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/z5k15Tm8QkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>Why yes, I got a 360 camera, here we go!</p>
-
-
-<h3>MATTtalks Ep. 52 - "Season 1 Finale Special"</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ISu94timL1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>The Season 1 Finale! I had gone an entire 52 episodes (A FULL YEAR!) and I thought it was time for a break, and I really had a lot of fun filming the first season.</p>
-
-
-<h3>Behind the Scenes - MATTtalks Season 2 Intro</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ri9MXntkQis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>I made the intro for Season Two all by myself! Here is the music behind Season Two!</p>
-
-
-<h3>"My Hair" - MATTtalks Ep. 55</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/oZ1X6SV5NQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>I've always wanted to talk about my hair and I finally did that here!</p>
-
-
-<h3>"Sandy and Matt" - MATTtalks Ep. 62</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/kobUvSItSbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>Sandy's introduction!</p>
-
-
-<h3>"How to Take Better Pictures : Speech Two" - MATTtalks Ep 67</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/r1ga2KjacOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>You can see Season Two was a lot of fun for me! This was a recording of a speech I did for my Public Speaking class at Ivy Tech, so that was a lot of fun!</p>
-
-
-<h3>"The Best Year of My Life" - MATTtalks Ep. 68</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/wKj-V5hRb0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>I love talking about Sandy..</p>
-
-
-<h3>"Sherlock" - MATTtalks Ep. 70</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/SoWkRtEd7Bw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>The first time using b-roll clips from a show that garnered a Copyright Strike, and a terrible use of a teleprompter, but still one of my favorite episodes!</p>
-
-
-<h3>"I love Sandy" - MATTtalks Ep. 80</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/NmjWtjWxbuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>Sandy is so easy to talk about!</p>
-
-
-<h3>MATTtalks - Too Many Matts - Video Project</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Np2OzK7MXAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>A project for my Video Class at Ivy Tech, but a blast to make!</p>
-
-
-<h3>"Season 3!" - MATTtalks Ep. 81</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/G3vGTMSQusk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>Season Three, we have a new home!</p>
-
-
-<h3>MATTtalks Ep. 100 Special w/ My Wife Sandy! - MATTtalks Ep. 100</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/RpDjr8oIgxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>Episode 100 Special with Sandy! We absolutely loved this recording.</p>
-
-<h2>The Worst MATTtalks</h2>
-
-<p>There were a lot of terrible MATTtalks episodes, why not list them here!</p>
-
-<h3>MATTtalks Ep. 2 - "JAMbros"</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z5sjSaQiuxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>Starting off this list, MATTtalks Ep. 2 - "JAMbros", episode 2! I was just starting out and I was trying to figure out editing and I had a lot of ideas and I wanted to get this video out. I hadn't planned anything, so I rushed filming this and just uploaded it to keep my schedule, that I was only in week two of!</p>
-
-<h3>MATTtalks Ep. 8 - "Dad + Matt Day"</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/p2neHCR9Kfk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>Another no script video, I never used scripts so that's not new, but this one was an experiment. I also didn't talk very much..</p>
-
-
-<h3>MATTtalks Ep. 27 - "OCC"</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/TyGmXX0tDZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>Nothing really happened and it only lasted 2:44 before I went to end the video, so a complete waste of your time! And I was probably trying to keep my schedule going.</p>
-
-
-<h2>No More MATTtalks</h2>
-<p>MATTtalks ending when I ran out of time for filming, and I felt bad from this fun hobby I had, so I needed to start that over again!</p>
-
-<h3>What am I studying in college?</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hz2_osLfKpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>The final "MATTtalks" by title.</p>
-
-
-<h2>The Matt Bramer Show</h2>
-
-<h3>LIFE UPDATE SEPTEMBER 2019 - THE MATT BRAMER SHOW</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/AD_iGV_LAeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>A new show entitled The Matt Bramer Show! Almost the same energy of MATTalks but just a short few episodes before The Matt Bramer Show Ended.</p>
-
-<p>I got busy again, and stopped filming videos, Sandy was pregnant with Everett and that took more precedence than filming a silly YouTube show.</p>
-
-<h2>And Beyond</h2>
-<p>Well, you've seen the recent videos that I've done with the Book Reviews and Conundrum videos and Confessions from the Driver's Seat.. but never the same energy as MATTtalks. And that's okay! If I want to make an effort to bring back the same energy, I will!</p>
-
-<h3>Mid 2020 UPDATE</h3>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZSAZ_rh0x64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>Confessions from the Driver's Seat: Video One</p>
-
-
-<h2>Have a Great Day!</h2>
-<p>Make sure to check out all my videos on my YouTube channel, and enjoy!</p>
+<h2 id="what-is">What is MATTtalks?</h2>
+<p>MATTtalks was a series I used to create.</p>
 
 
 
 </div>
-        </div>
         
-        <!-- <div class="inline-navbar" id="inline-navbar"> -->
-            <!-- <ul>
-                <img src="../../../img/mLogo.png" alt="logo">
-                <a href="../../../index.html"><li>home</li></a>
-                <a href="../../../html/recents.html"><li>recent</li></a>
-                <a href="../../../html/blogs.html"><li>blog</li></a>
-                <a href="../../../html/coverage.html"><li>coverage</li></a>
-                <a href="../../../html/projects.html"><li>projects</li></a>
-                <a href="../../../html/reviews.html"><li>reviews</li></a>
-                <a href="../../../html/videos.html"><li>videos</li></a>
-                <a href="../../../html/about.html"><li>about</li></a>
-            </ul> -->
-            <div class="footer">
-
-
-                <div class="foot-buttons">
-    
-                    <div class="links">
-                        <h1>Site Links</h1>
-                        <ul>
-                            <!-- <img src="img/mLogo.png" alt="logo"> -->
-                            <a href="../../../index.html"><li>home</li></a>
-                            <a href="../../../html/recents.html"><li>recent</li></a>
-                            <a href="../../../html/blogs.html"><li>blog</li></a>
-                            <a href="../../../html/coverage.html"><li>coverage</li></a>
-                            <a href="../../../html/projects.html"><li>projects</li></a>
-                            <a href="../../../html/reviews.html"><li>reviews</li></a>
-                            <a href="../../../html/videos.html"><li>videos</li></a>
-                            <a href="../../../html/about.html"><li>about</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="links">
-                        <h1>In Reviews</h1>
-                        <ul>
-                            <a href="../../../html/2022-in-review.html"><li>2022 in Review</li></a>
-                            <a href="../../../html/cosmere-in-review.html"><li>Cosmere in Review</li></a>
-                            <a href="../../../html/reviews/franchise/harry-potter-in-review.html"><li>Harry Potter in Review</li></a>
-                            <a href="../../../html/reviews/franchise/last-of-us-in-review.html"><li>Last of Us in Review</li></a>
-                            <a href="../../../html/reviews/franchise/lotr-in-review.html"><li>Lord of the Rings in Review</li></a>
-                            <a href="../../../html/reviews/franchise/starwars-in-review.html"><li>Star Wars in Review</li></a>
-                            <a href="../../../html/reviews/franchise/wheel-of-time-in-review.html"><li>Wheel of Time in Review</li></a>
-                
-                        </ul>
-                    </div>
-                
-                    <div class="more-links">
-                        <h1>More Site Links</h1>
-                        <ul>
-                            <a href="../../../html/reviews/book-reviews.html"><li>Book Reviews</li></a>
-                            <br>
-                            <a href="../../../html/reviews/movie-reviews.html" ><li>Movie Reviews</li></a>
-                            <br>
-                            <a href="../../../html/blogs/bike-commute.html"><li>Bike Commute Blogs</li></a>
-                            <a href="../../../html/blogs/updates.html"><li>Update Blogs</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="links">
-                        <h1>Topics</h1>
-                        <ul>
-                            <a href="../../../html/topics/all-about-books.html"><li>Books</li></a>
-                            <a href="../../../html/topics/all-about-my-opinion.html"><li>My Opinion</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="links">
-                        <h1>Site Map</h1>
-                        <ul>
-                            <a href="../../../html/site-map.html"><li>Full Site Map</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="social-links">
-                        <h1>Social Links</h1>
-                        <ul>
-                            <a href="https://www.instagram.com/bramermatt/" target="_blank"><li>Instagram</li></a>
-                            <a href="https://twitter.com/bramermatt" target="_blank"><li>Twitter</li></a>
-                            <a href="https://www.youtube.com/channel/UC1OsGesye2hEKRl_dSqwhUw" target="_blank"><li>Youtube</li></a>
-                            <a href="https://github.com/bramermatt"><li>GitHub</li></a>
-                        </ul>
-                    </div>
-                        
-                    </div>
-            
-            <img src="../../../img/mLogo.png" alt="logo">
-            
-            </div>
-        <!-- </div> -->
-
-<button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
-
-<script src="../../../js/top.js"></script>
-
-<div class="up-arrow"></div>
-
-        </div>
+        
     </body>
-    </html> 
+    </html>
