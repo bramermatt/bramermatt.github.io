@@ -451,6 +451,7 @@ body {
 
 .content blockquote {
     padding: 0;
+    padding-top: 5px;
     margin: 0;
     /* border-top: thin solid; */
     font-size: 12px;
@@ -477,6 +478,25 @@ body {
 .content .content-topics a:hover {
     text-decoration: none;
 }
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.35%; 
+    margin-top: 10px;
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 .footer {
     border-top: thin solid #eee;
