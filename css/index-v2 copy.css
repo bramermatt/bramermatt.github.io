@@ -257,7 +257,7 @@ body {
 
 .title-content {
     /* width: 100%; */
-    margin-inline: 85px;
+    margin-inline: 15px;
 }
 
 .title-content h1 {
@@ -275,7 +275,6 @@ body {
     display: grid;
     grid-template-columns: 1.5fr 4fr 1.5fr;
     margin-inline: 2vw;
-    border-top: thin solid;
     /* margin-top: 2vh; */
     max-width: 1450px;
     margin: auto;
@@ -608,8 +607,6 @@ body {
     .small-content, .big-content, .text-content {
         margin: 1vh;
     }
-
-    
 }
 
 
@@ -650,10 +647,6 @@ body {
 
     .middle-body-content {
         margin-inline: 0;
-    }
-
-    .title-content {
-        margin-inline: 15px;
     }
 }
 
