@@ -190,7 +190,11 @@ body {
     }
 
 
+<<<<<<< HEAD
     .left-nav-bar li:hover > img, .right-nav-bar li:hover img {
+=======
+    .left-nav-bar li:hover > img, .right-nav-bar li:hover img, .nav-bar li:hover > img {
+>>>>>>> parent of eaac656 (please stop)
         filter: invert(100);
         border-color: white;
     }
