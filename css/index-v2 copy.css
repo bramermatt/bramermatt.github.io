@@ -190,10 +190,14 @@ body {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     .left-nav-bar li:hover > img, .right-nav-bar li:hover img {
 =======
     .left-nav-bar li:hover > img, .right-nav-bar li:hover img, .nav-bar li:hover > img {
 >>>>>>> parent of eaac656 (please stop)
+=======
+    .left-nav-bar li:hover > img, .right-nav-bar li:hover img {
+>>>>>>> parent of a0c14dc (hello there)
         filter: invert(100);
         border-color: white;
     }
@@ -211,6 +215,7 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .nav-bar {
     display: none;
     /* width: 50%; */
@@ -222,6 +227,8 @@ body {
 }
 
 
+=======
+>>>>>>> parent of a0c14dc (hello there)
 =======
 >>>>>>> parent of a0c14dc (hello there)
 .hamburger {
@@ -482,6 +489,7 @@ body {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 .iframe-container {
     position: relative;
     overflow: hidden;
@@ -562,6 +570,8 @@ body {
     font-size: 15px;
 }
 
+=======
+>>>>>>> parent of a0c14dc (hello there)
 @media screen and (max-width: 1200px) {
     .body-content {
         display: grid;
@@ -604,6 +614,11 @@ body {
     .small-content, .big-content, .text-content {
         margin: 1vh;
     }
+<<<<<<< HEAD
+=======
+
+    
+>>>>>>> parent of a0c14dc (hello there)
 }
 
 
