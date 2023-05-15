@@ -189,11 +189,6 @@ body {
         color: white;
     }
 
-    .right-nav-bar .active {
-        background-color: rgb(29,29,29);
-        color: white;
-    }
-
 
     .left-nav-bar li:hover > img, .right-nav-bar li:hover img, .nav-bar li:hover > img {
         filter: invert(100);
