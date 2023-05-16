@@ -1,0 +1,90 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set font family and size */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Set header styles */
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin-right: auto;
+  }
+  
+  header nav ul {
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Set main styles */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  article {
+    margin-bottom: 40px;
+  }
+  
+  article h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  article h4 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  article p {
+    margin-bottom: 20px;
+  }
+  
+  article a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  /* Set footer styles */
+  footer {
+    background-color: #eee;
+    color: #666;
+    padding: 20px;
+    text-align: center;
+  }
+  

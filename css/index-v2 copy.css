@@ -68,11 +68,11 @@ body {
 
 /* Left Navigation Bar */
 /*  */
-.left-nav-bar {
+.left-nav-bar, .nav-bar {
     /* width: 50px;
     height: 100%; */
     /* width: 4%; */
-    height: 100vh;
+
     width: 65px;
     border-right: thin solid;
     float: left;
@@ -80,10 +80,10 @@ body {
     left: 0;
     overflow-x: hidden;
     position: sticky;
-    z-index: 2;
+    z-index: 3;
 }
 
-.left-nav-bar img {
+.left-nav-bar img, .nav-bar img {
     /* max-height: 5vh; */
     /* padding: 5px; */
 
@@ -94,7 +94,7 @@ body {
     margin-bottom: 3px;
 }
 
-.left-nav-bar ul, .right-nav-bar ul {
+.left-nav-bar ul, .right-nav-bar ul, .nav-bar ul {
     margin: 0;
     list-style-type: none;
     padding: 0;
@@ -103,12 +103,12 @@ body {
     overflow: hidden;
 }
 
-.left-nav-bar a:link, a:visited, .right-nav-bar a:link, a:visited {
+.left-nav-bar a:link, a:visited, .right-nav-bar a:link, a:visited, .nav-bar a:link, a:visited {
     color: var(--text);
     text-decoration: none;
 }
 
-.left-nav-bar li, .right-nav-bar li {
+.left-nav-bar li, .right-nav-bar li, .nav-bar li {
     padding: 5px;
     font-size: 10px;
     font-weight: 700;
@@ -124,14 +124,14 @@ body {
 .right-nav-bar {
     /* width: 50px; */
     /* width: 4%; */
-    height: 100vh;
+
     width: 65px;
     border-left: thin solid;
     float: right;
     top: 0;
     right: 0;
     position: sticky;
-    z-index: 2;
+    z-index: 3;
 }
 
 .right-nav-bar img {
@@ -149,15 +149,15 @@ body {
 @media screen and (prefers-color-scheme: dark) {
 
 
-    .left-nav-bar img, .right-nav-bar img {
+    .left-nav-bar img, .right-nav-bar img, .nav-bar img {
         filter:invert(100);
     }
 
-    .left-nav-bar li:hover > img, .right-nav-bar li:hover img {
+    .left-nav-bar li:hover > img, .right-nav-bar li:hover img, .nav-bar li:hover > img {
         filter:invert(0);
     }
 
-    .left-nav-bar li:hover, .right-nav-bar li:hover {
+    .left-nav-bar li:hover, .right-nav-bar li:hover, .nav-bar li:hover {
         background-color: white;
         color: black;
     }
@@ -189,22 +189,18 @@ body {
     }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    .left-nav-bar li:hover > img, .right-nav-bar li:hover img {
-=======
     .left-nav-bar li:hover > img, .right-nav-bar li:hover img, .nav-bar li:hover > img {
->>>>>>> parent of eaac656 (please stop)
-=======
-    .left-nav-bar li:hover > img, .right-nav-bar li:hover img {
->>>>>>> parent of a0c14dc (hello there)
         filter: invert(100);
         border-color: white;
     }
 
-    .left-nav-bar a li:hover, .right-nav-bar a li:hover {
+    .left-nav-bar a li:hover, .right-nav-bar a li:hover, .nav-bar a li:hover {
         background-color: rgb(29,29,29);
         color: white;
+    }
+
+    .nav-bar {
+        background-color: white;
     }
 
     /* .left-nav-bar .active > li:hover {
@@ -214,8 +210,6 @@ body {
 
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .nav-bar {
     display: none;
     /* width: 50%; */
@@ -223,14 +217,9 @@ body {
     height: 120vh;
     position: relative;
     z-index: 1;
-    /* width: 100%; */
 }
 
 
-=======
->>>>>>> parent of a0c14dc (hello there)
-=======
->>>>>>> parent of a0c14dc (hello there)
 .hamburger {
 
 }
@@ -264,7 +253,7 @@ body {
 
 .title-content {
     /* width: 100%; */
-    margin-inline: 15px;
+    margin-inline: 85px;
 }
 
 .title-content h1 {
@@ -282,7 +271,10 @@ body {
     display: grid;
     grid-template-columns: 1.5fr 4fr 1.5fr;
     margin-inline: 2vw;
+    border-top: thin solid;
     /* margin-top: 2vh; */
+    max-width: 1450px;
+    margin: auto;
 }
 
 .left-content {
@@ -459,7 +451,6 @@ body {
 
 .content blockquote {
     padding: 0;
-    padding-top: 5px;
     margin: 0;
     /* border-top: thin solid; */
     font-size: 12px;
@@ -486,26 +477,6 @@ body {
 .content .content-topics a:hover {
     text-decoration: none;
 }
-
-<<<<<<< HEAD
-.iframe-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.35%; 
-    margin-top: 10px;
-    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
-  }
-
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-  }
 
 .footer {
     border-top: thin solid #eee;
@@ -568,8 +539,6 @@ body {
     font-size: 15px;
 }
 
-=======
->>>>>>> parent of a0c14dc (hello there)
 @media screen and (max-width: 1200px) {
     .body-content {
         display: grid;
@@ -612,11 +581,27 @@ body {
     .small-content, .big-content, .text-content {
         margin: 1vh;
     }
-<<<<<<< HEAD
-=======
+
+    .body-content, .middle-body-content {
+        border-top: none;
+    }
+
+    .footer {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
 
     
->>>>>>> parent of a0c14dc (hello there)
+}
+
+@media screen and (min-width: 640px) {
+    .top-title-bar .hamburger {
+        display: none;
+    }
+
+    .top-title-bar .form {
+        display: none;
+    }
 }
 
 
@@ -657,6 +642,10 @@ body {
 
     .middle-body-content {
         margin-inline: 0;
+    }
+
+    .title-content {
+        margin-inline: 15px;
     }
 }
 
@@ -701,8 +690,8 @@ body {
 
     .left-nav-bar, .right-nav-bar {
         background-color: white;
-        /* height: 100%; */
-        /* bottom: 0; */
+        height: 100%;
+        bottom: 0;
     }
 
     .big-content, .small-content, .text-content {
