@@ -72,7 +72,7 @@ body {
     /* width: 50px;
     height: 100%; */
     /* width: 4%; */
-
+    height: 100vh;
     width: 65px;
     border-right: thin solid;
     float: left;
@@ -80,7 +80,7 @@ body {
     left: 0;
     overflow-x: hidden;
     position: sticky;
-    z-index: 3;
+    z-index: 2;
 }
 
 .left-nav-bar img, .nav-bar img {
@@ -124,14 +124,14 @@ body {
 .right-nav-bar {
     /* width: 50px; */
     /* width: 4%; */
-
+    height: 100vh;
     width: 65px;
     border-left: thin solid;
     float: right;
     top: 0;
     right: 0;
     position: sticky;
-    z-index: 3;
+    z-index: 2;
 }
 
 .right-nav-bar img {
@@ -290,7 +290,7 @@ body {
 }
 
 .middle-body-content {
-    border-top: thin solid;
+    /* border-top: thin solid; */
     margin-inline: 65px;
     /* margin-inline: 60px; */
     
@@ -478,6 +478,29 @@ body {
     text-decoration: none;
 }
 
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.35%; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
 .footer {
     border-top: thin solid #eee;
     width: 100%;
@@ -506,10 +529,7 @@ body {
     text-decoration: none;
 }
 
-.foot-links a li:hover {
-    background-color: black;
-    color: white;
-}
+
 
 .foot-links h1 {
     font-weight: 400;
@@ -619,17 +639,19 @@ body {
 
     .top-title-bar .top-title-bar-title h2 {
         display: block;
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .hamburger a {
-        margin: 1rem;
+        /* margin: 1rem; */
     }
 
     .top-title-bar-content {
-        margin-inline: 0;
-        justify-content: start;
-        align-items: baseline;
+        /* margin-inline: 0; */
+        /* justify-content: start; */
+        justify-content: space-between;
+        align-items: center;
+        /* align-items: baseline; */
     }
     
     .header {
@@ -650,9 +672,12 @@ body {
 }
 
 @media screen and (prefers-color-scheme: dark) {
-    .top-title-bar {
+    .top-title-bar, .left-nav-bar, .right-nav-bar {
         background-color: black;
+        opacity: 95%;
     }
+
+
 
     .content blockquote {
         color: lightgrey;
@@ -674,6 +699,12 @@ body {
         background-color: rgb(26, 26, 26);
     }
 
+
+    .foot-links a li:hover {
+        background-color: white;
+        color: black;
+    }
+
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -690,8 +721,8 @@ body {
 
     .left-nav-bar, .right-nav-bar {
         background-color: white;
-        height: 100%;
-        bottom: 0;
+        /* height: 100%; */
+        /* bottom: 0; */
     }
 
     .big-content, .small-content, .text-content {
@@ -700,4 +731,11 @@ body {
         background-color: white;
         /* background-color: rgb(26, 26, 26); */
     }
+
+    .foot-links a li:hover {
+        background-color: black;
+        color: white;
+    }
+
+
 }
