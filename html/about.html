@@ -7,184 +7,66 @@
     <meta name="color-scheme" content="light dark"/>
 
     <link rel="shortcut icon" type="image/x-icon" href="../img/mLogo.png">
-    <link rel="stylesheet" href="../css/index-v2.css">   
+    <link rel="stylesheet" href="../css/index.css">   
     
     <title>About | Matt Bramer</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/dropDown.js"></script>
 
 
 </head>
 <body>
-    <div class="hamburger">
-        <script src="../js/hamburger-v2.js"></script>
-        <a href="#" onclick="myFunction()">
-        <!-- <img src="https://uploads-ssl.webflow.com/5a30b30549520e00017e33c4/61470bea9aeca36c0aaed56f_menu.svg"> -->
-        &#9776;
-    </a>
-    <!-- <p>mattbramer</p> -->
-    </div>
+
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
 
     <script src="../js/top.js"></script>
 
-    <div class="navbar">
-        <ul>
+    <div class="top-title-bar">
 
-            <a href="../index.html"><li>
-                <img src="../img/navbar-icons/home.svg">
-                home</li></a>
-            <a href="../html/recents.html"><li>
-                <img src="../img/navbar-icons/recents.svg">
-                recent</li></a>
-            <a href="../html/blogs.html"><li>
-                <img src="../img/navbar-icons/blog.svg">
-                blog</li></a>
-            <a href="../html/coverage.html"><li>
-                <img src="../img/navbar-icons/coverage.svg">
-                coverage</li></a>
-            <a href="../html/projects.html"><li>
-                <img src="../img/navbar-icons/projects.svg">
-                projects</li></a>
-            <a href="../html/reviews.html"><li>
-                <img src="../img/navbar-icons/reviews.svg">
-                reviews</li></a>
-            <a href="../html/videos.html"><li>
-                <img src="../img/navbar-icons/videos.svg">
-                videos</li></a>
-            <a href="../html/about.html" class="active"><li>
-                <img src="../img/navbar-icons/about.svg">
-                about</li></a>
-            <hr>
-            <a href="../html/reviews/franchise/in-reviews.html"><li>
-                <img src="../img/navbar-icons/in-reviews.svg">
-                In Reviews</li></a>
-            <a href="../html/topics/all-topics.html"><li>
-                <img src="../img/navbar-icons/topics.svg">
-                Topics</li></a>
-
-
-            <!-- <a href="../html/site-map.html"><img src="../img/mLogo.png" alt="logo"></a>
-            <a href="../index.html"><li>home</li></a>
-            <a href="recents.html"><li>recent</li></a>
-            <a href="blogs.html"><li>blog</li></a>
-            <a href="coverage.html"><li>coverage</li></a>
-            <a href="projects.html"><li>projects</li></a>
-            <a href="reviews.html"><li>reviews</li></a>
-            <a href="videos.html"><li>videos</li></a>
-            <a href="about.html" class="active"><li>about</li></a>
-            <hr>
-            <a href="../html/2022-in-review.html"><li>2022 in Review</li></a>
-            <a href="../html/cosmere-in-review.html"><li>Cosmere in Review</li></a>
-            <a href="../html/reviews/franchise/wheel-of-time-in-review.html"><li>Wheel of Time in Review</li></a>
-            <a href="../html/reviews/franchise/harry-potter-in-review.html"><li>Harry Potter in Review</li></a>
-            <a href="../html/reviews/franchise/lotr-in-review.html"><li>Lord of the Rings in Review</li></a>
-            <a href="../html/reviews/franchise/starwars-in-review.html"><li>Star Wars in Review</li></a>
-            <hr>
-            <a href="../html/reviews/book-reviews.html"><li>Book Reviews</li></a>
-            <a href="../html/reviews/movie-reviews.html" ><li>Movie Reviews</li></a>
-            <a href="../html/blogs/bike-commute.html"><li>Bike Commute Blogs</li></a>
-            <a href="../html/blogs/updates.html"><li>Update Blogs</li></a>
-            <hr>
-            <a href="../html/topics/all-about-books.html"><li>Books</li></a> -->
-        </ul>
-    </div>
-
-    <div class="inline-navbar" id="inline-navbar">
-        <!-- <ul>
-            <img src="../../../img/mLogo.png" alt="logo">
-            <a href="../../../index.html"><li>home</li></a>
-            <a href="../../../html/recents.html"><li>recent</li></a>
-            <a href="../../../html/blogs.html"><li>blog</li></a>
-            <a href="../../../html/coverage.html"><li>coverage</li></a>
-            <a href="../../../html/projects.html"><li>projects</li></a>
-            <a href="../../../html/reviews.html"><li>reviews</li></a>
-            <a href="../../../html/videos.html"><li>videos</li></a>
-            <a href="../../../html/about.html"><li>about</li></a>
-        </ul> -->
-        <!-- <div class="footer"> -->
-
-
-            <div class="foot-buttons">
-
-                <div class="links">
-                    <h1>Site Links</h1>
-                    <ul>
-                        <!-- <img src="img/mLogo.png" alt="logo"> -->
-                        <a href="../index.html"><li>home</li></a>
-                        <a href="../html/recents.html"><li>recent</li></a>
-                        <a href="../html/blogs.html"><li>blog</li></a>
-                        <a href="../html/coverage.html"><li>coverage</li></a>
-                        <a href="../html/projects.html"><li>projects</li></a>
-                        <a href="../html/reviews.html"><li>reviews</li></a>
-                        <a href="../html/videos.html"><li>videos</li></a>
-                        <a href="../html/about.html" class="active"><li>about</li></a>
-                    </ul>
-                </div>
+        <!-- Title Bar Content -->
+        <div class="top-title-bar-content">
+            <!-- Nav Icon -->
+            <div class="hamburger">
+                <script src="../js/sidebar-nav.js"></script>
+                <a href="#" onclick="myFunction()">&#9776;
+            </a>
+            </div>
             
-                <div class="links">
-                    <h1>In Reviews</h1>
-                    <ul>
-                        <a href="../html/2022-in-review.html"><li>2022 in Review</li></a>
-                        <a href="../html/cosmere-in-review.html"><li>Cosmere in Review</li></a>
-                        <a href="../html/reviews/franchise/harry-potter-in-review.html"><li>Harry Potter in Review</li></a>
-                        <a href="../html/reviews/franchise/last-of-us-in-review.html"><li>Last of Us in Review</li></a>
-                        <a href="../html/reviews/franchise/lotr-in-review.html"><li>Lord of the Rings in Review</li></a>
-                        <a href="../html/reviews/franchise/starwars-in-review.html"><li>Star Wars in Review</li></a>
-                        <a href="../html/reviews/franchise/wheel-of-time-in-review.html"><li>Wheel of Time in Review</li></a>
-            
-                    </ul>
-                </div>
-            
-                <div class="more-links">
-                    <h1>More Site Links</h1>
-                    <ul>
-                        <a href="../html/reviews/book-reviews.html"><li>Book Reviews</li></a>
-                        <br>
-                        <a href="../html/reviews/movie-reviews.html" ><li>Movie Reviews</li></a>
-                        <br>
-                        <a href="../html/blogs/bike-commute.html"><li>Bike Commute Blogs</li></a>
-                        <a href="../html/blogs/updates.html"><li>Update Blogs</li></a>
-                    </ul>
-                </div>
-            
-                <div class="links">
-                    <h1>Topics</h1>
-                    <ul>
-                        <a href="../html/topics/all-about-books.html"><li>Books</li></a>
-                        <a href="../html/topics/all-about-my-opinion.html"><li>My Opinion</li></a>
-                    </ul>
-                </div>
-            
-                <div class="links">
-                    <h1>Site Map</h1>
-                    <ul>
-                        <a href="../html/site-map.html"><li>Full Site Map</li></a>
-                    </ul>
-                </div>
-            
-                <div class="social-links">
-                    <h1>Social Links</h1>
-                    <ul>
-                        <a href="https://www.instagram.com/bramermatt/" target="_blank"><li>Instagram</li></a>
-                        <a href="https://twitter.com/bramermatt" target="_blank"><li>Twitter</li></a>
-                        <a href="https://www.youtube.com/channel/UC1OsGesye2hEKRl_dSqwhUw" target="_blank"><li>Youtube</li></a>
-                        <a href="https://github.com/bramermatt"><li>GitHub</li></a>
-                    </ul>
-                </div>
-                    
-                </div>
-        
-        <img src="../img/mLogo.png" alt="logo">
-        
+
+            <!-- Logo 
+            <img src="img/mLogo.png">
+            -->
+
+            <!-- Title of Page -->
+            <div class="top-title-bar-title">
+            <h2>About Me</h2>
+            </div>
+
+            <!-- Searchbox -->
+            <div class="form" id="searchbox" role="search">
+                <input type="text" placeholder="Search.."><button>Search</button>
+            </div>
+
         </div>
+
     </div>
 
-    <div class="hero-title">
-        <h1>About Me</h1>
-    </div>
+    <div class="nav-bar" id="nav-bar">
+        <ul>
+        <a href="../index.html"><li><img src="../img/navbar-icons/home.svg">home</li></a>
+        <a href="../html/blogs.html"><li><img src="../img/navbar-icons/blog.svg">blog</li></a>
+        <a href="../html/projects.html"><li><img src="../img/navbar-icons/projects.svg">projects</li></a>
+        <a href="../html/reviews.html"><li><img src="../img/navbar-icons/reviews.svg">reviews</li></a>
+        <a href="../html/about.html" class="active"><li><img src="../img/navbar-icons/about.svg">about</li></a>
+        <hr>
+        <a href="../html/in-reviews.html"><li><img src="../img/navbar-icons/in-reviews.svg">In Reviews</li></a>
+        <a href="../html/all-topics.html"><li><img src="../img/navbar-icons/topics.svg">Topics</li></a>
+        </ul>
+        </div>
+
+    <!-- <div class="header">
+        <img src="../img/page/html/reviews.jpg" >
+    </div> -->
 
     <div class="blog-alt-title">
         <div>
@@ -211,6 +93,42 @@
 
 
     </div>
+
+    <div class="left-nav-bar">
+        <ul>
+        <a href="../index.html"><li><img src="../img/navbar-icons/home.svg">home</li></a>
+        <a href="../html/blogs.html"><li><img src="../img/navbar-icons/blog.svg">blog</li></a>
+        <a href="../html/projects.html"><li><img src="../img/navbar-icons/projects.svg">projects</li></a>
+        <a href="../html/reviews.html"><li><img src="../img/navbar-icons/reviews.svg">reviews</li></a>
+        <a href="../html/about.html" class="active"><li><img src="../img/navbar-icons/about.svg">about</li></a>
+        <hr>
+        <a href="../html/in-reviews.html"><li><img src="../img/navbar-icons/in-reviews.svg">In Reviews</li></a>
+        <a href="../html/all-topics.html"><li><img src="../img/navbar-icons/topics.svg">Topics</li></a>
+        </ul>
+    </div>
+
+    <!-- <div class="right-nav-bar">
+    <ul>
+    <a href="#books"><li><img src="../img/navbar-icons/books.svg">Books</li></a>
+    <a href="#food"><li><img src="../img/navbar-icons/food.svg">Food</li></a>
+    <a href="#games"><li><img src="../img/navbar-icons/games.svg">Games</li></a>
+    <a href="#movies"><li><img src="../img/navbar-icons/movie.svg">Movies</li></a>
+    <a href="#tech"><li><img src="../img/navbar-icons/tech.svg">Tech</li></a>
+    <a href="#tv"><li><img src="../img/navbar-icons/tv.svg">TV Shows</li></a>
+    </ul>
+    </div> -->
+
+    <!-- <div class="title-content">
+        <h1 id="2023">Book Reviews</h1>
+    </div> -->
+
+    <div class="body-content">
+
+    <!-- <div class="hero-title">
+        <h1>About Me</h1>
+    </div> -->
+
+
 
     <div class="blog-container">
         <div class="blog" style="width: 100%;">
@@ -240,155 +158,75 @@
 
     </div>
     </div>
-
-
-
-
-    <!-- <div class="news">
-        <div class="news-posts">
-                <div class="individual-news" style="max-width: 900px; margin: auto; margin-top: 30px;">
-                    <img src="../img/matt-4.jpg" alt="personal image">
-                    <div class="news-topic">
-                        <div class="news-tag">
-                            <p>&#127891; Computer Science @ <a href="https://www.snhu.edu" target="_blank">SNHU</a><br>BS (est grad 2025)</p>
-                        </div>
-                        <div class="news-tag">
-                            <p>&#128176; Working @ <a href="https://mercer-trans.com" target="_blank">Mercer Transportation</a><br>IT Help Desk Tier II (2 years+)</p>
-                        </div>
-                        <div class="news-title">
-                        <h2>Hi 👋&nbsp;I'm Matt Bramer!</h2>
-                        </div>
-                        <div class="news-subtitle">
-                        <p>Find my Career, <a href="blogs.html">Blogs</a>, <a href="coverage.html">Coverage</a>, <a href="projects.html">Projects</a>, and <a href="reviews.html">Reviews</a>!</p>
-                        </div>
-                    </div>
-                </div>
-        
     </div>
-</div> -->
 
-<!-- <div class="blog-container">
+    <div class="footer">
+        <div class="foot-buttons">
+    
+            <div class="foot-links">
+                <h1>Site Links</h1>
+                <ul>
+                <a href="../index.html"><li>Home</li></a>
+                <a href="../html/blogs.html"><li>Blog</li></a>
+                <a href="../html/projects.html"><li>Projects</li></a>
+                <a href="../html/reviews.html"><li>Reviews</li></a>
+                <a href="../html/about.html" class="active"><li>About Me</li></a>
+                </ul>
+            </div>
+    
+            <div class="foot-links">
+                <h1>In Reviews</h1>
+                <ul>
+                <a href="../html/reviews/year-in/2022-in-review.html"><li>2022 in Review</li></a>
+                <a href="../html/reviews/franchise/cosmere-in-review.html"><li>Cosmere in Review</li></a>
+                <a href="../html/reviews/franchise/harry-potter-in-review.html"><li>Harry Potter in Review</li></a>
+                <a href="../html/reviews/franchise/last-of-us-in-review.html"><li>Last of Us in Review</li></a>
+                <a href="../html/reviews/franchise/lotr-in-review.html"><li>Lord of the Rings in Review</li></a>
+                <a href="../html/reviews/franchise/starwars-in-review.html"><li>Star Wars in Review</li></a>
+                <a href="../html/reviews/franchise/wheel-of-time-in-review.html"><li>Wheel of Time in Review</li></a>
+                </ul>
+            </div>
+    
+            <div class="foot-links">
+                <h1>More Site Links</h1>
+                <ul>
+                <a href="../html/reviews/topics/book-reviews.html"><li>Book Reviews</li></a>
+                <a href="../html/reviews/topics/movie-reviews.html"><li>Movie Reviews</li></a>
+                <br>
+                <a href="../html/blogs/bike-commute.html"><li>Bike Commute Blogs</li></a>
+                <a href="../html/blogs/updates.html"><li>Website Update Blogs</li></a>
+                </ul>
+            </div>
+    
+            <div class="foot-links">
+                <h1>Topics</h1>
+                <ul>
+                <a href="../html/topics/all-about-books.html"><li>All About Books</li></a>
+                <a href="../html/topics/all-about-my-opinion.html"><li>All About My Opinion</li></a>
+                </ul>
+            </div>
+    
+            <div class="foot-links">
+                <h1>Site Map</h1>
+                <ul>
+                <a href="../html/site-map.html"><li>Full Site Map</li></a>
+                </ul>
+            </div>
+    
+            <div class="foot-links">
+                <h1>Social Links</h1>
+                <ul>
+                    <a href="https://www.instagram.com/bramermatt/" target="_blank"><li>Instagram</li></a>
+                    <a href="https://twitter.com/bramermatt" target="_blank"><li>Twitter</li></a>
+                    <a href="https://www.youtube.com/channel/UC1OsGesye2hEKRl_dSqwhUw" target="_blank"><li>Youtube</li></a>
+                    <a href="https://github.com/bramermatt"><li>GitHub</li></a>
+                </ul>
+            </div>
     
     
-    <div class="flex-row">
-
-        <div class="row-item">
-            <img src="../img/Black_colour.jpg.webp" alt="img">
-            <h2>Senior Sales Consutant Technology</h2>
-            <p>Office Depot · Full-time</p>
-            <p><em>Sep 2014 - Apr 2016 · 1 yr 8 mos</em></p>
-
         </div>
-        
-
-        <div class="row-item">
-            <img src="../img/Black_colour.jpg.webp" alt="img">
-            <h2>Customer Experience Specialist</h2>
-            <p>Chick-fil-A-Franchise</p>
-            <p><em>Sep 2012 - Sep 2014 · 2 yrs 1 mo</em></p>
-        </div>
-
     </div>
 
-</div> -->
-
-<!-- artificially making a line break -->
-
-<div class="section">
-    <div class="posts">
-    </div>
-    </div>
-   
-
-    <!-- <div class="inline-navbar" id="inline-navbar"> -->
-        <!-- <ul>
-            <img src="../../../img/mLogo.png" alt="logo">
-            <a href="../../../index.html"><li>home</li></a>
-            <a href="../../../html/recents.html"><li>recent</li></a>
-            <a href="../../../html/blogs.html"><li>blog</li></a>
-            <a href="../../../html/coverage.html"><li>coverage</li></a>
-            <a href="../../../html/projects.html"><li>projects</li></a>
-            <a href="../../../html/reviews.html"><li>reviews</li></a>
-            <a href="../../../html/videos.html"><li>videos</li></a>
-            <a href="../../../html/about.html"><li>about</li></a>
-        </ul> -->
-        <div class="footer">
-
-
-            <div class="foot-buttons">
-
-                <div class="links">
-                    <h1>Site Links</h1>
-                    <ul>
-                        <!-- <img src="img/mLogo.png" alt="logo"> -->
-                        <a href="../index.html"><li>home</li></a>
-                        <a href="../html/recents.html"><li>recent</li></a>
-                        <a href="../html/blogs.html"><li>blog</li></a>
-                        <a href="../html/coverage.html"><li>coverage</li></a>
-                        <a href="../html/projects.html"><li>projects</li></a>
-                        <a href="../html/reviews.html"><li>reviews</li></a>
-                        <a href="../html/videos.html"><li>videos</li></a>
-                        <a href="../html/about.html"><li>about</li></a>
-                    </ul>
-                </div>
-            
-                <div class="links">
-                    <h1>In Reviews</h1>
-                    <ul>
-                        <a href="../html/2022-in-review.html"><li>2022 in Review</li></a>
-                        <a href="../html/cosmere-in-review.html"><li>Cosmere in Review</li></a>
-                        <a href="../html/reviews/franchise/harry-potter-in-review.html"><li>Harry Potter in Review</li></a>
-                        <a href="../html/reviews/franchise/last-of-us-in-review.html"><li>Last of Us in Review</li></a>
-                        <a href="../html/reviews/franchise/lotr-in-review.html"><li>Lord of the Rings in Review</li></a>
-                        <a href="../html/reviews/franchise/starwars-in-review.html"><li>Star Wars in Review</li></a>
-                        <a href="../html/reviews/franchise/wheel-of-time-in-review.html"><li>Wheel of Time in Review</li></a>
-            
-                    </ul>
-                </div>
-            
-                <div class="more-links">
-                    <h1>More Site Links</h1>
-                    <ul>
-                        <a href="../html/reviews/book-reviews.html"><li>Book Reviews</li></a>
-                        <br>
-                        <a href="../html/reviews/movie-reviews.html" ><li>Movie Reviews</li></a>
-                        <br>
-                        <a href="../html/blogs/bike-commute.html"><li>Bike Commute Blogs</li></a>
-                        <a href="../html/blogs/updates.html"><li>Update Blogs</li></a>
-                    </ul>
-                </div>
-            
-                <div class="links">
-                    <h1>Topics</h1>
-                    <ul>
-                        <a href="../html/topics/all-about-books.html"><li>Books</li></a>
-                        <a href="../html/topics/all-about-my-opinion.html"><li>My Opinion</li></a>
-                    </ul>
-                </div>
-            
-                <div class="links">
-                    <h1>Site Map</h1>
-                    <ul>
-                        <a href="../html/site-map.html"><li>Full Site Map</li></a>
-                    </ul>
-                </div>
-            
-                <div class="social-links">
-                    <h1>Social Links</h1>
-                    <ul>
-                        <a href="https://www.instagram.com/bramermatt/" target="_blank"><li>Instagram</li></a>
-                        <a href="https://twitter.com/bramermatt" target="_blank"><li>Twitter</li></a>
-                        <a href="https://www.youtube.com/channel/UC1OsGesye2hEKRl_dSqwhUw" target="_blank"><li>Youtube</li></a>
-                        <a href="https://github.com/bramermatt"><li>GitHub</li></a>
-                    </ul>
-                </div>
-                    
-                </div>
-        
-        <img src="../img/mLogo.png" alt="logo">
-        
-        </div>
-    <!-- </div> -->
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
 
