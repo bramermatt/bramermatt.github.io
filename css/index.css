@@ -61,10 +61,34 @@ body {
     padding: 5px;
 }
 
+.top-title-bar-title {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 
 .top-title-bar .top-title-bar-title h2 {
     margin: 0;
+    padding-inline: 15px;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     /* display: none; */
+}
+
+.top-title-bar-spoiler {
+    /* overflow: hidden; */
+    white-space: nowrap;
+}
+
+.top-title-bar-spoiler h2 {
+    margin: 0;
+    padding: .5em;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    text-overflow: ellipsis;
 }
 
 /* Left Navigation Bar */
@@ -272,6 +296,10 @@ body {
 
 .body-content {
     margin-inline: 65px;
+}
+
+.blog-content {
+    margin-left: 65px;
 }
 
 .spread-content {
@@ -601,7 +629,10 @@ body {
         margin-inline: 0;
     }
 
-
+    .top-title-bar .top-title-bar-title h2, .top-title-bar-spoiler h2 {
+        display: block;
+        font-size: 18px;
+    }
 
 
 
@@ -615,6 +646,9 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+
+
+
     .spread-content {
         display: grid;
         grid-template-columns: 1fr;
@@ -680,7 +714,7 @@ body {
         top: 0;
     }
 
-    .top-title-bar .top-title-bar-title h2 {
+    .top-title-bar .top-title-bar-title h2, .top-title-bar-spoiler h2 {
         display: block;
         font-size: 14px;
     }
@@ -705,7 +739,7 @@ body {
         display: none;
     }
 
-    .body-content {
+    .body-content, .blog-content {
         margin-inline: 0;
     }
 
@@ -3642,9 +3676,10 @@ table {
 
 .blog-container {
     /* max-width: 1450px; */
-    /* max-width: 1600px; */
-    max-width: 1800px;
-    width: 90vw;
+    max-width: 1600px;
+    width: 94vw;
+    /* max-width: 1800px; */
+    /* width: 90vw; */
     /* max-width: 67%; */
     /* max-width: 1250px; */
     margin-left: auto;

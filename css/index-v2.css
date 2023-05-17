@@ -3252,9 +3252,9 @@ table {
 
 .blog-container {
     /* max-width: 1450px; */
-    /* max-width: 1600px; */
-    max-width: 1800px;
-    width: 90vw;
+    max-width: 1600px;
+    /* max-width: 1800px; */
+    width: 94vw;
     /* max-width: 67%; */
     /* max-width: 1250px; */
     margin-left: auto;
