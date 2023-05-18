@@ -708,11 +708,11 @@ body {
         display: none;
     }
 
-    .top-title-bar {
+    /* .top-title-bar {
         position: sticky;
         z-index: 3;
         top: 0;
-    }
+    } */
 
     .top-title-bar .top-title-bar-title h2, .top-title-bar-spoiler h2 {
         display: block;
