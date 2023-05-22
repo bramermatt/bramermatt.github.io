@@ -2620,7 +2620,9 @@ table {
     /* margin-bottom: 15px; */
     /* filter: drop-shadow(0 0 2.5px rgb(0, 0, 0)); */
 
-    /* border-radius: 20px; */
+    /* border-radius: 28px;
+    padding: 1em;
+    padding-bottom: 0; */
 }
 
 .title a:link, a:visited {
@@ -2929,6 +2931,9 @@ table {
     max-height: 85vh;
     object-fit: contain;
     /* margin: auto; */
+
+    border-radius: 28px;
+    padding: 1em;
 }
 
 
@@ -5937,7 +5942,7 @@ details p, details h2 {
     } */
 
     .blog-title img, .blog-alt-title img, .blog-vertical img {
-        box-shadow: 0 0px 5px rgba(255, 255, 255, 0.2);
+        /* box-shadow: 0 0px 5px rgba(255, 255, 255, 0.2); */
     }
 
     .blog-title, .blog-alt-title, .blog-vertical {
