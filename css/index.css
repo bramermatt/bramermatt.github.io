@@ -19,7 +19,8 @@ body.light {
 /* holding off on dark mode right now */
 body.dark {
     --text: white;
-    --background: dark;
+    /* --background: dark; */
+    --background: #3a3a3a;
 } 
 
 body {
@@ -42,7 +43,7 @@ body {
     left: 0;
     /* position: sticky;
     z-index: 4; */
-    background-color: white;
+    /* background-color: white; */
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 10%);
     /* opacity: 95%; */
 }
@@ -50,7 +51,8 @@ body {
 .top-title-bar-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
     margin-inline: 15px;
     padding: 5px;
     text-transform: lowercase;
@@ -80,6 +82,7 @@ body {
 .top-title-bar-spoiler {
     /* overflow: hidden; */
     white-space: nowrap;
+
 }
 
 .top-title-bar-spoiler h2 {
@@ -89,6 +92,7 @@ body {
     background-color: red;
     color: white;
     text-overflow: ellipsis;
+    border-radius: 28px;
 }
 
 /* Left Navigation Bar */
@@ -106,7 +110,7 @@ body {
     overflow-x: hidden;
     position: sticky;
     z-index: 2;
-    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 10%);
+    /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 10%); */
 }
 
 .left-nav-bar img, .nav-bar img {
@@ -160,7 +164,7 @@ body {
     right: 0;
     position: sticky;
     z-index: 2;
-    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 10%);
+    /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 10%); */
 }
 
 .right-nav-bar img {
@@ -177,6 +181,7 @@ body {
 
 /* navbar imgs hover */
 @media screen and (prefers-color-scheme: dark) {
+
 
 
     .left-nav-bar img, .right-nav-bar img, .nav-bar img {
@@ -278,7 +283,10 @@ body {
     max-height: 44vh;
     object-fit: cover;
     width: 100%;
-    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
+    /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%); */
+
+    padding: 1em;
+    border-radius: 28px;
 }
 
 .title-content {
@@ -692,9 +700,9 @@ body {
 }
 
 @media screen and (min-width: 640px) {
-    .top-title-bar .hamburger {
+    /* .top-title-bar .hamburger {
         display: none;
-    }
+    } */
 
     .top-title-bar .form {
         display: none;
@@ -754,7 +762,8 @@ body {
 
 @media screen and (prefers-color-scheme: dark) {
     .top-title-bar, .left-nav-bar, .right-nav-bar {
-        background-color: black;
+        /* background-color: black; */
+        /* --background: #3a3a3a; */
         opacity: 95%;
     }
 
@@ -3603,6 +3612,7 @@ table {
     background: red;
     padding-top: 5px;
     padding-bottom: 5px;
+
     /* margin-bottom: 20px; */
     /* margin-top: 20px; */
     /* margin: 10px; */
