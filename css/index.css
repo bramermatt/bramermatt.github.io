@@ -4564,8 +4564,12 @@ details {
     position: relative;
     cursor: pointer;
     transition: 2ms ease all;
-    min-width: 250px;
+    /* min-width: 250px; */
 
+    width: 650px;
+    max-width: 100%;
+    /* width: 100%; */
+    overflow: hidden;
     /* width: 750px; */
     /* max-width: 100%; */
     /* position: sticky;

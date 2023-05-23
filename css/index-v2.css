@@ -2933,7 +2933,7 @@ table {
     /* margin: auto; */
 
     border-radius: 28px;
-    padding: 1em;
+    /* padding: 1em; */
 }
 
 
@@ -6340,6 +6340,7 @@ details p, details h2 {
     /* padding-bottom: 15px; */
     /* border-bottom: thin solid; */
     border-bottom: .25px solid #eee;
+    padding: 1em;
 } 
 
 
