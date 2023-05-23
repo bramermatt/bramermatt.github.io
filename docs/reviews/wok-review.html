@@ -9,220 +9,135 @@
         <meta name="color-scheme" content="light dark"/>
 
         <link rel="shortcut icon" type="image/x-icon" href="../../img/mLogo.png">
-        <link rel="stylesheet" href="../../css/index-v2.css">   
+        <link rel="stylesheet" href="../../css/index.css">   
         
         <!-- <title>Matt Bramer | Home</title> -->
         
     
     </head>
     <body>
-        <div class="hamburger">
-            <script src="../../js/hamburger-v2.js"></script>
-            <a href="#" onclick="myFunction()">
-            <!-- <img src="https://uploads-ssl.webflow.com/5a30b30549520e00017e33c4/61470bea9aeca36c0aaed56f_menu.svg"> -->
-            &#9776;
-        </a>
-        <!-- <p>mattbramer</p> -->
-        </div>
+    <!-- js -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
+    <script src="../../js/top.js"></script>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
+    <script src="../../js/active.js"></script>
 
-        <script src="../../js/top.js"></script>
-    
-        <div class="navbar">
-            <ul>
-                <a href="../../index.html"><li>
-                    <img src="../../img/navbar-icons/home.svg">
-                    home</li></a>
-                <a href="../../html/recents.html"><li>
-                    <img src="../../img/navbar-icons/recents.svg">
-                    recent</li></a>
-                <a href="../../html/blogs.html"><li>
-                    <img src="../../img/navbar-icons/blog.svg">
-                    blog</li></a>
-                <a href="../../html/coverage.html"><li>
-                    <img src="../../img/navbar-icons/coverage.svg">
-                    coverage</li></a>
-                <a href="../../html/projects.html"><li>
-                    <img src="../../img/navbar-icons/projects.svg">
-                    projects</li></a>
-                <a href="../../html/reviews.html"><li>
-                    <img src="../../img/navbar-icons/reviews.svg">
-                    reviews</li></a>
-                <a href="../../html/videos.html"><li>
-                    <img src="../../img/navbar-icons/videos.svg">
-                    videos</li></a>
-                <a href="../../html/about.html"><li>
-                    <img src="../../img/navbar-icons/about.svg">
-                    about</li></a>
-                <hr>
-                <a href="../../html/reviews/franchise/in-reviews.html"><li>
-                    <img src="../../img/navbar-icons/in-reviews.svg">
-                    In Reviews</li></a>
-                <a href="../../html/topics/all-topics.html"><li>
-                    <img src="../../img/navbar-icons/topics.svg">
-                    Topics</li></a>
+    <div class="top-title-bar">
 
-                <!-- <img src="../../../img/mLogo.png" alt="logo">
-                <a href="../../../index.html"><li>home</li></a>
-                <a href="../../../html/recents.html"><li>recent</li></a>
-                <a href="../../../html/blogs.html"><li>blog</li></a>
-                <a href="../../../html/coverage.html"><li>coverage</li></a>
-                <a href="../../../html/projects.html"><li>projects</li></a>
-                <a href="../../../html/reviews.html"><li>reviews</li></a>
-                <a href="../../../html/videos.html"><li>videos</li></a>
-                <a href="../../../html/about.html"><li>about</li></a> -->
-            </ul>
-        </div>
-    
-        <div class="inline-navbar" id="inline-navbar">
-            <!-- <ul>
-                <img src="../../../img/mLogo.png" alt="logo">
-                <a href="../../../index.html"><li>home</li></a>
-                <a href="../../../html/recents.html"><li>recent</li></a>
-                <a href="../../../html/blogs.html"><li>blog</li></a>
-                <a href="../../../html/coverage.html"><li>coverage</li></a>
-                <a href="../../../html/projects.html"><li>projects</li></a>
-                <a href="../../../html/reviews.html"><li>reviews</li></a>
-                <a href="../../../html/videos.html"><li>videos</li></a>
-                <a href="../../../html/about.html"><li>about</li></a>
-            </ul> -->
-            <!-- <div class="footer"> -->
-
-
-                <div class="foot-buttons">
-    
-                    <div class="links">
-                        <h1>Site Links</h1>
-                        <ul>
-                            <!-- <img src="img/mLogo.png" alt="logo"> -->
-                            <a href="../../index.html"><li>home</li></a>
-                            <a href="../../html/recents.html"><li>recent</li></a>
-                            <a href="../../html/blogs.html"><li>blog</li></a>
-                            <a href="../../html/coverage.html"><li>coverage</li></a>
-                            <a href="../../html/projects.html"><li>projects</li></a>
-                            <a href="../../html/reviews.html"><li>reviews</li></a>
-                            <a href="../../html/videos.html"><li>videos</li></a>
-                            <a href="../../html/about.html"><li>about</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="links">
-                        <h1>In Reviews</h1>
-                        <ul>
-                            <a href="../../html/2022-in-review.html"><li>2022 in Review</li></a>
-                            <a href="../../html/cosmere-in-review.html"><li>Cosmere in Review</li></a>
-                            <a href="../../html/reviews/franchise/harry-potter-in-review.html"><li>Harry Potter in Review</li></a>
-                            <a href="../../html/reviews/franchise/last-of-us-in-review.html"><li>Last of Us in Review</li></a>
-                            <a href="../../html/reviews/franchise/lotr-in-review.html"><li>Lord of the Rings in Review</li></a>
-                            <a href="../../html/reviews/franchise/starwars-in-review.html"><li>Star Wars in Review</li></a>
-                            <a href="../../html/reviews/franchise/wheel-of-time-in-review.html"><li>Wheel of Time in Review</li></a>
-                
-                        </ul>
-                    </div>
-                
-                    <div class="more-links">
-                        <h1>More Site Links</h1>
-                        <ul>
-                            <a href="../../html/reviews/book-reviews.html"><li>Book Reviews</li></a>
-                            <br>
-                            <a href="../../html/reviews/movie-reviews.html" ><li>Movie Reviews</li></a>
-                            <br>
-                            <a href="../../html/blogs/bike-commute.html"><li>Bike Commute Blogs</li></a>
-                            <a href="../../html/blogs/updates.html"><li>Update Blogs</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="links">
-                        <h1>Topics</h1>
-                        <ul>
-                            <a href="../../html/topics/all-about-books.html"><li>Books</li></a>
-                            <a href="../../html/topics/all-about-my-opinion.html"><li>My Opinion</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="links">
-                        <h1>Site Map</h1>
-                        <ul>
-                            <a href="../../html/site-map.html"><li>Full Site Map</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="social-links">
-                        <h1>Social Links</h1>
-                        <ul>
-                            <a href="https://www.instagram.com/bramermatt/" target="_blank"><li>Instagram</li></a>
-                            <a href="https://twitter.com/bramermatt" target="_blank"><li>Twitter</li></a>
-                            <a href="https://www.youtube.com/channel/UC1OsGesye2hEKRl_dSqwhUw" target="_blank"><li>Youtube</li></a>
-                            <a href="https://github.com/bramermatt"><li>GitHub</li></a>
-                        </ul>
-                    </div>
-                        
-                    </div>
+        <!-- Title Bar Content -->
+        <div class="top-title-bar-content">
+            <!-- Nav Icon -->
+            <div class="hamburger">
+                <script src="../../js/sidebar-nav.js"></script>
+                <a href="#" onclick="myFunction()">&#9776;
+            </a>
+            </div>
             
-            <img src="../../img/mLogo.png" alt="logo">
-            
+
+            <!-- Logo 
+            <img src="img/mLogo.png">
+            -->
+
+            <!-- Title of Page -->
+            <div class="top-title-bar-title">
+            <!-- <h2>Lord of Chaos Review</h2> -->
+            <h2>The Way of Kings Book Review</h2>
             </div>
+
+            <div class="top-title-bar-spoiler">
+                <h2>Spoiler Alert</h2>
+            </div>
+
+            <!-- Searchbox -->
+            <div class="form" id="searchbox" role="search">
+                <input type="text" placeholder="Search.."><button>Search</button>
+            </div>
+
         </div>
 
-        <!-- <div class="blog-title">
-            <img src="../../img/books/wok-cover.jpg" alt="wok-review">
-            <div class="blog-tag">
-                <p>Book Reviews</p>
-                <p>Brandon Sanderson</p>
-                </div>
-            <h1>The Way of Kings Review</h1>
-            <p>May 16, 2022</p>
-            </div> -->
+    </div>
 
-            <div class="blog-vertical">
+    <div class="nav-bar" id="nav-bar">
+        <ul>
+        <a href="../../index.html"><li><img src="../../img/navbar-icons/home.svg">home</li></a>
+        <a href="../../html/blogs.html"><li><img src="../../img/navbar-icons/blog.svg">blog</li></a>
+        <a href="../../html/projects.html"><li><img src="../../img/navbar-icons/projects.svg">projects</li></a>
+        <a href="../../html/reviews.html"><li><img src="../../img/navbar-icons/reviews.svg">reviews</li></a>
+        <a href="../../html/about.html"><li><img src="../../img/navbar-icons/about.svg">about</li></a>
+        <hr>
+        <a href="../../html/in-reviews.html"><li><img src="../../img/navbar-icons/in-reviews.svg">In Reviews</li></a>
+        <a href="../../html/all-topics.html"><li><img src="../../img/navbar-icons/topics.svg">Topics</li></a>
+        </ul>
+        </div>
 
-                <img src="../../img/reviews/books/wok-cover.jpg" alt="wok-review">
-                <blockquote>The Way of Kings Book Cover</blockquote>
-    
-                <div class="blog-vertical-title">
-                    <!-- <div class="blog-tag">
-                        <a href="../../html/reviews/book-reviews.html"><p>Book Reviews</p></a>
-                        <a href="../../html/cosmere-in-review.html"><p>Cosmere in Review</p></a>
-                        <a href="https://amzn.to/3U8YXxJ" target="_blank"><p>Affiliate Link</p></a>
-                        </div>   -->
-                        <h1>The Way of Kings Review</h1>
-                        <div class="blog-tag">
-                            <div class="tag-tag">
-                                <img src="../../img/navbar-icons/date.svg" alt="date">
-                                <p>May 16, 2022</p>
-                            </div>
-                            <div class="tag-tag">
-                                <img src="../../img/navbar-icons/folder.svg" alt="date">
-                                <p>Stormlight Archive</p>
-                            </div>
-                            <div class="tag-tag">
-                                <img src="../../img/navbar-icons/tag.svg" alt="tag">
-                                <a href="../../html/reviews/book-reviews.html">Book Reviews</a>, <a href="../../html/cosmere-in-review.html">Cosmere in Review</a>
-                                <!-- <a href="https://amzn.to/3U8YXxJ" target="_blank"><p>Affiliate Link</p></a> -->
-                            </div>
+        <div class="blog-vertical">
 
-                </div>
+            <img src="../../img/reviews/books/wok-cover.jpg" alt="wok-review">
+            <blockquote>The Way of Kings Book Cover</blockquote>
 
+            <div class="blog-vertical-title">
+                <!-- <div class="blog-tag">
+                    <a href="../../html/reviews/book-reviews.html"><p>Book Reviews</p></a>
+                    <a href="../../html/cosmere-in-review.html"><p>Cosmere in Review</p></a>
+                    <a href="https://amzn.to/3U8YXxJ" target="_blank"><p>Affiliate Link</p></a>
+                    </div>   -->
+                    <h1>The Way of Kings Review</h1>
+                    <div class="blog-tag">
+                        <div class="tag-tag">
+                            <img src="../../img/navbar-icons/date.svg" alt="date">
+                            <p>May 16, 2022</p>
+                        </div>
+                        <div class="tag-tag">
+                            <img src="../../img/navbar-icons/folder.svg" alt="date">
+                            <p>Stormlight Archive</p>
+                        </div>
+                        <div class="tag-tag">
+                            <img src="../../img/navbar-icons/tag.svg" alt="tag">
+                            <a href="../../html/reviews/book-reviews.html">Book Reviews</a>, <a href="../../html/cosmere-in-review.html">Cosmere in Review</a>
+                            <!-- <a href="https://amzn.to/3U8YXxJ" target="_blank"><p>Affiliate Link</p></a> -->
+                        </div>
 
-                        <div class="tldr">
-                            <!-- <h1>tldr;</h1> -->
-                        <p>Done. Wow. I cried. I laughed. I am amazed. This book is spectacular. This world is gigantic. I’m so excited for more Stormlight Archive! And more and more and more Brandon Sanderson!</p>
-                    </div>
-                </div>
-    
-
-    
             </div>
 
-            <div class="topTitle">
-                <h1>The Way of Kings Review</h1>
+
+                    <div class="tldr">
+                        <!-- <h1>tldr;</h1> -->
+                    <p>Done. Wow. I cried. I laughed. I am amazed. This book is spectacular. This world is gigantic. I’m so excited for more Stormlight Archive! And more and more and more Brandon Sanderson!</p>
+                </div>
             </div>
 
-   
-            <div class="spoiler-scrollbar">
-                <p>SPOILER ALERT</p>
-            </div>
+
+
+        </div>
+
+
+
+<div class="spoiler-scrollbar">
+<p>SPOILER ALERT</p>
+</div>
+
+
+    <!-- <div class="topTitle">
+        <h1>Lord of Chaos Review<em>in progress</em></h1>
+    </div> -->
+
+    <div class="left-nav-bar">
+        <ul>
+        <a href="../../index.html"><li><img src="../../img/navbar-icons/home.svg">home</li></a>
+        <a href="../../html/blogs.html"><li><img src="../../img/navbar-icons/blog.svg">blog</li></a>
+        <a href="../../html/projects.html"><li><img src="../../img/navbar-icons/projects.svg">projects</li></a>
+        <a href="../../html/reviews.html"><li><img src="../../img/navbar-icons/reviews.svg">reviews</li></a>
+        <a href="../../html/about.html"><li><img src="../../img/navbar-icons/about.svg">about</li></a>
+        <hr>
+        <a href="../../html/in-reviews.html"><li><img src="../../img/navbar-icons/in-reviews.svg">In Reviews</li></a>
+        <a href="../../html/all-topics.html"><li><img src="../../img/navbar-icons/topics.svg">Topics</li></a>
+        </ul>
+    </div>
+
+
+
+<div class="blog-content">
+
     
     <div class="blog-container">
     
@@ -264,6 +179,9 @@
 
 <p>Here is my review of The Way of Kings! Started Reading 04.09.22</p>
 
+<details id="spoilers" style="border-color: rgb(27, 86, 105);">
+    <summary style="background-color:rgb(27, 86, 105);">Notes As I Read</summary>
+
 <p>130. I don’t have particular words to describe the fun I’m having with this book, so far. I’ve built up so much hype for myself, around this book, that it’s amazing to read it finally. I’m really enthralled with these characters so far. The story is fun and exciting, and I can’t wait to read more.</p>
 
 <p>196. An enticing story as Part One comes to a close. Very good so far. The story is seeming to be propelled by both character and world. I’m very impressed with Sanderson’s writing. As always, I look forward to reading more!</p>
@@ -273,18 +191,73 @@
 <p>525. Kalidan is most certainly taking in Stormlight from the spheres. Also, was that the Stormfather?! Also, what is going on with Shallan and these “people” in her drawings. Dalinar is abdicating, wow. We are building to something huge!</p>
 
 <p>1007. Done. Wow. I cried. I laughed. I am amazed. This book is spectacular. This world is gigantic. I’m so excited for more Stormlight Archive! And more and more and more Brandon Sanderson!</p>
-
-<h2>Reviews of More Stormlight Archive</h2>
-<p>Click for reviews in the series!</p>
-<ol>
-    <li><a href="wok-review.html">The Way of Kings</a></li>
-    <li><a href="words-of-radiance.html">Words of Radiance</a></li>
-    <li value="2"><a href="edgedancer-review.html">Edgedancer</a></li>
-    <li><a href="oathbringer-review.html">Oathbringer</a></li>
-</ol>
-
+</details>
 </div>
+    </div>
 
+<!-- <div class="ad-break"> -->
+    <!-- <div class="blog-content"> -->
+        <!-- <div class="blog-container"> -->
+        <div class="blog">
+    <h2>Reviews of More Stormlight Archive</h2>
+    <p>Click for reviews in the series!</p> 
+    
+    <div class="grid-four-columns">
+        <div class="grid-item">
+            <a href="../../docs/reviews/wok-review.html" class="link">
+                <div class="individual">
+                    <img src="../../img/reviews/books/wok-cover.jpg" alt="wok-cover">
+                    <div class="title">
+                    <h2>The Way of Kings</h2>
+                    <p>by Brandon Sanderson</p>
+                    </div>
+                    </div>
+            </a>
+        </div>
+
+
+        <div class="grid-item">
+            <a href="../../docs/reviews/words-of-radiance.html" class="link">
+                <div class="individual">
+                    <img src="../../img/reviews/books/words-of-radiance.jpg" alt="wor-cover">
+                    <div class="title">
+                    <h2>Words of Radiance</h2>
+                    <p>by Brandon Sanderson</p>
+                    </div>
+                    </div>
+            </a>
+        </div>
+
+
+        <div class="grid-item">
+            <a href="../../docs/reviews/edgedancer-review.html" class="link">
+                <div class="individual">
+                    <img src="../../img/reviews/books/edgedancer-review.jpg" alt="edgedancer">
+                    <div class="title">
+                        <h2>Edgedancer Review</h2>
+                        <p>By Brandon Sanderson</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="grid-item">
+            <a href="../../docs/reviews/oathbringer-review.html" class="link">
+                <div class="individual">
+                    <img src="../../img/reviews/books/oathbringer.jpg" alt="bookshelf Illustration">
+                    <div class="title">
+                    <h2>Oathbringer Review</h2>
+                    <p>By Brandon Sanderson</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>
 <!-- <div class="grid-item-ad">
     <img src="../../img/books/wok-cover.jpg" alt="the-hobbit">
     <h2>Links to Buy</h2>
@@ -293,95 +266,74 @@
 </div> -->
         </div>
 
-        <!-- <div class="inline-navbar" id="inline-navbar"> -->
-            <!-- <ul>
-                <img src="../../../img/mLogo.png" alt="logo">
-                <a href="../../../index.html"><li>home</li></a>
-                <a href="../../../html/recents.html"><li>recent</li></a>
-                <a href="../../../html/blogs.html"><li>blog</li></a>
-                <a href="../../../html/coverage.html"><li>coverage</li></a>
-                <a href="../../../html/projects.html"><li>projects</li></a>
-                <a href="../../../html/reviews.html"><li>reviews</li></a>
-                <a href="../../../html/videos.html"><li>videos</li></a>
-                <a href="../../../html/about.html"><li>about</li></a>
-            </ul> -->
-            <div class="footer">
-
-
-                <div class="foot-buttons">
-    
-                    <div class="links">
-                        <h1>Site Links</h1>
-                        <ul>
-                            <!-- <img src="img/mLogo.png" alt="logo"> -->
-                            <a href="../../index.html"><li>home</li></a>
-                            <a href="../../html/recents.html"><li>recent</li></a>
-                            <a href="../../html/blogs.html"><li>blog</li></a>
-                            <a href="../../html/coverage.html"><li>coverage</li></a>
-                            <a href="../../html/projects.html"><li>projects</li></a>
-                            <a href="../../html/reviews.html"><li>reviews</li></a>
-                            <a href="../../html/videos.html"><li>videos</li></a>
-                            <a href="../../html/about.html"><li>about</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="links">
-                        <h1>In Reviews</h1>
-                        <ul>
-                            <a href="../../html/2022-in-review.html"><li>2022 in Review</li></a>
-                            <a href="../../html/cosmere-in-review.html"><li>Cosmere in Review</li></a>
-                            <a href="../../html/reviews/franchise/harry-potter-in-review.html"><li>Harry Potter in Review</li></a>
-                            <a href="../../html/reviews/franchise/last-of-us-in-review.html"><li>Last of Us in Review</li></a>
-                            <a href="../../html/reviews/franchise/lotr-in-review.html"><li>Lord of the Rings in Review</li></a>
-                            <a href="../../html/reviews/franchise/starwars-in-review.html"><li>Star Wars in Review</li></a>
-                            <a href="../../html/reviews/franchise/wheel-of-time-in-review.html"><li>Wheel of Time in Review</li></a>
-                
-                        </ul>
-                    </div>
-                
-                    <div class="more-links">
-                        <h1>More Site Links</h1>
-                        <ul>
-                            <a href="../../html/reviews/book-reviews.html"><li>Book Reviews</li></a>
-                            <br>
-                            <a href="../../html/reviews/movie-reviews.html" ><li>Movie Reviews</li></a>
-                            <br>
-                            <a href="../../html/blogs/bike-commute.html"><li>Bike Commute Blogs</li></a>
-                            <a href="../../html/blogs/updates.html"><li>Update Blogs</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="links">
-                        <h1>Topics</h1>
-                        <ul>
-                            <a href="../../html/topics/all-about-books.html"><li>Books</li></a>
-                            <a href="../../html/topics/all-about-my-opinion.html"><li>My Opinion</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="links">
-                        <h1>Site Map</h1>
-                        <ul>
-                            <a href="../../html/site-map.html"><li>Full Site Map</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="social-links">
-                        <h1>Social Links</h1>
-                        <ul>
-                            <a href="https://www.instagram.com/bramermatt/" target="_blank"><li>Instagram</li></a>
-                            <a href="https://twitter.com/bramermatt" target="_blank"><li>Twitter</li></a>
-                            <a href="https://www.youtube.com/channel/UC1OsGesye2hEKRl_dSqwhUw" target="_blank"><li>Youtube</li></a>
-                            <a href="https://github.com/bramermatt"><li>GitHub</li></a>
-                        </ul>
-                    </div>
-                        
-                    </div>
-            
-            <img src="../../img/mLogo.png" alt="logo">
-            
+        <div class="footer">
+            <div class="foot-buttons">
+        
+                <div class="foot-links">
+                    <h1>Site Links</h1>
+                    <ul>
+                    <a href="../../index.html"><li>Home</li></a>
+                    <a href="../../html/blogs.html"><li>Blog</li></a>
+                    <a href="../../html/projects.html"><li>Projects</li></a>
+                    <a href="../../html/reviews.html"><li>Reviews</li></a>
+                    <a href="../../html/about.html"><li>About Me</li></a>
+                    </ul>
+                </div>
+        
+                <div class="foot-links">
+                    <h1>In Reviews</h1>
+                    <ul>
+                    <a href="../../html/reviews/year-in/2022-in-review.html"><li>2022 in Review</li></a>
+                    <a href="../../html/reviews/franchise/cosmere-in-review.html"><li>Cosmere in Review</li></a>
+                    <a href="../../html/reviews/franchise/harry-potter-in-review.html"><li>Harry Potter in Review</li></a>
+                    <a href="../../html/reviews/franchise/last-of-us-in-review.html"><li>Last of Us in Review</li></a>
+                    <a href="../../html/reviews/franchise/lotr-in-review.html"><li>Lord of the Rings in Review</li></a>
+                    <a href="../../html/reviews/franchise/starwars-in-review.html"><li>Star Wars in Review</li></a>
+                    <a href="../../html/reviews/franchise/wheel-of-time-in-review.html"><li>Wheel of Time in Review</li></a>
+                    </ul>
+                </div>
+        
+                <div class="foot-links">
+                    <h1>More Site Links</h1>
+                    <ul>
+                    <a href="../../html/reviews/topics/book-reviews.html"><li>Book Reviews</li></a>
+                    <a href="../../html/reviews/topics/movie-reviews.html"><li>Movie Reviews</li></a>
+                    <br>
+                    <a href="../../html/blogs/bike-commute.html"><li>Bike Commute Blogs</li></a>
+                    <a href="../../html/blogs/updates.html"><li>Website Update Blogs</li></a>
+                    </ul>
+                </div>
+        
+                <div class="foot-links">
+                    <h1>Topics</h1>
+                    <ul>
+                    <a href="../../html/topics/all-about-books.html"><li>All About Books</li></a>
+                    <a href="../../html/topics/all-about-my-opinion.html"><li>All About My Opinion</li></a>
+                    </ul>
+                </div>
+        
+                <div class="foot-links">
+                    <h1>Site Map</h1>
+                    <ul>
+                    <a href="../../html/site-map.html"><li>Full Site Map</li></a>
+                    </ul>
+                </div>
+        
+                <div class="foot-links">
+                    <h1>Social Links</h1>
+                    <ul>
+                        <a href="https://www.instagram.com/bramermatt/" target="_blank"><li>Instagram</li></a>
+                        <a href="https://twitter.com/bramermatt" target="_blank"><li>Twitter</li></a>
+                        <a href="https://www.youtube.com/channel/UC1OsGesye2hEKRl_dSqwhUw" target="_blank"><li>Youtube</li></a>
+                        <a href="https://github.com/bramermatt"><li>GitHub</li></a>
+                    </ul>
+                </div>
+        
+        
             </div>
-        <!-- </div> -->
+        </div>
+    </div>
+    </div>
         
         <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
         
