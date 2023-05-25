@@ -3470,7 +3470,7 @@ table {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
-    /* padding: 15px; */
+    padding: 15px;
     /* max-width: 1000px; */
     margin: auto;
     align-items: center;
@@ -3480,7 +3480,7 @@ table {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 15px;
-    /* padding: 15px; */
+    padding: 15px;
     /* max-width: 1000px; */
     margin: auto;
     align-items: start;
@@ -3490,8 +3490,8 @@ table {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 15px;
-    /* padding: 15px; */
-    padding: 0;
+    padding: 15px;
+    /* padding: 0; */
     /* max-width: 1000px; */
     margin: auto;
     align-items: center;
@@ -4325,6 +4325,7 @@ display: none;
     margin-right: 9.5%;
     /* padding-right: 20px; */
     /* border-right: thin solid; */
+    /* border-left: thin solid #eee; */
 }
 
 .blog p {
@@ -4391,7 +4392,7 @@ display: none;
     /* padding-top: 10px; */
     /* padding-left: 4px; */
     /* margin: 0; */
-    margin-top: 0;
+    /* margin-top: 0; */
     margin-bottom: 5px;
     /* margin-top: 30px; */
     /* margin-top: 60px; */
@@ -4914,7 +4915,8 @@ details p, details h2 {
     margin: 0;
     border-top: none;
     font-size: 12px;
-    color: grey;
+    /* color: grey; */
+    margin: auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -5706,7 +5708,7 @@ details p, details h2 {
     
 
 
-    .blog-title, .blog-vertical, .blog-alt-title {
+    .blog-vertical, .blog-alt-title {
         padding-bottom: 15px;
     }
 
@@ -6410,7 +6412,7 @@ details p, details h2 {
 
 @media screen and (prefers-color-scheme: dark) {
 
-    .topTitle h1, .hero-title h1, .hamburger a, .spoiler-scrollbar p, .spoiler-scrollbar {
+    .topTitle h1, .hero-title h1, .hamburger a {
         filter: drop-shadow(2px 4px 6px black);
 }
 
@@ -6944,7 +6946,7 @@ details p, details h2 {
 
 @media screen and (prefers-color-scheme: dark) {
     .blog-title, .blog-vertical, .blog-alt-title {
-        background-color: #1f1f1f6b;
+        /* background-color: #1f1f1f6b; */
         color: white;
     } 
 
