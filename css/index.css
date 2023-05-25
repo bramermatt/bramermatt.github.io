@@ -1432,6 +1432,7 @@ table {
     filter: drop-shadow(0 0 1.5px rgb(0, 0, 5));*/
     /* max-height: 100vh; */
     padding: 1em;
+    padding-top: 0;
 }
 
 .grid-one-column {
@@ -3353,10 +3354,6 @@ table {
 }
 
 .blog-vertical {
-    /* 
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto; */
 
     display: flex;
     align-items: center;
@@ -3364,6 +3361,7 @@ table {
     column-gap: 1vw;
 
     padding: 20px;
+    padding-top: 0;
 
     margin-left: auto;
     margin-right: auto;
@@ -3472,7 +3470,7 @@ table {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
-    padding: 15px;
+    /* padding: 15px; */
     /* max-width: 1000px; */
     margin: auto;
     align-items: center;
@@ -3766,6 +3764,7 @@ table {
     margin-right: auto;
     /* border-top: .25px solid #eee; */
     /* margin-bottom: 40px; */
+    margin-top: 1vh;
     margin-bottom:20vh;
     /* margin-top: 40px; */
     /* width: 75%; */
@@ -4908,6 +4907,14 @@ details p, details h2 {
     max-width: max-content; 
     margin: auto;
     border: 1px solid; */
+}
+
+.blog blockquote {
+    padding: 0;
+    margin: 0;
+    border-top: none;
+    font-size: 12px;
+    color: grey;
 }
 
 @media screen and (max-width: 800px) {
@@ -6113,7 +6120,7 @@ details p, details h2 {
 
 
     .blog-container {
-        margin-top: 0;
+        /* margin-top: 0; */
         width: 100%;
     }
 
@@ -6824,7 +6831,7 @@ details p, details h2 {
     /* padding-top: 15px; */
     /* padding-bottom: 15px; */
     /* border-bottom: thin solid; */
-    border-bottom: .25px solid #eee;
+    /* border-bottom: .25px solid #eee; */
 } 
 
 
