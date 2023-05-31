@@ -6415,8 +6415,12 @@ details p, details h2 {
 
 @media screen and (prefers-color-scheme: dark) {
 
-    .topTitle h1, .hero-title h1, .hamburger a {
+    .topTitle h1, .hero-title h1{
         filter: drop-shadow(2px 4px 6px black);
+}
+
+.top-title-bar {
+    background-color: #282828;
 }
 
 /* body {
