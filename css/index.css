@@ -5729,6 +5729,7 @@ details p, details h2 {
     } */
     .two-img-columns img, .two-thirds-img-columns img, .thirds-two-img-columns img {
         padding: 0;
+        padding-bottom: 5px;
     }
 
     details[open] {
