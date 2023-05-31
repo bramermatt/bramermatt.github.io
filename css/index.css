@@ -960,8 +960,8 @@ table {
     border-spacing: 10px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 700px;
-    min-width: 460px;
+    /* max-width: 700px; */
+    min-width: 600px;
     margin-bottom: 10px;
     /* margin-bottom: 2.5rem; */
     box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.08);
@@ -3342,7 +3342,7 @@ table {
     /* columns: 2; */
     /* column-gap: 20px; */
     column-gap: 2vw;
-    padding: 30px;
+    padding: 2vw;
     /* padding-top: 10px;
     padding-bottom: 10px; */
     /* max-width: 1550px; */
@@ -3765,7 +3765,7 @@ table {
     /* border-top: .25px solid #eee; */
     /* margin-bottom: 40px; */
     margin-top: 1vh;
-    margin-bottom:20vh;
+    /* margin-bottom:20vh; */
     /* margin-top: 40px; */
     /* width: 75%; */
 
@@ -4551,6 +4551,9 @@ display: none;
     /* transition: transform .5s; */
     z-index: 1;
     /* cursor: zoom-in; */
+
+    padding: 1em;
+    padding-bottom: 5px;
 }
 
 .blog img:hover {
