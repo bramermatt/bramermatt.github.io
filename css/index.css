@@ -4719,13 +4719,15 @@ details p, details h2 {
 details h2 {
     /* margin-top: 10px; */
     position: sticky;
-    top: 5vh;
+    top: 4.5vh;
     padding-bottom: 8px;
+    padding-top: 8px;
     z-index: 1;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    border-bottom: thin solid;
+    box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.4);
+    /* border-bottom: thin solid; */
 }
   
   @media screen and (max-width: 750px) {
