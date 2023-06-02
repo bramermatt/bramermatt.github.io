@@ -4719,7 +4719,7 @@ details p, details h2 {
 details h2 {
     /* margin-top: 10px; */
     position: sticky;
-    top: 4.5vh;
+    top: 5.5vh;
     padding-bottom: 8px;
     padding-top: 8px;
     z-index: 1;
