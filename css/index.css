@@ -40,8 +40,8 @@ body {
 .top-title-bar {
     /* border-bottom: thin solid; */
     top: 0;
-    /* left: 0;
-    position: sticky;
+    left: 0;
+    /* position: sticky;
     z-index: 4; */
     /* background-color: white; */
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 10%);
@@ -181,6 +181,10 @@ body {
     margin: auto;
     margin-bottom: 3px;
 }
+
+
+
+
 
 
 
@@ -3895,7 +3899,7 @@ display: none;
     position: -webkit-sticky;
     position: sticky;
     -ms-overflow-style: none;
-    top: 1.5vh !important;
+    /* top: 1.5vh !important; */
     /* bottom: 8vh !important; */
     margin-left: auto;
     margin-right: auto;
@@ -4726,7 +4730,7 @@ details h2 {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.4);
+    /* box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.4); */
     /* border-bottom: thin solid; */
 }
   
@@ -7307,3 +7311,49 @@ details h2 {
   }
 
 
+
+
+  /* sticky */
+.top-title-bar {
+    position: sticky;
+    z-index: 4;
+    opacity: 100%;
+}
+
+details table {
+    margin-bottom: 40px;
+}
+
+
+.left-nav-bar, .right-nav-bar, details summary {
+    top: 4vh !important;
+}
+
+.blog-right {
+    top: 5.5vh;
+}
+
+details h2, details table {
+    top: 8vh;
+}
+
+@media screen and (max-width: 550px) {
+    details summary {
+        top: 5vh;
+    }
+    
+    .blog-right {
+        top: 6.5vh;
+    }
+    
+    details h2 {
+        top: 11vh;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    details summary, details h2, .top-title-bar {
+        position: relative;
+        top: 0;
+    }
+}
