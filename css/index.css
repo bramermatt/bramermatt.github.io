@@ -7337,7 +7337,7 @@ details h2 {
     }
 
     .eight-img-columns img {
-        height: auto;
+        /* height: auto; */
     }
 }
 
