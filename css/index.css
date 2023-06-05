@@ -7326,19 +7326,19 @@ details table {
 
 
 .left-nav-bar, .right-nav-bar {
-    top: 6vh;
+    top: 4vh;
 }
 
 details summary {
-    top: 4.5vh;
+    top: 4vh;
 }
 
 .blog-right {
-    top: 7.5vh;
+    top: 6vh;
 }
 
 details h2, details table {
-    top: 10vh;
+    top: 8.5vh;
 }
 
 @media screen and (max-width: 1060px) {
