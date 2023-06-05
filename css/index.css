@@ -7433,6 +7433,13 @@ details h2, details table {
     }
 }
 
+@media screen and (min-width: 340px) {
+    details summary, details h2 {
+        position: relative;
+        top: 0;
+    }
+}
+
 @media screen and (max-width: 340px) {
     details summary, details h2, .top-title-bar {
         position: relative;
