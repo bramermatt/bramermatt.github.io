@@ -3542,6 +3542,8 @@ table {
     gap: 8px;
 }
 
+
+
 .one-img-column {
     display: grid;
     grid-template-columns: 1fr;
@@ -3560,6 +3562,8 @@ table {
     /* padding-bottom: 0; */
     display:block;
 }
+
+
 
 
 .topTitle {
@@ -3591,7 +3595,8 @@ table {
 
 
 .tldr {
-    /* max-width: 180px; */
+    max-width: 480px;
+    text-align: left;
     /* font-style: italic; */
     margin-left: auto;
     margin-right: auto;
@@ -3635,7 +3640,8 @@ table {
     /* text-indent: 30px; */
     /* font-style: italic; */
     /* text-align: left; */
-    text-align: center;
+    /* text-align: center; */
+    text-align: left;
     border-top: thin solid;
     /* border: thin solid; */
     /* padding-top: 16px; */
@@ -4153,8 +4159,9 @@ display: none;
     color: white;
     padding: 40px;
     /* margin: 15px; */
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10vh;
+    margin-bottom: 40px;
+    /* margin-bottom: 20vh; */
     /* margin-right: 11.5%; */
 
 }
@@ -4868,7 +4875,7 @@ details h2 {
 .sticky-video {
     position: sticky;
     z-index: 4;
-    top: 0;
+    top: 3vh;
 }
 
 .iframe-container {
@@ -5433,6 +5440,7 @@ details h2 {
 
     .sticky-video {
         position: relative;
+        top: 0;
     }
 
 
@@ -7310,13 +7318,42 @@ details h2 {
     }
   }
 
+  .eight-img-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
 
+.eight-img-columns img {
+    /* height: 40vh; */
+    padding: 5px;
+    display: block;
+}
+
+@media screen and (max-width: 1600px) {
+    .eight-img-columns {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-inline: 15px;
+    }
+
+    .eight-img-columns img {
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .eight-img-columns {
+        grid-template-columns: 1fr 1fr;
+        /* padding-inline: 15px; */
+    }
+}
 
 
   /* sticky */
 .top-title-bar {
     position: sticky;
-    z-index: 4;
+    z-index: 10;
     opacity: 100%;
 }
 
@@ -7361,7 +7398,7 @@ details h2, details table {
 
 @media screen and (max-width: 550px) {
     details summary {
-        top: 5vh;
+        top: 4vh;
     }
     
     .blog-right {
@@ -7369,7 +7406,7 @@ details h2, details table {
     }
     
     details h2 {
-        top: 11vh;
+        top: 8vh;
     }
 }
 
