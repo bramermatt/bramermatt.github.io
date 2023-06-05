@@ -4711,6 +4711,14 @@ details summary {
     left: 1em;
   }
 
+  @media screen and (max-width: 600px) {
+    details[open] > summary:before {
+        transform: rotate(90deg);
+        top: .2em;
+        left: 1em;
+      }
+  }
+
   details ol, details ul {
     padding-left: 50px;
     padding-right: 15px;
@@ -4731,7 +4739,7 @@ details h2 {
     /* margin-top: 10px; */
     position: sticky;
     top: 5.5vh;
-    padding-bottom: 8px;
+    padding-bottom: 15px;
     padding-top: 8px;
     z-index: 1;
     overflow: hidden;
@@ -4739,8 +4747,12 @@ details h2 {
     white-space: nowrap;
     /* box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.4); */
     /* border-bottom: thin solid; */
+}  
+
+details p {
+    /* padding-top: 15px; */
 }
-  
+
   @media screen and (max-width: 750px) {
     details {
         /* padding: 15px; */
@@ -4766,7 +4778,7 @@ details h2 {
         /* background: none; */
     }
 
-    details h2 {
+    details h2, details p {
         background-color: white;
     }
 
@@ -4784,7 +4796,7 @@ details h2 {
         border: thick solid rgb(248, 0, 0, .96);
     }
 
-    details h2 {
+    details h2, details p {
         /* background-color: rgb(59, 59, 59); */
         background-color: #282828;
     }
