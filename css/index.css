@@ -7325,21 +7325,29 @@ details table {
 }
 
 
-.left-nav-bar, .right-nav-bar, details summary {
-    top: 4vh !important;
+.left-nav-bar, .right-nav-bar {
+    top: 6vh;
+}
+
+details summary {
+    top: 4.5vh;
 }
 
 .blog-right {
-    top: 5.5vh;
+    top: 7.5vh;
 }
 
 details h2, details table {
-    top: 8vh;
+    top: 10vh;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1060px) {
     details summary {
-        top: 6.5vh;
+        top: 5.5vh;
+    }
+
+    .left-nav-bar, .right-nav-bar {
+        top: 6vh;
     }
     
     .blog-right {
@@ -7347,7 +7355,21 @@ details h2, details table {
     }
     
     details h2 {
-        top: 9vh;
+        top: 11vh;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    details summary {
+        top: 5vh;
+    }
+    
+    .blog-right {
+        top: 6.5vh;
+    }
+    
+    details h2 {
+        top: 11vh;
     }
 }
 
