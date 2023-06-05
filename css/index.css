@@ -7339,7 +7339,7 @@ details h2, details table {
 
 @media screen and (max-width: 550px) {
     details summary {
-        top: 5vh;
+        top: 6.5vh;
     }
     
     .blog-right {
@@ -7347,7 +7347,7 @@ details h2, details table {
     }
     
     details h2 {
-        top: 11vh;
+        top: 9vh;
     }
 }
 
