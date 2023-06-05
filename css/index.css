@@ -7398,7 +7398,18 @@ details h2, details table {
 
 @media screen and (max-width: 550px) {
     details summary {
-        top: 4vh;
+        top: 4.5vh;
+    }
+
+    summary::before {
+        top: 7.5px;
+    }
+
+    summary {
+        font-size: 100%;
+        margin: 0;
+        padding: 10px;
+        padding-left: 45px;
     }
     
     .blog-right {
@@ -7406,7 +7417,7 @@ details h2, details table {
     }
     
     details h2 {
-        top: 8vh;
+        top: 9vh;
     }
 }
 
