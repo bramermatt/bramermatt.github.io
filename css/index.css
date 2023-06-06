@@ -295,6 +295,8 @@ body {
     display: flex;
     /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%); */
     padding: 1em;
+    max-width: 2200px;
+    margin: auto;
 }
 
 .header h1 {
@@ -4749,7 +4751,7 @@ details h2 {
     /* border-bottom: thin solid; */
 }  
 
-details p {
+details p, .blog p {
     padding-bottom: 25px;
 }
 
@@ -5087,7 +5089,7 @@ details p {
     color: var(--text);
     text-transform: uppercase;
     /* margin-top: 3vh; */
-    padding-top: 40px;
+    padding-top: 100px;
     padding-bottom: 40px;
     /* margin-top: 60px; */
     /* margin-top: 40px; */
