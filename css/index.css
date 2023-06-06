@@ -97,7 +97,40 @@ body {
 
 /* Left Navigation Bar */
 /*  */
-.left-nav-bar, .nav-bar {
+.nav-bar {
+    height: 100vh;
+    /* width: 65px; */
+    float: right;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    position: sticky;
+    z-index: 2;
+}
+
+.nav-bar ul {
+    width: 30%;
+    align-items: start;
+}
+
+.nav-bar li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    padding: 15px;
+    /* font-size: 10px; */
+    /* font-size: 11px; */
+    font-weight: 700;
+    line-height: 1.25;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    text-align: center;
+}
+
+.left-nav-bar {
     /* width: 50px;
     height: 100%; */
     /* width: 4%; */
@@ -141,7 +174,7 @@ body {
     text-decoration: none;
 }
 
-.left-nav-bar li, .right-nav-bar li, .nav-bar li {
+.left-nav-bar li, .right-nav-bar li {
     padding: 5px;
     /* font-size: 10px; */
     font-size: 11px;
@@ -339,11 +372,11 @@ body {
     /* width: 50%; */
     /* margin: 0 0 auto; */
     display: grid;
-    grid-template-columns: 1.5fr 4fr 1.5fr;
+    grid-template-columns: 1.5fr 4fr 2.5fr;
     margin-inline: 2vw;
-    border-top: thin solid #eee;
+    /* border-top: thin solid #eee; */
     /* margin-top: 2vh; */
-    max-width: 1450px;
+    max-width: 1350px;
     margin: auto;
 }
 
@@ -461,21 +494,68 @@ body {
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
     margin-inline: 1vw;
     margin: 2vh;
-    padding: 5px;
+    /* padding: 5px; */
+    border-radius: 28px;
+    overflow: hidden;
     /* border-left: thin solid; */
     /* border-right: thin solid; */
 }
 
+.big-content .content {
+    /* margin: 15px; */
+}
+
+.big-content .content blockquote {
+    margin: 5px 10px;
+}
+
 .big-content .content h1 {
     /* margin: 0 auto; */
-    margin: 10px 0px;
+    /* margin: 10px 0px; */
     /* line-height: 80%; */
+    margin:  0px 10px;
     font-size: 24px;
 }
 
 .big-content .content p {
-    margin: 0 auto;
+    margin: 0 10px;
     font-size: 14px;
+}
+
+.big-content .content-topics {
+    padding: 10px 15px 20px;
+    /* border-top: thin solid #eee; */
+}
+
+.text-content .content-topics {
+    border-top: thin solid;
+    padding: 8px 0px;
+    /* margin: 10px 0px; */
+    gap: 1vh;
+    display: grid;
+    justify-items: start;
+}
+
+@media screen and (max-width: 400px) {
+    .big-content .content-topics {
+        padding: 10px 10px;
+        /* margin: 10px 0px; */
+        gap: 1vh;
+        display: grid;
+        justify-items: start;
+    }
+}
+
+
+.big-content .content-topics a, .text-content .content-topics a {
+    background-color: grey;
+    padding: 8px;
+    border-radius: 28px;
+    color: white;
+}
+
+.big-content .content .content-topics a:link, a:visited, .text-content .content .content-topics a:link, a:visited {
+    text-decoration: none;
 }
 
 .big-content .content a:link, a:visited {
@@ -491,6 +571,13 @@ body {
     max-height: 50vh;
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .big-content .content img { 
+        max-height: 35vh;
+    }
 }
 
 .text-content {
@@ -501,6 +588,10 @@ body {
     margin: 2vh;
     padding: 5px;
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 25%);
+}
+
+.text-content .content {
+    margin: 15px;
 }
 
 .text-content .content h1 {
@@ -539,7 +630,7 @@ body {
 } */
 
 .content {
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .content img {
@@ -555,7 +646,7 @@ body {
 }
 
 .content-topics {
-    margin-top: 1vh;
+    margin-top: .5vh;
 }
 
 .content-topics a, .small-content .content-topics p {
@@ -579,7 +670,7 @@ body {
     overflow: hidden;
     width: 100%;
     padding-top: 56.35%; 
-    margin-top: 10px;
+    /* margin-top: 10px; */
     margin-bottom: 10px;
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
   }
@@ -830,9 +921,10 @@ body {
 
     .big-content, .text-content {
         /* box-shadow: 0 1px 8px -1px rgba(255, 255, 255, 25%); */
-        box-shadow: none;
-        border: thin solid;
+        /* box-shadow: none; */
+        /* border: thin solid; */
         background-color: rgb(26, 26, 26);
+        box-shadow: 0 1px 7px -1px rgb(0 0 0 / 30%);
     }
 
     .small-content {
@@ -4751,7 +4843,7 @@ details h2 {
     /* border-bottom: thin solid; */
 }  
 
-details p, .blog p {
+details p {
     padding-bottom: 25px;
 }
 
@@ -4896,7 +4988,7 @@ details p, .blog p {
     overflow: hidden;
     width: 100%;
     padding-top: 56.35%; 
-    margin-top: 10px;
+    /* margin-top: 10px; */
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
   }
   
