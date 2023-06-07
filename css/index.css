@@ -549,6 +549,7 @@ body {
 
 .big-content .content-topics a, .text-content .content-topics a {
     background-color: grey;
+    color: var(--text);
     padding: 8px;
     border-radius: 28px;
     color: white;
@@ -556,6 +557,8 @@ body {
 
 .big-content .content .content-topics a:link, a:visited, .text-content .content .content-topics a:link, a:visited {
     text-decoration: none;
+    /* color: var(--text); */
+    color: white;
 }
 
 .big-content .content a:link, a:visited {
