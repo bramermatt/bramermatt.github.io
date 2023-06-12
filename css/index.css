@@ -97,40 +97,8 @@ body {
 
 /* Left Navigation Bar */
 /*  */
-.nav-bar {
-    height: 100vh;
-    /* width: 65px; */
-    float: right;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    position: sticky;
-    z-index: 2;
-}
 
-.nav-bar ul {
-    width: 30%;
-    align-items: start;
-}
-
-.nav-bar li {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-    padding: 15px;
-    /* font-size: 10px; */
-    /* font-size: 11px; */
-    font-weight: 700;
-    line-height: 1.25;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    position: relative;
-    text-align: center;
-}
-
-.left-nav-bar {
+.left-nav-bar, .nav-bar {
     /* width: 50px;
     height: 100%; */
     /* width: 4%; */
@@ -174,7 +142,7 @@ body {
     text-decoration: none;
 }
 
-.left-nav-bar li, .right-nav-bar li {
+.left-nav-bar li, .right-nav-bar li, .nav-bar li {
     padding: 5px;
     /* font-size: 10px; */
     font-size: 11px;
@@ -4839,7 +4807,7 @@ details h2 {
     /* padding-bottom: 15px; */
     /* padding-top: 8px; */
     z-index: 1;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-overflow: ellipsis;
     /* white-space: nowrap; */
     /* box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.4); */
