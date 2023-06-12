@@ -736,6 +736,8 @@ body {
 
 
 
+
+
     .right-content {
         /* display: subgrid; */
         display: none;
@@ -5720,6 +5722,8 @@ details p {
         max-height: 40vh;
     }
 
+
+
 }
 
 /* Popping in to say hello */
@@ -7414,6 +7418,17 @@ details p {
 
     .eight-img-columns img {
         /* height: auto; */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .two-thirds-img-columns, .thirds-two-img-columns, .two-img-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .sticky-video {
+        position: relative;
+        top: 0;
     }
 }
 
