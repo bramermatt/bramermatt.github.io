@@ -3752,6 +3752,8 @@ table {
 }
 
 .spoiler-scrollbar {
+    display: none;
+
     /* background-color: black; */
     background: red;
     padding-top: 5px;
