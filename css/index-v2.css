@@ -3257,9 +3257,8 @@ table {
 
 .blog-container {
     /* max-width: 1450px; */
-    max-width: 1600px;
-    /* max-width: 1800px; */
-    width: 94vw;
+    max-width: 1500px;
+    width: 90vw;
     /* max-width: 67%; */
     /* max-width: 1250px; */
     margin-left: auto;
@@ -4032,8 +4031,8 @@ display: none;
     margin-left: auto;
     margin-right: auto;
     /* max-height:450px; */
-    /* max-height: 65vh; */
-    max-height: 80vh;
+    max-height: 65vh;
+    /* max-height: 80vh; */
     /* width: 100%; */
     max-width: 100%;
     /* max-width: 90%; */

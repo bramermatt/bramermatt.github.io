@@ -332,7 +332,7 @@ body {
 }
 
 .blog-content {
-    border-top: thin solid;
+    /* border-top: thin solid; */
     margin-left: 65px;
 }
 
@@ -341,11 +341,11 @@ body {
     /* width: 50%; */
     /* margin: 0 0 auto; */
     display: grid;
-    grid-template-columns: 1.5fr 3fr 1.5fr;
+    grid-template-columns: 2.5fr 3fr 3.5fr;
     margin-inline: 2vw;
     /* border-top: thin solid #eee; */
     /* margin-top: 2vh; */
-    max-width: 1350px;
+    max-width: 1750px;
     margin: auto;
 }
 
@@ -378,6 +378,11 @@ body {
 
 .left-content {
     float: left;
+    
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: fit-content;
+    margin-top: 1vh;
 }
 
 .center-content {
@@ -420,8 +425,8 @@ body {
     /* border-top: thin solid #eee; */
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 25%);
     margin-inline: 1vw;
-    margin: 2vh;
-    padding: 5px;
+    margin: 1vh;
+    /* padding: 5px; */
 }
 
 .small-content .content {
@@ -563,6 +568,21 @@ body {
     margin: 2vh;
     padding: 5px;
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 25%);
+
+    border-radius: 28px;
+}
+
+.thirds-two-column {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    gap: 1vw
+}
+
+.thirds-two-column img {
+    height: 20vh;
+    padding: 5px;
+    border-radius: 28px;
 }
 
 .text-content .content {
@@ -580,6 +600,7 @@ body {
     margin: 0 auto;
     font-size: 14px;
     padding-bottom: 1vh;
+    max-width: 600px;
 }
 
 .text-content .content p a:link {
@@ -720,11 +741,12 @@ body {
     font-size: 15px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1240px) {
     .spread-content {
         display: grid;
         grid-template-columns: 1fr 3fr;
         margin-inline: 0;
+        padding-inline: 1vw;
     }
 
     .big-content, .small-content {
@@ -759,6 +781,7 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         margin-inline: 0;
+        padding-inline: 4vw;
     }
 
     .spread-big-content, .spread-text-content {
@@ -770,6 +793,11 @@ body {
     .left-content {
         display: grid;
         grid-template-columns: 2fr 2fr;
+        /* padding: 5px; */
+    }
+
+    .small-content {
+        padding: 5px;
     }
 
     .grid-three-content {
@@ -3437,7 +3465,7 @@ table {
     column-gap: 1vw;
 
     padding: 20px;
-    padding-top: 0;
+    padding-top: 10px;
 
     margin-left: auto;
     margin-right: auto;
@@ -3837,8 +3865,8 @@ table {
 
 .blog-container {
     /* max-width: 1450px; */
-    max-width: 1600px;
-    width: 94vw;
+    max-width: 1500px;
+    width: 90vw;
     /* max-width: 1800px; */
     /* width: 90vw; */
     /* max-width: 67%; */
@@ -3991,7 +4019,7 @@ display: none;
     /* width: 16.7%; */
     /* width: 14%; */
     /* width: 12%; */
-    width: 8%;
+    width: 10%;
     /* display: none; */
 }
 
@@ -4391,7 +4419,7 @@ display: none;
 .blog {
     /* padding: 15px; */
     /* font-size: 20px; */
-    /* max-width: 650px; */
+    /* max-width: 950px; */
     /* width: 66.7%; */
     margin-left: auto;
     margin-right: auto;
@@ -4407,7 +4435,7 @@ display: none;
     /* margin-right: 13%; */
     /* margin-left: 14.5%; */
     /* margin-right: 14.5%; */
-    margin-right: 9.5%;
+    margin-right: 12.5%;
     /* padding-right: 20px; */
     /* border-right: thin solid; */
     /* border-left: thin solid #eee; */
@@ -4618,8 +4646,8 @@ display: none;
     margin-left: auto;
     margin-right: auto;
     /* max-height:450px; */
-    /* max-height: 65vh; */
-    max-height: 80vh;
+    max-height: 65vh;
+    /* max-height: 80vh; */
     /* width: 100%; */
     max-width: 100%;
     /* max-width: 90%; */
@@ -5043,6 +5071,8 @@ details p {
     font-size: 12px;
     /* color: grey; */
     margin: auto;
+    margin-bottom: 2vh;
+
 }
 
 @media screen and (max-width: 800px) {
@@ -5244,7 +5274,7 @@ details p {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 6px;
     z-index: 99;
     border: none;
     outline: none;
@@ -7484,6 +7514,12 @@ details summary {
 
 details h2, details table {
     top: 8.5vh;
+}
+
+@media screen and (max-width: 1500px) {
+    .left-nav-bar, .right-nav-bar {
+        top: 5vh;
+    }
 }
 
 @media screen and (max-width: 1060px) {
