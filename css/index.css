@@ -341,7 +341,7 @@ body {
     /* width: 50%; */
     /* margin: 0 0 auto; */
     display: grid;
-    grid-template-columns: 2.5fr 3fr 3.5fr;
+    grid-template-columns: 2.5fr 2.5fr 2.5fr;
     margin-inline: 2vw;
     /* border-top: thin solid #eee; */
     /* margin-top: 2vh; */
@@ -4052,7 +4052,8 @@ display: none;
     /* width: 16.7%; */
     /* width: 14%; */
     /* width: 12%; */
-    width: 10%;
+    width: 8%;
+    text-align: right;
     /* display: none; */
 }
 
@@ -4104,8 +4105,8 @@ display: none;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 2px;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 12px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: contents;
@@ -4114,16 +4115,15 @@ display: none;
 .blog-right-title h1 {
     margin: 0;
     text-transform: uppercase;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 2px;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 14px;
     overflow: hidden;
     text-overflow: ellipsis;
-    /*
-    white-space: nowrap; */
+    /* white-space: nowrap; */
 }
 
 /* .blog-right-title img {
@@ -4135,7 +4135,7 @@ display: none;
     /* text-transform: uppercase; */
     /* padding-top: 5px; */
     font-size: 14px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     padding-right: 10px;
     padding-left: 10px;
     /* letter-spacing: .1rem; */
@@ -4154,7 +4154,7 @@ display: none;
 
     /* width: auto; */
     /* height: 120px; */
-    height: 10vh;
+    height: 8vh;
     /* height: 15vh; */
     margin-right: 0;
     /* min-height: 15vh; */
@@ -4165,6 +4165,8 @@ display: none;
     background-position: 50% 50%;
     background-size: cover;
     box-shadow: 0 1px 5px -1px rgb(255, 255, 255, 30%); 
+
+    /* display: none; */
 }
 
 .margin-right-18 {
@@ -4177,21 +4179,24 @@ display: none;
     /* max-width: 200px; */
     width: -webkit-fill-available;
     /* margin: auto; */
-    /* margin-top: 10px; */
+    margin-top: 3px;
     margin-bottom: 5px;
     display: inline-flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: flex-end;
     align-items: center;
     /* max-width: max-content;
      */
-    border-radius: 20px;
+    /* border-radius: 20px; */
     color: var(--text);
     /* white-space: nowrap; */
-    overflow: hidden;
+    /* overflow: hidden; */
     text-overflow: ellipsis;
-    font-size: 12px;
+    font-size: 14px;
+    padding-right: 5px;
     /* white-space: nowrap; */
+
+    /* border-top: thin solid; */
 }
 
 .blog-right-tag p {
@@ -4199,20 +4204,21 @@ display: none;
     /* display: inline-block; */
     /* margin: 5px; */
     /* width: -webkit-fill-available; */
-    margin: 5px;
+
 
     color: var(--text);
     font-size: 12px;
     line-height: 12px;
-    font-weight: 500;
+    /* font-weight: 500; */
     letter-spacing: .5px;
     text-transform: uppercase;
     text-decoration: none;
     /* width: max-content; */
     /* border-radius: 28px; */
-    border-radius: 20px;
-    padding: 12px;
-    
+    margin: 5px; 
+    /* border-radius: 20px;
+    padding: 12px; */
+
 }
 
 .blog-right-tag a > p {
@@ -4235,8 +4241,8 @@ display: none;
     /* font-size: 16px; */
     /* line-height: 20px; */
 
-    border-radius: 20px;
-    padding: 12px;
+    /* border-radius: 20px; */
+    /* padding: 12px; */
 }
 
 .blog-right-tag a:hover {
@@ -4458,7 +4464,7 @@ display: none;
     margin-right: auto;
     /* border-radius: 10px; */
     /* padding-bottom: 50px; */
-    letter-spacing: .02em;
+    /* letter-spacing: .02em; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* font-size: 18px;
     line-height: 32px;
@@ -4468,10 +4474,12 @@ display: none;
     /* margin-right: 13%; */
     /* margin-left: 14.5%; */
     /* margin-right: 14.5%; */
-    margin-right: 12.5%;
+    /* margin-left: 15%; */
+    margin-right: 10.5%;
     /* padding-right: 20px; */
     /* border-right: thin solid; */
     /* border-left: thin solid #eee; */
+    /* padding-inline: 12%; */
 }
 
 .blog p {
@@ -6293,7 +6301,9 @@ details p {
     .blog {
         margin-right: auto;
         border-right: none;
-        padding-right: 0;
+        /* padding-right: 0; */
+        padding-inline: 2%;
+        
     }
 
     .blog-right {
@@ -6561,7 +6571,7 @@ details p {
         /* border: 1px solid rgb(29,29,29); */
     }
 
-    .navbar li:hover, .right-content li:hover, .navbar-right li:hover, .inline-navbar li:hover, .footer li:hover, .blog-left a:hover, .blog-right a:hover, .map li:hover, .grid-item-hero-title a:hover, .blog a:hover, .blog li a:hover, .grid-item-ad a:hover  {
+    .navbar li:hover, .right-content li:hover, .navbar-right li:hover, .inline-navbar li:hover, .footer li:hover, .blog-left a:hover, .map li:hover, .grid-item-hero-title a:hover, .blog a:hover, .blog li a:hover, .grid-item-ad a:hover  {
         background-color: rgb(29,29,29);
         /* background-color: #3cffd0; */
         color: white;
@@ -6769,15 +6779,16 @@ details p {
 
  @media screen and (prefers-color-scheme: dark) {
 
-    .blog-right-title, .blog-right-title img, .blog-right-tag p, .blog-right-tag a  {
+    .blog-right-title, .blog-right-title img  {
         box-shadow: 0 1px 5px -1px rgba(255, 255, 255, 0.3);
         background-color: rgba(32, 32, 32, 0.795);
     }
 
     .blog-right-tag a:hover {
-        background-color: rgb(255, 255, 255);
-        color:rgb(0, 0, 0);
+        /* background-color: rgb(255, 255, 255); */
+        /* color:rgb(0, 0, 0); */
         /* filter:invert(0); */
+        text-decoration: underline;
     }
 
     .blog-right-tag a:hover > img {
@@ -6791,14 +6802,16 @@ details p {
 
  @media screen and (prefers-color-scheme: light) {
 
-    .blog-right-title, .blog-right-title img, .blog-right-tag p, .blog-right-tag a {
+    .blog-right-title, .blog-right-title img {
         box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.3);
     }
 
     .blog-right-tag a:hover {
-        background-color: rgb(0, 0, 0);
-        color:white;
+        /* background-color: rgb(0, 0, 0);
+        color:white; */
         /* filter:invert(0); */
+        text-decoration: underline;
+        /* background-color: none; */
     }
 
     .blog-right-tag a:hover > img {
