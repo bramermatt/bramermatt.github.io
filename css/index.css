@@ -500,22 +500,48 @@ body {
 }
 
 .big-content .content-topics {
-    padding: 10px 15px 20px;
+    padding: 15px 15px 20px;
     /* border-top: thin solid #eee; */
+    border-top: thin solid;
 }
 
 .text-content .content-topics {
     border-top: thin solid;
-    padding: 8px 0px;
-    /* margin: 10px 0px; */
-    gap: 1vh;
-    display: grid;
-    justify-items: start;
+    padding: 13px 8px 0px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 200px) and (max-width: 600px)  {
     .big-content .content-topics {
         padding: 10px 10px;
+        /* margin: 10px 0px; */
+        gap: 1vh;
+        display: grid;
+        justify-items: start;
+    }
+
+    .text-content .content-topics {
+        /* border-top: thin solid; */
+
+        /* margin: 10px 0px; */
+        gap: 1vh;
+        display: grid;
+        justify-items: start;
+    }
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+    .big-content .content-topics {
+        padding: 10px 10px;
+        /* margin: 10px 0px; */
+        gap: 1vh;
+        display: grid;
+        justify-items: start;
+    }
+
+    .text-content .content-topics {
+        /* border-top: thin solid; */
+
         /* margin: 10px 0px; */
         gap: 1vh;
         display: grid;
@@ -587,6 +613,12 @@ body {
 
 .text-content .content {
     margin: 15px;
+}
+
+@media screen and (max-width: 500px) {
+    .text-content .content {
+        margin: 5px;
+    }
 }
 
 .text-content .content h1 {
@@ -781,7 +813,7 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         margin-inline: 0;
-        padding-inline: 4vw;
+        /* padding-inline: 4vw; */
     }
 
     .spread-big-content, .spread-text-content {
@@ -1034,6 +1066,7 @@ body {
 div {
     /* max-width: 2050px; */
     /* align-self: center; */
+    /* margin: 0 auto; */
 }
 
 table, th, td {
