@@ -45,7 +45,7 @@ body {
     z-index: 4; */
     /* background-color: white; */
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
-    opacity: 95%;
+    opacity: 50%;
 }
 
 .top-title-bar-content {
@@ -6302,7 +6302,7 @@ details p {
         margin-right: auto;
         border-right: none;
         /* padding-right: 0; */
-        padding-inline: 2%;
+        /* padding-inline: 2%; */
         
     }
 
@@ -6621,6 +6621,7 @@ details p {
 
 .top-title-bar {
     background-color: #282828;
+    /* opacity: 50%; */
 }
 
 /* body {
