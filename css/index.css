@@ -575,14 +575,17 @@ body {
 .thirds-two-column {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    align-items: center;
+    align-items: start;
     gap: 1vw
 }
 
 .thirds-two-column img {
-    height: 20vh;
+    /* height: 20vh; */
     padding: 5px;
     border-radius: 28px;
+
+    max-height: 20vh;
+    width: 100%;
 }
 
 .text-content .content {
