@@ -601,7 +601,7 @@ body {
 .thirds-two-column {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    align-items: start;
+    align-items: center;
     gap: 1vw
 }
 
@@ -620,7 +620,7 @@ body {
 
 @media screen and (max-width: 500px) {
     .text-content .content {
-        margin: 5px;
+        margin: 10px;
     }
 }
 
