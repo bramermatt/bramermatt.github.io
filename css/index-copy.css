@@ -956,6 +956,7 @@ body {
 
     .left-nav-bar {
         margin-bottom: 20px;
+        /* width: 85%; */
     }
 
     .left-nav-bar ul {
