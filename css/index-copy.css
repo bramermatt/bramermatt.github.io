@@ -98,7 +98,7 @@ body {
 /* Left Navigation Bar */
 /*  */
 
-.left-nav-bar, .nav-bar {
+.nav-bar {
     /* width: 50px;
     height: 100%; */
     /* width: 4%; */
@@ -117,6 +117,27 @@ body {
     /* top: 4.5vh; */
 }
 
+.left-nav-bar {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    bottom: 0;
+    position: fixed;
+    overflow: hidden;
+    box-shadow: 0 1px 5px -1px rgb(255, 255, 255, 30%);
+    border-radius: 30px;
+}
+
+.left-nav-bar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    /* padding: 0; */
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 
 
 .left-nav-bar img, .nav-bar img {
@@ -130,7 +151,7 @@ body {
     margin-bottom: 3px;
 }
 
-.left-nav-bar ul, .right-nav-bar ul, .nav-bar ul {
+ .right-nav-bar ul, .nav-bar ul {
     margin: 0;
     list-style-type: none;
     padding: 0;
@@ -155,6 +176,17 @@ body {
     position: relative;
     text-align: center;
     /* text-transform: uppercase; */
+}
+
+.left-nav-bar li {
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.left-nav-bar li p {
+    margin: 0;
+    padding: 0;
+    display: none;
 }
 
 /* Right Navigation Bar */
@@ -878,6 +910,8 @@ body {
     .top-title-bar .form {
         display: none;
     }
+
+    
 }
 
 
@@ -892,6 +926,8 @@ body {
         z-index: 3;
         top: 0;
     } */
+
+    
 
     .top-title-bar .top-title-bar-title h2, .top-title-bar-spoiler h2 {
         display: block;
@@ -914,8 +950,16 @@ body {
         max-height: 20vh;
     }
 
-    .left-nav-bar, .right-nav-bar {
+     .right-nav-bar {
         display: none;
+    }
+
+    .left-nav-bar {
+        margin-bottom: 20px;
+    }
+
+    .left-nav-bar ul {
+        display: flex;
     }
 
     .body-content, .blog-content {
@@ -936,6 +980,10 @@ body {
         /* background-color: black; */
         /* --background: #3a3a3a; */
         opacity: 95%;
+    }
+
+    .left-nav-bar {
+        background-color: #282828;
     }
 
 
@@ -5840,10 +5888,7 @@ details p {
         /* line-height: 75px; */
     }
 
-    .footer {
-        padding-right: 2%;
-        padding-left: 2%;
-    }
+
 }
 
 @media screen and (max-width: 990px) {
@@ -7552,7 +7597,7 @@ details table {
 }
 
 
-.left-nav-bar, .right-nav-bar {
+.right-nav-bar {
     top: 4vh;
 }
 
@@ -7569,7 +7614,7 @@ details h2, details table {
 }
 
 @media screen and (max-width: 1500px) {
-    .left-nav-bar, .right-nav-bar {
+     .right-nav-bar {
         top: 5vh;
     }
 }
@@ -7579,7 +7624,7 @@ details h2, details table {
         top: 5.5vh;
     }
 
-    .left-nav-bar, .right-nav-bar {
+    .right-nav-bar {
         top: 6vh;
     }
     
