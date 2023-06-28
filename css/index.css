@@ -41,8 +41,8 @@ body {
     /* border-bottom: thin solid; */
     top: 0;
     left: 0;
-    /* position: sticky;
-    z-index: 4; */
+    position: sticky;
+    z-index: 40;
     /* background-color: white; */
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
     /* opacity: 50%; */
@@ -135,7 +135,7 @@ body {
     /* max-height: 5vh; */
     /* padding: 5px; */
 
-    height: 6.5vh;
+    height: 4.5vh;
     float: none;
     display: block;
     margin: auto;
@@ -156,6 +156,8 @@ body {
     border-radius: 30px;
 
     opacity: 90%;
+
+    display: none;
 }
 
 .left-nav-bar ul {
@@ -342,7 +344,7 @@ body {
     /* width: 50%; */
     float: none;
     height: 120vh;
-    width: 100%;
+    /* width: 100%; */
     position: relative;
     z-index: 100;
 }
@@ -4155,7 +4157,7 @@ display: none;
     /* width: 12%; */
     width: 8%;
     text-align: right;
-    /* display: none; */
+    display: none;
 }
 
 .blog-right-title {
