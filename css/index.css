@@ -801,6 +801,8 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     text-transform: uppercase;
+
+    display: none;
 }
 
 .foot-buttons {
@@ -4001,7 +4003,7 @@ table {
 
 .blog-container {
     /* max-width: 1450px; */
-    max-width: 1500px;
+    max-width: 1200px;
     width: 90vw;
     /* max-width: 1800px; */
     /* width: 90vw; */
@@ -4013,7 +4015,7 @@ table {
     /* border-top: .25px solid #eee; */
     /* margin-bottom: 40px; */
     margin-top: 1vh;
-    /* margin-bottom:20vh; */
+    margin-bottom:10vh;
     /* margin-top: 40px; */
     /* width: 75%; */
 
@@ -7195,6 +7197,8 @@ details p {
     box-shadow: none;
     align-self: center;
     margin: 0;
+
+    display: none;
 }
 
 .tag-tag {
