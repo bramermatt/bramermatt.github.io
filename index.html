@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark"/>
 
-    <link rel="shortcut icon" type="image/x-icon" href="img/mLogo.png">
-    <!-- <link rel="stylesheet" href="css/index-v2.css">    -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/icons/mLogo.png">
 
     <!-- Update as of May 2023 -->
     <link rel="stylesheet" href="css/index.css">  
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
     <title>Matt Bramer | Home</title>
@@ -19,13 +18,6 @@
 </head>
 <body>
 
-    <!-- testing new hero-title with search bar -->
-    <!-- <div class="hero-title">
-        <h1>Welcome to MattBramer.com</h1>
-        <div class="form" id="searchbox" role="search">
-            <input type="text" placeholder="Search.."><button>Search</button>
-        </div>
-    </div> -->
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
     <script src="js/top.js"></script>
@@ -38,15 +30,86 @@
         <div class="top-title-bar-content">
             <!-- Nav Icon -->
             <div class="hamburger">
-                <script src="js/sidebar-nav.js"></script>
-                <a href="#" onclick="myFunction()">&#9776;
-            </a>
+                <script src="js/hamburger.js"></script>
+                <a href="#" onclick="myFunction()">&#9776;</a>
             </div>
             
+            <!-- Links -->
+            <div class="top-title-bar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
 
-            <!-- Logo 
-            <img src="img/mLogo.png">
-            -->
+                    <li><a href="pages/blogs.html">Blogs</a></li>
+
+                    <li><a href="pages/reviews.html">Reviews</a></li>
+
+                    <li><a href="pages/about.html">About</a></li>
+
+                    <li class="top-title-bar-links-more">
+                    <div class="dropdown">
+                        <!-- \ -->
+                        <button class="dropbtn">More
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="pages/bike-commute.html">Bike Commute Blogs</a>
+                            
+                            <a href="pages/book-reviews.html">Book Reviews</a>
+                            <a href="pages/movie-reviews.html">Movie Reviews</a>
+    
+                            <a href="pages/2022-in-review.html">2022 in Review</a>
+                            <a href="pages/cosmere-in-review.html">Cosmere in Review</a>
+                            <a href="pages/harry-potter-in-review.html">Harry Potter in Review</a>
+                            <a href="pages/last-of-us-in-review.html">Last of Us in Review</a>
+                            <a href="pages/lotr-in-review.html">Lord of the Rings in Review</a>
+                            <a href="pages/mcu-in-review.html">MCU in Review</a>
+                            <a href="pages/starwars-in-review.html">Star Wars in Review</a>
+                            <a href="pages/wheel-of-time-in-review.html">Wheel of Time in Review</a>
+    
+                            <a href="pages/updates.html">Website Updates</a>
+    
+                            <a href="pages/site-map.html">Site Map</a>
+                        </div>
+                      </div> 
+                    </li>
+
+
+                    <!-- <li class="top-title-bar-links-more">
+                        <div class="drop-down-button">
+                        \                        
+                        <a href="#" class="drop-down-button">More <i class="fa fa-caret-down"></i></a>
+
+                        <li class="drop-down" id="drop-down">
+                            \
+                            <a href="">Bike Commute Blogs</a>
+                            
+                            <a href="">Book Reviews</a>
+                            <a href="">Movie Reviews</a>
+    
+                            <a href="">2022 in Review</a>
+                            <a href="">Cosmere in Review</a>
+                            <a href="">Harry Potter in Review</a>
+                            <a href="">Last of Us in Review</a>
+                            <a href="">Lord of the Rings in Review</a>
+                            <a href="">MCU in Review</a>
+                            <a href="">Star Wars in Review</a>
+                            <a href="">Wheel of Time in Review</a>
+    
+                            <a href="">Website Updates</a>
+    
+                            <a href="">Site Map</a>
+                        </li>
+                    </li> -->
+
+                </ul>
+            </div>
+
+            <!-- breadcrums! -->
+
+            <!-- https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
+
+            <!-- Logo  -->
+            <img src="img/icons/mLogo.png" alt="matt logo">
 
             <!-- Title of Page -->
             <div class="top-title-bar-title">
@@ -62,24 +125,277 @@
 
     </div>
 
-    <div class="nav-bar" id="nav-bar">
-        <ul>
-        <a href="index.html" class="active"><li><img src="img/navbar-icons/home.svg">home</li></a>
-        <a href="html/blogs.html"><li><img src="img/navbar-icons/blog.svg">blog</li></a>
-        <a href="html/projects.html"><li><img src="img/navbar-icons/projects.svg">projects</li></a>
-        <a href="html/reviews.html"><li><img src="img/navbar-icons/reviews.svg">reviews</li></a>
-        <a href="html/about.html"><li><img src="img/navbar-icons/about.svg">about</li></a>
-        <hr>
-        <a href="html/in-reviews.html"><li><img src="img/navbar-icons/in-reviews.svg">In Reviews</li></a>
-        <a href="html/all-topics.html"><li><img src="img/navbar-icons/topics.svg">Topics</li></a>
-        </ul>
-        </div>
 
-    <div class="header">
-        <img src="img/matts/matt+sandy.JPG" >
+
+    <div class="nav-bar" id="nav-bar">
+            <!-- <div class="top-title-bar-links"> -->
+                <ul>
+                    <li>
+                        <a href="index.html"><img src="img/icons/home.svg">
+                        <p>Home</p></a>
+                    </li>
+
+                    <li>
+                        <a href="pages/blogs.html"><img src="img/icons/blog.svg">
+                        <p>Blogs</p></a>
+                    </li>
+
+                    <li>
+                        <a href="pages/reviews.html"><img src="img/icons/reviews.svg">
+                        <p>Reviews</p></a>
+                    </li>
+
+                    <li>
+                        <a href="pages/about.html"><img src="img/icons/about.svg">
+                        <p>About</p></a>
+                    </li>
+               </ul>
     </div>
 
-    <div class="left-nav-bar">
+    <!-- <div class="header">
+        <img src="img/matts/matt+sandy.JPG" >
+    </div> -->
+
+    <div class="split-header">
+        <div class="split-header-half">
+            <img src="img/docs/books/currently-reading/matt-w-thepathofdaggers.jpeg" >
+        </div>
+
+        <div class="split-header-half">
+            <div class="split-header-half-title">
+                <div class="split-header-half-title-tag">
+                    <h2>Currently Reading</h2>
+                    <h2>Wheel of Time</h2>
+                </div>
+
+                <h1>The Path of Daggers Book Review</h1>
+
+                <p>I am currently reading, as of June 19, 2023, so this is going to be a review in progress! And below, I'm going to have notes as I read, by chapter. More than likely spoilers, so I'm going to keep those hidden by the box below. When I've finished my read, the Notes box will be moved below the spoiler box, probably past the score!</p>
+
+                <div class="title-link">
+                    <a href="docs/the-path-of-daggers-review.html">Read More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="grid-five-columns">
+
+        <div class="grid-item">
+            <a href="docs/a-crown-of-swords-review.html" class="link">
+                <div class="individual">
+                <img src="img/docs/books/wheel-of-time/a-crown-of-swords.jpg" alt="A Crown of Swords">
+                <div class="topic">
+                <div class="tag">
+                <p>Wheel of Time</p>
+                </div>
+                </div>
+                <div class="title">
+                <h2>A Crown of Swords Review</h2>
+                <p>by Robert Jordan</p>
+                </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid-item">
+            <a href="docs/wok-review.html" class="link">
+                <div class="individual">
+                    <img src="img/docs/books/brandon-sanderson/wok-cover.jpg" alt="wok-cover">
+                    <div class="topic">
+                    <div class="tag">
+                    <p>Brandon Sanderson</p>
+                    </div>
+                    </div>
+                    <div class="title">
+                    <h2>The Way of Kings</h2>
+                    <p>by Brandon Sanderson</p>
+                    </div>
+                    </div>
+            </a>
+        </div>
+
+        <div class="grid-item">
+            <a href="docs/am-I-a-preacher-now.html" class="link">
+                <div class="individual">
+                    <img src="img/docs/faith/matt-preaching-3.png" alt="preaching">
+                <div class="topic">
+                <div class="tag">
+                <p>My Faith</p>
+                </div>
+                </div>
+                <div class="title">
+                <h2>Am I a Preacher Now?</h2>
+                <p>February 27, 2023</p>
+                </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid-item">
+            <a href="docs/star-wars-ranked.html" class="link">
+                <div class="individual">
+                    <img src="img/docs/opinion/star-wars/star-wars-ranking.jpg" alt="star wars">
+                    <div class="topic">
+                    <div class="tag">
+                        <p>Star Wars</p>
+                    </div>
+                    </div>
+                    <div class="title">
+                        <h2>My Star Wars Ranking</h2>
+                        <p>January 17, 2023</p>
+                    </div>
+                    </div>
+            </a>
+        </div>
+
+        <div class="grid-item">
+            <a href="docs//lord-of-chaos.html" class="link">
+                <div class="individual">
+                <img src="img/docs/books/wheel-of-time/lord-of-chaos.jpg" alt="Lord of Chaos">
+                <div class="topic">
+                <div class="tag">
+                <p>Wheel of Time</p>
+                </div>
+                </div>
+                <div class="title">
+                <h2>Lord of Chaos Review</h2>
+                <p>May 2, 2023</p>
+                </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid-item">
+            <a href="docs/i-dont-play-video-games-anymore.html" class="link">
+                <div class="individual">
+                <img src="img/docs/opinion/video-games/video-game-hero.jpg" alt="Video Games">
+                <div class="topic">
+                <div class="tag">
+                <p>Blogs</p>
+                </div>
+                </div>
+                <div class="title">
+                <h2>I Don't Play Video Games Anymore</h2>
+                <p>May 31, 2023</p>
+                </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="grid-item">
+            <a href="docs/nope-movie-review.html" class="link">
+                <div class="individual">
+                <img src="img/docs/movies/nope/nope.jpg" alt="Nope Movie Poster">
+                <div class="topic">
+                <div class="tag">
+                <p>Movie Reviews</p>
+                </div>
+                </div>
+                <div class="title">
+                <h2>Nope Movie Review</h2>
+                <p>April 14, 2023</p>
+                </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid-item">
+            <a href="docs/a-game-of-thrones-review.html" class="link">
+                <div class="individual">
+                <img src="img/docs/books/a-song-of-ice-and-fire/gameofthrones.jpg" alt="A Game of Thrones">
+                <div class="topic">
+                <div class="tag">
+                <p>Book Reviews</p>
+                </div>
+                </div>
+                <div class="title">
+                <h2>A Game of Thrones Review</h2>
+                <p>April 7, 2023</p>
+                </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid-item">
+            <a href="docs/family/my-son-has-epilepsy.html" class="link">
+                <div class="individual">
+                <img src="img/docs/family/rhett-w-eeg-hat.JPG" alt="ultrasound-room">
+                <div class="topic">
+                <div class="tag">
+                <p>My Family</p>
+                </div>
+                </div>
+                <div class="title">
+                <h2>My Son has Epilepsy</h2>
+                <p>March 28, 2023</p>
+                </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid-item">
+            <a href="docs/return-of-the-king-review.html" class="link">
+                <div class="individual">
+                    <img src="img/docs/movies/lotr/return-of-the-king-hero.jpg" alt="lotr-review">
+                    <div class="topic">
+                    <div class="tag">
+                    <!-- <p>Movie Reviews</p> -->
+                    <p>LOTR</p>
+                    </div>
+                    </div>
+                    <div class="title">
+                    <h2>LOTR: Return of the King Movie Review</h2>
+                    <p>by New Line Cinema</p>
+                    </div>
+                    <!-- <a href="html/reviews/franchise/lotr-in-review.html">
+                        <div class="read-more">
+                            Lord of the Rings in Review
+                    </div></a> -->
+                    </div>
+            </a> 
+        </div> 
+
+
+    </div>
+
+    <div class="split-header">
+
+
+        <div class="split-header-half">
+            <div class="split-header-half-title">
+                <div class="split-header-half-title-tag">
+                    <h2>Social</h2>
+                    <!-- <h2>Wheel of Time</h2> -->
+                </div>
+
+                <h1>I Have a YouTube Channel</h1>
+
+                <p>I have had a YouTube channel for over ten years now! I currently am in the middle of reading the Wheel of Time series so that is what is mostly on my YouTube channel. On the channel, there are over 300 videos about video games, or music, or anything I could think of!</p>
+
+                <div class="title-link">
+                    <a href="https://www.youtube.com/@MattBramer" target="_blank">Link to YouTube</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="split-header-half">
+            <div>
+            <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cShFYkSnAjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <blockquote>My New Favorite Wheel of Time Book! - Lord of Chaos Book Review (SPOILER FREE)</blockquote>
+            </div>
+        </div>
+    </div>
+
+    <!-- <h1 style="margin: 15px auto; max-width: max-content; padding-inline: 2vw;">Welcome to MattBramer.com!</h1> -->
+
+    <!-- <div class="left-nav-bar">
         <ul>
         <a href="index.html" class="active">
             <li>
@@ -111,15 +427,6 @@
                 <p>about</p>
             </li>
         </a>
-        <!-- <a href="html/reviews/franchise/wheel-of-time-in-review.html">
-            <li>
-                <img src="img/navbar-icons/wot.svg">
-                <p>about</p>
-            </li>
-        </a> -->
-        <!-- <hr>
-        <a href="html/in-reviews.html"><li><img src="img/navbar-icons/in-reviews.svg">In Reviews</li></a>
-        <a href="html/all-topics.html"><li><img src="img/navbar-icons/topics.svg">Topics</li></a> -->
         </ul>
     </div>
 
@@ -129,18 +436,18 @@
            <a href="#recent"><li><img src="img/navbar-icons/recents.svg">Recent</li></a>
            <a href="#fav-reviews"><li><img src="img/navbar-icons/fav-reviews.svg">Fav Reviews</li></a>
         </ul>
-    </div>
+    </div> -->
 
-    <div class="title-content">
+   <!-- <div class="title-content">
         <section id="featured">
         <h1>Featured Content</h1>
-    </div>
+    </div> -->
 
     <div class="spread-content">
         
 
 
-        <div class="left-content">
+        <!-- <div class="left-content">
 
             <div class="small-content">
                 <div class="grid-item">
@@ -162,50 +469,6 @@
                 </div>
             </div>
 
-            <!-- <h1>Hello</h1> -->
-
-            <!-- <div class="small-content">
-
-                <div class="grid-item">
-                    <a href="docs/reviews/lord-of-chaos.html" class="link">
-                        <div class="individual">
-                        <img src="img/reviews/books/lord-of-chaos.jpg" alt="fires-of-heaven">
-                        <div class="topic">
-                        <div class="tag">
-                        <p>Book Reviews</p>
-                        <p>Wheel of Time</p>
-                        </div>
-                        </div>
-                        <div class="title">
-                        <h2>Lord of Chaos Review</h2>
-                        <p>by Robert Jordan</p>
-                        </div>
-                        </div>
-                    </a>
-                </div>
-            </div> -->
-
-                <!-- <div class="small-content">
-                <div class="grid-item">
-                    <a href="docs/reviews/the-fires-of-heaven-review.html" class="link">
-                    <div class="individual">
-                        <img src="img/reviews/books/the-fires-of-heaven.jpg" alt="tlou">
-                        <div class="topic">
-                        <div class="tag">
-                        <p>Book Reviews</p>
-                        <p>Wheel of Time</p>
-                        </div>
-                        </div>
-                        <div class="title">
-                        <h2>The Fires of Heaven</h2>
-                        <p>April 8, 2023</p>
-                        </div>
-                        </div>
-                    </a>
-                    </div>
-            
-            </div> -->
-
             <div class="small-content">
 
                 <div class="grid-item">
@@ -216,7 +479,6 @@
                             <div class="tag">
                             <p>Book Reviews</p>
                             <p>Brandon Sanderson</p>
-                            <!-- <p>Stormlight Archive</p> -->
                             </div>
                             </div>
                             <div class="title">
@@ -227,18 +489,6 @@
                     </a>
                 </div>
 
-                <!-- <div class="content">
-                    <img src="img/reviews/books/wok-cover.jpg">
-                    <blockquote>The Way of Kings Cover</blockquote>
-                    <div class="content-topics">
-                        <a href="html/reviews/topics/book-reviews.html">Book Reviews</a>
-                        <a href="html/reviews/franchise/cosmere-in-review.html">The Cosmere</a>
-                    </div>
-                    <a href="docs/reviews/wok-review.html">
-                    <h1>The Way of Kings Book Review</h1>
-                    <p>Done. Wow. I cried. I laughed. I am amazed. This book is spectacular. This world is gigantic. I’m so excited for more Stormlight Archive! And more and more and more Brandon Sanderson!</p>
-                    </a>
-                </div> -->
             </div>
 
             <div class="small-content">
@@ -260,18 +510,6 @@
                     </a>
                 </div>
 
-                <!-- <div class="content">
-                    <img src="img/reviews/books/wok-cover.jpg">
-                    <blockquote>The Way of Kings Cover</blockquote>
-                    <div class="content-topics">
-                        <a href="html/reviews/topics/book-reviews.html">Book Reviews</a>
-                        <a href="html/reviews/franchise/cosmere-in-review.html">The Cosmere</a>
-                    </div>
-                    <a href="docs/reviews/wok-review.html">
-                    <h1>The Way of Kings Book Review</h1>
-                    <p>Done. Wow. I cried. I laughed. I am amazed. This book is spectacular. This world is gigantic. I’m so excited for more Stormlight Archive! And more and more and more Brandon Sanderson!</p>
-                    </a>
-                </div> -->
             </div>
 
             <div class="small-content">
@@ -293,23 +531,10 @@
                             </div>
                     </a>
                 </div>
-
-                <!-- <div class="content">
-                    <img src="img/reviews/books/wok-cover.jpg">
-                    <blockquote>The Way of Kings Cover</blockquote>
-                    <div class="content-topics">
-                        <a href="html/reviews/topics/book-reviews.html">Book Reviews</a>
-                        <a href="html/reviews/franchise/cosmere-in-review.html">The Cosmere</a>
-                    </div>
-                    <a href="docs/reviews/wok-review.html">
-                    <h1>The Way of Kings Book Review</h1>
-                    <p>Done. Wow. I cried. I laughed. I am amazed. This book is spectacular. This world is gigantic. I’m so excited for more Stormlight Archive! And more and more and more Brandon Sanderson!</p>
-                    </a>
-                </div> -->
             </div>
-        </div>
+        </div> -->
 
-        <div class="center-content">
+        <!-- <div class="center-content">
             <div class="big-content">
                 <div class="content">
                     <a href="docs/reviews/the-path-of-daggers-review.html" class="link"><img src="img/reviews/currently-reading/matt-w-thepathofdaggers.jpeg">
@@ -319,7 +544,6 @@
                         <a href="html/reviews/topics/book-reviews.html">Book Reviews</a>
                         <a href="html/reviews/franchise/wheel-of-time-in-review.html">Wheel of Time in Review</a>
                     </div>
-                    <!-- <p>I started reading June 5, 2023!</p></a> -->
                 </div>
             </div>
 
@@ -337,23 +561,10 @@
                 </div>
             </div>
 
-            <!-- <div class="big-content">
-                <div class="content">
-                    <a href="docs/blogs/opinion/review-scores.html" class="link">
-                    <img src="img/blogs/opinion/review-scores/review illustration.jpeg">
-                    <blockquote>Review Score Illustration</blockquote>
-                    <h1>How Do I Review</h1>
-                    <p>I review on a scale of 5, 1-5. I like that because it's simple and easy to understand. No half points, nothing to divide or question. 1-5.</p></a>
-                    <div class="content-topics">
-                        <a href="html/reviews/topics/book-reviews.html">Book Reviews</a>
-                    </div>
-                </div>
-            </div> -->
-
-        </div>
+        </div> -->
 
         
-        <div class="right-content">
+        <!-- <div class="right-content"> -->
 
             <div class="text-content">
                 <div class="content">
@@ -361,8 +572,6 @@
                         <div>
                         <h1>About Me</h1>
                         <p>I'm 26 years old, I'm a husband to Sandy Bramer and we've been married over 4 years now! I'm also a father, Sandy and I have one son, Everett and he is 3 years old!</p>
-                        <!-- <p>I love Jesus and I'm a worship leader at our church, One Community Church! This year, I'll be preaching at our church 3 times - I'm really excited about this!</p> -->
-                        <!-- <p>I'm in school, studying to become a Software Engineer, and I'm currently working as an IT Help Desk Technician Tier 2!</p> -->
                         </div>
 
                         <div>
@@ -378,64 +587,48 @@
                         <div>
                     <h1>What to Expect</h1>
                     <p>What you should expect to see on this website is... book reviews, movie reviews, blogs, videos, and a whole lot more! Below you'll see some of my featured content!</p>
-
-                    <!-- <p>I love Jesus, my wife, our son, and books! And I love to talk about them!</p> -->
                         </div>
 
                         <div>
-                        <img src="img/reviews/currently-reading/matt-w-thegreathunt.jpg" alt="matt sandy">
+                        <img src="img/docs/books/currently-reading/matt-w-thegreathunt.jpg" alt="matt sandy">
                         </div>
                 </div>
             </div>
             </div>
-
-            <!-- <div class="text-content">
-                <div class="content">
-                    <a href="docs/blogs/books/wheeloftime/not-another-darkfriend-podcast-intro.html" class="link">
-                    
-                    <h1>What is Not Another Darkfriend Podcast?</h1>
-                    <p>I have recently started a podcast about the Wheel of Time and my thoughts, theories, and predictions...</p>
-                    </a>
-                    <div class="content-topics">
-                        <a href="html/blogs.html">Blogs</a>
-                        <a href="https://podcasts.apple.com/us/podcast/ep-0-not-another-darkfriend-podcast-a-wheel-of-time-podcast/id1684986695?i=1000610902334" target="_blank">Podcast</a>
-                    </div>
-                </div>
-            </div> -->
 
             <div class="text-content">
                 <div class="content">
                     <div class="thirds-two-column">
                         <div>
                             <h1>Some things I love</h1>
-                            <p>I love the Fantasy Genre, so.. <a href="html/reviews/franchise/wheel-of-time-in-review.html">The Wheel of Time (books)</a>, <a href="html/cosmere-in-review.html">The Stormlight Archive (books)</a>, <a href="html/reviews/franchise/harry-potter-in-review.html">Harry Potter (books)</a>, <a href="html/reviews/franchise/starwars-in-review.html">Star Wars (books + movies)</a>, <a href="html/blogs/bike-commute.html">Bike Commuting to Work (blogs)</a>!</p>
+                            <p>I love the Fantasy Genre, so.. <a href="pages/wheel-of-time-in-review.html">The Wheel of Time (books)</a>, <a href="pages/cosmere-in-review.html">The Stormlight Archive (books)</a>, Harry Potter (books)</a>, <a href="pages/starwars-in-review.html">Star Wars (books + movies)</a>, <a href="pages/bike-commute.html">Bike Commuting to Work (blogs)</a>!</p>
 
                         </div>
 
                         <div>
-                            <img src="img/reviews/movies/star wars/revenge of the sith/revenge of the sith poster.webp" alt="favs">
+                            <img src="img/docs/movies/star wars/revenge of the sith/revenge of the sith poster.webp" alt="favs">
                         </div>
                 </div>
-                <div class="content-topics">
+                <!-- <div class="content-topics">
                     <a href="html/reviews/topics/book-reviews.html">Book Reviews</a>
                     <a href="html/reviews/franchise/wheel-of-time-in-review.html">Wheel of Time in Review</a>
-                </div>
+                </div> -->
         </div>
             </div>
-        </div>
+        <!-- </div> -->
 
     </section>
     </div>
 
 
-    <div class="title-content">
+    <!-- <div class="title-content">
         <section id="recent">
         <h1 id="recent">Recent Content</h1>
-    </div>
+    </div> -->
 
     <div class="middle-body-content">
 
-    <div class="grid-six-columns">
+    <!-- <div class="grid-six-columns">
 
         <div class="grid-item">
             <a href="docs/reviews/a-crown-of-swords-review.html" class="link">
@@ -515,7 +708,6 @@
                 <div class="topic">
                 <div class="tag">
                 <p>Book Reviews</p>
-                <!-- <p>A Song of Ice and Fire</p> -->
                 </div>
                 </div>
                 <div class="title">
@@ -543,64 +735,12 @@
             </a>
         </div>
     </section>
-    </div>
-
-    <!-- <div class="middle-body-content">
-
-
-
-        <div class="small-body-content">
-            <div class="grid-three-content">
-                <div class="small-content">
-                    <div class="content">
-                        <img src="img/reviews/movies/nope.jpg">
-                        <blockquote>Nope Movie Poster</blockquote>
-                        <div class="content-topics">
-                            <a href="">Movie Reviews</a>
-                        </div>
-                        <a href="docs/reviews/nope-movie-review.html">
-                        <h1>Nope Movie Review</h1>
-                        <p>WOW. This took me by surprise. This was so good. Tense. Scary. Smart. New. Awesome.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="small-content">
-                    <div class="content">
-                        <img src="img/reviews/books/gameofthrones.jpg">
-                        <blockquote>A Game of Thrones Book Cover</blockquote>
-                        <div class="content-topics">
-                            <a href="">Book Reviews</a>
-                        </div>
-                        <a href="docs/reviews/a-game-of-thrones-review.html">
-                        <h1>A Game of Thrones Book Review</h1>
-                        <p>My Review... <strong>yes</strong> and <strong>amazing</strong>!</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="small-content">
-                    <div class="content">
-                        <img src="img/blogs/family/rhett-w-eeg-hat.JPG">
-                        <blockquote>Everett, My Son with EEG Hat On</blockquote>
-                        <div class="content-topics">
-                            <p>My Family</p>
-                        </div>
-                        <a href="docs/blogs/family/my-son-has-epilepsy.html">
-                        <h1>My Son Has Epilepsy</h1>
-                        <p><strong>TRIGGER WARNING</strong>: Epilepsy and Seizures</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </div> -->
 
 </div>
 
 
-    <div class="title-content">
+    <!-- <div class="title-content">
         <h1 id="fav-reviews">Favorite Reviews</h1>
     </div>
 
@@ -677,114 +817,12 @@
         </div>
         
 
-    </div>
+    </div> -->
 </div>
 
-    <!-- <div class="middle-body-content">
-
-        <div class="small-body-content">
-            <div class="grid-three-content">
-                <div class="small-content">
-                    <div class="content">
-                        <img src="img/reviews/movies/return-of-the-king-hero.jpg">
-                        <blockquote>Return of the King Movie Poster</blockquote>
-                        <div class="content-topics">
-                            <a href="">Movie Reviews</a>
-                            <a href="">LOTR in Review</a>
-                        </div>
-                        <a href="docs/reviews/return-of-the-king-review.html">
-                        <h1>Lord of the Rings: Return of the King Movie Review</h1>
-                        <p>I LOVE SAM!</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="small-content">
-                    <div class="content">
-                        <img src="img/reviews/books/hp-1-cover.jpg">
-                        <blockquote>Harry Potter and the Sorcerer's Stone Book Cover</blockquote>
-                        <div class="content-topics">
-                            <a href="">Book Reviews</a>
-                            <a href="">Harry Potter in Review</a>
-                        </div>
-                        <a href="docs/reviews/hp-1-review.html">
-                        <h1>Harry Potter and The Sorcerer's Stone</h1>
-                        <p>Oh my goodness! This has been the most enjoyable read THIS YEAR!</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="small-content">
-                    <div class="content">
-                        <img src="img/reviews/tv/tlou/tlou-hero.jpg">
-                        <blockquote>Last of Us TV Cover</blockquote>
-                        <div class="content-topics">
-                            <a href="">TV Reviews</a>
-                            <a href="">Last of Us in Review</a>
-                        </div>
-                        <a href="docs/reviews/tlou-ep1-review.html">
-                        <h1>The Last of Us Ep. 1 Review</h1>
-                        <p>This is exactly how any on screen adaptation <em>should be done</em>.</p>
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div> -->
 
 <div class="footer">
     <div class="foot-buttons">
-
-        <div class="foot-links">
-            <h1>Site Links</h1>
-            <ul>
-            <a href="index.html" class="active"><li>Home</li></a>
-            <a href="html/blogs.html"><li>Blog</li></a>
-            <a href="html/projects.html"><li>Projects</li></a>
-            <a href="html/reviews.html"><li>Reviews</li></a>
-            <a href="html/about.html"><li>About Me</li></a>
-            </ul>
-        </div>
-
-        <div class="foot-links">
-            <h1>In Reviews</h1>
-            <ul>
-            <a href="html/reviews/year-in/2022-in-review.html"><li>2022 in Review</li></a>
-            <a href="html/reviews/franchise/cosmere-in-review.html"><li>Cosmere in Review</li></a>
-            <a href="html/reviews/franchise/harry-potter-in-review.html"><li>Harry Potter in Review</li></a>
-            <a href="html/reviews/franchise/last-of-us-in-review.html"><li>Last of Us in Review</li></a>
-            <a href="html/reviews/franchise/lotr-in-review.html"><li>Lord of the Rings in Review</li></a>
-            <a href="html/reviews/franchise/starwars-in-review.html"><li>Star Wars in Review</li></a>
-            <a href="html/reviews/franchise/wheel-of-time-in-review.html"><li>Wheel of Time in Review</li></a>
-            </ul>
-        </div>
-
-        <div class="foot-links">
-            <h1>More Site Links</h1>
-            <ul>
-            <a href="html/reviews/topics/book-reviews.html"><li>Book Reviews</li></a>
-            <a href="html/reviews/topics/movie-reviews.html"><li>Movie Reviews</li></a>
-            <br>
-            <a href="html/blogs/bike-commute.html"><li>Bike Commute Blogs</li></a>
-            <a href="html/blogs/updates.html"><li>Website Update Blogs</li></a>
-            </ul>
-        </div>
-
-        <div class="foot-links">
-            <h1>Topics</h1>
-            <ul>
-            <a href="html/topics/all-about-books.html"><li>All About Books</li></a>
-            <a href="html/topics/all-about-my-opinion.html"><li>All About My Opinion</li></a>
-            </ul>
-        </div>
-
-        <div class="foot-links">
-            <h1>Site Map</h1>
-            <ul>
-            <a href="html/site-map.html"><li>Full Site Map</li></a>
-            </ul>
-        </div>
 
         <div class="foot-links">
             <h1>Social Links</h1>
