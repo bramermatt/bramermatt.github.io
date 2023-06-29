@@ -6,23 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark"/>
 
-    <link rel="shortcut icon" type="image/x-icon" href="../img/mLogo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icons/mLogo.png">
     <link rel="stylesheet" href="../css/index.css">   
     
-    <title>Blogs | Matt Bramer</title>
-
+    <!-- Update as of May 2023 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/dropDown.js"></script>
+
     
+    <title>Blogs | MattBramer</title>
 
 </head>
 <body>
 
-    <!-- js -->
+
     <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
     <script src="../js/top.js"></script>
 
-    <script src="../js/active.js"></script>
 
     <div class="top-title-bar">
 
@@ -30,19 +29,90 @@
         <div class="top-title-bar-content">
             <!-- Nav Icon -->
             <div class="hamburger">
-                <script src="../js/sidebar-nav.js"></script>
-                <a href="#" onclick="myFunction()">&#9776;
-            </a>
+                <script src="../js/hamburger.js"></script>
+                <a href="#" onclick="myFunction()">&#9776;</a>
             </div>
             
+            <!-- Links -->
+            <div class="top-title-bar-links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
 
-            <!-- Logo 
-            <img src="img/mLogo.png">
-            -->
+                    <li><a href="../pages/blogs.html">Blogs</a></li>
+
+                    <li><a href="../pages/reviews.html">Reviews</a></li>
+
+                    <li><a href="../pages/about.html">About</a></li>
+
+                    <li class="top-title-bar-links-more">
+                    <div class="dropdown">
+                        <!-- \ -->
+                        <button class="dropbtn">More
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="../pages/bike-commute.html">Bike Commute Blogs</a>
+                            
+                            <a href="../pages/book-reviews.html">Book Reviews</a>
+                            <a href="../pages/movie-reviews.html">Movie Reviews</a>
+    
+                            <a href="../pages/2022-in-review.html">2022 in Review</a>
+                            <a href="../pages/cosmere-in-review.html">Cosmere in Review</a>
+                            <a href="../pages/harry-potter-in-review.html">Harry Potter in Review</a>
+                            <a href="../pages/last-of-us-in-review.html">Last of Us in Review</a>
+                            <a href="../pages/lotr-in-review.html">Lord of the Rings in Review</a>
+                            <a href="../pages/mcu-in-review.html">MCU in Review</a>
+                            <a href="../pages/starwars-in-review.html">Star Wars in Review</a>
+                            <a href="../pages/wheel-of-time-in-review.html">Wheel of Time in Review</a>
+    
+                            <a href="../pages/updates.html">Website Updates</a>
+    
+                            <a href="../pages/site-map.html">Site Map</a>
+                        </div>
+                      </div> 
+                    </li>
+
+
+                    <!-- <li class="top-title-bar-links-more">
+                        <div class="drop-down-button">
+                        \                        
+                        <a href="#" class="drop-down-button">More <i class="fa fa-caret-down"></i></a>
+
+                        <li class="drop-down" id="drop-down">
+                            \
+                            <a href="">Bike Commute Blogs</a>
+                            
+                            <a href="">Book Reviews</a>
+                            <a href="">Movie Reviews</a>
+    
+                            <a href="">2022 in Review</a>
+                            <a href="">Cosmere in Review</a>
+                            <a href="">Harry Potter in Review</a>
+                            <a href="">Last of Us in Review</a>
+                            <a href="">Lord of the Rings in Review</a>
+                            <a href="">MCU in Review</a>
+                            <a href="">Star Wars in Review</a>
+                            <a href="">Wheel of Time in Review</a>
+    
+                            <a href="">Website Updates</a>
+    
+                            <a href="">Site Map</a>
+                        </li>
+                    </li> -->
+
+                </ul>
+            </div>
+
+            <!-- breadcrums! -->
+
+            <!-- https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
+
+            <!-- Logo  -->
+            <img src="../img/icons/mLogo.png" alt="matt logo">
 
             <!-- Title of Page -->
             <div class="top-title-bar-title">
-            <h2>Blogs</h2>
+            <h2>MattBramer.com</h2>
             </div>
 
             <!-- Searchbox -->
@@ -54,92 +124,66 @@
 
     </div>
 
+
+
     <div class="nav-bar" id="nav-bar">
-        <ul>
-        <a href="../index.html"><li><img src="../img/navbar-icons/home.svg">home</li></a>
-        <a href="../html/blogs.html" class="active"><li><img src="../img/navbar-icons/blog.svg">blog</li></a>
-        <a href="../html/projects.html"><li><img src="../img/navbar-icons/projects.svg">projects</li></a>
-        <a href="../html/reviews.html"><li><img src="../img/navbar-icons/reviews.svg">reviews</li></a>
-        <a href="../html/about.html"><li><img src="../img/navbar-icons/about.svg">about</li></a>
-        <hr>
-        <a href="../html/in-reviews.html"><li><img src="../img/navbar-icons/in-reviews.svg">In Reviews</li></a>
-        <a href="../html/all-topics.html"><li><img src="../img/navbar-icons/topics.svg">Topics</li></a>
-        </ul>
+            <!-- <div class="top-title-bar-links"> -->
+                <ul>
+                    <li>
+                        <a href="../index.html"><img src="../img/icons/home.svg">
+                        <p>Home</p></a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/blogs.html"><img src="../img/icons/blog.svg">
+                        <p>Blogs</p></a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/reviews.html"><img src="../img/icons/reviews.svg">
+                        <p>Reviews</p></a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/about.html"><img src="../img/icons/about.svg">
+                        <p>About</p></a>
+                    </li>
+               </ul>
+    </div>
+
+    <!-- <div class="header">
+        <img src="../img/matts/matt+sandy.JPG" >
+    </div> -->
+
+    <div class="split-header">
+        <div class="split-header-half">
+            <img src="../img/docs/opinion/video-games/video-game-hero.jpg" >
         </div>
 
-    <div class="header">
-        <img src="../img/page/html/blogs.webp" >
+        <div class="split-header-half">
+            <div class="split-header-half-title">
+                <div class="split-header-half-title-tag">
+                    <h2>Blogs</h2>
+                    <!-- <h2>Wheel of Time</h2> -->
+                </div>
+
+                <h1>I Don't Play Video Games Anymore</h1>
+
+                <p>May 31, 2023</p>
+
+                <div class="title-link">
+                    <a href="../docs/i-dont-play-video-games-anymore.html">Read More</a>
+                </div>
+
+            </div>
+        </div>
     </div>
 
-    <div class="left-nav-bar">
-        <ul>
-        <a href="../index.html">
-            <li>
-                <img src="../img/navbar-icons/home.svg">
-                <p>home</p>
-            </li>
-        </a>
-        <a href="../html/blogs.html" class="active">
-            <li>
-                <img src="../img/navbar-icons/blog.svg">
-                <p>blog</p>
-            </li>
-        </a>
-        <a href="../html/projects.html">
-            <li>
-                <img src="../img/navbar-icons/projects.svg">
-                <p>projects</p>
-            </li>
-        </a>
-        <a href="../html/reviews.html">
-            <li>
-                <img src="../img/navbar-icons/reviews.svg">
-                <p>reviews</p>
-            </li>
-        </a>
-        <a href="../html/about.html">
-            <li>
-                <img src="../img/navbar-icons/about.svg">
-                <p>about</p>
-            </li>
-        </a>
-        <!-- <a href="html/reviews/franchise/wheel-of-time-in-review.html">
-            <li>
-                <img src="img/navbar-icons/wot.svg">
-                <p>about</p>
-            </li>
-        </a> -->
-        <!-- <hr>
-        <a href="html/in-reviews.html"><li><img src="img/navbar-icons/in-reviews.svg">In Reviews</li></a>
-        <a href="html/all-topics.html"><li><img src="img/navbar-icons/topics.svg">Topics</li></a> -->
-        </ul>
-    </div>
 
-    <div class="right-nav-bar">
-    <ul>
-        <a href="#2023"><li><img src="../img/navbar-icons/2023.jpg">2023 Blogs</li></a>
-        <a href="#older"><li><img src="../img/navbar-icons/blog.svg">Older Blogs</li></a>
-    </ul>
-    </div>
+<div class="grid-eight-columns">
 
-    <div class="title-content">
-        <h1 id="2023">2023 Blogs</h1>
-    </div>
-
-    <div class="body-content">
-
-<!-- <div class="body-content"> -->
-
-    
-<!-- going to do everything in posted order, then using read more on topic as new html -->
-<!-- <div class="category">
-    <h1>2023 Blogs</h1>
-</div> -->
-
-<div class="grid-nine-columns">
-
-    <div class="grid-item">
-        <a href="../docs/blogs/opinion/i-dont-play-video-games-anymore.html" class="link">
+    <!-- <div class="grid-item">
+        <a href="../docs/i-dont-play-video-games-anymore.html" class="link">
             <div class="individual">
             <img src="../img/blogs/opinion/video-games/video-game-hero.jpg" alt="fires-of-heaven">
             <div class="topic">
@@ -153,11 +197,11 @@
             </div>
             </div>
         </a>
-    </div>
+    </div> -->
 
 
-    <div class="grid-item">
-        <a href="../docs/blogs/books/wheeloftime/not-another-darkfriend-podcast-intro.html" class="link">
+    <!-- <div class="grid-item">
+        <a href="../docs/not-another-darkfriend-podcast-intro.html" class="link">
             <div class="individual">
             <img src="../img/page/wot-in-review/New folder/not another darkfriend podcast.jpg" alt="fires-of-heaven">
             <div class="topic">
@@ -172,12 +216,12 @@
             </div>
             </div>
         </a>
-    </div>
+    </div> -->
 
 <div class="grid-item">
-    <a href="../docs/blogs/family/my-son-has-epilepsy.html" class="link">
+    <a href="../docs/my-son-has-epilepsy.html" class="link">
         <div class="individual">
-        <img src="../img/blogs/family/rhett-w-eeg-hat.JPG" alt="ultrasound-room">
+        <img src="../img/docs/family/rhett-w-eeg-hat.JPG" alt="ultrasound-room">
         <div class="topic">
         <div class="tag">
         <p>My Family</p>
@@ -192,9 +236,9 @@
 </div>
 
 <div class="grid-item">
-    <a href="../docs/blogs/books/2023-tbr.html" class="link">
+    <a href="../docs/2023-tbr.html" class="link">
         <div class="individual">
-            <img src="../img/blogs/books/2023-tbr/tbr-hero.webp" alt="oth">
+            <img src="../img/docs/books/blogs/tbr-hero.webp" alt="oth">
             <div class="topic">
             <div class="tag">
                 <p>Books</p>
@@ -209,9 +253,9 @@
 </div>
 
 <div class="grid-item">
-    <a href="../docs/blogs/faith/am-I-a-preacher-now.html" class="link">
+    <a href="../docs/am-I-a-preacher-now.html" class="link">
         <div class="individual">
-            <img src="../img/blogs/faith/preacher-now/matt-preaching-3.png" alt="preaching">
+            <img src="../img/docs/faith/matt-preaching-3.png" alt="preaching">
         <div class="topic">
         <div class="tag">
         <p>My Faith</p>
@@ -225,8 +269,8 @@
     </a>
 </div>
 
-<div class="grid-item">
-    <a href="../docs/blogs/2023/2023-reviews-expected.html" class="link">
+<!-- <div class="grid-item">
+    <a href="../docs/2023-reviews-expected.html" class="link">
         <div class="individual">
             <img src="../img/blogs/2023/review scoring.jpg" alt="review score">
             <div class="topic">
@@ -240,12 +284,12 @@
             </div>
             </div>
     </a>
-</div>
+</div> -->
 
 <div class="grid-item">
-    <a href="../docs/blogs/opinion/yt-problem-2023.html" class="link">
+    <a href="../docs/yt-problem-2023.html" class="link">
         <div class="individual">
-            <img src="../img/blogs/opinion/youtube/youtube-hero.webp" alt="youtube">
+            <img src="../img/docs/opinion/youtube/youtube-hero.webp" alt="youtube">
             <div class="topic">
             <div class="tag">
                 <p>Opinion</p>
@@ -261,9 +305,9 @@
 </div>
 
 <div class="grid-item">
-    <a href="../docs/blogs/opinion/star-wars-ranked.html" class="link">
+    <a href="../docs/star-wars-ranked.html" class="link">
         <div class="individual">
-            <img src="../img/blogs/opinion/star-wars/star-wars-ranking.jpg" alt="star wars">
+            <img src="../img/docs/opinion/star-wars/star-wars-ranking.jpg" alt="star wars">
             <div class="topic">
             <div class="tag">
                 <p>Opinion</p>
@@ -279,9 +323,9 @@
 </div>
 
 <div class="grid-item">
-    <a href="../docs/blogs/opinion/star-wars-order.html" class="link">
+    <a href="../docs/star-wars-order.html" class="link">
         <div class="individual">
-            <img src="../img/blogs/opinion/star-wars/star-wars-hero.jpg" alt="star wars">
+            <img src="../img/docs/opinion/star-wars/star-wars-hero.jpg" alt="star wars">
             <div class="topic">
             <div class="tag">
                 <p>Opinion</p>
@@ -296,41 +340,32 @@
     </a>
 </div>
 
-</div>
 
-
-<div class="alt-category" id="older">
-    <h1>Older Blogs</h1>
-
-
-<div class="grid-six-columns">
     <div class="grid-item">
-        <a href="../docs/blogs/opinion/wear-a-watch.html" class="link">
+        <a href="../docs/wear-a-watch.html" class="link">
             <div class="individual">
-                <img src="../img/blogs/opinion/watches/man-wearing-watch-hero.jpg" alt="watch illustration">
+                <img src="../img/docs/opinion/watches/man-wearing-watch-hero.jpg" alt="watch illustration">
             <div class="topic">
             <div class="tag">
             <p>Blogs</p>
             <p>Opinion</p>
-            <!-- <p>Sherlock Holmes The Awakened</p> -->
+
             </div>
             </div>
             <div class="title">
             <h2>Wearing a Watch</h2>
             <p>December 23, 2022</p>
             </div>
-            <!-- <div class="read-more">
-                <a href="docs/blogs/bike-commute/bike-commute-part-nine.html">Read more 🡒</a>
-            </div> -->
+
             </div>
         </a>
     </div>
 
 
     <div class="grid-item">
-        <a href="../docs/blogs/2022-in-Review/school-update-2022.html" class="link">
+        <a href="../docs/school-update-2022.html" class="link">
             <div class="individual">
-                <img src="../img/page/2022-in-review/school-illustration.webp" alt="placeholder image">
+                <img src="../img/pages/2022-in-review/school-illustration.webp" alt="placeholder image">
                 <div class="topic">
                     <div class="tag">
                         <p>2022 in Review</p>
@@ -346,9 +381,9 @@
     </div>
 
     <div class="grid-item">
-        <a href="../docs/blogs/2022-in-Review/favorite-new-tv-show-of-2022.html" class="link">
+        <a href="../docs/favorite-new-tv-show-of-2022.html" class="link">
             <div class="individual">
-                <img src="../img/page/2022-in-review/tvshow-illustration.webp" alt="placeholder image">
+                <img src="../img/pages/2022-in-review/tvshow-illustration.webp" alt="placeholder image">
                 <div class="topic">
                     <div class="tag">
                         <p>2022 in Review</p>
@@ -364,9 +399,9 @@
     </div>
 
     <div class="grid-item">
-        <a href="../docs/blogs/2022-in-Review/favorite-rewatch-tv-show-of-2022.html" class="link">
+        <a href="../docs/favorite-rewatch-tv-show-of-2022.html" class="link">
             <div class="individual">
-                <img src="../img/page/2022-in-review/tvshow-illustration.webp" alt="placeholder image">
+                <img src="../img/pages/2022-in-review/tvshow-illustration.webp" alt="placeholder image">
                 <div class="topic">
                     <div class="tag">
                         <p>2022 in Review</p>
@@ -382,9 +417,9 @@
     </div>
 
     <div class="grid-item">
-        <a href="../docs/blogs/2022-in-Review/favorite-movies-of-2022.html" class="link">
+        <a href="../docs/favorite-movies-of-2022.html" class="link">
             <div class="individual">
-                <img src="../img/page/2022-in-review/movie-illustration-hero.webp" alt="placeholder image">
+                <img src="../img/pages/2022-in-review/movie-illustration-hero.webp" alt="placeholder image">
                 <div class="topic">
                     <div class="tag">
                         <p>2022 in Review</p>
@@ -402,9 +437,9 @@
 
 
     <div class="grid-item">
-        <a href="../docs/blogs/2022-in-Review/favorite-books-of-2022.html" class="link">
+        <a href="../docs/favorite-books-of-2022.html" class="link">
             <div class="individual">
-                <img src="../img/page/2022-in-review/book-illustration-hero.png" alt="placeholder image">
+                <img src="../img/pages/2022-in-review/book-illustration-hero.png" alt="placeholder image">
                 <div class="topic">
                     <div class="tag">
                         <p>2022 in Review</p>
@@ -419,14 +454,12 @@
         </a>
     </div>
 
-</div>
 
-<div class="grid-six-columns">
 
     <div class="grid-item">
-        <a href="../docs/blogs/2022-in-Review/least-favorite-books-of-2022.html" class="link">
+        <a href="../docs/least-favorite-books-of-2022.html" class="link">
             <div class="individual">
-                <img src="../img/page/2022-in-review/book-illustration-hero.png" alt="placeholder image">
+                <img src="../img/pages/2022-in-review/book-illustration-hero.png" alt="placeholder image">
                 <div class="topic">
                     <div class="tag">
                         <p>2022 in Review</p>
@@ -442,9 +475,9 @@
     </div>
 
 <div class="grid-item">
-    <a href="../docs/blogs/2022-in-Review/books-read-in-2022.html" class="link">
+    <a href="../docs/books-read-in-2022.html" class="link">
         <div class="individual">
-            <img src="../img/page/2022-in-review/book-illustration-hero.png" alt="placeholder image">
+            <img src="../img/pages/2022-in-review/book-illustration-hero.png" alt="placeholder image">
             <div class="topic">
                 <div class="tag">
                     <p>2022 in Review</p>
@@ -460,9 +493,9 @@
 </div>
 
 <div class="grid-item">
-    <a href="../docs/blogs/2022-in-Review/books-to-read-in-2023.html" class="link">
+    <a href="../docs/books-to-read-in-2023.html" class="link">
         <div class="individual">
-            <img src="../img/page/2022-in-review/book-illustration-hero.png" alt="placeholder image">
+            <img src="../img/pages/2022-in-review/book-illustration-hero.png" alt="placeholder image">
             <div class="topic">
                 <div class="tag">
                     <p>2022 in Review</p>
@@ -478,9 +511,9 @@
 </div>
 
     <div class="grid-item">
-        <a href="../docs/blogs/2022-in-Review/what-is-2022-in-review.html" class="link">
+        <a href="../docs/what-is-2022-in-review.html" class="link">
             <div class="individual">
-                <img src="../img/blogs/2022-in-Review/2022-in-review-hero-2.jpg" alt="2022 in Review Hero">
+                <img src="../img/docs/2022-in-Review/hero/2022-in-review-hero-2.jpg" alt="2022 in Review Hero">
                 <div class="topic">
                     <div class="tag">
                         <p>2022 in Review</p>
@@ -496,9 +529,9 @@
 
 
     <div class="grid-item">
-        <a href="../docs/blogs/random/matttalks.html" class="link">
+        <a href="../docs/matttalks.html" class="link">
             <div class="individual">
-                <img src="../img/blogs/random/mattalks/mattalks-ep1.png" alt="MATTtalks Episode 1">
+                <img src="../img/docs/opinion/mattalks/matttalks-hero.png" alt="MATTtalks Episode 1">
                 <div class="topic">
                     <div class="tag">
                         <p>MATTtalks</p>
@@ -513,9 +546,9 @@
     </div>
 
     <div class="grid-item">
-        <a href="../docs/blogs/opinion/asmr.html" class="link">
+        <a href="../docs/asmr.html" class="link">
             <div class="individual">
-                <img src="../img/blogs/opinion/asmr/asmr-hero.webp" alt="ASMR Hero Image">
+                <img src="../img/docs/opinion/asmr/asmr-hero.webp" alt="ASMR Hero Image">
                 <div class="topic">
                     <div class="tag">
                         <p>Opinion</p>
@@ -529,34 +562,11 @@
         </a>
     </div>
 
-</div>
-
-    <!-- <div class="grid-item-hidden">
-        <a href="../html/cosmere-in-review.html" class="link">
-        <div class="individual-hidden">
-            <img src="../img/page/cosmere/cosmerebrandonsanderson-jessemartin.jpeg" alt="cosmere">
-            <div class="topic">
-                <div class="tag">
-                <p>Cosmere</p>
-                <p>Brandon Sanderson</p>
-                </div>
-                </div>
-                <div class="title">
-                <h2>Cosmere in Review</h2>
-                <p>October 28, 2022</p>
-                </div>
-        </div>
-    </a>
-    </div> -->
-
-
-<div class="grid-six-columns">
-
 
     <div class="grid-item">
-        <a href="../docs/blogs/opinion/review-scores.html" class="link">
+        <a href="../docs/review-scores.html" class="link">
             <div class="individual">
-                <img src="../img/blogs/opinion/review-scores/review illustration.jpeg" alt="reviewing illustration">
+                <img src="../img/docs/opinion/review-scores/review illustration.jpeg" alt="reviewing illustration">
                 <div class="topic">
                     <div class="tag">
                         <p>Opinion</p>
@@ -572,9 +582,9 @@
 
     
     <div class="grid-item">
-        <a href="../docs/blogs/random/my-hair.html" class="link">
+        <a href="../docs/my-hair.html" class="link">
             <div class="individual">
-                <img src="../img/blogs/random/myhair/hair-thumbnail.png" alt="my hair-thumbnail">
+                <img src="../img/docs/opinion/myhair/hair-thumbnail.webp" alt="my hair-thumbnail">
                 <div class="topic">
                     <div class="tag">
                     <p>My Hair</p>
@@ -589,9 +599,9 @@
     </div>  
 
     <div class="grid-item">
-        <a href="../docs/blogs/books/series-to-read.html" class="link">
+        <a href="../docs/series-to-read.html" class="link">
             <div class="individual">
-                <img src="../img/blogs/books/series/bookshelf.jpg" alt="bookshelf Illustration">
+                <img src="../img/docs/books/blogs/bookshelf.jpg" alt="bookshelf Illustration">
                 <div class="topic">
                     <div class="tag">
                     <p>Books</p>
@@ -608,9 +618,9 @@
 
 
     <div class="grid-item">
-        <a href="../docs/blogs/books/read-before-buy.html" class="link">
+        <a href="../docs/read-before-buy.html" class="link">
             <div class="individual">
-                <img src="../img/blogs/books/bookshelf/matt-and-bookshelf.jpg" alt="matt-w-books">
+                <img src="../img/docs/books/blogs/matt-and-bookshelf.jpg" alt="matt-w-books">
                 <div class="topic">
                     <div class="tag">
                     <p>Books</p>
@@ -625,9 +635,9 @@
     </div>
 
     <div class="grid-item">
-        <a href="../docs/blogs/faith/have-faith.html" class="link">
+        <a href="../docs/have-faith.html" class="link">
             <div class="individual">
-                <img src="../img/blogs/faith/praying-hero.jpg" alt="prayer-hero">
+                <img src="../img/docs/faith/praying-hero.jpg" alt="prayer-hero">
                 <div class="topic">
                     <div class="tag">
                         <p>My Faith</p>
@@ -642,13 +652,13 @@
     </div>
 
     <div class="grid-item">
-        <a href="../docs/blogs/opinion/not-a-programmer.html" class="link">
+        <a href="../docs/not-a-programmer.html" class="link">
             <div class="individual">
-                <img src="../img/blogs/opinion/not-a-programmer/programmer-hero.png" alt="programmer-hero">
+                <img src="../img/docs/opinion/not-a-programmer/programmer-hero.png" alt="programmer-hero">
                 <div class="topic">
                     <div class="tag">
                         <p>Opinion</p>
-                        <!-- <p>TV</p> -->
+
                     </div>
                 </div>
                 <div class="title">
@@ -659,32 +669,12 @@
         </a>
     </div>
 
-</div>
 
-    <!-- <div class="grid-item-hidden">
-        <a href="../html/cosmere-in-review.html" class="link">
-        <div class="individual-hidden">
-            <img src="../img/page/cosmere/cosmerebrandonsanderson-jessemartin.jpeg" alt="cosmere">
-            <div class="topic">
-                <div class="tag">
-                <p>Cosmere</p>
-                <p>Brandon Sanderson</p>
-                </div>
-                </div>
-                <div class="title">
-                <h2>Cosmere in Review</h2>
-                <p>October 28, 2022</p>
-                </div>
-        </div>
-    </a>
-    </div> -->
-
-    <div class="grid-six-columns">
 
     <div class="grid-item">
-        <a href="../docs/blogs/interests/november-2022.html" class="link">
+        <a href="../docs/november-2022.html" class="link">
             <div class="individual">
-                <img src="../img/blogs/interests/interests-nov22.png" alt="nov-interests">
+                <img src="../img/docs/interests/interests-nov22.png" alt="nov-interests">
                 <div class="topic">
                 <div class="tag">
                 <p>My Interests</p>
@@ -694,17 +684,14 @@
                 <h2>November 2022 - Interests</h2>
                 <p>November 3, 2022</p>
                 </div>
-                <!-- <div class="read-more">
-                    <a href="docs/blogs/bike-commute/bike-commute-part-nine.html">Read more 🡒</a>
-                </div> -->
                 </div>
         </a>
 </div>
 
 <div class="grid-item">
-    <a href="../docs/blogs/opinion/forgiveness-cancel-culture.html" class="link">
+    <a href="../docs/forgiveness-cancel-culture.html" class="link">
         <div class="individual">
-            <img src="../img/blogs/opinion/ye.jpeg" alt="ye">
+            <img src="../img/docs/opinion/ye/ye.jpeg" alt="ye">
             <div class="topic">
                 <div class="tag">
                     <p>Opinion</p>
@@ -721,9 +708,9 @@
 
 <div class="grid-item">
 
-    <a href="../docs/blogs/books/cosmere-review-blog.html" class="link">
+    <a href="../docs/cosmere-review-blog.html" class="link">
         <div class="individual">
-            <img src="../img/blogs/books/cosmere-blog/brando.jpg" alt="brandon">
+            <img src="../img/docs/books/blogs/brando.jpg" alt="brandon">
             <div class="topic">
                 <div class="tag">
                     <p>Book Reviews</p>
@@ -739,9 +726,9 @@
 </div>
 
 <div class="grid-item">
-    <a href="../docs/blogs/bike-commute/bike-commute-part-ten.html" class="link">
+    <a href="../docs/bike-commute-part-ten.html" class="link">
         <div class="individual">
-            <img src="../img/blogs/bike-commute/part-ten/bike-w-packs.PNG" alt="bc-nine">
+            <img src="../img/docs/bike-commute-blogs/part-ten/bike.JPG" alt="bc-nine">
             <div class="topic">
             <div class="tag">
             <p>Bike Commute</p>
@@ -751,20 +738,19 @@
                 <h2>Bike Commuting: Part Ten</h2>
                 <p>October 18, 2022</p>
             </div>
-            <a href="../html/blogs/bike-commute.html">
+            <!-- <a href="../html/blogs/bike-commute.html">
                 <div class="read-more">
                     Read More Topic
-                <!-- going to create a section for more blogs -->
-            </div></a>
+            </div></a> -->
             </div>
     </a>
 </div>
 
 
 <div class="grid-item">
-<a href="../docs/blogs/random/go-dark.html" class="link">
+<a href="../docs/go-dark.html" class="link">
     <div class="individual">
-        <img src="../img/blogs/opinion/dark-mode/dark-mode-hero.webp" alt="darkmode">
+        <img src="../img/docs/opinion/dark-mode/dark-mode-hero.webp" alt="darkmode">
         <div class="topic">
         <div class="tag">
         <p>Opinion</p>
@@ -774,18 +760,14 @@
         <h2>Go Dark</h2>
         <p>October 18, 2022</p>
         </div>
-        <!-- <a href="reviews/movie-reviews.html">
-            <div class="read-more">
-                More Movie Reviews
-        </div></a> -->
         </div>
 </a>  
 </div>
 
 <div class="grid-item">
-    <a href="../docs/blogs/random/too-much-too-watch.html" class="link">
+    <a href="../docs/too-much-too-watch.html" class="link">
         <div class="individual">
-            <img src="../img/blogs/random/too-much/hero-too-much.png" alt="hogwarts-leg">
+            <img src="../img/docs/opinion/too-much/hero-too-much.png" alt="hogwarts-leg">
             <div class="topic">
                 <div class="tag">
                     <p>Opinion</p>
@@ -800,50 +782,29 @@
     </a>
 </div>
 
-    </div>
-
-<!-- <div class="grid-item-hidden">
-    <a href="../html/cosmere-in-review.html" class="link">
-    <div class="individual-hidden">
-        <img src="../img/page/cosmere/cosmerebrandonsanderson-jessemartin.jpeg" alt="cosmere">
-        <div class="topic">
-            <div class="tag">
-            <p>Cosmere</p>
-            <p>Brandon Sanderson</p>
-            </div>
-            </div>
-            <div class="title">
-            <h2>Cosmere in Review</h2>
-            <p>October 28, 2022</p>
-            </div>
-    </div>
-</a>
-</div> -->
-
-<div class="grid-six-columns">
             
-            <div class="grid-item">
-                <a href="../docs/blogs/books/reading-next.html" class="link">
-                    <div class="individual">
-                        <img src="../img/blogs/random/books/next-great-read.jpg" alt="sher-home">
-                        <div class="topic">
-                        <div class="tag">
-                        <p>Books</p>
-                        <p>Brandon Sanderson</p>
-                        </div>
-                        </div>
-                        <div class="title">
-                        <h2>What am I Reading Next?</h2>
-                        <p>September 19, 2022</p>
-                        </div>
-                        </div>
-                </a>
-            </div>
+    <div class="grid-item">
+        <a href="../docs/reading-next.html" class="link">
+            <div class="individual">
+                <img src="../img/docs/books/blogs/next-great-read.jpg" alt="sher-home">
+                <div class="topic">
+                <div class="tag">
+                <p>Books</p>
+                <p>Brandon Sanderson</p>
+                </div>
+                </div>
+                <div class="title">
+                <h2>What am I Reading Next?</h2>
+                <p>September 19, 2022</p>
+                </div>
+                </div>
+        </a>
+    </div>
 
             <div class="grid-item">
-                <a href="../docs/blogs/random/no-ads.html" class="link">
+                <a href="../docs/no-ads.html" class="link">
                     <div class="individual">
-                        <img src="../img/blogs/random/ads/stop-ads.jpg" alt="no-ads">
+                        <img src="../img/docs/opinion/ads/stop-ads.jpg" alt="no-ads">
                         <div class="topic">
                             <div class="tag">
 
@@ -860,9 +821,9 @@
 
 
         <div class="grid-item">
-            <a href="../docs/updates/redesign-2.0.html" class="link">
+            <a href="../docs/redesign-2.0.html" class="link">
                 <div class="individual">
-                    <img src="../img/updates/new-index.png" alt="mbdc-five">
+                    <img src="../img/docs/updates/update-five/new-index.png" alt="mbdc-five">
                     <div class="topic">
                         <div class="tag">
                         <p>Updates</p>
@@ -872,19 +833,18 @@
                         <h2>Website Redesign</h2>
                         <p>September 13, 2022</p>
                         </div>
-                        <a href="../html/blogs/updates.html">
+                        <!-- <a href="../html/blogs/updates.html">
                             <div class="read-more">
                             Read More Topic
-                            <!-- going to create a section for more blogs -->
-                        </div></a>
+                        </div></a> -->
                 </div>
             </a>
             </div>
 
             <div class="grid-item">
-                <a href="../docs/blogs/random/samuel.html" class="link">
+                <a href="../docs/samuel.html" class="link">
                     <div class="individual">
-                        <img src="../img/blogs/random/samuel/IMG_6693.jpeg" alt="samuel">
+                        <img src="../img/docs/family/IMG_6693.jpeg" alt="samuel">
                         <div class="topic">
                             <div class="tag">
                             <p>My Family</p>
@@ -901,9 +861,9 @@
 
 
         <div class="grid-item">
-            <a href="../docs/blogs/random/still-in-school.html" class="link">
+            <a href="../docs/still-in-school.html" class="link">
                 <div class="individual">
-                    <img src="../img/blogs/random/still-in-school/snhu-home.png" alt="snhu-home">
+                    <img src="../img/docs/opinion/still-in-school/snhu-home.png" alt="snhu-home">
                     <div class="topic">
                         <div class="tag">
                         <p>School</p>
@@ -918,9 +878,9 @@
         </div>
 
         <div class="grid-item">
-        <a href="../docs/blogs/random/who-cares-really.html" class="link">
+        <a href="../docs/who-cares-really.html" class="link">
             <div class="individual">
-                <img src="../img/blogs/random/who-cares.webp" alt="who-cares">
+                <img src="../img/docs/opinion/who-cares/who-cares.webp" alt="who-cares">
                 <div class="topic">
                     <div class="tag">
                     <p>Opinion</p>
@@ -934,14 +894,14 @@
         </a>
         </div>
 
-    </div>
+    <!-- </div> -->
 
-        <div class="grid-two-columns">
+        <!-- <div class="grid-two-columns"> -->
 
         <div class="grid-item">
-            <a href="../docs/blogs/interests/july-22.html" class="link">
+            <a href="../docs/interests/july-22.html" class="link">
                 <div class="individual">
-                    <img src="../img/blogs/interests/interests.jpeg" alt="interests">
+                    <img src="../img/docs/interests/interests.jpeg" alt="interests">
                     <div class="topic">
                         <div class="tag">
                         <p>Interests</p>
@@ -957,9 +917,9 @@
     
     
             <div class="grid-item">
-            <a href="../docs/blogs/random/bible-reading.html" class="link">
+            <a href="../docs/bible-reading.html" class="link">
                 <div class="individual">
-                    <img src="../img/blogs/random/bible-reading/bible-img.jpg" alt="bible-img">
+                    <img src="../img/docs/faith/bible-img.jpeg" alt="bible-img">
                     <div class="topic">
                         <div class="tag">
                         <p>The Bible</p>
@@ -1048,7 +1008,7 @@
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
 
-    <script src="js/top.js"></script>
+    <script src="../js/top.js"></script>
 
     <div class="up-arrow">
 
