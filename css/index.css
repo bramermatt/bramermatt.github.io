@@ -93,16 +93,7 @@ button {
     text-decoration: none;
 }
 
-@media screen and (max-width: 660px) {
-    .hamburger {
-        display: block;
-    }
 
-    .top-title-bar-links {
-        visibility: hidden;
-        display: none;
-    }
-}
 
 
 .top-title-bar img {
@@ -268,6 +259,35 @@ button {
         background-color: white;
         /* border: thin solid; */
     }
+}
+
+@media screen and (max-width: 660px) {
+    .hamburger {
+        display: block;
+    }
+
+    .top-title-bar-links li {
+        visibility: hidden;
+        display: none;
+        width: max-content;
+    }
+
+    .top-title-bar-links {
+        width: 50%;
+    }
+
+    .dropdown {
+        display: block;
+        visibility: visible;
+        padding: 0;
+    }
+
+    .top-title-bar-links-more {
+        display: block !important;
+        visibility: visible;
+        float: left;
+    }
+
 }
 
 
@@ -490,29 +510,29 @@ button {
 
 
 
-    .left-nav-bar img, .right-nav-bar img, .nav-bar img {
+    .nav-bar img {
         filter:invert(100);
     }
 
-    .left-nav-bar li:hover > img, .right-nav-bar li:hover img, .nav-bar li:hover > img {
+    /* .nav-bar li:hover > img {
         filter:invert(0);
-    }
+    } 
 
-    .left-nav-bar li:hover, .right-nav-bar li:hover, .nav-bar li:hover {
+ .nav-bar li:hover {
         background-color: white;
         color: black;
-    }
+    } */
 
-    .active img {
+    /* .active img {
         filter: invert(0);
     }
 
     .active li {
         background-color: white;
         color: rgb(29,29,29);
-    }
+    } */
 
-    .top-title-bar {
+    .top-title-bar, .nav-bar {
         --text: white;
         background-color: #3a3a3a;
     }
@@ -521,7 +541,7 @@ button {
 
 @media screen and (prefers-color-scheme: light) {
 
-    .active img {
+    /* .active img {
         filter: invert(100);
     }
 
@@ -548,7 +568,7 @@ button {
     .left-nav-bar {
         background-color: white;
         background-blend-mode: color;
-    }
+    } */
 
     .nav-bar {
         background-color: white;
@@ -2515,7 +2535,7 @@ table {
     box-shadow: 0 1px 7px -1px rgb(0 0 0 / 32%);
 
     /* margin-bottom: -4px; */
-    /* display: none; */
+    display: none;
 }
 
 
