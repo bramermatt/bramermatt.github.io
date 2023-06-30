@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark"/>
 
-    <link rel="shortcut icon" type="image/x-icon" href="../../../img/mLogo.png">
-    <link rel="stylesheet" href="../../../css/index.css">   
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icons/mLogo.png">
+    <link rel="stylesheet" href="../css/index.css">   
     
-    <title>Book Reviews | Matt Bramer</title>
-    
+    <!-- Update as of May 2023 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/dropDown.js"></script>
+
+    
+    <title>Book Reviews | MattBramer</title>
 
 </head>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
 
-    <script src="../../../js/top.js"></script>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
+    <script src="../js/top.js"></script>
+
 
     <div class="top-title-bar">
 
@@ -26,20 +29,93 @@
         <div class="top-title-bar-content">
             <!-- Nav Icon -->
             <div class="hamburger">
-                <script src="../../../js/sidebar-nav.js"></script>
-                <a href="#" onclick="myFunction()">&#9776;
-            </a>
+                <script src="../js/hamburger.js"></script>
+                <a href="#" onclick="myFunction()">&#9776;</a>
             </div>
             
+            <!-- Links -->
+            <div class="top-title-bar-links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
 
-            <!-- Logo 
-            <img src="img/mLogo.png">
-            -->
+                    <li><a href="../pages/blogs.html">Blogs</a></li>
+
+                    <li><a href="../pages/reviews.html">Reviews</a></li>
+
+                    <li><a href="../pages/about.html">About</a></li>
+
+                    <li class="top-title-bar-links-more">
+                    <div class="dropdown">
+                        <!-- \ -->
+                        <button class="dropbtn">More
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="../pages/bike-commute.html">Bike Commute Blogs</a>
+                            
+                            <a href="../pages/book-reviews.html">Book Reviews</a>
+                            <a href="../pages/movie-reviews.html">Movie Reviews</a>
+    
+                            <a href="../pages/2022-in-review.html">2022 in Review</a>
+                            <a href="../pages/cosmere-in-review.html">Cosmere in Review</a>
+                            <a href="../pages/harry-potter-in-review.html">Harry Potter in Review</a>
+                            <a href="../pages/last-of-us-in-review.html">Last of Us in Review</a>
+                            <a href="../pages/lotr-in-review.html">Lord of the Rings in Review</a>
+                            <a href="../pages/mcu-in-review.html">MCU in Review</a>
+                            <a href="../pages/starwars-in-review.html">Star Wars in Review</a>
+                            <a href="../pages/wheel-of-time-in-review.html">Wheel of Time in Review</a>
+    
+                            <a href="../pages/updates.html">Website Updates</a>
+    
+                            <a href="../pages/site-map.html">Site Map</a>
+                        </div>
+                      </div> 
+                    </li>
+
+
+                    <!-- <li class="top-title-bar-links-more">
+                        <div class="drop-down-button">
+                        \                        
+                        <a href="#" class="drop-down-button">More <i class="fa fa-caret-down"></i></a>
+
+                        <li class="drop-down" id="drop-down">
+                            \
+                            <a href="">Bike Commute Blogs</a>
+                            
+                            <a href="">Book Reviews</a>
+                            <a href="">Movie Reviews</a>
+    
+                            <a href="">2022 in Review</a>
+                            <a href="">Cosmere in Review</a>
+                            <a href="">Harry Potter in Review</a>
+                            <a href="">Last of Us in Review</a>
+                            <a href="">Lord of the Rings in Review</a>
+                            <a href="">MCU in Review</a>
+                            <a href="">Star Wars in Review</a>
+                            <a href="">Wheel of Time in Review</a>
+    
+                            <a href="">Website Updates</a>
+    
+                            <a href="">Site Map</a>
+                        </li>
+                    </li> -->
+
+                </ul>
+            </div>
+
+            <!-- breadcrums! -->
+
+            <!-- https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
+
+
 
             <!-- Title of Page -->
             <div class="top-title-bar-title">
             <h2>Book Reviews</h2>
             </div>
+
+            <!-- Logo  -->
+            <img src="../img/icons/mLogo.png" alt="matt logo">
 
             <!-- Searchbox -->
             <div class="form" id="searchbox" role="search">
@@ -50,93 +126,76 @@
 
     </div>
 
+
+
     <div class="nav-bar" id="nav-bar">
-        <ul>
-        <a href="../../../index.html"><li><img src="../../../img/navbar-icons/home.svg">home</li></a>
-        <a href="../../../html/blogs.html"><li><img src="../../../img/navbar-icons/blog.svg">blog</li></a>
-        <a href="../../../html/projects.html"><li><img src="../../../img/navbar-icons/projects.svg">projects</li></a>
-        <a href="../../../html/reviews.html"><li><img src="../../../img/navbar-icons/reviews.svg">reviews</li></a>
-        <a href="../../../html/about.html"><li><img src="../../../img/navbar-icons/about.svg">about</li></a>
-        <hr>
-        <a href="../../../html/in-reviews.html"><li><img src="../../../img/navbar-icons/in-reviews.svg">In Reviews</li></a>
-        <a href="../../../html/topics/all-topics.html"><li><img src="../../../img/navbar-icons/topics.svg">Topics</li></a>
-        </ul>
-        </div>
+            <!-- <div class="top-title-bar-links"> -->
+                <ul>
+                    <li>
+                        <a href="../index.html"><img src="../img/icons/home.svg">
+                        <p>Home</p></a>
+                    </li>
 
-    <div class="header">
-        <img src="../../../img/page/in-review/book-reviews.jpg" >
+                    <li>
+                        <a href="../pages/blogs.html"><img src="../img/icons/blog.svg">
+                        <p>Blogs</p></a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/reviews.html"><img src="../img/icons/reviews.svg">
+                        <p>Reviews</p></a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/about.html"><img src="../img/icons/about.svg">
+                        <p>About</p></a>
+                    </li>
+               </ul>
     </div>
 
-    <div class="left-nav-bar">
-        <ul>
-        <a href="../../../index.html">
-            <li>
-                <img src="../../../img/navbar-icons/home.svg">
-                <p>home</p>
-            </li>
-        </a>
-        <a href="../../../html/blogs.html">
-            <li>
-                <img src="../../../img/navbar-icons/blog.svg">
-                <p>blog</p>
-            </li>
-        </a>
-        <a href="../../../html/projects.html">
-            <li>
-                <img src="../../../img/navbar-icons/projects.svg">
-                <p>projects</p>
-            </li>
-        </a>
-        <a href="../../../html/reviews.html">
-            <li>
-                <img src="../../../img/navbar-icons/reviews.svg">
-                <p>reviews</p>
-            </li>
-        </a>
-        <a href="../../../html/about.html">
-            <li>
-                <img src="../../../img/navbar-icons/about.svg">
-                <p>about</p>
-            </li>
-        </a>
-        <!-- <a href="html/reviews/franchise/wheel-of-time-in-review.html">
-            <li>
-                <img src="img/navbar-icons/wot.svg">
-                <p>about</p>
-            </li>
-        </a> -->
-        <!-- <hr>
-        <a href="html/in-reviews.html"><li><img src="img/navbar-icons/in-reviews.svg">In Reviews</li></a>
-        <a href="html/all-topics.html"><li><img src="img/navbar-icons/topics.svg">Topics</li></a> -->
-        </ul>
-    </div>
-
-    <div class="right-nav-bar">
-    <ul>
-        <ul>
-            <a href="#in-progress"><li><img src="../../../img/navbar-icons/book-series.svg">In Progress</li></a>
-            <a href="#2023"><li><img src="../../../img/navbar-icons/2023.jpg">2023 Book Reviews</li></a>
-            <a href="#2022"><li><img src="../../../img/navbar-icons/2022.jpg">2022 Book Reviews</li></a>
-
-        </ul>
-    </ul>
-    </div>
-
-    <!-- <div class="title-content">
-        <h1 id="2023">Book Reviews</h1>
+    <!-- <div class="hero-title">
+        <h1>Bike Commuting Blogs</h1>
     </div> -->
+
+
+    <!-- <div class="section"> -->
+        <!-- <div class="posts"> -->
+
+<!-- going to do everything in posted order, then using read more on topic as new html -->
+
+<!-- <div class="split-header">
+    <div class="split-header-half">
+        <img src="../img/docs/bike-commute-blogs/part-ten/matt-w-bike.JPG" alt="a crown of swords">
+    </div>
+
+    <div class="split-header-half">
+        <div class="split-header-half-title">
+            <div class="split-header-half-title-tag">
+                <h2>Bike Commute Blogs</h2>
+            </div>
+
+                <h1>Bike Commuting: Part Ten</h1>
+                <p>October 18, 2022</p>
+
+            <div class="title-link">
+                <a href="../docs/bike-commute-part-ten.html">Read More</a>
+            </div>
+
+        </div>
+    </div>
+</div> -->
 
     <div class="body-content">
 
         <div class="category" id="in-progress">
-            <h1>In Progress Reviews</h1>
+            <h1>In Progress Book Review</h1>
         </div>
     
         <div class="grid-one-column">
             <div class="grid-item">
-                <a href="../../../docs/reviews/the-path-of-daggers-review.html" class="link">
+                <a href="../docs/the-path-of-daggers-review.html" class="link">
                 <div class="individual">
-                    <img src="../../../img/reviews/books/the-path-of-daggers.jpg" alt="tlou">
+                    <img src="../img/docs/books/wheel-of-time/the-path-of-daggers.jpg" alt="tlou">
                     <div class="topic">
                     <div class="tag">
                     <p>Book Reviews</p>
@@ -147,7 +206,7 @@
                     <h2>The Path of Daggers Review</h2>
                     <p>June 19, 2023</p>
                     </div>
-                    <a href="../../../html/reviews/franchise/wheel-of-time-in-review.html">
+                    <a href="../pages/wheel-of-time-in-review.html">
                         <div class="read-more">
                             Wheel of Time in Review
                     </div></a>
@@ -163,9 +222,9 @@
         <div class="grid-eight-columns">
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/a-crown-of-swords-review.html" class="link">
+                <a href="../docs/a-crown-of-swords-review.html" class="link">
                 <div class="individual">
-                    <img src="../../../img/reviews/books/a-crown-of-swords.jpg" alt="tlou">
+                    <img src="../img/docs/books/wheel-of-time/a-crown-of-swords.jpg" alt="tlou">
                     <div class="topic">
                     <div class="tag">
                     <p>Book Reviews</p>
@@ -176,7 +235,7 @@
                     <h2>A Crown of Swords Review</h2>
                     <p>June 16, 2023</p>
                     </div>
-                    <a href="../../../html/reviews/franchise/wheel-of-time-in-review.html">
+                    <a href="../pages/wheel-of-time-in-review.html">
                         <div class="read-more">
                             Wheel of Time in Review
                     </div></a>
@@ -185,9 +244,9 @@
                 </div>
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/lord-of-chaos.html" class="link">
+                <a href="../docs/lord-of-chaos.html" class="link">
                 <div class="individual">
-                    <img src="../../../img/reviews/books/lord-of-chaos.jpg" alt="tlou">
+                    <img src="../img/docs/books/wheel-of-time/lord-of-chaos.jpg" alt="tlou">
                     <div class="topic">
                     <div class="tag">
                     <p>Book Reviews</p>
@@ -198,7 +257,7 @@
                     <h2>Lord of Chaos Review</h2>
                     <p>May 2, 2023</p>
                     </div>
-                    <a href="../../../html/reviews/franchise/wheel-of-time-in-review.html">
+                    <a href="../pages/wheel-of-time-in-review.html">
                         <div class="read-more">
                             Wheel of Time in Review
                     </div></a>
@@ -207,9 +266,9 @@
                 </div>
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/the-fires-of-heaven-review.html" class="link">
+                <a href="../docs/the-fires-of-heaven-review.html" class="link">
                 <div class="individual">
-                    <img src="../../../img/reviews/books/the-fires-of-heaven.jpg" alt="tlou">
+                    <img src="../img/docs/books/wheel-of-time/the-fires-of-heaven.jpg" alt="tlou">
                     <div class="topic">
                     <div class="tag">
                     <p>Book Reviews</p>
@@ -220,7 +279,7 @@
                     <h2>The Fires of Heaven</h2>
                     <p>April 8, 2023</p>
                     </div>
-                    <a href="../../../html/reviews/franchise/wheel-of-time-in-review.html">
+                    <a href="../pages/wheel-of-time-in-review.html">
                         <div class="read-more">
                             Wheel of Time in Review
                     </div></a>
@@ -229,9 +288,9 @@
                 </div>
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/a-game-of-thrones-review.html" class="link">
+                <a href="../docs/a-game-of-thrones-review.html" class="link">
                     <div class="individual">
-                    <img src="../../../img/reviews/books/gameofthrones.jpg" alt="ultrasound-room">
+                    <img src="../img/docs/books/a-song-of-ice-and-fire/gameofthrones.jpg" alt="game of thrones">
                     <div class="topic">
                     <div class="tag">
                     <p>Book Reviews</p>
@@ -247,21 +306,20 @@
             </div>
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/mistborn-the-final-empire-book-review.html" class="link">
+                <a href="../docs/mistborn-the-final-empire-book-review.html" class="link">
                 <div class="individual">
-                    <img src="../../../img/reviews/books/mistborn-finalempire.jpg" alt="tlou">
+                    <img src="../img/docs/books/brandon-sanderson/mistborn-finalempire.jpg" alt="tlou">
                     <div class="topic">
                     <div class="tag">
                     <p>Book Reviews</p>
                     <p>Mistborn</p>
-                    <!-- <p>Cosmere</p> -->
                     </div>
                     </div>
                     <div class="title">
                     <h2>Mistborn: The Final Empire Review</h2>
                     <p>March 14, 2023</p>
                     </div>
-                    <a href="../../../html/cosmere-in-review.html">
+                    <a href="../pages/cosmere-in-review.html">
                         <div class="read-more">
                             Cosmere in Review
                     </div></a>
@@ -270,9 +328,9 @@
                 </div>
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/adventures-of-sherlock-holmes-review.html" class="link">
+                <a href="../docs/adventures-of-sherlock-holmes-review.html" class="link">
                     <div class="individual">
-                        <img src="../../../img/reviews/books/sherlockhomes.jpg" alt="tlou">
+                        <img src="../img/docs/books/sherlock/sherlockhomes.jpg" alt="tlou">
                         <div class="topic">
                         <div class="tag">
                         <p>Book Reviews</p>
@@ -287,9 +345,9 @@
             </div>
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/fellowship-of-the-ring-book-review.html" class="link">
+                <a href="../docs/fellowship-of-the-ring-book-review.html" class="link">
                     <div class="individual">
-                        <img src="../../../img/reviews/books/fellowshipofthering.jpg" alt="the-hobbit-cover">
+                        <img src="../img/docs/books/lotr/fellowshipofthering.jpg" alt="the-hobbit-cover">
                         <div class="topic">
                         <div class="tag">
                         <!-- <img src="../../../img/navbar-icons/folder.svg"> -->
@@ -301,7 +359,7 @@
                         <h2>The Fellowship of the Ring Book Review</h2>
                         <p>by J.R.R. Tolkien</p>
                         </div>
-                        <a href="../../../html/reviews/franchise/lotr-in-review.html">
+                        <a href="../pages/lotr-in-review.html">
                             <div class="read-more">
                                 LOTR in Review
                         </div></a>
@@ -310,9 +368,9 @@
             </div>
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/the-shadow-rising-review.html" class="link">
+                <a href="../docs/the-shadow-rising-review.html" class="link">
                     <div class="individual">
-                        <img src="../../../img/reviews/books/theshadowrising-wot.jpg" alt="tdr-cover">
+                        <img src="../img/docs/books/wheel-of-time/theshadowrising-wot.jpg" alt="tdr-cover">
                         <div class="topic">
                         <div class="tag">
                             <p>Book Reviews</p>
@@ -323,7 +381,7 @@
                             <h2>The Shadow Rising Review</h2>
                             <p>by Robert Jordan</p>
                         </div>
-                        <a href="../../../html/reviews/franchise/wheel-of-time-in-review.html">
+                        <a href="../pages/wheel-of-time-in-review.html">
                             <div class="read-more">
                                 Wheel of Time in Review
                         </div></a>
@@ -332,7 +390,7 @@
             </div>
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/star-wars-brotherhood.html" class="link">
+                <a href="../docs/star-wars-brotherhood.html" class="link">
                     <div class="individual">
                         <img src="../../../img/reviews/books/starwars brotherhood.webp" alt="tlou">
                         <div class="topic">
@@ -354,7 +412,7 @@
             </div>
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/the-martian-review.html" class="link">
+                <a href="../docs/the-martian-review.html" class="link">
                     <div class="individual">
                         <img src="../../../img/reviews/books/the martian.jpg" alt="martian-review">
                         <div class="topic">
@@ -372,7 +430,7 @@
             </div>
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/the-terminal-list-review.html" class="link">
+                <a href="../docs/the-terminal-list-review.html" class="link">
                     <div class="individual">
                         <img src="../../../img/reviews/books/theterminallist.jpg" alt="hunger games cover">
                         <div class="topic">
@@ -389,7 +447,7 @@
             </div>
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/hunger-games-book-review.html" class="link">
+                <a href="../docs/hunger-games-book-review.html" class="link">
                     <div class="individual">
                         <img src="../../../img/reviews/books/hungergames-cover.webp" alt="hunger games cover">
                         <div class="topic">
@@ -406,7 +464,7 @@
             </div>
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/the-dragon-reborn-review.html" class="link">
+                <a href="../docs/the-dragon-reborn-review.html" class="link">
                     <div class="individual">
                         <img src="../../../img/reviews/books/thedragonreborn-rj.jpg" alt="tdr-cover">
                         <div class="topic">
@@ -428,7 +486,7 @@
             </div>
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/attack-on-titan1-review.html" class="link">
+                <a href="../docs/attack-on-titan1-review.html" class="link">
                     <div class="individual">
                         <img src="../../../img/reviews/books/attack-on-titan-1.jpeg" alt="attack-on-titan-1">
                         <div class="topic">
@@ -445,7 +503,7 @@
             </div>
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/thegreathunt-review.html" class="link">
+                <a href="../docs/thegreathunt-review.html" class="link">
                     <div class="individual">
                         <img src="../../../img/reviews/books/thegreathunt-rj.jpg" alt="greathuntcover">
                         <div class="topic">
@@ -474,7 +532,7 @@
             <div class="grid-seven-columns">
 
             <div class="grid-item">
-                <a href="../../../docs/reviews/oathbringer-review.html" class="link">
+                <a href="../docs/oathbringer-review.html" class="link">
                     <div class="individual">
                         <img src="../../../img/reviews/books/oathbringer.jpg" alt="oathbringer">
                         <div class="topic">
@@ -500,7 +558,7 @@
 
 
     <div class="grid-item">
-        <a href="../../../docs/reviews/edgedancer-review.html" class="link">
+        <a href="../docs/edgedancer-review.html" class="link">
             <div class="individual">
                 <img src="../../../img/reviews/books/edgedancer-review.jpg" alt="edgedancer">
                 <div class="topic">
@@ -523,7 +581,7 @@
 </div>
 
     <div class="grid-item">
-        <a href="../../../docs/reviews/warbreaker-review.html" class="link">
+        <a href="../docs/warbreaker-review.html" class="link">
             <div class="individual">
                 <img src="../../../img/reviews/books/warbreaker.jpg" alt="wor-cover">
                 <div class="topic">
@@ -546,7 +604,7 @@
     </div>
 
     <div class="grid-item">
-        <a href="../../../docs/reviews/words-of-radiance.html" class="link">
+        <a href="../docs/words-of-radiance.html" class="link">
             <div class="individual">
                 <img src="../../../img/reviews/books/words-of-radiance.jpg" alt="wor-cover">
                 <div class="topic">
@@ -569,7 +627,7 @@
     </div>
 
     <div class="grid-item">
-        <a href="../../../docs/reviews/hp-chamber.html" class="link">
+        <a href="../docs/hp-chamber.html" class="link">
             <div class="individual">
                 <img src="../../../img/reviews/books/hp2-cover.jpg" alt="starwars-aftermath-cover">
                 <div class="topic">
@@ -591,7 +649,7 @@
     </div>
 
     <div class="grid-item">
-        <a href="../../../docs/reviews/twilight-review.html" class="link">
+        <a href="../docs/twilight-review.html" class="link">
             <div class="individual">
                 <img src="../../../img/reviews/books/twilight-cover.jpeg" alt="twilight-cover">
                 <div class="topic">
@@ -613,7 +671,7 @@
     </div>
 
     <div class="grid-item">
-        <a href="../../../docs/reviews/elantris-review.html" class="link">
+        <a href="../docs/elantris-review.html" class="link">
             <div class="individual">
                 <img src="../../../img/reviews/books/elantris-cover.jpg" alt="elantris-cover">
                 <div class="topic">
@@ -677,7 +735,7 @@
     </div> -->
 
     <div class="grid-item">
-        <a href="../../../docs/reviews/wok-review.html" class="link">
+        <a href="../docs/wok-review.html" class="link">
             <div class="individual">
                 <img src="../../../img/reviews/books/wok-cover.jpg" alt="wok-cover">
                 <div class="topic">
@@ -700,7 +758,7 @@
     </div>
 
     <div class="grid-item">
-        <a href="../../../docs/reviews/eye-revew.html" class="link">
+        <a href="../docs/eye-revew.html" class="link">
             <div class="individual">
                 <img src="../../../img/reviews/books/eye-review.jpg" alt="eye-cover">
                 <div class="topic">
@@ -722,7 +780,7 @@
     </div>
 
     <div class="grid-item">
-        <a href="../../../docs/reviews/dune-review.html" class="link">
+        <a href="../docs/dune-review.html" class="link">
             <div class="individual">
                 <img src="../../../img/reviews/books/dune-cover.jpg" alt="dune-cover">
                 <div class="topic">
@@ -744,7 +802,7 @@
     </div>
 
     <div class="grid-item">
-        <a href="../../../docs/reviews/1984-review.html" class="link">
+        <a href="../docs/1984-review.html" class="link">
             <div class="individual">
                 <img src="../../../img/reviews/books/1984-cover.jpeg" alt="1984-cover">
                 <div class="topic">
@@ -766,7 +824,7 @@
     </div>
 
     <div class="grid-item">
-        <a href="../../../docs/reviews/hp-1-review.html" class="link">
+        <a href="../docs/hp-1-review.html" class="link">
             <div class="individual">
                 <img src="../../../img/reviews/books/hp-1-cover.jpg" alt="hp-1-cover">
                 <div class="topic">
@@ -789,7 +847,7 @@
 
 
             <div class="grid-item">
-            <a href="../../../docs/reviews/sw-aftermath-review.html" class="link">
+            <a href="../docs/sw-aftermath-review.html" class="link">
                 <div class="individual">
                     <img src="../../../img/reviews/books/sw-aftermath-cover.jpeg" alt="starwars-aftermath-cover">
                     <div class="topic">
@@ -811,7 +869,7 @@
         </div>
 
         <div class="grid-item">
-            <a href="../../../docs/reviews/the-hobbit-review.html" class="link">
+            <a href="../docs/the-hobbit-review.html" class="link">
                 <div class="individual">
                     <img src="../../../img/reviews/books/thehobbit-book-cover.png" alt="the-hobbit-cover">
                     <div class="topic">
