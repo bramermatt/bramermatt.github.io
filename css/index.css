@@ -215,7 +215,7 @@ button {
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   /* background-color: red; */
-  background-color: none;
+  /* background-color: none; */
   font-weight: 700;
 }
 
@@ -267,13 +267,14 @@ button {
     }
 
     .top-title-bar-links li {
-        visibility: hidden;
+        /* visibility: hidden; */
         display: none;
         width: max-content;
     }
 
     .top-title-bar-links {
         width: 50%;
+        position: relative;
     }
 
     .dropdown {
