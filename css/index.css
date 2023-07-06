@@ -181,6 +181,10 @@ button {
     padding-inline: 5px;
 }
 
+.top-title-bar-links a:link, a:visited {
+    color: var(--text);
+}
+
 /* @media screen and (min-width: 2400px) {
     .top-title-bar-links {
         width: 100%;
@@ -273,8 +277,9 @@ button {
     }
 
     .top-title-bar-links {
-        width: 50%;
-        position: relative;
+        width: 10%;
+        flex-grow: 1;
+        /* position: relative; */
     }
 
     .dropdown {
@@ -6483,10 +6488,10 @@ details p {
         margin-right: auto; */
     }
 
-    .topTitle {
+    /* .topTitle {
         display: block;
         visibility: visible;
-    }
+    } */
 
     .topTitle h1 {
         position: fixed;
