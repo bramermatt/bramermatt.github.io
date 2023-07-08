@@ -214,6 +214,8 @@ button {
   margin: 0;
   /* text-transform: lowercase; */
   cursor: pointer;
+
+  color: var(--text);
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -4364,7 +4366,7 @@ table {
 
 .blog-container {
     /* max-width: 1450px; */
-    max-width: 1200px;
+    max-width: 1000px;
     width: 90vw;
     /* max-width: 1800px; */
     /* width: 90vw; */
@@ -8013,11 +8015,14 @@ details h2, details table {
     max-width: 900px;
 }
 
-.blog-title-head .blog-title-tag h2 {
+.blog-title-head .blog-title-tag h1 {
     font-size: 45px;
     line-height: 1;
+    margin-bottom: 5px;
 
 }
+
+/* .blog-title-head */
 
 .blog-title-head .blog-title-tag ul {
     margin: 0;
@@ -8108,8 +8113,8 @@ details h2, details table {
     }
 
     .blog-title-head .blog-title-tag h1 {
-        margin-bottom: 0;
-        font-size: 22px;
+        /* margin-bottom: 0; */
+        font-size: 28px;
     }
 
     .blog-title-content .blog-title-flex-grow h2 {
