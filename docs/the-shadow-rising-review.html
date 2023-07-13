@@ -7,69 +7,129 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="color-scheme" content="light dark"/>
-        <link rel="shortcut icon" type="image/x-icon" href="../../img/mLogo.png">
-        <link rel="stylesheet" href="../../css/index.css">   
+        <link rel="shortcut icon" type="image/x-icon" href="../img/icons/mLogo.png">
+        <link rel="stylesheet" href="../css/index.css">   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- fixme -->
         
         <!-- <title>Matt Bramer | Home</title> -->
         
     
     </head>
     <body>
-   <!-- js -->
-   <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
-   <script src="../../js/top.js"></script>
+<div class="top-title-bar">
 
-   <script src="../../js/active.js"></script>
+    <!-- Title Bar Content -->
+    <div class="top-title-bar-content">
+        <!-- Nav Icon -->
+        <div class="hamburger">
+            <script src="../js/hamburger.js"></script>
+            <a href="#" onclick="myFunction()">&#9776;</a>
+        </div>
+        
+        <!-- Links -->
+    <div class="top-title-bar-links">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
 
-   <div class="top-title-bar">
+            <li><a href="../pages/blogs.html">Blogs</a></li>
 
-       <!-- Title Bar Content -->
-       <div class="top-title-bar-content">
-           <!-- Nav Icon -->
-           <div class="hamburger">
-               <script src="../../js/sidebar-nav.js"></script>
-               <a href="#" onclick="myFunction()">&#9776;
-           </a>
-           </div>
-           
+            <li><a href="../pages/reviews.html">Reviews</a></li>
 
-           <!-- Logo 
-           <img src="img/mLogo.png">
-           -->
+            <li><a href="../pages/about.html">About</a></li>
 
-           <!-- Title of Page -->
-           <div class="top-title-bar-title">
-           <!-- <h2>Lord of Chaos Review</h2> -->
-           <h2>The Shadow Rising Book Review</h2>
-           </div>
+            <li class="top-title-bar-links-more">
+            <div class="dropdown">
+                <!-- \ -->
+                <button class="dropbtn">More
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../pages/bike-commute.html">Bike Commute Blogs</a>
+                    
+                    <a href="../pages/book-reviews.html">Book Reviews</a>
+                    <a href="../pages/movie-reviews.html">Movie Reviews</a>
 
-           <div class="top-title-bar-spoiler">
-               <h2>Spoiler Alert</h2>
-           </div>
+                    <a href="../pages/2022-in-review.html">2022 in Review</a>
+                    <a href="../pages/cosmere-in-review.html">Cosmere in Review</a>
+                    <a href="../pages/harry-potter-in-review.html">Harry Potter in Review</a>
+                    <a href="../pages/last-of-us-in-review.html">Last of Us in Review</a>
+                    <a href="../pages/lotr-in-review.html">Lord of the Rings in Review</a>
+                    <a href="../pages/mcu-in-review.html">MCU in Review</a>
+                    <a href="../pages/starwars-in-review.html">Star Wars in Review</a>
+                    <a href="../pages/wheel-of-time-in-review.html">Wheel of Time in Review</a>
 
-           <!-- Searchbox -->
-           <div class="form" id="searchbox" role="search">
-               <input type="text" placeholder="Search.."><button>Search</button>
-           </div>
+                    <a href="../pages/updates.html">Website Updates</a>
 
-       </div>
+                    <a href="../pages/site-map.html">Site Map</a>
+                </div>
+                </div> 
+            </li>
 
-   </div>
 
-   <div class="nav-bar" id="nav-bar">
-       <ul>
-       <a href="../../index.html"><li><img src="../../img/navbar-icons/home.svg">home</li></a>
-       <a href="../../html/blogs.html"><li><img src="../../img/navbar-icons/blog.svg">blog</li></a>
-       <a href="../../html/projects.html"><li><img src="../../img/navbar-icons/projects.svg">projects</li></a>
-       <a href="../../html/reviews.html"><li><img src="../../img/navbar-icons/reviews.svg">reviews</li></a>
-       <a href="../../html/about.html"><li><img src="../../img/navbar-icons/about.svg">about</li></a>
-       <hr>
-       <a href="../../html/in-reviews.html"><li><img src="../../img/navbar-icons/in-reviews.svg">In Reviews</li></a>
-       <a href="../../html/all-topics.html"><li><img src="../../img/navbar-icons/topics.svg">Topics</li></a>
-       </ul>
-       </div>
 
-       <div class="blog-vertical">
+    </ul>
+</div>
+
+        <!-- breadcrums! -->
+
+        <!-- https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
+
+
+
+        <!-- Title of Page -->
+        <!-- fixme -->
+        <div class="top-title-bar-title">
+        <h2>The Shadow Rising Book Review</h2>
+        </div>
+
+        <!-- Logo  -->
+        <img src="../img/icons/mLogo.png" alt="matt logo">
+
+        <!-- Searchbox -->
+        <div class="form" id="searchbox" role="search">
+            <input type="text" placeholder="Search.."><button>Search</button>
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="blog-title-head">
+
+        <div class="blog-title-tag">
+            <ul>
+                <li><a href="../pages/reviews.html">Reviews</a></li>
+                <li><a href="../pages/book-reviews.html">Book Reviews</a></li>
+                <li><a href="../pages/wheel-of-time-in-review.html">Wheel of Time in Review</a></li>
+            </ul>
+    
+            <h1>The Shadow Rising Book Review</h1>
+        </div>
+    
+        <div class="blog-title-content">
+            <div class="blog-title-img">
+                <img src="../img/docs/books/wheel-of-time/theshadowrising-wot.jpg" alt="tsr-cover">
+                <blockquote>The Shadow Rising Cover</blockquote>
+            </div>
+    
+            <div class="blog-title-tldr">
+                <div class="blog-title-flex-grow">
+                <h2>This is some of the best Wheel of Time that I have read. This is amazing.</h2>
+                </div>
+    
+            <div class="blog-title-date">
+                <h3>March 1, 2023</h3>
+            </div>
+    
+            </div>
+    
+        </div>    
+    
+    </div>
+
+       <!-- <div class="blog-vertical">
 
         <img src="../../img/reviews/books/theshadowrising-wot.jpg" alt="tsr-cover">
         <blockquote>The Shadow Rising Cover</blockquote>
@@ -106,7 +166,7 @@
 
     <div class="spoiler-scrollbar">
         <p>Spoiler Alert</p>
-    </div>
+    </div> -->
              
    <div class="left-nav-bar">
        <ul>
@@ -268,6 +328,27 @@
     </details> -->
 
    
+
+<!-- </div> -->
+
+<!-- <div class="sticky-video"> -->
+<h2 id="video">Video Review</h2>
+<div class="iframe-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i8bQNBNXbIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<blockquote>The Shadow Rising by Robert Jordan (Book Four in the Wheel of Time) - Book Review on YouTube</blockquote>
+<!-- </div> -->
+
+    <!-- </div> -->
+<!-- </div> -->
+                <!-- </div> -->
+
+    <!-- <details id="spoilers">
+    <summary>Spoilers..</summary>
+
+
+    </details> -->
+
     <details id="spoilers" style="border-color: rgb(27, 86, 105);">
         <summary style="background-color:rgb(27, 86, 105);">Notes As I Read</summary>
         <h2>Chapter 1 - Seeds of Shadow</h2>
@@ -586,27 +667,6 @@
         <p>So SO GOOD!</p>
     
     </details>
-<!-- </div> -->
-
-<!-- <div class="sticky-video"> -->
-<h2 id="video">Video Review</h2>
-<div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/i8bQNBNXbIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-<blockquote>The Shadow Rising by Robert Jordan (Book Four in the Wheel of Time) - Book Review on YouTube</blockquote>
-<!-- </div> -->
-
-    <!-- </div> -->
-<!-- </div> -->
-                <!-- </div> -->
-
-    <!-- <details id="spoilers">
-    <summary>Spoilers..</summary>
-
-
-    </details> -->
-
-
 
 
 
