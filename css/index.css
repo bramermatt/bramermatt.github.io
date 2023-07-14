@@ -40,9 +40,9 @@ body {
     /* margin-left: 68px; */
  }
 
-button {
+/* button {
     font-family: "YouTube Sans","Roboto",sans-serif;
-}
+} */
 
 
 /* Top Title Bar */
@@ -288,7 +288,7 @@ button {
 
 @media screen and (max-width: 660px) {
     .top-title-bar-title {
-        display: block;
+        display: none;
     }
 }
 
@@ -7973,10 +7973,10 @@ details h2, details table {
     }
 
     .top-title-bar .top-title-bar-title h2 {
-        font-size: 12px;
+        /* font-size: 12px; */
         padding-right: 2px;
 
-        display: none;
+        /* display: none; */
     }
 
     .top-title-bar-links-more {
@@ -8143,3 +8143,39 @@ details h2, details table {
         font-weight: 400;
     }
 }
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
