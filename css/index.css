@@ -7980,7 +7980,7 @@ details h2, details table {
     }
 
     .top-title-bar-links-more {
-        display: none;
+        /* display: none; */
         /* font-size: 14px; */
         padding-left: 5px;
     }
