@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+hr {
+    margin: 0;
+}
+
+html {
+    margin: auto;
+    scroll-behavior: smooth;
+}
+  
+body.light {
+    --text: dark;
+    --background: white;
+}
+
+body.dark {
+    --text: white;
+    --background: dark;
+    /* --background: #3a3a3a; */
+} 
+
+body {
+    text-rendering: optimizeLegibility;
+    color: var(--text);
+    background: var(--background);
+    margin: 0;
+    /* font-family: "YouTube Sans","Roboto",sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: default;
+
+    padding-inline: 15px;
+ }
+
+a:visited, a:link {
+    color: var(--text);
+}
+
+.blog-title {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 15px 0;
+    /* border-bottom: thin solid; */
+}
+
+.blog-title h1 {
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.blog-title img {
+    max-height: 50vh;
+    max-width: 100%;
+
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
+}
+
+.blog-title blockquote {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-style: italic;
+    font-size: 80%;
+}
+
+
+.blog-container {
+    max-width: 1200px;
+    margin: auto;
+
+    padding-bottom: 20vh;
+}
+
+.blog h2 {
+    max-width: 600px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    /* padding-top: 0; */
+}
+
+.blog p {
+    max-width: 600px;
+    /* line-height: 1.5; */
+    /* margin-top: 0; */
+    /* margin: auto; */
+}
+
+.blog img {
+    max-height: 50vh;
+    max-width: 100%;
+    object-fit: contain;
+    /* margin: auto; */
+}
+
+.blog blockquote {
+    margin: 5px;
+    font-style: italic;
+    margin-bottom: 40px;
+    font-size: 80%;
+}
+
+.blog ol {
+    padding-left: 5vw;
+}
+
+.blog li {
+    padding: 10px;
+    max-width: 600px;
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.35%; 
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
+}
+  
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+details {
+    margin: 10px 0;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 10px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    border: thin solid;
+  }
+
+th {
+    font-size: 1.2em;
+    padding: 10px;
+    text-align: left;
+
+}
+
+td {
+    width: max-content;
+    max-width: 600px;
+}
+
+table {
+    border-spacing: 10px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-bottom: 10px;
+    box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.08);
+    padding: 0;
+}
+
