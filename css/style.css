@@ -52,6 +52,10 @@ a:visited, a:link {
     /* border-bottom: thin solid; */
 }
 
+.blog-title a {
+    margin-right: 10px;
+}
+
 .blog-title h1 {
     line-height: 1;
     margin-bottom: 0;
@@ -94,10 +98,11 @@ a:visited, a:link {
 }
 
 .blog img {
-    max-height: 50vh;
+    max-height: 60vh;
     max-width: 100%;
     object-fit: contain;
-    padding: 10px 0;
+    margin: 10px 0;
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
     /* margin: auto; */
 }
 
@@ -128,7 +133,7 @@ a:visited, a:link {
     margin-top: 10px;
 }
   
-iframe {
+iframe, video {
     position: absolute;
     top: 0;
     left: 0;
@@ -140,6 +145,30 @@ iframe {
 
 details {
     margin: 10px 0;
+}
+
+summary {
+    border: thin solid;
+    padding: 10px;
+    margin-left: 10px;
+    width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(124, 64, 64, 0.1);
+
+    position: sticky;
+    top: 10px;
+    z-index: 5;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    summary {
+        background-color: white !important;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    summary {
+        background-color:rgba(0, 0, 0, 0.25) !important;
+    }
 }
 
 table, th, td {
@@ -175,6 +204,18 @@ table {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1vw;
+}
+
+.three-img-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1vw;
+}
+
+@media screen and (max-width: 800px) {
+    .two-img-columns, .three-img-columns {
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -679,5 +720,13 @@ table {
 
 
 
+.top-title-bar, .footer, .navbar, .inline-navbar, .hamburger, #mybtn, .blog-topics, .blog-alt-title, .blog-vertical-title, .topTitle, .spoiler-scrollbar, .left-nav-bar, .right-nav-bar, .ad-break, .blog-right, .nav-bar {
+    display: none;
+}
 
+img {
+    max-width: 100%;
+    max-height: 50vh;
+    margin: auto;
+}
 
