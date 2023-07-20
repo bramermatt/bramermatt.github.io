@@ -42,10 +42,12 @@ body {
 
 a:visited, a:link {
     color: var(--text);
+
+    /* color: lightblue; */
 }
 
 .blog-title {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
 
     padding: 15px 0;
@@ -55,13 +57,13 @@ a:visited, a:link {
 }
 
 .blog-title a {
-    margin-right: 10px;
-    margin-left: 10px;
-
+    margin-right: 5vw;
+    /* margin-left: 10px; */
     /* position: fixed; */
     /* border: thin solid; */
     /* border-radius: 30px; */
     /* padding: 10px; */
+    text-wrap: nowrap;
 }
 
 .blog-title h1 {
@@ -70,7 +72,7 @@ a:visited, a:link {
 }
 
 .blog-title p {
-    max-width: 450px;
+    max-width: 550px;
 }
 
 .blog-title img {
@@ -89,7 +91,7 @@ a:visited, a:link {
 
 
 .blog-container {
-    max-width: 1000px;
+    max-width: 800px;
     margin: auto;
 
     padding-bottom: 20vh;
@@ -97,7 +99,7 @@ a:visited, a:link {
 
 .blog h2 {
     max-width: 600px;
-    line-height: 1.5;
+    line-height: 120%;
     margin-bottom: 0;
     /* padding-top: 0; */
 }
@@ -105,7 +107,7 @@ a:visited, a:link {
 .blog p {
     max-width: 600px;
     line-height: 1.5;
-    /* margin-top: 0; */
+    margin-top: 10px;
     /* margin: auto; */
 }
 
@@ -166,9 +168,9 @@ details[open] summary {
 summary {
     /* border: thin solid white; */
     padding: 10px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     width: max-content;
-    box-shadow: 0px 8px 16px 0px rgba(3, 3, 3, 0.1);
+    /* box-shadow: 0px 8px 16px 0px rgba(3, 3, 3, 0.1); */
 
     position: sticky;
     top: 2.5vh;
@@ -183,6 +185,8 @@ summary {
 @media screen and (prefers-color-scheme: light) {
     summary {
         background-color: white !important;
+        box-shadow: 0px 8px 16px 0px rgba(3, 3, 3, 0.1);
+        border: thin solid rgba(3, 3, 3, 0.2);
     }
 }
 
