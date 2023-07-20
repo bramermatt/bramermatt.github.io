@@ -104,7 +104,7 @@ a:visited, a:link {
 
 .blog p {
     max-width: 600px;
-    /* line-height: 1.5; */
+    line-height: 1.5;
     /* margin-top: 0; */
     /* margin: auto; */
 }
@@ -157,6 +157,10 @@ iframe, video {
 
 details {
     margin: 10px 0;
+}
+
+details[open] summary {
+    margin-left: auto !important; 
 }
 
 summary {
@@ -754,6 +758,12 @@ table {
 .blog-title-head {
     max-width: 1200px;
     margin: auto;
+}
+
+.blog-title-head h2 {
+    max-width: 450px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 img {
