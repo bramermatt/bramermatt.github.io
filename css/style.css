@@ -23,6 +23,12 @@ body.dark {
     /* --background: #3a3a3a; */
 } 
 
+@media screen and (prefers-color-scheme: dark) {
+    body, body.dark, html {
+        background-color: #1d1d1d;
+    }
+}
+
 body {
     text-rendering: optimizeLegibility;
     color: var(--text);
@@ -410,6 +416,12 @@ table {
   .active, .collapsible:hover, .collapsible {
     background-color: #555;
   }
+
+  @media screen and (prefers-system-light) {
+    .collapsible {
+        background-color: white;
+    }
+  }
   
   .collapsible:after {
     content: '\002B';
@@ -648,6 +660,8 @@ table {
 
     .collapsible {
         color: rgb(0, 0, 0);
+        background-color: white;
+        border: thin solid #eee;
       }
       
       .active, .collapsible:hover {
