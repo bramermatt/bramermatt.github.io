@@ -55,7 +55,7 @@ body {
     position: sticky;
     z-index: 40;
     /* background-color: white; */
-    /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 5%); */
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
     /* opacity: 50%; */
 
     overflow: hidden;
