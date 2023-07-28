@@ -4166,8 +4166,9 @@ table {
 
 .four-img-columns img, .five-img-columns img, .two-img-columns img, .two-thirds-img-columns img, .three-img-columns img, .six-img-columns img, .thirds-two-img-columns img {
     /* height: 40vh; */
-    height: 70vh;
-    width: 100%;
+    max-height: 70vh;
+    max-width: 100%;
+    /* object-fit: contain; */
     padding: 5px;
     /* padding-bottom: 0; */
     display:block;
@@ -5972,6 +5973,7 @@ details p {
 
     .grid-four-columns, .grid-seven-columns, .grid-eight-columns, .grid-nine-columns, .grid-three-video-columns, .grid-two-video-columns, .grid-four-video-columns, .four-img-columns, .five-img-columns {
         max-width: 900px;
+        padding-inline: 10px;
     }
 
     .grid-three-columns,  .grid-five-columns, .grid-six-columns {
@@ -6073,14 +6075,14 @@ details p {
 
 
 @media screen and (max-width: 990px) {
-    .three-img-columns, .two-img-columns, .two-thirds-img-columns, .thirds-two-img-columns, .four-img-columns, .grid-two-img-columns {
+    .three-img-columns, .two-img-columns, .two-thirds-img-columns, .thirds-two-img-columns, .grid-two-img-columns {
         grid-template-columns: 1fr;
         padding: 0;
         gap: 0;
         display: block;
     }
 
-    .five-img-columns {
+    .five-img-columns, .four-img-columns {
         grid-template-columns: 1fr 1fr;
         padding: 0;
         gap: 0;
@@ -6313,6 +6315,10 @@ details p {
     .grid-eight-columns, .grid-nine-columns {
         grid-template-columns: 1fr 1fr;
         /* max-width: 1200px; */
+    }
+
+    .four-img-columns {
+        grid-template-columns: 1fr;
     }
 }
 
