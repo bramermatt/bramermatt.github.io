@@ -87,10 +87,10 @@ section {
 }
 
 .section-maxwidth {
-    max-width: 1500px;
+    max-width: 1600px;
     margin: auto;
     padding-inline: 15px;
-    margin-bottom: 15vh;
+    /* margin-bottom: 15vh; */
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -200,7 +200,7 @@ section {
     margin: 10px 0;
     padding-inline: 15px;
     /* margin: auto; */
-    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
+    /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%); */
     /* margin: auto; */
 }
 
@@ -318,6 +318,7 @@ table {
     margin-bottom: 10px;
     box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.08);
     padding: 0;
+    margin: 15px;
 }
 
 .two-img-columns {
@@ -877,6 +878,11 @@ table {
 .blog-title-head {
     max-width: 1200px;
     margin: auto;
+    padding-inline: 15px;
+}
+
+.blog-title-head h1 {
+    line-height: 100%;
 }
 
 .blog-title-head h2 {
