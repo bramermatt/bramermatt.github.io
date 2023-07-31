@@ -29,6 +29,12 @@ body.dark {
     }
 }
 
+/* @media screen and (prefers-color-scheme: light) {
+    html {
+        background-color: tan;
+    }
+} */
+
 body {
     text-rendering: optimizeLegibility;
     color: var(--text);
@@ -69,16 +75,27 @@ nav {
 nav a:link, a:visited {
     color: var(--text);
     text-decoration: none;
-    max-width: 1500px;
+    /* max-width: 1500px; */
     margin: auto;
+    margin-right: 2vw;
+}
+
+nav a::before {
+    content: "+\00a0";
 }
 
 footer {
     width: 100%;
-    padding: 6vw;
-    margin-top: 6vh;
+    padding: 4vh;
+    margin-top: 8vh;
     /* margin: 15px; */
-    border-top: thin solid;
+    /* border-top: thin solid; */
+}
+
+footer img {
+    max-height: 5vh;
+    width: 100%;
+    margin: auto;
 }
 
 
@@ -120,10 +137,18 @@ section {
     margin-right: 1vw;
     /* margin-left: 10px; */
     /* position: fixed; */
-    /* border: thin solid; */
+    border: thin solid;
     /* border-radius: 30px; */
-    /* padding: 10px; */
+    font-size: 14px;
+    width: max-content;
+    margin-top: 10px;
+    padding: 10px;
     text-wrap: nowrap;
+}
+
+.blog-title a:link, a:visited {
+    color: var(--text);
+    text-decoration: none;
 }
 
 .blog-title h1 {
@@ -133,6 +158,7 @@ section {
 
 .blog-title p {
     max-width: 550px;
+    margin-bottom: 30px;
 }
 
 .blog-title img {
@@ -248,6 +274,13 @@ details {
     /* background-color: red; */
 }
 
+/* details[open] {
+    border: thin solid;
+    border-radius: 40px;
+    margin: 10px;
+    padding: 10px 0;
+} */
+
 details[open] summary {
     margin-left: auto !important; 
     margin-right: 15px;
@@ -261,8 +294,8 @@ summary {
     /* box-shadow: 0px 8px 16px 0px rgba(3, 3, 3, 0.1); */
 
     position: sticky;
-    top: 2.5vh;
-    z-index: 5;
+    top: 7vh;
+    z-index: 2;
     cursor: pointer;
     transform: ease 2s;
 
@@ -553,7 +586,7 @@ table {
 
     .blog-title a {
         display: block;
-        padding: 5px 0;
+        /* padding: 5px 0; */
     }
 }
 
@@ -645,8 +678,8 @@ table {
 }
 
 .split-header-half-title h1 {
-    font-size: 85px;
-    line-height: 81px;
+    font-size: 75px;
+    line-height: 71px;
     margin: 0;
 }
 
@@ -903,3 +936,11 @@ img {
     margin: auto;
 }
 
+
+/* 
+
+working on pages now
+
+
+
+*/
