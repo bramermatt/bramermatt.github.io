@@ -38,7 +38,7 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     cursor: default;
 
-    padding-inline: 15px;
+    /* padding-inline: 15px; */
 }
 
 /* @media screen and (max-width: 1300px) {
@@ -56,11 +56,21 @@ a:visited, a:link {
 nav {
     width: 100% !important;
     padding: 10px;
+    padding-inline: 20px;
     /* margin: 15px; */
-    border-bottom: thin solid;
+    /* border-bottom: thin solid; */
     position: sticky;
     top: 0;
     z-index: 5;
+
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
+}
+
+nav a:link, a:visited {
+    color: var(--text);
+    text-decoration: none;
+    max-width: 1500px;
+    margin: auto;
 }
 
 footer {
@@ -69,6 +79,18 @@ footer {
     margin-top: 6vh;
     /* margin: 15px; */
     border-top: thin solid;
+}
+
+
+section {
+    padding-inline: 15px;
+}
+
+.section-maxwidth {
+    max-width: 1500px;
+    margin: auto;
+    padding-inline: 15px;
+    margin-bottom: 15vh;
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -88,6 +110,7 @@ footer {
     margin: auto;
 
     padding: 15px 0;
+    padding-inline: 15px;
     /* border-bottom: thin solid; */
 
     /* background-color: lightcoral; */
@@ -122,7 +145,7 @@ footer {
 .blog-title blockquote {
     margin-top: 5px;
     margin-left: 5px;
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 80%;
 }
 
@@ -136,7 +159,7 @@ footer {
 
     border-right: thin solid #eee;
     border-left: thin solid #eee;
-    padding-inline: 20px;
+    /* padding-inline: 20px; */
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -158,6 +181,7 @@ footer {
     max-width: 600px;
     line-height: 120%;
     margin-bottom: 0;
+    padding-inline: 15px;
     /* padding-top: 0; */
 }
 
@@ -165,14 +189,17 @@ footer {
     max-width: 600px;
     line-height: 1.5;
     margin-top: 10px;
+    padding-inline: 15px;
     /* margin: auto; */
 }
 
 .blog img {
-    max-height: 60vh;
+    max-height: 70vh;
     max-width: 100%;
     object-fit: contain;
     margin: 10px 0;
+    padding-inline: 15px;
+    /* margin: auto; */
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
     /* margin: auto; */
 }
@@ -183,6 +210,7 @@ footer {
     font-style: italic;
     margin-bottom: 40px;
     font-size: 80%;
+    padding-inline: 15px;
 }
 
 .blog ol, .blog ul {
@@ -216,6 +244,8 @@ iframe, video {
 
 details {
     margin: 10px 0;
+    padding-inline: 15px;
+    /* background-color: red; */
 }
 
 details[open] summary {
@@ -631,7 +661,7 @@ table {
 }
 
 .split-header-half-title-tag {
-    display: flex;
+    /* display: flex; */
 
 }
 
