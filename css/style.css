@@ -137,6 +137,7 @@ section {
     /* margin-bottom: 15vh; */
 }
 
+
 @media screen and (prefers-color-scheme: light) {
     nav {
         background-color: white;
@@ -250,17 +251,21 @@ section {
 
 }
 
+@media screen and (prefers-color-scheme: light) {
+    .blog-title a:hover, .blog a:hover {
+        background-color: #555;
+        color: white;
+        text-decoration: none;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .blog-container {
         border: none;
         padding-inline: 0;
     }
 
-    .blog-title a:hover, .blog a:hover {
-        background-color: #555;
-        color: white;
-        text-decoration: none;
-    }
+
 }
 
 .blog h2 {
@@ -374,6 +379,13 @@ summary {
         background-color: white !important;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
         border: thin solid rgba(3, 3, 3, 0.2);
+    }
+
+    details[open] {
+        /* background-color:rgba(128, 128, 128, 0.74) !important; */
+        border-radius: 10px;
+        border: thin solid #eee;
+        /* color: white; */
     }
 }
 
@@ -1025,3 +1037,4 @@ working on pages now
 
 
 */
+
