@@ -583,7 +583,8 @@ body {
 }
 
 .header img {
-    max-height: 60vh;
+    /* max-height: 60vh; */
+    max-height: 96vh;
     object-fit: cover;
 
     /* object-fit: scale-down; */
@@ -5950,7 +5951,7 @@ details p {
 
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1650px) {
     .grid-item-hero-title {
         padding: 20px;
         /* margin-top: 20px; */
@@ -8218,6 +8219,10 @@ nav a:link, a:visited {
     margin-right: 2vw;
 }
 
+/* nav a:hover {
+    font-weight: 700;
+} */
+
 nav a::before {
     content: "+\00a0";
 }
@@ -8232,4 +8237,26 @@ nav a::before {
     nav {
         background-color: #383838;
     }
+}
+
+footer {
+    width: 100%;
+    padding: 4vh;
+    margin-top: 8vh;
+    /* margin: 15px; */
+    /* border-top: thin solid; */
+}
+
+footer img {
+    max-height: 5vh;
+    width: 100%;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    /* max-height: 50vh; */
+    /* height: 50vh; */
+    object-fit: scale-down;
+    margin: auto;
 }

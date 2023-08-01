@@ -55,7 +55,7 @@ body {
 
 a:visited, a:link {
     color: var(--text);
-    font-weight: 500;
+    /* font-weight: 500; */
     /* color: lightblue; */
 }
 
@@ -70,6 +70,25 @@ nav {
     z-index: 5;
 
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
+    white-space: nowrap;
+    overflow: hidden;
+    overflow: scroll;
+
+    background-image: linear-gradient(to right, white, white), linear-gradient(to right, white, white), linear-gradient(to right, rgba(0, 0, 20, .50), rgba(255, 255, 255, 0)), linear-gradient(to left, rgba(0, 0, 20, .50), rgba(255, 255, 255, 0));
+    /* Shadows */
+    /* Shadow covers */
+    background-position: left center, right center, left center, right center;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
+    background-attachment: local, local, scroll, scroll;
+
+}
+
+
+
+nav::-webkit-scrollbar {
+    display: none;
 }
 
 nav a:link, a:visited {
@@ -79,6 +98,14 @@ nav a:link, a:visited {
     margin: auto;
     margin-right: 2vw;
 }
+
+nav a:hover {
+    /* font-weight: 700; */
+    /* font-style: oblique; */
+    /* text-decoration: underline; */
+}
+
+
 
 nav a::before {
     content: "+\00a0";
@@ -113,20 +140,40 @@ section {
 @media screen and (prefers-color-scheme: light) {
     nav {
         background-color: white;
+
+        background-image: linear-gradient(to right, white, white), linear-gradient(to right, white, white), linear-gradient(to right, rgba(0, 0, 20, .50), rgba(255, 255, 255, 0)), linear-gradient(to left, rgba(0, 0, 20, .50), rgba(255, 255, 255, 0));
+        /* Shadows */
+        /* Shadow covers */
+        background-position: left center, right center, left center, right center;
+        background-repeat: no-repeat;
+        background-color: white;
+        background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
+        background-attachment: local, local, scroll, scroll;
     }
+
+
 }
 
 @media screen and (prefers-color-scheme: dark) {
     nav {
         background-color: #383838;
+
+        background-image: linear-gradient(to right, #383838, #383838), linear-gradient(to right, #383838, #383838), linear-gradient(to right, rgba(0, 0, 20, .50), rgba(255, 255, 255, 0)), linear-gradient(to left, rgba(0, 0, 20, .50), rgba(255, 255, 255, 0));
+        /* Shadows */
+        /* Shadow covers */
+        background-position: left center, right center, left center, right center;
+        background-repeat: no-repeat;
+        background-color: #383838;
+        background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
+        background-attachment: local, local, scroll, scroll;
     }
 }
 
 .blog-title {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
 
-    padding: 15px 0;
+    padding: 25px 0;
     padding-inline: 15px;
     /* border-bottom: thin solid; */
 
@@ -162,7 +209,7 @@ section {
 }
 
 .blog-title img {
-    max-height: 70vh;
+    max-height: 60vh;
     max-width: 100%;
 
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
@@ -171,20 +218,21 @@ section {
 .blog-title blockquote {
     margin-top: 5px;
     margin-left: 5px;
+    margin-bottom: 20px;
     /* font-style: italic; */
     font-size: 80%;
 }
 
 
 .blog-container {
-    max-width: 600px;
+    max-width: 1000px;
     margin: auto;
     margin-bottom: 10vh;
 
     /* padding-bottom: 20vh; */
 
-    border-right: thin solid #eee;
-    border-left: thin solid #eee;
+    /* border-right: thin solid #eee;
+    border-left: thin solid #eee; */
     /* padding-inline: 20px; */
 }
 
@@ -194,12 +242,24 @@ section {
         border-color: rgb(58, 58, 58);
     }
 
+    .blog-title a:hover, .blog a:hover {
+        background-color: #555;
+        color: white;
+        text-decoration: none;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
     .blog-container {
         border: none;
         padding-inline: 0;
+    }
+
+    .blog-title a:hover, .blog a:hover {
+        background-color: #555;
+        color: white;
+        text-decoration: none;
     }
 }
 
@@ -239,9 +299,9 @@ section {
     padding-inline: 15px;
 }
 
-.blog ol, .blog ul {
+/* .blog ol, .blog ul {
     padding-left: 5vw;
-}
+} */
 
 .blog li {
     padding: 10px;
@@ -256,6 +316,8 @@ section {
     /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%); */
 
     margin-top: 10px;
+
+    /* border-radius: 10px; */
 }
   
 iframe, video {
@@ -269,17 +331,20 @@ iframe, video {
 }
 
 details {
-    margin: 10px 0;
+    margin: 25px 0;
     padding-inline: 15px;
     /* background-color: red; */
 }
 
-/* details[open] {
-    border: thin solid;
-    border-radius: 40px;
-    margin: 10px;
+details[open] {
+    /* border: thin solid; */
+    /* border-radius: 40px; */
+    /* margin: 10px; */
     padding: 10px 0;
-} */
+    /* border-top: thin solid;
+    border-bottom: thin solid; */
+    width: 100%;
+}
 
 details[open] summary {
     margin-left: auto !important; 
@@ -288,13 +353,14 @@ details[open] summary {
 
 summary {
     /* border: thin solid white; */
+
     padding: 10px;
     /* margin-left: 10px; */
     width: max-content;
     /* box-shadow: 0px 8px 16px 0px rgba(3, 3, 3, 0.1); */
 
     position: sticky;
-    top: 7vh;
+    top: 6.5vh;
     z-index: 2;
     cursor: pointer;
     transform: ease 2s;
@@ -318,9 +384,20 @@ summary {
         box-shadow: 0px 8px 16px 0px rgba(39, 39, 39, 0.1);
     }
 
+    details[open] {
+        background-color:rgba(58, 58, 58, 0.5) !important;
+        border-radius: 10px;
+    }
+
     video {
         box-shadow: 0px 8px 16px 0px rgba(182, 182, 182);
         border: thin solid;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .blog-title {
+        padding: 0 15px;
     }
 }
 
@@ -766,6 +843,10 @@ table {
 
     .split-header-half, .split-header-half h2 {
         border-color: #383838;
+    }
+
+    table, th, td {
+        border-color: #5555558a;
     }
 
 }
