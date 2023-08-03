@@ -282,6 +282,13 @@ section {
     margin-top: 10px;
     padding-inline: 15px;
     /* margin: auto; */
+    white-space: break-spaces;
+}
+
+@media screen and (max-width: 400px) {
+    .blog h2, .blog p, .blog-title {
+        font-size: 80%;
+    }
 }
 
 .blog img {
