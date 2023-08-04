@@ -282,7 +282,10 @@ section {
     margin-top: 10px;
     padding-inline: 15px;
     /* margin: auto; */
-    white-space: break-spaces;
+    /* white-space: break-spaces; */
+    /* white-space: normal; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
 }
 
 @media screen and (max-width: 400px) {
@@ -379,6 +382,13 @@ summary {
 
     border-radius: 15px;
     opacity: 98%;
+}
+
+@media screen and (max-width: 340px) {
+    summary, nav {
+        position: relative;
+        top: 0;
+    }
 }
 
 @media screen and (prefers-color-scheme: light) {
