@@ -204,6 +204,23 @@ section {
     margin-bottom: 0;
 }
 
+/* fixed header title */
+/* .blog-title h1 {
+    position: fixed;
+    top: 6px;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    margin-top: 2px;
+    font-size: 130%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 18%;
+    height: 5vh;
+    width: 100%;
+} */
+
 .blog-title p {
     max-width: 550px;
     margin-bottom: 30px;
