@@ -366,6 +366,7 @@ details {
     margin: 25px 0;
     padding-inline: 15px;
     /* background-color: red; */
+
 }
 
 details[open] {
@@ -376,11 +377,13 @@ details[open] {
     /* border-top: thin solid;
     border-bottom: thin solid; */
     width: 100%;
+
 }
 
 details[open] summary {
     margin-left: auto !important; 
     margin-right: 15px;
+    transition: .5s ease;
 }
 
 summary {
@@ -395,7 +398,8 @@ summary {
     top: 6.5vh;
     z-index: 2;
     cursor: pointer;
-    transform: ease 2s;
+    /* transform: ease 2s; */
+    /* transition: 2s ease; */
 
     border-radius: 15px;
     opacity: 98%;
@@ -489,6 +493,8 @@ table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1vw;
+    max-width: 900px;
+    margin: auto;
 }
 
 @media screen and (max-width: 800px) {
