@@ -6,6 +6,36 @@ hr {
     margin: 0;
 }
 
+/* strong::before {
+    content:" /\00a0";
+} */
+
+
+
+@media screen and (prefers-color-scheme: dark) {
+    strong, details summary {
+        background-color: rgb(63, 98, 121) !important;
+        font-weight: 700;
+    }
+
+    strong {
+        padding: 5px;
+    }
+}
+
+@media screen and (prefers-color-scheme: light) {
+    strong {
+        background-color: rgb(0, 0, 0) !important;
+        color: white;
+        font-weight: 700;
+    }
+
+    strong {
+        padding: 5px;
+    }
+}
+
+
 html {
     margin: auto;
     scroll-behavior: smooth;
@@ -254,17 +284,29 @@ section {
     /* padding-inline: 20px; */
 }
 
+.blog a:link, a:visited {
+    color: var(--text);
+}
+
 @media screen and (prefers-color-scheme: dark) {
 
     .blog-container {
         border-color: rgb(58, 58, 58);
     }
 
+    /* .blog a:link, a:visited {
+        background-color: #555;
+        color:var(--text);
+        padding: 5px;
+    } */
+
     .blog-title a:hover, .blog a:hover {
         background-color: #555;
         color: white;
         text-decoration: none;
     }
+
+
 
 }
 
@@ -274,6 +316,13 @@ section {
         color: white;
         text-decoration: none;
     }
+    
+/* 
+    .blog a:link, a:visited {
+        background-color: rgb(63, 63, 63);
+        color:rgb(255, 255, 255);
+        padding: 5px;
+    } */
 }
 
 @media screen and (max-width: 500px) {
@@ -299,7 +348,7 @@ section {
     margin-top: 10px;
     padding-inline: 15px;
     /* margin: auto; */
-    /* white-space: break-spaces; */
+    white-space: break-spaces;
     /* white-space: normal; */
     /* overflow: hidden; */
     /* text-overflow: ellipsis; */
@@ -330,6 +379,8 @@ section {
     font-size: 80%;
     padding-inline: 15px;
 }
+
+
 
 /* .blog ol, .blog ul {
     padding-left: 5vw;
@@ -402,7 +453,7 @@ summary {
     /* transition: 2s ease; */
 
     border-radius: 15px;
-    opacity: 98%;
+    /* opacity: 98%; */
 }
 
 @media screen and (max-width: 340px) {
