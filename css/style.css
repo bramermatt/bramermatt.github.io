@@ -126,7 +126,7 @@ nav a:link, a:visited {
     text-decoration: none;
     /* max-width: 1500px; */
     margin: auto;
-    margin-right: 2vw;
+    margin-right: 4vw;
 }
 
 nav a:hover {
@@ -344,7 +344,7 @@ section {
 
 .blog p {
     max-width: 600px;
-    line-height: 1.5;
+    line-height: 1.8;
     margin-top: 10px;
     padding-inline: 15px;
     /* margin: auto; */
