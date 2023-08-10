@@ -391,6 +391,15 @@ section {
     max-width: 600px;
 }
 
+.blog-sidebar-menu {
+    position: sticky;
+    top: 10vh;
+    z-index: 5;
+    max-width: 300px;
+    margin: auto;
+    float: left;
+}
+
 .iframe-container {
     position: relative;
     overflow: hidden;
