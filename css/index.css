@@ -2525,7 +2525,7 @@ table {
     /* border: 1px solid; */
 
     /* border-radius: 28px; */
-    border-radius: 8%;
+    /* border-radius: 8%; */
 
 
     box-shadow: 0 1px 7px -1px rgb(0 0 0 / 20%);
@@ -3027,7 +3027,8 @@ table {
 }
 
 .tag {
-    display: inline-block;
+    /* display: inline-block; */
+    display: none;
 }
 
 
@@ -3644,7 +3645,7 @@ table {
     /* padding: 10px 25px; */
     /* font-size: 20px; */
     max-width: 1400px;
-    margin-left: auto;
+    /* margin-left: auto; */
     margin-right: auto;
     /* border-radius: 10px; */
     /* transition: .2s ease all; */
