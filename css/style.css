@@ -254,6 +254,7 @@ section {
 .blog-title p {
     max-width: 550px;
     margin-bottom: 30px;
+    line-height: 1.8;
 }
 
 .blog-title img {
@@ -338,8 +339,13 @@ section {
     max-width: 600px;
     line-height: 120%;
     margin-bottom: 0;
-    padding-inline: 15px;
+    /* margin: 0; */
+    margin-inline: 15px;
+    /* padding-inline: 15px; */
     /* padding-top: 0; */
+    padding-bottom: .3em;
+    font-size: 1.5em;
+    border-bottom: 1px solid #eee;
 }
 
 .blog p {
@@ -348,9 +354,9 @@ section {
     margin-top: 10px;
     padding-inline: 15px;
     /* margin: auto; */
-    white-space: break-spaces;
-    /* white-space: normal; */
-    /* overflow: hidden; */
+    /* white-space: break-spaces; */
+    white-space: normal;
+    overflow: hidden;
     /* text-overflow: ellipsis; */
 }
 
