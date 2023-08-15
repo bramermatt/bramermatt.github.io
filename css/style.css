@@ -94,24 +94,17 @@ nav {
     padding: 10px;
     padding-inline: 20px;
     /* margin: 15px; */
-    /* border-bottom: thin solid; */
+    /* border-bottom: thin solid #eee; */
     position: sticky;
     top: 0;
     z-index: 5;
 
-    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
+    /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%); */
     white-space: nowrap;
     overflow: hidden;
     overflow: scroll;
 
-    background-image: linear-gradient(to right, white, white), linear-gradient(to right, white, white), linear-gradient(to right, rgba(0, 0, 20, .50), rgba(255, 255, 255, 0)), linear-gradient(to left, rgba(0, 0, 20, .50), rgba(255, 255, 255, 0));
-    /* Shadows */
-    /* Shadow covers */
-    background-position: left center, right center, left center, right center;
-    background-repeat: no-repeat;
-    background-color: white;
-    background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
-    background-attachment: local, local, scroll, scroll;
+    opacity: 95%;
 
 }
 
@@ -126,7 +119,9 @@ nav a:link, a:visited {
     text-decoration: none;
     /* max-width: 1500px; */
     margin: auto;
-    margin-right: 4vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    font-weight: 500;
 }
 
 nav a:hover {
@@ -137,9 +132,9 @@ nav a:hover {
 
 
 
-nav a::before {
+/* nav a::before {
     content: "+\00a0";
-}
+} */
 
 footer {
     width: 100%;
@@ -161,7 +156,7 @@ section {
 }
 
 .section-maxwidth {
-    max-width: 1600px;
+    max-width: 2000px;
     margin: auto;
     padding-inline: 15px;
     /* margin-bottom: 15vh; */
@@ -180,6 +175,8 @@ section {
         background-color: white;
         background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
         background-attachment: local, local, scroll, scroll;
+
+        border-bottom: thin solid #eee;
     }
 
 
@@ -197,6 +194,8 @@ section {
         background-color: #383838;
         background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
         background-attachment: local, local, scroll, scroll;
+
+        border-bottom: thin solid #333333;
     }
 }
 
@@ -308,6 +307,9 @@ section {
     }
 
 
+    .blog h2 {
+        border-bottom: 1px solid #333333;
+    }
 
 }
 
@@ -317,6 +319,12 @@ section {
         color: white;
         text-decoration: none;
     }
+
+    .blog h2 {
+        border-bottom: 1px solid #eee;
+    }
+
+
     
 /* 
     .blog a:link, a:visited {
@@ -345,7 +353,7 @@ section {
     /* padding-top: 0; */
     padding-bottom: .3em;
     font-size: 1.5em;
-    border-bottom: 1px solid #eee;
+
 }
 
 .blog p {

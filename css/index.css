@@ -8209,18 +8209,21 @@ nav {
     padding: 10px;
     padding-inline: 20px;
     /* margin: 15px; */
-    /* border-bottom: thin solid; */
+    border-bottom: thin solid #eee;
     position: sticky;
     top: 0;
     z-index: 5;
 
-    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
-
-    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
+    /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%); */
     white-space: nowrap;
     overflow: hidden;
     overflow: scroll;
+
+    opacity: 95%;
+
 }
+
+
 
 nav::-webkit-scrollbar {
     display: none;
@@ -8231,16 +8234,23 @@ nav a:link, a:visited {
     text-decoration: none;
     /* max-width: 1500px; */
     margin: auto;
-    margin-right: 4vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    font-weight: 500;
 }
 
-/* nav a:hover {
-    font-weight: 700;
+nav a:hover {
+    /* font-weight: 700; */
+    /* font-style: oblique; */
+    /* text-decoration: underline; */
+}
+
+
+
+/* nav a::before {
+    content: "+\00a0";
 } */
 
-nav a::before {
-    content: "+\00a0";
-}
 
 @media screen and (prefers-color-scheme: light) {
     nav {
@@ -8254,6 +8264,8 @@ nav a::before {
         background-color: white;
         background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
         background-attachment: local, local, scroll, scroll;
+
+        border-bottom: thin solid #eee;
     }
 
 
@@ -8271,9 +8283,10 @@ nav a::before {
         background-color: #383838;
         background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
         background-attachment: local, local, scroll, scroll;
+
+        border-bottom: thin solid #333333;
     }
 }
-
 footer {
     width: 100%;
     padding: 4vh;
