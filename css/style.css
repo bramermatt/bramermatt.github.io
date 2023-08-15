@@ -119,7 +119,7 @@ nav a:link, a:visited {
     text-decoration: none;
     /* max-width: 1500px; */
     margin: auto;
-    margin-right: 1vw;
+    margin-right: 5vw;
     margin-left: 1vw;
     font-weight: 500;
 }
@@ -132,9 +132,9 @@ nav a:hover {
 
 
 
-/* nav a::before {
+nav a::before {
     content: "+\00a0";
-} */
+}
 
 footer {
     width: 100%;
