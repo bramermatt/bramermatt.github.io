@@ -4087,6 +4087,9 @@ table {
     /* max-width: 1000px; */
     margin: auto;
     align-items: center;
+
+    max-width: 900px;
+    margin: auto;
 }
 
 .thirds-two-img-columns {
