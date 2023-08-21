@@ -968,7 +968,7 @@ section {
 }
 
 .split-header-half {
-    height: 100vh;
+    height: 85vh;
 }
 
 .split-header-half img {
@@ -977,7 +977,7 @@ section {
 
 @media  screen and (max-width: 1000px) {
     .split-header-half {
-        height: 50vh;
+        height: 30vh;
     }
     
     .split-header-half img {
