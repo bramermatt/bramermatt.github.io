@@ -96,7 +96,7 @@ nav {
     padding-inline: 20px;
     /* margin: 15px; */
     /* border-bottom: thin solid #eee; */
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 5;
 
@@ -960,12 +960,6 @@ table {
 }
 
 
-/* full screen split headers */
-section {
-    scroll-behavior: smooth;
-    /* overflow: auto; */
-    scroll-snap-type: y mandatory;
-}
 
 .split-header-half {
     height: 85vh;
