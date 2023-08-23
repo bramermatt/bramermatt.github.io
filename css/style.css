@@ -109,6 +109,12 @@ nav {
 
 }
 
+nav img {
+    max-height: 2.5vh;
+    margin: auto;
+    padding: 0;
+}
+
 
 
 nav::-webkit-scrollbar {
@@ -279,7 +285,7 @@ section {
 .blog-container {
     max-width: 1000px;
     margin: auto;
-    margin-bottom: 10vh;
+    /* margin-bottom: 5vh; */
 
     /* padding-bottom: 20vh; */
 
@@ -589,7 +595,7 @@ table {
     grid-template-columns: 1fr 1fr;
     gap: 1vw;
 
-    max-width: 900px;
+    /* max-width: 900px; */
     margin: auto;
 }
 
@@ -597,12 +603,20 @@ table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1vw;
-    max-width: 900px;
+    /* max-width: 900px; */
+    margin: auto;
+}
+
+.four-img-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1vw;
+    /* max-width: 1000px; */
     margin: auto;
 }
 
 @media screen and (max-width: 800px) {
-    .two-img-columns, .three-img-columns {
+    .two-img-columns, .three-img-columns, .four-img-columns {
         grid-template-columns: 1fr;
     }
 }
@@ -1294,7 +1308,7 @@ working on blog title sidebar now
     }
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1750px) {
     .blog-title {
         border: none;
     }

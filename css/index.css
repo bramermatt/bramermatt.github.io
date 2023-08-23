@@ -2520,7 +2520,7 @@ table {
     align-self: center;
     /* border: 1px solid; */
 
-    /* border-radius: 28px; */
+    /* border-radius: 30px; */
     /* border-radius: 8%; */
 
 
@@ -4178,6 +4178,7 @@ table {
     padding: 5px;
     /* padding-bottom: 0; */
     display:block;
+    margin: auto;
 }
 
 
