@@ -314,6 +314,10 @@ section {
         border-bottom: 1px solid #333333;
     }
 
+    .blog-title {
+        border-right: thin solid #333333;
+    }
+
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -325,6 +329,10 @@ section {
 
     .blog h2 {
         border-bottom: 1px solid #eee;
+    }
+
+    .blog-title {
+        border-right: thin solid #eee;
     }
 
 
@@ -462,7 +470,7 @@ details[open] {
 
 details[open] summary {
     margin-left: auto !important; 
-    margin-right: 15px;
+    margin-right: 25px;
     transition: .7s ease;
     /* width: 100%; */
     /* top: 0; */
@@ -470,8 +478,8 @@ details[open] summary {
     /* border-radius: 0; */
     overflow: hidden;
 
-        top: 8px;
-        z-index: 10;
+    top: 8px;
+    z-index: 10;
 }
 
 summary {
@@ -1072,12 +1080,20 @@ table {
 .iframe-container {
     position: relative;
     overflow: hidden;
-    width: 100%;
+    /* width: 100%; */
     padding-top: 56.35%; 
     /* margin-top: 10px; */
     margin-bottom: 10px;
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
     /* margin: 15px; */
+
+
+  }
+
+  @media screen and (min-width: 1030px) {
+    .iframe-container {
+        border-radius: 30px;
+    }
   }
   
   /* Then style the iframe to fit in the container div with full height and width */
@@ -1090,6 +1106,8 @@ table {
     width: 100%;
     height: 100%;
   }
+
+
 
   .grid-four-columns {
     display: grid;
@@ -1211,9 +1229,64 @@ img {
 
 /* 
 
-working on pages now
-
-
+working on blog title sidebar now
 
 */
 
+
+
+@media screen and (min-width: 1750px) {
+
+    .blog-title {
+        max-width: 340px;
+        margin: auto;
+        padding: 15px 0;
+        padding-inline: 15px;
+        /* border-bottom: thin solid; */
+        /* background-color: lightcoral; */
+        float: left;
+        position: sticky;
+        /* top: 30px; */
+        top: 0;
+
+        overflow-y: scroll;
+
+        height: 100vh;
+    }
+
+    .blog-title::-webkit-scrollbar {
+        display: none;
+    }
+
+    .blog-title h1 {
+        line-height: 1;
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+
+    .blog-title p {
+        max-width: 550px;
+        margin-bottom: 20px;
+        /* line-height: 1.8; */
+        margin-top: 5px;
+    }
+
+    .blog-title a {
+        display: block;
+    }
+
+    .blog-title img {
+        max-height: 50vh;
+    }
+
+}
+
+@media screen and (min-width: 1900px) {
+    .blog-title {
+        max-width: 435px;
+    }
+
+    .blog-title img {
+        max-height: 55vh;
+    }
+}
