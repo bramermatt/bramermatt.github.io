@@ -96,7 +96,7 @@ nav {
     padding-inline: 20px;
     /* margin: 15px; */
     /* border-bottom: thin solid #eee; */
-    /* position: sticky; */
+    position: sticky;
     top: 0;
     z-index: 5;
 
@@ -214,7 +214,7 @@ section {
 }
 
 .blog-title a {
-    margin-right: 1vw;
+    /* margin-right: 1vw; */
     /* margin-left: 10px; */
     /* position: fixed; */
     border: thin solid;
@@ -222,7 +222,8 @@ section {
     font-size: 14px;
     width: max-content;
     margin-top: 10px;
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 6px;
     text-wrap: nowrap;
 }
 
@@ -479,7 +480,7 @@ details[open] summary {
     overflow: hidden;
 
     top: 8px;
-    z-index: 10;
+    /* z-index: 10; */
 }
 
 summary {
@@ -491,7 +492,7 @@ summary {
     /* box-shadow: 0px 8px 16px 0px rgba(3, 3, 3, 0.1); */
 
     position: sticky;
-    top: 5.5vh;
+
 
     cursor: pointer;
     overflow: hidden;
@@ -502,12 +503,13 @@ summary {
     /* opacity: 98%; */
 }
 
-@media screen and (max-width: 340px) {
-    summary, nav {
-        position: relative;
-        top: 0;
+@media screen and (min-width: 540px) {
+    summary {
+        top: 5.5vh !important;
+        z-index: 0;
     }
 }
+
 
 @media screen and (prefers-color-scheme: light) {
     summary {
@@ -1247,7 +1249,8 @@ working on blog title sidebar now
         float: left;
         position: sticky;
         /* top: 30px; */
-        top: 0;
+        /* top: 0; */
+        top: 40px;
 
         overflow-y: scroll;
 
@@ -1272,11 +1275,11 @@ working on blog title sidebar now
     }
 
     .blog-title a {
-        display: block;
+        /* display: block; */
     }
 
     .blog-title img {
-        max-height: 50vh;
+        max-height: 40vh;
     }
 
 }
@@ -1287,9 +1290,36 @@ working on blog title sidebar now
     }
 
     .blog-title img {
-        max-height: 55vh;
+        max-height: 45vh;
     }
 }
+
+@media screen and (max-width: 1700px) {
+    .blog-title {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+     nav {
+        position: relative;
+        top: 0;
+    }
+
+    summary {
+        top: 8px;
+    }
+
+}
+
+@media screen and (max-width: 340px) {
+    summary {
+        position: relative;
+        top: 0;
+    }
+}
+
+
 
 #myBtn {
     display: none; /* Hidden by default */
