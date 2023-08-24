@@ -6,6 +6,7 @@ hr {
     margin: 0;
 }
 
+
 /* strong::before {
     content:" /\00a0";
 } */
@@ -1278,7 +1279,7 @@ working on blog title sidebar now
     .blog-title h1 {
         line-height: 1;
         margin-bottom: 0;
-        margin-top: 5px;
+        /* margin-top: 5px; */
     }
 
     .blog-title p {
@@ -1343,12 +1344,13 @@ working on blog title sidebar now
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
+    /* background-color: red;  */
+    /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    padding: 10px; /* Some padding */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 16px; /* Increase font size */
   }
 
 #myBtnBottom {
