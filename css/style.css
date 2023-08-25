@@ -1252,7 +1252,7 @@ working on blog title sidebar now
 
 
 
-@media screen and (min-width: 1750px) {
+@media screen and (min-width: 1580px) {
 
     .blog-title {
         max-width: 340px;
@@ -1270,6 +1270,10 @@ working on blog title sidebar now
         overflow-y: scroll;
 
         height: 100vh;
+    }
+
+    .blog-container {
+        max-width: 880px;
     }
 
     .blog-title::-webkit-scrollbar {
@@ -1290,7 +1294,7 @@ working on blog title sidebar now
     }
 
     .blog-title a {
-        /* display: block; */
+        display: block;
     }
 
     .blog-title img {
@@ -1309,7 +1313,7 @@ working on blog title sidebar now
     }
 }
 
-@media screen and (max-width: 1750px) {
+@media screen and (max-width: 1450px) {
     .blog-title {
         border: none;
     }
