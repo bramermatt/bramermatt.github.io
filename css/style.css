@@ -1252,10 +1252,10 @@ working on blog title sidebar now
 
 
 
-@media screen and (min-width: 1580px) {
+@media screen and (min-width: 1420px) {
 
     .blog-title {
-        max-width: 340px;
+        max-width: 320px;
         margin: auto;
         padding: 15px 0;
         padding-inline: 15px;
@@ -1273,7 +1273,7 @@ working on blog title sidebar now
     }
 
     .blog-container {
-        max-width: 880px;
+        max-width: 760px;
     }
 
     .blog-title::-webkit-scrollbar {
@@ -1303,9 +1303,15 @@ working on blog title sidebar now
 
 }
 
+
+
 @media screen and (min-width: 1900px) {
     .blog-title {
         max-width: 435px;
+    }
+
+    .blog-container {
+        max-width: 1000px;
     }
 
     .blog-title img {
@@ -1313,7 +1319,7 @@ working on blog title sidebar now
     }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1420px) {
     .blog-title {
         border: none;
     }
