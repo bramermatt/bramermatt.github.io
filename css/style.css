@@ -488,7 +488,7 @@ details[open] summary {
     overflow: hidden;
 
     top: 8px;
-    /* z-index: 10; */
+    z-index: 10;
 }
 
 summary {
@@ -1327,10 +1327,10 @@ working on blog title sidebar now
 }
 
 @media screen and (max-width: 540px) {
-     nav {
+     /* nav {
         position: relative;
         top: 0;
-    }
+    } */
 
     summary {
         top: 8px;
