@@ -241,7 +241,7 @@ section {
 }
 
 .blog-title h1 {
-    line-height: 1;
+    /* line-height: 1; */
     margin-bottom: 0;
 }
 
@@ -1282,7 +1282,7 @@ working on blog title sidebar now
     }
 
     .blog-title h1 {
-        line-height: 1;
+        /* line-height: 1; */
         margin-bottom: 0;
         /* margin-top: 5px; */
     }
