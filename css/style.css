@@ -132,6 +132,13 @@ nav a:link, a:visited {
     font-weight: 500;
 }
 
+@media screen and (max-width: 600px) {
+    nav a:link {
+        margin-right: 5vw;
+    }
+}
+
+
 nav a:hover {
     /* font-weight: 700; */
     /* font-style: oblique; */
@@ -140,9 +147,9 @@ nav a:hover {
 
 
 
-nav a::before {
+/* nav a::before {
     content: "/\00a0";
-}
+} */
 
 footer {
     width: 100%;
@@ -190,6 +197,10 @@ section {
         box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
     }
 
+    nav a:hover {
+        color: rgb(112, 112, 112);
+    }
+
 
 }
 
@@ -207,6 +218,10 @@ section {
         background-attachment: local, local, scroll, scroll;
 
         border-bottom: thin solid #333333;
+    }
+
+    nav a:hover {
+        color: rgb(112, 112, 112);
     }
 }
 
@@ -1112,6 +1127,7 @@ table {
     .iframe-container {
         border-radius: 30px;
     }
+
   }
   
   /* Then style the iframe to fit in the container div with full height and width */
