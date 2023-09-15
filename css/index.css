@@ -8301,7 +8301,7 @@ section {
         background-attachment: local, local, scroll, scroll;
 
         border-bottom: thin solid #eee;
-        box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
+        /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%); */
     }
 
     nav a:hover {

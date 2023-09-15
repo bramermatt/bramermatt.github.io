@@ -134,7 +134,7 @@ nav a:link, a:visited {
 
 @media screen and (max-width: 600px) {
     nav a:link {
-        margin-right: 5vw;
+        margin-right: 5.5vw;
     }
 }
 
@@ -194,7 +194,7 @@ section {
         background-attachment: local, local, scroll, scroll;
 
         border-bottom: thin solid #eee;
-        box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
+        /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%); */
     }
 
     nav a:hover {
@@ -408,7 +408,7 @@ section {
 }
 
 @media screen and (max-width: 400px) {
-    .blog h2, .blog p, .blog-title {
+    .blog h2, .blog p, .blog-title, summary, nav a {
         font-size: 80%;
     }
 }
@@ -486,12 +486,12 @@ details {
 details[open] {
     /* border: thin solid; */
     /* border-radius: 40px; */
-    /* margin: 10px; */
+    margin: 10px;
     padding: 10px 0;
     /* padding: 0; */
     /* border-top: thin solid;
     border-bottom: thin solid; */
-    width: 100%;
+    /* width: 100%; */
 
 
 }
@@ -576,9 +576,9 @@ summary {
 }
 
 @media screen and (max-width: 600px) {
-    .blog-title {
+    /* .blog-title {
         padding: 0 15px;
-    }
+    } */
 }
 
 table, th, td {
@@ -945,7 +945,7 @@ table {
 .split-header-half img {
     width: 100%;
     height: 100%;
-    max-height: 60vh;
+    max-height: 50vh;
     object-fit: cover;
 }
 
@@ -954,8 +954,8 @@ table {
 }
 
 .split-header-half-title h1 {
-    font-size: 75px;
-    line-height: 71px;
+    font-size: 55px;
+    line-height: 55px;
     margin: 0;
 }
 
