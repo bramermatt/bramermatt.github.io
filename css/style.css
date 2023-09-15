@@ -258,6 +258,7 @@ section {
 .blog-title h1 {
     /* line-height: 1; */
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 /* fixed header title */
@@ -290,6 +291,8 @@ section {
 
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
 }
+
+
 
 .blog-title blockquote {
     margin-top: 5px;
@@ -1302,7 +1305,10 @@ working on blog title sidebar now
         /* line-height: 1; */
         margin-bottom: 0;
         /* margin-top: 5px; */
+        /* float: right; */
     }
+
+
 
     .blog-title p {
         max-width: 550px;
@@ -1315,9 +1321,9 @@ working on blog title sidebar now
         display: block;
     }
 
-    /* .blog-title img {
+    .blog-title img {
         max-height: 40vh;
-    } */
+    }
 
 }
 
