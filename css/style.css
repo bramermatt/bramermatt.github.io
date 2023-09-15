@@ -279,8 +279,9 @@ section {
 
 .blog-title p {
     max-width: 550px;
-    margin-bottom: 30px;
-    line-height: 1.8;
+    /* margin-bottom: 30px; */
+    /* line-height: 1.8; */
+    margin-top: 5px;
 }
 
 .blog-title img {
@@ -1305,18 +1306,18 @@ working on blog title sidebar now
 
     .blog-title p {
         max-width: 550px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         /* line-height: 1.8; */
-        margin-top: 5px;
+        /* margin-top: 5px; */
     }
 
     .blog-title a {
         display: block;
     }
 
-    .blog-title img {
+    /* .blog-title img {
         max-height: 40vh;
-    }
+    } */
 
 }
 
