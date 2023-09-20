@@ -157,6 +157,8 @@ nav a:link, a:visited, .under-nav a:link, a:visited {
 }
 
 
+
+
 nav a:hover {
     /* font-weight: 700; */
     /* font-style: oblique; */
@@ -1074,20 +1076,20 @@ table {
 
 @media screen and (prefers-color-scheme: dark) {
     .split-header-half {
-        box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.05);
-        /* border: thin solid; */
+        /* box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.05); */
+        border: thin solid;
     }
 }
 
 @media screen and (prefers-color-scheme: light) {
     .split-header-half {
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
-        /* border: thin solid; */
+        /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05); */
+        border: thin solid;
     }
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .split-header-half-title h1 {
         font-size: 190%;
         line-height: 100%;
@@ -1457,4 +1459,34 @@ working on blog title sidebar now
 
 details .iframe-container {
     border-radius: 0;
+}
+
+@media screen and (max-width: 350px) {
+    nav, .under-nav {
+        position:relative;
+        padding: 1%;
+    }
+
+    nav a, .under-nav a {
+        display: block;
+        font-size: 70%;
+        padding: 5px;
+    }
+
+    .split-header-half-title p {
+        display: none;
+    }
+
+    .split-header-half-title h1, .title-link a {
+        font-size: 90%;
+        padding: 2%;
+    }
+
+    .split-header {
+        height: 80vh;
+    }
+
+    .section-maxwidth {
+        padding-inline: 5px;
+    }
 }
