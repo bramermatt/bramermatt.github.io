@@ -110,6 +110,24 @@ nav {
 
 }
 
+.under-nav {
+    width: 100% !important;
+    padding: 10px;
+    padding-inline: 20px;
+    /* margin: 15px; */
+    /* border-bottom: thin solid #eee; */
+    /* position: sticky; */
+    /* top: 0; */
+    /* z-index: 5; */
+
+    /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%); */
+    white-space: nowrap;
+    overflow: hidden;
+    overflow: scroll;
+
+    /* opacity: 95%; */
+}
+
 nav img {
     max-height: 2.5vh;
     margin: auto;
@@ -118,11 +136,11 @@ nav img {
 
 
 
-nav::-webkit-scrollbar {
+nav::-webkit-scrollbar, .under-nav::-webkit-scrollbar {
     display: none;
 }
 
-nav a:link, a:visited {
+nav a:link, a:visited, .under-nav a:link, a:visited {
     color: var(--text);
     text-decoration: none;
     /* max-width: 1500px; */
@@ -133,7 +151,7 @@ nav a:link, a:visited {
 }
 
 @media screen and (max-width: 600px) {
-    nav a:link {
+    nav a:link, .under-nav a:link {
         margin-right: 5.5vw;
     }
 }
@@ -181,7 +199,7 @@ section {
 
 
 @media screen and (prefers-color-scheme: light) {
-    nav {
+    nav, .under-nav {
         background-color: white;
 
         background-image: linear-gradient(to right, white, white), linear-gradient(to right, white, white), linear-gradient(to right, rgba(0, 0, 20, .50), rgba(255, 255, 255, 0)), linear-gradient(to left, rgba(0, 0, 20, .50), rgba(255, 255, 255, 0));
@@ -197,7 +215,7 @@ section {
         /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%); */
     }
 
-    nav a:hover {
+    nav a:hover, .under-nav a:hover {
         color: rgb(112, 112, 112);
     }
 
@@ -205,7 +223,7 @@ section {
 }
 
 @media screen and (prefers-color-scheme: dark) {
-    nav {
+    nav, .under-nav {
         background-color: #383838;
 
         background-image: linear-gradient(to right, #383838, #383838), linear-gradient(to right, #383838, #383838), linear-gradient(to right, rgba(0, 0, 20, .50), rgba(255, 255, 255, 0)), linear-gradient(to left, rgba(0, 0, 20, .50), rgba(255, 255, 255, 0));
@@ -220,7 +238,7 @@ section {
         border-bottom: thin solid #333333;
     }
 
-    nav a:hover {
+    nav a:hover, .under-nav a:hover {
         color: rgb(112, 112, 112);
     }
 }
@@ -295,11 +313,20 @@ section {
 
 
 .blog-title blockquote {
-    margin-top: 5px;
+    /* margin-top: 5px;
     margin-left: 5px;
     margin-bottom: 20px;
+    font-size: 80%; */
+
+    /* margin: 5px; */
+    /* margin-top: 0; */
     /* font-style: italic; */
+    margin-bottom: 40px;
     font-size: 80%;
+    padding-inline: 15px;
+    border-left: thick solid black;
+    margin-left: 2em;
+    margin-inline: 0;
 }
 
 
@@ -416,24 +443,48 @@ section {
 .blog img {
     max-height: 70vh;
     max-width: 100%;
+    /* width: 100%; */
     object-fit: contain;
     margin: 10px 0;
+    /* margin: 10px; */
     padding-inline: 15px;
     /* margin: auto; */
     /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%); */
     /* margin: auto; */
+    /* border-radius: 30px; */
 }
+
 
 .blog blockquote {
     margin: 5px;
     margin-top: 0;
-    font-style: italic;
+    /* font-style: italic; */
     margin-bottom: 40px;
     font-size: 80%;
     padding-inline: 15px;
+    border-left: thick solid black;
+    margin-left: 2em;
+    margin-inline: 10px;
+    max-width: 450px;
 }
 
+@media screen and (max-width: 1200px) {
+    .blog img {
+        margin: 10px 0;
+        border-radius: 0;
+        /* padding-inline: 15px; */
+        /* box-shadow: none; */
+    }
 
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+    .blog blockquote, .blog-title blockquote {
+        border-color: lightgray;
+    }
+    
+}
 
 /* .blog ol, .blog ul {
     padding-left: 5vw;
@@ -575,11 +626,7 @@ summary {
     }
 }
 
-@media screen and (max-width: 600px) {
-    /* .blog-title {
-        padding: 0 15px;
-    } */
-}
+
 
 table, th, td {
     border-collapse: collapse;
@@ -1406,3 +1453,8 @@ working on blog title sidebar now
   #myBtn:hover, #myBtnBottom:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
+
+
+details .iframe-container {
+    border-radius: 0;
+}
