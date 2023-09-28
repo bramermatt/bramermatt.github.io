@@ -92,7 +92,7 @@ a:visited, a:link {
 }
 
 nav {
-    width: 100% !important;
+
     padding: 10px;
     padding-inline: 20px;
     /* margin: 15px; */
@@ -108,10 +108,17 @@ nav {
 
     /* opacity: 95%; */
 
+    /* width: 100% !important; */
+    max-width: max-content;
+    border-radius: 10px;
+    margin: 8px;
+    top: 8px;
+    padding: 8px;
+    box-shadow: 0px 2px 5px 3px rgb(0 0 0 / 20%);
 }
 
 .under-nav {
-    width: 100% !important;
+    /* width: 100% !important; */
     padding: 10px;
     padding-inline: 20px;
     /* margin: 15px; */
@@ -126,6 +133,12 @@ nav {
     overflow: scroll;
 
     /* opacity: 95%; */
+    /* width: 100% !important; */
+    /* border-radius: 10px;
+    margin: 8px;
+    top: 8px;
+    padding: 8px;
+    box-shadow: 0px 2px 5px 10px rgb(0 0 0 / 40%); */
 }
 
 nav img {
@@ -148,11 +161,12 @@ nav a:link, a:visited, .under-nav a:link, a:visited {
     margin-right: 1vw;
     margin-left: 1vw;
     font-weight: 500;
+    
 }
 
 @media screen and (max-width: 600px) {
     nav a:link, .under-nav a:link {
-        margin-right: 5.5vw;
+        /* margin-right: 5.5vw; */
     }
 }
 
@@ -268,6 +282,7 @@ section {
     /* padding: 10px; */
     padding: 6px;
     text-wrap: nowrap;
+    border-radius: 10px;
 }
 
 .blog-title a:link, a:visited {
@@ -575,13 +590,14 @@ details[open] summary {
     overflow: hidden;
 
     top: 8px;
+    /* top: 5px; */
     z-index: 10;
 }
 
 summary {
     /* border: thin solid white; */
 
-    padding: 10px;
+    padding: 8px;
     /* margin-left: 10px; */
     width: max-content;
     /* box-shadow: 0px 8px 16px 0px rgba(3, 3, 3, 0.1); */
@@ -600,7 +616,7 @@ summary {
 
 @media screen and (min-width: 540px) {
     summary {
-        top: 5.5vh !important;
+        /* top: 5.5vh !important; */
         z-index: 0;
     }
 }
