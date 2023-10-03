@@ -111,7 +111,8 @@ nav {
     /* width: 100% !important; */
     max-width: max-content;
     border-radius: 10px;
-    margin: 8px;
+    margin: 10px;
+    margin-inline: 15px;
     top: 8px;
     padding: 8px;
     box-shadow: 0px 2px 5px 3px rgb(0 0 0 / 20%);
@@ -263,7 +264,7 @@ section {
     max-width: 1000px;
     margin: auto;
 
-    padding: 25px 0;
+    /* padding: 25px 0; */
     padding-inline: 15px;
     /* border-bottom: thin solid; */
 
@@ -569,7 +570,9 @@ details {
 details[open] {
     /* border: thin solid; */
     /* border-radius: 40px; */
+    /* margin: 10px; */
     margin: 10px;
+    margin-inline: 15px;
     padding: 10px 0;
     /* padding: 0; */
     /* border-top: thin solid;
@@ -592,6 +595,7 @@ details[open] summary {
     top: 8px;
     /* top: 5px; */
     z-index: 10;
+    box-shadow: 0px 2px 5px 3px rgb(0 0 0 / 20%);
 }
 
 summary {
@@ -1430,23 +1434,26 @@ working on blog title sidebar now
     }
 }
 
-@media screen and (max-width: 540px) {
-     /* nav {
-        position: relative;
-        top: 0;
-    } */
+@media screen and (max-width: 800px) {
+
 
     summary {
-        top: 8px;
+        position: relative;
+        top: 0;
     }
 
 }
 
 @media screen and (max-width: 340px) {
-    summary {
+    nav {
         position: relative;
         top: 0;
     }
+
+    /* summary {
+        position: relative;
+        top: 0;
+    } */
 }
 
 
