@@ -109,13 +109,13 @@ nav {
     /* opacity: 95%; */
 
     /* width: 100% !important; */
-    max-width: max-content;
+    /* max-width: max-content;
     border-radius: 10px;
     margin: 10px;
     margin-inline: 15px;
     top: 8px;
     padding: 8px;
-    box-shadow: 0px 2px 5px 3px rgb(0 0 0 / 20%);
+    box-shadow: 0px 2px 5px 3px rgb(0 0 0 / 20%); */
 }
 
 .under-nav {
@@ -1435,7 +1435,9 @@ working on blog title sidebar now
 }
 
 @media screen and (max-width: 800px) {
-
+    summary {
+        z-index: 0 !important;
+    }
 
     summary {
         position: relative;
@@ -1449,6 +1451,8 @@ working on blog title sidebar now
         position: relative;
         top: 0;
     }
+
+
 
     /* summary {
         position: relative;
