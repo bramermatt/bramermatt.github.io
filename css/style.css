@@ -321,7 +321,7 @@ section {
     margin-top: 10px;
     font-size: 90%;
     border-top: thin solid;
-    width: max-content;
+    width: fit-content;
     padding-top: 5px;
 }
 
@@ -730,9 +730,24 @@ table {
     margin: auto;
 }
 
+.timeline-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1vw;
+    max-width: 600px;
+    margin: auto;
+    /* margin-top: 1vw; */
+}
+
 @media screen and (max-width: 1000px) {
     .four-img-columns {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .timeline-wrap {
+        padding-inline: 10px;
+        gap: 3vh;
+        margin-top: 2vh;
     }
 }
 
@@ -1025,6 +1040,8 @@ table {
     /* max-width: 1500px; */
     margin: auto;
 
+    /* gap: 1vw; */
+    margin-top: 10px;
 }
 
 .split-header-half {
@@ -1037,6 +1054,10 @@ table {
     align-items: stretch;
     justify-content: center;
     box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.05);
+
+    /* border-radius: 10px; */
+
+    overflow: hidden;
 }
 
 
@@ -1146,7 +1167,7 @@ table {
 
 @media screen and (max-width: 1200px) {
     .split-header-half-title h1 {
-        font-size: 100%;
+        /* font-size: 100%; */
         line-height: 100%;
         margin: 0;
     }
@@ -1167,7 +1188,7 @@ table {
     }
 
     .split-header-half-title {
-        padding: 5%;
+        padding: 4%;
     }
 
     .split-header {
@@ -1440,7 +1461,7 @@ working on blog title sidebar now
     }
 
     .blog-container {
-        max-width: 1000px;
+        max-width: 900px;
     }
 
     .blog-title img {
