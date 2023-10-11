@@ -326,7 +326,7 @@ section {
 }
 
 .blog-title img {
-    max-height: 70vh;
+    max-height: 50vh;
     max-width: 100%;
 
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
@@ -598,9 +598,10 @@ details[open] summary {
     overflow: hidden;
 
     /* top: 8px; */
-    top: 0;
+    /* top: 0; */
+    top: 50px;
     /* top: 5px; */
-    z-index: 10;
+    z-index: 1;
     box-shadow: 0px 2px 5px 3px rgb(0 0 0 / 20%);
 }
 
@@ -632,9 +633,15 @@ summary {
     summary {
         /* top: 5.5vh !important; */
         z-index: 0;
+        
     }
 }
 
+@media screen and (max-width: 540px) {
+    details[open] summary {
+        top: 0;
+    }
+}
 
 @media screen and (prefers-color-scheme: light) {
     summary {
@@ -739,12 +746,25 @@ table {
     /* margin-top: 1vw; */
 }
 
+.timeline-wrap-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+    max-width: 1780px;
+    margin: auto;
+    /* margin-top: 1vw; */
+}
+
 @media screen and (max-width: 1000px) {
     .four-img-columns {
         grid-template-columns: 1fr 1fr;
     }
 
-    .timeline-wrap {
+    .timeline-wrap-two {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-wrap, .timeline-wrap-two {
         padding-inline: 10px;
         gap: 3vh;
         margin-top: 2vh;
@@ -1465,7 +1485,7 @@ working on blog title sidebar now
     }
 
     .blog-title img {
-        max-height: 70vh;
+        max-height: 55vh;
     }
 }
 
