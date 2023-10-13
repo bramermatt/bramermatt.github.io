@@ -509,12 +509,20 @@ section {
         border-right: thin solid #333333;
     }
 
-    .timeline {
+    .post h4 {
+        color: rgb(124, 124, 124);
+    }
+
+    .timeline, .post {
         border-color: #333333;
     }
 
     .timeline .post:hover {
         background-color: #333333;
+    }
+
+    .post blockquote {
+        border-color: white;
     }
 
 }
@@ -534,7 +542,7 @@ section {
         border-right: thin solid #eee;
     }
 
-    .timeline, .post {
+    .timeline, .post, .post blockquote {
         border-color: #eee;
     }
 
