@@ -140,7 +140,24 @@ nav {
     top: 8px;
     padding: 8px;
     box-shadow: 0px 2px 5px 10px rgb(0 0 0 / 40%); */
+
+    display: none;
 }
+
+.sidebar-nav {
+    float: left;
+    display: grid;
+    position: sticky;
+    top: 6vh;
+    z-index: 5;
+    padding: 5px;
+    max-height: 60vh;
+
+    display: none;
+}
+
+
+
 
 nav img {
     max-height: 2.5vh;
@@ -149,12 +166,11 @@ nav img {
 }
 
 
-
 nav::-webkit-scrollbar, .under-nav::-webkit-scrollbar {
     display: none;
 }
 
-nav a:link, a:visited, .under-nav a:link, a:visited {
+nav a:link, a:visited, .under-nav a:link, a:visited, .sidebar-nav a:link, a:visited {
     color: var(--text);
     text-decoration: none;
     /* max-width: 1500px; */
@@ -162,7 +178,101 @@ nav a:link, a:visited, .under-nav a:link, a:visited {
     margin-right: 1vw;
     margin-left: 1vw;
     font-weight: 500;
+
+}
+
+.sidebar-nav a {
+    margin: 5px !important;
+    margin-inline: 10px !important;
+}
+
+.timeline {
+    max-width: 600px;
+    margin: auto;
+    /* padding-inline: 20px; */
+    /* margin-top: 15px; */
+    border-right: thin solid;
+    border-left: thin solid;
+}
+
+.post .topic {
+    float: left;
+}
+
+.post .topic img {
+    max-height: 5vh;
+    margin: 5px;
+    display: none;
+}
+
+.post {
+    /* border-top: thin solid; */
+    border-bottom: thin solid;
+    /* margin: 10px; */
+    padding-top: 20px;
+    padding-inline: 15px;
+    /* margin-inline: 10px; */
+    overflow: hidden;
     
+    text-decoration: none;
+}
+
+.post blockquote {
+    margin: 5px;
+    margin-top: 0;
+    /* font-style: italic; */
+    margin-bottom: 10px;
+    font-size: 80%;
+    padding-inline: 15px;
+    border-left: thick solid black;
+    margin-left: 2em;
+    margin-inline: 10px;
+    max-width: 450px;
+}
+
+.post img {
+    max-width: 100%;
+    margin: auto;
+    max-height: 60vh;
+    
+    border-radius: 30px;
+    
+}
+
+.post a:link {
+    text-decoration: none;
+}
+
+.post h2 {
+    font-size: 18px;
+}
+
+.post h4 {
+    font-size: 15px;
+}
+
+.post p {
+    margin-top: 05px;
+    font-size: 16px;
+    line-height:1.5em;
+    /* max-width: 80%; */
+}
+
+/* .post a:hover {
+    background-color: #1d1d1d;
+    
+} */
+
+
+
+.post h2, .post h4 {
+    /* text-decoration: none; */
+    margin: 0;
+    padding: 0;
+}
+
+.post h4 a:hover {
+    text-decoration: underline !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -208,7 +318,7 @@ section {
 }
 
 .section-maxwidth {
-    max-width: 1800px;
+    max-width: 1400px;
     margin: auto;
     padding-inline: 15px;
     /* margin-bottom: 15vh; */
@@ -236,6 +346,10 @@ section {
         color: rgb(112, 112, 112);
     }
 
+    .sidebar-nav {
+        background-color: white;
+        
+    }
 
 }
 
@@ -326,7 +440,7 @@ section {
 }
 
 .blog-title img {
-    max-height: 50vh;
+    /* max-height: 50vh; */
     max-width: 100%;
 
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
@@ -395,6 +509,14 @@ section {
         border-right: thin solid #333333;
     }
 
+    .timeline {
+        border-color: #333333;
+    }
+
+    .timeline .post:hover {
+        background-color: #333333;
+    }
+
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -408,8 +530,20 @@ section {
         border-bottom: 1px solid #eee;
     }
 
-    .blog-title {
+    .blog-title{
         border-right: thin solid #eee;
+    }
+
+    .timeline, .post {
+        border-color: #eee;
+    }
+
+    .post h4 {
+        color: rgb(124, 124, 124);
+    }
+
+    .timeline .post:hover {
+        background-color: rgb(247, 247, 247);
     }
 
 
@@ -425,7 +559,7 @@ section {
 @media screen and (max-width: 500px) {
     .blog-container {
         border: none;
-        padding-inline: 0;
+        padding-inline: 5px;
     }
 
 
@@ -464,7 +598,8 @@ section {
     /* font-size: 0.9rem; */
     line-height: 1.8;
     margin-top: 5px;
-    padding-inline: 20px;
+    /* padding-inline: 20px; */
+    padding-inline: 15px;
     /* margin: auto; */
     /* white-space: break-spaces; */
     white-space: normal;
@@ -475,6 +610,10 @@ section {
 @media screen and (max-width: 400px) {
     .blog h2, .blog p, .blog-title, summary, nav a, .blog h3 {
         font-size: 80%;
+    }
+
+    .blog p {
+        padding-inline: 20px !important;
     }
 }
 
@@ -750,7 +889,7 @@ table {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1vw;
-    max-width: 1780px;
+    max-width: 1400px;
     margin: auto;
     /* margin-top: 1vw; */
 }
@@ -1273,9 +1412,9 @@ table {
   }
 
   @media screen and (min-width: 1030px) {
-    .iframe-container {
+    /* .iframe-container {
         border-radius: 30px;
-    }
+    } */
 
   }
   
@@ -1468,7 +1607,7 @@ working on blog title sidebar now
     }
 
     .blog-title img {
-        max-height: 40vh;
+        max-height: 80vh;
     }
 
 }
