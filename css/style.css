@@ -14,10 +14,15 @@ hr {
 
 
 @media screen and (prefers-color-scheme: dark) {
-    strong, details summary {
+    strong {
         background-color: rgb(63, 98, 121) !important;
         font-weight: 700;
     }
+
+     /* details summary {
+        background-color: rgb(63, 98, 121) !important;
+        font-weight: 700;
+    } */
 
     strong {
         padding: 5px;
@@ -440,7 +445,7 @@ section {
 }
 
 .blog-title img {
-    /* max-height: 50vh; */
+    max-height: 70vh;
     max-width: 100%;
 
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
@@ -749,7 +754,7 @@ details[open] summary {
     top: 50px;
     /* top: 5px; */
     z-index: 1;
-    box-shadow: 0px 2px 5px 3px rgb(0 0 0 / 20%);
+    /* box-shadow: 0px 2px 5px 3px rgb(0 0 0 / 20%); */
 }
 
 details[open] p {
@@ -759,7 +764,9 @@ details[open] p {
 summary {
     /* border: thin solid white; */
 
-    padding: 8px;
+
+
+
     /* margin-left: 10px; */
     width: max-content;
     /* box-shadow: 0px 8px 16px 0px rgba(3, 3, 3, 0.1); */
@@ -772,8 +779,14 @@ summary {
     /* transform: ease 2s; */
     /* transition: 2s ease; */
 
-    border-radius: 15px;
+    /* removing summary stuff */
+    padding: 8px;
+    /* border-radius: 15px; */
+
+
     /* opacity: 98%; */
+
+
 }
 
 @media screen and (min-width: 540px) {
@@ -793,7 +806,7 @@ summary {
 @media screen and (prefers-color-scheme: light) {
     summary {
         background-color: white !important;
-        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.09);
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.009);
         border: thin solid rgba(3, 3, 3, 0.2);
     }
 
@@ -809,8 +822,9 @@ summary {
 @media screen and (prefers-color-scheme: dark) {
     summary {
         background-color:rgb(58, 58, 58) !important;
-        /* background-color: red !important; */
+
         box-shadow: 0px 4px 8px 0px rgba(39, 39, 39, 0.09);
+                /* background-color: red !important; */
     }
 
     details[open] {
