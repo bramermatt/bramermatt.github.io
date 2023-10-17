@@ -111,6 +111,9 @@ nav {
     overflow: hidden;
     overflow: scroll;
 
+    /* border-top: thin solid;
+    border-bottom: thin solid; */
+
     /* opacity: 95%; */
 
     /* width: 100% !important; */
@@ -728,7 +731,7 @@ details[open] {
     /* border: thin solid; */
     /* border-radius: 40px; */
     /* margin: 10px; */
-    margin: 10px;
+    /* margin: 10px; */
     margin-inline: 15px;
     padding: 10px 0;
     /* padding: 0; */
