@@ -781,7 +781,7 @@ summary {
 
     /* removing summary stuff */
     padding: 8px;
-    /* border-radius: 15px; */
+    border-radius: 15px;
 
 
     /* opacity: 98%; */
@@ -798,9 +798,9 @@ summary {
 }
 
 @media screen and (max-width: 540px) {
-    details[open] summary {
+    /* details[open] summary {
         top: 0;
-    }
+    } */
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -822,7 +822,7 @@ summary {
 @media screen and (prefers-color-scheme: dark) {
     summary {
         background-color:rgb(58, 58, 58) !important;
-
+        border: thin solid;
         box-shadow: 0px 4px 8px 0px rgba(39, 39, 39, 0.09);
                 /* background-color: red !important; */
     }
@@ -1656,19 +1656,20 @@ working on blog title sidebar now
     }
 }
 
-@media screen and (max-width: 800px) {
-    summary {
+@media screen and (max-width: 640px) {
+    details[open] summary {
         z-index: 0 !important;
+        top: 8px;
     }
 
-    summary {
+    /* summary {
         position: relative;
         top: 0;
-    }
+    } */
 
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 640px) {
     nav {
         position: relative;
         top: 0;
