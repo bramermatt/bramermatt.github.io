@@ -390,6 +390,7 @@ section {
 
 .blog-title {
     max-width: 1000px;
+    max-width: 23%;
     margin: auto;
 
     padding: 15px 0;
@@ -454,7 +455,7 @@ section {
 }
 
 .blog-title img {
-    max-height: 70vh;
+    max-height: 60vh;
     max-width: 100%;
 
     box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
@@ -482,7 +483,10 @@ section {
 
 .blog-container {
     max-width: 1000px;
-    margin: auto;
+    max-width: 50%;
+    /* margin: auto; */
+    margin-right: auto;
+    margin-left: auto;
     /* margin-bottom: 5vh; */
 
     /* padding-bottom: 20vh; */
@@ -618,7 +622,7 @@ section {
 @media screen and (max-width: 500px) {
     .blog-container {
         border: none;
-        padding-inline: 15px;
+        padding-inline: 0;
     }
 
 
@@ -683,11 +687,11 @@ section {
     object-fit: contain;
     margin: 10px 0;
     /* margin: 10px; */
-    padding-inline: 15px;
+    /* padding-inline: 15px; */
     /* margin: auto; */
     /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%); */
     /* margin: auto; */
-    /* border-radius: 30px; */
+    border-radius: 10px;
 }
 
 
@@ -706,11 +710,16 @@ section {
 
 @media screen and (max-width: 1200px) {
     .blog img {
-        margin: 10px 0;
+        /* margin: 10px 0; */
+        /* margin: 10px; */
         border-radius: 0;
         /* padding-inline: 15px; */
         /* box-shadow: none; */
     }
+
+    /* .blog-container .blog img {
+        padding-inline: 15px;
+    } */
 
 }
 
@@ -1628,7 +1637,7 @@ working on blog title sidebar now
 @media screen and (min-width: 1420px) {
 
     .blog-title {
-        max-width: 320px;
+        /* max-width: 320px; */
         margin: auto;
         padding: 15px 0;
         padding-inline: 15px;
@@ -1645,9 +1654,9 @@ working on blog title sidebar now
         height: 100vh;
     }
 
-    .blog-container {
+    /* .blog-container {
         max-width: 750px;
-    }
+    } */
 
     .blog-title::-webkit-scrollbar {
         display: none;
@@ -1699,6 +1708,11 @@ working on blog title sidebar now
 @media screen and (max-width: 1420px) {
     .blog-title {
         border: none;
+        max-width: 1000px;
+    }
+
+    .blog-container {
+        max-width: 1000px;
     }
 }
 
