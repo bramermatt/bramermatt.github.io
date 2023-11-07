@@ -350,6 +350,10 @@ section {
         /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%); */
     }
 
+    .blog-title {
+        background-color: white;
+    }
+
 
 
     nav a:hover, .under-nav a:hover {
@@ -378,10 +382,10 @@ section {
 
         border-bottom: thin solid #333333;
     }
-/* 
+
     .blog-title {
         background-color: #383838;
-    } */
+    }
 
     nav a:hover, .under-nav a:hover {
         color: rgb(112, 112, 112);
@@ -398,6 +402,7 @@ section {
     /* border-bottom: thin solid; */
 
     /* background-color: lightcoral; */
+    background-color: none;
 }
 
 .blog-title a {
@@ -499,7 +504,7 @@ section {
 .ad-split {
     /* max-width: 1700px; */
     /* max-width: max-content; */
-    max-width: 800px;
+    /* max-width: 800px; */
     margin-left: auto;
     margin-right: auto;
     background-color: black;
@@ -519,11 +524,11 @@ section {
     font-size: 2em;
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 .ad-split p {
-    max-width: 800px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.5rem;
@@ -1154,7 +1159,7 @@ table {
     background-color: #555;
   }
 
-  @media screen and (prefers-system-light) {
+  @media screen and (prefers-color-scheme: light) {
     .collapsible {
         background-color: white;
     }
@@ -1636,10 +1641,23 @@ working on blog title sidebar now
 
 @media screen and (min-width: 1420px) {
 
-    .blog-title {
-        /* max-width: 320px; */
+    /* .blog-title {
         margin: auto;
         padding: 15px 0;
+        padding-inline: 15px;
+        float: left;
+        position: sticky;
+        top: 40px;
+
+        overflow-y: scroll;
+
+        height: 100vh;
+    } */
+
+    .blog-title {
+        /* max-width: 320px; */
+        /* margin: auto; */
+        padding: 20px 0;
         padding-inline: 15px;
         /* border-bottom: thin solid; */
         /* background-color: lightcoral; */
@@ -1647,12 +1665,12 @@ working on blog title sidebar now
         position: sticky;
         /* top: 30px; */
         /* top: 0; */
-        top: 40px;
-
+        top: 50px;
         overflow-y: scroll;
-
-        height: 100vh;
-    }
+        height: 94vh;
+        border-radius: 30px;
+        margin: 10px;
+        }
 
     /* .blog-container {
         max-width: 750px;
@@ -1680,13 +1698,20 @@ working on blog title sidebar now
     }
 
     .blog-title a {
-        display: block;
+        /* display: block; */
+        display: inline-block;
     }
 
-    .blog-title img {
+    /* .blog-title img {
         max-height: 80vh;
-    }
+    } */
 
+}
+
+@media screen and (min-width: 1420px) and (prefers-color-scheme: light) {
+    .blog-title {
+        box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
+    }
 }
 
 
@@ -1709,6 +1734,7 @@ working on blog title sidebar now
     .blog-title {
         border: none;
         max-width: 1000px;
+        background-color:transparent;
     }
 
     .blog-container {
