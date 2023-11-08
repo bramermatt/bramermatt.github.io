@@ -1639,7 +1639,7 @@ working on blog title sidebar now
 
 
 
-@media screen and (min-width: 1420px) {
+@media screen and (min-width: 1400px) {
 
     /* .blog-title {
         margin: auto;
@@ -1667,9 +1667,9 @@ working on blog title sidebar now
         /* top: 0; */
         top: 50px;
         overflow-y: scroll;
-        height: 94vh;
-        border-radius: 30px;
-        margin: 10px;
+        /* height: 92.5vh; */
+        border-radius: 10px;
+        margin: 15px;
         }
 
     /* .blog-container {
@@ -1708,9 +1708,15 @@ working on blog title sidebar now
 
 }
 
-@media screen and (min-width: 1420px) and (prefers-color-scheme: light) {
+@media screen and (min-width: 1440px) and (prefers-color-scheme: light) {
     .blog-title {
         box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
+    }
+}
+
+@media screen and (min-width: 1440px) and (prefers-color-scheme: dark) {
+    .blog-title {
+        box-shadow: 0 1px 8px -1px rgba(255, 255, 255, 0.5);
     }
 }
 
@@ -1730,7 +1736,7 @@ working on blog title sidebar now
     }
 }
 
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 1400px) {
     .blog-title {
         border: none;
         max-width: 1000px;
