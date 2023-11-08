@@ -1819,6 +1819,10 @@ details .iframe-container {
     border-radius: 0;
 }
 
+ .blog details[open] img {
+    border-radius: 0 !important;
+}
+
 @media screen and (max-width: 350px) {
     nav, .under-nav {
         position:relative;
