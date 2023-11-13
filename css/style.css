@@ -766,7 +766,7 @@ section {
     .blog img {
         /* margin: 10px 0; */
         /* margin: 10px; */
-        border-radius: 0;
+        /* border-radius: 0; */
         /* padding-inline: 15px; */
         /* box-shadow: none; */
     }
@@ -1950,8 +1950,31 @@ body {
 }
 
 
+/* nav {
+    width: max-content;
+    margin: 10px;
+    border-radius: 10px;
+    top: 10px;
+    padding-inline: 0;
+    padding: 5px;
+} */
 
-@media screen and (min-width: 600px) and (prefers-color-scheme: light) {
+
+
+@media screen and (max-width: 500px) {
+    .under-nav {
+        display: none;
+    }    
+
+    details[open] {
+        margin-inline: 0;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1300px) and (prefers-color-scheme: light) {
     .blog-container {
         background-color: white;
         padding: 15px;
@@ -1962,11 +1985,12 @@ body {
 
     .blog-title {
         background-color: white;
+        
     };
     
 }
 
-@media screen and (max-width: 600px) and (prefers-color-scheme: light) {
+@media screen and (max-width: 1300px) and (prefers-color-scheme: light) {
     .blog-container {
         background-color: white;
         /* padding: 15px; */
@@ -1984,7 +2008,7 @@ body {
     };
 }
 
-@media screen and (min-width: 600px) and (prefers-color-scheme: dark) {
+@media screen and (min-width: 1300px) and (prefers-color-scheme: dark) {
     .blog-container {
         background-color: #333333;
         padding: 15px;
@@ -1996,11 +2020,13 @@ body {
     .blog-title {
         background-color: #333333;
         box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
+        margin: 10px;
+        border-radius: 10px;
     };
     
 }
 
-@media screen and (max-width: 600px) and (prefers-color-scheme: dark) {
+@media screen and (max-width: 1300px) and (prefers-color-scheme: dark) {
     .blog-container {
         background-color: #333333;
         /* padding: 15px; */
@@ -2014,7 +2040,6 @@ body {
     .blog-title {
         background-color: #333333;
         box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
-        margin: 10px;
-        border-radius: 10px;
+
     };
 }
