@@ -338,7 +338,7 @@ body {
     z-index: 2;
     border-right: thin solid;
     transition: .5s;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,20);
 }
 
  .nav-bar ul {
@@ -3502,6 +3502,14 @@ table {
     .alt-category {
         background-color: #002e31;
     }
+
+    .category {
+        background-color: rgba(33, 33, 33);
+        top: 40px;
+        position: sticky;
+        z-index: 10;
+        box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
+    }
 }
 
 @media screen and (prefers-color-scheme: light) {
@@ -3509,6 +3517,13 @@ table {
         background-color: #1b1b1bb6;
         color:white;
         /* margin-right: 15px; */
+    }
+
+    .category {
+        background-color: white;
+        top: 40px;
+        position: sticky;
+        z-index: 10;
     }
 
     .alt-category  .individual {
@@ -5889,6 +5904,11 @@ details p {
 
     .category h1 {
         /* margin-bottom: 0; */
+        font-size: 120%;
+    }
+
+    .category {
+        margin-bottom: 0;
     }
 
     .map {
@@ -8308,7 +8328,7 @@ section {
         background-attachment: local, local, scroll, scroll;
 
         border-bottom: thin solid #eee;
-        /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%); */
+        box-shadow: 0 1px 8px -1px rgb(0 0 0 / 25%);
     }
 
     nav a:hover {

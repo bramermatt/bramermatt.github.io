@@ -219,7 +219,7 @@ nav a:link, a:visited, .under-nav a:link, a:visited, .sidebar-nav a:link, a:visi
 }
 
 .timeline {
-    max-width: 600px;
+    max-width: 550px;
     margin: auto;
     /* padding-inline: 20px; */
     /* margin-top: 15px; */
@@ -387,7 +387,7 @@ section {
         background-attachment: local, local, scroll, scroll;
 
         border-bottom: thin solid #eee;
-        box-shadow: 0 1px 8px -1px rgb(0 0 0 / 15%);
+        box-shadow: 0 1px 8px -1px rgb(0 0 0 / 25%);
     }
 
     .blog-title {
@@ -646,7 +646,7 @@ section {
     }
 
     .timeline, .post, .post blockquote {
-        border-color: #eee;
+        /* border-color: #eee; */
     }
 
     .post h4 {
@@ -723,8 +723,9 @@ section {
 }
 
 @media screen and (max-width: 400px) {
-    .blog h2, .blog p, .blog-title, summary, nav a, .blog h3 {
+    .blog h2, .blog p, .blog-title, summary, nav a, .blog h3, details table {
         font-size: 80%;
+
     }
 
     .blog p {
@@ -1326,7 +1327,7 @@ table {
     /* height: 100%; */
     /* gap: 1vw; */
     /* padding: 12px 0; */
-    /* padding-inline: 15px; */
+    padding-inline: 15px;
     max-width: 1200px;
     margin: auto;
     gap: 8vw;
@@ -1382,6 +1383,8 @@ table {
     line-height: 20px;
     /* margin: 0; */
     padding: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .split-header-half-title h2 {
@@ -1406,6 +1409,8 @@ table {
     /* padding-inline: 2%; */
     /* font-size: .9em; */
     padding-left: 1%;
+    padding-top: 0;
+    margin-top: 5px;
     max-width: 600px;
 }
 
@@ -1967,7 +1972,7 @@ body {
     }    
 
     details[open] {
-        margin-inline: 0;
+        margin-inline: 5px;
     }
 }
 
@@ -1985,6 +1990,9 @@ body {
 
     .blog-title {
         background-color: white;
+        /* margin: 10px; */
+        border-radius: 10px;
+        margin-top: 10px;
         
     };
     
@@ -2008,7 +2016,7 @@ body {
     };
 }
 
-@media screen and (min-width: 1300px) and (prefers-color-scheme: dark) {
+@media screen and (min-width: 1400px) and (prefers-color-scheme: dark) {
     .blog-container {
         background-color: #333333;
         padding: 15px;
@@ -2020,13 +2028,16 @@ body {
     .blog-title {
         background-color: #333333;
         box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
-        margin: 10px;
+        /* margin: 10px; */
         border-radius: 10px;
+        margin-top: 10px;
+
     };
+
     
 }
 
-@media screen and (max-width: 1300px) and (prefers-color-scheme: dark) {
+@media screen and (max-width: 1400px) and (prefers-color-scheme: dark) {
     .blog-container {
         background-color: #333333;
         /* padding: 15px; */
@@ -2040,6 +2051,8 @@ body {
     .blog-title {
         background-color: #333333;
         box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
-
+        margin: 10px;
+        border-radius: 10px;
     };
+
 }
