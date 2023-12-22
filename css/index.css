@@ -2520,7 +2520,7 @@ table {
     align-self: center;
     /* border: 1px solid; */
 
-    /* border-radius: 30px; */
+    border-radius: 10px;
     /* border-radius: 8%; */
 
 
@@ -7564,22 +7564,11 @@ details p {
 /* 2023 Theme */
 
  /* turn this on when christmas theme is off */
-.blog-title, .blog-vertical, .blog-alt-title {
-    /* padding: 15px; */
-    /* padding-top: 15px; */
-    /* padding-bottom: 15px; */
-    /* border-bottom: thin solid; */
-    /* border-bottom: .25px solid #eee; */
-} 
-
 
 
 .blog-tag a > p {
-    /* background-color: rgb(36, 36, 36); */
-    /* color: white; */
     color: black;
     font-weight: 700;
-    /* border: thin solid; */
 }
 
 .blog-tag {
@@ -7593,18 +7582,13 @@ details p {
 }
 
 .blog-tag p {
-    /* display: contents; */
     align-self: center;
     color: rgb(77, 77, 77);
     padding: 0;
     align-content: center;
-    /* border: thin solid; */
-
 }
 
 .blog-tag a > p:hover {
-    /* background-color: rgb(0, 0, 0); */
-    /* color: white; */
     text-decoration: underline;
 }
 
@@ -7623,68 +7607,26 @@ details p {
 
 .tag-tag {
     display: flex;
-    /* margin-left: 30px; */
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     
 }
 
-.title-score {
-    /* float: left; */
-    /* position:absolute; */
-}
-
-.title-score img {
-    height: 5vh;
-    box-shadow: none;
-}
-
 @media screen and (min-width: 660px) {
     .blog-tag {
         display: flex;
-        /* margin: 10px; */
     }
 
     .tag-tag {
         margin: 10px;
-        /* margin-right: 30px; */
-    }
-
-
-}
-
-@media screen and (max-width: 500px) {
-    /* .title-score {
-        position:absolute;
-    }
-
-    .title-score img {
-        height: 7vh;
-        margin-top: 4vh;
-    } */
-
-    .spoiler-scrollbar {
-        /* position: sticky;
-        z-index: 1;
-        top: 0; */
-        /* position: fixed;
-        bottom: 0;
-        width: 100%;
-        z-index: 3; */
     }
 
 }
 
-
-.hero-title {
-    /* border-bottom: thin solid; */
-    /* max-width: max-content; */
-}
 
 @media screen and (prefers-color-scheme: dark) {
     .blog-title, .blog-vertical, .blog-alt-title {
-        /* background-color: #1f1f1f6b; */
         color: white;
     } 
 
@@ -7693,11 +7635,6 @@ details p {
     }
 
     .blog-tag p, .tldr p {
-        /* background-color: rgb(36, 36, 36, 0.6); */
-        /* background-color: white; */
-        /* color: black; */
-        /* border-color: black; */
-        /* border: thin solid; */
         color: lightgrey;
     }
 
@@ -7707,15 +7644,12 @@ details p {
     }
 
     .blog-tag a > p:hover {
-        /* background-color: rgb(0, 0, 0); */
-        /* color: white; */
+
         text-decoration: underline;
     }
 
     .blog-tag p {
-        /* border: none; */
         border-radius: 20px;
-        /* filter: drop-shadow(0 0 1.5px rgb(0, 0, 5)); */
     }
 
     .blog-tag img, .blog-right-tag img {
@@ -7724,22 +7658,13 @@ details p {
 }
 
 @media screen and (prefers-color-scheme: light) {
-    .blog-title, .blog-vertical, .blog-alt-title {
-        /* background-color: #ececec; */
-        /* border-bottom: thin solid; */
-        /* color: white; */
-    } 
 
     .blog-tag p {
         background-color: rgba(255, 255, 255, 0.6);
-        /* border: thin solid; */
-        /* color: var(--text); */
         border-radius: 20px;
     }
 
     .blog-tag a > p:hover {
-        /* background-color: rgb(0, 0, 0); */
-        /* color: white; */
         text-decoration: underline;
     }
 
@@ -7750,86 +7675,10 @@ details p {
 }
 
 
-/* MODAL */
-/* Style the Image Used to Trigger the Modal */
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  #myImg:hover {opacity: 0.7;}
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 10vh; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: hidden; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (Image) */
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-  }
-  
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
-  #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-  }
-  
-  /* Add Animation - Zoom in the Modal */
-  .modal-content, #caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 4.5vh;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
+
   
   /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
-  }
+  @media only screen and (max-width: 700px) {
 
   .seven-img-columns {
     display: grid;
@@ -7852,15 +7701,14 @@ details p {
     display: block;
 }
 
+  }
+
 @media screen and (max-width: 1600px) {
     .eight-img-columns, .seven-img-columns {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         padding-inline: 15px;
     }
 
-    .eight-img-columns img {
-        /* height: auto; */
-    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -7878,17 +7726,9 @@ details p {
 @media screen and (max-width: 1000px) {
     .eight-img-columns, .seven-img-columns {
         grid-template-columns: 1fr 1fr;
-        /* padding-inline: 15px; */
     }
 }
 
-
-  /* sticky */
-/* .top-title-bar {
-    position: sticky;
-    z-index: 10;
-    opacity: 100%;
-} */
 
 details table {
     margin-bottom: 40px;
@@ -7991,9 +7831,6 @@ details h2, details table {
     }
 
     .top-title-bar-links li {
-        /* visibility: hidden; */
-        /* display: none; */
-        /* width: max-content; */
         font-size: 14px;
 
         padding: 0;
@@ -8003,7 +7840,6 @@ details h2, details table {
         width: 10%;
         flex-grow: 1;
         padding: 0;
-        /* position: relative; */
     }
 
     .top-title-bar-content {

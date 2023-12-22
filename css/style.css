@@ -258,6 +258,7 @@ nav a:link, a:visited, .under-nav a:link, a:visited, .sidebar-nav a:link, a:visi
 
     border-radius: 10px;
     margin-top: 15px;
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 25%);
 }
 
 .post blockquote {
@@ -813,7 +814,7 @@ section {
 
     margin-top: 10px;
 
-    /* border-radius: 10px; */
+    border-radius: 10px;
 }
   
 iframe, video {
@@ -1954,15 +1955,17 @@ body {
     background-size: cover;
 }
 
+*/
+
 
 /* nav {
-    width: max-content;
+    width: max-content !important;
     margin: 10px;
     border-radius: 10px;
     top: 10px;
     padding-inline: 0;
     padding: 5px;
-} */
+}  */
 
 
 
@@ -1993,6 +1996,7 @@ body {
         /* margin: 10px; */
         border-radius: 10px;
         margin-top: 10px;
+        box-shadow: 0 1px 8px -1px rgb(0 0 0 / 25%);
         
     };
     
@@ -2006,13 +2010,14 @@ body {
         margin-top: 15px;
         padding: 5px;
         margin: 10px;
-        box-shadow: 0 1px 8px -1px rgba(83, 83, 83, 0.4);
+
     }
 
     .blog-title {
         background-color: white;
         margin: 10px;
         border-radius: 10px;
+        /* box-shadow: 0 1px 8px -1px rgba(83, 83, 83, 0.4); */
     };
 }
 
