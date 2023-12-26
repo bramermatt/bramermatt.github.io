@@ -102,6 +102,7 @@ nav {
     padding-inline: 20px;
     /* margin: 15px; */
     /* border-bottom: thin solid #eee; */
+
     position: sticky;
     top: 0;
     z-index: 5;
@@ -129,7 +130,7 @@ nav {
 .under-nav {
     /* width: 100% !important; */
     padding: 10px;
-    padding-inline: 20px;
+    /* padding-inline: 20px; */
     /* margin: 15px; */
     /* border-bottom: thin solid #eee; */
     /* position: sticky; */
@@ -395,10 +396,28 @@ section {
         background-color: white;
     }
 
+    hr {
+        margin: 10px;
+    }
 
 
-    nav a:hover, .under-nav a:hover {
+    nav a, .under-nav a {
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    nav a:hover {
         color: rgb(112, 112, 112);
+        /* color: white; */
+        /* background-color: rgb(112, 112, 112); */
+        /* width: max-content; */
+    }
+
+    .under-nav a:hover {
+        /* color: rgb(112, 112, 112); */
+        color: white;
+        background-color: rgb(66, 66, 66);
+        width: max-content;
     }
 
     .sidebar-nav {
@@ -429,8 +448,28 @@ section {
         background-color: #383838;
     }
 
-    nav a:hover, .under-nav a:hover {
+    hr {
+        margin: 10px;
+    }
+
+
+    nav a, .under-nav a {
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    nav a:hover {
         color: rgb(112, 112, 112);
+        /* color: white; */
+        /* background-color: rgb(112, 112, 112); */
+        /* width: max-content; */
+    }
+
+    .under-nav a:hover {
+        /* color: rgb(112, 112, 112); */
+        color: white;
+        background-color: rgb(75, 75, 75);
+        width: max-content;
     }
 }
 
@@ -846,6 +885,7 @@ details[open] {
     /* border-top: thin solid;
     border-bottom: thin solid; */
     /* width: 100%; */
+    border: thin solid;
 
 
 }
@@ -924,7 +964,7 @@ summary {
     details[open] {
         /* background-color:rgba(128, 128, 128, 0.74) !important; */
         border-radius: 10px;
-        border: thin solid #eee;
+        /* border: thin solid #eee; */
         /* color: white; */
         box-shadow: 0 1px 8px -1px rgb(0 0 0 / 20%);
     }
@@ -935,7 +975,6 @@ summary {
         background-color:rgb(58, 58, 58) !important;
         border: thin solid;
         box-shadow: 0px 4px 8px 0px rgba(39, 39, 39, 0.09);
-                /* background-color: red !important; */
     }
 
     details[open] {
@@ -1947,7 +1986,7 @@ details .iframe-container {
 }
 
 
-/* christmas theme */
+/* christmas theme
 body {
     background-image: url(../img/pages/heros/christmas-background.png);
     background-repeat: no-repeat;
@@ -2009,7 +2048,9 @@ body {
         border-radius: 10px;
         margin-top: 15px;
         padding: 5px;
-        margin: 10px;
+
+        /* shrinking side margin for reading */
+        margin: 2px;
 
     }
 
@@ -2033,7 +2074,7 @@ body {
     .blog-title {
         background-color: #333333;
         box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
-        /* margin: 10px; */
+        margin: 10px;
         border-radius: 10px;
         margin-top: 10px;
 
@@ -2049,7 +2090,10 @@ body {
         border-radius: 10px;
         margin-top: 15px;
         padding: 5px;
-        margin: 10px;
+
+        /* shrinking side margin for reading */
+        margin: 2px;
+
         box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
     }
 
