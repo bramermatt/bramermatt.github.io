@@ -3505,7 +3505,7 @@ table {
 
     .category {
         background-color: rgba(33, 33, 33);
-        top: 45px;
+        top: 4vh;
         position: sticky;
         z-index: 4;
         box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
@@ -3521,7 +3521,7 @@ table {
 
     .category {
         background-color: white;
-        top: 45px;
+        top: 4vh;
         position: sticky;
         z-index: 4;
     }

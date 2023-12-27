@@ -892,7 +892,7 @@ details[open] {
 
 details[open] summary {
     margin-left: auto !important; 
-    margin-right: 25px;
+    margin-right: 10px;
     transition: .7s ease;
     /* width: 100%; */
     /* top: 0; */
@@ -1899,12 +1899,12 @@ working on blog title sidebar now
 
 
 
-    summary {
+    /* summary {
         position: relative;
         top: 0 !important;
         width:fit-content;
         margin-right: auto;
-    }
+    } */
 }
 
 
