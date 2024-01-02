@@ -643,7 +643,7 @@ section {
 
 
     .blog h2 {
-        border-bottom: 1px solid #333333;
+        border-bottom: 1px solid #5f5f5f;
     }
 
     .blog-title {
@@ -792,7 +792,7 @@ section {
 
 .blog blockquote, .split-header-half-title blockquote {
     margin: 5px;
-    margin-top: 0;
+    margin-top: 10px;
     /* font-style: italic; */
     margin-bottom: 40px;
     font-size: 80%;
