@@ -777,7 +777,7 @@ section {
     max-height: 70vh;
     max-width: 100%;
     /* width: 100%; */
-    object-fit: contain;
+    object-fit: cover;
     margin: 10px 0;
     /* margin: 10px; */
     /* padding-inline: 15px; */
