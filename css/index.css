@@ -8231,3 +8231,14 @@ section {
     /* margin-bottom: 15vh; */
 }
 
+/* hover nav */
+
+nav {
+    margin: 10px;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.category {
+    top: 45px;
+}

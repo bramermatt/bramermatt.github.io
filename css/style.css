@@ -1885,7 +1885,7 @@ working on blog title sidebar now
 @media screen and (max-width: 640px) {
     details[open] summary {
         z-index: 1 !important;
-        top: 50px;
+        top: 60px;
     }
 
     /* summary {
@@ -2108,4 +2108,20 @@ body {
         border-radius: 10px;
     };
 
+}
+
+/* hover nav */
+
+nav {
+    margin: 10px;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.under-nav {
+    top: 8vh;
+}
+
+.blog-title {
+    top: 7vh;
 }
