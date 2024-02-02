@@ -2018,7 +2018,7 @@ body {
 
 
 
-/* @media screen and (min-width: 1300px) and (prefers-color-scheme: light) {
+@media screen and (min-width: 1400px) and (prefers-color-scheme: light) {
     .blog-container {
         background-color: white;
         padding: 15px;
@@ -2037,7 +2037,7 @@ body {
     
 }
 
-@media screen and (max-width: 1300px) and (prefers-color-scheme: light) {
+@media screen and (max-width: 1400px) and (prefers-color-scheme: light) {
     .blog-container {
         background-color: white;
 
@@ -2055,7 +2055,7 @@ body {
         border-radius: 10px;
 
     };
-} */
+}
 
 @media screen and (min-width: 1400px) and (prefers-color-scheme: dark) {
     .blog-container {
