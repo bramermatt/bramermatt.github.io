@@ -2188,7 +2188,7 @@ body {
 }
 
 nav {
-    text-align: center !important;
+    /* text-align: center !important; */
 }
 
 nav a {
@@ -2217,4 +2217,74 @@ nav a {
 .social-links li {
     margin: 0;
     padding: 0;
+}
+
+
+.index-spread {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1300px;
+    margin: auto;
+    gap: 2vw;
+    padding-inline: 15px;
+}
+
+.main-hero {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 900px; */
+    /* margin: auto; */
+}
+
+.main-hero-img {
+    margin: 10px 0;
+    
+    position: sticky;
+    top: 6vh;
+    z-index: 1;
+}
+
+.main-hero-img blockquote {
+    /* margin: 5px; */
+    /* margin-top: 0; */
+    margin-bottom: 10px;
+    font-size: 80%;
+    padding-inline: 15px;
+    border-left: thick solid black;
+    margin-left: 4em;
+    /* margin-inline: 10px; */
+    max-width: 450px;
+}
+
+.main-hero-img img {
+    max-height: 80vh;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.timeline {
+    margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .index-spread {
+        grid-template-columns: 1fr;
+    }
+
+    .main-hero {
+        border-bottom: thin solid #eee;
+        padding-bottom: 30px;
+    }
+}
+
+
+/* ahh, no img in posts */
+.post img, .post blockquote {
+    display: none;
+}
+
+.post a {
+    margin-right: 0 !important;
 }
