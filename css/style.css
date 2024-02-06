@@ -220,7 +220,7 @@ nav a:link, a:visited, .under-nav a:link, a:visited, .sidebar-nav a:link, a:visi
 }
 
 .timeline {
-    max-width: 550px;
+    max-width: 500px;
     margin: auto;
     /* padding-inline: 20px; */
     /* margin-top: 15px; */
@@ -250,7 +250,7 @@ nav a:link, a:visited, .under-nav a:link, a:visited, .sidebar-nav a:link, a:visi
     /* border-top: thin solid; */
     /* border-bottom: thin solid; */
     /* margin: 10px; */
-    padding-top: 20px;
+    padding-top: 10px;
     padding-inline: 15px;
     /* margin-inline: 10px; */
     overflow: hidden;
@@ -259,7 +259,7 @@ nav a:link, a:visited, .under-nav a:link, a:visited, .sidebar-nav a:link, a:visi
 
     border-radius: 10px;
     margin-top: 15px;
-    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 25%);
+    /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 25%); */
 }
 
 .post blockquote {
@@ -660,8 +660,18 @@ section {
 
     .post, .split-header-half {
         /* border-color: #333333; */
-        background-color: #333333;
-        box-shadow: 0 1px 8px -1px rgba(83, 83, 83, 0.4);
+        /* background-color: #333333; */
+        /* box-shadow: 0 1px 8px -1px rgba(83, 83, 83, 0.4); */
+        border: thin solid #333333;
+    }
+
+    /* .post::after {
+        content: "";
+        border-bottom: thin solid;
+    } */
+
+    .post h4:hover {
+        color: white;
     }
 
     .post:hover {
@@ -2227,6 +2237,10 @@ nav a {
     margin: auto;
     gap: 2vw;
     padding-inline: 15px;
+
+    border-bottom: thin solid;
+    padding-bottom: 10vh;
+    margin-bottom: 10vh;
 }
 
 .main-hero {
@@ -2285,6 +2299,12 @@ nav a {
     display: none;
 }
 
-.post a {
-    margin-right: 0 !important;
+.post a h4 {
+    margin-right: 1vw !important;
+    margin-left: 0 !important;
+}
+
+.topic {
+    visibility: hidden;
+    display: none;
 }
