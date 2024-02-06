@@ -251,6 +251,7 @@ nav a:link, a:visited, .under-nav a:link, a:visited, .sidebar-nav a:link, a:visi
     /* border-bottom: thin solid; */
     /* margin: 10px; */
     padding-top: 10px;
+    padding-bottom: 10px;
     padding-inline: 15px;
     /* margin-inline: 10px; */
     overflow: hidden;
@@ -259,7 +260,9 @@ nav a:link, a:visited, .under-nav a:link, a:visited, .sidebar-nav a:link, a:visi
 
     border-radius: 10px;
     margin-top: 15px;
-    /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 25%); */
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 8%);
+
+    /* display: flex; */
 }
 
 .post blockquote {
@@ -292,8 +295,8 @@ nav a:link, a:visited, .under-nav a:link, a:visited, .sidebar-nav a:link, a:visi
 
 .post h2 {
     font-size: 18px;
-    padding-bottom: 10px !important;
-    padding-top: 5px !important;
+    /* padding-bottom: 10px !important; */
+    /* padding-top: 5px !important; */
 }
 
 .post h4 {
@@ -303,6 +306,7 @@ nav a:link, a:visited, .under-nav a:link, a:visited, .sidebar-nav a:link, a:visi
 .post p {
     /* margin-top: 05px; */
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     line-height:1.5em;
     /* max-width: 80%; */
@@ -584,6 +588,7 @@ section {
     /* border-right: thin solid #eee;
     border-left: thin solid #eee; */
     /* padding-inline: 20px; */
+    margin-bottom: 5vh !important;
 }
 
 .ad-split {
@@ -705,6 +710,10 @@ section {
 
     .post h4 {
         color: rgb(124, 124, 124);
+    }
+
+    .post h4:hover {
+        color: black;
     }
 
     .timeline .post:hover {
@@ -2034,6 +2043,7 @@ body {
         padding: 15px;
         border-radius: 10px;
         margin-top: 15px;
+        margin-bottom: 10vh;
         box-shadow: 0 1px 8px -1px rgba(83, 83, 83, 0.4);
     }
 
@@ -2248,17 +2258,19 @@ nav a {
     flex-direction: column;
     /* max-width: 900px; */
     /* margin: auto; */
+
 }
 
-.main-hero-img {
+.main-hero-content {
     margin: 10px 0;
     
     position: sticky;
     top: 6vh;
     z-index: 1;
+
 }
 
-.main-hero-img blockquote {
+.main-hero-content blockquote {
     /* margin: 5px; */
     /* margin-top: 0; */
     margin-bottom: 10px;
@@ -2270,16 +2282,23 @@ nav a {
     max-width: 450px;
 }
 
-.main-hero-img img {
-    max-height: 80vh;
+.main-hero-content img {
+    max-height: 70vh;
     object-fit: cover;
     display: flex;
     align-items: center;
     border-radius: 10px;
+    box-shadow: 0 1px 8px -1px rgb(0 0 0 / 8%);
 }
 
 .timeline {
     margin: auto;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .post {
+        border: thin solid #dddddd;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -2307,4 +2326,30 @@ nav a {
 .topic {
     visibility: hidden;
     display: none;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+@media screen and (prefers-color-scheme: light) {
+    #myBtn {
+        background-color: #383838;
+    }
 }
