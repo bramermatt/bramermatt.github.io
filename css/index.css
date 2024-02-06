@@ -3169,17 +3169,18 @@ table {
     box-shadow: 0 1px 5px -1px rgb(0 0 0 / 32%);
     border-radius: 18px;
     margin: auto;
+    margin: 15px;
     margin-bottom: 15px;
     /* margin-top: 15px; */
     /* margin: 25px; */
     /* padding: 10px; */
     background: var(--background);
     /* width: 100%; */
-    width: max-content;
+    /* width: max-content; */
     padding: 10px;
     /* border: 1px solid #000; */
     /* background-color: transparent; */
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Sharp Grotesk',sans-serif;
     font-weight: 500;
     text-align: center;
@@ -5905,6 +5906,8 @@ details p {
     .category h1 {
         /* margin-bottom: 0; */
         font-size: 120%;
+
+
     }
 
     .category {
@@ -6994,7 +6997,9 @@ details p {
 
 @media screen and (max-width: 400px) {
 
-
+.category {
+    position: relative;
+}
 
 
     .grid-six-columns, .grid-five-columns {
