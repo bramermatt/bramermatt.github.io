@@ -2369,9 +2369,48 @@ nav a {
     background-color: #555; /* Add a dark-grey background on hover */
   }
 
+  .category {
+    /* margin-bottom: 20px; */
+    /* margin-top: 60px; */
+    /* padding-top: 40px; */
+    padding-inline: 15px;
+    margin-bottom: 5vh;
+}
+
+.category h1, .alt-category h1 {
+    /* margin-bottom: 0; */
+    padding-top: 10px;
+    margin-top: 0;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: thin solid;
+    /* border-bottom: .5px solid; */
+    /* border-bottom: .25px solid #eee; */
+    padding-bottom: 5px;
+}
+
 @media screen and (prefers-color-scheme: light) {
     #myBtn {
         background-color: #383838;
+    }
+
+    .category {
+        background-color: white;
+        top: 4vh;
+        position: sticky;
+        z-index: 4;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+        .category {
+        background-color: rgba(33, 33, 33);
+        top: 4vh;
+        position: sticky;
+        z-index: 4;
+        box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
     }
 }
 

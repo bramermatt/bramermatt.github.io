@@ -3157,7 +3157,7 @@ table {
     background: var(--background);
     width: max-content;
     padding: 10px;
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Sharp Grotesk',sans-serif;
     font-weight: 700;
     /* text-align: center; */
@@ -3180,7 +3180,7 @@ table {
     padding: 10px;
     /* border: 1px solid #000; */
     /* background-color: transparent; */
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Sharp Grotesk',sans-serif;
     font-weight: 500;
     text-align: center;
@@ -8047,9 +8047,9 @@ details h2, details table {
     margin-left: 5px;
   }
   
-  .active:after {
+  /* .active:after {
     content: "\2212";
-  }
+  } */
   
   .content {
     padding: 0 18px;

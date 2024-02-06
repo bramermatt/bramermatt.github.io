@@ -24,8 +24,11 @@
 
     <nav>
         <a href="../index.html">Home</a>
+        
         <a href="../pages/reviews.html">Reviews</a>
         <a href="../pages/cosmere-in-review.html">Cosmere in Review</a>
+        <a href="../pages/dune-in-review.html">Dune in Review</a>
+        <a href="../pages/Kingkiller-chronicle-in-review.html">The Kingkiller Chronicle in Review</a>
         <a href="../pages/harry-potter-in-review.html">Harry Potter in Review</a>
         <a href="../pages/lotr-in-review.html">Lord of the Rings in Review</a>
         <a href="../pages/malazan-in-review.html">Malazan in Review</a>
@@ -35,6 +38,80 @@
         <a href="../pages/realm-of-the-elderlings-in-review.html">Realm of the Elderlings in Review</a>
         <a href="../pages/wheel-of-time-in-review.html">Wheel of Time in Review</a>
     </nav>
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">trying something here ;)</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<style>
+    /* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+
+<script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
     <div class="body-content">
 
@@ -70,7 +147,29 @@
             <h1>2024 Book Reviews</h1>
         </div>
 
-        <div class="grid-five-columns">
+        <div class="grid-six-columns">
+
+            <div class="grid-item">
+                <a href="../docs/the-name-of-the-wind-book-review.html" class="link">
+                    <div class="individual">
+                        <img src="../img/docs/books/kingkiller-chronicle/the-name-of-the-wind-book-cover.jpg" alt="brandon">
+                        <div class="topic">
+                            <div class="tag">
+                                <p>Book Reviews</p>
+                                <p>Blog</p>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h2>The Name of the Wind Book Review</h2>
+                            <p>February 6, 2024</p>
+                        </div>
+                        <a href="../pages/Kingkiller-chronicle-in-review.html">
+                            <div class="read-more">
+                               The Kingkiller Chronicle in Review
+                        </div></a>
+                    </div>
+                </a>
+                </div>
 
             <div class="grid-item">
                 <a href="../docs/assassins-apprentice-book-review.html" class="link">
@@ -1279,10 +1378,10 @@
                 <h2>Dune</h2>
                 <p>by Frank Herbert</p>
                 </div>
-                <!-- <a href="reviews/book-reviews.html">
+                <a href="../pages/dune-in-review.html">
                     <div class="read-more">
-                        More Book Reviews
-                </div></a> -->
+                        Dune in Review
+                </div></a>
                 </div>
         </a>
     </div>
