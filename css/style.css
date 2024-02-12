@@ -452,9 +452,9 @@ section {
         box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
     }
 
-    .blog-title {
+    /* .blog-title {
         background-color: #383838;
-    }
+    } */
 
     hr {
         margin: 10px;
@@ -1820,7 +1820,7 @@ working on blog title sidebar now
         top: 50px;
         overflow-y: scroll;
         /* height: 92.5vh; */
-        border-radius: 10px;
+        /* border-radius: 10px; */
         margin: 15px;
         }
 
@@ -2083,10 +2083,12 @@ body {
         background-color: white;
 
         border-radius: 10px;
+        
+        margin: 5px;
         margin-top: 15px;
         padding: 5px;
 
-        margin: 5px;
+        /* box-shadow: 0 1px 8px -1px rgba(83, 83, 83, 0.4); */
 
     }
 
@@ -2108,10 +2110,10 @@ body {
     }
 
     .blog-title {
-        background-color: #333333;
-        box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
+        /* background-color: #333333; */
+        /* box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4); */
         /* margin: 11px; */
-        border-radius: 10px;
+        /* border-radius: 10px; */
         margin-top: 10px;
 
     };
@@ -2128,9 +2130,9 @@ body {
         padding: 5px 0px;
 
         /* shrinking side margin for reading */
-        /* margin: 5px; */
+        margin: 5px;
 
-        margin: auto;
+        /* margin: auto; */
 
         /* box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4); */
     }
@@ -2140,8 +2142,8 @@ body {
         /* box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4); */
         /* margin: 11px; */
 
-        margin: auto;
-        border-radius: 10px;
+        /* margin: auto; */
+        /* border-radius: 10px; */
     };
 
 }
@@ -2390,29 +2392,7 @@ nav a {
     padding-bottom: 5px;
 }
 
-@media screen and (prefers-color-scheme: light) {
-    #myBtn {
-        background-color: #383838;
-    }
 
-    .category {
-        background-color: white;
-        top: 4vh;
-        position: sticky;
-        z-index: 4;
-    }
-}
-
-@media screen and (prefers-color-scheme: dark) {
-
-        .category {
-        background-color: rgba(33, 33, 33);
-        top: 4vh;
-        position: sticky;
-        z-index: 4;
-        box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
-    }
-}
 
 
 /* .blog-spread {
@@ -2427,6 +2407,8 @@ nav a {
     color: white;
     text-align: center;
 }
+
+
 
 .blog-header h1 {
     font-size: 60px;
@@ -2491,6 +2473,34 @@ nav a {
     }
 }
 
+@media screen and (prefers-color-scheme: light) {
+    #myBtn {
+        background-color: #383838;
+    }
+
+    .category {
+        background-color: white;
+        top: 4vh;
+        position: sticky;
+        z-index: 4;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+        .category {
+        background-color: rgba(33, 33, 33);
+        top: 4vh;
+        position: sticky;
+        z-index: 4;
+        box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
+    }
+
+    .blog-header {
+        background-color: #444444;
+    }
+}
+
 
 /* new blog setup feb 12 24 */
 
@@ -2524,6 +2534,7 @@ nav a {
     border-right: none;
     box-shadow: none;
     border-radius: 0;
+    margin: 10px;
 }
 
 
@@ -2576,5 +2587,6 @@ nav a {
         margin-inline: 0;
     }
 }
+
 
  */
