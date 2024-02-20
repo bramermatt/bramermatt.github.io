@@ -452,9 +452,10 @@ section {
         box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
     }
 
-    /* .blog-title {
+    .blog-title {
         background-color: #383838;
-    } */
+        border-radius: 10px;
+    }
 
     hr {
         margin: 10px;
@@ -2377,6 +2378,7 @@ nav a {
     /* padding-top: 40px; */
     padding-inline: 15px;
     margin-bottom: 5vh;
+    position: relative !important;
 }
 
 .category h1, .alt-category h1 {
@@ -2489,7 +2491,7 @@ nav a {
 @media screen and (prefers-color-scheme: dark) {
 
         .category {
-        background-color: rgba(33, 33, 33);
+        background-color: rgba(33, 33, 33, 0.801);
         top: 4vh;
         position: sticky;
         z-index: 4;
@@ -2535,6 +2537,8 @@ nav a {
     box-shadow: none;
     border-radius: 0;
     margin: 10px;
+
+    
 }
 
 
