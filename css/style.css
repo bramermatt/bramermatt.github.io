@@ -2378,7 +2378,7 @@ nav a {
     /* padding-top: 40px; */
     padding-inline: 15px;
     margin-bottom: 5vh;
-    position: relative !important;
+    /* position: relative !important; */
 }
 
 .category h1, .alt-category h1 {
