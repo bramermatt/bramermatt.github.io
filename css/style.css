@@ -2594,3 +2594,44 @@ nav a {
 
 
  */
+
+.head-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    border-bottom: thin solid;
+    margin-top: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    border-top: thin solid;
+    margin-bottom: 20px;
+}
+
+.head-nav .head-logo img {
+    max-height: 15vh;
+    padding: 10px;
+  }
+
+.head-nav .head-links {
+    display: flex;
+    align-items: center;
+}
+
+.head-nav .head-links a {
+    margin: 30px;
+}
+
+
+.main-spread {
+    max-width: 1600px;
+    margin: auto;
+}
+
