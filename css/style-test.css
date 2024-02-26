@@ -58,13 +58,15 @@ header img {
     max-height: 5vh;
 }
 
-header h1 {
+header h1, .blog-title h1 {
     margin-bottom: 5px;
 }
 
-header p {
+header p, .blog-title p {
     margin-top: 0;
 }
+
+
 
 nav a {
     margin-right: 1vw;
@@ -92,15 +94,15 @@ footer {
     margin-top: 20vh;
 }
 
-.blog-title {
-    display: none;
-}
+
 
 img {
     max-height: 60vh;
     max-width: 100%;
     margin-top: 20px;
 }
+
+
 
 footer img {
     max-height: 8vh;
