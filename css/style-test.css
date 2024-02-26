@@ -90,6 +90,8 @@ article #post p {
     font-size: 12px;
 }
 
+
+
 footer {
     margin-top: 20vh;
 }
@@ -113,6 +115,7 @@ footer img {
     overflow: hidden;
     width: 100%;
     padding-top: 56.35%; 
+    box-shadow: 1px 0px 5px darkgrey;
 }
 
 iframe, video {
@@ -131,6 +134,19 @@ blockquote {
     border-top: thin solid;
     max-width: max-content;
     font-size: small;
+}
+
+details {
+    padding: 10px;
+    margin: 10px;
+    border: thin solid;
+    box-shadow: 1px 0px 5px darkgrey;
+    max-width: max-content;
+    border-radius: 10px;
+}
+
+h2 {
+    max-width: 550px;
 }
 
 p {
