@@ -104,7 +104,9 @@ img {
     margin-top: 20px;
 }
 
-
+footer {
+    margin-bottom: 5vh;
+}
 
 footer img {
     max-height: 8vh;
@@ -151,4 +153,17 @@ h2 {
 
 p {
     max-width: 550px;
+}
+
+.ad-split {
+    border-top: thin solid;
+    border-bottom: thin solid;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 20px;
+
+}
+
+.ad-split h2 {
+    margin-top: 10px;
 }
