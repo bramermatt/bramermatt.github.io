@@ -392,6 +392,7 @@ section {
         background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
         background-attachment: local, local, scroll, scroll;
 
+        border-top: thin solid #eee;
         border-bottom: thin solid #eee;
         /* box-shadow: 0 1px 8px -1px rgb(0 0 0 / 25%); */
     }
@@ -449,6 +450,9 @@ section {
         background-attachment: local, local, scroll, scroll;
 
         /* border-bottom: thin solid #333333; */
+        border-top: thin solid #333333;
+        border-bottom: thin solid #333333;
+
         box-shadow: 0 1px 8px -1px rgba(0, 0, 0, 0.4);
     }
 
@@ -2085,7 +2089,7 @@ body {
 
         border-radius: 10px;
         
-        margin: 5px;
+        margin: 10px;
         margin-top: 15px;
         padding: 5px;
 
@@ -2131,7 +2135,7 @@ body {
         padding: 5px 0px;
 
         /* shrinking side margin for reading */
-        margin: 5px;
+        margin: 10px;
 
         /* margin: auto; */
 
@@ -2491,7 +2495,7 @@ nav a {
 @media screen and (prefers-color-scheme: dark) {
 
         .category {
-        background-color: rgba(33, 33, 33, 0.801);
+        background-color: rgba(33, 33, 33);
         top: 4vh;
         position: sticky;
         z-index: 4;
@@ -2659,3 +2663,43 @@ nav a {
     padding-inline: 25px;
 }
 
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 50px;
+    z-index: 6;
+    max-width: max-content;
+    box-shadow: 0px 4px 10px black;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    z-index: 10;
+    border-radius: 10px;
+  }
+  
+  
+  .topnav a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: small;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
