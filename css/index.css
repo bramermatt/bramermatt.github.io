@@ -8103,9 +8103,11 @@ nav a:link, a:visited {
     text-decoration: none;
     /* max-width: 1500px; */
     margin: auto;
-    margin-right: 1vw;
-    margin-left: 1vw;
+    /* margin-right: 1vw; */
+    /* margin-left: 1vw; */
     font-weight: 500;
+    border-right: thin solid #eee;
+    border-radius: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -8178,7 +8180,7 @@ section {
     }
 
     nav a, .under-nav a {
-        border-radius: 30px;
+        /* border-radius: 30px; */
         padding: 10px;
     }
 }

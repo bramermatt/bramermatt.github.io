@@ -411,7 +411,7 @@ section {
 
 
     nav a, .under-nav a {
-        border-radius: 30px;
+        /* border-radius: 30px; */
         padding: 10px;
     }
 
@@ -467,7 +467,7 @@ section {
 
 
     nav a, .under-nav a {
-        border-radius: 30px;
+        /* border-radius: 30px; */
         padding: 10px;
     }
 
@@ -2241,6 +2241,7 @@ nav {
 
 nav a {
     margin-left: 0 !important;
+    border-right: thin solid #eee;
 }
 
 .social-links {
@@ -2750,3 +2751,9 @@ nav a {
 
 
 
+/* @media screen and (max-width: 800px) {
+    .two-link, .three-link, .four-link {
+        display: none;
+    }
+
+} */
