@@ -560,6 +560,8 @@ section {
 
     /* background-color: lightcoral; */
     background-color: none;
+
+    border-bottom: thin solid;
 }
 
 .blog-title a {
@@ -572,15 +574,21 @@ section {
     width: max-content;
     margin-top: 10px;
     /* padding: 10px; */
-    padding: 6px;
+    padding: 5px;
     text-wrap: nowrap;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+
+    font-weight: 500;
 }
 
 .blog-title a:link, a:visited {
     color: var(--text);
     text-decoration: none;
 }
+
+/* .blog-title a::after {
+    content: " , ";
+} */
 
 .blog-title h1 {
     line-height: 1.2;
@@ -1393,7 +1401,7 @@ table {
   }
 
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 400px) {
     .top-title-bar-title {
         display: none;
     }
@@ -1973,7 +1981,7 @@ working on blog title sidebar now
 
 @media screen and (max-width: 1400px) {
     .blog-title {
-        border: none;
+        /* border: none; */
         max-width: 1000px;
         background-color:transparent;
     }
