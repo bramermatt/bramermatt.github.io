@@ -408,6 +408,20 @@ header {
     text-decoration: none;
 }
 
+details summary {
+    position: sticky;
+    top: 10vh;
+    /* z-index: 1; */
+    font-weight: 500;
+}
+
+@media screen and (max-width: 850px) {
+    details summary {
+        position: relative;
+        top: 0;
+    }
+}
+
 .iframe-container {
     position: relative;
     overflow: hidden;
@@ -507,7 +521,8 @@ iframe, video {
     }
 
     .blog-title a, .blog-tags a {
-        display: block;
+        display: inline-block;
+        margin-right: 3vw;
     }
 }
 
