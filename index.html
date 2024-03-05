@@ -7,8 +7,8 @@
     <meta name="color-scheme" content="light dark"/>
 
     <link rel="shortcut icon" type="image/x-icon" href="img/icons/mLogo.png">
-
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Home | Matt Bramer</title>
 </head>
@@ -16,10 +16,13 @@
 
     <header>Home | Matt Bramer</header>
 
-    <nav>
+    <script src="js/nav-hide.js"></script>
 
-
+    <nav id="nav">
         <ul>
+
+            <span onclick="openNav()"><i class="fa fa-bars"></i></span>
+
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="">Blogs</a></li>
             <li><a href="">Reviews</a></li>
@@ -27,6 +30,24 @@
             <li><a href="">About</a></li>
         </ul>
     </nav>
+
+    <script src="js/sidebar-overlay.js"></script>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;        
+
+
+            
+
+        <ul>
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Reviews</a></li>
+            <li><a href="">Site Map</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+
+      </div>
 
     <!-- <div class="menu">
         <ul>
@@ -41,10 +62,12 @@
     <div class="wholepage">
         <h1>Hi, I'm Matt Bramer</h1>  
         <p>Husband, Father, Worship Pastor, Book Reviewer. <br><br><em>More to come..</em></p>
+        <img src="img/matts/matt-fam-jan-2024.jpg" alt="">
+        <blockquote>My Family: Matt, Sandy, Hazel (4 months), Everett (3 years)</blockquote>
 
         <!-- <hr> -->
 
-        <div class="page">
+        <!-- <div class="page">
         
             <div>
                 <h2>March 4, 2024</h1>
@@ -56,8 +79,50 @@
                 <blockquote>The Lord of the Rings by J.R.R. Tolkien, One Volume Edition</blockquote>
             </div>
 
+        </div> -->
+    </div>
+
+<div class="category">
+    <h1>Recent Posts</h1>
+</div>
+
+<div class="grid-two-columns">
+
+    <div class="post">
+        <div class="content">
+            <a href="docs/the-lord-of-the-rings-book-review.html">
+            <div>
+                <img src="img/docs/books/lotr/lotr-onevolume.jpg" alt="">
+                <h1>The Lord of the Rings Book Review</h1>
+                <h4>March 4, 2024</h4>
+                <p>Currently Reading!</p>
+            </div>
+            </a>    
+            <div class="content-tags">
+                <a href="https://www.goodreads.com/user_status/show/797399678" target="_blank">Follow</a>
+                <a href="pages/book-reviews.html">Book Reviews</a>
+            </div>
+
         </div>
     </div>
+
+    <div class="post">
+        <div class="content">
+            <a href="docs/all-to-do-about-nothing.html">
+            <div>
+                <img src="img/docs/tech/gpt/chatgpt openai.webp" alt="">
+                <h1>Exploring the Concept of Nothing: A Journey into the Void</h1>
+                <h4>March 4, 2024</h4>
+            </div>
+            </a>    
+            <div class="content-tags">
+                <a href="">Tech</a>
+                <a href="">Blog</a>
+            </div>
+
+        </div>
+    </div>
+</div>
 
     <footer>
 

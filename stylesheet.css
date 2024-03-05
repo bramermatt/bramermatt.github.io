@@ -63,6 +63,12 @@ header {
     margin: 0;
 }
 
+.wholepage img {
+    max-width: 60vh;
+    padding: 10px;
+    width: 100%;
+}
+
 
 .page img {
     max-height: 50vh;
@@ -84,6 +90,106 @@ header {
     /* border-left: thick solid; */
 }
 
+.grid-one-column {
+    padding: 12px;
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+
+    /* margin-top: 20vw; */
+    margin-bottom: 20vh;
+}
+
+.grid-two-columns {
+    padding: 12px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+    /* margin-top: 20vw; */
+    margin-bottom: 20vh;
+}
+
+.category {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 12px;
+}
+
+.post {
+    border: thin solid;
+    width: 100%;
+    height: 100%;
+    max-width: 260px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.content a:link, a:visited {
+    color: var(--text);
+    text-decoration: none;
+
+}
+
+.content h1 {
+    font-size: 20px;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 5px;
+}
+
+.content h4 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.content img {
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.content-tags {
+    border-top: thin solid;
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+}
+
+.content-tags a {
+    border: thin solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    /* max-width: 40px; */
+    overflow: hidden;
+    text-overflow: ellipsis;    
+    text-wrap:nowrap;
+}
 
 
 header, footer, nav {
@@ -101,6 +207,10 @@ header, footer, nav {
     .page {
         flex-direction: column;
     }
+
+    .content-tags {
+        flex-direction: column;
+    }
 }
 
 nav {
@@ -112,6 +222,8 @@ nav {
     position: sticky;
     top: -1px;
     z-index: 1;
+
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 nav a:link, nav a:visited {
@@ -130,6 +242,9 @@ nav li {
     padding: 5px;
 }
 
+nav a {
+    padding: 5px;
+}
 
 
 footer {
@@ -236,7 +351,9 @@ header {
 
 .blog-title img {
     max-height: 70vh;
-    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
 }
 
 .blog {
@@ -248,17 +365,25 @@ header {
     width: 100%;
 }
 
-.blog p, .blog h2, .blog blockquote {
+.blog p, .blog h2, .blog blockquote, .wholepage blockquote {
     max-width: 550px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5em;
 }
 
-.blog blockquote {
+.wholepage blockquote {
+    border-left: thick solid;
+    padding: 10px;
+    font-style: italic;
+    margin: 10px;
+}
+
+.blog blockquote, .blog-title blockquote  {
     border-left: thick solid;
     padding: 5px;
     font-style: italic;
+    margin: 10px;
 }
 
 .blog-tags {
@@ -301,15 +426,156 @@ iframe, video {
 }
 
 
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .sidenav ul {
+    margin: 0;
+    padding: 15px;
+  }
+
+  .sidenav h1 {
+    border: thin solid;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+
+  }
+
+@media screen and (min-width: 550px) {
+    nav span {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 550px) {
+    nav li {
+        display: none;
+    }
+
+    nav span {
+       font-size: 20px;
+       margin-left: 10px;
+    }
+
+    .blog-title a, .blog-tags a {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .grid-two-columns {
+        grid-template-columns: 1fr;
+        max-width: 280px;
+    }
+}
+
+
+
+
 @media screen and (prefers-color-scheme: light) {
     nav, .page {
         background-color: white;
     }
     
-    body {
+    /* body {
         background-color: rgb(231, 231, 231);
+    } */
+
+    nav {
+        /* background-color: rgb(29, 29, 29); */
+        /* border-color: rgb(29, 29, 29); */
+        /* box-shadow: 1px 0px 10px rgb(94, 94, 94, .25); */
+        border-bottom: thin solid #eee;
+        opacity: 98%;
     }
 
+    nav a:hover {
+        /* color: rgb(104, 104, 104); */
+        color: white;
+        background-color: rgb(70, 70, 70);
+        border-radius: 5px;
+    }
+
+
+    .page a, .blog-tags a, .blog-title a, .blog a {
+        color: rgb(0, 93, 233) !important;
+        font-weight: 500;
+        /* text-decoration: none; */
+    }
+
+    footer a {
+        font-weight: 500;
+    }
+
+    footer a:hover, nav span:hover {
+        color: rgb(112, 112, 112);
+        cursor: pointer;
+    }
+
+    .blog blockquote {
+        color: rgb(112, 112, 112);
+    }
+
+     .page a:hover, .blog-tags a:hover, .blog-title a:hover, .blog a:hover {
+        color: rgb(0, 0, 0) !important;
+    }
+
+    .blog-title {
+        border-bottom: thin solid #eee;
+    }
+
+    .post:hover, .content-tags a:hover {
+        box-shadow: 1px 1px 10px lightgrey;
+    }
     
 }
 
