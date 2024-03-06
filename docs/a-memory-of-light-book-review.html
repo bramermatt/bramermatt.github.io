@@ -10,7 +10,10 @@
 
 
         <link rel="shortcut icon" type="image/x-icon" href="../img/icons/mLogo.png">
-        <link rel="stylesheet" href="../css/style-test.css">   
+        <!-- <link rel="stylesheet" href="../css/style-test.css">    -->
+
+        <link rel="stylesheet" href="../stylesheet.css">   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- site title -->
         <title>A Memory of Light Book Review</title>
@@ -18,13 +21,46 @@
     </head>
     <body>
 
-<nav>
-    <a href="../index.html">Home</a>
-</nav>
+        <script src="../js/nav-hide.js"></script>
 
+        <nav id="nav">
+            <ul>
+    
+                <span onclick="openNav()"><i class="fa fa-bars"></i></span>
+    
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="">Site Map</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+    
+        <script src="../js/sidebar-overlay.js"></script>
+    
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;        
+    
+    
+                
+    
+            <ul>
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="">Site Map</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+    
+          </div>
+          
+<div class="blog-container">          
 <div class="blog-title">
 
 <!-- <a href="../index.html">Home</a> -->
+<a href="../pages/reviews.html">Reviews</a>
+<a href="../pages/book-reviews.html">Book Reviews</a>
+<a href="../pages/wheel-of-time-in-review.html">Wheel of Time</a>
 
 <h1>A Memory of Light Book Review</h1>
 <p>Aug 28, 2023</p>
@@ -33,14 +69,12 @@
 <p>I couldn't have asked for a better ending.</p>
 <!-- <p>That was an infuriating mess of a book.</p> -->
 
-<a href="../pages/reviews.html">Reviews</a>
-<a href="../pages/book-reviews.html">Book Reviews</a>
-<a href="../pages/wheel-of-time-in-review.html">Wheel of Time</a>
+
 
 </div>
 
  
-<div class="blog-container">
+
 <div class="blog">
 
     <h2>Written Review</h2>

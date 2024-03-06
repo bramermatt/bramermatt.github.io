@@ -224,6 +224,8 @@ nav {
     z-index: 1;
 
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
+
+    /* text-align: center; */
 }
 
 nav a:link, nav a:visited {
@@ -365,11 +367,17 @@ header {
     width: 100%;
 }
 
-.blog p, .blog h2, .blog blockquote, .wholepage blockquote {
+.blog p, .blog h2, .blog h3, .blog blockquote, .wholepage blockquote {
     max-width: 550px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5em;
+}
+
+.blog h3 {
+    padding-bottom: 10px;
+    border-bottom: thin solid;
+    max-width: max-content;
 }
 
 .wholepage blockquote {
@@ -410,12 +418,30 @@ header {
 
 details summary {
     position: sticky;
-    top: 10vh;
+    top: 8vh;
     /* z-index: 1; */
     font-weight: 500;
+
+    /* border: thin solid; */
+    /* padding: 10px; */
+    margin: 5px;
+    padding: 5px;
+    max-width: max-content;
+    border-bottom :thin solid;
 }
 
-@media screen and (max-width: 850px) {
+details {
+    transition: 0.3s;
+}
+
+/* details[open] {
+    border: thin solid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+} */
+
+@media screen and (max-width: 970px) {
     details summary {
         position: relative;
         top: 0;
@@ -590,6 +616,14 @@ iframe, video {
 
     .post:hover, .content-tags a:hover {
         box-shadow: 1px 1px 10px lightgrey;
+    }
+
+    details summary {
+        background-color: white;
+    }
+
+    .post, .content-tags, .content-tags a {
+        border-color: #eee;
     }
     
 }
