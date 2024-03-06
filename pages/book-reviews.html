@@ -7,7 +7,7 @@
     <meta name="color-scheme" content="light dark"/>
 
     <link rel="shortcut icon" type="image/x-icon" href="../img/icons/mLogo.png">
-    <link rel="stylesheet" href="../css/index.css">   
+    <link rel="stylesheet" href="../stylesheet.css">   
     
     <!-- Update as of May 2023 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,24 +22,45 @@
         <img src="../img/pages/heros/book-reviews.jpg" alt="book reviews">
     </div>
 
-    <script src="../js/topnav.js"></script>
+    <script src="../js/nav-hide.js"></script>
 
-    <nav>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        <a href="../index.html">Home</a>
-        <a href="../pages/blogs.html">Blogs</a>
-        <a href="../pages/reviews.html">Reviews</a>
+    <nav id="nav">
+        <ul>
 
+            <span onclick="openNav()"><i class="fa fa-bars"></i></span>
+            <img src="../img/icons/mLogo.png" alt="matt logo">
+
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Reviews</a></li>
+            <li><a href="">Site Map</a></li>
+            <li><a href="">About</a></li>
+        </ul>
     </nav>
+
+    <script src="../js/sidebar-overlay.js"></script>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;        
+
+
+            
+
+        <ul>
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Reviews</a></li>
+            <li><a href="">Site Map</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+
+      </div>
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<div class="topnav">
-  <!-- <a href="#home" class="active">trying something here ;)</a> -->
+<!-- <div class="topnav">
   <div id="myLinks">
 
     <a href="../pages/book-reviews.html">Book Reviews</a>
@@ -56,12 +77,8 @@
     <a href="../pages/philip-chase-in-review.html">Phillip Chase in Review</a>
     <a href="../pages/realm-of-the-elderlings-in-review.html">Realm of the Elderlings in Review</a>
     <a href="../pages/wheel-of-time-in-review.html">Wheel of Time in Review</a>
-<!--     
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a> -->
   </div>
-</div>
+</div> -->
 
 
     <div class="body-content">
@@ -98,18 +115,38 @@
             <h1>2024 Book Reviews</h1>
         </div>
 
-        <div class="grid-seven-columns">
+        <div class="grid-four-columns">
 
-            <div class="grid-item">
+            <div class="post">
+                <div class="content">
+                    <a href="../docs/the-hobbit-review.html" class="link">
+                        <img src="../img/docs/books/lotr/thehobbit-book-cover.png" alt="brandon">
+                        <h2>The Hobbit Book Review</h2>
+                            <p>February 27, 2024</p>
+                    </a>
+                    <div class="content-tags">
+                    <a href="../pages/lotr-in-review.html">
+                        <div class="read-more">
+                           LOTR in Review
+                    </div></a>
+                </div>
+            </div>
+            </div>
+
+            <div class="post">
+                <div class="content">
+                    <h2>More to come!</h2>
+                    <div class="content-tags">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="grid-item">
                 <a href="../docs/the-hobbit-review.html" class="link">
                     <div class="individual">
                         <img src="../img/docs/books/lotr/thehobbit-book-cover.png" alt="brandon">
-                        <div class="topic">
-                            <div class="tag">
-                                <p>Book Reviews</p>
-                                <p>Blog</p>
-                            </div>
-                        </div>
+
                         <div class="title">
                             <h2>The Hobbit Book Review</h2>
                             <p>February 27, 2024</p>
@@ -120,7 +157,7 @@
                         </div></a>
                     </div>
                 </a>
-                </div>
+                </div> -->
 
             <div class="grid-item">
                 <a href="../docs/the-name-of-the-wind-book-review.html" class="link">

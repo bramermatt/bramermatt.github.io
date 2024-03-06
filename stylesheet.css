@@ -120,6 +120,25 @@ header {
     margin-bottom: 20vh;
 }
 
+.grid-four-columns {
+    padding: 12px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+
+    /* margin-top: 20vw; */
+    margin-bottom: 20vh;
+}
+
+.grid-item {
+    display: none;
+}
+
 .category {
     max-width: 1000px;
     margin-left: auto;
@@ -198,6 +217,10 @@ header, footer, nav {
     /* max-height: 10vh; */
 }
 
+.header {
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
 
     header, footer, nav {
@@ -220,7 +243,7 @@ nav {
     /* margin: 20px auto; */
     padding: 10px !important;
     position: sticky;
-    top: -1px;
+    top: 1px;
     z-index: 1;
 
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
@@ -237,11 +260,27 @@ nav ul {
     margin: 0;
     list-style-type: none;
     padding: 0;
+    display: flex;
+    align-items: center;
+    max-width: 128rem;
+    margin: 0 auto;
 }
 
 nav li {
     display: inline;
     padding: 5px;
+}
+
+nav img {
+    max-height: 4vh;
+    padding-inline: 2vw;
+}
+
+@media screen and (max-width: 600px) {
+    nav img {
+        padding-inline: 4vw;
+        max-height: 3vh;
+    }
 }
 
 nav a {
@@ -428,10 +467,12 @@ details summary {
     padding: 5px;
     max-width: max-content;
     border-bottom :thin solid;
+    cursor: pointer;
 }
 
 details {
     transition: 0.3s;
+    
 }
 
 /* details[open] {
@@ -508,6 +549,7 @@ iframe, video {
   .sidenav ul {
     margin: 0;
     padding: 15px;
+    list-style-type: none;
   }
 
   .sidenav h1 {
@@ -527,6 +569,13 @@ iframe, video {
 
 
   }
+
+  @media screen and (max-width: 700px) {
+    .grid-four-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
 
 @media screen and (min-width: 550px) {
     nav span {
@@ -550,10 +599,12 @@ iframe, video {
         display: inline-block;
         margin-right: 3vw;
     }
+
+
 }
 
 @media screen and (max-width: 400px) {
-    .grid-two-columns {
+    .grid-two-columns, .grid-four-columns {
         grid-template-columns: 1fr;
         max-width: 280px;
     }
@@ -611,7 +662,7 @@ iframe, video {
     }
 
     .blog-title {
-        border-bottom: thin solid #eee;
+        border-bottom: thin solid #cccccc;
     }
 
     .post:hover, .content-tags a:hover {
@@ -623,7 +674,7 @@ iframe, video {
     }
 
     .post, .content-tags, .content-tags a {
-        border-color: #eee;
+        border-color: #cccccc;
     }
     
 }
