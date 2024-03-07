@@ -340,6 +340,7 @@ footer .rights li::before {
 footer a:link, footer a:visited {
     color: var(--text);
     text-decoration: none;
+    padding: 5px;
 }
 
 footer a:hover {
@@ -376,22 +377,45 @@ header {
 .blog-title {
     max-width: 1000px;
     margin: 0 auto;
-
+    padding-bottom: 20px;
     margin-bottom: 5vh;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 3vw;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .blog-title {
+        flex-direction: column;
+        align-items:flex-start;
+    }
 }
 
 .blog-title a {
     text-decoration: none;
-    margin-right: 1vw;
+    /* margin-right: 1vw; */
+}
+
+.blog-title h1 {
+    margin: 0;
+    padding: 15px 0;
+    line-height: 1;
+    /* font-size: 26px; */
 }
 
 .blog-title p {
     max-width: 550px;
     line-height: 1.4em;
+    margin: 0;
+    padding: 5px;
+    padding-bottom: 10px;
 }
 
 .blog-title img {
-    max-height: 70vh;
+    max-height: 50vh;
     max-width: 100%;
     object-fit: contain;
     margin: 0 auto;
@@ -561,6 +585,41 @@ iframe, video {
     transition: margin-left .5s;
     padding: 20px;
   }
+
+
+  /* Style the list */
+ul.breadcrumb {
+    padding: 6px 10px;
+    list-style: none;
+    background-color: #eee;
+
+    max-width: max-content;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li, ul.breadcrumb p {
+    display: inline;
+    font-size: 15px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
@@ -597,7 +656,7 @@ iframe, video {
 
     .blog-title a, .blog-tags a {
         display: inline-block;
-        margin-right: 3vw;
+        /* margin-right: 3vw; */
     }
 
 
@@ -640,7 +699,7 @@ iframe, video {
 
     .page a, .blog-tags a, .blog-title a, .blog a {
         color: rgb(0, 93, 233) !important;
-        font-weight: 500;
+        /* font-weight: 500; */
         /* text-decoration: none; */
     }
 
@@ -658,11 +717,21 @@ iframe, video {
     }
 
      .page a:hover, .blog-tags a:hover, .blog-title a:hover, .blog a:hover {
-        color: rgb(0, 0, 0) !important;
+        color: rgb(37, 124, 255) !important;
+        background-color: #e6e6e6;
+
+        text-decoration: none;
     }
 
     .blog-title {
         border-bottom: thin solid #cccccc;
+    }
+
+    ul.breadcrumb {
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        margin: 10px;
+        box-shadow: 1px 1px 5px lightgray;
     }
 
     .post:hover, .content-tags a:hover {
@@ -695,8 +764,28 @@ iframe, video {
         text-decoration: none;
     }
 
-    footer a, .page a, .blog-tags a, .blog-title a, .blog a {
+    footer a {
         color: rgb(137, 137, 137) !important;
+        /* text-decoration: none; */
+    }
+
+    .blog-title {
+        border-bottom: thin solid darkgrey;
+    }
+
+    ul.breadcrumb {
+        background-color: white;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    ul.breadcrumb p {
+        color: black;
+    }
+
+    .page a, .blog-tags a, .blog-title a, .blog a, .blog-title a {
+        color: rgb(37, 124, 255) !important;
+        /* font-weight: 500; */
         /* text-decoration: none; */
     }
 
@@ -704,8 +793,10 @@ iframe, video {
         color: rgb(112, 112, 112);
     }
 
-    footer a:hover, .page a:hover, .blog-tags a:hover, .blog-title a:hover, .blog a:hover {
+    footer a:hover, .page a:hover, .blog-tags a:hover, .blog a:hover {
         color: white !important;
+        background-color: rgb(37, 124, 255) !important;
+        text-decoration: none;
     }
 
     body {
