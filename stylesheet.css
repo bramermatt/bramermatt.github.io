@@ -759,7 +759,7 @@ ul.breadcrumb {
     }
 
     body {
-        background-color: #cccccc;
+        background-color: #f3f3f3;
     }
 
     .blog-container, .blog-topics-left {
@@ -767,7 +767,7 @@ ul.breadcrumb {
         border-radius: 10px;
     }
 
-    footer {
+    footer, .post {
         background-color: white;
     }
     
