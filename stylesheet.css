@@ -289,7 +289,7 @@ nav a {
 
 
 footer {
-    margin: 20px auto;
+    /* margin: 20px auto; */
     border-top: thin solid #eee;
 
 
@@ -362,6 +362,18 @@ footer img {
 } */
 
 header {
+    display: none;
+}
+
+.blog-topics-left {
+    max-width: 16%;
+    float: left;
+    top: 45px;
+    position: sticky;
+    z-index: 1;
+    margin: 15px;
+    padding: 15px;
+
     display: none;
 }
 
@@ -745,13 +757,36 @@ ul.breadcrumb {
     .post, .content-tags, .content-tags a {
         border-color: #cccccc;
     }
+
+    body {
+        background-color: #cccccc;
+    }
+
+    .blog-container, .blog-topics-left {
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    footer {
+        background-color: white;
+    }
     
+}
+
+@media screen and (max-width: 800px) {
+    .blog-container {
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (prefers-color-scheme: dark) {
     nav {
         background-color: rgb(29, 29, 29);
-        border-color: rgb(29, 29, 29);
+        border-bottom: thin solid;
+        border-color: rgb(102, 102, 102);
+        
         box-shadow: 1px 0px 10px rgb(94, 94, 94, .25);
     }
 
