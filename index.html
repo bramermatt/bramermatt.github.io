@@ -37,9 +37,6 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;        
 
-
-            
-
         <ul>
             <li><a href="../index.html" class="active">Home</a></li>
             <li><a href="">Blogs</a></li>
@@ -49,6 +46,47 @@
         </ul>
 
       </div>
+
+
+
+
+<div class="filter-section">
+
+<h2>Filter Posts</h2>
+
+<div id="myBtnContainer" class="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('blogs')">Blogs</button>
+  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+</div>
+
+
+
+<div class="container">
+
+  <div class="filterDiv blogs item">
+    <a href="docs/all-to-do-about-nothing.html">All to Do About Nothing</a>
+    </div>
+
+  <div class="filterDiv colors fruits">Orange</div>
+  <div class="filterDiv cars">Volvo</div>
+  <div class="filterDiv colors">Red</div>
+  <div class="filterDiv cars">Ford</div>
+  <div class="filterDiv colors">Blue</div>
+  <div class="filterDiv animals">Cat</div>
+  <div class="filterDiv animals">Dog</div>
+  <div class="filterDiv fruits">Melon</div>
+  <div class="filterDiv fruits animals">Kiwi</div>
+  <div class="filterDiv fruits">Banana</div>
+  <div class="filterDiv fruits">Lemon</div>
+  <div class="filterDiv animals">Cow</div>
+</div>
+
+</div>
+
+<script src="js/filterDIV.js"></script>
 
     <!-- <div class="menu">
         <ul>
