@@ -855,7 +855,7 @@ ul.breadcrumb {
 
 .filterDiv {
     float: left;
-    background-color: #2196F3;
+    background-color: #2195f3cb;
     color: #ffffff;
     /* max-width: 100px; */
     padding: 12px;
@@ -864,12 +864,19 @@ ul.breadcrumb {
     margin: 5px;
     display: none;
 
-
+    border-radius: 10px;
+    box-shadow: 1px 0px 8px lightgray;
   }
 
-.filterDiv a:link, a:visited {
+  .filterDiv p {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+.filterDiv a:link, .filterDiv a:visited {
     text-decoration: none;
-    color: lightcyan !important;
+    /* color: rgb(199, 199, 199) !important; */
+    font-weight: 500;
     padding: 0;
     color: white;
 }
@@ -897,6 +904,7 @@ ul.breadcrumb {
     background-color: #f1f1f1;
     cursor: pointer;
     margin: 5px;
+    font-size: 16px;
   }
   
   .btn:hover {
