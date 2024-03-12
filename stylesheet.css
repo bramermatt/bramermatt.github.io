@@ -244,7 +244,7 @@ nav {
     padding: 10px !important;
     position: sticky;
     top: 1px;
-    z-index: 1;
+    z-index: 10;
 
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
 
@@ -632,6 +632,100 @@ ul.breadcrumb {
     color: #01447e;
     text-decoration: underline;
   }
+
+
+  .filter-section {
+    padding: 20px; 
+    max-width: 1450px; 
+    margin: 0 auto;
+
+    margin-bottom: 20vh;
+}
+
+.myBtnContainer {
+    border-radius: 10px;
+    padding: 10px;
+
+    background-color: white;
+    max-width: max-content;
+
+    /* position: sticky;
+    top: 1em;
+    z-index: 1; */
+}
+
+
+
+.filterDiv {
+    float: left;
+    background-color: #1165aacb;
+    color: #ffffff;
+    /* max-width: 100px; */
+    padding: 12px;
+    /* line-height: 100px; */
+    /* text-align: center; */
+    margin: 5px;
+    display: none;
+
+    border-radius: 10px;
+    box-shadow: 1px 0px 8px lightgray;
+
+    text-overflow: ellipsis;
+    /* max-width: 200px; */
+    /* text-wrap: nowrap; */
+    overflow: hidden;
+  }
+
+  .filterDiv p {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+.filterDiv a:link, .filterDiv a:visited {
+    text-decoration: none;
+    /* color: rgb(199, 199, 199) !important; */
+    font-weight: 500;
+    padding: 0;
+    color: white;
+}
+
+.filterDiv.blogs {
+    background-color: #386b08cb !important;
+}
+
+.filterDiv.tv-reviews {
+    background-color: rgb(160, 0, 0) !important;
+}
+  
+  .show {
+    display: block;
+  }
+  
+  .container {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
@@ -671,6 +765,28 @@ ul.breadcrumb {
         /* margin-right: 3vw; */
     }
 
+    .filterDiv {
+        float: none;
+        margin: 15px;
+    }
+
+    .filter-section {
+        /* padding: 0; */
+    }
+
+    .myBtnContainer {
+        /* top: 3.5em;
+
+        overflow: scroll;
+        text-wrap: nowrap; */
+        
+        position: relative;
+    }
+
+    .myBtnContainer::-webkit-scrollbar {
+        display: none;
+    }
+
 
 }
 
@@ -678,6 +794,10 @@ ul.breadcrumb {
     .grid-two-columns, .grid-four-columns {
         grid-template-columns: 1fr;
         max-width: 280px;
+    }
+
+    .myBtnContainer {
+        position: relative;
     }
 }
 
@@ -697,8 +817,15 @@ ul.breadcrumb {
         /* background-color: rgb(29, 29, 29); */
         /* border-color: rgb(29, 29, 29); */
         /* box-shadow: 1px 0px 10px rgb(94, 94, 94, .25); */
-        border-bottom: thin solid #eee;
+
+        /* border-bottom: thin solid #eee; */
+
+        border-bottom: thick solid red;
         opacity: 98%;
+    }
+
+    footer {
+        border-top: thick solid green;
     }
 
     nav a:hover {
@@ -788,11 +915,28 @@ ul.breadcrumb {
         border-color: rgb(102, 102, 102);
         
         box-shadow: 1px 0px 10px rgb(94, 94, 94, .25);
+
+        border-bottom: thick solid red;
     }
 
     footer {
         border-color: rgb(51, 51, 51);
+        border-top: thick solid green;
     }
+
+    .myBtnContainer {
+        background-color:rgb(49, 49, 49);
+    }
+
+    .btn {
+        background-color:rgb(29, 29, 29);
+    }
+
+    .btn:hover {
+        background-color: #525252;
+    }
+
+
 
     nav a:hover {
         color: rgb(104, 104, 104) !important;
@@ -806,6 +950,11 @@ ul.breadcrumb {
 
     .blog-title {
         border-bottom: thin solid darkgrey;
+    }
+
+    .blog-container {
+        background-color:rgb(49, 49, 49);
+        border-radius: 10px;
     }
 
     ul.breadcrumb {
@@ -834,84 +983,21 @@ ul.breadcrumb {
         text-decoration: none;
     }
 
-    body {
-        background-color: rgb(18, 18, 18);
+    footer a:hover, nav span:hover {
+        color: rgb(112, 112, 112);
+        cursor: pointer;
     }
+
+    body {
+        background-color: rgba(48, 48, 48, 0.699);
+    }
+
+    .filterDiv, .myBtnContainer {
+        border: thin solid grey;
+        box-shadow: none;
+         /* 1px 0px 8px grey; */
+    }
+
+
 }
 
-.filter-section {
-    padding: 20px; 
-    max-width: 1250px; 
-    margin: 0 auto;
-}
-
-.myBtnContainer {
-    border-radius: 10px;
-    padding: 10px;
-
-    background-color: white;
-    max-width: max-content;
-}
-
-.filterDiv {
-    float: left;
-    background-color: #2195f3cb;
-    color: #ffffff;
-    /* max-width: 100px; */
-    padding: 12px;
-    /* line-height: 100px; */
-    /* text-align: center; */
-    margin: 5px;
-    display: none;
-
-    border-radius: 10px;
-    box-shadow: 1px 0px 8px lightgray;
-  }
-
-  .filterDiv p {
-    margin-top: 5px;
-    margin-bottom: 0;
-  }
-
-.filterDiv a:link, .filterDiv a:visited {
-    text-decoration: none;
-    /* color: rgb(199, 199, 199) !important; */
-    font-weight: 500;
-    padding: 0;
-    color: white;
-}
-
-.item img {
-    max-height: 12vh;
-    overflow: hidden;
-    object-fit: cover;
-}
-  
-  .show {
-    display: block;
-  }
-  
-  .container {
-    margin-top: 20px;
-    overflow: hidden;
-  }
-  
-  /* Style the buttons */
-  .btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-    margin: 5px;
-    font-size: 16px;
-  }
-  
-  .btn:hover {
-    background-color: #ddd;
-  }
-  
-  .btn.active {
-    background-color: #666;
-    color: white;
-  }
