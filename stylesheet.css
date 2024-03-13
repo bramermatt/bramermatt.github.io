@@ -639,7 +639,8 @@ ul.breadcrumb {
     max-width: 1450px; 
     margin: 0 auto;
 
-    margin-bottom: 20vh;
+    margin-bottom: 50vh;
+    /* max-height: 100vh; */
 }
 
 .myBtnContainer {
@@ -649,9 +650,17 @@ ul.breadcrumb {
     background-color: white;
     max-width: max-content;
 
-    /* position: sticky;
-    top: 1em;
-    z-index: 1; */
+    float: left;
+    display: grid;
+    margin-right: 2vw;
+    position: sticky;
+    top: 5em;
+    z-index: 2;
+
+}
+
+button {
+    color: var(--text);
 }
 
 
@@ -781,6 +790,9 @@ ul.breadcrumb {
         text-wrap: nowrap; */
         
         position: relative;
+        float: none;
+        top: 0;
+        display: block;
     }
 
     .myBtnContainer::-webkit-scrollbar {
