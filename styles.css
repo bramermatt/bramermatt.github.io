@@ -313,7 +313,7 @@ button {
 .main-content {
     max-width: 1400px;
     margin: 0 auto;
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
 }
 
 blockquote {
@@ -321,7 +321,8 @@ blockquote {
     padding-left: 10px;
     margin: 12px;
     font-style: italic;
-
+    font-size: medium;
+    max-width: 550px;
 }
 
 
@@ -433,11 +434,7 @@ three pieces of content spread, typically small content on left (small img), big
     padding-bottom: 5px;
 }
 
-.right-content {
-    position: sticky;
-    top: 10em;
-    z-index: 2;
-}
+
 
 @media screen and (max-width: 1200px) {
     .spread-three-content {
@@ -447,18 +444,31 @@ three pieces of content spread, typically small content on left (small img), big
 
 @media screen and (max-width: 900px) {
     
-    .hero-content, .spread-three-content, .spread-two-content {
-        grid-template-columns: 1fr;
+     .spread-three-content, .spread-two-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-content {
+      grid-template-columns: 1fr;
     }
 
     .spread-three-content, .spread-two-content {
         max-width: 80%;
+        gap: 0;
     }
 
     .content img {
         max-height: 20vh;
     }
 
+
+}
+
+@media screen and (max-width: 600px) {
+  .spread-three-content, .spread-two-content {
+    /* grid-template-columns: 1fr; */
+    max-width: 100%;
+  }
 
 }
 
@@ -674,4 +684,182 @@ button {
   .btn.active {
     background-color: #666;
     color: white;
+  }
+
+
+  /* blog */
+
+  .blog-back {
+    padding: 15px;
+
+    position: sticky;
+    top: 10px;
+    z-index: 5;
+
+  }
+
+  .blog-back a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  
+
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+
+
+  .blog {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* padding-inline: 12px; */
+  }
+
+  .blog img {
+    max-width: 100%;
+    max-height: 64vh;
+    object-fit: contain;
+    margin: 0;
+  }
+
+
+
+  .blog h2 {
+    line-height: 1.23em;
+    margin-bottom: 5px;
+    
+  }
+
+  .blog p {
+    /* margin: 10px 0; */
+    line-height: 1.5em;
+  }
+
+  .blog p, .blog h2, .blog h1 {
+    max-width: 550px;
+    margin-inline: 10px;
+  }
+
+  .blog em {
+    max-width: 550px;
+  }
+
+
+  details {
+    margin: 6vh 0;
+    margin-inline: 10px;
+    padding-left: 10px;
+  }
+
+  summary {
+    max-width: 550px;
+  }
+
+  details[open] summary ~ * {
+    animation: open 0.3s ease-in-out;
+
+    /* padding-inline: 15px; */
+  }
+
+
+  details[open] {
+    border-left: thin solid;
+
+  }
+  
+  @keyframes open {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  details summary {
+    width: 100%;
+    padding: 0.5rem 0;
+    border-top: 1px solid black;
+
+    position: relative;
+    cursor: pointer;
+    /* font-size: 1.25rem; */
+    font-weight: 500;
+    list-style: none;
+  }
+  
+  details summary:after {
+    content: "+";
+    color: black;
+    position: absolute;
+    font-size: 1.75rem;
+    line-height: 0;
+    margin-top: 5px;
+    right: 0;
+    font-weight: 200;
+    transform-origin: center;
+    transition: 200ms linear;
+    padding: 0px 10px;
+  }
+
+
+  details[open] summary:after {
+    transform: rotate(45deg);
+    font-size: 2rem;
+  }
+
+  details summary {
+    outline: 0;
+  }
+
+
+  details p {
+    /* font-size: 0.95rem; */
+    margin: 0 0 1rem;
+    padding-top: 1rem;
+  }
+
+
+  @media screen and (prefers-color-scheme: light) {
+    .blog-back a {
+      background-color: #f1f1f1 !important;
+      box-shadow: 2px 4px 1px 0px rgb(58, 58, 58);
+    }
+
+    .blog-back a:hover {
+      background-color: #afafaf !important;
+      color: black;
+    }
+    
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    .blog-back a {
+      background-color: #a00101 !important;
+      box-shadow: 2px 4px 1px 0px rgb(58, 58, 58);
+    }
+
+    .blog-back a:hover {
+      background-color: #afafaf !important;
+      color: black;
+    }
+
+    details summary, details summary:after {
+      border-color: white;
+      color: white;
+    }
+
+    body {
+      background-color: #2e2e2e;
+    }
+    
   }
