@@ -1,413 +1,123 @@
 <!DOCTYPE html>
-    <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <title>Bike Commuting: Part Ten</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="color-scheme" content="light dark"/>
-        <link rel="shortcut icon" type="image/x-icon" href="../img/icons/mLogo.png">
-        <link rel="stylesheet" href="../css/style.css">   
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <!-- <title>Matt Bramer | Home</title> -->
-        
-    
-    </head>
-    <body>
-        <div class="hamburger">
-            <script src="../../../js/hamburger-v2.js"></script>
-            <a href="#" onclick="myFunction()">
-            <!-- <img src="https://uploads-ssl.webflow.com/5a30b30549520e00017e33c4/61470bea9aeca36c0aaed56f_menu.svg"> -->
-            &#9776;
-        </a>
-        <!-- <p>mattbramer</p> -->
-        </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Commuting: Part Ten | Matt Bramer</title>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
+    <meta name="color-scheme" content="light dark"/>
 
-        <script src="../../../js/top.js"></script>
-    
-        <div class="navbar">
-            <ul>
-                <a href="../../../index.html"><li>
-                    <img src="../../../img/navbar-icons/home.svg">
-                    home</li></a>
-                <a href="../../../html/recents.html"><li>
-                    <img src="../../../img/navbar-icons/recents.svg">
-                    recent</li></a>
-                <a href="../../../html/blogs.html"><li>
-                    <img src="../../../img/navbar-icons/blog.svg">
-                    blog</li></a>
-                <a href="../../../html/coverage.html"><li>
-                    <img src="../../../img/navbar-icons/coverage.svg">
-                    coverage</li></a>
-                <a href="../../../html/projects.html"><li>
-                    <img src="../../../img/navbar-icons/projects.svg">
-                    projects</li></a>
-                <a href="../../../html/reviews.html"><li>
-                    <img src="../../../img/navbar-icons/reviews.svg">
-                    reviews</li></a>
-                <a href="../../../html/videos.html"><li>
-                    <img src="../../../img/navbar-icons/videos.svg">
-                    videos</li></a>
-                <a href="../../../html/about.html"><li>
-                    <img src="../../../img/navbar-icons/about.svg">
-                    about</li></a>
-                <hr>
-                <a href="../../../html/reviews/franchise/in-reviews.html"><li>
-                    <img src="../../../img/navbar-icons/in-reviews.svg">
-                    In Reviews</li></a>
-                <a href="../../../html/topics/all-topics.html"><li>
-                    <img src="../../../img/navbar-icons/topics.svg">
-                    Topics</li></a>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icons/mLogo.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
 
-                <!-- <img src="../../../img/mLogo.png" alt="logo">
-                <a href="../../../index.html"><li>home</li></a>
-                <a href="../../../html/recents.html"><li>recent</li></a>
-                <a href="../../../html/blogs.html"><li>blog</li></a>
-                <a href="../../../html/coverage.html"><li>coverage</li></a>
-                <a href="../../../html/projects.html"><li>projects</li></a>
-                <a href="../../../html/reviews.html"><li>reviews</li></a>
-                <a href="../../../html/videos.html"><li>videos</li></a>
-                <a href="../../../html/about.html"><li>about</li></a> -->
-            </ul>
-        </div>
-    
-        <div class="inline-navbar" id="inline-navbar">
-            <!-- <ul>
-                <img src="../../../img/mLogo.png" alt="logo">
-                <a href="../../../index.html"><li>home</li></a>
-                <a href="../../../html/recents.html"><li>recent</li></a>
-                <a href="../../../html/blogs.html"><li>blog</li></a>
-                <a href="../../../html/coverage.html"><li>coverage</li></a>
-                <a href="../../../html/projects.html"><li>projects</li></a>
-                <a href="../../../html/reviews.html"><li>reviews</li></a>
-                <a href="../../../html/videos.html"><li>videos</li></a>
-                <a href="../../../html/about.html"><li>about</li></a>
-            </ul> -->
-            <!-- <div class="footer"> -->
+    <div class="main-content">
 
-
-                <div class="foot-buttons">
-    
-                    <div class="links">
-                        <h1>Site Links</h1>
-                        <ul>
-                            <!-- <img src="img/mLogo.png" alt="logo"> -->
-                            <a href="../../../index.html"><li>home</li></a>
-                            <a href="../../../html/recents.html"><li>recent</li></a>
-                            <a href="../../../html/blogs.html"><li>blog</li></a>
-                            <a href="../../../html/coverage.html"><li>coverage</li></a>
-                            <a href="../../../html/projects.html"><li>projects</li></a>
-                            <a href="../../../html/reviews.html"><li>reviews</li></a>
-                            <a href="../../../html/videos.html"><li>videos</li></a>
-                            <a href="../../../html/about.html"><li>about</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="links">
-                        <h1>In Reviews</h1>
-                        <ul>
-                            <a href="../../../html/2022-in-review.html"><li>2022 in Review</li></a>
-                            <a href="../../../html/cosmere-in-review.html"><li>Cosmere in Review</li></a>
-                            <a href="../../../html/reviews/franchise/harry-potter-in-review.html"><li>Harry Potter in Review</li></a>
-                            <a href="../../../html/reviews/franchise/last-of-us-in-review.html"><li>Last of Us in Review</li></a>
-                            <a href="../../../html/reviews/franchise/lotr-in-review.html"><li>Lord of the Rings in Review</li></a>
-                            <a href="../../../html/reviews/franchise/starwars-in-review.html"><li>Star Wars in Review</li></a>
-                            <a href="../../../html/reviews/franchise/wheel-of-time-in-review.html"><li>Wheel of Time in Review</li></a>
-                
-                        </ul>
-                    </div>
-                
-                    <div class="more-links">
-                        <h1>More Site Links</h1>
-                        <ul>
-                            <a href="../../../html/reviews/book-reviews.html"><li>Book Reviews</li></a>
-                            <br>
-                            <a href="../../../html/reviews/movie-reviews.html" ><li>Movie Reviews</li></a>
-                            <br>
-                            <a href="../../../html/blogs/bike-commute.html"><li>Bike Commute Blogs</li></a>
-                            <a href="../../../html/blogs/updates.html"><li>Update Blogs</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="links">
-                        <h1>Topics</h1>
-                        <ul>
-                            <a href="../../../html/topics/all-about-books.html"><li>Books</li></a>
-                            <a href="../../../html/topics/all-about-my-opinion.html"><li>My Opinion</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="links">
-                        <h1>Site Map</h1>
-                        <ul>
-                            <a href="../../../html/site-map.html"><li>Full Site Map</li></a>
-                        </ul>
-                    </div>
-                
-                    <div class="social-links">
-                        <h1>Social Links</h1>
-                        <ul>
-                            <a href="https://www.instagram.com/bramermatt/" target="_blank"><li>Instagram</li></a>
-                            <a href="https://twitter.com/bramermatt" target="_blank"><li>Twitter</li></a>
-                            <a href="https://www.youtube.com/channel/UC1OsGesye2hEKRl_dSqwhUw" target="_blank"><li>Youtube</li></a>
-                            <a href="https://github.com/bramermatt"><li>GitHub</li></a>
-                        </ul>
-                    </div>
-                        
-                    </div>
-            
-            <img src="../../../img/mLogo.png" alt="logo">
-            
-            </div>
-        </div>
-
-        <!-- <div class="blog-title">
-            <img src="../../../img/blogs/bike-commute/part-ten/bike.JPG" alt="bike-commute-part-ten">
-            <div class="blog-tag">
-                <p>Bike Commuting</p>
-                </div>
-            <h1>Bike Commuting: Part Ten</h1>
-            <p>October 18, 2022</p>
-            </div> -->
-
-            <div class="blog-alt-title">
-                <div>
-                <img src="../../../img/blogs/bike-commute/part-ten/bike.JPG" alt="bike-commute-part-ten">
-                <blockquote>My bike</blockquote>
-                </div>
-                <div class="blog-vertical-title">
-                    <!-- <div class="blog-tag">
-                        <p>Bike Commuting</p>
-                        
-                        </div>   -->
-                        <h1>Bike Commuting: Part Ten</h1>
-                        <div class="blog-tag">
-                            <div class="tag-tag">
-                                <img src="../../../img/navbar-icons/date.svg" alt="date">
-                                <p>October 18, 2022</p>
-                            </div>
-                            <div class="tag-tag">
-                                <img src="../../../img/navbar-icons/tag.svg" alt="tag">
-                                <a href="../../../html/blogs/bike-commute.html"><p>Bike Commuting Blogs</p></a>
-                            </div>
-
-                </div>
-
-                </div>
-        
-            </div>
-
-            <div class="topTitle">
-                <h1>Bike Commuting: Part Ten</h1>
-            </div>
-    
-    <div class="blog-container">
-    
-        <div class="blog-right">
-            <div class="blog-right-title">
-                <img src="../../../img/blogs/bike-commute/part-ten/bike.JPG" alt="bike-commute-part-ten">
-                <h1>Bike Commuting: Part Ten</h1>
-                <p>October 18, 2022</p>
-                </div>
-    
-            <div class="blog-right-tag">
-                <a href="../../../html/blogs.html">Blogs</a>
-                <a href="../../../html/blogs/bike-commute.html">Bike Commute Blogs</a>
-            </div>
-        </div>
-
-<div class="blog">
-
-<h2>I have done it!</h2>
-<p>I have been riding my bike since the beginning of August until now. And, at the start of this week October 18, 2022 the weather has gotten very cold. This week the mornings will start around 34 degrees, and that is just too cold for me to ride. Since the last <a href="../bike-commute/bike-commute-part-nine.html">Bike Commute Blog: Part Nine</a>, there have been a lot of updates since the start of Bike Commuting. Since the start, I have ridden <strong>OVER 350 MILES</strong>!!! That is crazy to me, and I feel so great about that. This is more of a catchup blog, to talk about what has happened.</p>
-
-<img src="../../../img/blogs/bike-commute/part-ten/matt-w-bike.JPG" alt="matt-with-bike" class="zoomE">
-<script src="../../../js/pictFullscreen.js"></script>
-<blockquote>After a ride home</blockquote>
-
-<h2>Where is My Bike?</h2>
-<p>I have gotten a bike garage, which is just a tent to store my bike when I'm not ridding it.</p>
-<img src="../../../img/blogs/bike-commute/part-ten/bike-tent.JPG" alt="bike-tent" class="zoomE">
-<script src="../../../js/pictFullscreen.js"></script>
-<blockquote>My Bike in my tent</blockquote>
-
-<p>I keep the bike there, but since it's gotten so cold I'll be keeping my bike in the basement of the house; hopefully that will be helpful. I just don't want my tires to pop while it's so cold outside.</p>
-
-
-<h2>My bike at work</h2>
-<p>While doing video calls, I have been using this as my video background while my bike isn't with me. I have even started working from home every Wednesday, so I could ride my bike four days a week. I sit in front and it looks like my bike is behind me.</p>
-
-<img src="../../../img/blogs/bike-commute/part-ten/bike-background.JPG" alt="background" class="zoomE">
-<script src="../../../js/pictFullscreen.js"></script>
-<blockquote>Bike background</blockquote>
-
-<p>I have since moved around my desk, but I can still use that background.</p>
-
-
-<h2>Bike Tours</h2>
-<p>Here are a few bike tours, and a few videos of what it was like riding in the very cold.</p>
-
-<div class="iframe-container">
-<video width="100%" height="auto" controls="controls" preload="auto" playsinline poster="../../../img/Black_colour.jpg.webp">
-    <source src="../../../img/blogs/bike-commute/part-ten/matt-outside-cold.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-</div>
-<blockquote>Very Cold</blockquote>
-
-<div class="iframe-container">
-<video width="100%" height="auto" controls="controls" preload="auto" playsinline poster="../../../img/Black_colour.jpg.webp">
-    <source src="../../../img/blogs/bike-commute/part-ten/bike-tour-1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-</div>
-<blockquote>Another bike tour when it's cold</blockquote>
-
-<div class="iframe-container">
-<video width="100%" height="auto" controls="controls" preload="auto" playsinline poster="../../../img/Black_colour.jpg.webp">
-    <source src="../../../img/blogs/bike-commute/part-ten/bike-tour-2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-</div>
-<blockquote>Another bike tour when it's warm</blockquote>
-
-
-<h2>New Shoes and Pedals</h2>
-<p>For my birthday, I'm 26 now, my parents got me some new half clipless pedals and clipped in shoes.</p>
-
-<img src="../../../img/blogs/bike-commute/part-ten/shoes-clips.JPG" alt="shoes-clips"class="zoomE">
-<script src="../../../js/pictFullscreen.js"></script>
-<blockquote>My new shoes and clipless pedals</blockquote>
-
-<p>Riding with these have been a lot of fun, I've gotten faster, and I had some issues with how the shoes were setup. I did readjust my shoes and that helped a lot.</p>
-
-<img src="../../../img/blogs/bike-commute/part-ten/matt-allbirds.JPG" alt="shoes-and-shoes" id="matt-allbirds"class="zoomE">
-    <script src="../../../js/pictFullscreen.js"></script>
-<blockquote>My allbirds and my new shoes</blockquote>
-
-<p>This was my other riding shoes, and they were some amazingly comfortable Allbirds.</p>
-
-
-<h2>Only a few mishaps</h2>
-<p>I have only had a few mishaps while riding. I've popped three tires, I had to get two new tires, I broke my chain guard, and eaten so many cliff bars.</p>
-
-
-<h2>Next Ride</h2>
-<p>I don't really know when my next ride is going to be. We do have a stationary bike in our basement. So, I might be ridding that some more as I won't be ridding in the cold. But I might start commuting again in March? That's so far away, so I might need to figure out some timing and how to ride the stationary bike before I leave for work. I then again, will need to ride once I get home, but I'm not sure.</p>
-
-
-
-<h2>Thank you All!</h2>
-<p>Thank you all for reading all of these Bike Commute Blogs, this has been a lot of fun and I've done exactly what I wanted to do!</p>
-
-
-
-</div>
-
-</div>    
-
-
-
-<!-- <div class="inline-navbar" id="inline-navbar"> -->
-    <!-- <ul>
-        <img src="../../../img/mLogo.png" alt="logo">
-        <a href="../../../index.html"><li>home</li></a>
-        <a href="../../../html/recents.html"><li>recent</li></a>
-        <a href="../../../html/blogs.html"><li>blog</li></a>
-        <a href="../../../html/coverage.html"><li>coverage</li></a>
-        <a href="../../../html/projects.html"><li>projects</li></a>
-        <a href="../../../html/reviews.html"><li>reviews</li></a>
-        <a href="../../../html/videos.html"><li>videos</li></a>
-        <a href="../../../html/about.html"><li>about</li></a>
-    </ul> -->
-    <div class="footer">
-
-
-        <div class="foot-buttons">
-
-            <div class="links">
-                <h1>Site Links</h1>
-                <ul>
-                    <!-- <img src="img/mLogo.png" alt="logo"> -->
-                    <a href="../../../index.html"><li>home</li></a>
-                    <a href="../../../html/recents.html"><li>recent</li></a>
-                    <a href="../../../html/blogs.html"><li>blog</li></a>
-                    <a href="../../../html/coverage.html"><li>coverage</li></a>
-                    <a href="../../../html/projects.html"><li>projects</li></a>
-                    <a href="../../../html/reviews.html"><li>reviews</li></a>
-                    <a href="../../../html/videos.html"><li>videos</li></a>
-                    <a href="../../../html/about.html"><li>about</li></a>
-                </ul>
-            </div>
-        
-            <div class="links">
-                <h1>In Reviews</h1>
-                <ul>
-                    <a href="../../../html/2022-in-review.html"><li>2022 in Review</li></a>
-                    <a href="../../../html/cosmere-in-review.html"><li>Cosmere in Review</li></a>
-                    <a href="../../../html/reviews/franchise/harry-potter-in-review.html"><li>Harry Potter in Review</li></a>
-                    <a href="../../../html/reviews/franchise/last-of-us-in-review.html"><li>Last of Us in Review</li></a>
-                    <a href="../../../html/reviews/franchise/lotr-in-review.html"><li>Lord of the Rings in Review</li></a>
-                    <a href="../../../html/reviews/franchise/starwars-in-review.html"><li>Star Wars in Review</li></a>
-                    <a href="../../../html/reviews/franchise/wheel-of-time-in-review.html"><li>Wheel of Time in Review</li></a>
-        
-                </ul>
-            </div>
-        
-            <div class="more-links">
-                <h1>More Site Links</h1>
-                <ul>
-                    <a href="../../../html/reviews/book-reviews.html"><li>Book Reviews</li></a>
-                    <br>
-                    <a href="../../../html/reviews/movie-reviews.html" ><li>Movie Reviews</li></a>
-                    <br>
-                    <a href="../../../html/blogs/bike-commute.html"><li>Bike Commute Blogs</li></a>
-                    <a href="../../../html/blogs/updates.html"><li>Update Blogs</li></a>
-                </ul>
-            </div>
-        
-            <div class="links">
-                <h1>Topics</h1>
-                <ul>
-                    <a href="../../../html/topics/all-about-books.html"><li>Books</li></a>
-                    <a href="../../../html/topics/all-about-my-opinion.html"><li>My Opinion</li></a>
-                </ul>
-            </div>
-        
-            <div class="links">
-                <h1>Site Map</h1>
-                <ul>
-                    <a href="../../../html/site-map.html"><li>Full Site Map</li></a>
-                </ul>
-            </div>
-        
-            <div class="social-links">
-                <h1>Social Links</h1>
-                <ul>
-                    <a href="https://www.instagram.com/bramermatt/" target="_blank"><li>Instagram</li></a>
-                    <a href="https://twitter.com/bramermatt" target="_blank"><li>Twitter</li></a>
-                    <a href="https://www.youtube.com/channel/UC1OsGesye2hEKRl_dSqwhUw" target="_blank"><li>Youtube</li></a>
-                    <a href="https://github.com/bramermatt"><li>GitHub</li></a>
-                </ul>
-            </div>
-                
-            </div>
-    
-    <img src="../../../img/mLogo.png" alt="logo">
-    
+    <div class="blog-back">
+        <a href="../index.html" class="previous">&laquo; Home</a>
     </div>
-<!-- </div> -->
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
+    <div class="blog">
 
-<script src="../../../js/top.js"></script>
+        <h1>Bike Commuting: Part Ten</h1>
+        <p><strong>tl;dr</strong> I have been riding my bike since the beginning of August until now. And, at the start of this week October 18, 2022 the weather has gotten very cold...</p>
+        <p><em>October 18, 2022</em></p>
 
-<div class="up-arrow"></div>
+        <img src="../img/docs/bike-commute-blogs/part-ten/matt-w-bike.JPG" alt="bike-commute-part-ten">
+        <blockquote>Matt with bike</blockquote>
 
+        <h2>I have done it!</h2>
+        <p>I have been riding my bike since the beginning of August until now. And, at the start of this week October 18, 2022 the weather has gotten very cold. This week the mornings will start around 34 degrees, and that is just too cold for me to ride. Since the last <a href="bike-commute-part-nine.html">Bike Commute Blog: Part Nine</a>, there have been a lot of updates since the start of Bike Commuting. Since the start, I have ridden <strong>OVER 350 MILES</strong>!!! That is crazy to me, and I feel so great about that. This is more of a catchup blog, to talk about what has happened.</p>
+        
+        <img src="../img/docs/bike-commute-blogs/part-ten/matt-w-bike.JPG" alt="matt-with-bike" class="zoomE">
+        <script src="../../../js/pictFullscreen.js"></script>
+        <blockquote>After a ride home</blockquote>
+        
+        <h2>Where is My Bike?</h2>
+        <p>I have gotten a bike garage, which is just a tent to store my bike when I'm not ridding it.</p>
+        <img src="../img/docs/bike-commute-blogs/part-ten/bike-tent.JPG" alt="bike-tent" class="zoomE">
+        <script src="../../../js/pictFullscreen.js"></script>
+        <blockquote>My Bike in my tent</blockquote>
+        
+        <p>I keep the bike there, but since it's gotten so cold I'll be keeping my bike in the basement of the house; hopefully that will be helpful. I just don't want my tires to pop while it's so cold outside.</p>
+        
+        
+        <h2>My bike at work</h2>
+        <p>While doing video calls, I have been using this as my video background while my bike isn't with me. I have even started working from home every Wednesday, so I could ride my bike four days a week. I sit in front and it looks like my bike is behind me.</p>
+        
+        <img src="../img/docs/bike-commute-blogs/part-ten/bike-background.JPG" alt="background" class="zoomE">
+        <script src="../../../js/pictFullscreen.js"></script>
+        <blockquote>Bike background</blockquote>
+        
+        <p>I have since moved around my desk, but I can still use that background.</p>
+        
+        
+        <h2>Bike Tours</h2>
+        <p>Here are a few bike tours, and a few videos of what it was like riding in the very cold.</p>
+        
+        <div class="iframe-container">
+        <video width="100%" height="auto" controls="controls" preload="auto" playsinline poster="../img/placeholder-video.jpeg">
+            <source src="../img/docs/bike-commute-blogs/part-ten/matt-outside-cold.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         </div>
-    </body>
-    </html> 
+        <blockquote>Very Cold</blockquote>
+        
+        <div class="iframe-container">
+        <video width="100%" height="auto" controls="controls" preload="auto" playsinline poster="../img/placeholder-video.jpeg">
+            <source src="../img/docs/bike-commute-blogs/part-ten/bike-tour-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+        <blockquote>Another bike tour when it's cold</blockquote>
+        
+        <div class="iframe-container">
+        <video width="100%" height="auto" controls="controls" preload="auto" playsinline poster="../img/placeholder-video.jpeg">
+            <source src="../img/docs/bike-commute-blogs/part-ten/bike-tour-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+        <blockquote>Another bike tour when it's warm</blockquote>
+        
+        
+        <h2>New Shoes and Pedals</h2>
+        <p>For my birthday, I'm 26 now, my parents got me some new half clipless pedals and clipped in shoes.</p>
+        
+        <img src="../img/docs/bike-commute-blogs/part-ten/shoes-clips.JPG" alt="shoes-clips"class="zoomE">
+        <script src="../../../js/pictFullscreen.js"></script>
+        <blockquote>My new shoes and clipless pedals</blockquote>
+        
+        <p>Riding with these have been a lot of fun, I've gotten faster, and I had some issues with how the shoes were setup. I did readjust my shoes and that helped a lot.</p>
+        
+        <img src="../img/docs/bike-commute-blogs/part-ten/matt-allbirds.JPG" alt="shoes-and-shoes" id="matt-allbirds"class="zoomE">
+            <script src="../../../js/pictFullscreen.js"></script>
+        <blockquote>My allbirds and my new shoes</blockquote>
+        
+        <p>This was my other riding shoes, and they were some amazingly comfortable Allbirds.</p>
+        
+        
+        <h2>Only a few mishaps</h2>
+        <p>I have only had a few mishaps while riding. I've popped three tires, I had to get two new tires, I broke my chain guard, and eaten so many cliff bars.</p>
+        
+        
+        <h2>Next Ride</h2>
+        <p>I don't really know when my next ride is going to be. We do have a stationary bike in our basement. So, I might be ridding that some more as I won't be ridding in the cold. But I might start commuting again in March? That's so far away, so I might need to figure out some timing and how to ride the stationary bike before I leave for work. I then again, will need to ride once I get home, but I'm not sure.</p>
+        
+        
+        
+        <h2>Thank you All!</h2>
+        <p>Thank you all for reading all of these Bike Commute Blogs, this has been a lot of fun and I've done exactly what I wanted to do!</p>
+
+
+    </div>
+
+    </div>
+
+    <footer>
+        <a href="../index.html"><img src="../img/icons/mLogo.png"></a>
+    </footer>
+
+</body>
+</html>
