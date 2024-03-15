@@ -359,6 +359,18 @@ blockquote {
     object-fit: cover;
 }
 
+.hero-content-title {
+
+}
+
+.hero-content-title h1 {
+  margin-bottom: 5px;
+}
+
+.hero-content-title p {
+  margin-top: 0;
+}
+
 
 
 .category {
@@ -459,6 +471,10 @@ three pieces of content spread, typically small content on left (small img), big
 
     .content img {
         max-height: 20vh;
+    }
+
+    .content p, .content em {
+      margin-inline: 0;
     }
 
 
@@ -748,18 +764,18 @@ button {
 
   .blog img {
     max-width: 100%;
-    max-height: 64vh;
-    object-fit: contain;
+    max-height: 70vh;
+    object-fit: cover;
     margin: 0;
     padding-inline: 12px;
   }
 
   
-  .blog-title h1 {
+  .blog h1 {
     margin-top: 0;
   }
 
-  .blog-title h1, .blog h2 {
+  .blog h1, .blog h2 {
     line-height: 1.23em;
     margin-bottom: 5px;
     
@@ -770,12 +786,12 @@ button {
     line-height: 1.5em;
   }
 
-  .blog p, .blog-title p, .blog h2, .blog-title h1 {
+  .blog p, .blog h2, .blog h1 {
     max-width: 550px;
     margin-inline: 10px;
   }
 
-  .blog em, .blog-title em {
+  .blog em {
     max-width: 550px;
     /* margin-inline: 10px; */
   }
