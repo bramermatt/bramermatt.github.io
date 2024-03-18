@@ -431,7 +431,7 @@ three pieces of content spread, typically small content on left (small img), big
   grid-template-columns: 2fr 2fr;
   gap: 1vw;
   max-width: 100%;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   margin: 0 auto;
   padding: 10px;
 }
@@ -477,6 +477,8 @@ three pieces of content spread, typically small content on left (small img), big
     object-fit: cover;
     border-radius: 10px;
     /* padding-bottom: 5px; */
+
+    box-shadow: 1px 5px 10px grey;
 }
 
 
