@@ -31,6 +31,12 @@ body {
 
 /* nav bar */
 
+/* img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+} */
+
 nav {
     /* padding: 10px !important; */
     position: sticky;
@@ -89,6 +95,11 @@ nav a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+
+nav > .social-links li a{
+  float: right;
 }
 
 /* nav mobile menu hamburger */
@@ -196,11 +207,15 @@ nav .mobile-menu ul a {
     font-family: inherit;
     margin: 0;
   }
-  
-  nav ul li a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: rgb(216, 216, 216);
-    /* border: thin solid; */
+
+  @media screen and (min-width: 700px) {
+    nav ul li a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+      background-color: rgb(216, 216, 216);
+      /* border: thin solid; */
+    }
   }
+  
+
 
   nav ul.mobile-menu a:hover, .nav ul.mobile-menu li a:hover {
     background-color: none;
@@ -396,6 +411,7 @@ three pieces of content spread, typically small content on left (small img), big
     max-width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .spread-three-content {
@@ -405,19 +421,34 @@ three pieces of content spread, typically small content on left (small img), big
     max-width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 10px;
+}
+
+.spread-four-content {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 1vw;
+  max-width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .content {
     border-radius: 10px;
     padding: 12px;
-    margin: 12px;
+    /* margin: 12px; */
     border: thin solid;
     box-shadow: 0px 3px 4px 0px rgb(58, 58, 58);
-    display: block;
+    display: flex;
+    width: 100%;
+    /* height: 100%; */
+    gap: .5vw;
+    align-items: center;
 }
 
 .content a:hover {
-    opacity: .8;
+    opacity: 70%;
 }
 
 .content a:link, .content a:visited {
@@ -439,11 +470,11 @@ three pieces of content spread, typically small content on left (small img), big
 }
 
 .content img {
-    width: 100%;
-    max-height: 40vh;
+    /* width: 100%; */
+    max-height: 30vh;
     object-fit: cover;
     border-radius: 10px;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
 }
 
 
@@ -469,8 +500,18 @@ three pieces of content spread, typically small content on left (small img), big
         gap: 0;
     }
 
+    .content {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .content h1 {
+      font-size: x-large;
+    }
+
     .content img {
-        max-height: 20vh;
+      width: 100%;
+      max-height: 60vh;
     }
 
     .content p, .content em {
@@ -480,10 +521,11 @@ three pieces of content spread, typically small content on left (small img), big
 
 }
 
-@media screen and (max-width: 600px) {
-  .spread-three-content, .spread-two-content {
+@media screen and (max-width: 700px) {
+  .spread-three-content, .spread-two-content, .spread-four-content {
     grid-template-columns: 1fr;
     max-width: 80%;
+    gap: 2vh;
   }
 
   .content img {
@@ -802,6 +844,7 @@ button {
   
   .blog h1 {
     margin-top: 0;
+    margin-inline: 10px;
   }
 
   .blog h1, .blog h2 {
@@ -815,7 +858,7 @@ button {
     line-height: 1.5em;
   }
 
-  .blog p, .blog h2, .blog h1 {
+  .blog p, .blog h2 {
     max-width: 550px;
     margin-inline: 10px;
   }
@@ -826,83 +869,7 @@ button {
   }
 
 
-  details {
-    margin: 6vh 0;
-    margin-inline: 10px;
-    padding-left: 10px;
-  }
-
-  summary {
-    max-width: 550px;
-  }
-
-  details[open] summary ~ * {
-    animation: open 0.3s ease-in-out;
-
-    /* padding-inline: 15px; */
-  }
-
-
-  details[open] {
-    border-left: thin solid;
-
-  }
-  
-  @keyframes open {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  details summary::-webkit-details-marker {
-    display: none;
-  }
-  
-  details summary {
-    width: 100%;
-    padding: 0.5rem 0;
-    border-top: 1px solid black;
-
-    position: relative;
-    cursor: pointer;
-    /* font-size: 1.25rem; */
-    font-weight: 500;
-    list-style: none;
-  }
-  
-  details summary:after {
-    content: "+";
-    color: black;
-    position: absolute;
-    font-size: 1.75rem;
-    line-height: 0;
-    margin-top: 5px;
-    right: 0;
-    font-weight: 200;
-    transform-origin: center;
-    transition: 200ms linear;
-    padding: 0px 10px;
-  }
-
-
-  details[open] summary:after {
-    transform: rotate(45deg);
-    font-size: 2rem;
-  }
-
-  details summary {
-    outline: 0;
-  }
-
-
-  details p {
-    /* font-size: 0.95rem; */
-    margin: 0 0 1rem;
-    padding-top: 1rem;
-  }
+ 
 
 
   @media screen and (prefers-color-scheme: light) {
@@ -921,6 +888,11 @@ button {
       text-decoration: none;
     }
 
+    nav .mobile-menu li a:hover {
+      color: white;
+      background-color: none !important;
+    }
+
 
     
   }
@@ -931,12 +903,6 @@ button {
       box-shadow: 2px 4px 1px 0px rgb(58, 58, 58);
     }
 
-
-
-    details summary, details summary:after {
-      border-color: white;
-      color: white;
-    }
 
     body {
       background-color: #2e2e2e;
@@ -974,8 +940,4 @@ iframe, video {
 
     border-radius: 10px;
     /* box-shadow: 0px 8px 16px 0px rgb(0,0,0); */
-}
-
-video.poster {
-  object-fit: cover;
 }
