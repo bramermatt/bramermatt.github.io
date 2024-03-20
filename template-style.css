@@ -64,9 +64,10 @@ nav li {
 
 aside {
     padding: 15px;
+    max-width: 25%;
     width: max-content;
     float: left;
-    max-width: 15%;
+    /* max-width: 15%; */
     position: sticky;
     top: 10px;
     z-index: 1;

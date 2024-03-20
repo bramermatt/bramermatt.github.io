@@ -447,6 +447,7 @@ three pieces of content spread, typically small content on left (small img), big
     /* height: 100%; */
     gap: .5vw;
     align-items: center;
+    justify-content: space-around;
 }
 
 .content a:hover {
