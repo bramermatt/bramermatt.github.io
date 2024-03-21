@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Title and Table of Contents</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1600px;
+            margin: 0 auto;
+            /* padding: 20px; */
+        }
+        .title {
+            padding: 10px;
+            width: 200px;
+            /* padding-right: 20px; */
+            background-color: #f7f7f7;
+
+        }
+
+        .title .content, .toc .content {
+            position: sticky;
+            top: 20px;
+            z-index: 1;
+        }
+
+        .title .content img {
+            max-height: 60vh;
+            width: 100%;
+        }
+
+        .content {
+            max-width: 600px;
+            padding: 0 20px;
+            margin-top: 20vh;
+        }
+        .toc {
+            position: sticky;
+            top: 20px;
+            width: 200px;
+            /* padding-left: 20px; */
+            background-color: #f7f7f7;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .toc li {
+            margin-bottom: 5px;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #333;
+        }
+        .toc a:hover {
+            color: #007bff;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <div class="content">
+            <img src="img/docs/books/1984/1984-cover.jpeg" alt="">
+            <h2>Title</h2>
+            <!-- Add your blog title content here -->
+            <p>This is the title of the blog.</p>
+        </div>
+        </div>
+        <div class="content">
+            <div class="topic">
+            <!-- Add your blog content here -->
+            <h1>Blog Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat nibh at velit malesuada, eget consectetur dolor rutrum.</p>
+            <p>Sed vehicula nisi vitae nisi elementum vestibulum. Nullam tempor, mi et laoreet rutrum, nisi libero eleifend lectus, nec malesuada leo velit nec mauris.</p>
+            <p>Donec pharetra massa vel justo ultrices, vitae rutrum eros posuere. Duis posuere orci eu ante finibus, ut rutrum sapien tempor.</p>
+            <p>Integer nec nisi eget ligula blandit venenatis vel sit amet purus. Vivamus nec elit non risus viverra consequat.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa?
+            </p>
+
+            <h1 id="section1">Section 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat nibh at velit malesuada, eget consectetur dolor rutrum.</p>
+            <p>Sed vehicula nisi vitae nisi elementum vestibulum. Nullam tempor, mi et laoreet rutrum, nisi libero eleifend lectus, nec malesuada leo velit nec mauris.</p>
+            <p>Donec pharetra massa vel justo ultrices, vitae rutrum eros posuere. Duis posuere orci eu ante finibus, ut rutrum sapien tempor.</p>
+            <p>Integer nec nisi eget ligula blandit venenatis vel sit amet purus. Vivamus nec elit non risus viverra consequat.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa?
+            </p>
+
+            <h1 id="section2">Section 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat nibh at velit malesuada, eget consectetur dolor rutrum.</p>
+            <p>Sed vehicula nisi vitae nisi elementum vestibulum. Nullam tempor, mi et laoreet rutrum, nisi libero eleifend lectus, nec malesuada leo velit nec mauris.</p>
+            <p>Donec pharetra massa vel justo ultrices, vitae rutrum eros posuere. Duis posuere orci eu ante finibus, ut rutrum sapien tempor.</p>
+            <p>Integer nec nisi eget ligula blandit venenatis vel sit amet purus. Vivamus nec elit non risus viverra consequat.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa?
+            </p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat nibh at velit malesuada, eget consectetur dolor rutrum.</p>
+            <p>Sed vehicula nisi vitae nisi elementum vestibulum. Nullam tempor, mi et laoreet rutrum, nisi libero eleifend lectus, nec malesuada leo velit nec mauris.</p>
+            <p>Donec pharetra massa vel justo ultrices, vitae rutrum eros posuere. Duis posuere orci eu ante finibus, ut rutrum sapien tempor.</p>
+            <p>Integer nec nisi eget ligula blandit venenatis vel sit amet purus. Vivamus nec elit non risus viverra consequat.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa?
+            </p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat nibh at velit malesuada, eget consectetur dolor rutrum.</p>
+            <p>Sed vehicula nisi vitae nisi elementum vestibulum. Nullam tempor, mi et laoreet rutrum, nisi libero eleifend lectus, nec malesuada leo velit nec mauris.</p>
+            <p>Donec pharetra massa vel justo ultrices, vitae rutrum eros posuere. Duis posuere orci eu ante finibus, ut rutrum sapien tempor.</p>
+            <p>Integer nec nisi eget ligula blandit venenatis vel sit amet purus. Vivamus nec elit non risus viverra consequat.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa?
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat nibh at velit malesuada, eget consectetur dolor rutrum.</p>
+            <p>Sed vehicula nisi vitae nisi elementum vestibulum. Nullam tempor, mi et laoreet rutrum, nisi libero eleifend lectus, nec malesuada leo velit nec mauris.</p>
+            <p>Donec pharetra massa vel justo ultrices, vitae rutrum eros posuere. Duis posuere orci eu ante finibus, ut rutrum sapien tempor.</p>
+            <p>Integer nec nisi eget ligula blandit venenatis vel sit amet purus. Vivamus nec elit non risus viverra consequat.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa?
+            </p>
+            <h1 id="section3">Section 3</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat nibh at velit malesuada, eget consectetur dolor rutrum.</p>
+            <p>Sed vehicula nisi vitae nisi elementum vestibulum. Nullam tempor, mi et laoreet rutrum, nisi libero eleifend lectus, nec malesuada leo velit nec mauris.</p>
+            <p>Donec pharetra massa vel justo ultrices, vitae rutrum eros posuere. Duis posuere orci eu ante finibus, ut rutrum sapien tempor.</p>
+            <p>Integer nec nisi eget ligula blandit venenatis vel sit amet purus. Vivamus nec elit non risus viverra consequat.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat quas culpa dicta. Maxime eligendi eveniet accusantium, aspernatur laborum modi a, suscipit enim veritatis magni illo, dignissimos porro blanditiis! Ipsa?
+            </p>
+        </div>
+        </div>
+        <div class="toc">
+
+            <div class="content">
+            <h3>Table of Contents</h3>
+            <ul>
+                <!-- Add links to sections of the blog -->
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li><a href="#section4">Section 4</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        // Highlight the current section in the table of contents
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.topic h1');
+            const tocLinks = document.querySelectorAll('.toc a');
+            let currentIndex = 1;
+    
+            sections.forEach((section, index) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top >= 0 && rect.top <= window.innerHeight) {
+                    currentIndex = index;
+                }
+            });
+    
+            if (currentIndex !== 1) {
+                tocLinks.forEach(link => {
+                    link.classList.remove('highlight');
+                });
+    
+                tocLinks[currentIndex].classList.add('highlight');
+            }
+        });
+    </script>
+    
+</body>
+</html>

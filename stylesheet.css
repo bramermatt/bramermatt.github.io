@@ -1013,3 +1013,24 @@ button {
 
 }
 
+
+
+
+  /* Style for summary */
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Style for expanded details */
+  details[open] {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Style for hidden content */
+  details p {
+    margin: 0;
+  }
+
