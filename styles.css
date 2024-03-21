@@ -43,6 +43,9 @@ nav {
     top: 0;
     z-index: 10;
 
+    /* position: absolute; */
+    width: 100%;
+
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
     /* overflow: hidden; */
 
@@ -326,7 +329,7 @@ button {
 /* main content, max-width: 1200px */
 
 .main-content {
-    max-width: 1400px;
+    /* max-width: 1400px; */
     margin: 0 auto;
     /* margin-top: 5vh; */
 }
@@ -338,7 +341,51 @@ blockquote {
     font-style: italic;
     font-size: medium;
     max-width: 550px;
+
+
+    display: none;
 }
+
+.full-screen-content {
+  /* max-height: 100vh; */
+  max-width: 100%;
+}
+
+.full-screen-content img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.full-screen-title {
+  position: relative;
+  top: -40vh;
+  padding: 25px;
+  max-width: 800px;
+  margin: 40px;
+}
+
+.full-screen-content {
+  margin-bottom: -27vh;
+}
+
+
+
+@media screen and (max-width: 850px) {
+  
+  .full-screen-title {
+    margin: 16px;
+  }
+
+
+}
+
+@media screen and (max-width: 1080px) {
+  .full-screen-content {
+    margin-bottom: -25vh;
+  }
+}
+
 
 
 
@@ -348,14 +395,18 @@ blockquote {
     align-items: center;
     gap: 2vw;
 
+    /*
+    new design - full screen
     padding: 12px;
     border: thick solid;
     box-shadow: 0px 3px 4px 0px rgb(58, 58, 58);
     border-radius: 10px;
-    margin: 12px;
+  
+    margin: 12px 0;
+    */
 }
 
-.hero-content a:link, .hero-content a:visited, .post-timeline a:link, .post-timeline a:visited {
+.hero-content a:link, .hero-content a:visited, .post-timeline a:link, .post-timeline a:visited, .full-screen-title a:link, .full-screen-title a:visited {
     background-color: rgb(65, 107, 133);
     color: var(--text);
     text-decoration: none;
@@ -371,7 +422,7 @@ blockquote {
 }
 
 .hero-content-left img {
-    max-height: 60vh;
+    /* max-height: 60vh; */
     max-width: 100%;
     object-fit: cover;
 }
@@ -385,7 +436,7 @@ blockquote {
 }
 
 .hero-content-title p {
-  margin-top: 0;
+  margin-bottom: 0;
 }
 
 
@@ -393,6 +444,9 @@ blockquote {
 .category {
     border-bottom: thick solid rgb(0, 81, 255);
     margin-inline: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+
 }
 
 .category h1 {
@@ -421,7 +475,7 @@ three pieces of content spread, typically small content on left (small img), big
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1vw;
     max-width: 100%;
-    max-width: 1400px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -431,9 +485,12 @@ three pieces of content spread, typically small content on left (small img), big
   grid-template-columns: 2fr 2fr;
   gap: 1vw;
   max-width: 100%;
-  /* max-width: 1000px; */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
+
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .content {
@@ -448,6 +505,7 @@ three pieces of content spread, typically small content on left (small img), big
     gap: .5vw;
     align-items: center;
     justify-content: space-around;
+    /* max-width: max-content; */
 }
 
 .content a:hover {
@@ -464,6 +522,7 @@ three pieces of content spread, typically small content on left (small img), big
     padding: 5px 0;
     /* margin-inline: 15px; */
     line-height: 1.1;
+    /* text-wrap: nowrap; */
 }
 
 .content p, .content em {
@@ -474,7 +533,7 @@ three pieces of content spread, typically small content on left (small img), big
 
 .content img {
     /* width: 100%; */
-    max-height: 30vh;
+    max-height: 20vh;
     object-fit: cover;
     border-radius: 10px;
     /* padding-bottom: 5px; */
@@ -520,11 +579,20 @@ three pieces of content spread, typically small content on left (small img), big
     .spread-three-content {
         grid-template-columns: 1fr 1fr;
     }
+
+    .content img {
+      width: 100%;
+      /* max-height: 60vh; */
+    }
+
+    .category {
+      margin-inline: 15px;
+    }
 }
 
 @media screen and (max-width: 900px) {
     
-     .spread-three-content, .spread-two-content {
+     .spread-three-content, .spread-two-content, .spread-four-content {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -546,10 +614,7 @@ three pieces of content spread, typically small content on left (small img), big
       font-size: x-large;
     }
 
-    .content img {
-      width: 100%;
-      max-height: 60vh;
-    }
+
 
     .content p, .content em {
       margin-inline: 0;
@@ -562,19 +627,34 @@ three pieces of content spread, typically small content on left (small img), big
    .spread-two-content, .spread-three-content, .spread-four-content {
     grid-template-columns: 1fr;
     max-width: 95%;
-    gap: 2vh;
+    /* gap: 2vh; */
   }
 
   .content img {
     display: none;
   }
 
+  .content {
+    border: none;
+    box-shadow: none !important;
+
+    border-radius: 0;
+    padding: 5px;
+  }
+
+  .content {
+    border-bottom: thin solid;
+
+}
+
+
+
 }
 
 /* img modal! */
 
 #myImg {
-    border-radius: 5px;
+    /* border-radius: 5px; */
     cursor: pointer;
     transition: 0.3s;
   }
@@ -678,7 +758,7 @@ footer img {
         background-color: white;
     }
 
-    .hero-content a:link, .hero-content a:visited, .post-timeline a:link, .post-timeline a:visited {
+    .hero-content a:link, .hero-content a:visited, .post-timeline a:link, .post-timeline a:visited, .full-screen-title a:link, .full-screen-title a:visited {
         color: white;
     }
 }
@@ -977,4 +1057,28 @@ iframe, video {
 
     border-radius: 10px;
     /* box-shadow: 0px 8px 16px 0px rgb(0,0,0); */
+}
+
+@media screen and (prefers-color-scheme: light) {
+  
+  .full-screen-title {
+    background-color: white;
+    border-radius: .25em;
+    box-shadow: 8px 8px 0px black;
+    border: thin solid;
+  }
+
+
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  
+  .full-screen-title, .content {
+    background-color: rgb(33, 39, 39);
+    border-radius: .25em;
+    box-shadow: 8px 8px 0px black;
+    border: none;
+    /* border: thin solid; */
+  }
+
 }
