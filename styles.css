@@ -1018,6 +1018,7 @@ button {
     .blog-back a {
       background-color: #a00101 !important;
       box-shadow: 2px 4px 1px 0px rgb(58, 58, 58);
+      color: white;
     }
 
 
@@ -1079,6 +1080,16 @@ iframe, video {
     box-shadow: 8px 8px 0px black;
     border: none;
     /* border: thin solid; */
+  }
+
+
+}
+
+@media screen and (prefers-color-scheme: dark) and (max-width: 700px) {
+  .content {
+    background: none !important;
+    border-radius: 0;
+    border-bottom: thin solid;
   }
 
 }
