@@ -29,6 +29,17 @@ body {
     /* overflow: hidden; */
 }
 
+body {
+  /* background-image: url('img/matts/matt-w-bookshelf-2024.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+
+
+  /* background-color: #cccccc;
+  background-image: linear-gradient(rgb(192, 192, 192), rgb(177, 200, 250)); */
+}
+
 /* nav bar */
 
 /* img {
@@ -52,6 +63,8 @@ nav {
     border-bottom: thick solid red;
     
 }
+
+
 
 
 
@@ -1076,6 +1089,17 @@ iframe, video {
     box-shadow: 8px 8px 0px black;
     border: thin solid;
   }
+
+  .content, .post-timeline{
+    background-color: white;
+  }
+
+  /* .post-timeline, .content {
+    padding: 15px;
+    border-radius: .5em;
+    border-bottom: none;
+    margin-bottom: 15px;
+  } */
 
 
 }

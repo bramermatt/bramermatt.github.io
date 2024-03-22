@@ -132,11 +132,11 @@ nav h1 {
     margin: 0;
     padding: 0;
     float: right;
-    max-width: 160px;
+    max-width: 260px;
     overflow: hidden;
     text-overflow: ellipsis;
 
-    display: none;
+    /* display: none; */
 }
 
 .under-nav {
