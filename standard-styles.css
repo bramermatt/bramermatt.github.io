@@ -62,6 +62,7 @@ nav {
     z-index: 10;
 
     align-self: center;
+
 }
 
 nav img {
@@ -103,6 +104,7 @@ aside {
     top: 60px;
     /* height: 100%; */
 
+    display: none;
 
 }
 
@@ -129,13 +131,29 @@ aside img {
 main {
     margin-left: 280px;
     margin-top: 2vh;
-    margin-bottom: 20vh;
+    /* margin-bottom: 20vh; */
+
+    max-width: 1000px;
+    margin: 0 auto;
+
+    border-left: thin solid;
+    border-right: thin solid;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        border: none;
+    }
 }
 
 article, figure {
     max-width: 1100px;
     padding: 15px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
+}
+
+figure {
+    padding-bottom: 5vh;
 }
 
 
@@ -160,6 +178,7 @@ article p {
 
 article img {
     max-height: 65vh;
+    max-width: -webkit-fill-available;
 }
 
 
@@ -236,17 +255,20 @@ section img {
 
 
 footer {
-    max-width: 600px;
+    /* max-width: 600px; */
     /* margin-left: 280px; */
     margin: 0 auto;
     margin-bottom: 5vh;
     padding: 25px;
     /* float: right; */
+
+    border-top: thin solid;
 }
 
 footer img {
     max-height: 5vh;
     margin: 0 auto;
+    max-width: 600px;
 }
 
 
