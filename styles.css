@@ -372,7 +372,7 @@ blockquote {
 
 .full-screen-title {
   position: relative;
-  top: -40vh;
+  top: -100vh;
   padding: 25px;
   max-width: 600px;
   margin: 40px;
@@ -389,14 +389,7 @@ blockquote {
 }
 
 
-@media screen and (max-width: 850px) {
-  
-  .full-screen-title {
-    margin: 16px;
-  }
 
-
-}
 
 @media screen and (max-width: 1080px) {
   .full-screen-content {
@@ -404,6 +397,20 @@ blockquote {
   }
 }
 
+@media screen and (max-width: 850px) {
+  
+  .full-screen-title {
+    margin: 16px;
+    position: relative;
+    top: 0;
+    /* margin-bottom: 0; */
+  }
+
+  .full-screen-content {
+    margin-bottom: 40px;
+  }
+
+}
 
 
 
@@ -482,12 +489,12 @@ three pieces of content spread, typically small content on left (small img), big
 .spread-two-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 1vw;
+    /* gap: 1vw; */
     max-width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     padding: 10px;
-    margin-bottom: 30vh;
+    /* margin-bottom: 30vh; */
 }
 
 .spread-three-content {
@@ -498,28 +505,28 @@ three pieces of content spread, typically small content on left (small img), big
     max-width: 1800px;
     margin: 0 auto;
     padding: 10px;
-    margin-bottom: 30vh;
+    /* margin-bottom: 30vh; */
 }
 
 .spread-four-content {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1vw;
   max-width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 10px;
-  margin-bottom: 30vh;
+  /* margin-bottom: 30vh; */
   /* display: flex;
   flex-direction: column; */
 }
 
 .content {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 12px;
     /* margin: 12px; */
     border: thin solid;
-    box-shadow: 0px 3px 4px 0px rgb(58, 58, 58);
+    /* box-shadow: 0px 3px 4px 0px rgb(58, 58, 58); */
     display: flex;
     width: 100%;
     /* height: 100%; */
@@ -527,6 +534,8 @@ three pieces of content spread, typically small content on left (small img), big
     align-items: center;
     justify-content: space-around;
     /* max-width: max-content; */
+
+    box-shadow: 4px 4px 0px rgb(116, 116, 116);
 }
 
 .content a:hover {
@@ -554,12 +563,11 @@ three pieces of content spread, typically small content on left (small img), big
 
 .content img {
     /* width: 100%; */
-    max-height: 20vh;
+    max-height: 30vh;
     object-fit: cover;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* padding-bottom: 5px; */
-
-    box-shadow: 1px 5px 10px grey;
+    /* box-shadow: 1px 0px 8px grey; */
 }
 
 
@@ -596,13 +604,13 @@ three pieces of content spread, typically small content on left (small img), big
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .spread-three-content {
         grid-template-columns: 1fr 1fr;
     }
 
     .content img {
-      width: 100%;
+      /* width: 100%; */
       /* max-height: 60vh; */
     }
 
@@ -621,10 +629,10 @@ three pieces of content spread, typically small content on left (small img), big
       grid-template-columns: 1fr;
     }
 
-    .spread-three-content, .spread-two-content {
+    /* .spread-three-content, .spread-two-content {
         max-width: 80%;
         gap: 0;
-    }
+    } */
 
     .content {
       flex-direction: column;
@@ -665,7 +673,8 @@ three pieces of content spread, typically small content on left (small img), big
 
   .content {
     border-bottom: thin solid;
-
+    margin-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 
@@ -1065,6 +1074,7 @@ button {
     overflow: hidden;
     width: 100%;
     padding-top: 56.35%; 
+    box-shadow: 4px 4px 0px rgb(116, 116, 116);
 }
 
 iframe, video {
@@ -1077,7 +1087,7 @@ iframe, video {
     height: 100%;
 
 
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* box-shadow: 0px 8px 16px 0px rgb(0,0,0); */
 }
 
@@ -1086,7 +1096,7 @@ iframe, video {
   .full-screen-title {
     background-color: white;
     border-radius: .25em;
-    box-shadow: 8px 8px 0px black;
+    box-shadow: 4px 4px 0px rgb(116, 116, 116);
     border: thin solid;
   }
 

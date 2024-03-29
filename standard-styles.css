@@ -33,7 +33,7 @@ aside a:link, aside a:visited, article a:link, article a:visited, main a:link, m
     font-weight: 500;
     color: var(--text);
     text-decoration: none;
-    padding: 6px;
+    padding: 8px;
     /* margin: 2px; */
     /* text-align: center; */
     text-decoration: none;
@@ -74,7 +74,7 @@ nav h1 {
     margin: 0;
     padding: 0;
     float: right;
-    max-width: 600px;
+    max-width: 800px;
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
@@ -271,7 +271,37 @@ footer img {
     max-width: 600px;
 }
 
+table, th, td {
+    border-collapse: collapse;
+    padding: 10px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    border: thin solid;
+  }
 
+th {
+    font-size: 1.2em;
+    padding: 10px;
+    text-align: left;
+
+}
+
+td {
+    width: max-content;
+    max-width: 600px;
+}
+
+table {
+    border-spacing: 10px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-bottom: 10px;
+    box-shadow: 0 .5rem 1rem -.5rem rgba(0,0,0,.08);
+    box-shadow: 2px 2px 0px rgb(116, 116, 116);
+    padding: 0;
+    /* margin: 15px; */
+    overflow: hidden;
+}
 
 
 
@@ -279,11 +309,12 @@ footer img {
     
     nav {
         background-color: white;
-        box-shadow: 4px 0px 2px rgb(116, 116, 116);
+        border-bottom: thin solid rgb(116, 116, 116);
+        box-shadow: 2px 2px 0px rgb(116, 116, 116);
     }
 
     aside, aside a, main a, .iframe-container, article img {
-        box-shadow: 4px 4px 0px black;
+        box-shadow: 4px 4px 0px rgb(116, 116, 116);
     }
 
     aside a, main a {
@@ -304,7 +335,7 @@ footer img {
 
     article a:link, article a:visited {
         box-shadow: 2px 2px 0px rgb(116, 116, 116);
-        padding: 2px;
+        padding: 5px;
         display: inline-block;
         /* text-wrap: nowrap; */
     }
@@ -330,6 +361,15 @@ footer img {
 
     figcaption {
         border-color: rgb(116, 116, 116);
+    }
+
+
+    main {
+        box-shadow: 4px 4px 0px rgb(116, 116, 116);
+        border: thin solid;
+        border-color: rgb(116, 116, 116);
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
 
@@ -370,7 +410,7 @@ footer img {
 
     article a:link, article a:visited {
         box-shadow: 2px 2px 0px rgb(116, 116, 116);
-        padding: 2px;
+        padding: 5px;
         display: inline-block;
         /* text-wrap: nowrap; */
     }
@@ -394,11 +434,19 @@ footer img {
         border-radius: .5em;
     }
 
+    main {
+        box-shadow: 4px 4px 0px rgb(116, 116, 116);
+        border: thin solid;
+        border-color: rgb(116, 116, 116);
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
 
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     
     aside {
         width: 96%;
@@ -417,6 +465,8 @@ footer img {
 
     main {
         margin-left: 0;
+        margin: 0;
+        border: none;
     }
 
     nav h1 {
