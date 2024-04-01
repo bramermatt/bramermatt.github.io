@@ -593,6 +593,9 @@ three pieces of content spread, typically small content on left (small img), big
   top: 1em;
   z-index: 2;
 
+  /* top: 2px;
+  z-index: 20; */
+
   color: black;
   background-color: white;
   border: thin solid;
