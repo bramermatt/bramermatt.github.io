@@ -30,19 +30,19 @@
             <ul id="mobile-menu">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
-                  <li><a href="#">home</a></li>
-                  <li><a href="#recent">recent</a></li>
-                    <li>
-                        <a href="#blogs">blogs</a>
-                    </li>
-                  <li><a href="#reviews">reviews</a></li>
-                  <!-- <li>
-                    <h2>Reviews</h2>
-                    <a href="#book-reviews">book reviews</a>
-                </li> -->
-                  <li><a href="#in-reviews">in reviews</a></li>
-                  <li><a href="#">about</a></li>
-                  <li><a href="#">site map</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#recent">recent</a></li>
+                    <li><a href="#book-reviews">book reviews</a></li>
+
+<!--                     
+                    <li><a href="#">home</a></li>
+                    <li><a href="#recent">recent</a></li>
+                    <li><a href="#blogs">blogs</a></li>
+                    <li><a href="#reviews">reviews</a></li>
+                    <li><a href="#in-reviews">in reviews</a></li>
+                    <li><a href="#video">videos</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">site map</a></li> -->
 
                 </div>
                
@@ -58,7 +58,15 @@
             <li><img src="img/icons/mLogo.png" alt="m logo"></li>
             <li><a href="#">home</a></li>
             <li><a href="#recent">recent</a></li>
-            <li>
+            <li><a href="#book-reviews">book reviews</a></li>
+
+            <!-- <li><a href="#video">videos</a></li> -->
+
+            
+
+
+
+            <!-- <li>
                 <div class="dropdown">
                     <button class="dropbtn" onclick="toggleDropdown('dropdown1')">blogs
                         <i class="fa fa-caret-down"></i>
@@ -73,6 +81,7 @@
                     </div>
                 </div>
             </li>
+
             <li>
                 <div class="dropdown">
                     <button class="dropbtn" onclick="toggleDropdown('dropdown2')">reviews
@@ -87,6 +96,7 @@
                     </div>
                 </div>
             </li>
+
             <li>
                 <div class="dropdown">
                     <button class="dropbtn" onclick="toggleDropdown('dropdown3')">in reviews
@@ -125,7 +135,7 @@
                         <a href="#">YouTube</a>
                     </div>
                 </div>
-            </li>
+            </li> -->
 
 
             <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search for content..." title="Content Search">
@@ -221,13 +231,28 @@
             <h1>Recent Content</h1>
         </div>
 
-        <div class="spread-three-content">
+        <div class="spread-two-content">
 
             <!-- <div class="left-content"> -->
                 <!-- <div> -->
 
-            <div class="content">
+                    <div class="content">
+                        <!-- <h1>Recent Video</h1> -->
+                        <div class="iframe-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/F_6qcZJHCI8?si=9numuyzvfHuYyEkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <blockquote>American Sphinx: The Character of Thomas Jefferson by Joseph J. Ellis | Book Review | Matt Bramer on YouTube</blockquote>
+                    </div>
 
+                <div class="content">
+                    <!-- <h1>Recent Video</h1> -->
+                    <div class="iframe-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0hSeB7apEpw?si=AFKPCKzSTOEsOs58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <blockquote>Currently Reading | Founding Brothers: The Revolutionary Generation by Joseph J. Ellis on YouTube</blockquote>
+                </div>
+
+            <div class="content">
                 <div>
                     <a href="2024/3-Mar/29/american-sphinx-by-joseph-j-ellis-book-review.html">
                     <h1>American Spinx: The Character of Thomas Jefferson by Joseph J. Ellis | Book Review | Matt Bramer</h1>
@@ -358,6 +383,24 @@
 
 
              </div>
+
+
+             <div class="content">
+
+                <div>
+                    <a href="2024/1-Jan/30/star-wars-hr-light-of-the-jedi-book-review.html">
+                        <h1>Star Wars: The Light of the Jedi by Charles Soule | Book Review | Matt Bramer</h1>
+                        <em>January 30, 2024</em>
+                </div>
+                <div>
+                    <img src="img/book/sw-hr-light-of-the-jedi.jpg" alt="">
+                </a>
+                </div>
+            
+            
+                         </div>
+
+
         </div>
 
 <!-- blogs -->
@@ -410,7 +453,7 @@
             <h1>Book Reviews</h1>
         </div>
 
-        <div class="spread-three-content">
+        <div class="spread-one-content">
 
         <div class="post-timeline">
             <h2>2022</h2>

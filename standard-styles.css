@@ -258,8 +258,10 @@ footer {
     /* max-width: 600px; */
     /* margin-left: 280px; */
     margin: 0 auto;
-    margin-bottom: 5vh;
+    /* margin-bottom: 5vh; */
+    
     padding: 25px;
+    padding-bottom: 5vh;
     /* float: right; */
 
     border-top: thin solid;
@@ -310,7 +312,7 @@ table {
     nav {
         background-color: white;
         border-bottom: thin solid rgb(116, 116, 116);
-        box-shadow: 2px 2px 0px rgb(116, 116, 116);
+        box-shadow: 6px 4px 0px rgb(116, 116, 116);
     }
 
     aside, aside a, main a, .iframe-container, article img {
@@ -372,6 +374,14 @@ table {
         margin-bottom: 20px;
     }
 
+    body {
+        background-color: gainsboro;
+    }
+
+    main, footer {
+        background-color: white;
+    }
+
 
 
 }
@@ -380,7 +390,11 @@ table {
 @media screen and (prefers-color-scheme: dark) {
     
     body {
-        background-color: rgb(39, 39, 39);
+        background-color: rgb(31, 31, 31);
+    }
+
+    main, footer {
+        background-color: rgb(48, 48, 48);
     }
 
     nav {
