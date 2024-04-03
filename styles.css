@@ -586,17 +586,22 @@ three pieces of content spread, typically small content on left (small img), big
 
   border-bottom: thin solid;
   height: max-content;
+
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
+
 .post-timeline li {
-  padding: 10px;
-  line-height: 1.6em;
+  padding: 5px;
+  line-height: 1.3em;
 }
 
 .post-timeline h2 {
-  position: sticky;
+  /* position: sticky;
   top: 1em;
-  z-index: 2;
+  z-index: 2; */
 
   /* top: 2px;
   z-index: 20; */
@@ -614,6 +619,9 @@ three pieces of content spread, typically small content on left (small img), big
   margin-bottom: 20px;
   margin-right: 2em;
   /* margin-left: 10px; */
+
+  /* float: none; */
+  margin: 10px;
 }
 
 
@@ -681,11 +689,11 @@ three pieces of content spread, typically small content on left (small img), big
   }
 
   .content {
-    border: none;
+    /* border: none;
     box-shadow: none !important;
-
-    border-radius: 0;
-    padding: 5px;
+    background-color: none !important;
+    border-radius: 0; */
+    /* padding: 5px; */
   }
 
   .content {
@@ -694,6 +702,14 @@ three pieces of content spread, typically small content on left (small img), big
     padding-bottom: 15px;
 }
 
+
+.post-timeline ol {
+  padding: 10px;
+}
+
+.post-timeline li {
+  list-style-type: none;
+}
 
 
 }
@@ -808,7 +824,7 @@ footer img {
     .hero-content a:link, .hero-content a:visited, .post-timeline a:link, .post-timeline a:visited, .full-screen-title a:link, .full-screen-title a:visited {
         color: white;
 
-        box-shadow: 4px 4px 0px rgb(116, 116, 116);
+        box-shadow: 2px 2px 0px rgb(116, 116, 116);
     }
 
     .post-timeline a {
@@ -1133,7 +1149,7 @@ iframe, video {
   .post-timeline {
     background-color: white;
     border-radius: .25em;
-    box-shadow: 4px 4px 0px rgb(116, 116, 116);
+    box-shadow: 2px 2px 0px rgb(116, 116, 116);
     border: thin solid;
   }
 
@@ -1148,6 +1164,14 @@ iframe, video {
     border-bottom: none;
     margin-bottom: 15px;
   } */
+
+  body {
+    background-color: gainsboro;
+  }
+
+  footer {
+    background-color: white;
+  }
 
 
 }
@@ -1169,9 +1193,10 @@ iframe, video {
     box-shadow: 8px 8px 0px black;
   }
 
-  .post-timeline a {
+  .post-timeline a, .full-screen-title a {
     box-shadow: 4px 4px 0px rgb(116, 116, 116);
     margin-right: 5px;
+    margin-bottom: 5px;
   }
 
 
@@ -1179,9 +1204,9 @@ iframe, video {
 
 @media screen and (prefers-color-scheme: dark) and (max-width: 700px) {
   .content {
-    background: none !important;
+    /* background: none !important;
     border-radius: 0;
-    border-bottom: thin solid;
+    border-bottom: thin solid; */
   }
 
 }

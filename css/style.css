@@ -628,7 +628,7 @@ section {
 .blog-title p {
     max-width: 550px;
     /* margin-bottom: 30px; */
-    /* line-height: 1.8; */
+    line-height: 1.9;
     margin-top: 10px;
     font-size: 90%;
     border-top: thin solid;
