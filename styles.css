@@ -438,6 +438,11 @@ blockquote {
     padding: 5px;
 
     font-weight: 500;
+
+    padding: 8px;
+
+    text-decoration: none;
+    display: inline-block;
 }
 
 
@@ -802,7 +807,16 @@ footer img {
 
     .hero-content a:link, .hero-content a:visited, .post-timeline a:link, .post-timeline a:visited, .full-screen-title a:link, .full-screen-title a:visited {
         color: white;
+
+        box-shadow: 4px 4px 0px rgb(116, 116, 116);
     }
+
+    .post-timeline a {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+
+
 }
 
 
@@ -1153,6 +1167,11 @@ iframe, video {
     border:none;
     background-color: rgb(82, 82, 82);
     box-shadow: 8px 8px 0px black;
+  }
+
+  .post-timeline a {
+    box-shadow: 4px 4px 0px rgb(116, 116, 116);
+    margin-right: 5px;
   }
 
 
