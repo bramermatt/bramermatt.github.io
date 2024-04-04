@@ -166,7 +166,7 @@ article h1 {
 
 article h2 {
     max-width: 550px;
-    line-height: 1;
+    /* line-height: 1; */
     margin-bottom: 10px;
 }
 
@@ -236,9 +236,9 @@ iframe, video {
 
 section {
     border: thick solid;
-    padding: 15px;
-    max-width: max-content;
-    margin: 20px;
+    /* padding: 15px; */
+    /* max-width: max-content; */
+    margin: 15px;
 }
 
 section h2 {
@@ -246,12 +246,28 @@ section h2 {
     margin-top: 0;
     margin-bottom: 0;
     max-width: 250px;
+    padding: 15px;
 }
 
 section img {
     max-height: 45vh;
     max-width: 100%;
 }
+
+section a {
+    /* display: flex !important; */
+    align-items: center;
+    gap: 1vw;
+    padding: 0 !important;
+    margin: 20px !important;
+    max-width: max-content;
+}
+
+section a:hover {
+    opacity: .8;
+}
+
+
 
 
 footer {
@@ -460,7 +476,7 @@ table {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     
     aside {
         width: 96%;
@@ -487,12 +503,31 @@ table {
         max-width: 180px;
     }
 
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section img {
+        max-height: max-content;
+    }
+
+    section a {
+        display: block !important;
+    }
+
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
     nav h1 {
         display: none;
     }
+
+    section {
+        display: block;
+    }
+
+
 }
 
 @media screen and (max-width: 300px) and (prefers-color-scheme: light) {
@@ -519,6 +554,8 @@ table {
         box-shadow: none !important;
     }
 
+
+
 }
 
 @media screen and (max-width: 300px) and (prefers-color-scheme: dark) {
@@ -544,6 +581,8 @@ table {
         margin: 0 !important;
         box-shadow: none !important;
     }
+
+
 
 }
 
