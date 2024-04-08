@@ -107,21 +107,49 @@ body, html {
 .timeline ul {
     /* list-style-type: none; */
     /* padding: 0; */
+    margin-right: 10px;
 }
+
+
 
 .timeline li {
     margin-bottom: 10px;
     font-size: large;
+
+}
+
+.timeline li img {
+    max-width: 100%;
+    max-height: 15vh;
 }
 
 .timeline a {
     text-decoration: none;
     padding: 10px;
+    margin: 5px;
+    display: inline-block;
+
     color: #333;
+    color: white;
+    background-color: #585858;
+
+}
+
+.timeline li a#tag {
+    background-color: blue;
+}
+
+
+.timeline a::after {
+    content: " \2192"; /* Unicode character for right arrow */
+    display: inline-block;
+    margin-left: 5px; /* Adjust as needed */
+    text-decoration: none; /* Remove underlining for generated content */
 }
 
 .timeline a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    background-color: #333;
 }
 
 /* Optional styling */
@@ -199,7 +227,7 @@ details > p {
     }
 
 
-    .container {
+    .container, .timeline a {
         display: block;
     }
 
@@ -229,10 +257,23 @@ details > p {
         <div class="timeline">
             <!-- Timeline links -->
 
-            <h2>Recent Posts</h2>
+            <h2>Posts in Order of Creation</h2>
             <ul>
 
-                <li><a href="#">Link 1</a></li>
+                <li>
+                    
+                    <a href="">1491: New Revelations on the Americas Before Columbus by Charles C. Mann</a>
+                    <a href="#" id="tag">book review</a>
+                    <!-- <p>April 5, 2024</p> -->
+                </li>
+
+                <li>
+                    <a href="#">Link 1</a>
+                    <a href="">family blog</a>
+                    <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit cumque eius. Possimus neque culpa magni eaque sunt quos, nam facilis, magnam doloribus quaerat harum ex, vitae minima repellat dicta.</a>
+                    <p>April 5, 2024</p>
+                </li>
+                
                 <li><a href="#">Link 2</a></li>
                 <li><a href="#">Link 3</a></li>
 
