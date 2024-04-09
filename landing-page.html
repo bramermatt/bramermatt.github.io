@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthew Bramer - Personal Webpage</title>
 
+    <link rel="shortcut icon" type="image/x-icon" href="img/icons/mLogo.png">
+
 
     <style>
 
@@ -13,7 +15,7 @@ body, html {
     padding: 0;
     height: 100%; /* Ensure full height of the viewport */
 
-    overflow: hidden;
+    /* overflow: hidden; */
 
     font-family: monospace;
 
@@ -29,7 +31,7 @@ body, html {
     padding: 10px;
     padding-inline: 20px;
 
-    position: static;
+    position: relative;
     display: flex;
     align-items: center;
     /* width: 100%; */
@@ -64,7 +66,7 @@ body, html {
 
 .container {
     display: flex;
-    height: calc(100% - 50px); /* Adjusted for navbar height */
+    height: calc(98% - 50px); /* Adjusted for navbar height */
 }
 
 .hero {
@@ -102,12 +104,19 @@ body, html {
     background-color: white;
     padding: 15px;
     margin: 0;
+
+    text-wrap: nowrap;
+    /* max-width: 400px; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+
 }
 
 .timeline ul {
-    /* list-style-type: none; */
+    list-style-type: none;
     /* padding: 0; */
-    margin-right: 10px;
+    padding: 15px;
+    /* margin-right: 10px; */
 }
 
 
@@ -123,7 +132,37 @@ body, html {
     max-height: 15vh;
 }
 
-.timeline a {
+/* Rest of your CSS styles */
+
+.timeline a:link, .timeline a:visited {
+    background-color: #007bff; /* Cool blue color */
+    color: #fff; /* Text color */
+    padding: 10px 15px; /* Padding for the link */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3); /* Box shadow */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    color: white !important;
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.timeline li a:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.timeline li a#tag {
+    background-color: rgb(175, 0, 0);
+    font-size: medium;
+    padding: 6px;
+}
+
+.timeline li::after {
+    border-bottom: thin solid;
+}
+
+
+/* .timeline a {
     text-decoration: none;
     padding: 10px;
     margin: 5px;
@@ -135,21 +174,19 @@ body, html {
 
 }
 
-.timeline li a#tag {
-    background-color: blue;
-}
+ */
 
 
-.timeline a::after {
-    content: " \2192"; /* Unicode character for right arrow */
+/* .timeline a::after {
+    content: " \2192"; 
     display: inline-block;
-    margin-left: 5px; /* Adjust as needed */
-    text-decoration: none; /* Remove underlining for generated content */
-}
+    margin-left: 5px; 
+    text-decoration: none; 
+} */
 
 .timeline a:hover {
     /* text-decoration: underline; */
-    background-color: #333;
+    /* background-color: #333; */
 }
 
 /* Optional styling */
@@ -192,6 +229,26 @@ details > p {
     /* border: 1px solid #ccc; */
     border-radius: 5px;
     background-color: #f9f9f9;
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.35%; 
+
+    margin-top: 10px;
+    border-radius: 5px;
+}
+  
+iframe, video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -261,17 +318,21 @@ details > p {
             <ul>
 
                 <li>
-                    
-                    <a href="">1491: New Revelations on the Americas Before Columbus by Charles C. Mann</a>
                     <a href="#" id="tag">book review</a>
+                    <a href="">1491: New Revelations on the Americas Before Columbus by Charles C. Mann</a>
+                    
                     <!-- <p>April 5, 2024</p> -->
                 </li>
 
                 <li>
-                    <a href="#">Link 1</a>
-                    <a href="">family blog</a>
-                    <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit cumque eius. Possimus neque culpa magni eaque sunt quos, nam facilis, magnam doloribus quaerat harum ex, vitae minima repellat dicta.</a>
-                    <p>April 5, 2024</p>
+                    <a href="#" id="tag">book review</a>
+                    <a href="">Founding Brothers: The Revolutionary Generation by Joseph J. Ellis</a>
+                </li>
+
+                <li>
+                    <div class="iframe-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SUcWziepOFc?si=OokrzzapBIQ36L8T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </li>
                 
                 <li><a href="#">Link 2</a></li>
@@ -435,6 +496,8 @@ details > p {
 
         </div>
     </div>
+
+
 
     
 
