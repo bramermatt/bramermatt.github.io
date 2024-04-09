@@ -29,12 +29,14 @@ body, html {
     border-bottom: thick solid green;
 
     padding: 10px;
-    padding-inline: 20px;
+    /* padding-inline: 20px; */
 
     position: relative;
     display: flex;
     align-items: center;
     /* width: 100%; */
+
+    display: none;
 }
 
 .navbar img {
@@ -66,7 +68,8 @@ body, html {
 
 .container {
     display: flex;
-    height: calc(98% - 50px); /* Adjusted for navbar height */
+    /* height: calc(98% - 50px);  */
+    height: 100vh;
 }
 
 .hero {
@@ -156,6 +159,17 @@ body, html {
     font-size: medium;
     padding: 6px;
 }
+
+.timeline li {
+        border: thin solid;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 0px black;
+    }
+
+    .timeline li:hover {
+        opacity: .8;
+    }
 
 .timeline li::after {
     border-bottom: thin solid;
@@ -264,6 +278,7 @@ iframe, video {
 @media screen and (max-width: 700px) {
     .container {
         flex-direction: column; /* Stack items vertically */
+        display: block;
     }
 
     .navbar {
@@ -276,7 +291,7 @@ iframe, video {
         flex: none; /* Reset the width */
         height: auto; /* Reset the height */
 
-        /* flex: 0 0 15%; */
+        flex: 0 0 0% !important;
     }
 
     .timeline {
@@ -284,9 +299,11 @@ iframe, video {
     }
 
 
-    .container, .timeline a {
+
+
+    /* .container, .timeline a {
         display: block;
-    }
+    } */
 
     body, html {
         overflow: visible;
@@ -314,7 +331,10 @@ iframe, video {
         <div class="timeline">
             <!-- Timeline links -->
 
-            <h2>Posts in Order of Creation</h2>
+
+
+
+            <h2>My Content</h2>
             <ul>
 
                 <li>
