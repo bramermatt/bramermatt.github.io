@@ -31,12 +31,15 @@ body, html {
     padding: 10px;
     /* padding-inline: 20px; */
 
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
     display: flex;
     align-items: center;
     /* width: 100%; */
 
-    display: none;
+    /* display: none; */
 }
 
 .navbar img {
@@ -69,7 +72,7 @@ body, html {
 .container {
     display: flex;
     /* height: calc(98% - 50px);  */
-    height: 100vh;
+    height: 92.5vh;
 }
 
 .hero {
@@ -341,7 +344,7 @@ iframe, video {
                     <a href="#" id="tag">book review</a>
                     <a href="">1491: New Revelations on the Americas Before Columbus by Charles C. Mann</a>
                     
-                    <!-- <p>April 5, 2024</p> -->
+                    <p style="padding-inline: 15px;">April 5, 2024</p>
                 </li>
 
                 <li>

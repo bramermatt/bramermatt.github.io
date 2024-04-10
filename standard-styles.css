@@ -24,9 +24,12 @@ body {
     background: var(--background);
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: monospace;
     cursor: default;
     /* overflow: hidden; */
+
+    font-size: 16px;
 }
 
 aside a:link, aside a:visited, article a:link, article a:visited, main a:link, main a:visited {
@@ -56,13 +59,20 @@ figcaption {
 
 nav {
     padding: 10px;
-    padding-inline: 25px;
+    /* padding-inline: 25px; */
     position: sticky;
     top: 0;
     z-index: 10;
 
     align-self: center;
 
+
+    max-width: max-content;
+    margin: 20px;
+    top: 15px;
+    border: thin solid;
+    right: 35px;
+    float: right;
 }
 
 nav img {
@@ -82,6 +92,8 @@ nav h1 {
     border-left: thick solid;
     padding-left: 10px;
 
+    display: none;
+
 }
 
 
@@ -90,18 +102,25 @@ nav a:link, nav a:visited {
     text-transform: capitalize;
     color: var(--text);
     font-weight: 500;
+    /* margin-right: 1.5vw; */
 }
 
 aside {
-    /* float: left; */
-    position: fixed;
-    width: 250px;
-    overflow: hidden;
+    float: left;
+    /* position: fixed; */
+
+    position: sticky;
+    top: 60px;
+    left: 40px;
+    z-index: 10;
+
+    max-width: 280px;
+    /* overflow: hidden; */
     padding: 15px;
 
     border: thin solid;
     margin-left: 8px;
-    top: 60px;
+    /* top: 60px; */
     /* height: 100%; */
 
     display: none;
@@ -123,7 +142,7 @@ aside a:link {
 }
 
 aside img {
-    max-height: 60vh;
+    max-height: 40vh;
     object-fit: contain;
     width: 100%;
 }
@@ -167,7 +186,9 @@ article h1 {
 article h2 {
     max-width: 550px;
     /* line-height: 1; */
+    margin-top: 20px;
     margin-bottom: 10px;
+    font-size: larger;
 }
 
 article p {
@@ -327,8 +348,12 @@ table {
     
     nav {
         background-color: white;
-        border-bottom: thin solid rgb(116, 116, 116);
-        box-shadow: 6px 4px 0px rgb(116, 116, 116);
+        /* border-bottom: thin solid rgb(116, 116, 116); */
+        box-shadow: 4px 4px 0px rgb(116, 116, 116);
+    }
+
+    aside {
+        background-color: white;
     }
 
     aside, aside a, main a, .iframe-container, article img {
@@ -479,7 +504,7 @@ table {
 @media screen and (max-width: 1000px) {
     
     aside {
-        width: 96%;
+        /* width: 96%; */
         /* border: none; */
         /* box-shadow: none; */
         position: relative;
