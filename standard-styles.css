@@ -24,12 +24,12 @@ body {
     background: var(--background);
     margin: 0;
     padding: 0;
-    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    font-family: monospace;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: monospace; */
     cursor: default;
     /* overflow: hidden; */
 
-    font-size: 16px;
+    /* font-size: 16px; */
 }
 
 aside a:link, aside a:visited, article a:link, article a:visited, main a:link, main a:visited {
