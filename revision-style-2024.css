@@ -105,7 +105,7 @@ body.dark {
         margin: 0 auto;
         padding: 0 20px;
         padding: 20px;
-        height: 89vh;
+        /* height: 89vh; */
         overflow: hidden;
         /* border-radius: 5px; */
     }
@@ -588,6 +588,12 @@ body.dark {
             max-width: 100%;
             padding: 10px;
             margin-inline: 0;
+        }
+
+        .grid-multi-items {
+            /* padding: 0; */
+            margin-inline: 0;
+            gap: 2vw;
         }
 
         .grid-item img {
