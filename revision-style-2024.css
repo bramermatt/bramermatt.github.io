@@ -105,7 +105,7 @@ body.dark {
         margin: 0 auto;
         padding: 0 20px;
         padding: 20px;
-        /* height: 95vh; */
+        height: 89vh;
         overflow: hidden;
         /* border-radius: 5px; */
     }
@@ -356,8 +356,9 @@ body.dark {
 
     .category {
         max-width: 1000px;
-        /* margin: 0 auto; */
+
         margin-inline: 15px;
+        margin: 0 auto;
         padding-bottom: 0;
         margin-bottom: 15px;
         border-bottom: thick solid;
@@ -383,6 +384,15 @@ body.dark {
         opacity: 80%;
     }
 
+    .grid-multi-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 2fr));
+        /* grid-template-columns: max-content; */
+        gap: 1.5vw;
+        margin-inline: 15px;
+        padding: 10px;
+    }
+
 
     .grid-four-items {
         display: grid;
@@ -391,7 +401,19 @@ body.dark {
         gap: 1vw;
         margin-inline: 15px;
         padding: 10px;
+
     }
+
+    .grid-two-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1400px;
+        gap: 1vw;
+        margin-inline: 15px;
+        padding: 10px;
+
+    }
+
 
     .grid-item {
         max-height: 100%;
@@ -479,12 +501,16 @@ body.dark {
     @media screen and (max-width: 1500px) {
         .grid-four-items {
             grid-template-columns: 1fr 1fr;
-            padding: 5px;
-            gap: 2vw;
+            /* padding: 5px; */
+            /* gap: 2vw; */
             margin-inline: 5px;
 
             max-width: 80%;
             margin: 0 auto;
+        }
+
+        .grid-two-items {
+
         }
     }
 
@@ -500,7 +526,11 @@ body.dark {
             box-shadow: none !important;
             border: none;
             border-radius: n0one;
-            height: 100%;
+            /* height: 100%; */
+        }
+
+        .aside-container {
+            height: max-content;
         }
 
         .profile {
@@ -510,6 +540,11 @@ body.dark {
             flex-wrap: wrap;
             max-width: 550px;
             margin: 0 auto;
+        }
+
+        .category {
+            margin-inline: 15px;
+            /* display: block; */
         }
     }
 
@@ -548,10 +583,11 @@ body.dark {
             left: 0;
         }
 
-        .grid-four-items {
+        .grid-four-items, .grid-two-items {
             grid-template-columns: 1fr;
             max-width: 100%;
             padding: 10px;
+            margin-inline: 0;
         }
 
         .grid-item img {
