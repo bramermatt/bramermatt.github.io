@@ -363,7 +363,8 @@
         <ul>
             <h2>Version</h2>
             <div class="version">
-                Loading... <!-- Placeholder text until the version number is fetched -->
+                2024.4.15.1
+                <!-- placeholder -->
               </div>
         </ul>
     </div>
@@ -374,39 +375,7 @@
 
   </footer>
 
-  <script>
-// Replace these variables with your GitHub username, repository name, and personal access token
-const username = 'bramermatt';
-const repository = 'bramermatt.github.io';
-const token = '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';
 
-// Construct the API endpoint URL
-const apiUrl = `https://api.github.com/repos/${username}/${repository}/commits`;
-
-// Fetch data from GitHub API
-fetch(apiUrl, {
-  headers: {
-    Authorization: `token ${token}`
-  }
-})
-.then(response => {
-  if (!response.ok) {
-    throw new Error('Network response was not ok');
-  }
-  return response.json();
-})
-.then(data => {
-  // Extract the latest commit date
-  const latestCommitDate = new Date(data[0].commit.author.date);
-  // Format the date as desired
-  const formattedDate = latestCommitDate.toLocaleDateString();
-  console.log('Latest commit date:', formattedDate);
-})
-.catch(error => {
-  console.error('Error fetching GitHub data:', error);
-});
-
-  </script>
 
 </body>
 </html>
