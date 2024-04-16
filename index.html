@@ -1,977 +1,496 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Matt Bramer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Matt Bramer</title>
 
-    <meta name="color-scheme" content="light dark"/>
+  <link rel="shortcut icon" type="image/x-icon" href="img/icons/mLogo.png">
+  <link rel="stylesheet" href="revision-style-2024.css">
+  <meta name="color-scheme" content="light dark"/>
+  <style>
 
-    <link rel="shortcut icon" type="image/x-icon" href="img/icons/mLogo.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+  </style>
 </head>
 <body>
 
-    <script src="js/searchContent.js"></script>
+    <!-- <nav>
 
-    <!-- matt was here! -->
-
-
-    <nav id="nav">
-<!-- hamburger, logo, home, blogs, reviews, in reviews (dropdown), about, sitemap -->
-
-        <div class="mobile-menu" >
-                <span style="font-size:26px;cursor:pointer" onclick="openNav()">&#9776;</span>
-                <!-- <img src="img/icons/mLogo.png" alt="m logo"> -->
-
-            <ul id="mobile-menu">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#recent">recent</a></li>
-                    <li><a href="#book-reviews">book reviews</a></li>
-                    <li><a href="#blogs">blogs</a></li>
-                    <li><a href="#reviews">reviews</a></li>
-<!--                     
-                    <li><a href="#">home</a></li>
-                    <li><a href="#recent">recent</a></li>
-                    <li><a href="#blogs">blogs</a></li>
-                    <li><a href="#reviews">reviews</a></li>
-                    <li><a href="#in-reviews">in reviews</a></li>
-                    <li><a href="#video">videos</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">site map</a></li> -->
-
-                </div>
-               
-            </ul>
-            <script src="js/mobile-menu.js"></script>
-        </div>
-
-
-<!-- hamburger, logo -->
-
-<!-- logo, home, blogs, reviews, in reviews (dropdown), about, sitemap -->
-        <ul>
-            <!-- <li><img src="img/icons/mLogo.png" alt="m logo"></li> -->
-            <li><a href="#">home</a></li>
-            <li><a href="#recent">recent</a></li>
-            <li><a href="#book-reviews">book reviews</a></li>
-            <li><a href="#blogs">blogs</a></li>
-            <li><a href="#reviews">reviews</a></li>
-
-            <!-- <li><a href="#video">videos</a></li> -->
-
-            
-
-
-
-            <!-- <li>
-                <div class="dropdown">
-                    <button class="dropbtn" onclick="toggleDropdown('dropdown1')">blogs
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content" id="dropdown1">
-                        <a href="#bike-commute-blogs">bike commute blogs</a>
-                        <a href="#book-blogs">book blogs</a>
-                        <a href="#hobby-blogs">hobby blogs</a>
-                        <a href="#faith-blogs">faith blogs</a>
-                        <a href="#family-blogs">family blogs</a>
-
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="dropdown">
-                    <button class="dropbtn" onclick="toggleDropdown('dropdown2')">reviews
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content" id="dropdown2">
-                        <a href="#book-reviews">book reviews</a>
-                        <a href="#movie-reviews">movie reviews</a>
-                        <a href="#tv-show-reviews">tv show reviews</a>
-                        <a href="#tech-reviews">tech reviews</a>
-                        <a href="#game-reviews">game reviews</a>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="dropdown">
-                    <button class="dropbtn" onclick="toggleDropdown('dropdown3')">in reviews
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content" id="dropdown3">
-                        <a href="#cosmere-in-review">cosmere in review</a>
-                        <a href="#dune-in-review">dune in review</a>
-                        <a href="#harry-potter-in-review">harry potter in review</a>
-                        <a href="#kingkiller-chronicle-in-review">kingkiller chronicle in review</a>
-                        <a href="#the-last-of-us-in-review">the last of us in review</a>
-                        <a href="#the-lord-of-the-rings-in-review">the lord of the rings in review</a>
-                        <a href="#malazan-in-review">malazan in review</a>
-                        <a href="#phillip-chase-in-review">phillip chase in review</a>
-                        <a href="#the-realm-of-the-elderlings-in-review">the realm of the elderlings in review</a>
-                        <a href="#star-wars-in-review">star wars in review</a>
-                        <a href="#stephen-king-in-review">stephen king in review</a>
-                        <a href="#wheel-of-time-in-review">wheel of time in review</a>
-                    </div>
-                </div>
-            </li>
-
-
-            <li>
-                <div class="dropdown">
-                    <button class="dropbtn" onclick="toggleDropdown('dropdown4')">follow me
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content" id="dropdown4">
-                        <a href="#">Discord</a>
-                        <a href="#">GoodReads</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">Reddit</a>
-                        <a href="#">Threads</a>
-                        <a href="#">X (Twitter)</a>
-                        <a href="#">YouTube</a>
-                    </div>
-                </div>
-            </li> -->
-
-
-            <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search for content..." title="Content Search">
-
-
-
+        <ul id="mobile-menu">
+            <li id="home"><a href=""><img src="img/icons/mLogo.png" alt=""></a></li>
         </ul>
 
+        <ul id="desktop">
+            <li id="home"><a href=""><img src="img/icons/mLogo.png" alt=""></a></li>
+            <li><a href="">home</a></li>
+            <li><a href="">recent</a></li>
+            <li><a href="">blogs</a></li>
+            <li><a href="">reviews</a></li>
+            <li><a href="">book reviews</a></li>
+        </ul>
+    </nav> -->
 
-        <script src="js/dropdowns.js"></script>
+    <nav id="sidebar">
+        <div class="footer-content">
+
+            <div class="footer-group">
+                <ul>
+                    <h2>Pages</h2>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#recent">Recent</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#book-reviews">Book Reviews</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-group">
+                <ul>
+                    <h2>Blog Topics</h2>
+                    <li><a href="">Bike Commuting Blogs</a></li>
+                    <li><a href="">Book Blogs</a></li>
+                    <li><a href="">Faith Blogs</a></li>
+                    <li><a href="">Interest Blogs</a></li>
+                    <li><a href="">Opinion Blogs</a></li>
+                    <li><a href="">School Blogs</a></li>
+                    <li><a href="">Website Updates</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-group">
+                <ul>
+                    <h2>Review Topics</h2>
+                    <li><a href="">Book Reviews</a></li>
+                    <li><a href="">Food Reviews</a></li>
+                    <li><a href="">Movie Reviews</a></li>
+                    <li><a href="">Tech Reviews</a></li>
+                    <li><a href="">TV Show Reviews</a></li>
+                    <li><a href="">Video Game Reviews</a></li>
+                </ul>
+            </div>     
+        
+        
+        </div>
 
     </nav>
 
-    <script src="js/nav-hide.js"></script>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="img/icons/hamburger.png" alt="Menu">
+    </div>
 
-    <header>
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('show');
+        }
+      </script>
 
-    </header>
-
-
-
-    <div class="main-content">
-
-        <!-- <div>
-            <ul id="myUL">
-                <li>
-                    <a href="#">
-                        <img src="img/docs/2022-in-Review/books-read-in-2022/2020-YearinReview-BestBooks.gif" alt="">
-                    </a>
-            </li>
-                <li><a href="#">Agnes</a></li>
-              
-                <li><a href="#">Billy</a></li>
-                <li><a href="#">Bob</a></li>
-              
-                <li><a href="#">Calvin</a></li>
-                <li><a href="#">Christina</a></li>
-                <li><a href="#">Cindy</a></li>
-              </ul>
-        </div> -->
-
-
-        <div class="full-screen-content">
-            <img src="img/matts/matt-w-everett-in-front-of-bookshelf.png" alt="">
-
-            <div class="full-screen-title">
-                <div class="hero-content-topic">
-                    <a href="">About Me</a>
-                </div>
-
-                <div class="hero-content-title">
-                    <h1>Hi, I'm Matt Bramer!</h1>
-                    <p>I am a husband, a father, Jesus follower, and I'm an avid reader! Content on this site include: book reviews, life updates, hobby talk, and more!</p>
-                    <p><em>Feb 14, 2024</em></p>
-                </div>
-            </div>
-        </div>
-
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-        </div>
-
-            <!-- img left, title content right -->
-            <!-- title content inc: topic, title, tldr, date  -->
 <!-- 
-        <div class="hero-content">
-
-            <div class="hero-content-left">
-                <img  src="img/matts/matt-w-bookshelf-2024.jpg" alt="Matt in front of bookshelf, 2024" id="myImg">
-                <blockquote>Matt in front of bookshelf, 2024</blockquote>
-            </div>
-
-            <div class="hero-content-right">
-                <div class="hero-content-topic">
-                    <a href="">About Me</a>
-                </div>
-
-                <div class="hero-content-title">
-                    <h1>Hi, I'm Matt Bramer!</h1>
-                    <p>I am a husband, a father, Jesus follower, and I'm an avid reader! Content on this side include: book reviews, life updates, hobby talk, and more!</p>
-                    <p><em>Feb 14, 2024</em></p>
-                </div>
-            </div>
-
-        </div> -->
-
-        <script src="js/myModal.js"></script>
+  <header>
+    <h1>Welcome to MattBramer.com</h1>
+  </header> -->
 
 
-        <div class="category" id="recent">
-            <h1>Recent Content</h1>
+
+  <main>
+
+  <aside>
+    <div class="aside-container">
+        <div class="profile">
+
+          <img src="img/matts/matt-in-front-of-window.JPG" alt="Matthew Bramer">
+          
+          <h2>Hi, I'm Matt Bramer (<a href="https://www.threads.net/@bramermatt" target="_blank">@bramermatt</a>)</h2>
+
+          <p class="description">I'm a husband, father, Jesus follower, avid reader, blogger, book reviewer, and I'm studying Computer Science with a focus in Software Engineering. I want to write apps, websites, and books! I mostly write book reviews these days.</p>
         </div>
+      </div>
+  </aside>
 
-        <div class="spread-two-content">
+  <section>
 
-            <!-- <div class="left-content"> -->
-                <!-- <div> -->
 
-            <div class="content">
-                <div>
-                    <a href="2024/4-Apr/10/1494-new-revelations-of-the-americas-before-columbus-by-charles-c-mann-book-review.html">
-                    <h1>1491: New Revelations of the Americas Before Columbus by Charles C. Mann | Book Review | Matt Bramer</h1>
-                    <!-- <p>tl;dr It's time to read the classic.. The Lord of the Rings!</p> -->
-                    <em>April 10, 2024</em>
-                </div>
-                <div>
-                    <img src="img/book/1491-new-revelations-in-america-before-columbus-book-cover.webp" alt="">
-                </a>
-                </div>
-                    
-            </div>
+  <div class="category">
+    <h1>Recent Posts</h1>
+    <p>Feb-Apr 2024</p>
+    <!-- <a href="">read more</a> -->
+  </div>
 
-                    <div class="content">
-                        <div>
-                            <a href="2024/4-Apr/4/founding-brothers-by-joseph-j-ellis-book-review.html">
-                            <h1>Founding Brothers: The Revolutionary Generation by Joseph J. Ellis | Book Review | Matt Bramer</h1>
-                            <!-- <p>tl;dr It's time to read the classic.. The Lord of the Rings!</p> -->
-                            <em>April 4, 2024</em>
-                        </div>
-                        <div>
-                            <img src="img/book/founding-brothers-by-joseph-j-ellis.jpg" alt="">
-                        </a>
-                        </div>
-                            
-                            </div>
+  <div class="grid-multi-items">
 
-                    <div class="content">
-                        <!-- <h1>Recent Video</h1> -->
-                        <div class="iframe-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/F_6qcZJHCI8?si=9numuyzvfHuYyEkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <blockquote>American Sphinx: The Character of Thomas Jefferson by Joseph J. Ellis | Book Review | Matt Bramer on YouTube</blockquote>
-                    </div>
 
-                <div class="content">
-                    <!-- <h1>Recent Video</h1> -->
-                    <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0hSeB7apEpw?si=AFKPCKzSTOEsOs58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <blockquote>Currently Reading | Founding Brothers: The Revolutionary Generation by Joseph J. Ellis on YouTube</blockquote>
-                </div>
-
-            <div class="content">
-                <div>
-                    <a href="2024/3-Mar/29/american-sphinx-by-joseph-j-ellis-book-review.html">
-                    <h1>American Spinx: The Character of Thomas Jefferson by Joseph J. Ellis | Book Review | Matt Bramer</h1>
-                    <!-- <p>tl;dr It's time to read the classic.. The Lord of the Rings!</p> -->
-                    <em>March 29, 2024</em>
-                </div>
-                <div>
-                    <img src="img/book/american-sphinx-thomas-jefferson-book-cover.webp" alt="">
-                </a>
-                </div>
-                    
-                    </div>
-
-                    <div class="content">
-                        <!-- <h1>Recent Video</h1> -->
-                        <div class="iframe-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OY1dEilI03w?si=SK1fofc4Ts39VzhT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <blockquote>My Current Favorite Reading Genre! - Weekly Update: March 23, 2024 on YouTube</blockquote>
-                    </div>
-
-        <div class="content">
-
-            
-
-            <div>
-                <a href="2014/11-Nov/11/watch-dogs-video-game-review/watch-dogs-video-game-review.html">
-                <h1>Watch Dogs (2014) | Video Game Review</h1>
-                <!-- <p>tl;dr It's time to read the classic.. The Lord of the Rings!</p> -->
-                <em>November 11, 2014</em>
-            </div>
-            <div>
-                <img src="2014/11-Nov/11/watch-dogs-video-game-review/watch-dogs.jpg" alt="">
-            </a>
-            </div>
-                
-                </div>
-
-        <div class="content">
-
-            <div>
-                <a href="2024/3-Mar/20/the-silmarillion-book-review.html">
-                <h1>The Silmarillion by J.R.R. Tolkien | Book Review</h1>
-                <!-- <p>tl;dr It's time to read the classic.. The Lord of the Rings!</p> -->
-                <em>March 20, 2024</em>
-            </div>
-            <div>
-                <img src="img/book/the-silmarillion-book-cover.jpg" alt="">
-            </a>
-            </div>
-                
-                </div>
-
-<div class="content">
-
-        <div>
-            <a href="docs/goals-for-mbramer-mar-2024.html">
-            <h1>Goals for MattBramer.Com, as of March 2024</h1>
-            <!-- <p>tl;dr It's time to read the classic.. The Lord of the Rings!</p> -->
-            <em>March 18, 2024</em>
-        </div>
-        <div>
-            <img src="img/docs/updates/mar-2024/index-ss-mar-2024.png" alt="">
-        </a>
-        </div>
-
-</div>
-
-<div class="content">
-
-    <div>
-        <a href="2024/3-Mar/18/the-fall-ryan-cahill-book-review.html">
-        <h1>The Fall by Ryan Cahill | Book Review</h1>
-        <!-- <p>tl;dr It's time to read the classic.. The Lord of the Rings!</p> -->
-        <em>March 18, 2024</em>
+    <div class="grid-item">
+        <a href="posts/2024-4-10-bookreview-1494-new-revelations-of-the-americas-before-columbus-charlescmann.html">
+    <div class="grid-title">
+        <p><strong>Book Review</strong></p>
+        <h1>1491: New Revelations of the Americas Before Columbus by Charles C. Mann</h1>
+        <p>This has been very eye-opening for me, as I've jumped into reading non-fiction.</p>
+        <p>4.10.2024</p>
     </div>
-    <div>
+        </a>
+        <a href="posts/2024-4-10-bookreview-1494-new-revelations-of-the-americas-before-columbus-charlescmann.html">
+    <div class="grid-img">
+        <img src="img/book/1491-new-revelations-in-america-before-columbus-book-cover.webp" alt="">
+    </div>
+        </a>
+
+    </div>
+
+    <div class="grid-item">
+        <a href="posts/2024-4-4-bookreview-founding-brothers-josephjellis.html">
+    <div class="grid-title">
+        <p><strong>Book Review</strong></p>
+        <h1>Founding Brothers: The Revolutionary Generation by Joseph J. Ellis</h1>
+        <p>"Founding Brothers" by Joseph J. Ellis is a fascinating exploration of the relationships and dynamics among America's founding fathers during the Revolutionary era.</p>
+        <p>4.4.2024</p>
+    </div>
+        </a>
+        <a href="posts/2024-4-4-bookreview-founding-brothers-josephjellis.html">
+    <div class="grid-img">
+        <img src="img/book/founding-brothers-by-joseph-j-ellis.jpg" alt="">
+    </div>
+        </a>
+
+    </div>
+
+
+
+    <div class="grid-item-hero">
+
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OY1dEilI03w?si=HpIag1Hozah5B7on" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+    <div class="grid-item-hero">
+
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F_6qcZJHCI8?si=xQh1_4FQ7IQOnfuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+    <div class="grid-item">
+        <a href="posts/2024-3-29-bookreview-american-sphinx-josephjellis.html">
+    <div class="grid-title">
+        <p><strong>Book Review</strong></p>
+        <h1>American Spinx: The Character of Thomas Jefferson by Joseph J. Ellis</h1>
+        <p>This feels, as I begin reading, like this is going to be a strange "review". This is a biography of the character of Thomas Jefferson. A non-fiction book. I primarily read Fantasy Fiction. So, this is going to be fun!</p>
+        <p>3.29.2024</p>
+    </div>
+        </a>
+        <a href="posts/2024-3-29-bookreview-american-sphinx-josephjellis.html">
+    <div class="grid-img">
+        <img src="img/book/american-sphinx-thomas-jefferson-book-cover.webp" alt="">
+    </div>
+        </a>
+
+    </div>
+
+    <div class="grid-item">
+        <a href="posts/2024-3-20-bookreview-the-silmarillion-jrrtolkien.html">
+    <div class="grid-title">
+        <p><strong>Book Review</strong></p>
+        <h1>The Silmarillion by J.R.R. Tolkien</h1>
+        <p>This is dense. This is not a true "narrative", this is a history of Middle Earth and how the world was created, who created it and their offspring. And then the coming of the races from them. This is so difficult to communicate, but this is beautiful. Utterly spectacular writing.</p>
+        <p>3.20.2024</p>
+    </div>
+        </a>
+        <a href="posts/2024-3-20-bookreview-the-silmarillion-jrrtolkien.html">
+    <div class="grid-img">
+        <img src="img/book/the-silmarillion-book-cover.jpg" alt="">
+    </div>
+        </a>
+
+    </div>
+
+    <div class="grid-item">
+        <a href="posts/2024-3-18-bookreview-the-fall-ryancahill.html">
+    <div class="grid-title">
+        <p><strong>Book Review</strong></p>
+        <h1>The Fall by Ryan Cahill</h1>
+        <p>Okay, this is exactly what I needed to read right now. A 100 page prequel story to a fantasy series about dragon riders, mages, sentinel armored magic people. Oh wow, am I excited to read more of this!</p>
+        <p>3.18.2024</p>
+    </div>
+        </a>
+        <a href="posts/2024-3-18-bookreview-the-fall-ryancahill.html">
+    <div class="grid-img">
         <img src="img/book/the-fall-cover-ryan-cahill.jpg" alt="">
-    </a>
     </div>
-
-</div>
-
-<div class="content">
-
-<div>
-    <a href="2024/3-Mar/5/the-lord-of-the-rings-book-review.html">
-    <h1>The Lord of the Rings by J.R.R. Tolkien | Book Review</h1>
-    <p>tl;dr It's time to read the classic.. The Lord of the Rings!</p>
-    <em>March 5, 2024</em>
-</div>
-<div>
-    <img src="img/book/lotr-onevolume.jpg" alt="">
-</a>
-</div>
-
-</div>
-
-                
-
-<div class="content">
-    <div>
-        <a href="docs/hazel-gail-bramer-is-here.html">
-
-        <h1>Hazel Gail Bramer, My Daughter</h1>
-        <p>tl;dr I am a girl-dad now, and I LOVE IT!</p>
-        <em>October 19, 2023 </em>
-    </div>
-    <div>
-        <img src="img/family/hazel.jpeg" alt="">
         </a>
-    </div>
-</div>
-
-
-<div class="content">
-
-    <div>
-        <a href="docs/the-hobbit-review.html">
-            <h1>The Hobbit by J.R.R. Tokien | Book Review</h1>
-            <p>tl;dr It's time to read the classic.. The Hobbit!</p>
-            <em>February 6, 2022</em>
-    </div>
-    <div>
-        <img src="img/book/thehobbit-book-cover.png" alt="">
-    </a>
-    </div>
-
-
-             </div>
-
-
-    <div class="content">
-
-    <div>
-        <a href="2024/1-Jan/30/star-wars-hr-light-of-the-jedi-book-review.html">
-            <h1>Star Wars: The Light of the Jedi by Charles Soule | Book Review | Matt Bramer</h1>
-            <em>January 30, 2024</em>
-    </div>
-    <div>
-        <img src="img/book/sw-hr-light-of-the-jedi.jpg" alt="">
-    </a>
-    </div>
-
-</div>
 
     </div>
 
-<!-- blogs -->
-
-<!-- <div class="full-screen-content">
-    <img src="img/pages/heros/blogs.webp" alt="">
-
-    <div class="full-screen-title">
-        <div class="hero-content-topic">
-            <a href="">Blogs</a>
-        </div>
-
-        <div class="hero-content-title">
-            <h1>What the heck do I think about __________?</h1>
-            <p>Content on this site include: book reviews, life updates, hobby talk, and more!</p>
-        </div>
+    <div class="grid-item">
+        <a href="posts/2024-3-5-bookreview-the-lord-of-the-rings-jrrtolkien.html">
+    <div class="grid-title">
+        <p><strong>Book Review</strong></p>
+        <h1>The Lord of the Rings by J.R.R Tolkien</h1>
+        <p>This is a masterpiece. An absolute work of art. I am currently deeply invested in the world of Middle-Earth, and for good reason. This is spectacular! The characters are so deep, and the world-building feels so real. The magic is something to keep you thinking and guessing. The world history is something that seems to be spanning for ages, there is so much to discover. I LOVE IT!</p>
+        <p>3.5.2024</p>
     </div>
-</div>
-
-        <div class="category" id="blogs">
-            <h1>Blogs</h1>
-        </div>
-
-        <div class="spread-three-content">
-
-            <div class="post-timeline">
-                <h2>Bike Commute Blogs</h2>
-                <ul>
-                    <li><a href="">title</a> date</li>
-                    <li><a href="">title</a> date</li>
-                    <li><a href="">title</a> date</li>
-                    <li><a href="">title</a> date</li>
-                </ul>
-            </div>
-
-            <div class="post-timeline">
-                <h2>Family Blogs</h2>
-                <ul>
-                    <li><a href="">title</a> date</li>
-                    <li><a href="">title</a> date</li>
-                    <li><a href="">title</a> date</li>
-                    <li><a href="">title</a> date</li>
-                </ul>
-            </div>
-
-        </div> -->
-
-<!-- book reviews -->
-        <div class="category" id="book-reviews">
-            <h1>Book Reviews</h1>
-        </div>
-
-        <div class="spread-one-content">
-
-        <div class="post-timeline">
-            <h2>2022</h2>
-            <ol>
-                <li><a href="docs/carrie-book-review.html">Carrie by Stephen King</a> Jan 26, 2022</li>
-                <li><a href="docs/sw-aftermath-review.html">Star Wars: Aftermath by Chuck Wendig</a> Feb 2, 2022</li>
-                <li><a href="docs/the-hobbit-review.html">The Hobbit by J.R.R. Tolkien</a> Feb 6, 2022</li>
-                <li><a href="https://www.goodreads.com/review/show/4518403477" target="_blank">The Silent Patient by Alex Michaelides</a> Feb 8, 2022</li>
-                <li><a href="docs/hp-1-review.html">Harry Potter and the Sorcerer's Stone by J.K. Rowling</a> Feb 10, 2022</li>
-                <li><a href="docs/1984-review.html">1984 by George Orwell</a> Feb 15, 2022</li>
-                <li><a href="docs/dune-review.html">Dune by Frank Herbert</a> Mar 8, 2022</li>
-                <li><a href="docs/eye-revew.html">The Eye of the World by Robert Jordan</a> April 8, 2022</li>
-                <li><a href="docs/wok-review.html">The Way of Kings by Brandon Sanderson</a> May 16, 2022</li>
-                <li><a href="docs/elantris-review.html">Elantris by Brandon Sanderson</a> May 24, 2022</li>
-                <li><a href="docs/twilight-review.html">Twilight by Stephenie Meyer</a> July 11, 2022</li>
-                <li><a href="docs/1984-review.html">Harry Potter and the Chamber of Secrets by J.K. Rowling</a> Aug 22, 2022</li>
-                <li><a href="docs/words-of-radiance.html">Words of Radiance by Brandon Sanderson</a> Oct 12, 2022</li>
-                <li><a href="docs/warbreaker-review.html">Warbreaker by Brandon Sanderson</a> Oct 27, 2022</li>
-                <li><a href="docs/edgedancer-review.html">Edgedancer by Brandon Sanderson</a> Nov 8, 2022</li>
-                <li><a href="docs/oathbringer-review.html">Oathbringer by Brandon Sanderson</a> Nov 29, 2022</li>
-            </ol>
-        </div>
-
-        <div class="post-timeline">
-            <h2>2023</h2>
-            <ol>
-                <li><a href="docs/thegreathunt-review.html">The Great Hunt by Robert Jordan</a> Jan 4, 2023</li>
-                <li><a href="docs/attack-on-titan1-review.html">Attack on Titan, Vol 1 by Hajime Isayama</a> Jan 5, 2023</li>
-                <li><a href="docs/the-dragon-reborn-review.html">The Dragon Reborn by Robert Jordan</a> Jan 12, 2023</li>
-                <li><a href="docs/hunger-games-book-review.html">The Hunger Games by Suzanne Collins</a> Jan 18, 2023</li>
-                <li><a href="docs/the-terminal-list-review.html">The Terminal List by Jack Carr</a> Jan 28, 2023</li>
-                <li><a href="docs/the-martian-review.html">The Martian by Andy Weir</a> Feb 3, 2023</li>
-                <li><a href="docs/star-wars-brotherhood.html">Star Wars: Brotherhood by Mike Chen</a> Feb 12, 2023</li>
-                <li><a href="docs/the-shadow-rising-review.html">The Shadow Rising by Robert Jordan</a> Mar 5, 2023</li>
-                <li><a href="docs/fellowship-of-the-ring-book-review.html">The Fellowship of the Ring by J.R.R. Tolkien</a> Mar 9, 2023</li>
-                <li><a href="2023/3-Mar/13/adventures-of-sherlock-holmes-review.html">The Adventures of Sherlock Holmes by Sir Arthur Conan Doyle</a> Mar 11, 2023</li>
-                <li><a href="docs/mistborn-the-final-empire-book-review.html">Mistborn: The Final Empire by Brandon Sanderson</a> Mar 28, 2023</li>
-                <li><a href="docs/a-game-of-thrones-review.html">A Game of Thrones by George R.R. Martin</a> April 7, 2023</li>
-                <li><a href="docs/the-fires-of-heaven-review.html">The Fires of Heaven by Robert Jordan</a> May 2, 2023</li>
-                <li><a href="docs/lord-of-chaos.html">Lord of Chaos by Robert Jordan</a> June 3, 2023</li>
-                <li><a href="docs/a-crown-of-swords-review.html">A Crown of Swords by Robert Jordan</a> June 16, 2023</li>
-                <li><a href="docs/the-path-of-daggers-review.html">The Path of Daggers by Robert Jordan</a> July 6, 2023</li>
-                <li><a href="docs/winters-heart-book-review.html">Winter's Heart by Robert Jordan</a> July 21, 2023</li>
-                <li><a href="docs/crossroads-of-twilight-book-review.html">Crossroads of Twilight by Robert Jordan</a> July 28, 2023</li>
-                <li><a href="docs/knife-of-dreams-book-review.html">Knife of Dreams by Robert Jordan</a> Aug 8, 2023</li>
-                <li><a href="docs/the-gathering-storm-book-review.html">The Gathering Storm by Robert Jordan & Brandon Sanderson</a> Aug 17, 2023</li>
-                <li><a href="docs/towers-of-midnight-book-review.html">Towers of Midnight by Robert Jordan & Brandon Sanderson</a> Aug 25, 2023</li>
-                <li><a href="docs/new-spring-book-review.html">New Spring: The Novel by Robert Jordan</a> Aug 29, 2023</li>
-                <li><a href="docs/a-memory-of-light-book-review.html">A Memory of Light by Robert Jordan & Brandon Sanderson</a> Sep 6, 2023</li>
-                <li><a href="docs/tress-of-the-emerald-sea-book-review.html">Tress of the Emerald Sea by Brandon Sanderson</a> Sep 12, 2023</li>
-                <li><a href="docs/the-lightning-theif-book-review.html">The Lightning Thief by Rick Riordan</a> Sep 14, 2023</li>
-                <li><a href="docs/carrie-book-review.html">Carrie by Stephen King</a> (Reread) Sep 25, 2023</li>
-                <li><a href="docs/the-shining-book-review.html">The Shining by Stephen King</a> Sep 25, 2023</li>
-                <li><a href="docs/it-book-review.html">IT by Stephen King</a> Oct 5, 2023</li>
-                <li><a href="docs/harry-potter-and-the-prisoner-of-azkaban.html">Harry Potter and the Prisoner of Azkaban by J.K. Rowling</a> Oct 6, 2023</li>
-                <li><a href="docs/doctor-sleep-book-review.html">Doctor Sleep by Stephen King</a> Oct 13, 2023</li>
-                <li><a href="docs/the-way-of-edan-book-review.html">The Way of Edan by Dr. Philip Chase</a> Oct 17, 2023</li>
-                <li><a href="docs/dawnshard-book-review.html">Dawnshard by Brandon Sanderson</a> Nov 10, 2023</li>
-                <li><a href="docs/rhythm-of-war-book-review.html">Rhythm of War by Brandon Sanderson</a> Nov 27, 2023</li>
-                <li><a href="docs/mistborn-the-well-of-ascension-book-review.html">Mistborn: The Well of Ascension by Brandon Sanderson</a> Dec 4, 2023</li>
-                <li><a href="docs/mistborn-the-hero-of-ages-book-review.html">Mistborn: The Hero of Ages by Brandon Sanderson</a> Dec 11, 2023</li>
-                <li><a href="docs/mistborn-the-allow-of-law-book-review.html">Mistborn: The Alloy of Law by Brandon Sanderson</a> Dec 18, 2023</li>
-                <li><a href="docs/mistborn-shadows-of-self-book-review.html">Mistborn: Shadows of Self by Brandon Sanderson</a> Dec 26, 2023</li>
-            </ol>
-        </div>
-
-        <div class="post-timeline">
-            <h2>2024</h2>
-            <ol>
-                <li><a href="docs/mistborn-the-bands-of-mourning-book-review.html">Mistborn: The Bands of Mourning by Brandon Sanderson</a> Jan 2, 2024</li>
-                <li><a href="docs/mistborn-secret-history.html">Mistborn: Secret History by Brandon Sanderson</a> Jan 3, 2024</li>
-                <li><a href="docs/mistborn-the-lost-metal-book-review.html">Mistborn: The Lost Metal by Brandon Sanderson</a> Dec 26, 2024</li>
-                <li><a href="docs/malazan-gardens-of-the-moon-book-review.html">Gardens of the Moon by Steven Erikson</a> Jan 25, 2024</li>
-                <li><a href="docs/star-wars-hr-light-of-the-jedi-book-review.html">Star Wars: Light of the Jedi by Charles Soule</a> Jan 30, 2024</li>
-                <li><a href="docs/assassins-apprentice-book-review.html">Assassin's Apprentice by Robin Hobb</a> Feb 6, 2024</li>
-                <li><a href="docs/the-hobbit-review.html">The Hobbit by J.R.R. Tolkien</a> (Reread) Feb 27, 2024</li>
-                <li><a href="docs/the-lord-of-the-rings-book-review.html">The Lord of the Rings by J.R.R. Tolkien</a> Mar 12, 2024</li>
-                <li><a href="docs/the-fall-ryan-cahill-book-review.html">The Fall by Ryan Cahill</a> Mar 18, 2024</li>
-                <li><a href="docs/the-silmarillion-book-review.html">The Silmarillion by J.R.R. Tolkien</a> Mar 20, 2024</li>
-                <li><a href="2024/3-Mar/29/american-sphinx-by-joseph-j-ellis-book-review.html">American Spinx: The Character of Thomas Jefferson by Joseph J. Ellis</a> Mar 29, 2024</li>
-                <li><a href="2024/4-Apr/4/founding-brothers-by-joseph-j-ellis-book-review.html">Founding Brothers: The Revolutionary Generation by Joseph J. Ellis</a> April 4, 2024</li>
-                <li><a href="2024/4-Apr/10/1494-new-revelations-of-the-americas-before-columbus-by-charles-c-mann-book-review.html">1491: New Revelations of the Americas Before Columbus by Charles C. Mann</a> April 10, 2024</li>
-            </ol>
-        </div>
+        </a>
+        <a href="posts/2024-3-5-bookreview-the-lord-of-the-rings-jrrtolkien.html">
+    <div class="grid-img">
+        <img src="img/book/lotr-onevolume.jpg" alt="">
+    </div>
+        </a>
 
     </div>
 
-
-    <!-- blogs -->
-
-    <div class="category" id="blogs">
-        <h1>Blogs</h1>
+    <div class="grid-item">
+        <a href="posts/2024-2-20-familyblog-happy-matt-feb-2024.html">
+    <div class="grid-title">
+        <p><strong>Family Blog</strong></p>
+        <h1>Happy Matt</h1>
+        <p>I am really excited to say this, but I'm happy. It's been a stressful few months for me.</p>
+        <p>2.20.2024</p>
     </div>
-
-    <div class="spread-one-content">
-
-    <div class="post-timeline">
-        <h2>2021</h2>
-        <ol>
-            <li><a href="2021/10-Oct/4/i-read-the-whole-bible-blog/bible-reading.html">I Read the WHOLE BIBLE</a> | <a href="">Faith</a> Oct 4, 2021</li>
-            <li><a href="2021/10-Oct/31/forgiveness-in-a-cancel-culture-blog/forgiveness-cancel-culture.html">Forgiveness In a Cancel Culture</a> | <a href="">Faith</a> Oct 31, 2021</li>
-        </ol>
+        </a>
+        <a href="posts/2024-2-20-familyblog-happy-matt-feb-2024.html">
+    <div class="grid-img">
+        <img src="img/family/hazel-couch-4mon.jpg" alt="">
     </div>
-
-    <div class="post-timeline">
-        <h2>2022</h2>
-        <ol>
-            <li><a href="2022/6-Jun/16/matt-bramer-dot-com-website-update-one/mattbramer(dot)come first update.html">mattbramer.com (update one)</a> | <a href="">website update</a> June 16, 2022</li>
-            <li><a href="2022/6-Jun/22/matt-bramer-dot-com-website-update-two/mbdc second update.html">mattbramer.com (update two) | Website Update</a> June 22, 2022</li>
-            <li><a href="2022/6-Jun/25/bike-commute-blog-part-one/bike-commute-part-one.html">Bike Commute Blog: Part One | Bike Commuting</a> June 25, 2022</li>
-            <li><a href="2022/7-Jul/3/bike-commute-blog-part-two/bike-commute-part-two.html">Bike Commute Blog: Part Two | Bike Commuting</a> July 3, 2022</li>
-            <li><a href="2022/7-Jul/4/july-interests-2022-blog/july-22.html">My Interests: July 2022 | Interests</a> July 4, 2022</li>
-            <li><a href="2022/7-Jul/4/matt-bramer-dot-com-website-update-three/mbdc-third-update.html">mattbramer.com (update three) | Website Update</a> July 4, 2022</li>
-            <li><a href="2022/7-Jul/4/who-cares-really-blog/who-cares-really.html">Who Cares, Really? | Opinion</a> July 4, 2022</li>
-        </ol>
-    </div>
+        </a>
 
     </div>
 
-
-    <!-- reviews -->
-
-    <div class="category" id="reviews">
-        <h1>Reviews</h1>
+    <div class="grid-item">
+        <a href="posts/2024-2-6-bookreview-assassins-apprentice-robinhobb.html">
+    <div class="grid-title">
+        <p><strong>Book Review</strong></p>
+        <h1>Assassin's Apprentice by Robin Hobb</h1>
+        <p>Well, I've heard Robin Hobb had excellent prose. Those reviews did not exaggerate one bit. Wow, this is beautifully written.</p>
+        <p>2.6.2024</p>
     </div>
-
-    <div class="spread-one-content">
-
-    <div class="post-timeline">
-        <h2>2014</h2>
-        <ol>
-            <li><a href="2014/11-Nov/11/watch-dogs-video-game-review/watch-dogs-video-game-review.html">Watchdogs | Video Game Review</a> Nov 11, 2014</li>
-        </ol>
+        </a>
+        <a href="posts/2024-2-6-bookreview-assassins-apprentice-robinhobb.html">
+    <div class="grid-img">
+        <img src="img/book/assassins-apprentice.jpg" alt="">
     </div>
+        </a>
 
-    <div class="post-timeline">
-        <h2>2016</h2>
-        <ol>
-            <li><a href="2016/1-Jan/13/arbys-french-dip.html">Arby's French Dip & Swiss | Food Review</a> Jan 13, 2016</li>
-            <li><a href="2016/5-May/4/fight-club-review.html">Fight Club | Movie Review</a> May 4, 2016</li>
-            <li><a href="2016/5-May/9/google-cardboard-tech-review/g-cardboard.html">Google Cardboard | Tech Review</a> May 9, 2016</li>
-            <li><a href="2016/5-May/29/star-wars-ep1-review.html">Star Wars: Episode 1: The Phantom Menace | Movie Review</a> May 29, 2016</li>
-            <li><a href="2016/12-Dec/16/rouge-one-review.html">Star Wars: Rogue One | Movie Review</a> Dec 16, 2016</li>
-        </ol>
-    </div>
-
-    <div class="post-timeline">
-        <h2>2018</h2>
-        <ol>
-            <li><a href="2018/1-Jan/13/greatest-showman-review.html">The Greatest Showman | Movie Review</a> Jan 13, 2018</li>
-            <li><a href="2018/5-May/26/solo-review.html">Star Wars: Solo | Movie Review</a> May 26, 2018</li>
-            <li><a href="2018/9-Sep/24/uncharted-drakes-fortune-video-game-review/uncharted-1.html">Uncharted | Video Game Review</a> Sep 24, 2018</li>
-            <li><a href="2018/9-Sep/29/hp-3830-printer-tech-review/hp-3830.html">HP 3830 | Tech Review</a> Sep 29, 2018</li>
-        </ol>
-    </div>
-
-    <div class="post-timeline">
-        <h2>2019</h2>
-        <ol>
-            <li><a href="2019/3-Mar/28/spider-man-ps4-video-game-review/spider-manPS4-review.html">Spider-Man PS4 | Video Game Review</a> March 28, 2019</li>
-        </ol>
-    </div>
-
-    <div class="post-timeline">
-        <h2>2022</h2>
-        <ol>
-            <li><a href="2022/1-Jan/13/tony-cheese-review.html">Tony's Cheese Pizza | Food Review</a> Jan 13, 2022</li>
-            <li><a href="2022/6-Jun/22/obi-wan-season-one-tv-show-review/obi-wan-season-one-review.html">Obi-Wan Season One | TV Show Review</a> June 22, 2022</li>
-            <li><a href="2022/6-Jun/27/tgm-review.html">Top Gun: Maverick | Movie Review</a> June 27, 2022</li>
-        </ol>
     </div>
 
 
 
 
+  </div>
+  </section>
+  </main>
 
+  <main>
+    <section>
 
-        <!-- <div id="blogs"></div>
-
-        <div class="category" id="bike-commute-blogs">
-            <h1>Bike Commute Blogs</h1>
-        </div>
-
-        <div class="spread-two-content">
-            <div class="center-content">
-                <div class="content">
-                    <a href="pages/bike-commute.html">
-                    <img src="img/docs/bike-commute-blogs/part-ten/matt-w-bike.JPG" alt="">
-                    <h1>Bike Commute Blogs</h1>
-                    <p>Find all Bike Commute Blogs here!</p>
-                </div></a>
-            </div>
-
-            <div class="right-content">
-                <div class="content">
-                    <a href="docs/bike-commute-part-ten.html">
-                    <h1>Bike Commute Blog: Part Ten</h1>
-                    <p>I have been riding my bike since the beginning of August until now. And, at the start of this week October 18, 2022 the weather has gotten very cold...</p>
-                    <em>October 18, 2022</em>
-                </div></a>
-            </div>
-        </div>
-
-
-
-        <div class="category" id="book-blogs">
-            <h1>Book Blogs</h1>
-        </div>
-
-        <div class="spread-two-content">
-            <div class="center-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-
-            <div class="right-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-        </div>
-
-        <div class="category" id="hobby-blogs">
-            <h1>Hobby Blogs</h1>
-        </div>
-
-        <div class="spread-two-content">
-            <div class="center-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-
-            <div class="right-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-        </div>
-
-        <div class="category" id="faith-blogs">
-            <h1>Faith Blogs</h1>
-        </div>
-
-        <div class="spread-two-content">
-            <div class="center-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-
-            <div class="right-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-        </div>
-
-        <div class="category" id="family-blogs">
-            <h1>Family Blogs</h1>
-        </div>
-
-        <div class="spread-two-content">
-            <div class="center-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-
-            <div class="right-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="reviews"></div>
-
-
-        <div class="category" id="book-reviews">
-            <h1>Book Reviews</h1>
-        </div>
-
-        <div class="spread-two-content">
-            <div class="center-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-
-            <div class="right-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-        </div>
-
-        <div class="category" id="movie-reviews">
-            <h1>Movie Reviews</h1>
-        </div>
-
-        <div class="spread-two-content">
-            <div class="center-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-
-            <div class="right-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-        </div>
-
-        <div class="category" id="tv-show-reviews">
-            <h1>TV Show Reviews</h1>
-        </div>
-
-        <div class="spread-two-content">
-            <div class="center-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-
-            <div class="right-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-        </div>
-
-        <div class="category" id="tech-reviews">
-            <h1>Tech Reviews</h1>
-        </div>
-
-        <div class="spread-two-content">
-            <div class="center-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-
-            <div class="right-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-        </div>
-
-        <div class="category" id="game-reviews">
-            <h1>Game Reviews</h1>
-        </div>
-
-        <div class="spread-two-content">
-            <div class="center-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-
-            <div class="right-content">
-                <div class="content">
-                    <img src="img/placeholder-video.jpeg" alt="">
-                    <h1>title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt maxime quas, nisi aut magni ut iusto esse quia distinctio commodi, ipsum veritatis corporis, fugiat eligendi nam earum asperiores corrupti fuga.</p>
-                    <em>lorem</em>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="in-review"></div>
-
-        <div class="category" id="cosmere-in-review">
-            <h1>Cosmere In Review</h1>
-        </div>
-
-        <div class="spread-two-content">
-            <div class="center-content">
-                <div class="content">
-                    <a href="">
-                    <img src="img/pages/heros/cosmere.webp" alt="">
-                    <h1>Cosmere in Review</h1>
-                    <p>Find all my content regarding Brandon Sanderson's Cosmere HERE!</p>
-                    <em>lorem</em>
-                </a>
-                </div>
-            </div>
-
-            <div class="right-content">
-                <div class="content">
-                    <a href="docs/mistborn-the-lost-metal-book-review.html">
-                    <h1>Mistborn: The Lost Metal Book Review</h1>
-                    <p>Let's just say, as I start this last read of the latest release in the Mistborn saga, I want this to be good. I want to be happy as I leave Mistborn....</p>
-                    <em>January 4, 2024</em></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="category" id="dune-in-review">
-            <h1>Dune In Review</h1>
-        </div>
-
-        <div class="spread-two-content">
-            <div class="center-content">
-                <div class="content">
-                    <a href="">
-                    <img src="img/pages/heros/dune-hero.jpg" alt="">
-                    <h1>DUNE in Review</h1>
-                    <p>Find all my content regarding DUNE HERE!</p>
-                    <em>lorem</em>
-                </a>
-                </div>
-            </div>
-
-            <div class="right-content">
-                <div class="content">
-                    <a href="docs/dune-review.html">
-                    <h1>Dune Book Review</h1>
-                    <p>A incredible story, amazing characters, a rich world; with so much more to tell with many more books!</p>
-                    <em>March 8, 2022</em></a>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- main-content -->
-        </div>
-
-
-    </div>
-
-    <footer>
-        <a href=""><img src="img/icons/mLogo.png"></a>
-    </footer>
+  <div class="category">
+    <h1>Trending Topics</h1>
     
+  </div>
+
+  <div class="grid-multi-items">
+
+    <div class="grid-item">
+        <a href="posts/2022-10-18-bikecommuteblog-bike-commute-part-ten.html">
+    <div class="grid-title">
+        <p><strong>Bike Commute Blog</strong></p>
+        <h1>Bike Commuting: Part Ten</h1>
+        <p><strong>tl;dr</strong> I have been riding my bike since the beginning of August until now. And, at the start of this week October 18, 2022 the weather has gotten very cold...</p>
+        <p>10.18.2022</p>
+    </div>
+        </a>
+        <a href="posts/2022-10-18-bikecommuteblog-bike-commute-part-ten.html">
+    <div class="grid-img">
+        <img src="2022/10-Oct/18/bike-commute-blog-part-ten/bike-commute-blog-part-ten/matt-w-bike.JPG" alt="">
+    </div>
+        </a>
+
+  </div>
+
+    <div class="grid-item">
+        <a href="posts/2021-10-31-faithblog-forgiveness-cancel-culture.html">
+    <div class="grid-title">
+        <p><strong>Faith Blog</strong></p>
+        <h1>Forgiveness in a Cancel Culture</h1>
+        <p>I'm not going to go into detail about the names mentioned, because I don't know the full story. I just know, there have been things said about these names and people are upset by what's been said.</p>
+        <p>10.31.2022</p>
+    </div>
+        </a>
+        <a href="posts/2021-10-31-faithblog-forgiveness-cancel-culture.html">
+    <div class="grid-img">
+        <img src="2021/10-Oct/31/forgiveness-in-a-cancel-culture-blog/ye.jpeg" alt="">
+    </div>
+        </a>
+
+</div>
+
+    <div class="grid-item">
+        <a href="posts/2023-1-17-opinionblog-star-wars-order.html">
+    <div class="grid-title">
+        <p><strong>Opinion Blog</strong></p>
+        <h1>The "Correct" Order to Watch Star Wars</h1>
+        <p>I absolutely love Star Wars, seriously, I love it. I watch Star Wars all the time. There is always a question of what order to watch these in, and I have my opinion.. do you?</p>
+        <p>1.17.2023</p>
+    </div>
+        </a>
+        <a href="posts/2023-1-17-opinionblog-star-wars-order.html">
+    <div class="grid-img">
+        <img src="2023/1-Jan/17/star-wars-order-blog/star-wars-hero.jpg" alt="">
+    </div>
+        </a>
+
+    </div>
+
+    <div class="grid-item">
+        <a href="posts/2016-5-9-techreview-google-cardboard.html">
+    <div class="grid-title">
+        <p><strong>Tech Review</strong></p>
+        <h1>The Google Cardboard (2016) by Google</h1>
+        <p>I absolutely love Star Wars, seriously, I love it. I watch Star Wars all the time. There is always a question of what order to watch these in, and I have my opinion.. do you?</p>
+        <p>5.9.2016</p>
+    </div>
+        </a>
+        <a href="posts/2016-5-9-techreview-google-cardboard.html">
+    <div class="grid-img">
+        <img src="2016/5-May/9/google-cardboard-tech-review/g-cardboard.jpeg" alt="">
+    </div>
+        </a>
+
+    </div>
+
+  
+
+  </div>
+
+    <!-- <div class="category">
+        <h1>Recent Videos</h1>
+        <a href="https://www.youtube.com/channel/UC1OsGesye2hEKRl_dSqwhUw" target="_blank">watch more</a>
+    </div>
+
+    <div class="grid-two-items">
+        
+        <div class="grid-item-hero">
+
+            <div class="iframe-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F_6qcZJHCI8?si=xQh1_4FQ7IQOnfuK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+    
+        </div>
+    
+        <div class="grid-item-hero">
+    
+            <div class="iframe-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OY1dEilI03w?si=HpIag1Hozah5B7on" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+    
+        </div>
+
+    </div> -->
+
+
+
+    <!-- <div class="category">
+        <h1>There WILL BE MORE!</h1>
+        <a href="">Read More</a>
+    </div>
+
+
+    <div class="text-container">
+        <h2>More to come!</h2>
+        <p>Stay tuned... also, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo officiis culpa sequi. Enim amet a inventore officiis iste nesciunt non nisi sit perferendis tempore at minima, eius magnam odio temporibus?</p>
+    </div> -->
+
+
+
+</section>
+
+
+</main>
+
+  <footer>
+
+    <div class="footer-content">
+
+    <div class="footer-group">
+        <ul>
+            <h2>Pages</h2>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recent">Recent</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#book-reviews">Book Reviews</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-group">
+        <ul>
+            <h2>Blog Topics</h2>
+            <li><a href="">Bike Commuting Blogs</a></li>
+            <li><a href="">Book Blogs</a></li>
+            <li><a href="">Faith Blogs</a></li>
+            <li><a href="">Interest Blogs</a></li>
+            <li><a href="">Opinion Blogs</a></li>
+            <li><a href="">School Blogs</a></li>
+            <li><a href="">Website Updates</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-group">
+        <ul>
+            <h2>Review Topics</h2>
+            <li><a href="">Book Reviews</a></li>
+            <li><a href="">Food Reviews</a></li>
+            <li><a href="">Movie Reviews</a></li>
+            <li><a href="">Tech Reviews</a></li>
+            <li><a href="">TV Show Reviews</a></li>
+            <li><a href="">Video Game Reviews</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-group">
+        <ul class="social-links">
+            <h2>Follow Me!</h2>
+        <li><a href="https://twitter.com/bramermatt" target="_blank"><img src="img/icons/twitter.svg" alt="Twitter"></a></li>
+        <!-- <li><a href="https://facebook.com/yourfacebook"><img src="img/icons/facebook.svg" alt="Facebook"></a></li> -->
+        <li><a href="https://www.youtube.com/channel/UC1OsGesye2hEKRl_dSqwhUw" target="_blank"><img src="img/icons/youtube.svg" alt="Facebook"></a></li>
+        <li><a href="https://www.instagram.com/bramermatt/" target="_blank"><img src="img/icons/instagram.svg" alt="Facebook"></a></li>
+        <li><a href="https://www.threads.net/@bramermatt" target="_blank"><img src="img/icons/Threads_(app)_logo.svg" alt="Facebook"></a></li>
+        <!-- <li><a href="https://facebook.com/yourfacebook"><img src="img/icons/discord-icon.svg" alt="Facebook"></a></li> -->
+        </ul>
+    </div>
+
+    <!-- <ul class="footer-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#recent">Recent</a></li>
+      <li><a href="#blogs">Blogs</a></li>
+      <li><a href="#book-reviews">Book Reviews</a></li>
+    </ul>
+
+    <ul class="footer-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#recent">Recent</a></li>
+      <li><a href="#blogs">Blogs</a></li>
+      <li><a href="#book-reviews">Book Reviews</a></li>
+    </ul> -->
+
+
+
+    <div class="footer-group">
+        <ul>
+            <h2>Version</h2>
+            <div class="version">
+                2024.4.15.3
+                <!-- placeholder -->
+              </div>
+        </ul>
+    </div>
+
+
+
+</div>
+
+  </footer>
+
+
+
 </body>
 </html>
