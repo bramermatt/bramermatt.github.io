@@ -328,7 +328,11 @@ body.dark {
         overflow: hidden;
         padding-top: 60px;
 
+        overflow: scroll;
+    }
 
+    nav::-webkit-scrollbar {
+        display: none;
     }
 
     nav.show {
@@ -650,6 +654,8 @@ body.dark {
             gap: 2vh;
         }
 
+
+
         .grid-item {
             display: block;
         }
@@ -661,14 +667,20 @@ body.dark {
 
     }
 
+    @media screen and (max-width: 400px) {
+        .grid-multi-items {
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        }
+
+    }
+
 
     @media screen and (max-width: 300px) {
         .footer-content {
             display: inline;
         }
 
-
-
+ 
 
 
 
