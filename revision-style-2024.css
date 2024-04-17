@@ -330,12 +330,12 @@ body.dark {
         padding-bottom: 40vh;
         padding-left: 10px;
         padding-right: 10px;
-        overflow: scroll;
+        overflow-y: scroll;
     }
 
-    nav::-webkit-scrollbar {
+    /* nav::-webkit-scrollbar {
         display: none;
-    }
+    } */
 
     nav.show {
         left: 0;
