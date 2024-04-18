@@ -11,14 +11,41 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="img/icons/mLogo.png">
 
-    <link rel="stylesheet" href="standard-styles.css">
+    <link rel="stylesheet" href="revision-style-2024.css">
 
 </head>
 <body>
 
-    <header>
+    <!-- <header>
 
-    </header>
+    </header> -->
+
+    <!-- <nav id="sidebar">
+        <div class="footer-content">
+
+            <div class="footer-group">
+                <ul>
+                    <h2>Pages</h2>
+                    <li><a href="#home">Home</a></li>
+                </ul>
+            </div>
+        
+  
+        
+        
+        </div>
+
+    </nav> -->
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <a href="index.html"><img src="img/icons/hamburger.png" alt="Menu"></a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('show');
+        }
+      </script>
 
     <nav>
         <a href="">home</a>
@@ -27,20 +54,17 @@
     </nav>
 
     <aside>
+        <div class="aside-container">
         <!-- fixme - title img -->
         <img src="img/placeholder-video.jpeg" alt="">
-        <figcaption>placeholder</figcaption>
-
-        <!-- fixme - tags -->
-        <h2>Tags</h2>
-        <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odio impedit delectus tenetur sed quisquam alias dolorum veritatis! Atque quaerat eaque eum eius possimus! Voluptatibus, laborum velit. Deleniti, doloremque sapiente?</a>
-        <a href="">link</a>
-        <a href="">link</a>
+        <blockquote>placeholder</blockquote>
+        </div>
     </aside>
 
     <main>
 
 
+        <section>
 
     
         <article>
@@ -51,7 +75,7 @@
 
 
             <img src="img/placeholder-video.jpeg" alt="">
-            <figcaption>placeholder</figcaption>
+            <blockquote>placeholder</blockquote>
 
             <figure>
                 <h2>Tags</h2>
@@ -75,7 +99,7 @@
                 <div class="iframe-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/uCdXijk1kgQ?si=OCHrOX_R0OiImhnn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloremque vitae quo aspernatur. Quae dicta <a href="">link</a> explicabo eligendi tempore quidem assumenda harum placeat, delectus officiis perspiciatis repudiandae blanditiis, quos deserunt.</figcaption>
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloremque vitae quo aspernatur. Quae dicta <a href="">link</a> explicabo eligendi tempore quidem assumenda harum placeat, delectus officiis perspiciatis repudiandae blanditiis, quos deserunt.</blockquote>
             </details>
 
             <details>
@@ -97,22 +121,22 @@
             <div class="iframe-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/uCdXijk1kgQ?si=OCHrOX_R0OiImhnn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloremque vitae quo aspernatur. Quae dicta recusandae explicabo eligendi tempore quidem assumenda harum placeat, delectus officiis perspiciatis repudiandae blanditiis, quos deserunt.</figcaption>
+            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloremque vitae quo aspernatur. Quae dicta recusandae explicabo eligendi tempore quidem assumenda harum placeat, delectus officiis perspiciatis repudiandae blanditiis, quos deserunt.</blockquote>
 
 
 
         </article>
 
 <!-- fixme - tags -->
-        <figure>
+        <!-- <figure>
             <h2>Tags</h2>
             <a href="">2024</a>
             <a href="">Reviews</a>
             <a href="">Book Reviews</a>
             <a href="">Lord of the Rings in Review</a>
-        </figure>
+        </figure> -->
 
-
+    </section>
 
     </main>
 
