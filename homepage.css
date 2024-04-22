@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+}
+
+hr {
+    margin: 10px;
+}
+
+html {
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+body.light {
+    --text: dark;
+    --background: #f5f5f5;
+}
+
+body.dark {
+    --text: white;
+    --background: dark;
+}
+
+
+nav {
+    /* box-shadow: 0px 0px 10px grey; */
+    /* padding: 15px; */
+
+    background-color: #333;
+    color: #fff;
+    /* padding: 10px 20px; */
+    position: fixed; /* Fixed position to keep the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is on top of other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Ensure all items are in a single line */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav li {
+    padding: 15px;
+    text-wrap: nowrap;
+}
+
+nav li a:hover, .hero-right li a:hover, .category a:hover, .active {
+    border-bottom: thick solid;
+}
+
+nav li img {
+    max-height: 2.5vh;
+    padding: 0;
+}
+
+nav a:link, nav a:visited, .hero-right a:link, .hero-right a:visited {
+    color: var(--text);
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 11px;
+}
+
+.category a:link, .category a:visited {
+    color: var(--text);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+nav::-webkit-scrollbar {
+    display: none;
+}
+
+
+main {
+    margin-top: .5vh;
+    margin-bottom: 10vh;
+}
+
+
+.hero {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1vw;
+}
+
+.hero-left img {
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.hero-right {
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.hero-right ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+}
+
+.hero-right li {
+    padding: 10px;
+}
+
+.topic {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 12px;
+}
+
+.topic-left img {
+    max-height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.topic-left blockquote {
+    max-width: 60%;
+}
+
+.topic-right {
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+
+.category {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.category h1 {
+    margin: 0;
+}
+
+
+.grid-four-items {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1vw;
+    padding: 12px;
+}
+
+.grid-two-items {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+    padding: 12px;
+}
+
+.grid-item {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.grid-item h1 {
+    line-height: 1;
+}
+
+.grid-item p {
+    max-width: 80%;
+}
+
+.grid-item a:link, .grid-item a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.grid-item img {
+    max-height: 20vh;
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-item:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    nav {
+        overflow: scroll;
+    }
+
+    .hero, .topic {
+        display: block;
+    }
+    
+    .grid-four-items {
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw;
+    }
+
+    .grid-item p {
+        max-width: 100%;
+    }
+
+    .grid-item {
+        padding: 0;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    
+    .hero-right ul {
+        flex-direction: column;
+    }
+
+    .grid-four-items, .grid-two-items {
+        grid-template-columns: 1fr;
+        /* gap: 2vw; */
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 300px) {
+
+    nav {
+        position: relative;
+    }
+
+
+
+
+}
