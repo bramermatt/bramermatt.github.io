@@ -13,6 +13,9 @@ body {
     cursor: default;
     padding: 12px;
     margin-bottom: 5vh;
+
+
+    font-family: system-ui;
 }
 
 body p {
@@ -79,4 +82,10 @@ iframe, video {
 
     /* border-radius: 10px; */
     /* box-shadow: 0px 8px 16px 0px rgb(0,0,0); */
+}
+
+blockquote {
+    margin: 10px;
+    padding-left: 10px;
+    border-left: thick solid;
 }

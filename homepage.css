@@ -224,6 +224,12 @@ main {
     cursor: pointer;
 }
 
+blockquote {
+    margin: 0;
+    padding-left: 10px;
+    border-left: thick solid;
+}
+
 
 @media screen and (max-width: 1200px) {
 
