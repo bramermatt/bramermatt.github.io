@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Matt Bramer</title>
 
+
     <link rel="shortcut icon" type="image/x-icon" href="img/icons/mLogo.png">
     <link rel="stylesheet" href="home.css">
     <meta name="color-scheme" content="light dark"/>
@@ -12,9 +13,52 @@
 <body>
 
 
-    <nav>
-        <a href="index.html"><img src="img/icons/mLogo.png" alt=""></a>
-    </nav>
+
+<nav>
+
+    <div class="nav-content">
+
+        <div class="nav-left">
+            <a href="index.html"><img src="img/icons/mLogo.png" alt=""></a>
+        </div>
+
+        <div class="nav-center">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">blogs</a></li>
+                <li><a href="">reviews</a></li>
+                <li><a href="">videos</a></li>
+                <!-- <li><a href="">topics</a></li> -->
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">topics +
+                      
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    </div> 
+
+
+
+                <li><a href="">about</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+
+        </div>
+
+
+
+    </div>
+
+
+
+</nav>
+
+<script src="dropdown.js"></script>
 
     <main>
 
@@ -28,6 +72,13 @@
         <div class="timeline">
 
             <h2>2024</h2>
+
+            <div class="item">
+                <p>book discussion, faith</p>
+                <a href="posts/2024-4-30-bookdiscussion-expositional-preaching-davidhem.html">
+                    <h1>Expositional Preaching: How We Speak God's Word Today by David Helm</h1>
+                </a>
+            </div>
 
             <div class="item">
                 <p>book discussion</p>
@@ -532,47 +583,575 @@
             <h2>2022</h2>
 
             <div class="item">
-                <p></p>
-                <a href="">
-                    <h1></h1>
+                <p>movie review</p>
+                <a href="posts/2022-12-22-moviereview-jurassic-park.html">
+                    <h1>Jurassic Park</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>school blog</p>
+                <a href="posts/2022-12-13-schoolblog-school-update-2022.html">
+                    <h1>School Update: 2022</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>opinion blog</p>
+                <a href="posts/2022-12-13-opinionblog-favorite-new-tv-show-of-2022.html">
+                    <h1>My Favorite TV Show of 2022</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>movie review</p>
+                <a href="posts/2022-12-13-moviereview-return-of-the-king.html">
+                    <h1>Lord of the Rings: Return of the King</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>opinion blog</p>
+                <a href="posts/2022-12-12-opinionblog-least-favorite-books-of-2022.html">
+                    <h1>My Least Favorite Books of 2022</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>opinion blog</p>
+                <a href="posts/2022-12-12-opinionblog-favorite-rewatch-tv-show-of-2022.html">
+                    <h1>My Favorite ReWatch TV Shows of 2022</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>opinion blog</p>
+                <a href="posts/2022-12-12-opinionblog-favorite-movies-of-2022.html">
+                    <h1>My Least Favorite Movies of 2022</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>movie review</p>
+                <a href="posts/2022-12-12-moviereview-spirited.html">
+                    <h1>Spirited</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>books</p>
+                <a href="posts/2022-12-12-books-books-to-read-in-2023.html">
+                    <h1>Books I Want to Read in 2023</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>books</p>
+                <a href="posts/2022-12-12-books-books-read-in-2022.html">
+                    <h1>Books I Read in 2022</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>movie review</p>
+                <a href="posts/2022-12-9-moviereview-the-two-towers.html">
+                    <h1>Lord of the Rings: The Two Towers</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>movie review</p>
+                <a href="posts/2022-12-9-moviereview-fellowship-of-the-ring.html">
+                    <h1>Lord of the Rings: Fellowship of the Ring</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>books</p>
+                <a href="posts/2022-12-12-books-books-to-read-in-2023.html">
+                    <h1>Books I Want to Read in 2023</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>opinion blog</p>
+                <a href="posts/2022-12-8-books-favorite-books-of-2022.html">
+                    <h1>My Favorite Books of 2022</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>opinion blog</p>
+                <a href="posts/2022-12-5-opinionblog-matttalks.html">
+                    <h1>My Show, MATTtalks</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>opinion blog</p>
+                <a href="posts/2022-12-5-opinionblog-asmr.html">
+                    <h1>ASMR</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>movie review</p>
+                <a href="posts/2022-12-5-moviereview-lego-starwars-holiday-special.html">
+                    <h1>Lego Star Wars: Holiday Special</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>opinion blog</p>
+                <a href="posts/2022-12-1-opinionblog-my-hair.html">
+                    <h1>My Hair</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-11-29-bookreview-oathbringer-brandonsanderson.html">
+                    <h1>Oathbringer by Brandon Sanderson</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>opinion blog</p>
+                <a href="posts/2022-11-28-books-series-to-read.html">
+                    <h1>Book Series I Want to Read</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>faith blog</p>
+                <a href="posts/2022-11-15-faithblog-have-faith.html">
+                    <h1>Have Faith</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>opinion blog</p>
+                <a href="posts/2022-11-10-opinionblog-not-a-programmer.html">
+                    <h1>I'm Not a Programmer, Yet!</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-11-8-bookreview-edgedancer-brandonsanderson.html">
+                    <h1>Edgedancer by Brandon Sanderson</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>interests</p>
+                <a href="posts/2022-11-3-interestsblog-november-2022.html">
+                    <h1>My Interests: November 2022</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-10-27-bookreview-warbreaker-brandonsanderson.html">
+                    <h1>Warbreaker by Brandon Sanderson</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>books</p>
+                <a href="posts/2022-10-27-books-cosmere-in-review.html">
+                    <h1>I'm Starting a Cosmere in Review</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>opinion blog</p>
+                <a href="posts/2022-10-18-opinionblog-go-dark.html">
+                    <h1>Dark Mode</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>bike commute blog</p>
+                <a href="posts/2022-10-18-bikecommuteblog-bike-commute-part-ten.html">
+                    <h1>Bike Commute: Part Ten</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-10-12-bookreview-words-of-radiance-brandonsanderson.html">
+                    <h1>Words of Radiance by Brandon Sanderson</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>opinion blog</p>
+                <a href="posts/2022-9-23-opinionblog-too-much-too-watch.html">
+                    <h1>There it Too Much to Watch</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>books</p>
+                <a href="posts/2022-9-19-books-what-am-i-reading-next.html">
+                    <h1>What Am I Reading Next?</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>website update</p>
+                <a href="posts/2022-9-13-websiteupdate-mattbramer(dot)com-fifth-update.html">
+                    <h1>Website Update: Fifth Update</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>opinion blog</p>
+                <a href="posts/2022-9-5-opinionblog-no-ads-on-my-website.html">
+                    <h1>There Are No Ads on My Website</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>books</p>
+                <a href="posts/2022-8-29-books-conundrum-what-to-read-next.html">
+                    <h1>Conundrum: What to Read Next</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-8-22-bookreview-harrypotterandthechamberofsecrets-jkrowling.html">
+                    <h1>Harry Potter and the Chamber of Secrets by J.K. Rowling</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>bike commute blog</p>
+                <a href="posts/2022-8-1-bikecommuteblog-bike-commute-part-nine.html">
+                    <h1>Bike Commute: Part Nine</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>tv show review</p>
+                <a href="posts/2022-7-28-tvshowreview-tedlasso-season-one.html">
+                    <h1>Ted Lasso: Season One</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>bike commute blog</p>
+                <a href="posts/2022-7-28-bikecommuteblog-bike-commute-part-eight.html">
+                    <h1>Bike Commute: Part Eight</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>bike commute blog</p>
+                <a href="posts/2022-7-27-bikecommuteblog-bike-commute-part-seven.html">
+                    <h1>Bike Commute: Part Seven</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>bike commute blog</p>
+                <a href="posts/2022-7-25-bikecommuteblog-bike-commute-part-six.html">
+                    <h1>Bike Commute: Part Six</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>family blog</p>
+                <a href="posts/2022-7-23-familyblog-samuel.html">
+                    <h1>My Son, Samuel</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>website update</p>
+                <a href="posts/2022-7-18-websiteupdate-mattbramer(dot)com-fourth-update.html">
+                    <h1>Website Update: Fourth Update</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>bike commute blog</p>
+                <a href="posts/2022-7-18-bikecommuteblog-bike-commute-part-five.html">
+                    <h1>Bike Commute: Part Five</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>bike commute blog</p>
+                <a href="posts/2022-7-15-bikecommuteblog-bike-commute-part-four.html">
+                    <h1>Bike Commute: Part Four</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>school blog</p>
+                <a href="posts/2022-7-14-schoolblog-still-in-school.html">
+                    <h1>Yes, I'm Still in School</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>bike commute blog</p>
+                <a href="posts/2022-7-13-bikecommuteblog-bike-commute-part-three.html">
+                    <h1>Bike Commute: Part Three</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-7-11-bookreview-twilight-stepheniemeyer.html">
+                    <h1>Twilight by Stephenie Meyer</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>website update</p>
+                <a href="posts/2022-7-4-websiteupdate-mattbramer(dot)com-third-update.html">
+                    <h1>Website Update: Third Update</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>opinion blog</p>
+                <a href="posts/2022-7-4-opinionblog-who-cares-really.html">
+                    <h1>Who Cares, Really?</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>interests blog</p>
+                <a href="posts/2022-7-4-interestsblog-july-22-interests.html">
+                    <h1>My Interests: July 2022</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>bike commute</p>
+                <a href="posts/2022-7-3-bikecommuteblog-bike-commute-part-two.html">
+                    <h1>Bike Commute: Part Two</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>movie review</p>
+                <a href="posts/2022-6-27-moviereview-top-gun-maverick.html">
+                    <h1>Top Gun: Maverick</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>bike commute blog</p>
+                <a href="posts/2022-6-25-bikecommuteblog-bike-commute-part-one.html">
+                    <h1>Bike Commute: Part One</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>website update</p>
+                <a href="posts/2022-6-22-websiteupdate-mattbramer(dot)com-second-update.html">
+                    <h1>Website Update: Second Update</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>tv show review</p>
+                <a href="posts/2022-6-22-tvshowreview-obi-wan-season-one.html">
+                    <h1>Obi Wan: Season One</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>website update</p>
+                <a href="posts/2022-6-16-websiteupdate-mattbramer(dot)com-first-update.html">
+                    <h1>Website Update: First Update</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-5-24-bookreview-elantris-brandonsanderson.html">
+                    <h1>Elantris by Brandon Sanderson</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-5-16-bookreview-the-way-of-kings-brandonsanderson.html">
+                    <h1>The Way of Kings by Brandon Sanderson</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-4-8-bookreview-the-eye-of-the-world-robertjordan.html">
+                    <h1>The Eye of the World by Robert Jordan</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-3-8-bookreview-dune-frankherbert.html">
+                    <h1>Dune by Frank Herbert</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-2-15-bookreview-1984-georgeorwell.html">
+                    <h1>1984 by George Orwell</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-2-10-bookreview-harrypotterandthesorcerorsstone-jkrowling.html">
+                    <h1>Harry Potter and the Sorcerer's Stone</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-2-6-bookreview-the-hobbit-jrrtolkien.html">
+                    <h1>The Hobbit by J.R.R. Tolkien</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-2-2-bookreview-starwars-aftermath-chuckwendig.html">
+                    <h1>Star Wars: Aftermath by Chuck Wendig</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>book review</p>
+                <a href="posts/2022-1-26-bookreview-carrie-stephenking.html">
+                    <h1>Carrie by Stephen King</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>food review</p>
+                <a href="posts/2022-1-13-foodreview-tony-cheese-pizza.html">
+                    <h1>Tony's Cheese Pizza</h1>
                 </a>
             </div>
 
             <h2>2021</h2>
 
             <div class="item">
-                <p></p>
-                <a href="">
-                    <h1></h1>
+                <p>faith blog</p>
+                <a href="posts/2021-10-31-faithblog-forgiveness-cancel-culture.html">
+                    <h1>Forgiveness in a Cancel Culture</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>faith blog</p>
+                <a href="posts/2021-10-4-faithblog-bible-reading.html">
+                    <h1>I Read the Whole Bible</h1>
                 </a>
             </div>
 
             <h2>2019</h2>
 
             <div class="item">
-                <p></p>
-                <a href="">
-                    <h1></h1>
+                <p>video game review</p>
+                <a href="posts/2019-3-28-videogamereview-spider-manPS4.html">
+                    <h1>Spider-Man PS4</h1>
                 </a>
             </div>
 
             <h2>2018</h2>
 
             <div class="item">
-                <p></p>
-                <a href="">
-                    <h1></h1>
+                <p>tech review</p>
+                <a href="posts/2018-9-29-techreview-hp-3830-printer.html">
+                    <h1>HP 3830 Printer</h1>
                 </a>
             </div>
+
+            <div class="item">
+                <p>video game review</p>
+                <a href="posts/2018-9-24-videogamereview-uncharted-1.html">
+                    <h1>Uncharted: Drake's Fortune</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>movie review</p>
+                <a href="posts/2018-5-26-moviereview-solo.html">
+                    <h1>SOLO: A Star Wars Story</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>movie review</p>
+                <a href="posts/2018-1-13-moviereview-greatest-showman.html">
+                    <h1>The Greatest Showman</h1>
+                </a>
+            </div>
+
 
             <h2>2016</h2>
 
             <div class="item">
-                <p></p>
-                <a href="">
-                    <h1></h1>
+                <p>movie review</p>
+                <a href="posts/2016-12-16-moviereview-rogue-one.html">
+                    <h1>Rogue One: A Star Wars Story</h1>
                 </a>
             </div>
+
+            <div class="item">
+                <p>movie review</p>
+                <a href="posts/2016-6-12-moviereview-star-wars-ep3.html">
+                    <h1>Star Wars Episode 3: Revenge of the Sith</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>movie review</p>
+                <a href="posts/2016-6-5-moviereview-star-wars-ep2.html">
+                    <h1>Star Wars Episode 2: Attack of the Clones</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>movie review</p>
+                <a href="posts/2016-5-29-moviereview-star-wars-ep1.html">
+                    <h1>Star Wars Episode 1: The Phantom Menace</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>tech review</p>
+                <a href="posts/2016-5-9-techreview-google-cardboard.html">
+                    <h1>Google Cardboard (2016)</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>movie review</p>
+                <a href="posts/2016-5-4-moviereview-fight-club.html">
+                    <h1>Fight Club</h1>
+                </a>
+            </div>
+
+            <div class="item">
+                <p>food review</p>
+                <a href="posts/2016-1-13-foodreview-arbys-french-dip.html">
+                    <h1>Arby's French Dip and Swiss</h1>
+                </a>
+            </div>
+
+
 
             <h2>2014</h2>
 

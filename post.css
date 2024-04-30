@@ -11,7 +11,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     cursor: default;
-    padding: 0 25px;
+
     margin-bottom: 5vh;
 
 
@@ -27,13 +27,16 @@ body li {
 }
 
 nav {
-    overflow-x: scroll;
+    overflow-x: auto;
     text-wrap: nowrap;
 
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 10; */
     padding: 10px;
+    padding-left: 20px;
+
+    
 
 
     /* position: sticky;
@@ -43,8 +46,29 @@ nav {
     padding: 10px; */
 }
 
+nav a:link, nav a:visited {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 8px;
+    border-bottom: thin solid;
+}
+
+nav a:hover {
+    opacity: 80%;
+}
+
 nav::-webkit-scrollbar, h1::-webkit-scrollbar {
     display: none;
+}
+
+article {
+    padding: 0 25px;
+}
+
+ol, ul {
+    padding: 0 20px;
 }
 
 /* h1 {
