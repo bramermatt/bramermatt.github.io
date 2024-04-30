@@ -25,22 +25,45 @@
         <div class="nav-center">
             <ul>
                 <li><a href="">home</a></li>
-                <li><a href="">blogs</a></li>
-                <li><a href="">reviews</a></li>
-                <li><a href="">videos</a></li>
-                <!-- <li><a href="">topics</a></li> -->
                 <div class="dropdown">
-                    <button class="dropbtn" onclick="myFunction()">topics +
+                    <button class="dropbtn" onclick="myFunction('dropdown1')">blogs +
                       
                     </button>
-                    <div class="dropdown-content" id="myDropdown">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
+                    <div class="dropdown-content" id="dropdown1">
+                      <a href="#">bike commute blogs</a>
+                      <a href="#">faith blogs</a>
+                      <a href="#">interests blogs</a>
+                      <a href="#">opinion blogs</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction('dropdown2')">reviews +
+                      
+                    </button>
+                    <div class="dropdown-content" id="dropdown2">
+                        <a href="#">book reviews</a>
+                        <a href="#">food reviews</a>
+                        <a href="#">movie reviews</a>
+                        <a href="#">tech reviews</a>
+                        <a href="#">tv show reviews</a>
+                    </div>
+                </div>
+
+
+                <li><a href="">videos</a></li>
+
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction('dropdown3')">topics +
+                      
+                    </button>
+                    <div class="dropdown-content" id="dropdown3">
+
+                      <a href="#">books</a>  
+                      <a href="#">book discussions</a>
+                      
                     </div>
                     </div> 
-
-
 
                 <li><a href="">about</a></li>
             </ul>
