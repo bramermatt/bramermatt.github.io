@@ -53,6 +53,7 @@ main {
     position: sticky;
     top: 0;
     /* max-height: 100%; */
+    overflow: hidden;
 }
 
 /* .hero img {
@@ -69,14 +70,45 @@ main {
 
 .hero img {
     /* max-height: 95%; */
-    height: 87vh;
+    height: 92vh;
     width: 100%;
     object-fit: cover;
 }
 
 .hero blockquote {
-    margin: 10px;
-    padding-left: 20px;
+    margin: 15px;
+    position: relative;
+    bottom: 98%;
+    /* top: 10em; */
+    padding: 10px;
+    border-radius: 10px;
+    max-width: max-content;
+    /* padding-left: 20px; */
+}
+
+
+@media screen and (prefers-color-scheme: light) {
+
+    .hero blockquote {
+        background-color: white;
+        box-shadow: 4px 4px 0 rgb(128, 128, 128);
+    }
+
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    
+    .hero blockquote {
+        background-color: rgb(56, 56, 56);
+        box-shadow: 4px 4px 0 rgb(128, 128, 128);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hero blockquote {
+        bottom: 0;
+    }
+    
 }
 
 .timeline {

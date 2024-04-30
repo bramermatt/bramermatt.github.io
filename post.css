@@ -11,7 +11,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     cursor: default;
-    padding: 12px;
+    padding: 0 25px;
     margin-bottom: 5vh;
 
 
@@ -29,6 +29,12 @@ body li {
 nav {
     overflow-x: scroll;
     text-wrap: nowrap;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px;
+
 
     /* position: sticky;
     top: 0;
@@ -73,7 +79,7 @@ summary {
     width: 100%;
     padding-top: 56.35%; 
 
-    box-shadow: 4px 4px 0px rgb(0,0,0);
+    box-shadow: 4px 4px 0px rgb(88, 88, 88);
     border: thin solid;
 }
 
@@ -117,6 +123,18 @@ footer img {
 }
 
 
+details {
+    border: thin solid;
+    padding: 15px;
+    max-width: max-content;
+}
+
+details[open] summary {
+    border-bottom: thin solid;
+    padding-bottom: 10px;
+}
+
+
   
   /* details {
     border: 1px solid #ccc;
@@ -139,3 +157,19 @@ footer img {
     content: '+';
   }
    */
+
+   @media screen and (prefers-color-scheme: light) {
+
+    nav {
+        background: white;
+    }
+    
+   }
+
+
+   @media screen and (prefers-color-scheme: dark) {
+    
+    body, nav {
+        background-color: rgb(43, 43, 43);
+    }
+}
