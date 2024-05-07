@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    max-width: 800px;
+
     margin: 0 auto;
     cursor: default;
 
@@ -39,20 +39,27 @@ nav {
     
 
 
-    /* position: sticky;
+    position: sticky;
     top: 0;
     z-index: 1;
-    background-color: white;
-    padding: 10px; */
+    /* background-color: white; */
+    /* padding: 10px; */
 }
+
+nav h1, figure {
+    display: none;
+    visibility: hidden;
+}
+
+
 
 nav a:link, nav a:visited {
     color: var(--text);
     text-decoration: none;
     font-weight: 500;
     text-transform: capitalize;
-    padding-bottom: 8px;
-    border-bottom: thin solid;
+    padding-bottom: 5px;
+    /* border-bottom: thin solid; */
 }
 
 nav a:hover {
@@ -65,6 +72,9 @@ nav::-webkit-scrollbar, h1::-webkit-scrollbar {
 
 article {
     padding: 0 25px;
+    max-width: 800px;
+    margin: 0 auto;
+
 }
 
 ol, ul {
@@ -132,12 +142,13 @@ blockquote, figcaption {
 
 article h2, article h1 {
     /* margin: 0; */
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 article p {
     /* margin: 0; */
     margin-bottom: 15px;
+    line-height: 1.6em;
 }
 
 footer {
@@ -188,14 +199,21 @@ details[open] summary {
 
     nav {
         background: white;
+        box-shadow: 1px 1px 8px grey;
     }
     
    }
+
 
 
    @media screen and (prefers-color-scheme: dark) {
     
     body, nav {
         background-color: rgb(43, 43, 43);
+    }
+
+    nav, article img {
+        /* background: white; */
+        box-shadow: 1px 1px 8px rgb(22, 22, 22);
     }
 }
