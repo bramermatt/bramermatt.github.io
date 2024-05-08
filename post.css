@@ -39,9 +39,9 @@ nav {
     
 
 
-    /* position: sticky;
+    position: sticky;
     top: 0;
-    z-index: 1; */
+    z-index: 1;
     /* background-color: white; */
     /* padding: 10px; */
 }
@@ -198,8 +198,8 @@ details[open] summary {
    @media screen and (prefers-color-scheme: light) {
 
     nav {
-        /* background: white; */
-        background-color: rgb(221, 221, 221);
+        background: white;
+        /* background-color: rgb(221, 221, 221); */
         box-shadow: 1px 1px 8px grey;
     }
 
@@ -216,6 +216,19 @@ details[open] summary {
         box-shadow: 0 0px 8px 0px grey;
     }
     
+   }
+
+   @media screen and (max-width: 850px) and (prefers-color-scheme: light) {
+    
+    nav, body {
+        background: white;
+        /* background-color: rgb(221, 221, 221); */
+        /* box-shadow: 1px 1px 8px grey; */
+    }
+
+
+
+
    }
 
 
@@ -249,7 +262,7 @@ details[open] summary {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     
     article {
         margin-top: 0;
@@ -260,5 +273,19 @@ details[open] summary {
     body {
         margin-bottom: 0;
     }
+
+   }
+
+
+   @media screen and (max-width: 850px) and (prefers-color-scheme: dark) {
+    
+    nav, body {
+        background-color: rgb(29, 29, 29);
+        /* background-color: rgb(221, 221, 221); */
+        /* box-shadow: 1px 1px 8px grey; */
+    }
+
+
+
 
    }
