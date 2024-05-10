@@ -381,7 +381,7 @@ main {
 
     .filter-items {
         padding-bottom: 20px;
-
+        padding-right: 5vw;
         border-radius: 10px 10px 0 0;
         margin-inline: 25px !important;
         max-width: 100% !important;
@@ -471,6 +471,17 @@ main {
     nav {
         
     }
+
+    .filter-items button:hover {
+        background-color: #000000;
+        color: white;
+      }
+
+    .filter-items .active-filter {
+        background-color: #dbdbdb;
+        color: rgb(48, 48, 48);
+      }
+    
 
     .filter-items button {
         box-shadow: 2px 2px 2px black;
