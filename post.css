@@ -38,7 +38,9 @@ nav {
     top: 0;
     z-index: 10; */
     padding: 10px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
+
+    padding-inline: 15px;
 
     position: sticky;
     top: 0;
@@ -50,6 +52,13 @@ nav {
 nav h1, figure {
     display: none;
     visibility: hidden;
+}
+
+nav img {
+    max-height: 4vh;
+    /* margin: 0 auto; */
+    margin: 10px;
+    /* padding: 10px; */
 }
 
 
@@ -314,7 +323,7 @@ article p {
 }
 
 article ul, article ol, article li {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-bottom: 12px;
 }
 
@@ -325,6 +334,7 @@ blockquote {
 
 footer {
     /* padding-top: 20px; */
+    display: none;
 }
 
 footer img {
