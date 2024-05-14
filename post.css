@@ -15,8 +15,8 @@ body {
     /* margin-bottom: 5vh; */
 
 
-    /* font-family: system-ui; */
-    font-family: math;
+    font-family: system-ui;
+    /* font-family: math; */
 }
 
 
@@ -80,7 +80,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    max-height: 100vh;
+    /* max-height: 100vh; */
     /* max-height: 100vh; */
 }
 
