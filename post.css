@@ -15,7 +15,8 @@ body {
     /* margin-bottom: 5vh; */
 
 
-    font-family: system-ui;
+    /* font-family: system-ui; */
+    font-family: math;
 }
 
 
@@ -72,9 +73,40 @@ nav::-webkit-scrollbar, h1::-webkit-scrollbar, .header-content ul::-webkit-scrol
 
 
 header {
-    /* max-width: 100%; */
+    /* max-width: 1200px; */
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-height: 100vh;
+    /* max-height: 100vh; */
 }
+
+header h1, header p, header img, header blockquote {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header a:link, header a:visited {
+    color: var(--text);
+    margin-bottom: 15px;
+    gap: 1vw;
+}
+
+header img {
+    border-radius: 10px !important;
+    max-width: 100%;
+    max-height: 72vh;
+}
+
+
 
 .header-content {
     max-width: 1200px;
@@ -118,14 +150,14 @@ header {
 
 
 
-.header-content a:link, .header-content a:visited {
+.header-content a:link, .header-content a:visited, header a:link, header a:visited {
     color: var(--text);
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 500;
 }
 
-.header-content a:hover {
+.header-content a:hover, header a:hover {
     text-decoration: underline;
 }
 
@@ -140,13 +172,23 @@ header {
         gap: 2vw;
         overflow: scroll;
     }
+
 }
 
 @media screen and (prefers-color-scheme: light) {
     header {
-        background-color: rgb(2, 76, 95);
+        background-color: rgb(2, 95, 90);
         color: white;
     }
+
+    header a:link, header a:visited {
+        color: rgb(187, 187, 187);
+    }
+
+    header a:hover {
+        color: white;
+    }
+
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -163,7 +205,12 @@ article {
     padding: 0 25px;
     max-width: 880px;
     margin: 0 auto;
-    margin-bottom: 8vh;
+    margin-bottom: 8vh !important;
+}
+
+article {
+    max-width: max-content;
+    margin: 0 auto;
 }
 
 ol, ul {
@@ -190,6 +237,11 @@ img {
     max-height: 60vh;
     max-width: 100%;
     object-fit: cover;
+    display: flex;
+    margin: 0 auto;
+
+
+    border-radius: 10px;
 }
 
 summary {
@@ -228,25 +280,51 @@ blockquote, figcaption {
     font-size: smaller;
     margin-top: 15px !important;
     margin-bottom: 15px !important;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
 article h2, article h1 {
     /* margin: 0; */
+    margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 10px;
-    /* margin: 0 auto; */
+    
     /* max-width: 550px; */
+}
+
+article h2 {
+    /* border-bottom: thin solid;
+    max-width: max-content;
+    padding-bottom: 10px;
+    margin-left: auto;
+    text-align: left; */
+    margin-top: 40px;
 }
 
 article p {
     /* margin: 0; */
-    margin-bottom: 15px;
+    
     line-height: 1.6em;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+article ul, article ol, article li {
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+blockquote {
+    margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 footer {
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 footer img {
@@ -327,6 +405,7 @@ section article h1 {
         color: white;
     } */
 
+
     nav, body {
         background-color: #f5f5f5;
     }
@@ -341,7 +420,11 @@ section article h1 {
         padding-top: 10px;
         padding-bottom: 5vh;
         margin-top: 20px;
-        box-shadow: 0 0px 8px 0px grey;
+        box-shadow: 0 0px 2px 0px grey;
+    }
+
+    article a:link, article a:visited {
+        color: rgb(2, 95, 90);
     }
 
 
@@ -357,7 +440,7 @@ section article h1 {
 
     nav, article img {
         /* background: white; */
-        box-shadow: 1px 1px 8px rgb(22, 22, 22);
+        box-shadow: 1px 1px 0px rgb(22, 22, 22);
     }
 
     body {
@@ -372,11 +455,15 @@ section article h1 {
         margin-top: 20px;
         box-shadow: 0 0px 8px 0px rgb(14, 14, 14);
     }
+
+    article a:link, article a:visited {
+        color: rgb(13, 186, 230);
+    }
 }
 
 @media screen and (max-width: 925px) {
     article {
-        margin: 15px;
+        margin: 15px auto;
     }
 }
 
@@ -387,7 +474,7 @@ section article h1 {
         margin-top: 0;
         border-radius: 0;   
         padding-inline: 15px;
-        margin: 0;
+        margin: 0 auto;
     }
 
     body {
