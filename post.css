@@ -93,6 +93,10 @@ header {
     /* max-height: 100vh; */
 }
 
+
+
+
+
 header h1, header p, header img, header blockquote {
     max-width: 1400px;
     margin: 0 auto;
@@ -112,9 +116,36 @@ header a:link, header a:visited {
 header img {
     border-radius: 10px !important;
     max-width: 100%;
-    max-height: 72vh;
+    max-height: 50vh;
 }
 
+
+@media screen and (min-width: 1350px) {
+    /* left header */
+        header {
+            position: fixed;
+            float: left;
+            margin-left: 3vw;
+            max-width: 20%;
+            max-height: 90%;
+            top: 70px;
+            z-index: 10;
+            border-radius: 10px;
+            overflow: auto;
+        }
+
+        header h1, header p, header a {
+            text-align: left !important;
+            align-self: start;
+            margin: 0;
+        }
+
+        header p {
+            padding: 5px 0px 30px;
+        }
+
+
+}
 
 
 .header-content {
@@ -207,23 +238,47 @@ header img {
         color: white;
     }
 
+    
+    header a:link, header a:visited {
+        color: rgb(187, 187, 187);
+    }
+
+    header a:hover {
+        color: white;
+    }
+
+
 
 }
 
 article {
     padding: 0 25px;
-    max-width: 880px;
+    
     margin: 0 auto;
     margin-bottom: 8vh !important;
+    width: max-content;
+    max-width: 880px;
 }
 
-article {
-    max-width: max-content;
-    margin: 0 auto;
+
+
+@media screen and (min-width: 1350px) {
+    article {
+        
+        margin: 0 auto;
+        max-width: 50%;
+        /* margin-left: 26vw; */
+    }
+}
+
+@media screen and (max-width: 880px) {
+    article {
+        max-width: 100%;
+    }
 }
 
 ol, ul {
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 /* h1 {
@@ -430,11 +485,13 @@ section article h1 {
         padding-top: 10px;
         padding-bottom: 5vh;
         margin-top: 20px;
-        box-shadow: 0 0px 2px 0px grey;
+        box-shadow: 0 0px 3px 0px grey;
+        /* border: thin solid grey; */
     }
 
     article a:link, article a:visited {
         color: rgb(2, 95, 90);
+        font-weight: 500;
     }
 
 
