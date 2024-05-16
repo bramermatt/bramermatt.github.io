@@ -125,13 +125,17 @@ header img {
         header {
             position: fixed;
             float: left;
-            margin-left: 3vw;
-            max-width: 20%;
-            max-height: 90%;
-            top: 70px;
-            z-index: 10;
-            border-radius: 10px;
+            /* margin-left: 3vw; */
+            max-width: 18%;
+            /* max-height: 90%; */
+            height: 100%;
+            top: 40px;
+            z-index: 1;
+            /* border-radius: 10px; */
             overflow: auto;
+
+            justify-content: start;
+            align-items: start !important;
         }
 
         header h1, header p, header a {
@@ -139,6 +143,11 @@ header img {
             align-self: start;
             margin: 0;
         }
+
+        header blockquote {
+            margin: 0;
+        }
+
 
         header p {
             padding: 5px 0px 30px;
