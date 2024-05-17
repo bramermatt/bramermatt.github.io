@@ -48,6 +48,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
+    
     /* background-color: white; */
     /* padding: 10px; */
 }
@@ -141,15 +142,16 @@ header img {
 @media screen and (min-width: 1350px) {
     /* left header */
         header {
-            position: fixed;
+            position: sticky;
             float: left;
             /* margin-left: 3vw; */
             max-width: 20%;
             /* max-height: 90%; */
-            height: 100%;
-            top: 40px;
+            /* height: 100vh; */
+            top: 55px;
+            /* top: 35px; */
             /* z-index: 1; */
-            /* border-radius: 10px; */
+            border-radius: 0 10px 10px 0;
             overflow: auto;
 
             justify-content: start;
@@ -250,7 +252,7 @@ header img {
     header {
         background-color: rgb(2, 95, 90);
         color: white;
-        box-shadow: 0px 0px 5px grey;
+        box-shadow: 0px 0px 2px grey;
     }
 
     header a:link, header a:visited {
@@ -452,6 +454,18 @@ section article h1 {
     font-size: x-large;
 }
 
+.theatre-mode {
+    height: 100vh;
+}
+
+
+.theatre-mode-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 25px;
+    color: white;
+}
+
 
   
   /* details {
@@ -502,6 +516,10 @@ section article h1 {
         border-bottom: thin solid #eee;
         /* background-color: rgb(221, 221, 221); */
         /* box-shadow: 1px 1px 8px grey; */
+    }
+
+    .theatre-mode {
+        background-color: black;
     }
 
     /* nav {
@@ -560,6 +578,30 @@ section article h1 {
         color: rgb(2, 95, 90);
     }
 
+    header strong {
+        color: white;
+    }
+
+    nav {
+        border-bottom: thick solid rgb(2, 95, 90);;
+    }
+
+    details {
+        background-color: rgb(2, 95, 90);;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0px 2px 0px rgb(14, 14, 14);
+        color: white;
+    }
+
+    details:hover {
+        background-color: rgb(3, 128, 121);;
+    }
+
+    details[open]:hover {
+        background-color: rgb(2, 95, 90);;
+    }
+
 
     
    }
@@ -596,6 +638,25 @@ section article h1 {
     article blockquote, article figcaption {
         border-color: rgb(13, 186, 230, 80%);
         color: rgb(223, 223, 223);
+    }
+
+    nav {
+        border-bottom: thick solid rgb(2, 76, 95);
+    }
+
+    details {
+        background-color: rgb(2, 76, 95);
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0px 8px 0px rgb(14, 14, 14);
+    }
+
+    details:hover {
+        background-color: rgb(3, 152, 189);;
+    }
+
+    details[open]:hover {
+        background-color: rgb(2, 76, 95);;
     }
 
     article a:hover {
