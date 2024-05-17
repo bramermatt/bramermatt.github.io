@@ -31,9 +31,7 @@ article blockquote, article figcaption, header blockquote, header figcaption {
     padding-top: 5px;
 }
 
-article li {
-    margin: 5px;
-}
+
 
 nav {
     overflow-x: auto;
@@ -131,6 +129,8 @@ header a:link, header a:visited {
     gap: 1vw;
 }
 
+
+
 header img {
     border-radius: 10px !important;
     max-width: 100%;
@@ -144,7 +144,7 @@ header img {
             position: fixed;
             float: left;
             /* margin-left: 3vw; */
-            max-width: 18%;
+            max-width: 20%;
             /* max-height: 90%; */
             height: 100%;
             top: 40px;
@@ -238,6 +238,10 @@ header img {
     .header-content ul {
         gap: 2vw;
         overflow: scroll;
+    }
+
+    article li {
+        margin: 10px;
     }
 
 }
@@ -407,10 +411,15 @@ article p {
     margin-bottom: 20px;
 }
 
-article ul, article ol, article li {
-    /* margin: 0 auto; */
+article ul, article ol {
+    margin: 0 auto;
     margin-bottom: 12px;
 }
+
+article li {
+    margin-bottom: 12px;
+}
+
 
 blockquote {
     margin: 0 auto;
@@ -519,6 +528,10 @@ section article h1 {
         /* border: thin solid grey; */
     }
 
+    article img {
+        box-shadow: 0 0px 3px 0px grey;
+    }
+
     article a:link, article a:visited {
         color: rgb(2, 95, 90);
         font-weight: 500;
@@ -539,11 +552,12 @@ section article h1 {
 
     article blockquote, article figcaption {
         border-color: rgb(2, 95, 90, 90%);
-        color: rgb(75, 75, 75);
+        color: rgb(51, 51, 51);
     }
 
-    li::marker {
+    li::marker, strong, article blockquote a {
         font-weight: 700;
+        color: rgb(2, 95, 90);
     }
 
 
