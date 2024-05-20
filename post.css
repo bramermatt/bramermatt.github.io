@@ -619,6 +619,10 @@ section article h1 {
         background-color: rgb(43, 43, 43);
     }
 
+    .theatre-mode {
+        background-color: black;
+    }
+
     nav, article img {
         /* background: white; */
         box-shadow: 1px 1px 0px rgb(22, 22, 22);
@@ -637,6 +641,10 @@ section article h1 {
         box-shadow: 0 0px 8px 0px rgb(14, 14, 14);
     }
 
+    header img, header {
+        box-shadow: 0 0px 4px 0px rgb(14, 14, 14);
+    }
+
     article a:link, article a:visited {
         color: rgb(13, 186, 230);
     }
@@ -648,6 +656,10 @@ section article h1 {
 
     nav {
         border-bottom: thick solid rgb(2, 76, 95);
+    }
+
+    li::marker, strong {
+        color: rgb(13, 186, 230);
     }
 
     hr {
