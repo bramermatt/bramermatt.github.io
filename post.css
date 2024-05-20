@@ -578,6 +578,12 @@ section article h1 {
         color: rgb(2, 95, 90);
     }
 
+    hr {
+        border-color: rgb(2, 95, 90);
+        margin: 25px;
+        border-width: thick;
+    }
+
     header strong {
         color: white;
     }
@@ -644,6 +650,12 @@ section article h1 {
         border-bottom: thick solid rgb(2, 76, 95);
     }
 
+    hr {
+        border-color: rgb(2, 76, 95);
+        margin: 25px;
+        border-width: thick;
+    }
+
     details {
         background-color: rgb(2, 76, 95);
         border-radius: 10px;
@@ -684,6 +696,7 @@ section article h1 {
         border-radius: 0;   
         padding-inline: 15px;
         margin: 0 auto;
+        margin-bottom: 0 !important;
     }
 
     body {
