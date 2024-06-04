@@ -26,7 +26,7 @@ article p, article em, article ul, article li, article h2, article blockquote, a
     /* margin: 0 auto; */
 }
 
-article blockquote, article figcaption, header blockquote, header figcaption {
+article blockquote, article figcaption, header blockquote, header figcaption, details blockquote {
     border-top: thick solid;
     padding-top: 5px;
 }
@@ -87,7 +87,7 @@ nav::-webkit-scrollbar, h1::-webkit-scrollbar, .header-content ul::-webkit-scrol
 
 header {
     /* max-width: 1200px; */
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -135,7 +135,7 @@ header a:link, header a:visited {
 header img {
     border-radius: 10px !important;
     max-width: 100%;
-    max-height: 50vh;
+    max-height: 60vh;
 }
 
 
@@ -154,10 +154,10 @@ footer {
             position: sticky;
             float: left;
             /* margin-left: 3vw; */
-            max-width: 20%;
+            max-width: 18%;
             /* max-height: 90%; */
             /* height: 100vh; */
-            top: 55px;
+            top: 60px;
             /* top: 35px; */
             /* z-index: 1; */
             border-radius: 0 10px 10px 0;
@@ -187,7 +187,7 @@ footer {
             /* display: none; */
             position: fixed;
             z-index: 1;
-            bottom: 0;
+            bottom: -10px;
             right: 30px;
             /* left: 40px; */
             padding: 0 15px 40px;
@@ -368,7 +368,7 @@ aside, figure {
 
 
 img {
-    max-height: 60vh;
+    max-height: 70vh;
     max-width: 100%;
     object-fit: cover;
     display: flex;
@@ -437,6 +437,9 @@ article h2 {
     margin-left: auto;
     text-align: left; */
     margin-top: 40px;
+
+    /* border-left: thick solid;
+    padding-left: 20px; */
 }
 
 article p {
@@ -478,8 +481,19 @@ details {
 }
 
 details[open] summary {
-    border-bottom: thin solid;
+    /* border-bottom: thin solid; */
     padding-bottom: 10px;
+
+
+    position: sticky;
+    top: 55px;
+    z-index: 1;
+    /* background: blue; */
+    padding: 10px;
+    margin-left: 10px;
+
+    max-width: max-content;
+    border-radius: 10px;
 }
 
 section article h1 {
@@ -604,11 +618,24 @@ section article h1 {
 
     article a:hover {
         text-decoration: none;
+
+        color: white;
+        background-color: black;
+        /* margin: 15px; */
+        padding: 10px 5px;
+        border-radius: 10px;
+        /* display: inline-block; */
     }
 
     article blockquote, article figcaption {
         border-color: rgb(2, 95, 90, 90%);
         color: rgb(51, 51, 51);
+        
+    }
+
+    details[open] summary {
+        background: rgb(2, 95, 90);
+        box-shadow: 0px 0px 5px rgb(51, 51, 51);
     }
 
     li::marker, strong, article blockquote a {
@@ -636,6 +663,11 @@ section article h1 {
         border: none;
         box-shadow: 0 0px 2px 0px rgb(14, 14, 14);
         color: white;
+    }
+
+    details blockquote {
+        color: white;
+        border-color: white;
     }
 
     details:hover {
@@ -670,6 +702,13 @@ section article h1 {
         background-color: rgb(29, 29, 29);
     }
 
+    footer {
+        background-color: rgb(49, 49, 49);
+        /* border-color: #eee; */
+        border: none;
+        box-shadow: 0 0px 8px 0px rgb(14, 14, 14);
+    }
+
     article {
         background-color: rgb(49, 49, 49);
         border-radius: 10px;
@@ -690,6 +729,11 @@ section article h1 {
     article blockquote, article figcaption {
         border-color: rgb(13, 186, 230, 80%);
         color: rgb(223, 223, 223);
+    }
+
+    details[open] summary {
+        background: rgb(2, 76, 95);
+        box-shadow: 0px 0px 5px rgb(27, 27, 27);
     }
 
     nav {
@@ -723,6 +767,13 @@ section article h1 {
 
     article a:hover {
         text-decoration: none;
+
+        color: white;
+        background-color: rgb(109, 109, 109);
+        /* margin: 15px; */
+        padding: 10px 5px;
+        border-radius: 10px;
+        /* display: inline-block; */
     }
 
     li::marker {

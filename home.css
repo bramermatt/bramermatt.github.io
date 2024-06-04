@@ -442,7 +442,8 @@ main {
     }
 
     .item p {
-        color: rgb(3, 134, 73);
+        /* color: rgb(3, 134, 73); */
+        color: rgb(2, 95, 90);
         font-weight: 600;
     }
 
@@ -508,7 +509,8 @@ main {
     }
 
     .item p {
-        color: rgb(0, 206, 110);
+        /* color: rgb(0, 206, 110); */
+        color: rgb(13, 186, 230);
     }
 
     .nav-center a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
