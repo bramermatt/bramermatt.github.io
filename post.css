@@ -482,7 +482,7 @@ details {
 
 details[open] summary {
     /* border-bottom: thin solid; */
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 
 
     position: sticky;
@@ -491,6 +491,7 @@ details[open] summary {
     /* background: blue; */
     padding: 10px;
     margin-left: 10px;
+    margin-bottom: 20px;
 
     max-width: max-content;
     border-radius: 10px;
@@ -501,7 +502,7 @@ section article h1 {
 }
 
 .theatre-mode {
-    height: 100vh;
+    height: 95.5vh;
 }
 
 
@@ -634,8 +635,11 @@ section article h1 {
     }
 
     details[open] summary {
-        background: rgb(2, 95, 90);
+        color: rgb(2, 95, 90);
+        background: white;
         box-shadow: 0px 0px 5px rgb(51, 51, 51);
+
+        /* float: right; */
     }
 
     li::marker, strong, article blockquote a {
@@ -654,7 +658,7 @@ section article h1 {
     }
 
     nav {
-        border-bottom: thick solid rgb(2, 95, 90);;
+        /* border-bottom: thick solid rgb(2, 95, 90);; */
     }
 
     details {
@@ -732,12 +736,16 @@ section article h1 {
     }
 
     details[open] summary {
-        background: rgb(2, 76, 95);
+        color: rgb(2, 76, 95);
         box-shadow: 0px 0px 5px rgb(27, 27, 27);
+        background: white;
+
+
+        /* float: right; */
     }
 
     nav {
-        border-bottom: thick solid rgb(2, 76, 95);
+        /* border-bottom: thick solid rgb(2, 76, 95); */
     }
 
     li::marker, strong {
