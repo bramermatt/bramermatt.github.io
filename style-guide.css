@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    cursor: default;
+
+    /* font-family: system-ui; */
+    font-family: Merriweather;
+    /* font-family: math; */
+
+    
+}
+
+.go-home {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 50;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.go-home a, .go-home span {
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 2px 2px 0px rgb(21, 24, 24);
+    font-size:  large;
+}
+
+.go-home a:link, .go-home a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.go-home a:hover, .go-home span:hover {
+    background-color: rgb(58, 58, 58);
+    color:rgb(255, 255, 255);
+
+}
+
+
+header {
+    width: 100%;
+
+    /* border-bottom: thin solid; */
+
+    /* background: linear-gradient(0deg, transparent 2%, #16181c 109%);
+    background: linear-gradient(0deg, transparent 30%, lightblue 109%); */
+}
+
+header h1 {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 20px;
+
+    margin-bottom: 5px;
+    margin-top: 10px;
+
+    font-size: xx-large;
+    line-height: 1.2;
+}
+
+header p {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 20px;
+
+    margin-top: 5px;
+    margin-bottom: 25px;
+
+    text-transform: uppercase;
+    font-size: small;
+    line-height: 1.4;
+}
+
+header figcaption {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 20px;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    /* text-transform: uppercase; */
+    /* font-size: small; */
+}
+
+header figcaption a {
+    margin-right: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 2px dashed rgb(155, 155, 155);
+}
+
+header img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 65vh;
+
+    /* z-index: 1; */
+    /* position: relative; */
+
+    /* opacity: 20%; */
+
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+   -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+}
+
+blockquote {
+    /* opacity: 60%; */
+    border-left: thick solid;
+    padding-left: 15px;
+    max-width: 550px;
+}
+
+article p, article h2 {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6em;
+}
+
+article img {
+    max-height: 70vh;
+    margin: 0 auto;
+    width: 100%;
+    max-width: max-content;
+    display: block;
+    object-fit: contain;
+
+    box-shadow: 0px 0px 3px rgb(110, 110, 110);
+    border-radius: 10px;
+}
+
+article blockquote {
+    
+    /* max-width: max-content; */
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
+
+footer {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+
+}
+
+footer p {
+    padding: 15px;
+}
+
+.pd-15 {
+    padding: 15px;
+}
+
+summary {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+
+    cursor: pointer;
+  }
+  
+  summary::after {
+    content: '';
+    width: 18px;
+    height: 10px;
+    background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
+    background-size: cover;
+    margin-left: .75em;
+    transition: 0.2s;
+    color: white;
+  }
+
+  
+  details[open] > summary::after {
+    transform: rotate(180deg);
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  summary {
+    background-color: #a3d4fb;
+    /* color: #30353b; */
+    border-radius: 5px;
+  }
+  
+  details[open] summary {
+    border-radius: 5px 5px 0 0;
+}
+  
+  details {
+    border-radius: 5px;
+    /* max-width: max-content; */
+    max-width: 550px;
+   
+    /* padding: 10px; */
+    margin: 0 auto;
+  }
+
+  details[open] article {
+    padding: 10px;
+  }
+
+
+@media screen and (prefers-color-scheme: light) {
+    
+    article a:link, article a:visited, header a:link, header a:visited {
+        padding-bottom: 1px;
+        text-decoration: none;
+        border-bottom: 2px dashed rgb(0, 117, 190);
+        color: rgb(0, 117, 190);
+    }
+
+    article a:hover, header a:hover {
+        background-color: rgb(100, 100, 100);
+        color: rgb(255, 255, 255);
+        border: none;
+    }
+
+    .go-home span, .go-home a {
+        box-shadow: 0px 0px 2px rgb(0, 117, 190);
+        border: thin solid rgb(0, 117, 190);
+    }
+
+
+    blockquote {
+        color: rgb(179, 179, 179);
+    }
+
+    .go-home a, .go-home span {
+        background-color: rgb(190, 190, 190);
+        box-shadow: 2px 2px 0px black;
+        border: none;
+    }
+
+    summary {
+        background-color: rgba(0, 117, 190, 0.315);
+    }
+
+    details article {
+        background-color: rgba(0, 117, 190, 0.315);
+        border-radius: 0px 5px 5px 5px;
+    }
+
+    details blockquote {
+        color: rgba(0, 0, 0, 0.671);
+    }
+
+
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    
+    article a:link, article a:visited, header a:link, header a:visited {
+        padding-bottom: 1px;
+        text-decoration: none;
+        border-bottom: 2px dashed lightskyblue;
+        color: lightskyblue;
+    }
+
+    article a:hover, header a:hover {
+        background-color: rgb(179, 179, 179);
+        color: black;
+        border: none;
+    }
+
+    .go-home span, .go-home a {
+        box-shadow: 2px 2px 2px lightskyblue;
+        /* border: thin solid lightskyblue; */
+    }
+
+
+    blockquote {
+        color: rgb(179, 179, 179);
+    }
+
+    summary {
+        background-color: rgba(0, 117, 190, 0.664)
+    }
+
+    details article {
+        background-color: rgba(0, 117, 190, 0.336);
+        border-radius: 0px 5px 5px 5px;
+    }
+
+    details blockquote {
+        color: rgba(255, 255, 255, 0.808);
+    }
+
+}

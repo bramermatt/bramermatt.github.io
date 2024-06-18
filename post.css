@@ -16,7 +16,15 @@ body {
 
 
     font-family: system-ui;
+    font-family: Merriweather;
     /* font-family: math; */
+}
+
+.go-home {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    z-index: 50;
 }
 
 
