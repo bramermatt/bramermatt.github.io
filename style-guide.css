@@ -51,6 +51,41 @@ body {
 
 }
 
+nav {
+    display: flex;
+    padding-inline: 25px;
+}
+
+nav ul {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-self: center;
+    align-items: center;
+    gap: 1vw;
+
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: var(--text);
+
+    padding: 8px;
+    border-radius: 10px;
+}
+
+nav img {
+    max-height: 40px;
+}
+
+.nav-mobile {
+    display: none;
+}
+
 
 header {
     width: 100%;
@@ -164,8 +199,8 @@ footer {
     margin-left: auto;
     margin-right: auto;
 
-    padding-top: 20vh;
-    padding-bottom: 10vh;
+    /* padding-top: 20vh; */
+    /* padding-bottom: 10vh; */
 
 }
 
@@ -229,6 +264,157 @@ summary {
   details[open] article {
     padding: 10px;
   }
+
+
+
+
+
+  .filter-items {
+    /* position: fixed; */
+    /* bottom: 0; */
+    padding: 10px;
+    display: grid;
+
+    /* width: 100%; */
+    /* max-width: 495px; */
+    z-index: 50;
+    /* overflow: scroll; */
+    /* text-wrap: nowrap; */
+
+    /* border-radius: 10px 10px 0 0; */
+    /* margin-inline: 10px; */
+    /* padding-bottom: 15px; */
+    /* padding-right: 1vw; */
+    /* box-shadow: 0px 0px 8px rgb(161, 161, 161); */
+}
+
+.filter-items::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-items button {
+    text-transform: capitalize;
+    color: var(--text);
+    cursor: pointer;
+    padding: 10px;
+
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* font-size: large; */
+}
+
+.filter-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #353333;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .filter-btn:hover {
+    background-color: #222222;
+  }
+  
+  .active-filter {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .pane {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, auto));
+    max-width: 1200px;
+    gap: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  aside {
+    display: flex;
+    flex-direction: column;
+
+    /* float: left; */
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+  }
+
+  .sticky {
+    position: sticky;
+    top: 30px;
+    z-index: 1;
+  }
+
+
+  .filterDiv h1 {
+    margin: 0;
+  }
+
+  .item {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .item h1, .item p {
+    margin: 0;
+  }
+
+  .item h1 , .item p {
+    margin-bottom: 5px;
+  }
+
+  .item h1 {
+    font-size: large;
+  }
+
+  .item a:link, .item h1 a:visited {
+    text-decoration: none;
+  }
+
+  .split-pane h2 {
+    padding: 10px;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+    aside {
+        max-width: 100%;
+    }
+
+    .pane {
+        grid-template-columns: repeat(1, minmax(auto, auto));
+    }
+
+    .sticky {
+        position: relative;
+    }
+
+
+}
+
+
+
 
 
 @media screen and (prefers-color-scheme: light) {
@@ -314,6 +500,23 @@ summary {
 
     details blockquote {
         color: rgba(255, 255, 255, 0.808);
+    }
+
+    nav li a:hover {
+        background-color: rgb(83, 83, 83);
+    }
+
+    .item a:link, .item a:visited {
+        color:rgb(0, 117, 190);
+        text-decoration: none;
+    }
+
+    .item:hover {
+        background-color: rgb(46, 46, 46);
+    }
+
+    .split-pane h2, body {
+        background: black;
     }
 
 }
