@@ -53,16 +53,19 @@ body {
 
 nav {
     display: flex;
+    justify-content: space-between;
     padding-inline: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 nav ul {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    /* max-width: 1200px; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
 
     display: flex;
-    align-self: center;
+    /* align-self: center; */
     align-items: center;
     gap: 1vw;
 
@@ -173,10 +176,10 @@ article p, article h2, article ul, article ol {
     line-height: 1.6em;
 }
 
-footer {
-    padding-top: 20vh;
+/* footer {
+    padding-top: 10vh;
     margin-bottom: 10vh;
-}
+} */
 
 article img {
     max-height: 70vh;
@@ -202,17 +205,43 @@ article blockquote {
 }
 
 footer {
-    max-width: 550px;
+    /* max-width: 550px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
 
     /* padding-top: 20vh; */
     /* padding-bottom: 10vh; */
 
 }
 
-footer p {
+.main-footer {
+    position: fixed;
+
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    bottom: 2%;
+    /* left: 5%; */
+    /* right: 0%; */
+    padding: 25px;
+
+    max-width: 1200px;
+
+}
+
+footer p, .main-footer p {
     padding: 15px;
+}
+
+.main-footer img {
+    max-height: 35px;
+    margin-right: 1vw;
+    margin-top: 1vh;
+}
+
+
+
+.main-footer a img:hover {
+    opacity: 50%;
 }
 
 .pd-15 {
@@ -430,15 +459,62 @@ iframe, video {
 }
 
 
+.profile {
+    max-width: 550px;
 
-@media screen and (max-width: 1000px) {
+    padding: 15px;
+
+    margin-top: 25px;
+}
+
+.profile img {
+    width: 100%;
+    max-width: 28vh;
+    max-height: 28vh;
+    border-radius: 50%;
+    object-fit: cover;
+
+    box-shadow: 2px 2px 2px grey;
+}
+
+.profile h1 {
+    margin-bottom: 5px;
+    line-height: 1em;
+}
+
+.profile p {
+    margin-top: 5px;
+    line-height: 1.4em;
+}
+
+.section-1000 {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+@media screen and (max-width: 800px) {
     
     .nav-desktop {
-        display: none;
+        /* display: inline-block; */
+    }
+
+    .nav-desktop li {
+        margin-bottom: 12px;
     }
 
     .nav-mobile {
         display: block;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        padding: 0;
     }
 
     aside {
@@ -456,6 +532,22 @@ iframe, video {
 
 }
 
+
+@media screen and (max-width: 700px) {
+    
+    .nav-desktop {
+        display: inline;
+    }
+
+    .profile {
+        margin-top: 30px;
+    }
+
+    .main-footer {
+        position: relative;
+    }
+
+}
 
 
 
@@ -502,6 +594,17 @@ iframe, video {
 
     details blockquote {
         color: rgba(0, 0, 0, 0.671);
+    }
+
+    nav li a:hover {
+        background-color: rgb(36, 36, 36);
+        color: white;
+    }
+
+    .main-footer img {
+        filter:grayscale(0);
+        /* filter: invert(1); */
+        
     }
 
 
@@ -561,6 +664,12 @@ iframe, video {
 
     .split-pane h2, body {
         background: black;
+    }
+
+    .main-footer img {
+        filter: brightness(100);
+        filter: invert(1);
+        
     }
 
 }
