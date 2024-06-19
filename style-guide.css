@@ -70,6 +70,7 @@ nav ul {
     gap: 1vw;
 
     list-style-type: none;
+    padding: 0;
 }
 
 nav ul li a {
@@ -493,12 +494,28 @@ iframe, video {
     margin-left: auto;
 }
 
+.nav-social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap: .5vw; */
+}
 
+.nav-social img {
+    max-width: 100%;
+}
+
+.nav-social a img:hover {
+    opacity: 50%;
+}
 
 @media screen and (max-width: 800px) {
     
     .nav-desktop {
         /* display: inline-block; */
+    }
+
+    .nav-social {
+        max-width: 40%;
     }
 
     .nav-desktop li {
@@ -533,7 +550,7 @@ iframe, video {
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 410px) {
     
     .nav-desktop {
         display: inline;
@@ -666,7 +683,7 @@ iframe, video {
         background: black;
     }
 
-    .main-footer img {
+    .main-footer img, .nav-social img {
         filter: brightness(100);
         filter: invert(1);
         
