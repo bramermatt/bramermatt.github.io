@@ -461,11 +461,14 @@ iframe, video {
 
 
 .profile {
-    max-width: 550px;
+    /* max-width: 550px; */
 
     padding: 15px;
 
     margin-top: 25px;
+
+    float: left;
+    max-width: 55%;
 }
 
 .profile img {
@@ -492,6 +495,56 @@ iframe, video {
     max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.section-100vh {
+    max-height: 100vh;
+}
+
+.section-100vh img {
+    max-height: 94vh; 
+    float: right; 
+    max-width: 43%;
+}
+
+
+
+.big .profile {
+    max-width: max-content;
+    float: left;
+}
+
+.big h1 {
+    font-size: 50px;
+    /* max-width: 60%; */
+}
+
+.big p {
+    font-size: 28px;
+    /* max-width: 60%; */
+}
+
+
+@media screen and (max-width: 1400px) {
+    .profile, .section-100vh img {
+        float: none;
+        max-width: 100% !important;
+        max-height: 100% !important;
+    }
+
+    .section-100vh {
+        max-height: 100vh;
+    }
+
+    .big h1 {
+        font-size: x-large;
+    }
+
+    .big p {
+        font-size: medium;
+    }
+
+    
 }
 
 .nav-social {
