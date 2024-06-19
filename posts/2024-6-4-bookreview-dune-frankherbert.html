@@ -10,32 +10,41 @@
     <link rel="shortcut icon" type="image/x-icon" href="../img/icons/mLogo.png">
 
     <!-- <link rel="stylesheet" href="../revision-style-2024.css"> -->
-    <link rel="stylesheet" href="../post.css">
+
+        <!-- menu icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- google font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+
+    <link rel="stylesheet" href="../style-guide.css">
 
 </head>
 <body>
 
-    <nav>
-        <a href="../index.html">home</a>
-    </nav>
+    <header>
+
+        <img src="../img/book/dune-cover.jpg" alt="">
+        <blockquote>Dune by Frank Herbert, <em>book cover</em></blockquote>
+            
+
+            <figcaption>
+                <i class="fa fa-tags" aria-hidden="true"></i>
+                <a href="">book review</a>
+
+                <i class="fa fa-tags" aria-hidden="true"></i>
+                <a href="">dune in review</a>
+
+            </figcaption>
+            <h1>Dune by Frank Herbert | Book Review | Matt Bramer</h1>
+            <p>June 4, 2024</p>
+    </header>
+
+
 
     <main>
 
-
-        <header>
-            <section>
-                <a href="">book review</a> <span>/</span> <a href="">dune in review</a>
-                <h1>Dune by Frank Herbert</h1>
-                <p>June 4, 2024</p>
-
-                <img src="../img/book/dune-cover.jpg" alt="">
-                <blockquote>Dune by Frank Herbert, <em>book cover</em></blockquote>
-            </section>
-        </header>
-
-        <section>
-
-            <article>
+            <article class="pd-15">
                 
                 <h2>Written Review (Re-Review)</h2>
                 <p>Started reading May 22, 2024. Finished reading June 4, 2024. I read this in 2022 before.. <a href="../posts/2022-3-8-bookreview-dune-frankherbert.html">Dune Book Review (2022)</a>.</p>
@@ -81,20 +90,22 @@
                 <p>In summary, "Dune" is a masterful work of speculative fiction that offers a profound and multifaceted narrative. Its complex characters, intricate plot, and rich thematic content make it a must-read for fans of the genre and those interested in the broader questions of human society and destiny.</p>
 
 
-
-
             </article>
 
-        </section>
+
     </main>
+    
+    <div class="go-home">
+        <span onclick="toTopFunction()" id="toTop" title="Go to top">Top <i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+        <a href="../index.html">Home <i class="fa fa-home" aria-hidden="true"></i></a>
+    </div>
 
     <footer>
         <!-- <h1>Topic</h1> -->
         <p>Copyright: Matt Bramer 2024</p>
-
-        <!-- <h1>Topic</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo, consequuntur consequatur exercitationem culpa harum voluptatum pariatur odit, eum expedita error eius cum quasi repellendus fugit ipsam cupiditate, iusto blanditiis.</p> -->
     </footer>
+
+    <script src="../js/toTop.js"></script>
     
 </body>
 </html>

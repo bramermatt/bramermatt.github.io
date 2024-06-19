@@ -141,6 +141,8 @@ header figcaption a {
     padding-bottom: 5px;
     text-decoration: none;
     border-bottom: 2px dashed rgb(155, 155, 155);
+
+    text-transform: capitalize;
 }
 
 header img {
@@ -164,11 +166,16 @@ blockquote {
     max-width: 550px;
 }
 
-article p, article h2 {
+article p, article h2, article ul, article ol {
     max-width: 540px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6em;
+}
+
+footer {
+    padding-top: 20vh;
+    margin-bottom: 10vh;
 }
 
 article img {
@@ -386,6 +393,42 @@ summary {
     z-index: 10;
 }
 
+.theatre-mode {
+    /* height: 95.5vh; */
+}
+
+
+.theatre-mode-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 25px;
+    color: white;
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.35%; 
+
+    /* box-shadow: 4px 4px 0px rgb(88, 88, 88); */
+    /* border: thin solid; */
+}
+
+iframe, video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+
+    /* border-radius: 10px; */
+
+}
+
 
 
 @media screen and (max-width: 1000px) {
@@ -439,7 +482,7 @@ summary {
 
 
     blockquote {
-        color: rgb(179, 179, 179);
+        color: rgb(131, 131, 131);
     }
 
     .go-home a, .go-home span {
@@ -480,7 +523,8 @@ summary {
     }
 
     .go-home span, .go-home a {
-        box-shadow: 2px 2px 2px lightskyblue;
+        box-shadow: 2px 2px 5px rgba(135, 206, 250, 0.699);
+        background-color: #1a1a1a;
         /* border: thin solid lightskyblue; */
     }
 
