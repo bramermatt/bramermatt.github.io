@@ -1,17 +1,12 @@
-function openNav() {
-    document.getElementById("mobile-menu").style.width = "100%";
-  }
-  
-  function closeNav() {
-    document.getElementById("mobile-menu").style.width = "0%";
-  }
+// scripts.js
+function mobileMenu() {
+  const navMobile = document.getElementById("nav-mobile");
+  const menuIcon = document.getElementById("menu-icon");
 
-  // Add event listeners to each link to close the mobile menu when clicked
-document.addEventListener("DOMContentLoaded", function() {
-    var links = document.querySelectorAll("#mobile-menu a");
-    links.forEach(function(link) {
-        link.addEventListener("click", function() {
-            closeNav();
-        });
-    });
-});
+  navMobile.classList.toggle("active");
+  if (navMobile.classList.contains("active")) {
+      menuIcon.classList.replace("fa-bars", "fa-times");
+  } else {
+      menuIcon.classList.replace("fa-times", "fa-bars");
+  }
+}

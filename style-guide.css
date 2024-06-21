@@ -524,6 +524,23 @@ iframe, video {
     /* max-width: 60%; */
 }
 
+.nav-mobile .fa { 
+    font-size: 30px;
+}
+
+nav .nav-mobile span:hover {
+    cursor: pointer;
+}
+
+nav {
+    .nav-mobile {
+        li {
+            display: none;
+        }
+    }
+}
+
+
 
 @media screen and (max-width: 1400px) {
     .profile, .section-100vh img {
@@ -536,54 +553,29 @@ iframe, video {
         max-height: 100vh;
     }
 
-    .big h1 {
-        font-size: x-large;
-    }
-
-    .big p {
-        font-size: medium;
-    }
-
     
 }
 
-.nav-social {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* gap: .5vw; */
-}
-
-.nav-social img {
-    max-width: 100%;
-}
-
-.nav-social a img:hover {
-    opacity: 50%;
-}
 
 @media screen and (max-width: 800px) {
     
     .nav-desktop {
-        /* display: inline-block; */
+        display: inline-block;
+        /* display: none; */
     }
 
-    .nav-social {
-        max-width: 40%;
-    }
-
-    .nav-desktop li {
+    nav .nav-desktop li {
         margin-bottom: 12px;
     }
 
-    .nav-mobile {
-        display: block;
-    }
+
 
     nav {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
-    nav ul {
+    nav .nav-desktop ul {
         padding: 0;
     }
 
@@ -604,18 +596,11 @@ iframe, video {
 
 
 @media screen and (max-width: 410px) {
-    
-    .nav-desktop {
-        display: inline;
-    }
 
     .profile {
         margin-top: 30px;
     }
 
-    .main-footer {
-        position: relative;
-    }
 
 }
 
@@ -666,15 +651,9 @@ iframe, video {
         color: rgba(0, 0, 0, 0.671);
     }
 
-    nav li a:hover {
+    nav .nav-desktop li a:hover {
         background-color: rgb(36, 36, 36);
         color: white;
-    }
-
-    .main-footer img {
-        filter:grayscale(0);
-        /* filter: invert(1); */
-        
     }
 
 
@@ -719,7 +698,7 @@ iframe, video {
         color: rgba(255, 255, 255, 0.808);
     }
 
-    nav li a:hover {
+    nav .nav-desktop li a:hover {
         background-color: rgb(83, 83, 83);
     }
 
@@ -734,12 +713,6 @@ iframe, video {
 
     .split-pane h2, body {
         background: black;
-    }
-
-    .main-footer img, .nav-social img {
-        filter: brightness(100);
-        filter: invert(1);
-        
     }
 
     .iframe-container {
