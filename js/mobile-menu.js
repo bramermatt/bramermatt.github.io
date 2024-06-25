@@ -1,12 +1,14 @@
-// scripts.js
 function mobileMenu() {
-  const navMobile = document.getElementById("nav-mobile");
-  const menuIcon = document.getElementById("menu-icon");
-
-  navMobile.classList.toggle("active");
-  if (navMobile.classList.contains("active")) {
-      menuIcon.classList.replace("fa-bars", "fa-times");
+  const menu = document.getElementById('nav-mobile');
+  const icon = document.getElementById('menu-icon');
+  
+  if (menu.classList.contains('open')) {
+      menu.classList.remove('open');
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
   } else {
-      menuIcon.classList.replace("fa-times", "fa-bars");
+      menu.classList.add('open');
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-times');
   }
 }
