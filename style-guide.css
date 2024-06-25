@@ -15,6 +15,7 @@ html {
         font-family: Merriweather;
         /* font-family: math; */
     
+
         
     }
 
@@ -33,7 +34,7 @@ html {
     flex-direction: column;
     align-items: end;
 
-    .go-home a, .go-home span {
+     a, span {
         margin-bottom: 5px;
         cursor: pointer;
         padding: 8px;
@@ -43,12 +44,12 @@ html {
         font-size:  large;
     }
 
-    .go-home a:link, .go-home a:visited {
+    a:link, a:visited {
         color: var(--text);
         text-decoration: none;
     }
     
-    .go-home a:hover, .go-home span:hover {
+     a:hover,  span:hover {
         background-color: rgb(58, 58, 58);
         color:rgb(255, 255, 255);
     
@@ -73,6 +74,8 @@ nav {
     padding: 12px;
     box-shadow: 0px 0px 2px grey;
     border-radius: 10px;
+
+    
 
     ul {
         /* max-width: 1200px; */
@@ -108,6 +111,7 @@ nav {
     }
 
     .nav-mobile {
+
         li {
             display: none;
         }
@@ -118,6 +122,10 @@ nav {
 
 .nav-mobile {
     display: none;
+
+    overflow: hidden;
+    /* max-height: 0;  */
+    /* Collapse the menu */
 
     .fa { 
         font-size: 30px;
@@ -136,12 +144,26 @@ nav {
 
 .nav-mobile.open {
 
+    max-height: 500px; /* Adjust based on the number of items */
+    opacity: 1;
+
     ul {
         display: block;
+        transition: .3s ease-in-out;
+    }
+
+    span {
+        float: right;
+        margin-bottom: 50px;
     }
 
     li {
         display: block;
+        margin: 20px;
+        margin-bottom: 40;
+        font-size: x-large;
+        text-align: right;
+        margin-right: 50px;
     }
 
     
@@ -222,6 +244,31 @@ header {
 
 footer {
 
+padding-top: 60px;
+text-align: center;
+
+}
+
+main {
+
+    h1 {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    a:link, a:visited {
+        text-decoration: none;
+        color: var(--text);
+        text-transform: uppercase;
+        font-size: medium;
+        border-bottom: 2px dashed;
+        opacity: 80%;
+    }
+    
+    a:hover {
+        opacity: 100%;
+    }
 }
 
 
@@ -610,6 +657,8 @@ iframe, video {
 }
 
 
+
+
 .flex {
     display: flex;
     gap: 2vw;
@@ -634,12 +683,67 @@ iframe, video {
 .grid-three-columns {
     display: grid;
     grid-template-columns: repeat(3, minmax(auto, auto));
-    max-width: 1200px;
+    max-width: 1400px;
     gap: 2vw;
     margin-left: auto;
     margin-right: auto;
 
     padding: 15px;
+}
+
+.boxed-item {
+    box-shadow: 0px 0px 2px grey;
+    border-radius: 10px;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    a:link, a:visited {
+        text-decoration: none;
+        color: var(--text);
+        text-transform: uppercase;
+        font-size: medium;
+        border-bottom: 2px dashed;
+        opacity: 80%;
+    }
+    
+    a:hover {
+        opacity: 100%;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+}
+
+.tech-stack {
+
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    align-items: center;
+
+
+    img {
+        max-height: 60px;
+        max-width: 100%;
+        /* box-shadow: 0px 0px 2px grey; */
+        object-fit: cover;
+    }   
+
+}
+
+.overflow {
+    overflow: hidden;
+    /* max-width: max-content; */
 }
 
 
@@ -665,11 +769,11 @@ iframe, video {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 
     
     .grid-three-columns {
-        grid-template-columns: repeat(1, minmax(auto, auto));
+        grid-template-columns: repeat(2, minmax(auto, auto));
     }
 
 
@@ -695,7 +799,12 @@ iframe, video {
 }
 
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 740px) {
+
+    .grid-three-columns {
+        grid-template-columns: repeat(1, minmax(auto, auto));
+    }
+
 
     .nav-desktop {
         display: none;
@@ -704,6 +813,8 @@ iframe, video {
     .nav-mobile {
         display: block;
     }
+
+
 
 
 }
@@ -716,6 +827,7 @@ iframe, video {
     nav {
         background-color: rgb(255,255,255);
         box-shadow: grey;
+
     }
     
     article a:link, article a:visited, header a:link, header a:visited {
@@ -791,7 +903,7 @@ iframe, video {
     }
 
     .go-home span, .go-home a {
-        box-shadow: 2px 2px 5px rgba(135, 206, 250, 0.699);
+        box-shadow: 2px 2px 3px rgba(109, 109, 109, 0.699);
         background-color: #1a1a1a;
         /* border: thin solid lightskyblue; */
     }
