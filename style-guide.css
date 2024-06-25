@@ -828,7 +828,7 @@ iframe, video {
         white-space: nowrap;
         overflow: auto;
         max-width: 100vw;
-        height: -webkit-fill-available;
+        height: max-content;
         top: 75px;
     }
 
