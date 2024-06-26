@@ -5,104 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Matt Bramer</title>
 
+    <meta name="color-scheme" content="light dark"/>
 
     <link rel="shortcut icon" type="image/x-icon" href="img/icons/mLogo.png">
-    <link rel="stylesheet" href="home.css">
-    <meta name="color-scheme" content="light dark"/>
+
+    <!-- <link rel="stylesheet" href="../revision-style-2024.css"> -->
+
+        <!-- menu icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- google font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+
+    <link rel="stylesheet" href="style-guide.css">
+
 </head>
 <body>
 
 
+    <nav>
+        <ul id="nav-icon">
+            <li><a href=""><img src="img/icons/mLogo.png" alt=""></a></li>
+        </ul>
 
-<nav>
+        <ul class="nav-desktop"  id="nav-desktop">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#writings">Writings</a></li>
+            <li><a href="#videos">Videos</a></li>
+        </ul>
 
-    
+        <!-- <ul class="nav-social">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/icons/github-mark.png" alt=""></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/icons/Threads_(app)_logo.svg" alt=""></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/icons/youtube.svg" alt=""></a>
+        </ul> -->
 
-    <div class="nav-content">
+        <ul class="nav-mobile" id="nav-mobile">
 
-        <div class="nav-left">
-            <a href="index.html"><img src="img/icons/mLogo.png" alt=""></a>
-        </div>
-
-        <!-- waiting until updated  
-
-        <div class="nav-center">
-            <ul>
-                <li><a href="">home</a></li>
-
-               
-                    
-
-                    <div class="dropdown"> 
-                    <button class="dropbtn" onclick="myFunction('dropdown1')">blogs +
-                      
-                    </button>
-                    <div class="dropdown-content" id="dropdown1">
-                      <a href="#">bike commute blogs</a>
-                      <a href="#">faith blogs</a>
-                      <a href="#">interests blogs</a>
-                      <a href="#">opinion blogs</a>
-                    </div>
-                </div>
-
-                <div class="dropdown">
-                    <button class="dropbtn" onclick="myFunction('dropdown2')">reviews +
-                      
-                    </button>
-                    <div class="dropdown-content" id="dropdown2">
-                        <a href="#">book reviews</a>
-                        <a href="#">food reviews</a>
-                        <a href="#">movie reviews</a>
-                        <a href="#">tech reviews</a>
-                        <a href="#">tv show reviews</a>
-                    </div>
-                </div>
-
-
-                <li><a href="">videos</a></li>
-
-                <div class="dropdown">
-                    <button class="dropbtn" onclick="myFunction('dropdown3')">topics +
-                      
-                    </button>
-                    <div class="dropdown-content" id="dropdown3">
-
-                      <a href="#">books</a>  
-                      <a href="#">book discussions</a>
-                      
-                    </div>
-                    </div> 
-
-                <li><a href="">about</a></li>
-
-                
-            </ul>
-        </div>
-
-        <div class="nav-right">
-
-        </div>
-
--->
-
-    </div>
+            <span onclick="mobileMenu()"><i class="fa fa-bars" id="menu-icon"></i></span>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#writings">Writings</a></li>
+            <li><a href="#videos">Videos</a></li>
+        </ul>
 
 
 
-</nav>
+        <!-- <script src="js/mobile-menu.js"></script> -->
 
-<script src="dropdown.js"></script>
+    </nav>
+
+
+
+
 
     <main>
 
-        <div class="container">
 
-        <div class="hero">
-            <img src="img/family/family-in-car-may2024.JPG" alt="">
-            <blockquote><em>Image:</em> Matt and family, May 2024</blockquote>
+
+        <div class="section-1000" id="about">
+
+            <h1 class="pd-15">About Me</h1>
+
+            <div class="flex row">
+
+            <div class="profile">
+                <img src="img/matts/matt-profile.jpeg" alt="">
+                <h1>Hi, I'm Matthew Bramer</h1>
+                <p>I'm a husband, father, Jesus follower, and a  Computer Science student at SNHU.</p>
+            </div>
+
+            <div class="content-550">
+                <h3>About Me</h3>
+                    <p>Hello! I'm a passionate web developer with a diverse set of skills and interests. Currently, I’m working on various exciting projects that range from mobile app development to SQL database management.</p>
+
+                    <h4>Professional Background</h4>
+                    <p>I am about to graduate with a Computer Science degree, and I've dedicated much of my time to applying my academic knowledge to practical applications. As I transition to new roles at work, I aim to prepare my successor with the knowledge I've acquired, complete outstanding tasks, and document processes thoroughly. My goal is to continuously learn and train for new roles, ensuring I stay ahead in the ever-evolving tech landscape.</p>
+
+                    <!-- <h4>Current Projects</h4>
+                    <ul>
+                        <li><strong>Mobile App Development:</strong> I'm developing an iOS app that suggests wardrobe options based on weather, occasion, and user inspiration. The app includes features like wardrobe inventory, shopping, and social interactions.</li>
+                        <li><strong>SQL Database Management:</strong> Utilizing my subscription to JMP, I visualize and manage data using SQL, a language I find both fun and intuitive.</li>
+                        <li><strong>C++ Enhancements:</strong> I’m enhancing a Binary Search Tree program and optimizing search algorithms.</li>
+                        <li><strong>Web Development:</strong> I'm creating a dynamic updated website for my Church (One Community Church Indiana), and I'm constantly trying to improve my skills while improving my personal website.</li>
+                    </ul>
+
+                    <h4>Personal Interests</h4>
+                    <p>Outside of my professional work, I have a variety of interests:</p>
+                    <ul>
+                        <li><strong>Tee Ball Coaching:</strong> I was able to coach my son's tee ball team this year! I love baseball, and I had never coached before, so this was a really incredible opportunity for both myself, and my son. I certainly enjoyed being back on the baseball diamond, but spending that time with my son, wife, and our daughter, and even our son's new friends was amazing. I worked hard to create an environment of fun, while still learning and developing skills to be better baseball players, teammates, and friends. I think I impacted these kids and I hope they have a deeper love for the game!</li>
+                        <li><strong>Reading:</strong> I’m an avid reader and lover of all things FANTASY! I also love Jesus and love to read my Bible! It is my goal to get as many people who are followers of Jesus to really enjoy reading through the Old Testament of the Bible. I don't fully understand the Old Testament and I understand reading the Bible to be a daunting task, but I love it.</li>
+                        <li><strong>Podcast Enthusiast:</strong> Speaking of reading the Bible, I also love listening to Bible podcasts! I am an a huge fan of the Bible Project and their Bible Project Podcast. I also enjoy documentary podcasts about apps and businesses, such as "How I Built This" and "Land of the Giants."</li>
+                    </ul> -->
+
+                    <h4>Personal Life</h4>
+                    <p>I’m 27 years old, happily married to my wonderful wife who is 28, and we have a delightful 4-year-old son and a now 8-month-old daughter. Balancing family life with my professional and personal interests is something I take pride in. I'm not always the best father, or husband, but I am constantly trying to improve myself.</p>
+
+                    <h4>Future Goals</h4>
+                    <p>Looking ahead, I aim to deepen my knowledge of JavaScript, design a blog layout that resonates with my vision, and explore new ways to integrate technology into everyday solutions. I am also passionate about using my skills to make a positive impact and help others in the tech community.</p>
+
+                    <!-- <p>Thank you for taking the time to learn a little about me. Feel free to connect if you share similar interests or if there's any way I can assist you in your tech journey!</p> -->
+            </div>
         </div>
 
-        <div class="timeline">
+        </div>
+
+        <!-- <div class="section-1000" id="projects"> -->
+
+            <h1 class="pd-15" id="projects">Projects</h1>
+
+            <div class="grid-three-columns overflow">
+
+                <div class="boxed-item">
+                    <div class="title">
+                        <h2>One Community Church Website</h2>
+                        <a href="http://www.onecommunity.church" target="_blank">www.onecommunity.church</a>
+                    </div>
+
+                    <div class="description">
+                        <p>Welcome to One Community Church! Our mission is to connect people to Christ and each other, fostering a vibrant and welcoming environment where individuals and families can grow in their faith. Located in the heart of our community, we strive to offer dynamic worship experiences, meaningful relationships, and opportunities to make a positive impact both locally and globally.</p>
+        
+                        <p>At One Community Church, we believe in the transformative power of God's love. Our vision is to create a community where everyone feels valued and empowered to live out their faith. We provide resources and programs for all ages to deepen their understanding of the Bible, develop a closer relationship with Jesus Christ, and engage in authentic relationships through small groups, events, and service opportunities.</p>
+                    </div>
+
+                    <div class="tech-stack">
+                        <img src="img/icons/html.png">
+                        <img src="img/icons/css.png">
+                        <img src="img/icons/js.webp">
+                    </div>
+                </div>
+
+                <div class="boxed-item">
+                    <div class="title">
+                        <h2>Task-Man</h2>
+                        <a href="https://www.mattbramer.com/task-man" target="_blank">www.mattbramer.com/task-man</a>
+                    </div>
+
+                    <div class="description">
+                        <p>
+                            Task-Man is a streamlined to-do list application designed to help you manage your tasks efficiently. With Task-Man, you can easily add new tasks and organize them as either to-do or completed items. Marking tasks as completed moves them to a dedicated section, helping you keep track of your progress. You can click on tasks to view more details in a modal, providing an expanded view for better readability and management. Task-Man also supports persistent storage by saving your tasks to cookies, ensuring they remain until you decide to delete them. 
+                            
+                        </p>
+                        
+                        <p>The user-friendly interface offers a clean and intuitive experience with mobile responsiveness, making task management simple on any device. Task-Man is built using HTML, CSS, and JavaScript, with a focus on simplicity and functionality, to keep your productivity high and your tasks in order.
+                        </p>
+                    </div>
+
+                    <div class="tech-stack">
+                        <img src="img/icons/html.png">
+                        <img src="img/icons/css.png">
+                        <img src="img/icons/js.webp">
+                    </div>
+    
+                </div>
+    
+                <div class="boxed-item">
+                    <div class="title">
+                        <h2>Fashion-Man</h2>
+                        <a href="https://www.mattbramer.com/fashion-man" target="_blank">www.mattbramer.com/fashion-man</a>
+                    </div>
+
+                    <div class="description">
+                    <p>Welcome to Fashion-Man! Fashion-Man is your ultimate companion for staying stylish regardless of the weather. Our app provides personalized wardrobe suggestions based on the latest weather forecasts, ensuring you're always dressed appropriately and confidently. Whether it's a sunny day, a rainy afternoon, or a chilly evening, Fashion-Man helps you choose the perfect outfit so you can look and feel your best.</p>
+
+                    <p>Fashion-Man features location-based weather forecasts, allowing you to receive accurate weather updates for your area. You can also customize your wardrobe within the app, making it easy to match your outfit suggestions with the clothes you already own. From casual outings to formal events, Fashion-Man simplifies your daily outfit decisions, saving you time and effort.</p>
+                    </div>
+
+                    <div class="tech-stack">
+                        <img src="img/icons/html.png">
+                        <img src="img/icons/css.png">
+                        <img src="img/icons/js.webp">
+                    </div>
+                </div>
+    
+
+
+
+
+
+        </div>
+
+
+
+
+          <h1 class="pd-15" id="writings">Writings</h1>
+
+            <!-- <div class="grid-three-columns"> -->
+
+
+
+            <!-- <div class="timeline"> -->
+            <div class="flex row section-1000 pd-15 ">
 
             <div class="filter-items">
                 <button class="filter-btn active-filter" onclick="filterItem('all')">All</button>
@@ -127,7 +223,9 @@
 
             <script src="filter-items.js"></script>
 
-            <div>
+            <!-- <div class="flex"> -->
+            <!-- <div class="scroll-item"> -->
+                <div class="width-100 pd-15">
             <h2>2024</h2>
 
             <div class="item filterDiv family video">
@@ -1288,13 +1386,62 @@
 
         </div>
 
-    </div>
+
+            <h1 class="pd-15" id="videos">Videos</h1>
+
+            <div class="grid-three-columns">
+
+                <div>
+                    <h2>My Favorite Videos</h2>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">YouTube..</a>
+                </div>
+    
+                <div>
+                    <h2>My Popular Videos</h2>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">YouTube..</a>
+                </div>
+    
+
+
+        </div>
+
+
+
+
+
 
     </main>
 
+
+
+
+    
+    <!-- <div class="go-home">
+        <span onclick="toTopFunction()" id="toTop" title="Go to top">Top <i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+        <a href="">Home <i class="fa fa-home" aria-hidden="true"></i></a>
+    </div> -->
+
     <footer>
+        <p>Matt Bramer</p>
+        <!-- <div class="main-footer">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/icons/github-mark.png" alt=""></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/icons/Threads_(app)_logo.svg" alt=""></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/icons/youtube.svg" alt=""></a>
+
+        </div> -->
 
     </footer>
+
+    <div class="go-home">
+        <span onclick="toTopFunction()" id="toTop" title="Go to top">Top <i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+        <a href="../index.html">Home <i class="fa fa-home" aria-hidden="true"></i></a>
+    </div>
+
+
+    <script src="js/scroll-left.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="filter-items.js"></script>
+    <script src="js/toTop.js"></script>
     
 </body>
 </html>
